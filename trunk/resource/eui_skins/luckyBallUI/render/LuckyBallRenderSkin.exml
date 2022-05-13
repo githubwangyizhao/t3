@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckyBallRenderSkin"
+	 width="65"
+	height="65" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0">
+		<e:Image source="luckyBallUI_json.luckyBallUI_item_bg" x="0" y="0" visible="true"/>
+		<e:Group x="0" y="0" width="65">
+			<e:Image id="u_imgball" height="65" x="-1" y="-1" width="65" visible="true"/>
+			<e:Image id="u_imgMask" visible="false" scale9Grid="3,3,4,4" alpha="1" source="luckyBallUI_json.luckyBallUI_img_mask" width="67" height="68" x="-5" y="-5" scaleX="1.1" scaleY="1.1"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

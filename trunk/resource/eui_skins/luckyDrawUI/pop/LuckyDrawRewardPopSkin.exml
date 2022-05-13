@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawRewardPop"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a28e314b"/>
+	<e:Group id="u_grpMain" y="24" horizontalCenter="0">
+		<e:Image id="u_bg" y="91" source="rewardUI_json.rewardUI_bg" scale9Grid="152,100,100,60" horizontalCenter="0"/>
+		<e:Image source="rewardUI_json.rewardUI_title_bg" y="0" visible="true" scaleX="1" scaleY="1" horizontalCenter="-3"/>
+		<e:Image source="rewardUI_json.rewardUI_title" y="38" visible="true" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<e:Group id="u_rewardGrp" y="196" anchorOffsetY="0" height="120" horizontalCenter="0"/>
+		<e:Group id="u_buyBtn" x="518" y="376" width="134">
+			<e:Image x="0" y="0" width="134" height="53" source="commonUI_json.commonUI_img_btnyellow"/>
+			<e:Image source="commonUI_json.commonUI_icon_4" x="5" width="30" height="30" y="9"/>
+			<e:Label id="u_costLb" x="30" size="18" stroke="1" y="17" text="100" fontFamily="Microsoft YaHei"/>
+			<e:Image id="u_titleImg" source="luckyDrawUI_json.luckyDrawUI_buy1" x="38" y="14"/>
+		</e:Group>
+		<e:Group id="u_sureBtn" x="712" y="376">
+			<e:Image x="0" y="0" width="134" height="53" source="commonUI_json.commonUI_img_btnbule"/>
+			<e:Image source="commonUI_json.commonUI_img_sure" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Label id="u_closeTxt" text="点击空白处关闭窗口" y="550" size="18" touchEnabled="false" textColor="0xA5A5A5" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

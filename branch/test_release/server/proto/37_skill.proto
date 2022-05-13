@@ -1,0 +1,35 @@
+// 技能
+// OPEN_DEBUG
+
+//主动技能
+message ActiveSkill {
+    required int32 active_skill_id = 1;             // 主动技能id{类型(1-闪现技能,2-单体技能)}
+    required int32 level = 2;                       // 等级
+    required int32 times = 3;                       // 充能次数
+    required int32 next_recover_time = 4;            // 下一个技能回复时间戳
+    required int32 can_use_time = 5;                // 可以使用技能时间
+}
+
+// 使用技能
+message m_use_skill_tos {
+    required int32 active_skill_id = 1;             // 主动技能id{类型(1-闪现技能,2-单体技能)}
+    optional int32 dir = 2;                         // 0 - 360(施法方向)
+    repeated int32 params = 3;                      // 参数列表，对active_skill_id字段的补充(1-闪现技能[],2-单体技能[攻击目标类型, 攻击目标者id, 消耗灵力值])
+}
+message m_use_skill_toc {
+    enum ENUM {
+        success = 1;                                // 成功
+        fail = 2;                                   // 失败
+        cd_time = 3;                                // cd时间
+        not_authority = 4;                          // 不可施法
+    }
+    required ENUM result = 1;
+    required int32 active_skill_id = 2;             // 主动技能id(类型(1:闪现))
+    optional int32 dir = 3;                         // 0 - 360(施法方向)
+    required ActiveSkill active_skill = 4;          // 主动技能
+}
+
+// 通知主动技能改变
+message m_notice_active_skill_change_toc {
+    repeated ActiveSkill active_skill_list = 1;     // 主动技能
+}

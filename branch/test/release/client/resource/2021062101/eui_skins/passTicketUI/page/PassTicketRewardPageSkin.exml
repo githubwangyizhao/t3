@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketRewardPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="150" height="150" x="90" y="415">
+		<e:Label text="白银通行证" y="14" horizontalCenter="0" bold="true" size="18" italic="true"/>
+		<e:Image source="commonUI_json.commonUI_icon_gold" y="62" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group width="150" x="90" y="211">
+		<e:Label text="钻石通行证" y="14" horizontalCenter="0" bold="true" size="18" italic="true"/>
+		<e:Image source="commonUI_json.commonUI_icon_gold" y="62" horizontalCenter="0"/>
+		<e:Label id="u_btnBuy" text="启用" y="110" width="100" height="30" textAlign="center" verticalAlign="middle" size="18" bold="true" horizontalCenter="0" background="true" backgroundColor="0x000000"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="260" y="225" width="874" height="370">
+		<e:Group id="u_mcReward" visible="true">
+			<e:Image id="u_imgJinduBg" source="commonUI_json.commonUI_jindu_1" x="0" y="218" scale9Grid="11,6,10,7" width="100"/>
+			<e:Image width="100" id="u_imgJindu" visible="true" source="commonUI_json.commonUI_jindu_6" scaleX="1" scaleY="1" scale9Grid="49,5,35,4" y="220" x="0"/>
+			<e:Group id="u_btnBuyLv" y="217" width="40" height="20">
+				<e:Image source="commonUI_json.commonUI_box_1" x="0" y="0" scale9Grid="17,17,16,16" width="40" height="20"/>
+				<e:Label text="购买" size="14" x="6" y="3"/>
+			</e:Group>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

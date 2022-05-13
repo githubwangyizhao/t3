@@ -1,0 +1,41 @@
+// 匹配场
+// OPEN_DEBUG
+
+// 首充
+message FirstCharge {
+    required int32 type = 1;                    // 档位(1 or 2)
+    required int32 is_buy = 2;                  // 是否已经购买
+    repeated FirstChargeData list = 3;          // 列表
+}
+message FirstChargeData {
+    required int32 day = 1;                     // 天数
+    required int32 state = 3;                   // 状态(0:不可领取,1:可领取,2:已领取)
+}
+
+// 初始化
+message m_init_data_first_recharge_toc{
+    repeated FirstCharge first_charge_list = 1; // 匹配场id
+}
+
+// 通知数据更新
+message m_notice_data_update_toc{
+    required FirstCharge first_charge = 1;
+}
+
+// 领取奖励
+message m_get_award_tos {
+    required int32 type = 1;                    // 档位(1 or 2)
+    required int32 day = 2;                     // 天数
+}
+message m_get_award_toc {
+    enum ENUM {
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+        not_enough_grid = 3;                    // 格子不足
+        not_authority = 4;                      // 不可领取
+        already_get = 5;                        // 已经领取
+    }
+    required ENUM result = 1;
+    required int32 type = 2;                    // 档位(1 or 2)
+    required int32 day = 3;                     // 天数
+}

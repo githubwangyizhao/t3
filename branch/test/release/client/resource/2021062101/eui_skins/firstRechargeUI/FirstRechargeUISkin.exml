@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.FirstRechargeUI"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17805843138"/>
+	<e:Image verticalCenter="0" horizontalCenter="0" source="firstRechargeUI_json.firstRechargeUI_img_bg"/>
+	<e:Group x="50" y="20" touchEnabled="false" touchChildren="false">
+		<e:Image x="0" y="0" source="firstRechargeUI_json.firstRechargeUI_img_js" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="u_gpPropBg0" width="128" height="158" x="524" y="258">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="firstRechargeUI_json.firstRechargeUI_img_iconBg"/>
+		<e:Label id="u_txtPropName0" text="道具名稱" y="116" horizontalCenter="0" size="16" fontFamily="Microsoft YaHei" bold="true" textColor="0x882A2A"/>
+	</e:Group>
+	<e:Group id="u_gpPropBg1" width="128" height="158" x="656" y="258">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="firstRechargeUI_json.firstRechargeUI_img_iconBg"/>
+		<e:Label text="道具名稱" y="116" horizontalCenter="0" size="16" fontFamily="Microsoft YaHei" bold="true" textColor="0x882A2A" id="u_txtPropName1"/>
+	</e:Group>
+	<e:Group id="u_gpPropBg2" width="128" height="158" x="788" y="258">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="firstRechargeUI_json.firstRechargeUI_img_iconBg"/>
+		<e:Label text="道具名稱" y="116" horizontalCenter="0" size="16" fontFamily="Microsoft YaHei" bold="true" textColor="0x882A2A" id="u_txtPropName2"/>
+	</e:Group>
+	<e:Group id="u_btnRecharge" width="164" height="63" x="640" y="446">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="firstRechargeUI_json.firstRechargeUI_btn_bg"/>
+	</e:Group>
+	<e:Label id="u_txtCloseTips" text="點擊空白處關閉窗口" y="574" horizontalCenter="0" size="16" textColor="0xF0E4B0" touchEnabled="false"/>
+</e:Skin>

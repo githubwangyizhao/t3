@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HundunRuleSkin" width="738" height="405" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="739" height="406" x="0" y="0" source="commonUI_json.commonUI_img_di" scale9Grid="41,67,50,44" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" horizontalCenter="0" y="3" visible="true"/>
+	<e:Image x="311.64" y="11.112" source="commonUI_json.commonUI_img_rule"/>
+	<e:Scroller id="u_sc" width="738" height="370" y="35.498" x="0" scrollPolicyV="off" bounces="false">
+		<e:Group id="u_gp_imgs" anchorOffsetX="0" anchorOffsetY="0" height="370.5">
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_btnClose" x="641" y="3" source="commonUI_json.commonUI_btn_close_4" width="93" height="34"/>
+	<e:Image id="u_img_left" source="commonUI_json.commonUI_jiantou2" y="189" anchorOffsetX="0" width="35" left="-43"/>
+	<e:Image id="u_img_right" source="commonUI_json.commonUI_jiantou2" y="189" anchorOffsetX="0" width="35" scaleX="-1" right="-45"/>
+	<e:Group id="u_gp_points" y="382" width="54" anchorOffsetX="0" height="30" horizontalCenter="0">
+		<e:Group id="u_gp_p0" x="0" y="0">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt0" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group id="u_gp_p1" x="10" y="10">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt1" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group id="u_gp_p2" x="20" y="20">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt2" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group id="u_gp_p3" x="30" y="30">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt3" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group x="40" y="40" id="u_gp_p4">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt4" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group x="50" y="50" id="u_gp_p5">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt5" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group x="60" y="60" id="u_gp_p6">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt6" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group x="70" y="70" id="u_gp_p7">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt7" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group x="80" y="80" id="u_gp_p8">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt8" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		<e:Group x="90" y="90" id="u_gp_p9">
+			<e:Image source="hundunUI_json.hundunUI_qyd2" x="0" y="0"/>
+			<e:Image id="u_img_pt9" source="hundunUI_json.hundunUI_qyd1" x="0" y="0"/>
+		</e:Group>
+		
+	</e:Group>
+</e:Skin>

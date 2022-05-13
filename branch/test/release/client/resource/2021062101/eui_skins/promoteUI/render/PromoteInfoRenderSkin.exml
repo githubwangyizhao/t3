@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PromoteInfoRenderSkin"
+	 width="410"
+	height="50" xmlns:e="http://ns.egret.com/eui">
+	<e:Label text="22:00" size="14" bold="true" visible="true" id="u_txtTime" textColor="0xF0E4B0"/>
+	<e:Label text="newGet newGet newGet newGet newGet new" size="14" bold="true" visible="true" id="u_txtDesc" width="410" wordWrap="true" textColor="0xF0E4B0" lineSpacing="5" horizontalCenter="0" verticalAlign="middle" height="33" y="15"/>
+	<e:Image id="u_imgLine" source="shareUI_json.shareUI_line2" horizontalCenter="0" bottom="0"/>
+</e:Skin>

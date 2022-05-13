@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17987ede712"/>
+	<e:Image id="u_imgBg" width="917" height="528" x="149" y="59" scale9Grid="25,25,25,25" visible="true" source="monsterInfoUI_json.monsterInfoUI_img_bg"/>
+	<e:Image width="136.5" height="68" x="20" y="170" source="monsterInfoUI_json.monsterInfoUI_btn_icon2" visible="false"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_btn_icon1" x="20" y="249" visible="false" width="136.5" height="68"/>
+</e:Skin>

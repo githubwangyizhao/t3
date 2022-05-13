@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.ExchangeShopUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a78cbb3c"/>
+	<e:Group id="u_mcItem" x="-1" y="37" visible="true">
+		<e:Image source="exchangeShopUI_json.exchangeShopUI_item_bg" x="0" y="0" visible="true"/>
+		<e:Label id="u_itemName" text="物品名称" y="364" size="28" textColor="0xF0E4B0" visible="true" bold="true" stroke="2" strokeColor="0x14151A" textAlign="center" horizontalCenter="-1"/>
+	</e:Group>
+	<e:Label id="u_heroName" text="雷霆武神·雷震子" y="558" size="28" textColor="0xF0E4B0" visible="true" x="20" bold="true" stroke="2" strokeColor="0x14151A" width="300" textAlign="center"/>
+	<e:Group id="u_mcRight" x="426" y="95" width="660" visible="true">
+		<e:Image source="exchangeShopUI_json.exchangeShopUI_bg" x="0" y="0" scale9Grid="17,17,16,16" width="660" height="390" visible="true"/>
+		<e:Group y="35" horizontalCenter="0" visible="true">
+			<e:Image source="exchangeShopUI_json.exchangeShopUI_icon_design" x="-33" y="0" visible="true" scaleX="-1"/>
+			<e:Image source="exchangeShopUI_json.exchangeShopUI_icon_design" visible="true" y="0" right="-198"/>
+			<e:Label id="u_txtTitle" text="兑换商店" y="1" bold="true" size="18" textColor="0xF0E4B0" visible="true"/>
+		</e:Group>
+		<e:Scroller id="u_scrollerItem" width="580" height="290" y="83" visible="true" x="40">
+			<e:Group>
+			<e:List id="u_listItem"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Image id="u_btnClose" x="628" y="18" visible="true" width="16" height="16" source="commonUI_json.commonUI_btn_close_2"/>
+		<e:Group y="411" visible="true" horizontalCenter="0">
+			<e:Image id="u_imgItem" source="exchangeShopUI_json.exchangeShopUI_item_icon" x="0" y="0" visible="true" width="29" height="33"/>
+			<e:Label id="u_txtHave" text="拥有：9999" y="9" size="16" textColor="0xF0E4B0" visible="true" x="41"/>
+		</e:Group>
+		<e:Group id="u_btnExchange" y="458.99999999999994" scaleX="1" scaleY="1" horizontalCenter="0" width="210" height="50" visible="true">
+			<e:Image source="exchangeShopUI_json.exchangeShopUI_btn_bg" x="0" y="0" visible="true"/>
+			<e:Label id="u_txtExchange" text="兑 换" size="20" textColor="0xF0E4B0" visible="true" bold="true" horizontalCenter="1" verticalCenter="2"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.HundunSupwinSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_contentGrp" width="800" height="800" horizontalCenter="0" verticalCenter="-50">
+		<e:Image id="u_leftImg" source="hundunSupwinUI_json.hundunSupwinUI_leftRotat" visible="true" anchorOffsetX="200" anchorOffsetY="200" scaleX="2" scaleY="2" x="400" y="400"/>
+		<e:Image id="u_rightImg" source="hundunSupwinUI_json.hundunSupwinUI_rightRotate" visible="true" anchorOffsetX="200" anchorOffsetY="200" scaleX="2" scaleY="2" x="400" y="400"/>
+		<e:Image id="u_leftImg1" source="hundunSupwinUI_json.hundunSupwinUI_leftRotate" visible="true" anchorOffsetX="200" anchorOffsetY="200" scaleX="2" scaleY="2" x="400" y="400"/>
+		<e:Image source="hundunSupwinUI_json.hundunSupwinUI_bg1" x="171" y="327"/>
+		<e:Image id="u_bg" source="hundunSupwinUI_json.hundunSupwinUI_bg" visible="true" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

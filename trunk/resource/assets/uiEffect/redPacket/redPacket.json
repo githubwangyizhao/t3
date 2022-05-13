@@ -1,0 +1,11 @@
+{"file":"redPacket.png","frames":{
+"1_01":{"x":130,"y":214,"w":116,"h":108,"offX":70,"offY":74,"sourceW":256,"sourceH":256},
+"1_02":{"x":374,"y":110,"w":120,"h":108,"offX":68,"offY":73,"sourceW":256,"sourceH":256},
+"1_03":{"x":386,"y":0,"w":124,"h":108,"offX":66,"offY":72,"sourceW":256,"sourceH":256},
+"1_04":{"x":0,"y":107,"w":124,"h":105,"offX":66,"offY":73,"sourceW":256,"sourceH":256},
+"1_05":{"x":130,"y":0,"w":128,"h":105,"offX":64,"offY":72,"sourceW":256,"sourceH":256},
+"1_06":{"x":0,"y":214,"w":128,"h":101,"offX":64,"offY":72,"sourceW":256,"sourceH":256},
+"1_07":{"x":0,"y":0,"w":128,"h":105,"offX":64,"offY":72,"sourceW":256,"sourceH":256},
+"1_08":{"x":126,"y":107,"w":124,"h":105,"offX":66,"offY":73,"sourceW":256,"sourceH":256},
+"1_09":{"x":260,"y":0,"w":124,"h":108,"offX":66,"offY":72,"sourceW":256,"sourceH":256},
+"1_10":{"x":252,"y":110,"w":120,"h":108,"offX":68,"offY":73,"sourceW":256,"sourceH":256}}}

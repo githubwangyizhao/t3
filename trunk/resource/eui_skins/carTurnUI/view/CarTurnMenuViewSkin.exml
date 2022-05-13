@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnMenuViewSkin"
+	 width="175"
+	height="185" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d02c34013"/>
+	<e:Group width="175" height="185" visible="true">
+		<e:Image source="carTurnUI_json.carTurnUI_menu_bet_bg_0" scale9Grid="23,23,22,24" width="175" height="185" visible="true"/>
+		<e:Group id="u_grpChip" visible="true" y="12" horizontalCenter="0" width="154" height="34">
+			<e:Image scale9Grid="3,3,4,4" width="154" height="34" scaleX="1" scaleY="1" source="carTurnUI_json.carTurnUI_menu_bet_bg_1" visible="true"/>
+			<e:Label id="u_textChip" text="筹码设置" size="16" visible="true" x="63" y="9" fontFamily="Microsoft YaHei"/>
+			<e:Image source="carTurnUI_json.carTurnUI_img_set" x="25" y="5"/>
+		</e:Group>
+		<e:Group id="u_grpExit" visible="true" y="140" horizontalCenter="0" width="154" height="34" x="21">
+			<e:Image scale9Grid="3,3,4,4" width="154" height="34" scaleX="1" scaleY="1" source="carTurnUI_json.carTurnUI_menu_bet_bg_1" visible="true"/>
+			<e:Label id="u_textExit" text="返回大厅" size="16" visible="true" x="63" y="9" fontFamily="Microsoft YaHei"/>
+			<e:Image source="carTurnUI_json.carTurnUI_img_set" x="25" y="5"/>
+		</e:Group>
+		<e:Group id="u_grpBetRecord" y="54" visible="true" horizontalCenter="0.5" width="154" height="34">
+			<e:Image scale9Grid="3,3,4,4" width="154" height="34" scaleX="1" scaleY="1" source="carTurnUI_json.carTurnUI_menu_bet_bg_1"/>
+			<e:Label id="u_textRecord" text="投注记录" size="16" y="9" x="63"/>
+			<e:Image source="carTurnUI_json.carTurnUI_img_record" x="25" y="6" visible="true"/>
+		</e:Group>
+		<e:Group id="u_grpRule" y="97" visible="true" horizontalCenter="0.5" height="34" width="154">
+			<e:Image scale9Grid="3,3,4,4" width="154" height="34" scaleX="1" scaleY="1" source="carTurnUI_json.carTurnUI_menu_bet_bg_1" visible="true"/>
+			<e:Label id="u_textRule" text="游戏规则" size="16" x="63" y="9" visible="true" fontFamily="Microsoft YaHei"/>
+			<e:Image source="carTurnUI_json.carTurnUI_img_rule" x="25" y="5" visible="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideTaskSkin" width="281" height="92" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" source="guideUI_json.guideUI_task_1" scale9Grid="35,36,211,44"/>
+	<e:Label id="u_txtMsg" text="移动到指定地点" size="20" textAlign="left" lineSpacing="6" wordWrap="true" y="48" verticalAlign="middle" fontFamily="Microsoft YaHei" x="20" textColor="0xf0e4b0"/>
+	<e:Label id="u_txtTitle" text="移动练习" size="18" textAlign="left" lineSpacing="6" wordWrap="true" y="7.5" verticalAlign="middle" fontFamily="Microsoft YaHei" x="48" textColor="0xffffff"/>
+	<e:Image id="u_imgTitle" source="guideUI_json.guideUI_task_title_1" x="15" y="3"/>
+</e:Skin>

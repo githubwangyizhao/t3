@@ -1,0 +1,1 @@
+[{"client_key":"id"},{"id":1,"name":"给道具","csv_name":"item","args":["PropType"," PropId"," Num"]},{"id":2,"name":"调任务","csv_name":"task","args":["TaskId"]},{"id":3,"name":"加等级","csv_name":"","args":["level"]},{"id":4,"name":"设置vip等级","csv_name":"","args":["vip_level"]}]

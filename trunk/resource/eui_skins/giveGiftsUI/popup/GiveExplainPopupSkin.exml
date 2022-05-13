@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveGiftExplainView"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7cdd94fc"/>
+	<e:Image x="253.765" y="132.924" scale9Grid="33,66,33,406" width="624" height="373.064" visible="true" source="commonUI_json.commonUI_img_popdi"/>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_titlebg" y="135.664" horizontalCenter="0.5" visible="true"/>
+	<e:Group id="u_btnOk" y="437.372" horizontalCenter="-1" width="122" height="46" visible="true">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow" visible="true"/>
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_btn_confirm" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_textContent" y="206.449" size="19" horizontalCenter="2.5" textAlign="left" fontFamily="Microsoft YaHei" width="553.437" height="184.671" textColor="0xF0E4B0" lineSpacing="7"/>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_img_explain_title" y="142.348" horizontalCenter="0.5" visible="true"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="783.136" y="134.733" visible="true" width="93" height="34"/>
+</e:Skin>

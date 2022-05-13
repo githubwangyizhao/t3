@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LabaEventUI"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b1943978d"/>
+	<e:Group id="u_bgGrp" horizontalCenter="0" visible="true" y="88" width="950">
+		<e:Image source="monsterRollUI_json.monsterRollUI_bg" verticalCenter="0" visible="true" horizontalCenter="0"/>
+		<e:Image source="labaEventUI_json.labaEventUI_bg" y="33.083" horizontalCenter="0" touchEnabled="false"/>
+		<e:Image source="monsterRollUI_json.monsterRollUI_slot_bg" visible="true" touchEnabled="false" y="133" horizontalCenter="1"/>
+		<e:Image source="labaEventUI_json.labaEventUI_ad" y="58.853" horizontalCenter="0"/>
+		<e:Group id="u_btnClose" width="60" height="60" x="752" y="-5">
+			<e:Image source="labaEventUI_json.labaEventUI_close" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group y="40" horizontalCenter="0">
+			<e:Image y="0" visible="true" x="0" source="labaEventUI_json.labaEventUI_tipBg"/>
+			<e:Group id="u_ruleBtn" x="105" y="4">
+			<e:Image source="labaEventUI_json.labaEvent_iconRule" x="0" y="0"/>
+			<e:Label id="u_ruleLb" text="规则" x="29" y="5.17" size="16" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+			</e:Group>
+			<e:Label id="u_txtCountdown" text="剩余时间：00:30" y="8.28" size="16" fontFamily="Microsoft YaHei" bold="true" textAlign="center" stroke="0" strokeColor="0x9C5E22" x="176.46" textColor="0x1ADE4D"/>
+		</e:Group>
+		<e:Image id="u_startBtn" source="monsterRollUI_json.monsterRollUI_start" x="700" y="235" visible="true" anchorOffsetX="0" anchorOffsetY="99"/>
+		<e:Group id="u_clickGrp" width="68.33" height="192" x="700" y="137"/>
+		<e:Image id="u_tipImg" source="labaEventUI_json.labaEventUI_click" x="752" y="121.916"/>
+		<e:Image source="monsterRollUI_json.monsterRollUI_slot_light" y="137" horizontalCenter="1"/>
+		<e:Group id="u_slotGrp" width="360" height="140" horizontalCenter="0" y="164"/>
+		<e:Group y="350.83" horizontalCenter="0">
+			<e:Image source="labaEventUI_json.labaEventUI_costBg" y="1.25" visible="true" x="0"/>
+			<e:Label id="u_tipLb" text="需消耗：" x="64.07" y="12.17" size="18" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+			<e:Image id="u_itemIcon" source="commonUI_json.commonUI_icon_2" x="129.92" y="0"/>
+			<e:Label id="u_costLb" text="1000" x="165" y="12.17" size="18" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Image id="u_ruleImg" source="labaEventUI_json.labaEventUI_rule" y="65" horizontalCenter="-3" visible="false" touchEnabled="false" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

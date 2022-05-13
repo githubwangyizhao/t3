@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a2e0a1e1d"/>
+	<e:Image id="u_imgBg" visible="true" horizontalCenter="0"/>
+	<e:Group id="u_mcLeft" x="-122" y="3" visible="true">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_page_di"/>
+		<e:Image id="u_imgBg2" y="48" visible="true" source="passTicketUI_json.passTicketUI_bg2" x="248"/>
+		<e:Image source="passTicketUI_json.passTicketUI_txt_txz" x="267" y="85" visible="true"/>
+		<e:Group x="391" y="68" visible="true">
+			<e:Image source="passTicketUI_json.passTicketUI_level" x="0" y="0" visible="true"/>
+			<e:Label id="u_txtLv" text="100" y="18" size="18" bold="true" visible="true" horizontalCenter="-0.5" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group x="475" y="79" visible="true">
+			<e:Image id="u_imgJinduBg" source="passTicketUI_json.passTicketUI_jindu_1" x="0" y="0" visible="true" width="625" scale9Grid="12,7,11,7"/>
+			<e:Image id="u_imgJindu" source="passTicketUI_json.passTicketUI_jindu_2" x="2" y="2" visible="true" scale9Grid="207,6,207,5"/>
+			<e:Label id="u_txtJindu" text="20/400" size="16" stroke="1" visible="true" y="-21" textColor="0xFFFFFF" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+			<e:Label id="u_txtTime" text="离赛季结束还有" y="29" size="16" visible="true" stroke="1" strokeColor="0x000000" horizontalCenter="0" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group x="248" y="57" width="139">
+			<e:Group id="u_grpSaiJi" y="0" horizontalCenter="0">
+			<e:Image source="passTicketUI_json.passTicketUI_num_d" x="0" y="0" visible="true"/>
+			<e:Image id="u_imgTxtJi" source="passTicketUI_json.passTicketUI_num_j" x="35" y="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_btnTab1" y="92" width="118" height="52" visible="true" x="123">
+			<e:Image id="u_imgSelect1" visible="true" source="passTicketUI_json.passTicketUI_page_1_1" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="u_imgRed1" source="commonUI_json.commonUI_red" x="93" y="5" visible="true" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="u_btnTab2" y="147" width="118" height="52" visible="true" x="123">
+			<e:Image id="u_imgSelect2" visible="true" touchEnabled="false" horizontalCenter="0" verticalCenter="0" source="passTicketUI_json.passTicketUI_page_2_2"/>
+			<e:Image id="u_imgRed2" source="commonUI_json.commonUI_red" x="93" y="5" visible="true" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnReceive" x="994" y="70" width="122" height="46" visible="false">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow" x="0" y="0" visible="true"/>
+		<e:Image source="passTicketUI_json.passTicketUI_txt_jylq" y="12" visible="true" touchEnabled="false" horizontalCenter="-1"/>
+	</e:Group>
+</e:Skin>

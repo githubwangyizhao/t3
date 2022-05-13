@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.SettingPopup"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image visible="true" width="844" height="506" source="commonUI_json.commonUI_img_popdi" scale9Grid="24,80,52,384" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" y="70" horizontalCenter="0"/>
+	<e:Image source="gameSettingUI_json.gameSettingUI_title" y="76" horizontalCenter="0.5"/>
+	<e:Image id="u_btnClose" x="894" y="70" source="commonUI_json.commonUI_btn_close_4" width="93" height="34"/>
+	<e:Image source="commonUI_json.commonUI_line1" x="268" y="103" height="468"/>
+</e:Skin>

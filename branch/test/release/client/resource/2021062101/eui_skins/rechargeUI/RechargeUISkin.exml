@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RechargeUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175fed6d5b5"/>
+	<e:Image y="78.095" visible="true" horizontalCenter="0.5" scale9Grid="26,27,27,27" width="1002.692" height="561.756" anchorOffsetX="0" anchorOffsetY="0" source="rechargeUI_json.rechargeUI_bg"/>
+	<e:Image width="22" height="23" x="390" y="128" source="rechargeUI_json.rechargeUI_icon_th" visible="true"/>
+	<e:Label id="u_txtMsg" text="再充值$8    即可升级至" y="128" size="18" visible="true" wordWrap="true" lineSpacing="10" textAlign="left" bold="true" stroke="2" strokeColor="0xA71C0D" border="false" x="419"/>
+	<e:Group id="u_grpProgress" x="381.197" y="155.902" visible="true" width="413.737">
+		<e:Image width="307" height="20" x="100" visible="true" y="0" scale9Grid="15,8,281,8" source="rechargeUI_json.rechargeUI_jdt1"/>
+		<e:Image id="u_imgJindu" y="0.5" x="102" visible="true" scale9Grid="15,6,277,6" width="23" height="18" source="rechargeUI_json.rechargeUI_jdt2"/>
+		<e:Image visible="true" source="rechargeUI_json.rechargeUI_bg_vip" x="14"/>
+		<e:Label id="u_txtVip" text="VIP15" x="13" y="4" size="18" width="110" height="20" textAlign="center" visible="true" bold="true" stroke="2" strokeColor="0xA71C0D"/>
+		<e:Label id="u_txtProgress" text="0/100" size="14" horizontalCenter="50.13149999999999" visible="true" verticalCenter="-2.5" x="100" width="300" height="13" textAlign="center" italic="true" y="10" stroke="2" strokeColor="0x3A5905"/>
+	</e:Group>
+	<e:Image id="u_btnView" width="162" height="63" x="830" y="120" source="rechargeUI_json.rechargeUI_btn_tq"/>
+	<e:Scroller id="u_scrollerItem" width="620" height="360" y="200" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="136">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group x="92.36" y="575.78" width="946">
+		<e:Image id="u_tipBg" width="291" height="40" x="0" y="0" source="rechargeUI_json.rechargeUI_tbg"/>
+		<e:Label id="u_txtTips" text="实际充值量根据汇率实时波动" y="11.48" size="18" bold="true" textAlign="left" wordWrap="true" lineSpacing="5" visible="true" textColor="0xF0E4B0" x="34.64" multiline="false"/>
+		<e:Image width="22" height="23" x="2.64" y="9.22" source="rechargeUI_json.rechargeUI_icon_th" visible="true"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,11 @@
+npc表,,,,,,,,,
+int|key,str,str,int,int,int,int,str,str,str
+,,,0,,,,,,
+id,sign,name,dialog_id,avatar_id,direction,function_config_id,title_url,set_off_list,beizhu
+"NPC ID","标识","名称","对话id","外观资源id","朝向01234567 0为朝上顺时针","function_config表对应id","npc 头顶连续帧路径 resource/assets/uiEffect/title/","场景相对偏移坐标[x,y]","备注"
+1,,慕容仙子,,1001,4,6,resource/assets/uiEffect/title/1,"[0,15]",爬塔
+2,,青折上仙,,1002,4,7,resource/assets/uiEffect/title/4,"[0,0]",多人boss
+3,,少毅上仙,,1003,4,1501,resource/assets/uiEffect/title/6,"[0,0]",猜一猜
+4,,白龙城将士,,1004,4,1601,resource/assets/uiEffect/title/3,"[0,0]",时时彩
+5,,白辰太子,,1005,4,,,,世界boss
+6,,紫茗,,1006,4,9,resource/assets/uiEffect/title/2,"[0,0]",切换场景

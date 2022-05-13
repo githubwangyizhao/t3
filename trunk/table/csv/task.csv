@@ -1,0 +1,16 @@
+task任务表,,,,,,,,,,,,
+int|key,int,int,str,str,int,int|useless,int,int,int,int|useless,str|useless,int|useless
+,,,,,,1,,,0,,,
+id,next_task,open_main_funcId,content_list,title,icon,init_type,award_id,reward_dialog,click_guide_id,is_auto_finish,jump_scene_list,auto_scene_id
+"任务id","下个任务id","对话完成，是否非主城场景回到主城激活建筑(不能是最后一个任务）","任务内容条件[key,value]","标题","resource\assets\icon\task","初始化类型(0:读取玩家当前值,1:从0开始)","奖励id（读取reward表）","领取任务奖励触发对话","点击前往任务启动引导","是否系统自动完成任务","完成任务跳转场景[scene_id, x, y] | [scene_id]","挂机地图"
+#,,,,,,,,,,,,
+1001,1002,,"[kill_monster_count,10]",击杀10只怪物,1,,60001,1035,,,,
+1002,1003,99004,"[kill_kind_count,2,7]",击杀7只中型怪,2,,60002,1040,,,,
+1003,1004,,"[laba_count,1]",玩1次拉霸,12,,60003,1045,,,,
+1004,1005,99002,"[kill_monster_count,30]",击杀30只怪物,12,,60003,1090,,,,
+1005,1006,,"[attack_shishicai_count,1]",攻击1次斗兽场BOSS,12,,60003,1110,,,,
+1006,1007,,"[laba_count,3]",玩3次拉霸,12,,60003,1230,,,,
+1007,1008,99007,"[kill_kind_count,102,1]",击杀任意一只特性怪,12,,60003,1250,,,,
+1008,1009,,"[wujinduijue_count,1]",玩1次无尽对决,12,,60003,1300,,,,
+1009,1010,99001,"[kill_kind_count,3,10]",击杀10只大型怪物,12,,60003,1330,,,,
+1010,0,,"[level,999]",等级达到999级,12,,60003,,,,,

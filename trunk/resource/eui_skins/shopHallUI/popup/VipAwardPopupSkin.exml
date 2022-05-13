@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="VipAwardPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a17b47b48"/>
+	<e:Image x="-125" y="118.5" visible="true" width="1386" height="400.75" source="shopPopUI_json.shopPopUI_img_popdi"/>
+	<e:Image source="shopPopUI_json.shopPopUI_img_popgua" x="34" y="0.429" visible="true"/>
+	<e:Image visible="true" scaleX="1" scaleY="1" x="412.107" y="-2.782" source="shopHallUI_json.shopHallUI_img_vipicon"/>
+	<e:Group id="u_grpIcon" x="532.275" y="61.158" visible="true" width="72" height="69">
+	</e:Group>
+	<e:Image x="285.024" y="239.98" source="shopPopUI_json.shopPopUI_img_poptit" visible="true"/>
+	<e:Label id="u_txtAward" text="恭喜" y="249.541" fontFamily="Microsoft YaHei" size="20" textColor="0xF0E4B0" textAlign="center" verticalAlign="middle" visible="true" horizontalCenter="2"/>
+	<e:Label id="u_txtContinue" text="点击屏幕继续" x="514.473" y="563.942" textColor="0xA5A5A5" size="18" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle" visible="true"/>
+	<e:Group height="151" y="299.387" horizontalCenter="1.5" visible="true">
+		<e:List id="u_awardList" scaleX="1" scaleY="1" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

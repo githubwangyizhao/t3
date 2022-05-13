@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.FirstRechargeUI"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17805843138"/>
+	<e:Image x="11" y="104" touchEnabled="false" source="firstRechargeBjUI_json.firstRechargeBjUI_img_bg"/>
+	<e:Group id="u_gpRole" width="1136" height="546" x="0" y="0" touchChildren="false" touchEnabled="false" locked="true">
+	</e:Group>
+	<e:Image id="u_mask" source="commonUI_json.commonUI_box" y="0" width="1244" height="546" alpha="0" touchEnabled="false" x="-299"/>
+	<e:Image y="12" x="2" touchEnabled="false" source="firstRechargeBjUI_json.firstRechargeBjUI_img_bg1" visible="true"/>
+	<e:Image source="firstRechargeUI_json.firstRechargeUI_img_text" x="350" y="38" touchEnabled="false"/>
+	<e:Image source="firstRechargeUI_json.firstRechargeUI_item_bj" x="449" y="253" scale9Grid="68,21,408,127" height="280"/>
+	<e:Image source="firstRechargeUI_json.firstRechargeUI_img_name" x="205" y="468"/>
+	<e:Label id="u_txtCloseTips" text="點擊空白處關閉窗口" y="576" horizontalCenter="0" size="16" touchEnabled="false" visible="true" textColor="0x8693A7" fontFamily="Microsoft YaHei"/>
+</e:Skin>

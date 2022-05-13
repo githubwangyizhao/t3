@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightIconRenderSkin"
+	 width="100"
+	height="88" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe809e9b"/>
+</e:Skin>

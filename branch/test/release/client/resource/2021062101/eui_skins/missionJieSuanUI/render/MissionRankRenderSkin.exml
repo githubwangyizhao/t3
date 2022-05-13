@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionRankRenderSkin"
+	 width="300"
+	height="32" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17654de2e63"/>
+	<e:Group id="u_grpRank" x="11" y="0" visible="true" width="35" height="32">
+		<e:Image id="u_imgRank" source="missionJieSuanUI_json.missionJieSuanUI_rank_1" y="0" visible="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_txtName" text="name name name" x="50" y="9" size="16" bold="true" strokeColor="0x2B2626" visible="true" stroke="1" width="160" textAlign="center"/>
+	<e:Label text="999999" x="200" y="7" size="20" bold="true" strokeColor="0x2B2626" visible="true" stroke="1" textAlign="center" id="u_txtSpend" width="100" textColor="0xFF0000"/>
+</e:Skin>

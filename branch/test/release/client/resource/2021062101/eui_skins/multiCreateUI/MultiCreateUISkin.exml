@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiCreateUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1761886ee3d"/>
+	<e:Image y="98" visible="true" source="commonsUI_json.commonUI_box_2" scale9Grid="29,29,30,30" width="584" x="29" height="406"/>
+	<e:Scroller id="u_scrollerItem" width="550" height="260" y="112" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="u_txtLimit" text="Limit: VIP1" x="68" y="400" size="24" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680"/>
+	<e:Label text="Participants: 5" x="271" y="398" size="24" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtPart"/>
+	<e:Label text="Mana cost per participant:  2000" x="68" y="437" size="24" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtMana"/>
+	<e:Image source="commonsUI_json.commonsUI_line2" y="528" horizontalCenter="0"/>
+	<e:Label id="u_txtDesc" text="Description" y="518" size="22" bold="true" textColor="0x38445D" visible="true" horizontalCenter="7"/>
+	<e:Label text="Current VIP2" x="60" y="560" size="24" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtVip" textColor="0xFFD800"/>
+	<e:Label text="The percentage of mana reward for each bureau: 2%" x="60" y="600" size="24" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtPer" width="479" lineSpacing="8" wordWrap="true"/>
+	<e:Image source="commonsUI_json.commonsUI_line" y="686" horizontalCenter="0" scale9Grid="114,1,114,0" width="524" visible="true"/>
+	<e:Label id="u_txtSetPass" text="Set password" y="713" size="24" bold="true" visible="true" x="62" textColor="0x4C5B7B"/>
+	<e:Group id="u_btnGou" x="229" y="708" width="33" height="33" visible="true">
+		<e:Image source="commonsUI_json.commonsUI_gou _di" x="0" y="0" visible="true"/>
+		<e:Image id="u_iconGou" source="commonsUI_json.commonsUI_gou" horizontalCenter="1.5" verticalCenter="-1.5" visible="true"/>
+	</e:Group>
+	<e:Group x="54" y="751">
+		<e:Image source="multiCreateUI_json.multiCreateUI_txt_di" visible="true"/>
+		<e:EditableText id="u_txtInput" anchorOffsetX="0" anchorOffsetY="0" size="24" bold="true" textColor="0x614C4B" promptColor="0x5E7089" width="345" visible="true" horizontalCenter="0" verticalCenter="0" height="47" verticalAlign="middle" multiline="false" maxChars="6"/>
+	</e:Group>
+	<e:Group id="u_btnOK" visible="true" y="843" horizontalCenter="2">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_3" scale9Grid="79,15,1,2" width="200"/>
+		<e:Label id="u_txtOK" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="OK" horizontalCenter="0" visible="true"/>
+	</e:Group>
+</e:Skin>

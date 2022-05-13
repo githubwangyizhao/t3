@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionShishiWinerSkin"
+	 width="410"
+	height="50" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="u_txtName" text="Winning the second prize：XXXX" y="0" size="20" bold="true" visible="true" wordWrap="true" horizontalCenter="0"/>
+	<e:Group y="30" height="20" horizontalCenter="0">
+		<e:Label id="u_txtMana" text="Acquire mana：" y="0" size="20" bold="true" visible="true" wordWrap="true" x="0"/>
+		<e:Image id="u_imgGold" source="commonsUI_json.commonsUI_item_icon" x="140" width="50" height="50" visible="true" y="-15"/>
+		<e:Label id="u_txtCount" text="XXXX" y="0" size="20" bold="true" visible="true" wordWrap="true" x="189" textColor="0xFCFF00"/>
+	</e:Group>
+</e:Skin>

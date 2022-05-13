@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuyPropViewSkin"
+	 width="284"
+	height="478" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" source="shopHallUI_json.shopHallUI_img_nrbg" width="284" height="478"/>
+	<e:Group id="u_grpCoinShop" x="0" y="0">
+		<e:Image source="shopHallUI_json.shopHallUI_img_bt2" height="55" y="0" horizontalCenter="0" scale9Grid="95,18,94,19"/>
+		<e:Group y="14" horizontalCenter="16">
+			<e:Image id="u_imgIcon" source="shopHallUI_json.shopHallUI_icon_sd" x="0"/>
+			<e:Label id="u_txtCoinShop" text="金币商店" y="0" size="18" textAlign="left" verticalAlign="middle" height="28" width="99" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" bold="true" x="37"/>
+		</e:Group>
+	</e:Group>
+	<e:List id="u_propList" height="400" x="10" y="56"/>
+</e:Skin>

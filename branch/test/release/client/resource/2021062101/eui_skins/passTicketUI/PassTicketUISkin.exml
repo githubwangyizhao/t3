@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" source="commonUI_json.commonUI_box_1" scale9Grid="17,17,16,16" width="1136" height="640"/>
+	<e:Image source="commonUI_json.commonUI_icon_bg" y="13" scale9Grid="13,13,14,14" width="1136" height="186"/>
+	<e:Group id="u_grpJindu" visible="true" y="109" horizontalCenter="-35.5">
+		<e:Image x="0" y="0" width="195" visible="true" source="commonUI_json.commonUI_jindu_5" scale9Grid="65,10,65,4"/>
+		<e:Image width="179" id="u_imgJindu" visible="true" source="commonUI_json.commonUI_jindu_6" scale9Grid="49,5,35,4" y="5" x="8"/>
+		<e:Label text="150/500" size="16" stroke="2" visible="true" id="u_txtJindu" textColor="0xF0E4B0" verticalCenter="-2" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image source="commonUI_json.commonUI_btn_close_1" x="665" y="109" scaleX="-1"/>
+	<e:Label id="u_txtNextLv" text="27" x="677" y="108" bold="true"/>
+	<e:Label id="u_txtTime" text="离赛季结束还有" y="165" size="18" bold="true" horizontalCenter="0"/>
+	<e:Label id="u_txtTitle" text="通行证" x="188" y="95" bold="true"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_1" x="27" y="19"/>
+</e:Skin>

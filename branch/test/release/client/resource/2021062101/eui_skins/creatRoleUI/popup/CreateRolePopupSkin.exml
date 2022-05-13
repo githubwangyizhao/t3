@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CreateRolePopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1799d61081e"/>
+	<e:Image source="creatRole_json.creatRoleUI_bj" verticalCenter="0.5" horizontalCenter="92" visible="true" x="38" locked="true"/>
+	<e:Image source="creatRole_json.creatRoleUI_role" x="156" y="83" visible="true" locked="true"/>
+	<e:Label id="u_txtTips" text="name" y="221" size="20" horizontalCenter="163.5" fontFamily="Microsoft JhengHei" x="390" bold="true" textColor="0x6D665C" verticalAlign="middle" textAlign="center"/>
+	<e:Image source="creatRole_json.creatRoleUI_kuang" x="597" y="253" width="268.8" scale9Grid="18,13,17,13"/>
+	<e:Image id="u_btnRandom" source="creatRole_json.creatRoleUI_shaizi" x="825" y="255" width="36" height="37"/>
+	<e:EditableText id="u_txtName" width="223" height="35" text="zzzzzzzzzzzz" y="256" size="24" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" bold="true" x="602"/>
+	<e:Label id="u_txtSex" text="性别：" y="328" size="20" fontFamily="Microsoft YaHei" textColor="0x6D665C" bold="true" right="479" textAlign="right"/>
+	<e:Group id="u_btnMan" x="659.5" y="314">
+		<e:Image id="u_imgMan" source="creatRole_json.creatRoleUI_nan" x="0" y="3"/>
+		<e:Image source="creatRole_json.creatRoleUI_gou_bj" x="47.5" y="5.500000000000057" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgBoy" source="creatRole_json.creatRoleUI_gou" x="48" y="0"/>
+	</e:Group>
+	<e:Group id="u_btnWonman" x="755.5" y="314">
+		<e:Image id="u_imgWonman" source="creatRole_json.creatRoleUI_nv" x="0" y="3"/>
+		<e:Image source="creatRole_json.creatRoleUI_gou_bj" x="46.5" y="5.500000000000057" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgGirl" source="creatRole_json.creatRoleUI_gou" x="48" y="0"/>
+	</e:Group>
+	<e:Image id="u_btnSure" source="creatRole_json.creatRoleUI_btn" x="642" y="378"/>
+</e:Skin>

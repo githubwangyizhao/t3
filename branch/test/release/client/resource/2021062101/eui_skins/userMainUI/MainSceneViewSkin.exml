@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainSceneViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17945e7a962"/>
+	<e:Image id="u_imgBg" visible="true"/>
+	<e:Image id="u_imgScrollBg" x="0" y="475" scale9Grid="24,14,362,85" width="485" height="113" visible="true"/>
+	<e:Group id="u_mcRightInfo" x="575" y="48">
+		<e:Group id="u_btnScene" x="135" y="94" width="360" height="114">
+			<e:Image x="6.817" y="-38.897" visible="true" source="sceneMainUI_json.sceneMainUI_btn_zz_bg"/>
+			<e:Image x="38.97" y="1.752" source="sceneMainUI_json.sceneMainUI_img_zz" visible="true"/>
+		</e:Group>
+		<e:Group id="u_btnChooseSix" x="137" y="221" width="171" height="114">
+			<e:Image x="-54.135" y="-20.852" visible="true" source="sceneMainUI_json.sceneMainUI_btn_jdc_bg"/>
+			<e:Image x="-36.942" y="56.694" source="sceneMainUI_json.sceneMainUI_img_jdc"/>
+		</e:Group>
+		<e:Group id="u_btnMultiplayer" x="326" y="221" width="171" height="114">
+			<e:Image x="-32.882" y="-20.852" visible="true" source="sceneMainUI_json.sceneMainUI_btn_dr_bg"/>
+			<e:Image x="-14.466" y="58.308" source="sceneMainUI_json.sceneMainUI_img_yj"/>
+		</e:Group>
+		<e:Group id="u_btnQuickOpen" x="135" y="346" width="360" height="114">
+			<e:Image x="46.917" y="2.406" visible="true" source="sceneMainUI_json.sceneMainUI_btn_ks_bg"/>
+			<e:Image x="143.11" y="41.852" source="sceneMainUI_json.sceneMainUI_img_ksks"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpAvatar" visible="true" width="284.927" height="103.103">
+		<e:Image id="u_btnSet" anchorOffsetX="0" width="71.2" anchorOffsetY="0" height="75.8" source="commonUI_box" scale9Grid="1,1,8,8" alpha="0" visible="true" x="11.4" y="11.59" scaleX="1" scaleY="1"/>
+		<e:Label id="u_txtName" text="S.000" y="13.268" size="16" textAlign="left" x="96.268" textColor="0xfff6d3" visible="true" strokeColor="0x168702" scaleX="1" scaleY="1"/>
+		<e:Image x="92.778" y="37.632" visible="true" source="sceneMainUI_json.sceneMainUI_img_jd1"/>
+		<e:Image id="u_imgExp" x="101.656" y="42.634" visible="true" scaleX="1" scaleY="1" source="sceneMainUI_json.sceneMainUI_img_jd2" width="167"/>
+		<e:Image id="u_imgSex" source="commonUI_json.commonUI_sex_0" x="-2" y="-2" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image id="u_btnVip" anchorOffsetX="0" width="99.2" anchorOffsetY="0" height="23.8" source="commonUI_box" scale9Grid="1,1,8,8" alpha="0" x="76" y="26" scaleX="1" scaleY="1" visible="false"/>
+	</e:Group>
+	<e:Group id="u_grpBottom" y="556.33" visible="true" x="0.396">
+		<e:Image id="u_imgBottom" anchorOffsetX="0" width="1136" source="sceneMainUI_json.sceneMainUI_navBg" horizontalCenter="0" visible="true" y="0.524"/>
+		<e:Group id="u_btnEntrance1" y="14.925" height="68" visible="true" width="187" name="u_btnEntrance1" touchChildren="false">
+			<e:Group id="u_grpIcon1" width="36" height="36" x="77" y="17" scaleX="1" scaleY="1">
+				<e:Image source="userMainUI_json.userMainUI_d_btn_1" visible="true" scaleX="1" scaleY="1" y="0" width="36"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_btnEntrance2" x="190.405" y="14.663" height="68" width="187" name="u_btnEntrance2" touchChildren="false">
+			<e:Group id="u_grpIcon2" width="36" height="36" x="75" y="18" scaleX="1" scaleY="1">
+				<e:Image x="0.2459999999999809" source="userMainUI_json.userMainUI_d_btn_2" y="0" width="36" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_btnEntrance3" height="68" x="378.487" y="14.663" width="187" name="u_btnEntrance3" touchChildren="false">
+			<e:Group id="u_grpIcon3" width="36" height="36" x="75" y="18" scaleX="1" scaleY="1">
+				<e:Image x="1.9099999999999682" y="0" source="userMainUI_json.userMainUI_d_btn_3" width="36" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_btnEntrance4" height="68" x="568.383" y="14.663" width="187" name="u_btnEntrance4" touchChildren="false">
+			<e:Group id="u_grpIcon4" width="36" height="36" x="75" y="18" scaleX="1" scaleY="1">
+				<e:Image x="0.010999999999967258" y="0" width="36" source="userMainUI_json.userMainUI_d_btn_4" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_btnEntrance5" height="68" x="757.016" y="14.663" width="187" name="u_btnEntrance5" touchChildren="false">
+			<e:Group id="u_grpIcon5" x="75" y="18" width="36" height="36">
+				<e:Image y="0" x="0" width="36" source="userMainUI_json.userMainUI_d_btn_5" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_btnEntrance6" height="68" x="947.642" y="14.663" width="187" name="u_btnEntrance6" touchChildren="false">
+			<e:Group id="u_grpIcon6" width="36" height="36" x="85" y="28" scaleX="1" scaleY="1">
+				<e:Image x="-10" y="-10" scaleX="1" scaleY="1" width="36" source="userMainUI_json.userMainUI_d_btn_6"/>
+			</e:Group>
+		</e:Group>
+		<e:Image id="u_imgLine1" source="sceneMainUI_json.sceneMainUI_nav_line" x="187.764" y="25.291" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgLine2" source="sceneMainUI_json.sceneMainUI_nav_line" x="375.861" y="25.291" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgLine3" source="sceneMainUI_json.sceneMainUI_nav_line" x="566" y="25.291" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgLine4" source="sceneMainUI_json.sceneMainUI_nav_line" x="754.521" y="25.291" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgLine5" source="sceneMainUI_json.sceneMainUI_nav_line" x="944.75" scaleX="1" scaleY="1" y="25.291"/>
+		<e:Image id="u_imgLight" source="sceneMainUI_json.sceneMainUI_img_select" y="14.401" anchorOffsetX="0" x="0" touchEnabled="false" visible="false" scaleY="1" anchorOffsetY="0"/>
+	</e:Group>
+</e:Skin>

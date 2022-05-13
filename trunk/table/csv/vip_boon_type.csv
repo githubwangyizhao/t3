@@ -1,0 +1,8 @@
+vip_boon_typeVIP特权类型表,,,,,
+int|key,str,str,str,int,int
+,,,,,
+id,name,sign,desc,is_tequan,rank
+"编号id","名字","标识","备注","是否特权","排序（从小到大）"
+10,特权：每月增加免费补签次数,buqian_number,,1,
+15,特权：签到奖励双倍领取,qiandaoshuangbei,,1,
+16,特权：金砖商城次数,goods_shop_times,,,

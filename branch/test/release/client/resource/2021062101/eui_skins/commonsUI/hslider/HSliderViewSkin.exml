@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HSliderViewSkin"
+	 width="375"
+	height="20" xmlns:e="http://ns.egret.com/eui">
+	<e:Group verticalCenter="0">
+		<e:Image x="0" width="375" scale9Grid="5,5,10,10" verticalCenter="0" source="gameSettingUI_json.gameSettingUI_slideBg"/>
+		<e:Image id="u_imgHighlight" width="375" visible="true" scale9Grid="5,5,10,10" verticalCenter="0" source="gameSettingUI_json.gameSettingUI_slideValue"/>
+	</e:Group>
+	<e:Image id="u_btnThumb" anchorOffsetX="10" visible="true" width="52" x="6" verticalCenter="2" source="gameSettingUI_json.gameSettingUI_thumb"/>
+</e:Skin>

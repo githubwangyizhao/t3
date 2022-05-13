@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HpHeadSkin" width="300" height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a60eb6301" width="231" x="35"/>
+	<e:Image source="commonUI_json.commonUI_jindu_1" y="5" scale9Grid="13,8,7,2" width="227" x="37"/>
+	<e:Image id="u_imgHp" source="commonUI_json.commonUI_jindu_2" x="40" y="7" scale9Grid="10,6,6,2" width="220"/>
+	<e:Label id="u_txtHp" size="15" anchorOffsetX="0" wordWrap="false" multiline="false" visible="true" scaleX="1" scaleY="1" strokeColor="0x161616" y="5" text="854814848" fontFamily="Microsoft YaHei" textColor="0xffffff" stroke="2" x="110"/>
+</e:Skin>

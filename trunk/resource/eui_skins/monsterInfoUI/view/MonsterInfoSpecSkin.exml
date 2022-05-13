@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoSpecSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17987fc8d56"/>
+	<e:Scroller id="u_scrollSpec" width="812" height="463" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="222" y="106">
+		<e:List id="u_pescList" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0" scaleX="1" scaleY="1"/>
+	</e:Scroller>
+</e:Skin>

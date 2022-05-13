@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TurnRewardSkin"
+	 width="357"
+	height="250" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_grpItem" x="0" y="0">
+		<e:Image id="u_imgTitle" source="turntableUI_json.turntableUI_title" x="0" y="0"/>
+		<e:Image id="u_item" width="86" height="86" y="164" horizontalCenter="2.5"/>
+	</e:Group>
+</e:Skin>

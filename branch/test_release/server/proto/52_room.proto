@@ -1,0 +1,102 @@
+// 帧同步房间
+
+import "01_player.proto";
+
+message RoomInfo{
+    required int32 room_id = 1;                  // 房间id
+    repeated ModelHeadFigure player_list = 2;   // 玩家信息列表
+}
+
+message RoomRankInfo{
+    required int32 rank = 1;                                // 排行
+    required ModelHeadFigure model_head_figure = 2;         // 玩家信息
+    required int32 value = 3;
+}
+
+// 获取房间列表
+message m_get_room_list_tos{
+    required int32 type = 1;            // 房间类型
+}
+message m_get_room_list_toc{
+    required int32 type = 1;
+    repeated RoomInfo room_list = 2;        // 房间信息列表
+    repeated RoomRankInfo rank_list = 3;    // 排行榜信息列表
+    required int32 my_score = 4;            // 我的胜场数
+}
+
+// 离开房间列表
+message m_leave_room_list_tos{
+}
+
+// 房间列表变更通知
+message m_notice_room_list_change_toc{
+    required int32 type = 1;
+    repeated RoomInfo room_list = 2;      // 变更的房间列表
+}
+
+// 进入房间
+message m_enter_room_tos{
+    required int32 type = 1;            // 房间类型
+    required int32 room_id = 2;          // 房间id
+}
+message m_enter_room_toc{
+     enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+        member_full = 4;                                    // 人数已满
+     }
+     required ENUM result = 1;
+}
+
+// 离开房间（房间开始前有效）
+message m_leave_room_tos{
+}
+
+// 通知房间开始
+message m_notice_room_start_toc{
+    required int32 type = 1;                    // 房间类型
+    required int32 roomid = 2;                  // 房间id
+    required int32 seed = 3;                    // 随机种子
+    repeated ModelHeadFigure player_list = 4;   // 玩家信息列表
+    repeated int32 ready_list = 5;              // 完成准备的玩家id列表
+    required uint64 endTime = 6;                // 玩家准备阶段结束时间戳（毫秒）
+    required int32 index = 7;                   // 玩家在帧数据数组中的索引位置
+}
+
+// 通知战斗开始
+message m_notice_fighting_toc{
+    required uint64 endTime = 1;                // 战斗结束时间戳（毫秒）
+}
+
+// 准备就绪
+message m_ready_tos{
+}
+
+// 通知玩家完成准备
+message m_notice_player_ready_toc{
+    required int32 playerid = 1;                // 玩家id
+}
+
+// 更新客户端操作
+message m_add_frame_action_tos{
+    required int32 action = 1;                  // 帧动作
+}
+
+// 同步帧数据
+message m_push_frame_info_toc{
+    message frameInfo{
+        required int32 frame = 1;                // 帧id
+        repeated int32 actions = 2;              // 帧操作列表[玩家1动作，玩家2动作，...]
+    }
+
+    repeated frameInfo frameDatas = 1;           // 帧数据列表
+}
+
+// 战斗结果上报
+message m_fight_result_tos{
+    required int32 winner = 1;                  // 获胜者玩家id
+}
+message m_fight_result_toc{
+    required int32 winner = 1;
+}

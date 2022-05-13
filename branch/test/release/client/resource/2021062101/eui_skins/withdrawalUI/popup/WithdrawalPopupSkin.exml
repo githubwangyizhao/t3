@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WithdrawalPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="178ca42c496"/>
+	<e:Image id="u_imgBg" source="recycleUI_json.recycleUI_bg1" width="660" height="1156" scale9Grid="12,12,11,11" visible="true" x="-10" y="-10"/>
+	<e:Image id="u_imgBg2" source="recycleUI_json.recycleUI_bg" y="240" visible="true" scale9Grid="100,58,100,4" width="720" height="910" x="-40"/>
+	<e:Label id="u_txtTitle" text="Withdraw" y="35" bold="true" horizontalCenter="0"/>
+	<e:Group id="u_btnRecord" y="37" right="22" width="90" height="30">
+		<e:Label id="u_txtHistory" text="History" size="26" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label text="You have" y="121" id="u_txtHave" size="26" horizontalCenter="0"/>
+	<e:Group y="155" horizontalCenter="-7.5">
+		<e:Label id="u_txtIcon" text="$" x="0" y="16" visible="true" size="28" bold="true"/>
+		<e:Label id="u_txtMoney" text="0.66" x="17" y="0" bold="true" size="50" visible="true"/>
+	</e:Group>
+	<e:Label id="u_txtTimes" text="VIP1 Residue degree: 1" y="264" size="26" bold="true" horizontalCenter="0" textColor="0x5ABEFC"/>
+	<e:Scroller id="u_scrollerItem" width="600" height="650" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="305" horizontalCenter="0">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+	<e:Group id="u_btnRecycle" visible="true" y="996" x="80" width="480" height="80">
+		<e:Image y="0" visible="true" x="0" source="recycleUI_json.recycleUI_btn_1" scale9Grid="45,22,45,21" width="480"/>
+		<e:Label id="u_txtRecycle" text="Withdraw" bold="true" size="26" textColor="0xFFFFFF" verticalCenter="0" visible="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image id="u_btnClose" y="27" source="recycleUI_json.recycleUI_arrow1" width="30" height="40" x="12"/>
+</e:Skin>

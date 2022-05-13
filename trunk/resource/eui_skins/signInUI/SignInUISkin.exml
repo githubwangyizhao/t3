@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SignInUISkin"
+	 width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17603d75c7b"/>
+	<e:Image id="u_imgbg" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group id="u_grpRole" visible="true"/>
+	<e:Image id="u_imgbg2" visible="true" touchEnabled="false" horizontalCenter="0" y="0" source=""/>
+	<e:Image id="u_imglistbg" source="signInUI_json.signInUI_listbg" x="420" y="158" visible="true"/>
+	<e:Image id="u_imgsititBg" source="signInUI_json.signInUI_title" x="352" y="29" visible="true"/>
+	<e:Scroller id="u_scrollerItem" width="552" height="430" y="164" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="539">
+			<e:List id="u_listItem"/>
+	</e:Scroller>
+</e:Skin>

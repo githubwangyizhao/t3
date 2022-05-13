@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuyGradePopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17c2690aa3f"/>
+	<e:Image id="u_imgBg" horizontalCenter="33.5" source="buyGradeUI_json.buyGradeUI_img_bg" visible="true" y="64.12"/>
+	<e:Image id="u_imgIcon" y="-6.757" visible="true" scaleX="1" scaleY="1" x="11.5" source="buyGradeUI_json.buyGradeUI_img_role_1"/>
+	<e:Group id="u_btnBuy" y="396.243" visible="true" horizontalCenter="97" width="214" height="67">
+		<e:Image y="4" scaleX="1" scaleY="1" visible="true" source="buyGradeUI_json.buyGradeUI_btn_buy" horizontalCenter="0"/>
+		<e:Image id="u_imgBuy" source="buyGradeUI_json.buyGradeUI_img_buy" x="120.94" y="23"/>
+		<ns1:NumberView id="u_numPrice" width="69" height="28" y="22.697" x="76.909"/>
+	</e:Group>
+	<e:Image id="u_imgTitle" source="buyGradeUI_json.buyGradeUI_img_title_1" x="398" y="76.353" visible="true"/>
+	<e:Label id="u_txtOriginal" text="Label" x="541.666" y="351.394" size="18" stroke="1" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_txtNow" text="Label" x="666.061" y="351.394" size="18" stroke="1" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+	<e:Group y="506.759" horizontalCenter="0" touchEnabled="false" touchChildren="false">
+		<e:Label id="u_textTip" text="点击空白关闭窗口" horizontalCenter="0" size="18" textColor="0x8693A7" stroke="1" visible="true" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

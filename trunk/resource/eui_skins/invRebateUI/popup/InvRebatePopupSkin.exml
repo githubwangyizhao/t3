@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="InvRebatePopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="115" visible="true" source="invRebatePopUI_json.invRebatePopUI_img_popdi" x="-122" width="1380" height="412"/>
+	<e:Image source="invRebatePopUI_json.invRebatePopUI_title" x="355" y="61" visible="true"/>
+	<e:Image source="invRebatePopUI_json.invRebatePopUI_title_bg" y="25" horizontalCenter="-0.5"/>
+	<e:Label id="u_txtContinue" text="点击空白处关闭" y="547.5" textColor="0xA5A5A5" size="18" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle" x="506"/>
+	<e:Group id="u_grpContent" y="260" visible="true" width="250" horizontalCenter="-1">
+	</e:Group>
+</e:Skin>

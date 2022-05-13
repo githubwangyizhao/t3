@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SevenDaysRenderSkin"
+	 width="103"
+	height="158" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBg" visible="true" horizontalCenter="0" bottom="0" source="sevenDaysUI_json.sevenDaysUI_tab"/>
+	<e:Image id="u_bgSelect" width="105" height="149" y="0" visible="false" horizontalCenter="0" source="sevenDaysUI_json.sevenDaysUI_tab1"/>
+	<e:Group id="u_contentGrp" y="22" horizontalCenter="0.5" height="120" width="80" visible="true">
+		<e:Label id="u_txtDay" size="18" text="Day 7" y="0" stroke="2" visible="true" textColor="0xFFF6BB" strokeColor="0x885A3C" textAlign="center" horizontalCenter="0"/>
+		<e:Label id="u_awardLb" text="1000" y="25" size="20" textAlign="center" horizontalCenter="-0.5" textColor="0xF0E4B0"/>
+		<e:Image width="70" height="70" x="4" y="53"/>
+	</e:Group>
+	<e:Image id="u_imgReceived" y="55" horizontalCenter="0" width="90" height="71" source="sevenDaysUI_json.sevenDaysUI_received" visible="false" touchEnabled="false"/>
+</e:Skin>

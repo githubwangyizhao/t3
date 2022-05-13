@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoEventRenderSkin"
+	 width="875"
+	height="130" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798cfe74d4"/>
+	<e:Image id="u_imgBg" width="875" height="130" x="0" y="0"/>
+	<e:Image id="u_imgEventName" x="193" y="43"/>
+	<e:Label id="u_txtEventDesc" text="desc" x="386" y="26" width="465" height="79" fontFamily="SimSun" size="16" textAlign="left" lineSpacing="5" textColor="0xF0E4B0"/>
+</e:Skin>

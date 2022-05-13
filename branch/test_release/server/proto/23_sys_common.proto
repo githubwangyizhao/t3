@@ -1,0 +1,30 @@
+// 公共系统
+
+// 公共系统数据
+message sysCommonData {
+    required int32 id = 1;  // id
+    required int32 state = 2;  // 状态（0：未装备，1：已装备）
+}
+
+// 改变状态
+message m_change_state_tos {
+    required int32 id = 1;  // id
+}
+// 改变状态
+message m_change_state_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        function_no_open = 3;   //功能未开启
+        already_have = 4;//已经穿戴
+        none = 5;//未激活
+        need_level = 6;//玩家等级不足
+    }
+    required ENUM result = 1;
+    required int32 id = 2;  // id
+}
+
+// 通知公共系统数据变更
+message m_notice_sys_common_toc {
+    repeated sysCommonData sysCommonDataList = 1;  // 公共系统数据
+}

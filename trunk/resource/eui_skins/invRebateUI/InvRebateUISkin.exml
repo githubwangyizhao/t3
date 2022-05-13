@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="InvRebateUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b09d83d2d"/>
+	<e:Image source="invRebateUI_json.invRebateUI_img_rightdi" x="-0.476" y="33.174" scale9Grid="179,49,178,49" visible="true"/>
+	<e:Image source="invRebateUI_json.invRebateUI_img_tit" x="595.92" y="35.863" visible="true"/>
+	<e:Image id="u_imgMask" width="284" height="552" x="5" y="34" source="commonUI_json.commonUI_box" alpha="0"/>
+	<e:Scroller id="u_itemScroll" width="504" height="311" x="531.18" y="175.958" visible="true">
+		<e:List id="u_itemList"/>
+	</e:Scroller>
+	<e:Group id="u_btnBuy" x="679.262" y="488.341" visible="true" width="224" height="73" touchChildren="false">
+		<e:Image source="invRebateUI_json.invRebateUI_img_buy"/>
+	</e:Group>
+	<e:Label id="u_txtClose" text="点击空白处关闭窗口" x="526.08" y="590.096" size="16" visible="true" fontFamily="Microsoft YaHei" textColor="0x7A8799" touchEnabled="false"/>
+</e:Skin>

@@ -1,0 +1,41 @@
+// 转盘抽奖
+//OPEN_DEBUG
+
+import "05_prop.proto";
+
+// 抽奖
+message m_draw_tos {
+    required int32 times = 1;               // 抽奖次数
+}
+message m_draw_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        function_no_open = 3;               // 功能未开启
+        not_enough_grid = 4;                // 没有空格子
+        no_enough_prop = 5;                 // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 times = 1;               // 抽奖次数
+    repeated int32 id_list = 2;             // 抽到的id列表
+    required int32 value = 3;               // 抽奖进度值
+}
+
+// 领取进度奖励奖励
+message m_get_award_tos {
+}
+message m_get_award_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        function_no_open = 3;               // 功能未开启
+        not_enough_grid = 4;                // 没有空格子
+        not_authority = 5;                  // 进度值不足
+    }
+    required ENUM result = 99;
+    repeated Prop prop_list = 1;            // 奖励列表
+}
+
+// 通知进度重置
+message m_notice_reset_toc {
+}

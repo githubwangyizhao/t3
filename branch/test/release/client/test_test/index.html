@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html manifest="IGNORE.manifest">
+
+<head>
+	<!--禁止缓存-->
+	<meta http-equiv="Pragma" CONTENT="no-cache"> 
+	<meta http-equiv="Cache-Control" CONTENT="no-cache"> 
+	<meta HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+	<meta http-equiv="Expires" CONTENT="0">
+	<meta http-equiv="cache" content="no-cache">
+	<!--禁止缓存-->
+
+    <meta charset="utf-8">
+    <title>一个好玩的游戏</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+		.loadingDiv{
+			height: 100vh;
+			width: calc(100vh * 976 / 1386);
+			background: url("index_res/index_bg.jpg") no-repeat center center;
+			background-size: 100% auto;
+			position: absolute;
+			top: 0;
+			left:calc((100vw - 100vh * 976 / 1386)/2);
+		}
+		.loadinglinebg {
+			height: 22px;
+			width: 100%;
+			background: url("index_res/index_loading_line_bg.png") no-repeat center center;
+			position: absolute;
+			bottom: 6%;
+		}
+		.loadingline {
+			height: 12px;
+			width: 0%;
+			background: url("index_res/index_loading_line.png") no-repeat center center;
+			position: absolute;
+			bottom: 22%;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="loadingDiv" class="loadingDiv">
+		<div id="loadinglinebg" class="loadinglinebg">
+            <div id="loadingline" class="loadingline">
+            </div>
+        </div>
+	</div>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="landscapeFlipped"
+         data-scale-mode="fixedHeight"
+         data-frame-rate="60"
+         data-content-width="1136"
+         data-content-height="640"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+<!--fixedWidth 手机模式  fixedNarrow PS模式 -->	
+<script type="text/javascript" src="js/yfhdManer.js"></script>
+</body>
+</html>

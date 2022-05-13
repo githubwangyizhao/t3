@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DrawCardSummonPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179ab84d0d5"/>
+	<e:Label id="u_txtSummonTitle" text="您獲得了" y="70" size="24" textColor="0xF0E6B0" bold="true" horizontalCenter="0"/>
+	<e:Image source="drawCardUI_json.drawCardUI_summon_line" y="120" width="1380" scale9Grid="0,0,1,2" horizontalCenter="0"/>
+	<e:Image source="drawCardUI_json.drawCardUI_summon_bg" y="122" horizontalCenter="0"/>
+	<e:Image source="drawCardUI_json.drawCardUI_summon_line" y="522" width="1380" scale9Grid="0,0,1,2" horizontalCenter="0"/>
+	<e:Scroller id="u_scrollerItem" width="140" height="210" y="217" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0">
+		<e:Group>
+		<e:List id="u_listItem"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group width="188" height="68" y="534" visible="true" horizontalCenter="-160">
+		<e:Image id="u_btnDraw" x="0" y="0" visible="true" source="drawCardUI_json.drawCardUI_btn_1" scaleX="1" scaleY="1"/>
+		<e:Label id="u_txtDraw" text="召喚 1 次" size="20" textColor="0xFFF7D2" bold="true" horizontalCenter="0" verticalCenter="-2" visible="true" touchEnabled="false"/>
+	</e:Group>
+	<e:Image id="u_imgUnit" x="374.383" y="604.5" visible="true" source="commonUI_icon_juan" width="20" height="20"/>
+	<e:Label id="u_txtPrice" text="100" x="400.883" y="607" size="16" fontFamily="Microsoft YaHei" visible="true" textColor="0xF0E4B0" stroke="2"/>
+	<e:Group width="188" height="68" y="534" visible="true" horizontalCenter="169" x="324">
+		<e:Image id="u_btnClose" x="0" y="0" visible="true" scaleX="1" scaleY="1" source="drawCardUI_json.drawCardUI_btn_2" touchEnabled="true"/>
+		<e:Label id="u_txtClose" text="完成" size="20" textColor="0xFFF7D2" bold="true" horizontalCenter="0" verticalCenter="-2" visible="true" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

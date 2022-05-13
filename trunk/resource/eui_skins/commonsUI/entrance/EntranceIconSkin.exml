@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EntranceIconSkin" width="80" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17660548cb7" x="8" y="6"/>
+	<e:Image id="u_imgIcon" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="u_txtDesc" text="" y="75" anchorOffsetX="0" multiline="false" size="14" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="0" textColor="0x00ff03" stroke="1" strokeColor="0x232323" touchEnabled="false" fontFamily="Microsoft YaHei"/>
+	<e:Image id="u_imgName" y="68" horizontalCenter="0" touchEnabled="false" source="" locked="true" visible="false"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" scale9Grid="1,1,8,8" width="80" anchorOffsetY="0" height="80" alpha="0" name="namcClick" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

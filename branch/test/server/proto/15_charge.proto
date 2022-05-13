@@ -1,0 +1,60 @@
+// 充值数据
+
+// 充值请求数据
+message ChargeRequestData {
+    required string key = 1;    // 参数
+    required string value = 2; // 值
+}
+
+message chargeTypeData {
+    required int32 idx = 1; // 支付方式编号
+    required string name = 2; // 支付方式名称
+}
+
+// 通知是否开启充值状态
+message m_notice_is_open_charge_toc {
+    required int32 is_open = 1;     // 是否开启1:为开启
+}
+
+// 充值
+message m_charge_tos {
+    required int32 item_id = 3;             // 购买物品id
+    required int32 count = 4;               // 物品数量
+    optional int32 charge_type_idx = 5;     // 支付方式，可选，现阶段只有台湾才有，其他平台没有
+}
+// 充值
+message m_charge_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 7;      // 没权限购买
+        no_enough_prop = 8;     // 道具不足(平台需要返回者ChargeRequestData 时使用)
+        already_have = 9;       // 存在订单
+        times_limit = 10;       // 购买次数限制
+    }
+    required ENUM result = 1;
+    required int32 item_id = 3;             // 购买物品id
+    required int32 count = 4;               // 物品数量
+    required float charge_value = 5;        // 需要充值的值   道具不足时，元宝数有效
+    repeated ChargeRequestData charge_request_data = 6;    // 请求充值数据
+    optional int32 charge_type_idx = 7;     // 支付方式，可选，现阶段只有台湾才有，其他平台没有
+}
+
+// 通知充值成功后的数据
+message m_notice_charge_data_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        refuse = 3;      // 拒绝支付
+    }
+    required ENUM result = 1;
+    required int32 item_id = 3;             // 购买物品id
+    required int32 count = 4;               // 物品数量
+}
+
+message m_get_charge_type_tos {
+}
+message m_get_charge_type_toc {
+    required int32 status = 1; // 状态：1为获取成功；2为获取失败
+    repeated chargeTypeData charge_type_data = 2; // 支付方式
+}

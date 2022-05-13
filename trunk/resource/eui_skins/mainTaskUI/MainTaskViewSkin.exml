@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainTaskViewSkin"
+	 width="326"
+	height="52" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c158a232e"/>
+	<e:Group id="u_mcContent" visible="true">
+		<e:Image id="u_imgBg" y="0" visible="true" x="0" source="taskBountyUI_json.taskBountyUI_bg2" scale9Grid="65,17,117,18"/>
+		<e:Group id="u_btnClick" x="60" y="10">
+			<e:Label id="u_txtTitle1" text="任务:" size="14" visible="true" fontFamily="Microsoft YaHei" textColor="0xEAF1F9" stroke="1" y="-1"/>
+			<e:Label text="任描述任描述任描述任述任" id="u_txtMsg" size="14" visible="true" stroke="1" fontFamily="Microsoft YaHei" textColor="0xEAF1F9" x="38" y="-1"/>
+			<e:Label id="u_txtTitle2" text="奖励:" size="14" visible="true" fontFamily="Microsoft YaHei" y="18" textColor="0xF0E4B0" stroke="1"/>
+			<e:Group id="u_grpReward1" x="38" y="8">
+				<e:Image id="u_itemIcon1" source="commonUI_json.commonUI_icon_4" x="0" y="0" width="30" height="30" visible="true"/>
+				<e:Label id="u_txtNum1" text="9999" size="14" visible="true" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" x="31" stroke="1" verticalCenter="1"/>
+			</e:Group>
+			<e:Group id="u_grpReward2" x="119" y="8">
+				<e:Image source="commonUI_json.commonUI_icon_4" x="0" y="0" width="30" height="30" visible="true" id="u_itemIcon2"/>
+				<e:Label id="u_txtNum2" text="9999" size="14" visible="true" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" x="31" stroke="1" verticalCenter="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" y="3" left="43"/>
+		<e:Label id="u_txtFuncDesc" text="任务描述" size="14" visible="false" bold="true" fontFamily="Microsoft YaHei" y="10" stroke="1" x="259" textColor="0xB1ABAB"/>
+	</e:Group>
+</e:Skin>

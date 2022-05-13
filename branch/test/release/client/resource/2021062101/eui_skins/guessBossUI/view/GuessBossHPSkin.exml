@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessBossHPSkin"
+	 width="206"
+	height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1777fbe3caa"/>
+	<e:Group x="0" y="40">
+		<e:Image source="commonsUI_json.commonsUI_jindu_3" scale9Grid="138,12,139,13" width="206" height="22" visible="true" y="0" x="0"/>
+		<e:Image id="u_hpLineimg" width="174" height="12" visible="true" y="3" source="commonsUI_json.commonsUI_jindu_8" scale9Grid="11,10,351,3" x="18"/>
+		<e:Image id="u_hpimg" width="174" visible="true" y="3" x="18" scale9Grid="11,10,351,3" source="commonsUI_json.commonsUI_jindu_2" height="12"/>
+	</e:Group>
+	<e:Group y="60" horizontalCenter="0">
+		<e:Image x="0" y="0" visible="true" source="guessInsideUI_json.guessInsideUI_boss_title"/>
+		<e:Image id="u_imgBossId" x="77" y="0" visible="true" source="guessInsideUI_json.guessInsideUI_boss_1"/>
+	</e:Group>
+	<e:Group id="u_grpTotal" y="0" scaleX="0.8" scaleY="0.8" horizontalCenter="0">
+		<e:Image id="u_imgIcon" source="commonsUI_json.commonsUI_item_icon" x="0" y="0" width="45" height="45"/>
+		<e:Image x="47" visible="true" verticalCenter="0" source="guessInsideUI_json.guessInsideUI_cost_m"/>
+	</e:Group>
+</e:Skin>

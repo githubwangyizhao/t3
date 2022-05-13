@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardTitieViewSkin"
+	 width="849"
+	height="92" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="cardBookUI_json.cardBookUI_title_bg2" x="0" y="15" visible="true"/>
+	<e:Image id="u_imgTitle" x="34" y="15" visible="true"/>
+	<e:Label id="u_txtName" text="沼泽妖迹" x="52" y="27" size="20" bold="true" stroke="2" textColor="0xF0E4B0" visible="true"/>
+	<e:Image id="u_imgArrow" source="cardBookUI_json.cardBookUI_arrow" anchorOffsetX="6.5" anchorOffsetY="3" x="424.5" y="76.5" scaleY="-1"/>
+	<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="39" y="18" visible="true"/>
+	<e:Group x="314" y="26">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_jindu_1" width="355" height="19" scale9Grid="11,7,10,4"/>
+		<e:Image id="u_jindu" source="commonUI_json.commonUI_jindu_2" width="28" height="15" x="2" verticalCenter="0" scale9Grid="5,5,18,4"/>
+		<e:Label id="u_txtJindu" text="5/16" size="18" bold="true" stroke="2" visible="true" horizontalCenter="0" verticalCenter="0" textColor="0xF0E4B0"/>
+	</e:Group>
+	<e:Image id="u_btnShow" source="commonUI_json.commonUI_box" alpha="0" scale9Grid="3,3,4,4" width="849" height="92" horizontalCenter="0" visible="true"/>
+	<e:Image id="u_imgEff" source="cardBookUI_json.cardBookUI_reward_di" x="695" y="0" visible="true"/>
+	<e:Image id="u_btnReward" source="cardBookUI_json.cardBookUI_reward" x="706" y="8" visible="true"/>
+	<e:Group id="u_mcContent" width="800" y="85" horizontalCenter="0" visible="true">
+		<e:Image id="u_mcBg" source="cardBookUI_json.cardBookUI_box_4" scaleX="1" scaleY="1" width="800" scale9Grid="37,53,36,35" height="0"/>
+	</e:Group>
+</e:Skin>

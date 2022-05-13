@@ -1,0 +1,31 @@
+// 排行榜
+import "01_player.proto";
+
+message RankInfo {
+    required int32 player_id = 1;   //玩家id
+    required int32 rank = 2;        //玩家排名
+    required string name = 3;       //玩家名字
+    required int32 vip_level = 4;   //玩家vip等级
+    required int64 value = 5;       //当前排行值(等级，各榜战力)
+    required int32 sex = 6;         //性别
+    required int32 head_id = 7;     //头像id
+    repeated int32 vip_prerogative_card = 8;   // 获得特权卡列表
+    required uint32 other_value = 9; //额外显示值
+}
+
+// 排行榜信息
+message m_get_rank_info_tos {
+    required int32 fun_id = 1;   //功能id
+    required int32 page_num = 2; //页数 (1 - 5页)  1 / 20条
+}
+
+// 排行榜信息
+message m_get_rank_info_toc {
+    required int32 fun_id = 1;      //功能id
+    required int32 page_num = 2;    //页数
+    required int32 first_show_value = 3;    //第一名显示的值
+    optional ModelFigure model_figure = 4;   //第一名形象
+    required int32 my_rank = 5;             //自己的排名
+    repeated RankInfo rank_info = 6;        //排名数据
+    required int32 total_num = 7;           //数据条数
+}

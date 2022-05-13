@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawExtraRewardPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a68dfe45"/>
+	<e:Image source="luckyDrawUI_json.luckyDrawUI_extraBg" y="182.95" scale9Grid="130,100,50,50" width="633.258" height="310.984" horizontalCenter="0" visible="true"/>
+	<e:Label id="u_titleLb" text="额外奖励" y="195" textColor="0xF0E4B0" stroke="2" horizontalCenter="0" size="24" strokeColor="0x000000"/>
+	<e:Label id="u_desLb" text="您已累计购买5个\n再购买7个即可获得以下奖励" y="237" horizontalCenter="0" size="18" textAlign="center" lineSpacing="8"/>
+	<e:Group id="u_btnGrp" y="405" visible="true" horizontalCenter="0" width="321" height="53">
+		<e:Image id="u_buyBtn" source="luckyDrawUI_json.luckyDrawUI_bugAgain" x="0" y="0" width="134" height="53"/>
+		<e:Image id="u_complBtn" source="luckyDrawUI_json.luckyDrawUI_complete" x="186.86" y="0" width="134" height="53"/>
+	</e:Group>
+	<e:Image id="u_receivBtn" source="luckyDrawUI_json.luckyDrawUI_receive" y="405" horizontalCenter="0" visible="false"/>
+	<e:Image id="u_sureBtn" source="luckyDrawUI_json.luckyDrawUI_sure" y="405" horizontalCenter="0" visible="false"/>
+</e:Skin>

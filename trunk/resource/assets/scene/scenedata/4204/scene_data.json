@@ -1,0 +1,20 @@
+{
+	"sceneEffectArray": [],
+	"npcArray": [],
+	"mapEventArray": [],
+	"monsterArray": [
+		{
+			"level": 1,
+			"x": 1333,
+			"monster_id": 2204,
+			"y": 760,
+			"delay": 0,
+			"round": 1,
+			"only_id": 200101,
+			"rebrith": -2
+		}
+	],
+	"map_id": 4201,
+	"gatherArray": [],
+	"trapArray": []
+}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CardSkin"
+	 width="165"
+	height="226" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_norGrp" anchorOffsetX="82.5" anchorOffsetY="113" horizontalCenter="0" verticalCenter="0" scaleX="1" visible="true">
+		<e:Image visible="true" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" source="cardUI_json.cardUI_back_bg"/>
+		<e:Image id="u_highImg" source="cardUI_json.cardUI_highl" width="165" height="246" alpha="0" x="0" y="-10" visible="true"/>
+	</e:Group>
+	<e:Group id="u_imgGp" scaleX="0" anchorOffsetX="82.5" anchorOffsetY="113" alpha="1" x="83" y="113" visible="true">
+		<e:Image id="u_cardImg" visible="true" horizontalCenter="0" verticalCenter="0" source="cardUI_json.cardUI_bg_1"/>
+		<e:Image id="u_itemImg" horizontalCenter="0" top="10" source="cardUI_json.cardUI_item_1"/>
+	</e:Group>
+</e:Skin>

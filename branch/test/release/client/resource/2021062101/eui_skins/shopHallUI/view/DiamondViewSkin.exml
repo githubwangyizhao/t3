@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DiamondViewSkin"
+	 width="284"
+	height="478" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" source="shopHallUI_json.shopHallUI_img_nrbg" width="284" height="478" scale9Grid="20,20,20,20"/>
+	<e:Group id="u_grpDiaTil" x="0" y="0">
+		<e:Image source="shopHallUI_json.shopHallUI_img_bt1" height="55" y="0" horizontalCenter="0"/>
+		<e:Group y="14" horizontalCenter="10.5">
+			<e:Image source="shopHallUI_json.shopHallUI_icon_zssd" x="0"/>
+			<e:Label id="u_txtDiamond" text="钻石" y="0" height="28" width="62" textAlign="left" fontFamily="Microsoft YaHei" bold="true" size="18" textColor="0xF0E4B0" verticalAlign="middle" x="37"/>
+		</e:Group>
+	</e:Group>
+	<e:List id="u_diamondList" height="400" x="10" y="56"/>
+</e:Skin>

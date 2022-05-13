@@ -1,0 +1,10 @@
+17:24:46	test	开始上传:../../release/client/resource/	==>/resource/
+17:24:47	上传res版本:	2021090701
+17:25:08	上传res版本:	2021090702
+17:25:11	上传res版本:	2021090703
+17:25:13	test	====>结束上传		上传处理总数: 372个;总共用时: 27 秒
+17:25:14	test	开始上传:../../release/client/resource/	==>/resource/
+17:25:14	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+17:25:15	test	开始上传:../../release/client/resource/	==>/resource/
+17:25:15	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+17:25:15	test	开始上传版本	ok:../../release/client/test/	==>/

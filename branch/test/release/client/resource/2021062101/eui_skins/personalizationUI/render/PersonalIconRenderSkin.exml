@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.PersonalIconRenderSkin"
+	 width="80"
+	height="80" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_icon" width="80" height="80" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="u_lockImg" source="personalizationUI_json.personUI_lock" x="11" y="18"/>
+	<e:Image id="u_selectImg" source="personalizationUI_json.personUI_select" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Label id="u_using" text="使用中" size="16" textColor="0xF0E4B0" stroke="2" horizontalCenter="0" verticalCenter="0" width="70" textAlign="center" lineSpacing="3"/>
+</e:Skin>

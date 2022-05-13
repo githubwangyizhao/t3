@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleWeapViewSkin"
+	 width="300"
+	height="510" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="roleUI_json.roleUI_part_bg" x="0" y="0" visible="true" scale9Grid="22,33,13,32" width="300" height="510"/>
+	<e:Group id="u_btnSelect1" x="243" y="0">
+		<e:Image id="u_imgSelect1" source="roleUI_json.roleUI_select2" x="0" y="0" visible="true"/>
+		<e:Image source="roleUI_json.roleUI_btn_wq" x="10" y="109" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnSelect2" x="243" y="255">
+		<e:Image id="u_imgSelect2" source="roleUI_json.roleUI_select2" x="0" y="0" visible="true"/>
+		<e:Image x="10" y="109" visible="true" source="roleUI_json.roleUI_btn_zs"/>
+	</e:Group>
+	<e:Scroller id="u_weapScroller" width="220" height="475" y="30" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="20">
+		<e:Group>
+		<e:List id="u_weapList" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmDartUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_mcContent" x="0" y="0">
+		<e:Image width="1136" height="640" scale9Grid="5,4,32,25" y="1" x="0" source="commonUI_json.commonUI_box_1"/>
+		<e:Image id="u_imgDart" y="410" width="22" height="130" anchorOffsetX="11" source="smDartUI_json.smDartUI_dart" scale9Grid="5,58,37,1" anchorOffsetY="-84" x="768"/>
+		<e:Label id="u_txtStep" text="剩余飞刀数：5" y="381" size="22" anchorOffsetX="0" bold="true" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" horizontalCenter="-261"/>
+		<e:Label id="u_txtHit" text="当前得分数：5" y="104" size="22" anchorOffsetX="0" bold="true" textAlign="center" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" horizontalCenter="-261"/>
+		<e:Label id="u_txtScore" text="目标分数：5" y="521" size="22" anchorOffsetX="0" bold="true" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" horizontalCenter="-261"/>
+	</e:Group>
+	<e:Image id="u_btnClose" x="11" y="15" source="commonUI_json.commonUI_btn_close_1" width="65" height="50"/>
+	<e:Image id="u_imgDisc" y="154" width="200" height="200" anchorOffsetX="100" anchorOffsetY="100" x="768" source="commonUI_json.commonUI_icon_2"/>
+</e:Skin>

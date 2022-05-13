@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.minMapViewSkin"
+	 width="348"
+	height="170" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_mainInfo" visible="true">
+		<e:Image id="u_btnMonsterInfo" y="95.27" x="316.54" source="userMainUI_json.userMainUI_x_xx" width="30" height="30"/>
+		<e:Image id="u_btnRank" source="userMainUI_json.userMainUI_x_ph" x="316.67" y="139.77" width="30" height="30"/>
+		<e:Image id="u_btnCheckMap" source="userMainUI_json.userMainUI_x_dt" x="317.78" y="48.1" width="30" height="30"/>
+		<e:Image source="userMainUI_json.userMainUI_x_kuang" x="0" y="0"/>
+		<e:Image x="12.336" y="135.7" source="userMainUI_json.userMainUI_icon_rank1"/>
+		<e:Group id="u_mcMoney0" x="127.62" y="137.116" name="u_mcMoney1" scaleX="1" scaleY="1">
+			<e:Label id="u_txtMoney0" text="999.8M" anchorOffsetX="0" multiline="false" size="16" scaleX="1" scaleY="1" textAlign="center" visible="true" y="3.57" horizontalCenter="14.5" textColor="0xF0E4B0"/>
+			<e:Image id="u_imgMoney0" x="0.744" visible="true" width="39" height="39" source="commonUI_icon_gold" scaleX="0.58" scaleY="0.58" y="0"/>
+		</e:Group>
+		<e:Group id="u_mcMoney1" x="214.18" y="137.116" name="u_mcMoney1" scaleX="1" scaleY="1">
+			<e:Label id="u_txtMoney1" text="999.8M" anchorOffsetX="0" multiline="false" size="16" scaleX="1" scaleY="1" textAlign="center" visible="true" horizontalCenter="13.5" y="3.57" textColor="0xF0E4B0"/>
+			<e:Image id="u_imgMoney1" x="-0.314" visible="true" width="39" height="39" source="commonUI_icon_juan" scaleX="0.58" scaleY="0.58" y="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpMap" width="300" height="130" visible="true">
+		<e:Image id="u_imgMap" x="0" y="0"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessResultPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176d0bd3310"/>
+	<e:Image id="u_imgBg" x="0" y="0" visible="true" source="missionJieSuanUI_json.missionJieSuanUI_bg"/>
+	<e:Group id="u_grpBoss" y="306" horizontalCenter="0">
+		<e:Group y="0" visible="true" horizontalCenter="0">
+			<e:Image x="0" y="25" visible="true" source="guessInsideUI_json.guessInsideUI_head"/>
+			<e:Image visible="true" id="u_imgIcon" width="139" height="155" y="-4" scaleX="0.9" scaleY="0.9" x="-8"/>
+			<e:Image id="u_iconNum" x="78" y="31" visible="true" source="guessInsideUI_json.guessInsideUI_srl_2"/>
+		</e:Group>
+		<e:Image source="guessInsideUI_json.guessInsideUI_title_1" y="103" visible="true" horizontalCenter="0"/>
+		<e:Label id="u_txtMsg" text="Congratulations on winning the contest" y="164" size="20" bold="true" visible="true" width="400" textAlign="center" wordWrap="true" lineSpacing="10" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_grpContent" x="45" y="197" visible="true" width="551">
+		<e:Image id="u_imgTitle" source="guessInsideUI_json.guessInsideUI_title_2" y="0" visible="true" x="189"/>
+		<e:Label y="320" size="20" bold="true" visible="true" x="145"/>
+		<e:Group y="320" height="20" horizontalCenter="0">
+			<e:Label id="u_txtMyCost" text="Cost of killing boss：" y="0" size="20" bold="true" visible="true" wordWrap="true" x="0"/>
+			<e:Image id="u_imgIcon1" source="commonsUI_json.commonsUI_item_icon" x="196" width="50" height="50" visible="true" y="-15"/>
+			<e:Label id="u_txtCount1" text="XXXX" y="0" size="20" bold="true" visible="true" wordWrap="true" x="245" textColor="0xC9C9D6"/>
+		</e:Group>
+		<e:Image source="missionJieSuanUI_json.missionJieSuanUI_design" y="408" x="59"/>
+		<e:Image source="missionJieSuanUI_json.missionJieSuanUI_rewarded" y="404" visible="true" x="218"/>
+		<e:Group id="u_grpCost" y="472" horizontalCenter="0.5">
+			<e:Image id="u_costIcon" source="commonsUI_json.commonsUI_item_icon" y="0" width="50" height="50" x="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group y="559" height="20" horizontalCenter="0.5">
+		<e:Label id="u_txtTotalCost" text="Cost of killing boss：" y="0" size="20" bold="true" visible="true" wordWrap="true" x="0"/>
+		<e:Image id="u_imgIcon2" source="commonsUI_json.commonsUI_item_icon" x="196" width="50" height="50" visible="true" y="-15"/>
+		<e:Label id="u_txtCount2" text="XXXX" y="0" size="20" bold="true" visible="true" wordWrap="true" x="245" textColor="0xC9C9D6"/>
+	</e:Group>
+	<e:Group id="u_btnOK" visible="true" y="770" width="135" height="65" horizontalCenter="0">
+		<e:Image y="0" visible="true" x="0" scale9Grid="79,15,1,2" source="commonsUI_json.commonsUI_btn_1"/>
+		<e:Label id="u_txtOK" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="OK" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close" x="567" y="180" visible="true" width="40" height="40"/>
+</e:Skin>

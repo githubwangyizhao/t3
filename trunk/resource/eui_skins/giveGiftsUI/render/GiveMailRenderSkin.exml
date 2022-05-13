@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveRecordRenderSkin"
+	 width="481"
+	height="87" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7ecfa906"/>
+	<e:Group visible="true">
+		<e:Group id="u_grpMain" visible="true" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Image visible="true" y="4" x="4" source="giveGiftsUI_json.giveGiftsUI_mail_bg3"/>
+			<e:Image id="u_imgNew" source="mailUI_json.mailUI_tag_new" x="437.696" y="18.5" visible="true"/>
+			<e:Group x="27" y="17" visible="true">
+			<e:Label text="充值钻石" size="16" textAlign="left" id="u_textTitle" border="false" visible="true" scaleX="1" scaleY="1" y="6" x="27" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+			<e:Image id="u_imgRead" visible="true" scaleX="1" scaleY="1" left="0" y="1" source="giveGiftsUI_json.giveGiftsUI_img_envelope1"/>
+			<e:Image id="u_imgIcon" source="mailUI_json.mailUI_icon_award" y="2" visible="true" scaleX="1" scaleY="1" right="-31"/>
+			</e:Group>
+			<e:Label text="2021/04/13  14:50" x="29.619" y="53.54" size="14" textAlign="left" strokeColor="0x333333" id="u_textTime" borderColor="0x333333" visible="true" fontFamily="Microsoft YaHei" textColor="0xEAF1F9"/>
+		</e:Group>
+		<e:Image id="u_imgSelect" scaleX="1" scaleY="1" visible="true" touchEnabled="false" source="giveGiftsUI_json.giveGiftsUI_mail_bg2"/>
+	</e:Group>
+</e:Skin>

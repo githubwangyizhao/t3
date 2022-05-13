@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckBossChartRenderSkin"
+	 width="52"
+	height="392" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" x="0" y="0" scale9Grid="17,17,16,16" visible="true" source="luckBossChartUI_json.luckBossChartUI_bg2"/>
+	<e:Label id="u_txtId" text="50" y="10" bold="true" size="16" textColor="0xD5CA9C" horizontalCenter="0.5" visible="true" x="17"/>
+	<e:Image id="u_imgIcon" source="luckBossChartUI_json.luckBossChartUI_icon" y="48" horizontalCenter="0" x="10"/>
+</e:Skin>

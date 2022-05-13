@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawRender"
+	 width="168"
+	height="114" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_bgImg" x="0" y="0" source="luckyDrawUI_json.luckyDrawUI_iconBg" visible="true"/>
+	<e:Image id="u_tabIcon" source="luckyDrawUI_json.luckyDrawUI_tab" x="0" y="0" visible="false"/>
+	<e:Label id="u_countLb" text="x10" size="16" right="10" bottom="10" stroke="1" fontFamily="Microsoft YaHei"/>
+	<e:Image id="u_selectBg" x="-10" y="-10" visible="true" source="luckyDrawUI_json.luckyDrawUI_flash" alpha="0" touchEnabled="false"/>
+</e:Skin>

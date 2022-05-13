@@ -1,0 +1,26 @@
+// 神龙
+// OPEN_DEBUG
+
+// 抽奖
+message m_draw_tos {
+}
+message m_draw_toc {
+  enum ENUM {
+    success = 1;                                  //成功
+    fail = 2;                                     //失败
+    not_authority = 3;                            //条件不足
+    no_enough_prop = 4;                           //道具不足
+  }
+  required ENUM result = 1;
+  required int32 type = 2;                        //类型
+  required int32 id = 3;                          //id
+}
+
+// 通知开始场景神龙活动状态
+message m_notice_scene_shen_long_state_toc {
+  required int32 state = 1;                       //状态(0:关闭;1:开启)
+  optional int32 type = 2;                        //类型(读表)  开启才有
+  optional int32 close_time = 3;                  //开启状态才有的参数，关闭时间
+  optional string player_name = 4;                //获得神龙状态的玩家名字(关闭时有机率有)
+  optional int32 player_id = 5;                   //获得神龙状态的玩家id(关闭时有机率有)
+}

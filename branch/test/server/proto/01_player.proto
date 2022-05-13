@@ -1,0 +1,453 @@
+import "04_times.proto";
+import "05_prop.proto";
+import "07_mission.proto";
+import "08_mail.proto";
+import "09_vip.proto";
+import "11_achievement.proto";
+import "13_shop.proto";
+import "14_activity.proto";
+import "17_everyday_sign.proto";
+import "18_seven_login.proto";
+import "19_platform_function.proto";
+import "23_sys_common.proto";
+import "24_daily_task.proto";
+import "25_promote.proto";
+import "26_task.proto";
+import "32_hero.proto";
+import "33_card.proto";
+
+//玩家基本数据
+message RoleData {
+    required string nickname = 1;       //昵称
+    required int32 sex = 2;             //性别
+    required int32 level = 3;           //等级
+    required int32 exp = 4;             //经验
+    required int32 vip_level = 8;       //vip等级
+    required string server_id = 9;      //服务器id
+    required int32 player_id = 10;      //玩家id
+    optional int32 type = 11;           //玩家类型(0为普通号，1为内部号，2为gm号，3为永远可充值玩家，4为自动创角玩家)
+    required PlayerOtherData player_other_data = 12;//玩家其他数据
+}
+
+// 其他数据
+message PlayerOtherData {
+    required int32 head_id = 1;         //头像id
+    required int32 head_frame_id = 2;   //头像框id
+    required int32 chat_qi_pao_id = 3;  //聊天气泡id
+}
+
+// 玩家信息
+message PlayerBaseInfo {
+     required int32 player_id = 1;      //玩家id
+     required string nickname = 2;      //昵称
+     required int32 head_id = 3;       //头像id
+     required int32 head_frame_id = 4;   //头像框id
+}
+
+//模型外观
+message ModelFigure {
+    required int32 player_id = 1;       //玩家id
+    required int32 sex = 2;             //性别
+    required int32 head_id = 3;         //头像id
+    required int32 title_id = 4;        //称号id
+    required int32 magic_weapon_id = 5; //法宝id
+    required int32 hero_id = 6;         //英雄id
+    required int32 hero_arms_id = 7;    //英雄武器id
+    required int32 hero_ornaments_id = 8;//英雄饰品id
+}
+
+//模型头像外观
+message ModelHeadFigure {
+    required int32 player_id = 1;   //玩家id
+    required int32 sex = 2;         //性别
+    required string nickname = 3;   //昵称
+    required int32 head_id = 4;     //头像id
+    required int32 vip_level = 5;   //vip等级
+    required int32 level = 6;       //等级
+    required int32 head_frame_id = 7;// 头像框id
+}
+
+// 玩家属性
+message AttrData {
+    required int32 id = 1; //属性id
+    required int32 value = 2; // 属性值
+}
+
+//属性
+enum Attr {
+    hp = 3;                 //血量
+    max_hp = 4;             //最大血量
+    vip_level = 5;          //vip等级
+    level = 6;              //等级
+    exp = 8;                //经验
+    title_id = 9;           //称号id
+    magic_weapon_id = 10;   //法宝id
+    move_type = 12;         //移动类型(0正常|1冲刺|2技能)
+    move_speed = 13;        //移动速度
+    belong_player_id = 14;  //归属者id
+    pk_mode = 16;           //Pk模式
+    name = 17;              //昵称
+    sex = 18;               //性别
+    hero_id = 20;           //英雄id
+    hero_arms_id = 21;      //英雄武器id
+    hero_ornaments_id = 22; //英雄饰品id
+    head_id = 23;           //头像id
+    head_frame_id = 24;     //头像框id
+    chat_qi_pao_id = 25;    //聊天气泡id
+}
+
+// 功能数据
+message Player_FunctionList {
+    required int32 fun_id = 1;      // 功能id
+    required int32 award_state = 2; // 领取状态
+}
+
+//初始化玩家数据
+message m_init_player_data_toc {
+    required RoleData role_data = 1;                                                //玩家基本数据
+    required string server_time = 2;                                                //服务器时间 (毫秒)
+    repeated int32 fun_id_list = 3;                                                 //功能id列表
+    repeated Prop prop_list = 4;                                                    //道具列表
+    repeated times times_list = 5;                                                  //次数列表
+    repeated passed_mission passed_mission_list = 6;                                //通关副本列表
+    repeated ClientData client_data_list = 7;                                       //客户端数据列表
+    repeated int32 mail_real_id = 8;                                                //邮件实际id列表
+    repeated int32 award_fun_id_list = 9;                                           //功能奖励领取id列表
+    repeated int32 red_fun_id_list = 10;                                            //有小红点的功能列表
+    repeated Activity_Data activity_data = 11;                                      //活动时间列表
+    repeated AchievementData achievement_data_list = 12;                            //成就数据列表
+    required int32 first_charge_state = 13;                                         //首充状态
+    required VipData vip_data = 14;                                                 //vip数据
+    required SevenLoginData seven_login_data = 15;                                  //七天登录数据
+//    required OnlineAwardData online_award_data = 16;                                //在线奖励数据
+    required EverydaySignData everyday_sign_data = 17;                              //每日签到数据
+    required int32 open_server_time = 18;                                           //开服时间
+    required int32 collect_state = 19;                                              //收藏领取状态(0:未收藏, 2:已收藏)
+    required int32 share_count = 20;                                                //分享次数
+    repeated ShareFriendData share_friend_data = 21;                                //分享好友数据列表
+    repeated ShopData charge_shop_data = 22;                                        //平台商城数据
+    required int32 pk_mode = 23;                                                    //pk模式
+    required int32 platform_concern_state = 24;                                     //平台关注状态
+    required int32 platform_certification_state = 25;                               //平台认证状态
+    repeated sysCommonData sysCommonDataList = 26;                                  //公共系统列表
+//    repeated DailyTaskData daily_task_data_list = 27;                               //每日任务数据列表
+    required TaskInfo task_info = 28;                                               //主线任务信息
+    required PlayerPromoteData player_promote_data = 29;                            //玩家推广数据
+    required TaskShow task_show = 30;                                               //任务展示
+    required int32 anger = 31;                                                      //怒气值
+    required string invitation_code = 33;                                           //邀请码
+    repeated ShareTaskAwardData share_task_award_data_list = 34;                    //分享好友数据列表
+    required PlayerHero player_hero = 35;                                           //玩家英雄
+    repeated CardBook card_book_list = 36;                                          //卡牌图鉴列表
+    optional int32 seize_treasure_type_id = 47;                                     //今日夺宝类型编号（参考treasure_hunt_type.csv表的id字段）
+    optional int32 seize_times = 48;                                                //玩家夺宝转盘次数
+    optional int32 seize_lucky_value = 49;                                          //玩家夺宝转盘当前幸运值
+    optional bool zhi_gou_completed = 50;                                           //直购礼包完成标志
+    optional string bind_mobile = 51;                                               //是否绑定手机号码 0为否，其他值为用户手机号，默认0
+    optional uint32 already_give_level = 52;                                        //已经领取的等级
+    optional string signature = 53;                                                 //个性签名
+}
+
+//通知玩家数据变化(整形)
+message m_notice_player_attr_change_toc {
+    required int32 player_id = 1; // 玩家id
+    message attr_change{
+        required Attr attr = 1;
+        required uint32 value = 2;
+    }
+    repeated attr_change list = 2; //玩家属性变化列表
+}
+
+//通知玩家数据变化(字符串)
+message m_notice_player_string_attr_change_toc {
+    required int32 player_id = 1;           // 玩家id
+    message string_attr_change{
+        required Attr attr = 1;
+        required string value = 2;
+    }
+    repeated string_attr_change list = 2; //玩家字符串属性变化列表
+}
+
+//通知功能激活
+message m_notice_fun_active_toc {
+    repeated int32 fun_id_list = 1; //功能id列表
+}
+
+// 通知服务端时间（毫秒）
+message m_notice_server_time_toc {
+    required string server_time = 1;           //服务器时间 (毫秒)
+}
+
+// 改变pk模式
+message m_change_pk_mode_tos {
+    required int32 pk_mode = 1; //pk模式
+}
+
+// 领取功能奖励
+message m_change_pk_mode_toc {
+    enum ENUM {
+        success = 1;            // 成功
+        fail = 2;               // 失败
+    }
+    required ENUM result = 1;
+    required int32 pk_mode = 2; //pk模式
+}
+
+// 获得玩家属性数据
+message m_get_player_attr_tos {
+    required int32 player_id = 1;   //玩家id
+}
+message m_get_player_attr_toc {
+    required int32 player_id = 1;   //玩家id
+    repeated AttrData attr_data = 2;
+}
+
+// 改名卡
+message m_change_name_tos {
+    required string name = 1;   //名称
+}
+message m_change_name_toc {
+    enum ENUM {
+        success = 1; //成功
+        used = 2; //名字被使用
+        invalid_string = 3; //非法字符串
+        too_long = 4; //名字过长
+        not_enough_times = 5;   // 次数不足
+        fail = 6; //失败
+    }
+    required ENUM result = 1;
+    required string name = 2;
+}
+
+// 改性别
+message m_change_sex_tos {
+    required int32 sex = 1;   //性别 [0:男 1:女]
+}
+message m_change_sex_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; //失败
+    }
+    required ENUM result = 1;
+    required int32 sex = 2;
+}
+
+// 客户端数据
+message ClientData {
+    required string id = 1;                      // id(20个字符)
+    required string value = 2;                   // value(20个字符)
+}
+// 更新客户端数据
+message m_update_client_data_tos {
+    repeated ClientData client_data_list = 1;   // 客户端数据列表
+}
+
+// 删除客户端数据
+message m_delete_client_data_tos {
+    repeated string id_list = 1;                 // 客户端数据id列表
+}
+
+// 统计adjust数据
+message m_adjust_tos {
+    message attr_change{
+        required string attr = 1;
+        required string value = 2;
+    }
+    repeated attr_change list = 1; //玩家字符串属性变化列表
+}
+message m_adjust_toc {
+    enum ENUM {
+        success = 1; // 成功
+        fail = 2; // 失败
+        already_exists = 3; // 已经存在
+    }
+    required ENUM result = 1;
+}
+
+// 客服链接协议
+message m_customer_url_tos {
+}
+message m_customer_url_toc {
+    enum ENUM {
+        success = 1;        // 成功
+        fail = 2;           // 接口请求失败
+        not_data = 3;       // 没有有效数据
+    }
+    required ENUM result = 1;
+    message customer_url_data{
+        required string url = 1;
+    }
+    repeated customer_url_data customer_url = 2;
+}
+
+// 游客绑定
+message m_visitor_binding_tos {
+    required string channel = 1;
+    required string acc_id = 2;
+}
+message m_visitor_binding_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        not_a_visitor = 2;                  // m_visitor_binding_tos协议发送的channel不是visitor
+        binding_same_acc_id = 3;            // 重复绑定同一个账号
+        not_allowed_to_binding = 4;         // 当前账号已被绑定其他渠道
+        player_not_exists = 5;              // 玩家数据不存在
+        unknown = 6;                        // 未知错误
+    }
+    required ENUM result = 1;
+    required string channel = 2;
+}
+
+// 获得服务器时间 (毫秒)
+message m_get_server_time_tos {
+}
+message m_get_server_time_toc {
+    required string server_time = 2;        //服务器时间 (毫秒)
+}
+
+message m_modify_nickname_gender_tos {
+    required int32 gender = 1; // 性别
+    required string nickname = 2; // 昵称
+}
+message m_modify_nickname_gender_toc {
+    enum ENUM {
+        success = 1; // 成功
+        used = 2; //名字被使用
+        invalid_string = 3; //非法字符串
+        too_long = 4; //名字过长
+        fail = 5; //失败
+        not_authority = 6; // 没有权限修改，就是该玩家在自动创角后已经修改过一次昵称与性别了
+        unknown = 7; // 未知错误
+    }
+    required ENUM result = 1;
+    optional int32 gender = 2;  // 客户端上报的性别
+    optional string nickname = 3; // 客户端上报的昵称
+}
+
+// 设置玩家数据
+message m_set_player_data_tos {
+    required int32 type = 1;    // 类型(1:头像,2:头像框,3:聊天气泡id)
+    required int32 id = 2;      // Id
+}
+message m_set_player_data_toc {
+    enum ENUM {
+        success = 1;            // 成功
+        fail = 2;               // 失败
+        no_enough_prop = 3;     // 未拥有该头像或者头像框或聊天气泡
+        not_authority = 4;      // 没权利
+    }
+    required ENUM result = 1;
+    required int32 type = 2;    // 类型(1:头像,2:头像框,3:聊天气泡id)
+    required int32 id = 3;      // Id
+}
+
+// 通知玩家修正值
+message m_notice_player_xiu_zhen_value_toc {
+    message xiuzhendata{
+        required int32 id = 1;                    // (1新手修正,2全服修正,3个人修正,4钻石修正)
+        required int64 value = 2;
+    }
+    repeated xiuzhendata lists = 2;
+}
+
+// 领取玩家在场景内滞留的奖励
+message m_collect_delay_rewards_tos {
+    required int32 type = 1;               // 来源(1-战斗,9-翻牌,10-拉霸,11-转盘,12-炸弹)
+}
+
+// 升级
+message m_level_upgrade_tos {
+}
+message m_level_upgrade_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_enough_prop = 3;             // 道具不足
+        not_authority = 4;              // 已满级
+    }
+    required ENUM result = 100;
+    required int32 old_level = 1;
+    required int32 new_level = 2;
+    repeated Prop prop_list = 3;
+}
+
+// 绑定手机
+message m_bind_mobile_tos {
+    required string code = 1;           // 短信验证码
+    required string mobile = 2;         // 接收短信验证码的手机号码
+}
+message m_bind_mobile_toc {
+    enum ENUM {
+        success = 1;                    // 成功 账号绑定成功
+        expire = 2;                     // 验证码超时
+        invalid_code = 3;               // 验证码错误
+        fail = 4;                       // 其他错误原因
+    }
+    required ENUM result = 1;
+}
+
+// 玩家绑定手机号码成功后，推送协议给客户端方便客户端修改数据
+message m_bind_res_toc {
+    required int32 bind_mobile = 1;     // 玩家是否绑定手机号 0为否，1为是，默认0
+}
+
+// 获得等级奖励
+message m_get_level_award_tos {
+    required int32 level = 1;           // 等级
+}
+message m_get_level_award_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        not_authority = 3;              // 等级不足
+        already_get = 4;                // 已经领取
+    }
+    required ENUM result = 100;
+    required int32 level = 1;           // 等级
+}
+
+// 更新个性签名
+message m_update_player_signature_tos {
+    required string signature = 1;      // 个性签名
+}
+message m_update_player_signature_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        not_authority = 3;              // 没权利
+        invalid_string = 4;             // 非法字符串
+        too_long = 5;                   // 长度过长
+        not_enough_times = 6;           // 次数不足
+    }
+    required ENUM result = 100;
+    required string signature = 1;      // 个性签名
+}
+
+// 获得玩家信息
+message m_get_player_info_tos {
+    required int32 player_id = 1;       // 玩家id
+}
+message m_get_player_info_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        not_authority = 3;              // 该玩家所在服务器正在停服
+        none = 4;                       // 玩家不存在
+    }
+    required ENUM result = 100;
+    optional string signature = 1;      // 个性签名
+    optional ModelHeadFigure model_head_figure = 2;// 头像数据
+}
+
+// 世界树奖励请求
+message m_world_tree_award_tos{
+}
+message m_world_tree_award_toc{
+     enum RESULT {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        times_limit = 3;                // 次数限制
+    }
+    required RESULT result = 1;
+    repeated Prop prop_list = 2;      // 奖励道具列表
+}

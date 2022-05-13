@@ -1,0 +1,17 @@
+//debug调试
+
+//debug
+message m_debug_tos {
+    required int32 type = 1;            //类型
+    repeated int32 param_list = 2;      //参数列表
+}
+
+//debug
+message m_debug_toc {
+    required int32 type = 1;            //类型
+    enum ENUM {
+        success = 1;    //成功
+        fail = 2;       //失败
+    }
+    required ENUM result = 2;
+}

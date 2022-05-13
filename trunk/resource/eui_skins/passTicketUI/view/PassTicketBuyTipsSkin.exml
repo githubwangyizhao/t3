@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketBuyTipsSkin"
+	 width="330"
+	height="320" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" source="passTicketBuyUI_json.passTicketBuyUI_tips_bg" x="0" y="0" width="330" height="83" visible="true" scale9Grid="28,75,10,35"/>
+	<e:Label id="u_txtDesc" text="包括钻石通行证包括钻石通行证包括" y="28" size="16" textColor="0xF0E4B0" horizontalCenter="2" width="280" textAlign="center" lineSpacing="16" x="27" fontFamily="Microsoft YaHei"/>
+</e:Skin>

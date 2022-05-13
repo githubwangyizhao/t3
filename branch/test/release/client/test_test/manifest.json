@@ -1,0 +1,24 @@
+{
+	"initial": [
+		"../resource/2021120303/egret.min.js",
+		"../resource/2021120303/egret.web.min.js",
+		"../resource/2021120303/eui.min.js",
+		"../resource/2021120303/assetsmanager.min.js",
+		"../resource/2021120303/tween.min.js",
+		"../resource/2021120303/socket.min.js",
+		"../resource/2021120303/game.min.js",
+		"../resource/2021120303/promise.min.js",
+		"../resource/2021120303/protobuf-library.min.js",
+		"../resource/2021120303/protobuf-bundles.min.js",
+		"../resource/2021120303/greensock.min.js",
+		"../resource/2021120303/jszip.min.js",
+		"../resource/2021120303/zlib.min.js",
+		"../resource/2021120303/md5.min.js",
+		"../resource/2021120303/dragonBones.min.js",
+		"../resource/2021120303/particle.min.js"
+	],
+	"game": [
+		"../resource/2021120303/default.thm.js",
+		"../resource/2021120303/main.min.js"
+	]
+}

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnTendencyRenderSkin"
+	 width="48"
+	height="315" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<ns1:NumberView id="u_sortNum" width="30" height="16" y="8" horizontalCenter="0"/>
+	<ns1:NumberView width="30" height="16" y="42" id="u_num0" horizontalCenter="0" x="19"/>
+	<ns1:NumberView width="30" height="16" y="78" id="u_num1" horizontalCenter="0" x="29"/>
+	<ns1:NumberView width="30" height="16" y="114" id="u_num2" horizontalCenter="0" x="29"/>
+	<ns1:NumberView width="30" height="16" y="150" id="u_num3" horizontalCenter="0" x="39"/>
+	<ns1:NumberView width="30" height="16" y="186" id="u_num4" horizontalCenter="0" x="49"/>
+	<ns1:NumberView width="30" height="16" y="222" id="u_num5" horizontalCenter="0" x="49"/>
+	<ns1:NumberView width="30" height="16" y="258" id="u_num6" horizontalCenter="0" x="59"/>
+	<ns1:NumberView width="30" height="16" y="294" id="u_num7" horizontalCenter="0" x="69"/>
+</e:Skin>

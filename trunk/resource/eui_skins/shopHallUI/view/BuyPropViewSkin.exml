@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuyPropViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image height="55" y="54" source="shopHallUI_json.shopHallUI_img_titdi" width="707.5" scale9Grid="182,18,183,18" x="216"/>
+	<e:Image id="u_imgIcon" source="shopHallUI_json.shopHallUI_img_diamond2" y="67" x="509"/>
+	<e:Scroller id="u_itemScroll" width="1026" height="425" y="132" horizontalCenter="3">
+		<e:List id="u_propList" horizontalCenter="0"/>
+	</e:Scroller>
+</e:Skin>

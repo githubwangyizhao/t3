@@ -1,0 +1,23 @@
+效果类型表,,,,,,
+int|key,str,str,str,int,int,str
+,,,,,,
+id,sign,name,image_text,hit_effect_id,pos,arg
+"效果类型id","标识","效果名称","美术飘字","效果命中特效 （引用hit_effect表）","显示在哪(1施法者头上 2目标头上)","参数"
+1,attr,加减属性,,0,2,"[attr, 属性id, 数值]"
+3,dizzy,晕眩,buff_yun_xuan,0,2,"[dizzy]"
+4,add_hp_rate,加最大血量百分比,,0,1,"[add_hp_rate, 百分比]"
+5,add_buff,添加buff,,0,1,"[add_buff, buffId, buff等级]"
+6,trigger_skill,触发技能,,0,1,"[trigger_skill, 主动技能id, 主动技能等级]"
+7,xi_xue,吸血,buff_shi_hun,221,1,"[xi_xue, 万分比]"
+8,liu_xue,流血,buff_liu_xue,222,2,"[liu_xue, 万分比]"
+9,extra_hurt,额外伤害,buff_e_wai_shang_hai,222,2,"[extra_hurt, 万分比]"
+10,rebound_hurt,反弹伤害,buff_fan_shan,222,2,"[rebound_hurt, 万分比]"
+11,chen_mo,沉默,buff_chen_mo,0,2,"[chen_mo]"
+12,feng_yin_pet,封印妖灵,buff_feng_yin,0,2,"[feng_yin_pet]"
+13,feng_yin_fa_bao,封印法宝,buff_feng_yin,0,2,"[feng_yin_fa_bao]"
+14,immune_dizzy,免疫晕眩,buff_mian_yi_yun_xuan,0,2,"[immune_dizzy]"
+15,reduce_cd,减少所有技能cd,buff_dun_wu,223,1,"[reduce_cd]"
+16,hu_dun,护盾,buff_hu_dun,0,2,"[hu_dun, 数值]"
+17,attr_rate,加减属性万分比,,0,2,"[attr_rate,属性id,万分比]"
+19,call_monster,召唤怪物,,,,"[call_monster, 怪物id]"
+20,kill,必杀,buff_bi_sha,0,2,"[kill]"

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterTimelineSkin"
+	 width="490"
+	height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b141b106b"/>
+	<e:Group id="u_grpWrap" width="490" visible="true" y="10">
+		<e:Image source="monsterTimelineUI_json.monsterTimelineUI_bg" x="0" y="0" visible="true"/>
+		<e:Group id="u_grpEvent" x="52" y="22" width="410" height="0" visible="true"/>
+	</e:Group>
+	<e:Image id="u_imgMask" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" width="490" height="80" visible="false"/>
+</e:Skin>

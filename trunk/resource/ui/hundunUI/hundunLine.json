@@ -1,0 +1,11 @@
+{
+    "file": "hundunLine.png",
+    "frames": {
+        "hundunUI2_line": {
+            "x": 0,
+            "y": 0,
+            "w": 25,
+            "h": 24
+        }
+    }
+}

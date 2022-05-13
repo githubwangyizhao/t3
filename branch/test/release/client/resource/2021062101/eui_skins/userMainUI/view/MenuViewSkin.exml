@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MenuViewSkin"
+	 width="260"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="userMainUI_json.userMainUI_caidan_bj" x="0" y="0" width="260" height="640" scale9Grid="33,80,34,11"/>
+	<e:Image id="u_btnClose" source="userMainUI_json.userMainUI_u_btn_gb" x="224" y="29" width="16" height="16"/>
+	<e:Image source="commonUI_json.commonUI_head_btn" x="20" y="27"/>
+	<e:Label id="u_txtTitle" text="菜单" x="57" y="27" textColor="0xF0E4B0" height="20" verticalAlign="middle" size="16"/>
+	<e:Group id="u_btnHero" width="260" height="81" y="72">
+		<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="78" width="220" scaleX="1" scaleY="1"/>
+		<e:Image source="userMainUI_json.userMainUI_d_btn_1" x="86" verticalCenter="0"/>
+		<e:Image source="userMainUI_json.userMainUI_d_btn_1_name" x="142" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="260" height="81" y="153" id="u_btnBag" x="0">
+		<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="78" width="220" scaleX="1" scaleY="1"/>
+		<e:Image x="86" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_2"/>
+		<e:Image x="142" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_2_name"/>
+	</e:Group>
+	<e:Group width="260" height="81" y="234" id="u_btnShop" x="0">
+		<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="78" width="220" scaleX="1" scaleY="1"/>
+		<e:Image x="86" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_3"/>
+		<e:Image x="142" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_3_name"/>
+	</e:Group>
+	<e:Group width="260" height="81" y="315" id="u_btnShare" x="0">
+		<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="78" width="220" scaleX="1" scaleY="1"/>
+		<e:Image x="86" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_4"/>
+		<e:Image x="142" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_4_name"/>
+	</e:Group>
+	<e:Group width="260" height="81" y="396" id="u_btnMail" x="0">
+		<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="78" width="220" scaleX="1" scaleY="1"/>
+		<e:Image x="86" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_5"/>
+		<e:Image x="142" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_5_name"/>
+	</e:Group>
+	<e:Group width="260" height="81" y="477" id="u_btnContact" x="0">
+		<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="78" width="220" scaleX="1" scaleY="1"/>
+		<e:Image x="86" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_6"/>
+		<e:Image x="142" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_6_name"/>
+	</e:Group>
+	<e:Group width="260" height="81" y="558" id="u_btnExit" x="0">
+		<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="78" width="220" scaleX="1" scaleY="1"/>
+		<e:Image x="86" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_7"/>
+		<e:Image x="142" verticalCenter="0" source="userMainUI_json.userMainUI_d_btn_7_name"/>
+	</e:Group>
+</e:Skin>

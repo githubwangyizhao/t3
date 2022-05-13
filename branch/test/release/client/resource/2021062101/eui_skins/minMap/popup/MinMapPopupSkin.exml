@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MiniMapPopup"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179ea5faf28"/>
+	<e:Image source="userMainUI_json.userMainUI_x_bj" horizontalCenter="2" verticalCenter="-1" scale9Grid="37,37,38,38" width="900" height="390"/>
+</e:Skin>

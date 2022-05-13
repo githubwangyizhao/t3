@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.SoloCreateRoomUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonsUI_json.commonUI_box_2" y="95" width="590" height="900" scale9Grid="29,29,30,30" horizontalCenter="0"/>
+	<e:Group id="u_btnJoinOne" width="247.55" height="269.527" x="61.742" y="114.738" name="btnJoin1">
+		<e:Image id="u_imgOne" source="commonsUI_json.commonsUI_btn_1" x="-3.813" y="2.265" anchorOffsetX="-6.89" height="262.319" width="243.761"/>
+		<e:Label id="u_txtJoinOne" text="Join" x="99.177" y="116.252" size="25" textAlign="center" verticalAlign="middle" textColor="0x0A0303"/>
+	</e:Group>
+	<e:Group id="u_btnJoinTwo" width="235.146" height="263.324" x="351.29" y="115.824" name="btnJoin2">
+		<e:Image id="u_imgTwo" source="commonsUI_json.commonsUI_btn_1" x="-3.227" y="4.423" anchorOffsetX="-6.414" height="255.974" width="226.912"/>
+		<e:Label id="u_txtJoinTwo" text="Join" x="98.315" y="113.026" size="25" textAlign="center" verticalAlign="middle" textColor="0x0A0303"/>
+	</e:Group>
+	<e:Group id="u_btnCreate" width="280.138" height="112.23" x="194.138" y="427.829">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" x="4.393" y="0.231" width="268.435" height="106.411"/>
+		<e:Label id="u_txtCreate" text="Create" x="50" y="29" width="169.862" height="53.006" size="40" textAlign="center" verticalAlign="middle" textColor="0x0A0303"/>
+	</e:Group>
+	<e:Group id="u_btnCapital1" width="161" height="82" x="34" y="574" name="btnCap1" visible="true">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" horizontalCenter="-1.4680000000000035" verticalCenter="0.35549999999999926"/>
+		<e:Label id="u_txtCapital1" text="1K" horizontalCenter="-0.4680000000000035" verticalCenter="-1.1445000000000007"/>
+	</e:Group>
+	<e:Group id="u_btnCapital2" width="162.077" height="77.848" x="235.096" y="574" name="btnCap2">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" horizontalCenter="0.4615000000000009" verticalCenter="0.5760000000000005"/>
+		<e:Label id="u_txtCapital2" text="10K" horizontalCenter="0.9615000000000009" verticalCenter="-1.9239999999999995" textColor="0xFFFFFF"/>
+	</e:Group>
+	<e:Group id="u_btnCapital3" width="157" height="84" x="448.29" y="574" name="btnCap3">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" horizontalCenter="-2.4009999999999962" verticalCenter="-0.7550000000000026"/>
+		<e:Label id="u_txtCapital3" text="100K" horizontalCenter="-3.4009999999999962" verticalCenter="-1.2550000000000026"/>
+	</e:Group>
+	<e:Scroller id="u_scrollItem" width="547" height="314" y="676" horizontalCenter="-0.5">
+		<e:Group width="600" x="-1.742">
+			<e:List id="u_itemList" x="5" y="7"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

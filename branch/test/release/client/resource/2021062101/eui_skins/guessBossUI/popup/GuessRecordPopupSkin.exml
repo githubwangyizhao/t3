@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessRecordPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176cc2833f6"/>
+	<e:Image source="guessRecordUI_json.guessRecordUI_bg2" y="110" visible="true" horizontalCenter="1.5"/>
+	<e:Label id="u_txtDesc" text="Trend chart of boss killed in recent 50 games" y="215" bold="true" size="20" horizontalCenter="0"/>
+	<e:Scroller id="u_scrollerItem" width="574" height="615" y="413" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="34">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close" x="567" y="135" visible="true" width="40" height="40"/>
+</e:Skin>

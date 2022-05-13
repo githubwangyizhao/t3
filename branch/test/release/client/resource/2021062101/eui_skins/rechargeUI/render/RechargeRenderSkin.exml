@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RechargeRenderSkin"
+	 width="143"
+	height="171" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1792205f5e8"/>
+	<e:Image id="u_imgBj" x="0" y="0" visible="true" width="143" height="171" source="rechargeUI_json.rechargeUI_renderBg"/>
+	<e:Group id="u_mcContent" x="0" y="0" width="143" height="171">
+		<e:Label text="$6 " y="11.816" id="u_txtMoney" size="18" stroke="1" strokeColor="0xBA7C4F" horizontalCenter="-1.5" textColor="0xF0E4B0"/>
+		<e:Image visible="true" id="u_imgIcon" scaleX="0.7" scaleY="0.7" y="39.658" source="rechargeUI_json.rechargeUI_icon_yb" width="118.142" height="108.857" horizontalCenter="0"/>
+		<e:Label id="u_txtExp" text="vip经验 +800k" y="133" textColor="0x3F393C" size="16" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

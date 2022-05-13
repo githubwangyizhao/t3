@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckBossCostSkin"
+	 width="105"
+	height="111" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgCost" source="luckBossUI_json.luckBossUI_icon_cm1"/>
+	<e:Image id="u_imgSelect" source="luckBossUI_json.luckBossUI_select1" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

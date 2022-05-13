@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldTreeRenderSkin"
+	 width="106"
+	height="106" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgHead" width="120" height="120" horizontalCenter="0" verticalCenter="0" anchorOffsetX="60" anchorOffsetY="60" scaleX="0.65" scaleY="0.65" visible="true"/>
+	<e:Image width="120" height="120" horizontalCenter="0" verticalCenter="0" anchorOffsetX="60" anchorOffsetY="60" visible="true" source="worldTreeNoticeUI_json.worldTreeNoticeUI_frame" scaleX="0.85" scaleY="0.85"/>
+	<e:Label id="u_txtDesc" text="未拥有" x="29.786" y="67.867" size="16" fontFamily="Microsoft YaHei" textColor="0xF62E2E" stroke="1" visible="true"/>
+	<e:Image id="u_imgQuan" source="worldTreeNoticeUI_json.worldTreeNoticeUI_quan" anchorOffsetX="60" anchorOffsetY="60" scaleX="0.85" scaleY="0.85" visible="true" y="48.38" x="50.31"/>
+	<e:Image id="u_imgJh" source="worldTreeNoticeUI_json.worldTreeNoticeUI_jh" x="22.723" y="62.132" visible="true"/>
+</e:Skin>

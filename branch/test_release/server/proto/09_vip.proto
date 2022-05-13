@@ -1,0 +1,35 @@
+
+// vip数据
+message VipData {
+    required int32 vip_level = 1;                   // vip等级
+    required int32 vip_exp = 2;                     // vip经验
+    repeated VipAwardInfo vip_award_info = 3;       // vip奖励列表
+}
+
+// vip奖励列表
+message VipAwardInfo {
+    required int32 vip_level = 1;       // vip等级
+    required int32 state = 2;           // vip领取状态
+}
+
+// 领取vip奖励
+message m_get_vip_award_tos {
+    required int32 vip_level = 1;       // vip等级
+}
+// 领取vip奖励
+message m_get_vip_award_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        already_have = 3;               // 已领取
+        not_authority = 4;              // 不可领取
+    }
+    required ENUM result = 1;
+    required int32 vip_level = 2;       // vip等级
+}
+
+// 通知玩家vip数据
+message m_notice_vip_data_toc {
+    required VipData vip_data = 1;      // vip数据
+}
+

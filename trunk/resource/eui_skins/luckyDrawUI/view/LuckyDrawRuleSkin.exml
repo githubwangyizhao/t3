@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawRule"
+	 width="374"
+	height="243" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="374" height="243" x="0" y="0" visible="true" source="commonUI_json.commonUI_img_di" scale9Grid="41,67,50,44"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" horizontalCenter="0" y="3"/>
+	<e:Label id="u_txtTitle" text="规则说明" y="12.82" textAlign="center" size="18" textColor="0xFFE2C5" stroke="2" strokeColor="0x333333" bold="true" visible="true" horizontalCenter="5" fontFamily="Microsoft YaHei"/>
+	<e:Scroller width="314" height="156" y="56" horizontalCenter="5">
+		<e:Group>
+		<e:Label id="u_txtMsg" text="规则" textColor="0xF0E4B0" size="14" width="314" wordWrap="true" lineSpacing="12" y="3" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

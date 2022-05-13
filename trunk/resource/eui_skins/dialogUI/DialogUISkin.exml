@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DialogUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17aaf414ce6" locked="true"/>
+	<e:Image id="u_imgMenk" source="commonUI_box" scale9Grid="1,1,8,8" width="1136" height="640" alpha="0.6"/>
+	<e:Image id="u_imgKuang" source="dialogUI_kuang" y="465" scale9Grid="1250,58,26,59" width="1380" horizontalCenter="0"/>
+	<e:Image id="u_btnOver" source="dialogUI_json.dialogUI_btnTiaoguo" x="670" y="595" width="69" height="30"/>
+	<e:Group id="u_mcName" x="4" y="483">
+		<e:Image y="0" source="dialogUI_name_bj" x="0"/>
+		<e:Label id="u_txtName" text="NpcName" y="1" size="20" textAlign="center" lineSpacing="6" textColor="0xFFFFFF" stroke="1" strokeColor="0x212020" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_txtMsg" text="" y="521.5" size="18" textAlign="left" lineSpacing="8" stroke="1" strokeColor="0x212020" fontFamily="Microsoft YaHei" textColor="0xf0e4b0" width="805" height="75" x="76" verticalAlign="middle" wordWrap="true" anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Label id="u_txtTishi" text="" y="8.5" size="18" textAlign="center" lineSpacing="8" stroke="1" strokeColor="0x212020" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" verticalAlign="middle" wordWrap="true" horizontalCenter="0"/>
+</e:Skin>

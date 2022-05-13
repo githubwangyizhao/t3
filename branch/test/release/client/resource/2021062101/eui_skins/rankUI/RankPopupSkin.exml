@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RankUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179d0fe1f26"/>
+	<e:Image x="52.802" y="75.267" width="1031.385" height="502.595" visible="true" source="commonUI_json.commonUI_bg" scale9Grid="9,80,11,11"/>
+	<e:Image id="u_closeBtn" source="rankUI_json.rankUI_close" x="1041" y="104" width="16" height="16" scaleX="1"/>
+	<e:Image source="rankUI_json.rankUI_sort" x="70" y="98"/>
+	<e:Label id="u_rankLb" text="排名信息" x="102" y="102.999" textColor="0xF0E4B0" size="18" visible="true"/>
+	<e:Scroller id="u_scroller" width="974" height="378" y="164" horizontalCenter="0">
+		<e:List id="u_list"/>
+	</e:Scroller>
+</e:Skin>

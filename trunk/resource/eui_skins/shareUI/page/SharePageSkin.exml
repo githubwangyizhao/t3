@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SharePageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17607d9b1c4"/>
+	<e:Scroller id="u_scrollerItem" width="662" height="303" y="172" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="68" x="300">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+	</e:Scroller>
+	<e:Group id="u_btnShare" x="612" y="498">
+		<e:Image source="commonUI_json.commonUI_img_btnbule2" x="0" y="0" width="144" height="52"/>
+		<e:Image source="shareUI_json.shareUI_btn_title" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group x="965" y="142.126" visible="false">
+		<e:Image id="u_btnTop" width="21" height="15" y="5" visible="true" source="commonUI_json.commonUI_icon_jts" horizontalCenter="0"/>
+		<e:Image id="u_btnBottom" width="21" height="15" y="345" source="commonUI_json.commonUI_icon_jtx" visible="true" horizontalCenter="0"/>
+		<e:VScrollBar id="u_vScrollBar" width="17" height="310" autoVisibility="false" horizontalCenter="0" verticalCenter="0" skinName="VScrollBarSkin" visible="false"/>
+	</e:Group>
+</e:Skin>

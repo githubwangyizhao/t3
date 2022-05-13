@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.UpGradeViewSkin"
+	 width="106"
+	height="90" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_grpMain" width="106" height="90">
+		<e:Group id="u_grpParent" width="106" height="90" x="0" y="0" scaleX="1" scaleY="1" zIndex="2" touchEnabled="false">
+			<e:Image id="u_imgIcon" source="userMainUI_json.userMainUI_img_icon_2001" visible="true" x="0" y="12.137" scaleX="1" scaleY="1"/>
+			<e:Image source="userMainUI_json.userMainUI_upGrage_progress_0" horizontalCenter="0.5" y="14.198" visible="true" zIndex="2"/>
+			<e:Group id="u_grpProgress" horizontalCenter="0" width="106" height="90" touchEnabled="false" touchChildren="false" x="0" scaleX="1" scaleY="1" zIndex="2">
+			<e:Image id="u_expProgress" fillMode="clip" horizontalCenter="0.5" visible="true" source="userMainUI_json.userMainUI_upGrage_progress_1" y="14.427"/>
+			</e:Group>
+			<e:Image id="u_mask" source="commonUI_json.commonUI_box" width="106" height="43" scale9Grid="3,3,4,4" bottom="32" visible="true" x="0" y="47" scaleX="1" scaleY="1" zIndex="2"/>
+			<e:Label id="u_textProgress" text="100%" y="62.846" size="16" horizontalCenter="1.5" textColor="0xF0E4B0" stroke="1" touchEnabled="false" scaleX="1.2" x="23" scaleY="1" visible="true" zIndex="2"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

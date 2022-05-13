@@ -1,0 +1,56 @@
+//频道聊天
+//频道 channel [1:世界 2:仙盟 3:系统 5.仙界 6.结婚]
+
+message MsgData {
+    required int32 player_id = 1;       //玩家id
+    required string nickname = 2;       //玩家昵称
+    required int32 sex = 3;             //性别 [0:男 1;女]
+    required int32 vip_level = 4;       //玩家vip等级
+    required int32 head_id = 5;         //头像id
+    required string serverId = 6;       //服务器id
+    required int32 channel = 7;         //频道
+    required string msg = 8;            //信息
+    required int32 template_id = 9;     //消息模版id
+    repeated string arsg_list = 10;     //参数列表
+    required int32 loop_num = 11;       //循环次数
+    optional int32 is_forbid = 12;      //是否禁言(客户端用)
+}
+
+//频道聊天
+message m_channel_chat_tos {
+    required int32 channel = 1; //频道
+    required string msg = 2; //信息
+}
+
+//频道聊天失败
+message m_channel_chat_toc {
+    enum ENUM {
+        level_limit = 1;    //等级限制
+        too_quick = 2;      //发消息太快
+        too_long = 3;       //消息太长
+        no_faction = 4;     //没有仙盟
+        fail = 5;           //失败
+    }
+    required ENUM fail_reason = 1;
+}
+
+//广播频道消息
+message m_broadcast_channel_msg_toc {
+    required int32 player_id = 1;       //玩家id
+    required string nickname = 2;       //玩家昵称
+    required int32 sex = 3;             //性别 [0:男 1;女]
+    required int32 vip_level = 4;       //玩家vip等级
+    required int32 head_id = 5;         //头像id
+    required string serverId = 6;       //服务器id
+    required int32 channel = 7;         //频道
+    required string msg = 8;            //信息
+    required int32 template_id = 9;     //消息模版id
+    repeated string arsg_list = 10;     //参数列表
+    required int32 loop_num = 11;       //循环次数
+    optional int32 is_forbid = 12;      //是否禁言(客户端用)
+}
+
+//广播频道消息列表
+message m_broadcast_channel_msg_list_toc {
+    repeated MsgData msg_data_list = 1; //消息列表
+}

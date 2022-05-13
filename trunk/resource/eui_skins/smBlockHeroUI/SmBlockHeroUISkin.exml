@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmBlockHeroUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="173e0517897"/>
+	<e:Image id="u_imgBj" source="smBlockHeroUI_json.smBlockHeroUI_bj" x="0" width="1136" height="640" scale9Grid="312,286,313,74"/>
+	<e:Image id="u_imgTit" source="smBlockHeroUI_json.smBlockHeroUI_tit" x="102" y="6"/>
+	<e:Group id="u_mcDrop" horizontalCenter="0" y="496">
+		<e:Image id="u_imgDrop" y="0" width="1136" height="150" source="smBlockHeroUI_json.smBlockHeroUI_drop" scale9Grid="8,6,3,7" horizontalCenter="0"/>
+		<e:Image id="u_imgPit" height="150" scaleX="1" scaleY="1" y="0" horizontalCenter="0" source="commonUI_json.commonUI_box" scale9Grid="1,1,8,8"/>
+		<e:Label text="按 住 屏 幕 调 整 方 块 大 小 松 开 放 下 方 块 通 过 陷 阱" size="15.2" bold="true" horizontalCenter="0" strokeColor="0x513210" stroke="1" x="122" y="113" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Image id="u_imgDropBlock" width="50" height="50" scale9Grid="13,11,6,3" y="100" source="smBlockHeroUI_json.smBlockHeroUI_block" x="543"/>
+	<e:Image id="u_imgRen" x="33" y="460" height="36" source="commonUI_json.commonUI_icon_2"/>
+	<e:Image id="u_imgTouch" source="commonUI_json.commonUI_box_1" x="0" y="0" width="1136" height="640" alpha="0" locked="true"/>
+	<e:Image id="u_btnClose" x="11" y="14.5" source="commonUI_json.commonUI_btn_close_1"/>
+	<e:Group id="u_mcLimit" x="955">
+		<e:Image id="u_imgLimitBj" source="commonUI_json.commonUI_box_5" x="0" y="0" scale9Grid="57,48,21,16" anchorOffsetX="0" width="181" anchorOffsetY="0" height="125"/>
+		<e:Group id="u_mcScore" y="37.5" x="55">
+			<e:Label id="u_txtScore" text="10" y="27" bold="true" size="26" textColor="0xd3747b" horizontalCenter="0" textAlign="center"/>
+			<e:Label text="当前分数" x="0" y="0" textColor="0x613F33" size="20" bold="true"/>
+		</e:Group>
+		<e:Group id="u_mcTime" x="55" y="105.5">
+			<e:Label text="剩余时间" x="0" y="0" textColor="0x613f33" size="20" bold="true"/>
+			<e:Label id="u_txtTime" text="50s" y="27" bold="true" size="26" textColor="0xd3747b" horizontalCenter="0" textAlign="center"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

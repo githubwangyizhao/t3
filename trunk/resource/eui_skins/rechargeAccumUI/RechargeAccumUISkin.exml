@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RechargeAccumUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a9e0e10a5"/>
+	<e:Image id="u_bg" visible="true" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="rechargeAccumUI_json.rechargeAccumUI_bg1" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group id="u_contentGrp" y="37" x="585">
+		<e:Image source="rechargeAccumUI_json.rechargeAccumUI_title" y="0" horizontalCenter="0"/>
+		<e:Label id="u_timeLb" text="活动时间：7.1~7.30 24:00" y="126.01" size="17" stroke="2" textColor="0x82F428" horizontalCenter="0"/>
+		<e:Image source="rechargeAccumUI_json.rechargeAccumUI_listBg" y="150" width="525" height="420" scale9Grid="27,16,28,16" visible="true" horizontalCenter="0"/>
+		<e:Scroller id="u_scroller" width="505" height="400" y="158" visible="true" horizontalCenter="0">
+			<e:List id="u_listItem"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HSliderViewSkin"
+	 width="300"
+	height="20" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonUI_json.commonUI_slide_bg" scale9Grid="100,4,100,4" x="0" y="4"/>
+	<e:Image id="u_imgHighlight" visible="true" source="commonUI_json.commonUI_slide_cur" width="296" fillMode="clip" x="2" y="6"/>
+	<e:Image id="u_btnThumb" anchorOffsetX="17" visible="true" source="commonUI_json.commonUI_slide_thumb" anchorOffsetY="16.5" x="2" y="10.5"/>
+</e:Skin>

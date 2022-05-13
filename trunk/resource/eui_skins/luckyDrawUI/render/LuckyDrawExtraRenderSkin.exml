@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawExtraRenderSkin"
+	 width="161"
+	height="70" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_light" source="luckyDrawUI_json.luckyDrawUI_cur_vue" x="0" y="6"/>
+	<e:Label id="u_countLb" text="5" x="42.12" y="26" size="16" fontFamily="Microsoft YaHei"/>
+	<e:Image source="luckyDrawUI_json.luckyDrawUI_boxBg" x="91" y="0"/>
+	<e:Image id="u_itemIcon" x="91" y="0" width="70" height="70" source="luckyDrawUI_json.luckyDrawUI_box"/>
+	<e:Image id="u_dotTip" source="commonUI_json.commonUI_red" x="145" y="8"/>
+	<e:Image id="u_receivedImg" x="91" y="0" width="70" height="70" source="commonUI_json.commonUI_received"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" x="91" y="0" width="70" height="70" alpha="0"/>
+</e:Skin>

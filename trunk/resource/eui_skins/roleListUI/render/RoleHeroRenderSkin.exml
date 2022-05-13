@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleHeroRenderSkin"
+	 width="194"
+	height="307" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_heroIcon" visible="true" y="0" horizontalCenter="0"/>
+	<e:Label id="u_txtName" text="角色名称" y="260" size="16" stroke="2" visible="true" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" horizontalCenter="0"/>
+	<e:Label text="获取途径" size="16" fontFamily="Microsoft YaHei" stroke="2" visible="true" id="u_txtPath" scaleX="1" scaleY="1" y="247" width="155" textAlign="center" lineSpacing="12" verticalAlign="middle" height="44" textColor="0xF0E4B0" horizontalCenter="0"/>
+	<e:Image id="u_imgSelect" visible="true" x="6" y="2" source="roleListUI_json.roleListUI_icon_equipped"/>
+	<e:Image id="u_imgMask" source="roleListUI_json.roleListUI_hero_mask" visible="true" y="0" x="0"/>
+	<e:Image id="u_imgLock" source="roleListUI_json.roleListUI_icon_suo" visible="true" y="55" scaleX="0.8" scaleY="0.8" x="9"/>
+</e:Skin>

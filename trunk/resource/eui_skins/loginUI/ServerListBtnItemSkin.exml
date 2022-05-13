@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="serverListBtnItem" width="133" height="49" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" source="loginUI_json.loginUI_btn_1_1"/>
+</e:Skin>

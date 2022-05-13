@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoSpecSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17987fc8d56"/>
+	<e:Scroller id="u_scrollerItem" width="895.5" height="456" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="165" y="93">
+		<e:Group y="0">
+		<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_zz" x="1200" y="100" width="1264" height="100" rotation="180" visible="true" locked="true"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_zz" x="-64" y="538.5" width="1264" height="100" visible="true" locked="true"/>
+	<e:Image id="u_imgLeft" source="commonUI_json.commonUI_icon_jts" x="153" y="622" rotation="271.173" visible="true"/>
+	<e:Image id="u_imgRight" source="commonUI_json.commonUI_icon_jtx" x="1047" y="622" rotation="268.746" visible="true"/>
+	<e:HScrollBar id="u_specScrollBar" width="873.5" height="20" x="172" y="602" visible="true" skinName="HScrollBarSkin" rotation="359.9"/>
+</e:Skin>

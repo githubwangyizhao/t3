@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PopupMsgTipSkin" width="580" height="360" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17968a5289d"/>
+	<e:Image x="0" anchorOffsetX="0" y="0" anchorOffsetY="0" source="commonUI_json.commonUI_img_popdi" scaleY="1" width="579.48" height="358.191" scale9Grid="33,173,33,174" visible="true"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" x="-49.657" scaleY="1" scaleX="1" y="2.307"/>
+	<e:Image source="commonUI_json.commonUI_img_notice" x="263.955" y="8.533"/>
+	<e:Image source="commonUI_json.commonUI_img_inner" x="12" y="48" width="555.477" height="153.719" scale9Grid="23,10,24,11"/>
+	<e:Image id="u_btnCLose" source="commonUI_json.commonUI_btn_close_4" x="484.196" y="1.478"/>
+	<e:Label id="u_txtMsg" text="苏打水法发顺丰啊发发发发荣企鹅王v" anchorOffsetX="0" width="485" size="24" multiline="true" wordWrap="true" anchorOffsetY="0" height="120" lineSpacing="8" textAlign="center" touchEnabled="false" strokeColor="0xedb295" bold="true" verticalAlign="middle" y="65.4" visible="true" fontFamily="Microsoft YaHei" textColor="0xF1E5B1" horizontalCenter="-0.5"/>
+	<e:Group id="u_btnLeft" y="270" width="140" height="50" visible="true" x="116">
+		<e:Image x="0" y="0" width="140" height="50" scale9Grid="58,17,59,16" source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Label id="u_txtLeft" text="失败" size="20" verticalAlign="middle" fontFamily="Microsoft YaHei" textAlign="right" bold="true" stroke="2" strokeColor="0x644013" textColor="0xFAF5D0" horizontalCenter="0" x="154" scaleX="1" scaleY="1" y="16"/>
+	</e:Group>
+	<e:Group id="u_btnRight" y="270" width="140" height="50" visible="true" x="325">
+		<e:Image x="0" y="0" width="140" height="50" visible="true" scale9Grid="58,17,59,16" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Label id="u_txtRight" text="确定" size="20" y="16" verticalAlign="middle" fontFamily="Microsoft YaHei" textAlign="right" bold="true" stroke="2" strokeColor="0x644013" textColor="0xfaf5d0" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_mcTishi" y="216" x="218">
+		<e:Group height="31" width="37" scaleX="1" scaleY="1" x="0" y="0">
+			<e:Image visible="true" y="4" scaleX="1" scaleY="1" source="commonUI_json.commonUI_img_checkbox" width="37"/>
+			<e:Image id="u_imgGou" visible="true" y="4" source="commonUI_json.commonUI_img_check"/>
+		</e:Group>
+		<e:Label id="u_txtTishiMsg" text="Not reminded" anchorOffsetX="0" size="20" multiline="true" wordWrap="true" anchorOffsetY="0" lineSpacing="8" touchEnabled="false" strokeColor="0xEDB295" bold="true" height="38" verticalAlign="middle" textAlign="left" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" x="41" y="1" width="153.365"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="u_txtCountdown" text="5s后关闭" size="16" height="33" y="280.5" verticalAlign="middle" fontFamily="Microsoft YaHei" textAlign="right" textColor="0xFF0000" bold="true" right="32" stroke="1" strokeColor="0x3c342e"/>
+</e:Skin>

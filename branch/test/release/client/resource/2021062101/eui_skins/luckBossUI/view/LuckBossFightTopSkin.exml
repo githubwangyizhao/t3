@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckBossFightTopSkin"
+	 width="847"
+	height="102" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179ac004161"/>
+	<e:Group y="0" horizontalCenter="0">
+		<e:Image source="luckBossFightUI_json.luckBossFightUI_bg" x="0" visible="true" y="0"/>
+		<e:Image id="u_btnDetail" source="luckBossFightUI_json.luckBossFightUI_btn_xzxq" x="59" y="12" visible="true" width="60" height="65"/>
+		<e:Image id="u_btnChart" source="luckBossFightUI_json.luckBossFightUI_btn_qs" x="728" y="12" visible="true" width="60" height="65"/>
+		<e:List id="u_listItem" height="68" x="178" y="8"/>
+	</e:Group>
+</e:Skin>

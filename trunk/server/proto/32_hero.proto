@@ -1,0 +1,79 @@
+//英雄
+//OPEN_DEBUG
+
+//英雄
+message Hero {
+    required int32 id = 1;              // 英雄id
+    required int32 star = 2;            // 英雄星级
+}
+
+//玩家英雄
+message PlayerHero {
+    required int32 id = 1;              // 英雄id
+    required int32 arms = 2;            // 穿戴中的英雄武器
+    required int32 ornaments = 3;       // 穿戴中的英雄饰品
+    repeated int32 list = 4;            // 拥有的英雄部件列表
+    repeated Hero hero_list = 5;        // 英雄列表
+}
+
+//改变英雄以及装饰
+message m_charge_hero_parts_tos {
+    required int32 id = 1;              // 英雄id
+    required int32 arms = 2;            // 穿戴中的英雄武器
+    required int32 ornaments = 3;       // 穿戴中的英雄饰品
+}
+message m_charge_hero_parts_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_condition = 3;               // 条件不足
+    }
+    required ENUM result = 100;
+    required int32 id = 1;              // 英雄id
+    required int32 arms = 2;            // 穿戴中的英雄武器
+    required int32 ornaments = 3;       // 穿戴中的英雄饰品
+}
+
+//解锁英雄
+message m_unlock_hero_tos {
+    required int32 id = 1;              // 英雄id
+}
+message m_unlock_hero_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_enough_prop = 3;             // 道具不足
+        already_have = 4;               // 已解锁
+    }
+    required ENUM result = 100;
+    required int32 id = 1;              // 英雄id
+}
+
+//英雄升星
+message m_hero_up_star_tos {
+    required int32 id = 1;              // 英雄id
+}
+message m_hero_up_star_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_enough_prop = 3;             // 道具不足
+        not_authority = 4;              // 已满星
+        none = 5;                       // 没有这个英雄
+    }
+    required ENUM result = 100;
+    required int32 id = 1;              // 英雄id
+    required int32 star = 2;            // 英雄星级
+}
+
+//通知解锁英雄部件
+message m_notice_hero_unlock_parts_toc {
+    required int32 parts_id = 1;        // 解锁 部件id
+}
+
+//通知解锁英雄
+message m_notice_unlock_hero_toc {
+    required int32 id = 1;              // 英雄id
+    required int32 star = 2;            // 英雄星级
+    repeated int32 parts_id = 3;        // 部件id列表
+}

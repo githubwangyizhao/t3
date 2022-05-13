@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideViewSkin" width="260" height="135" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" anchorOffsetX="0" width="260" anchorOffsetY="0" horizontalCenter="0" source="commonUI_json.commonUI_dutie_di" verticalCenter="0" scale9Grid="19,18,7,87"/>
+	<e:Label id="u_txtMsg" text="" size="16" textAlign="left" x="22" width="218" lineSpacing="10" wordWrap="true" textColor="0xf0e4b0" fontFamily="Microsoft YaHei" verticalCenter="1" verticalAlign="middle"/>
+</e:Skin>

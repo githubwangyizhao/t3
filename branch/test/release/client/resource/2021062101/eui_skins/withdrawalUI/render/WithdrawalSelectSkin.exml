@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WithdrawalSelectSkin"
+	 width="188"
+	height="70" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" source="recycleUI_json.recycleUI_di_2" scale9Grid="9,12,6,2" width="188" height="70" visible="true" x="0" y="0"/>
+	<e:Label id="u_txtNum" text="$10" size="36" bold="true" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

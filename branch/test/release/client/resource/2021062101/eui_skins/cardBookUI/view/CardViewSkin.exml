@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardViewSkin"
+	 width="116"
+	height="138" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="cardBookUI_json.cardBookUI_box_1" y="0" scale9Grid="17,17,16,16" width="104" height="135" visible="true" x="11"/>
+	<e:Group x="13" y="2">
+		<e:Image id="u_imgQuality" y="0" visible="true" source="commonUI_json.commonUI_icon_q_3" horizontalCenter="0"/>
+		<e:Image id="u_imgIcon" y="3" visible="true" horizontalCenter="0"/>
+		<e:Label id="u_txtCount" text="10/10" bold="true" textColor="0xF0E4B0" stroke="2" size="16" y="110" visible="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image source="cardBookUI_json.cardBookUI_check" x="80" y="14" id="u_btnCheck"/>
+	<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="3" y="0" visible="true"/>
+	<e:Image id="u_imgReceived" source="cardBookUI_json.cardBookUI_complete" y="53" visible="true" horizontalCenter="3" x="11"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" width="116" height="138" visible="true" scale9Grid="3,3,4,4" alpha="0" x="0" y="0"/>
+</e:Skin>

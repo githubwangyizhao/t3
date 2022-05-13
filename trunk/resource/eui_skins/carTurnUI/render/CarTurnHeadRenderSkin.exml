@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnHeadSkin"
+	 width="99"
+	height="117" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe337b00"/>
+	<e:Group width="99" height="117">
+		<e:Image id="u_imgCrown" source="carTurnUI_json.carTurnUI_img_crown" horizontalCenter="2" y="-15" visible="true"/>
+		<e:Image id="u_imgFrame" verticalCenter="-13" visible="true" source="carTurnUI_json.carTurnUI_rank_head_bg" horizontalCenter="0"/>
+		<e:Image id="u_imgHead" horizontalCenter="1" visible="true" scaleX="0.574" scaleY="0.574" y="10"/>
+		<e:Image source="carTurnUI_json.carTurnUI_player_name_bg" y="71" horizontalCenter="0"/>
+		<e:Image id="u_imgRank" y="72" horizontalCenter="0"/>
+		<e:Label id="u_textName" text="Label" y="97" size="14" stroke="1" bold="true" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

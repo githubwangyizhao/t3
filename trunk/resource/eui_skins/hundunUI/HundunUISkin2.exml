@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HundunUISkin2" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_bg" top="-5" bottom="5" source="hundunBg2_json.hundunBg2_bg1" x="-172" locked="true"/>
+	<e:Group id="u_gp_page" horizontalCenter="-10" verticalCenter="-1" width="1389">
+		<e:Image id="u_img_bg" x="0" y="0" source="hundunUI2_json.hundunUI2_di1"/>
+		<e:Group id="u_gp_contex" anchorOffsetX="0" width="615" anchorOffsetY="0" height="415" x="299" y="83">
+		</e:Group>
+		<e:Image id="u_img_mask" width="615" height="415" x="299" y="84" source="commonUI_json.commonUI_box_1" scale9Grid="6,6,38,38"/>
+		<e:Group id="u_gp_contex2" anchorOffsetX="0" width="176" anchorOffsetY="0" height="416" x="969" y="83">
+		</e:Group>
+		<e:Image id="u_img_mask2" width="172" height="416" x="972" y="83" source="commonUI_json.commonUI_box_1" scale9Grid="6,6,38,38"/>
+		<e:Image source="hundunUI2_json.hundunUI2_guangdi1" x="973" y="101" anchorOffsetX="0" width="173"/>
+		<e:Group x="369.48" y="565.01">
+		<e:Image source="hundunUI_json.hundunUI_sld" x="0" y="0" anchorOffsetX="0" width="369.33" scale9Grid="7,6,44,43"/>
+		<e:Image id="u_img_getIcon" source="commonUI_json.commonUI_icon_52" x="5.8" y="-0.81" width="50" height="50"/>
+		<e:Label id="u_lb_total" text="Win:0" x="60.03" y="13.66" textColor="0xefebac" bold="true" size="27" fontFamily="SimHei"/>
+		</e:Group>
+		<e:Group id="u_gp_cost" x="817.35" y="492.23" visible="false">
+		<e:Image source="hundunUI_json.hundunUI_sld" x="0" y="0" anchorOffsetX="0" width="283.33" scale9Grid="7,6,44,43"/>
+		<e:Image id="u_img_del" source="commonUI_json.commonUI_img_jian" x="10" y="10.99"/>
+		<e:Image id="u_img_add" source="commonUI_json.commonUI_img_jia" x="233" y="10.99"/>
+		<e:Label id="u_lb_cost" text="100" x="92.99" y="18" size="23" width="120" textAlign="center"/>
+		</e:Group>
+		<e:Group id="u_gp_autos" x="743" y="354" visible="false">
+		<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="165" anchorOffsetY="0" height="215" scale9Grid="8,8,52,54" scaleX="1" scaleY="1"/>
+		<e:Group id="u_auto4" x="5" y="2">
+			<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+			<e:Label text="∞" x="42.67" y="0" textColor="0xdbb981" size="33" anchorOffsetX="0" width="72.33" textAlign="center" height="35" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group x="5" y="42" id="u_auto3">
+			<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+			<e:Label text="500" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group x="5" y="82" id="u_auto2">
+			<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+			<e:Label text="100" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group x="5" y="122" id="u_auto1">
+			<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+			<e:Label text="50" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group x="5" y="162" id="u_auto0">
+			<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+			<e:Label text="30" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		</e:Group>
+		<e:Group id="u_gp_bet" x="900.47" y="560.38">
+		<e:Image id="u_btn_bet" source="hundunUI_json.hundunUI_bet" x="0" y="0"/>
+		<e:Label id="u_lb_bet" text="0" x="22.2" y="30.24" size="20" textAlign="center" verticalAlign="middle" fontFamily="SimHei" textColor="0xE8CF6F" width="100"/>
+		</e:Group>
+		<e:Group id="u_gp_auto" x="751" y="560.38">
+		<e:Image id="u_btn_auto" x="0" y="0" source="hundunUI_json.hundunUI_auto2"/>
+		<e:Label id="u_lb_auto" text="0" x="21.67" y="28.62" size="20" textAlign="center" verticalAlign="middle" fontFamily="SimHei" textColor="0xe8cf6f" width="100"/>
+		</e:Group>
+		<e:Image id="u_btnRule" source="hundunUI_json.hundunUI_info" x="212.03" y="560.38"/>
+		<e:Image id="u_btnStart" source="hundunUI_json.hundunUI_spin" x="1051.44" y="560.38"/>
+		<e:Group id="u_line2" width="20" height="20" x="274" y="116.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz2" x="1.7" y="0.6"/>
+		</e:Group>
+		<e:Group id="u_line4" width="20" height="20" x="274" y="156.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz4"/>
+		</e:Group>
+		<e:Group id="u_line8" width="20" height="20" x="274" y="196.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz8"/>
+		</e:Group>
+		<e:Group id="u_line1" width="20" height="20" x="274" y="250.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz1"/>
+		</e:Group>
+		<e:Group id="u_line6" width="20" height="20" x="274" y="290.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz6"/>
+		</e:Group>
+		<e:Group id="u_line7" width="20" height="20" x="274" y="330.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz7"/>
+		</e:Group>
+		<e:Group id="u_line3" width="20" height="20" x="274" y="384.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz3"/>
+		</e:Group>
+		<e:Group id="u_line5" width="20" height="20" x="274" y="424.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz5"/>
+		</e:Group>
+		<e:Group id="u_line9" width="20" height="20" x="274" y="464.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="1.7" y="0.6" source="hundunUI2_json.hundunUI2_sz9"/>
+		</e:Group>
+		<e:Group id="u_line10" width="20" height="20" x="944.5" y="250.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.2" y="1.1" source="hundunUI2_json.hundunUI2_sz0"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-4" y="0.5"/>
+		</e:Group>
+		<e:Group id="u_line11" width="20" height="20" x="944.5" y="290.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="6.7" y="1.1" source="hundunUI2_json.hundunUI2_sz1"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-2.5" y="0.5"/>
+		</e:Group>
+		<e:Group id="u_line16" width="20" height="20" x="944.5" y="330.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.2" y="1.1" source="hundunUI2_json.hundunUI2_sz6"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-4" y="0.5"/>
+		</e:Group>
+		<e:Group id="u_line12" width="20" height="20" x="944.5" y="116.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.2" y="1.1" source="hundunUI2_json.hundunUI2_sz2"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-4" y="0.5"/>
+		</e:Group>
+		<e:Group id="u_line14" width="20" height="20" x="944.5" y="156.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.7" y="0.1" source="hundunUI2_json.hundunUI2_sz4"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-3.5" y="-0.5"/>
+		</e:Group>
+		<e:Group id="u_line17" width="20" height="20" x="944.5" y="196.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.2" y="1.1" source="hundunUI2_json.hundunUI2_sz7"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-4" y="0.5"/>
+		</e:Group>
+		<e:Group id="u_line13" width="20" height="20" x="944.5" y="384.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.2" y="1.1" source="hundunUI2_json.hundunUI2_sz3"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-4" y="0.5"/>
+		</e:Group>
+		<e:Group id="u_line15" width="20" height="20" x="944.5" y="424.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.2" y="1.1" source="hundunUI2_json.hundunUI2_sz5"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-4" y="0.5"/>
+		</e:Group>
+		<e:Group id="u_line18" width="20" height="20" x="944.5" y="464.5" anchorOffsetX="10" anchorOffsetY="10">
+			<e:Image source="hundunUI2_json.hundunUI2_szd1" x="10" y="10" anchorOffsetX="18.5" anchorOffsetY="18.5"/>
+			<e:Image x="5.2" y="1.1" source="hundunUI2_json.hundunUI2_sz8"/>
+			<e:Image source="hundunUI2_json.hundunUI2_sz1" x="-4" y="0.5"/>
+		</e:Group>
+
+	</e:Group>
+</e:Skin><!---->

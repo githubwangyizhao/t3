@@ -1,0 +1,60 @@
+//1v1房间
+
+import "01_player.proto";
+
+//1v1房间数据
+message OneVsOneRoomData {
+    required int32 room_id = 1;                             //房间id
+    repeated ModelHeadFigure model_head_figure_list = 2;    //玩家头像
+}
+
+message OneVsOneRankData {
+    required int32 rank = 1;                                //排行
+    required ModelHeadFigure model_head_figure = 2;         //玩家头像
+    required int32 value = 3;                               //值
+}
+
+//获取1v1房间列表
+message m_get_room_list_tos {
+    required int32 type = 1;
+}
+message m_get_room_list_toc {
+    required int32 type = 1;
+    repeated OneVsOneRoomData room_list = 2;                //房间列表
+    repeated OneVsOneRankData rank_list = 3;                //排行列表
+    required int32 my_win_value = 4;                        //我的胜场
+}
+
+//退出房间列表
+message m_exit_room_list_tos {
+}
+
+//加入房间
+message m_join_room_tos {
+    required int32 type = 1;                                //类型
+    required int32 room_id = 2;                             //房间id
+}
+message m_join_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        not_enough_mana = 3;                                //道具不足
+        no_condition = 4;                                   //人数已满
+    }
+    required ENUM result = 1;                               //结果
+}
+
+//通知更新房间数据
+message m_notice_update_room_data_toc {
+    required int32 type = 1;
+    repeated OneVsOneRoomData room_list = 2;                //房间数据
+}
+
+//通知场景技能上限
+message m_notice_scene_skill_limit_toc {
+    message skill_limit{
+        required int32 skill_id = 1;
+        required int32 times_limit = 2;
+    }
+    repeated skill_limit skill_limit_list = 1;      //场景技能上限列表
+}

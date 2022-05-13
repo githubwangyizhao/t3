@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CostRatioRenderSkin"
+	 width="190"
+	height="42" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="userMainUI_json.userMainUI_render_bg" scale9Grid="12,12,13,13" width="180" horizontalCenter="0" y="5"/>
+	<e:Group id="u_lockGrp" x="8" y="4" visible="false">
+		<e:Image source="userMainUI_json.userMainUI_u_lock" x="0" y="0"/>
+		<e:Label id="u_lockDes" text="46级解锁500000倍" x="36" width="135" size="15" fontFamily="Microsoft YaHei" textColor="0x838486" y="10"/>
+	</e:Group>
+	<e:Group id="u_norGrp" x="-2" y="-1" visible="true">
+		<e:Image id="u_selectedImg" source="userMainUI_json.userMainUI_selected" scale9Grid="58,19,57,10" width="195" x="0" y="0" visible="false"/>
+		<e:Label id="u_ratioLb" text="100" size="18" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

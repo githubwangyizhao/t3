@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoZYSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c966095bc"/>
+    <e:Image id="u_imgZY" x="253" y="115" visible="true" width="737" height="442"/>
+</e:Skin>

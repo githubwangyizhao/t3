@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WithdrawalRecRenderSkin"
+	 width="600"
+	height="50" xmlns:e="http://ns.egret.com/eui">
+    <e:Label text="2021-01-28" size="24" id="u_txtTime" bold="true" textColor="0x000000" verticalCenter="0"/>
+	<e:Label text="- 10元" size="24" id="u_txtMoney" bold="true" textColor="0x000000" verticalCenter="0" horizontalCenter="0"/>
+	<e:Image id="u_imgState" source="recycleUI_json.recycleUI_state2" x="492" verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SevenDaysUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="175ff660356"/>
+	<e:Image id="u_bg" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image y="66.097" visible="true" scale9Grid="26,27,27,27" anchorOffsetX="0" anchorOffsetY="0" source="sevenDaysUI_json.sevenDaysUI_bg" x="111"/>
+	<e:Image source="sevenDaysUI_json.sevenDaysUI_title" x="-78.333" y="18"/>
+	<e:Image source="sevenDaysUI_json.sevenDaysUI_imgShow" x="201.674" y="295.666"/>
+	<e:Image id="u_clickTip" source="sevenDaysUI_json.sevenDaysUI_clickTip" x="929.494" y="385" visible="false"/>
+	<e:Scroller id="u_scrollerItem" width="868" height="155" y="82" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="182.21">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+	<e:Group id="u_slotGrp" x="494.006" y="289.093" height="135" width="415" visible="true">
+	</e:Group>
+	<e:Label id="u_baseLb" text="基本奖金" y="460.926" anchorOffsetX="0" fontFamily="Microsoft YaHei" textAlign="center" size="16" bold="true" stroke="0" strokeColor="0xFFFFFF" textColor="0xFFFFFF" horizontalCenter="-10"/>
+	<e:Label id="u_vipLb" text="VIP奖励" y="460.926" anchorOffsetX="0" fontFamily="Microsoft YaHei" textAlign="center" size="16" bold="true" stroke="0" strokeColor="0xFFFFFF" textColor="0xFFFFFF" horizontalCenter="179"/>
+	<e:Label id="u_totalLb" text="合计" y="460.926" anchorOffsetX="0" fontFamily="Microsoft YaHei" textAlign="center" size="16" bold="true" stroke="0" strokeColor="0xFFFFFF" textColor="0xFFFFFF" horizontalCenter="367"/>
+	<ns1:NumberView id="u_awd0" width="140" height="25" y="486.926" horizontalCenter="-10" x="807"/>
+	<ns1:NumberView id="u_awd1" width="140" height="25" horizontalCenter="179" x="998" y="486.926"/>
+	<ns1:NumberView id="u_awd2" width="140" height="25" y="486.926" horizontalCenter="366" x="1190"/>
+	<e:Button id="u_startBtn" x="965" y="348.833" anchorOffsetX="19" anchorOffsetY="96" touchChildren="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="sevenDaysUI_json.sevenDaysUI_btn_up" source.down="sevenDaysUI_json.sevenDaysUI_btn_down"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" fontFamily="Microsoft YaHei" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="u_tipLb" text="基本奖金=骰子点数X1000,VIP奖励=基本奖金数" x="578.21" y="527.833" fontFamily="Microsoft YaHei" textColor="0x9EACC2" size="15"/>
+</e:Skin>

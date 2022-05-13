@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketLevelPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a335fcc87"/>
+	<e:Image y="153" width="527" height="333" horizontalCenter="0" visible="true" source="commonUI_json.commonUI_img_popdi" scale9Grid="33,83,33,403"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" y="154" horizontalCenter="0"/>
+	<e:Image y="162" horizontalCenter="0.5" source="passTicketUI_json.passTicketUI_txt_jsjl"/>
+	<e:Image id="u_btnClose" x="736" y="155" source="commonUI_json.commonUI_btn_close_4" width="93" height="34"/>
+	<e:Group x="319" y="208">
+		<e:Image source="commonUI_json.commonUI_img_inner" y="0" width="498" height="171" scale9Grid="23,10,24,11" x="0"/>
+		<e:Label id="u_txtMsg" text="是否解锁下一级奖励" size="18" textColor="0xF0E4B0" width="450" textAlign="center" lineSpacing="13" wordWrap="true" stroke="2" verticalCenter="0" horizontalCenter="-1" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_btnBuy" y="410" horizontalCenter="0" x="777" width="122" height="46">
+		<e:Image y="0" scale9Grid="58,17,59,16" visible="true" x="0" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Group y="8" horizontalCenter="0" touchEnabled="false">
+			<e:Image id="u_iconCost" source="commonUI_json.commonUI_icon_4" x="0" width="30" height="30" visible="true" touchEnabled="false" y="0"/>
+			<e:Label id="u_txtCost" text="999" size="20" textColor="0xF0E4B0" visible="true" bold="true" touchEnabled="false" y="7" x="38" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

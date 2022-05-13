@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketTaskPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Scroller id="u_scrollerItem" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="225" width="1136" height="370">
+		<e:Group id="u_mcTask" visible="true">
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

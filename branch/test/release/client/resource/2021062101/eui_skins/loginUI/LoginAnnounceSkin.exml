@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginAnnounceSkin" width="969" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" y="3" anchorOffsetY="0" height="635" source="loginUI_bg_1" horizontalCenter="0" visible="true" width="810" scale9Grid="323,98,9,151"/>
+	<e:Label id="u_txtTitle" y="13.61" size="26" bold="true" horizontalCenter="1" x="248" textColor="0xFFE062" stroke="2" italic="true" text="Title"/>
+	<e:Scroller id="u_scrollerItem" width="694" height="521" y="65.5" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group x="59" y="161">
+		<e:Label id="u_txtMsg" text="尊敬的玩家：     " y="0" textAlign="left" anchorOffsetX="0" size="18" anchorOffsetY="0" x="0" width="694" lineSpacing="8" textColor="0xF0E4B0"/>
+	</e:Group>
+	</e:Scroller>
+	
+</e:Skin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmDartViewSkin" width="28" height="135" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgDart" source="smDartUI_json.smDartUI_dart" width="22" height="130" anchorOffsetX="11" scale9Grid="5,58,37,1" anchorOffsetY="-84"/>
+</e:Skin>

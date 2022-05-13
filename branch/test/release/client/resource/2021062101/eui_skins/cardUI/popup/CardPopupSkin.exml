@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CardPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="u_txtCountdown" text="Label" y="563" horizontalCenter="0" verticalAlign="middle" size="20" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" bold="true" visible="true"/>
+</e:Skin>

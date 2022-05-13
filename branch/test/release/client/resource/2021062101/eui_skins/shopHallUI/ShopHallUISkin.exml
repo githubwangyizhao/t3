@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopHallUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179e4153e7f"/>
+	<e:Image id="u_imgBg" scale9Grid="23,23,24,24" visible="true"/>
+	<e:Scroller id="u_rechargeScroll" width="1116" height="480" y="54" visible="true" x="10">
+		<e:Group id="u_grpShopHall">
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_btnArray" y="557" height="80" width="1136">
+		<e:Image id="u_imgBottom" source="shopHallUI_json.shopHallUI_img_navBg" visible="true" scale9Grid="460,27,460,27" x="0" width="100%"/>
+		<e:Group id="u_btn1" width="276" height="60" y="20" name="Name1" x="0">
+		<e:Image y="15.5" width="27" height="25" visible="true" horizontalCenter="3.5" source="shopHallUI_json.shopHallUI_icon_zs"/>
+			<e:Image id="u_img1" source="shopHallUI_json.shopHallUI_img_line" visible="true" scaleX="1" scaleY="1" height="60" y="0" right="0"/>
+		<e:Image id="u_imgType1" width="100%" height="60" x="0" y="0" visible="false" source="shopHallUI_json.shopHallUI_img_xz" scale9Grid="95,18,94,19"/>
+		</e:Group>
+		<e:Group id="u_btn2" width="277" height="60" x="288" y="20" name="Name2" scaleX="1" scaleY="1" visible="true">
+		<e:Image y="15.5" visible="true" width="27" height="25" horizontalCenter="-2" source="shopHallUI_json.shopHallUI_icon_sc"/>
+			<e:Image id="u_img2" source="shopHallUI_json.shopHallUI_img_line" visible="true" scaleX="1" scaleY="1" verticalCenter="0" right="0"/>
+		<e:Image id="u_imgType2" width="100%" height="60" visible="false" source="shopHallUI_json.shopHallUI_img_xz" scale9Grid="95,18,94,19"/>
+		</e:Group>
+		<e:Group id="u_btn3" width="278" height="60" x="571" y="20" name="Name3">
+		<e:Image y="15.5" visible="true" height="23" width="24.5" horizontalCenter="0.5" source="shopHallUI_json.shopHallUI_icon_jb"/>
+		<e:Image id="u_imgType3" width="100%" height="60" visible="false" source="shopHallUI_json.shopHallUI_img_xz" scale9Grid="95,18,94,19"/>
+			<e:Image id="u_img3" source="shopHallUI_json.shopHallUI_img_line" visible="true" scaleX="1" scaleY="1" verticalCenter="0" right="0"/>
+		</e:Group>
+		<e:Group id="u_btn4" width="275" height="60" x="857" y="20" name="Name4">
+		<e:Image source="shopHallUI_json.shopHallUI_icon_tq" y="15" visible="true" horizontalCenter="-0.5"/>
+		<e:Image id="u_imgType4" width="100%" height="60" visible="false" source="shopHallUI_json.shopHallUI_img_xz" scale9Grid="95,18,94,19"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

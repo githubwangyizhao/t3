@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WelcomeUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17ad2daecd6"/>
+	<e:Image y="128.424" source="welcomeUI_json.welcomeUI_img_bg1" x="205.262" visible="true"/>
+	<e:Group id="u_grpRole" width="1132" height="538" y="30" x="31">
+	</e:Group>
+	<e:Image id="u_imgMask" y="2" width="1380" height="538" source="commonUI_json.commonUI_box" alpha="0" horizontalCenter="0"/>
+	<e:Image source="welcomeUI_json.welcomeUI_img_bg2" x="352.814" y="111.87" visible="true"/>
+	<e:Group id="u_btnClick" y="444.356" width="159.796" height="58.541" x="568.695" visible="true">
+		<e:Image y="0" x="0" source="commonUI_json.commonUI_img_btnbule2" visible="true"/>
+		<e:Image y="14.822" horizontalCenter="1.1" source="welcomeUI_json.welcomeUI_btn_join" visible="true"/>
+	</e:Group>
+</e:Skin>

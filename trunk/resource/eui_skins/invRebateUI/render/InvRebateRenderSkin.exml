@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="InvRebateRenderSkin"
+	height="120" xmlns:e="http://ns.egret.com/eui" width="503">
+	<e:Image source="invRebateUI_json.invRebateUI_img_di" visible="true" width="503"/>
+	<e:Group id="u_btnRecive" x="351.368" y="51">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image id="u_imgState" source="commonUI_json.commonUI_img_get" visible="true"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="106.506" y="1.649" visible="false"/>
+	</e:Group>
+	<e:Label id="u_txtTit" text="任务标题" size="18" textAlign="left" y="12.727" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" left="22"/>
+	<e:Image id="u_imgYes" x="368.368" y="30.5" visible="true" source="commonUI_json.commonUI_received"/>
+</e:Skin>

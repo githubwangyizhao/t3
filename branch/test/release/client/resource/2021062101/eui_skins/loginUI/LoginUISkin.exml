@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1626a7609f2"/>
+	<e:Image id="u_imgBj" source="index_bg_jpg" horizontalCenter="0" visible="true"/>
+	<e:Image source="loginUI_json.loginUI_baidi" scale9Grid="83,18,82,4" horizontalCenter="0" height="55" bottom="0" width="1136"/>
+	<e:Label id="u_txt_resVersion" text="12541" x="14.5" y="37" anchorOffsetX="0" textAlign="left" size="20" strokeColor="0x325f77"/>
+	<e:Label id="u_txt_version" text="12254501" x="14.5" y="61" anchorOffsetX="0" textAlign="left" size="20" strokeColor="0x325f77"/>
+	<e:Image id="u_btnKefu" x="1040" y="26" scaleX="1" scaleY="1" width="72" height="72" source="loginUI_json.loginUI_kefu_tis"/>
+	<e:Label id="u_txtTishi" text="抵制不良游戏" y="591" anchorOffsetX="0" textAlign="center" size="20" strokeColor="0x325F77" horizontalCenter="0" textColor="0xD1CFCF" lineSpacing="4" verticalAlign="middle" height="50"/>
+	<e:Group id="u_mcTest" y="64" horizontalCenter="0" visible="true" locked="true">
+		<e:Image source="loginUI_json.loginUI_baidi" scaleX="1" scaleY="1" width="500" scale9Grid="106,16,77,7" height="70"/>
+		<e:EditableText id="u_txt_test" width="370" x="100" y="21.3" anchorOffsetY="0" anchorOffsetX="0" textAlign="left" promptColor="0x5e4444" size="26" verticalAlign="middle" textColor="0xFFFFFF"/>
+		<e:Label text="参数:" y="24.9" textAlign="left" x="28" size="26" bold="true" textColor="0xFFFFFF"/>
+	</e:Group>
+	<e:Group id="u_group_login" y="331" horizontalCenter="0.5" visible="true">
+		<e:Image source="loginUI_json.loginUI_baidi" scaleX="1" scaleY="1" width="335" horizontalCenter="0" scale9Grid="87,17,66,8" height="50"/>
+		<e:Image source="loginUI_json.loginUI_baidi" scaleX="1" scaleY="1" width="335" y="57" horizontalCenter="0" scale9Grid="127,19,24,4" height="50"/>
+		<e:EditableText id="u_txt_password" width="187" height="30" text="123456" x="143" y="69" anchorOffsetY="0" anchorOffsetX="0" textAlign="left" displayAsPassword="true" promptColor="0x5e4444" textColor="0xFFFFFF"/>
+		<e:EditableText id="u_txt_account" width="191" height="35" text="admin" x="138" y="7" anchorOffsetY="0" anchorOffsetX="0" textAlign="left" promptColor="0x5e4444" textColor="0xFFFFFF"/>
+		<e:Label text="账号:" y="9" width="120" textAlign="right" x="7" textColor="0xFFFFFF"/>
+		<e:Label text="密码:" y="67" width="120" textAlign="right" x="7" textColor="0xFFFFFF"/>
+	</e:Group>
+	<e:Group id="u_group_server_list" y="390" anchorOffsetY="0" horizontalCenter="0.5" visible="true">
+		<e:Image id="u_image_serverList" source="loginUI_json.loginUI_baidi" scaleX="1" scaleY="1" width="335" horizontalCenter="0" x="8" scale9Grid="84,17,70,5" height="50"/>
+		<e:Label id="u_txt_serverName" text="测试服998" x="21" y="12" anchorOffsetX="0" textAlign="left" touchEnabled="false" stroke="2" strokeColor="0x1f294f" size="30" textColor="0xffffff" bold="false"/>
+		<e:Image id="u_image_state" source="loginUI_json.loginUI_hot" horizontalCenter="99.5" verticalCenter="0" x="268" y="-92" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Image id="u_btnLoginGame" source="loginUI_json.loginUI_btn_bj" x="461" y="457" visible="true"/>
+	<e:Group id="u_mcTishi" y="532" horizontalCenter="0.5" locked="true" visible="true">
+		<e:Image source="loginUI_json.loginUI_gou" x="4.5" y="11.5"/>
+		<e:Label id="u_txtTiMs" text="I have read and agreed" y="11.5" textAlign="left" x="33" bold="true" size="22" textColor="0xffffff" stroke="2" strokeColor="0x444444"/>
+		<e:Label id="u_txtYinshi" text="Privacy Statement" y="11.5" textAlign="right" bold="true" size="22" textColor="0x41beff" stroke="2" strokeColor="0x055abc" x="281"/>
+		<e:Label id="u_txtAnd" text="and" y="11.5" textAlign="left" textColor="0xFFFFFF" bold="true" size="22" stroke="2" strokeColor="0x444444" x="486"/>
+		<e:Label id="u_txtXieyi" text="User Agreement" y="10.5" textAlign="left" x="538" bold="true" size="22" textColor="0x23b4fc" stroke="2" strokeColor="0x055abc"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

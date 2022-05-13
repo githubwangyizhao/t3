@@ -1,0 +1,12 @@
+monster_ai_bubble.csv 怪物id语言表,,,,,,,
+int|key,int,int,int,int,int,int,int
+,,,,,,,
+ai_id,birth_bubble_type,stand_bubble_type,stand_bubble_cd_time,death_bubble_type,injured_bubble_type,injured_bubble_cd_time,injured_bubble_per
+"ai_id","出生语言类型【bubble表类型】（配空不处理）","待机语音类型【bubble表类型】（配空不处理）","待机触发语言cd【ms】","死亡语言【bubble表类型】（配空不处理）","受伤语言【bubble表类型】（配空不处理）","受伤触发语言cd【ms】","受伤触发语言概率万分比"
+1,0,2,10000,3,4,5000,10000
+2,0,0,10000,6,5,5000,10000
+3,0,0,10000,8,7,5000,10000
+4,0,0,10000,9,10,5000,10000
+5,0,0,10000,11,12,5000,10000
+6,0,0,10000,13,14,5000,10000
+7,0,0,10000,0,15,5000,10000

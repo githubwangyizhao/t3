@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UpgradeRenderSkin"
+	 width="1014"
+	height="106" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="upgradeUI_json.upgradeUI_render_di" x="0" y="0" visible="true" scale9Grid="256,35,236,36" width="1014"/>
+	<e:Image x="81" y="8" source="upgradeUI_json.upgradeUI_lv_di" visible="true"/>
+	<e:Group id="u_gpJindu" x="570" visible="true" verticalCenter="0">
+		<e:Image id="u_itemIcon" x="0" y="0" source="upgradeUI_json.upgradeUI_icon" width="48" height="48" visible="true"/>
+		<e:Group y="18" x="51" height="11" width="200" visible="true">
+		<e:Image scale9Grid="11,6,10,7" horizontalCenter="0" source="upgradeUI_json.upgradeUI_jindu2"/>
+		<e:Image id="u_imgJindu" scale9Grid="9,5,10,4" visible="true" source="upgradeUI_json.upgradeUI_jindu1" width="200" x="0" y="2"/>
+		<e:Label id="u_txtJindu" text="0/10" size="16" fontFamily="Microsoft YaHei" bold="true" visible="true" horizontalCenter="0" verticalCenter="2.5" stroke="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnUp" x="842" width="122" height="46" touchChildren="false" y="29" visible="true">
+		<e:Image x="0" y="0" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image horizontalCenter="0" verticalCenter="0" source="commonUI_json.commonUI_img_get"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="110" y="-1"/>
+		<e:Group id="u_grpEff" x="61" y="24" touchEnabled="false" touchChildren="false"/>
+	</e:Group>
+	<e:Image source="upgradeUI_json.upgradeUI_design" x="575" y="23" visible="false"/>
+	<e:Label id="u_txtTitle" text="初出茅庐" y="21" size="18" fontFamily="Microsoft YaHei" visible="false" horizontalCenter="193" bold="true"/>
+	<e:Label id="u_txtNone" text="未达条件" size="18" fontFamily="Microsoft YaHei" visible="true" horizontalCenter="193" bold="true" x="713" textColor="0x8693A7" verticalCenter="0"/>
+	<e:Group id="u_grpMask" x="0" y="0" visible="true" locked="true">
+		<e:Image source="upgradeUI_json.upgradeUI_mask" width="1014" height="106" x="0" y="0" scale9Grid="103,36,102,37" visible="true"/>
+		<e:Image source="commonUI_json.commonUI_received" y="17" x="871" visible="true" scaleX="0.75" scaleY="0.75"/>
+	</e:Group>
+</e:Skin>

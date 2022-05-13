@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionMultiRoomSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176220e0dcd"/>
+	<e:Label id="u_txtOwner" text="Homeowner:" x="43" y="119" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000"/>
+	<e:Label text="Room ID:" x="43" y="155" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtRoomId"/>
+	<e:Label text="Invitation code:" y="155" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtCode" horizontalCenter="21"/>
+	<e:Label text="copy" x="525" y="157" size="20" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtcopy" bold="true" textColor="0x4DEA00"/>
+	<e:Label text="Participants:" x="428" y="520" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtPart"/>
+	<e:Image y="187" visible="true" horizontalCenter="0.5" height="375" source="commonsUI_json.commonUI_box_2" scale9Grid="29,29,30,30" width="585"/>
+	<e:Group id="u_grpInfo" x="48" y="595" visible="true">
+		<e:Image source="commonsUI_json.commonsUI_line2" y="9" visible="true" x="29"/>
+		<e:Label id="u_txtInfo" text="Information" size="22" bold="true" visible="true" y="0" textColor="0x38445D" x="221"/>
+		<e:Image y="90" visible="true" source="missionMultiUI_json.missionMultiUI_boss_select_1"/>
+		<e:Label text="A single consumption:" x="195" y="47" size="18" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtSingle" textColor="0xFFFFFF"/>
+		<e:Image id="u_imgIcon2" x="394" y="40" source="userMainUI_json.userMainUI_u_yinbi_a" visible="true"/>
+		<e:Label text="2000" x="426" y="47" size="18" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtSingleCost" textColor="0x00E22B"/>
+		<e:Label id="u_txtAward" text="Award : 90% gold coin of the total silver coin consumed by all players" x="191" y="105" bold="true" size="18" visible="true" stroke="1.5" strokeColor="0x72777F" wordWrap="true" width="315" lineSpacing="15"/>
+		<e:Image source="commonsUI_json.commonsUI_line" y="192" scale9Grid="114,1,114,0" width="484" x="30"/>
+	</e:Group>
+	<e:Group id="u_grpHead" width="540" y="195" visible="true" horizontalCenter="0">
+	</e:Group>
+	<e:Group y="825" horizontalCenter="0.5">
+		<e:Label text="Player entry conditions:" x="0" y="7" size="18" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtMana" textColor="0xFFD800"/>
+		<e:Image id="u_imgIcon1" x="206" y="0" source="userMainUI_json.userMainUI_u_yinbi_a" visible="true"/>
+		<e:Label text="2000" x="238" y="7" size="18" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtEnteryCost" textColor="0x00E22B"/>
+	</e:Group>
+	<e:Group id="u_btnLeave" visible="true" y="898" x="77" width="200" height="65">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_3" scale9Grid="79,15,1,2" width="200"/>
+		<e:Label id="u_txtLeave" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="Leave" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnReady" visible="true" y="898" x="369" width="200" height="65">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_3" scale9Grid="79,15,1,2" width="200"/>
+		<e:Label id="u_txtReady" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="Ready" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnStart" visible="true" y="898" x="220" width="200" height="65">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_3" scale9Grid="79,15,1,2" width="200"/>
+		<e:Label id="u_txtStart" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="Start" horizontalCenter="0" visible="true"/>
+	</e:Group>
+</e:Skin>

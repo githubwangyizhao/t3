@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleListUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798e47962c"/>
+	<e:Image id="u_imgBg" source="roleListUI_json.roleListUI_bg" visible="true"/>
+	<e:Image source="roleListUI_json.roleListUI_icon_yx" x="50" y="70" visible="true"/>
+	<e:Label id="u_txtOwned" text="4/12" x="84" y="73" touchEnabled="false" size="18" bold="true" visible="true" textColor="0xF0E4B0"/>
+	<e:Scroller id="u_scrollerItem" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="48" y="107" width="1043" height="533">
+		<e:Group visible="true">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group x="899" y="55" height="32">
+		<e:Group id="u_btnSort" x="0" y="0" height="32" width="187">
+			<e:Image source="roleListUI_json.roleListUI_order_bg2" x="0" y="0" visible="true"/>
+			<e:Image id="u_imgArrow" source="roleListUI_json.roleListUI_icon_arrow" horizontalCenter="74.5" verticalCenter="-0.5" visible="true" scaleY="1"/>
+			<e:Label id="u_txtSortMsg" text="排序" touchEnabled="false" size="16" visible="true" x="36" verticalCenter="1" textColor="0xF0E4B0"/>
+		</e:Group>
+		<e:Group id="u_grpSort" x="0" y="31" visible="true">
+			<e:Image id="u_sortListBg" source="roleListUI_json.roleListUI_order_bg1" x="0" y="0" scale9Grid="21,21,22,22" width="187" height="185" visible="true"/>
+			<e:List id="u_sortList" width="148" x="20" y="15"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

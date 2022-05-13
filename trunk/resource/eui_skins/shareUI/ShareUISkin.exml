@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShareUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17607d9b1c4"/>
+	<e:Image source="shareUI_json.shareUI_bg" x="15" y="0" visible="true"/>
+	<e:Image id="u_closeBtn" source="shareUI_json.shareUI_btn_close" x="972" y="100" width="39" height="50"/>
+</e:Skin>

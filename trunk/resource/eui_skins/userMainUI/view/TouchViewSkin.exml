@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TouchViewSkin" width="260" height="260" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="userMainUI_json.userMainUI_yao_bj" anchorOffsetX="130" anchorOffsetY="130" y="130" x="130"/>
+	<e:Image id="u_imgBall" source="userMainUI_json.userMainUI_yao_icon" anchorOffsetX="41" anchorOffsetY="41" y="130" x="130"/>
+	<e:Image id="u_imgRoll" source="userMainUI_json.userMainUI_yao_jian" x="130" y="130" anchorOffsetX="130" anchorOffsetY="130" locked="true"/>
+</e:Skin>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DashIconViewSkin" width="90" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="powerBg" x="-6" y="-3.98" source="userMainUI_json.userMainUI_dash_kuang2"/>
+	<e:Image id="u_cion" x="-6.84" y="-3.98" source="userMainUI_json.userMainUI_d_chongchi"/>
+	<e:Group id="u_gp_t3" x="-6.35" y="-4" touchChildren="false" touchEnabled="false" touchThrough="true" visible="false">
+		<e:Image id="u_gp_3_1" source="userMainUI_json.userMainUI_dash_power3" x="-0.8" y="-0.2"/>
+		<e:Image id="u_gp_3_2" source="userMainUI_json.userMainUI_dash_power3" x="50.2" y="49.4" anchorOffsetY="50" anchorOffsetX="50" rotation="239.22"/>
+		<e:Image id="u_gp_3_3" source="userMainUI_json.userMainUI_dash_power3" x="50.6" y="47.6" anchorOffsetY="50" anchorOffsetX="50" rotation="119.82"/>
+	</e:Group>
+	<e:Group id="u_gp_t4" x="-6.1" y="-4.25" touchChildren="false" touchEnabled="false" touchThrough="true" visible="false">
+		<e:Image id="u_gp_4_1" x="-0.8" y="-0.4" source="userMainUI_json.userMainUI_dash_power4"/>
+		<e:Image id="u_gp_4_2" x="50.2" y="49.8" anchorOffsetY="50" anchorOffsetX="50" rotation="270" source="userMainUI_json.userMainUI_dash_power4"/>
+		<e:Image id="u_gp_4_3" x="50.6" y="49.4" anchorOffsetY="50" anchorOffsetX="50" rotation="180" source="userMainUI_json.userMainUI_dash_power4"/>
+		<e:Image id="u_gp_4_4" source="userMainUI_json.userMainUI_dash_power4" x="50.2" y="48.6" anchorOffsetY="50" anchorOffsetX="50" rotation="90"/>
+	</e:Group>
+	<e:Group id="u_gp_t5" x="-6.1" y="-4.25" touchChildren="false" touchEnabled="false" touchThrough="true" visible="false">
+		<e:Image id="u_gp_5_1" x="-0.8" y="-0.4" source="userMainUI_json.userMainUI_dash_power5"/>
+		<e:Image id="u_gp_5_2" x="50.2" y="49.8" anchorOffsetY="50" anchorOffsetX="50" rotation="288" source="userMainUI_json.userMainUI_dash_power5"/>
+		<e:Image id="u_gp_5_3" x="50.6" y="49.4" anchorOffsetY="50" anchorOffsetX="50" rotation="216" source="userMainUI_json.userMainUI_dash_power5"/>
+		<e:Image id="u_gp_5_4" x="50.2" y="48.6" anchorOffsetY="50" anchorOffsetX="50" rotation="144" source="userMainUI_json.userMainUI_dash_power5"/>
+		<e:Image id="u_gp_5_5" x="50.2" y="48.6" anchorOffsetY="50" anchorOffsetX="50" rotation="72" source="userMainUI_json.userMainUI_dash_power5"/>
+	</e:Group>
+	<e:Group id="u_gp_t2" x="-6.64" y="-4.27" touchChildren="false" touchEnabled="false" touchThrough="true">
+		<e:Image id="u_gp_2_1" source="userMainUI_json.userMainUI_dash_power2" x="-0.5" y="0"/>
+		<e:Image id="u_gp_2_2" source="userMainUI_json.userMainUI_dash_power2" x="101.46" y="0.01" scaleX="-1"/>
+	</e:Group>
+	<e:Label id="u_txtCd" text="60" size="26" anchorOffsetX="0" textAlign="right" borderColor="0x0A0909" border="false" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xFFFFFF" stroke="1" strokeColor="0x131313" bold="true" verticalCenter="0" horizontalCenter="0" touchEnabled="false"/>
+	<e:Group id="u_gpjiantou" x="45" y="45" touchChildren="false" touchEnabled="false">
+		<e:Image source="userMainUI_json.userMainUI_d_skill_power_bj" x="0" y="0" scaleX="1" scaleY="1" anchorOffsetX="126" anchorOffsetY="126"/>
+		<e:Image id="u_jiantou" x="0" y="0" anchorOffsetX="126" anchorOffsetY="126" source="userMainUI_json.userMainUI_d_skill_power_j" touchEnabled="false"/>
+	</e:Group>
+	<e:Image id="u_noUse" source="userMainUI_json.userMainUI_dash_cdbg" x="-6" y="-4.75"/>
+	<e:Group id="u_gpcd" x="44" y="46" touchChildren="false" touchEnabled="false">
+		<e:Image source="userMainUI_json.userMainUI_dash_cd1" x="0" y="0" anchorOffsetX="50" anchorOffsetY="50"/>
+		<e:Image id="u_cdImg" source="userMainUI_json.userMainUI_dash_cd2" x="0" y="0" anchorOffsetX="50" anchorOffsetY="50"/>
+	</e:Group>
+</e:Skin>

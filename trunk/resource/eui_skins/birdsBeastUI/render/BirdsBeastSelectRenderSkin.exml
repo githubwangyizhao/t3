@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BirdsBeastSelectRenderSkin"
+	 width="375"
+	height="440" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBg" x="0" y="0" source="birdsBeastUI_json.birdsBeastUI_icon_1" visible="true"/>
+	<e:Image id="u_imgName" y="227" horizontalCenter="0.5"/>
+	<e:Image id="u_btnLook" source="hundunSellectUI_json.hundunSellectUI_weijiesuo" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-30" visible="true"/>
+	<e:Group id="u_enterBtn" y="374" width="158" height="57" touchChildren="false" visible="true" horizontalCenter="0.5">
+		<e:Image id="u_imgEnter" source="birdsBeastUI_json.birdsBeastUI_btn_enter"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightHeadSkin"
+	 width="99"
+	height="117" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe337b00"/>
+	<e:Group width="99" height="117">
+		<e:Image id="u_imgCrown" source="endlessFightUI_json.endlessFightUI_img_crown" horizontalCenter="2" y="-15" visible="true"/>
+		<e:Image id="u_imgFrame" verticalCenter="-13" visible="true" source="endlessFightUI_json.endlessFightUI_rank_head_bg" horizontalCenter="0"/>
+		<e:Image id="u_imgHead" horizontalCenter="1" visible="true" scaleX="0.574" scaleY="0.574" y="10"/>
+		<e:Image id="u_imgTitleBg" y="93" horizontalCenter="0.5" source="endlessFightUI_json.endlessFightUI_player_name_bg1"/>
+		<e:Image id="u_imgRank" y="68" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_textName" text="Label" y="97" size="14" stroke="1" bold="true" fontFamily="Microsoft YaHei" horizontalCenter="0" x="31" scaleX="1" scaleY="1"/>
+</e:Skin>

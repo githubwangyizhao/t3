@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.PersonalizationUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="179e95a734e"/>
+	<e:Image source="personalizationUI_json.personUI_paddBg" x="730" y="103.56"/>
+	<e:Scroller id="u_scroller" width="400" height="466" y="104" visible="true" x="304.639">
+		<e:List id="u_list"/>
+	</e:Scroller>
+	<e:Group x="740" y="104" height="465" width="247" visible="true">
+		<e:Image source="personalizationUI_json.personUI_icon_bg" y="20.032" horizontalCenter="0"/>
+		<e:Image id="u_iconBg" source="personalizationUI_json.personUI_bg" x="64" y="45" width="120" height="120" visible="false"/>
+		<e:Image id="u_icon" width="120" height="120" y="105" horizontalCenter="0" anchorOffsetX="60" anchorOffsetY="60"/>
+		<e:Label text="头像框名称" y="180" textColor="0xF0E4B0" size="16" id="u_nameLb" horizontalCenter="0" x="208" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_detailLb" text="开宝箱获得获取" y="218" size="16" textColor="0xA5A5A5" lineSpacing="8" horizontalCenter="0" x="152" width="178" textAlign="center" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_choseBtn" x="63" y="392" width="122" height="46" visible="false" locked="true">
+			<e:Image y="0" width="120" visible="true" source="commonUI_json.commonUI_img_btnyellow" x="1"/>
+			<e:Image y="0" x="0" source="commonUI_json.commonUI_btnUse"/>
+		</e:Group>
+		<e:Group id="u_goBtn" x="64.118" y="391.625" width="122" height="46" visible="false" locked="true">
+			<e:Image y="0" width="120" visible="true" x="1" source="commonUI_json.commonUI_img_btnbule"/>
+			<e:Image source="commonUI_json.commonUI_img_goGet" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

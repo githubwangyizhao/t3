@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnTrendPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17d5668c9ae"/>
+	<e:Image scale9Grid="15,15,15,15" horizontalCenter="0" visible="true" source="carTurnUI_json.carTurnUI_trend_bg" verticalCenter="0"/>
+	<e:List id="u_trendList" width="700" height="40" y="161" horizontalCenter="0"/>
+	<e:Group x="239" y="270" locked="true">
+		<e:Image width="35" height="35" x="0" y="1" source="carTurnUI_json.carTurnUI_1_icon"/>
+		<e:Image width="35" height="35" x="0" y="37" source="carTurnUI_json.carTurnUI_2_icon"/>
+		<e:Image width="35" height="35" x="0" y="73" source="carTurnUI_json.carTurnUI_3_icon"/>
+		<e:Image width="35" height="35" x="0" y="109" source="carTurnUI_json.carTurnUI_4_icon"/>
+		<e:Image width="35" height="35" x="0" y="147" source="carTurnUI_json.carTurnUI_5_icon"/>
+		<e:Image width="35" height="35" x="0" y="181" source="carTurnUI_json.carTurnUI_6_icon"/>
+		<e:Image width="35" height="35" x="0" y="217" source="carTurnUI_json.carTurnUI_7_icon"/>
+		<e:Image width="35" height="35" x="0" y="253" source="carTurnUI_json.carTurnUI_8_icon"/>
+	</e:Group>
+	<e:Scroller id="u_scroller" width="619" height="315" x="302" y="240">
+		<e:List id="u_list"/>
+	</e:Scroller>
+	<e:Scroller id="u_lineScroller" width="619" height="315" x="302" y="240" visible="true" touchEnabled="false" touchChildren="false">
+		<e:Group id="u_lineGrp"/>
+	</e:Scroller>
+	<e:Label id="u_closeTip" text="點擊空白處關閉窗口" y="596.077" horizontalCenter="0" size="16" touchEnabled="false" visible="true" textColor="0x8693A7" fontFamily="Microsoft YaHei"/>
+</e:Skin>

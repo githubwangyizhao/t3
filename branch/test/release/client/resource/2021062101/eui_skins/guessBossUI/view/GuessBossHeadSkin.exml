@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessBossHeadSkin"
+	 width="94"
+	height="124" xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="0" y="0" visible="true" scaleX="0.85" scaleY="0.85" source="guessInsideUI_json.guessInsideUI_head"/>
+	<e:Image visible="true" id="u_imgIcon" width="139" height="155" scaleX="0.8" scaleY="0.8" horizontalCenter="0" y="-28"/>
+	<e:Image id="u_iconNum" source="guessInsideUI_json.guessInsideUI_srl_1" x="63" y="1" visible="true"/>
+	<e:Label id="u_txtNum" text="32" y="101" bold="true" size="22" visible="true" textColor="0xF5D770" horizontalCenter="0"/>
+</e:Skin>

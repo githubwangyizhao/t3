@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c9b7543c5"/>
+	<e:Image id="u_imgBg" verticalCenter="0" visible="true" horizontalCenter="0"/>
+	<e:Group id="u_pageGrp" width="142">
+		<e:Image x="-122" y="0" source="commonUI_json.commonUI_page_di"/>
+		<e:Image y="318" source="commonUI_json.commonUI_line2"/>
+	</e:Group>
+	<e:Group id="u_rewardGrp" verticalCenter="-40" visible="true" horizontalCenter="57">
+		<e:Image y="0" scale9Grid="137,29,137,28" x="0" source="mateUI_json.mateUI_rewardBg"/>
+		<e:Group x="150" y="24">
+			<e:Image id="u_imgRank" source="mateUI_json.mateUI_rank_1" x="0" y="0"/>
+			<e:Group id="u_grpItem" x="70" y="-2">
+				<e:Image id="u_rewardItem" x="0" verticalCenter="0" source="commonUI_json.commonUI_icon_52"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

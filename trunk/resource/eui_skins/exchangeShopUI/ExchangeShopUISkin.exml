@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.ExchangeShopUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a78cbb3c"/>
+	<e:Image id="u_imgMask" source="exchangeShopUI_json.exchangeShopUI_mask" horizontalCenter="0" scale9Grid="44,63,44,64" width="1136" bottom="0"/>
+	<e:Group id="u_mcItem" x="-158" y="115" visible="true" width="737">
+		<e:Image source="exchangeShopUI_json.exchangeShopUI_item_bg" x="0" y="0" visible="true"/>
+		<e:Label id="u_itemName" text="物品名称" y="396" size="28" textColor="0xF0E4B0" visible="true" bold="true" stroke="2" strokeColor="0x14151A" textAlign="center" horizontalCenter="-0.5" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Image id="u_imgHeroName" x="65" y="540"/>
+	<e:Group id="u_mcRight" x="282" y="90" visible="true">
+		<e:Image source="exchangeShopUI_json.exchangeShopUI_bg" x="0" y="0" scale9Grid="17,17,16,16" visible="true"/>
+		<e:Image source="exchangeShopUI_json.exchangeShopUI_bg2" x="92" y="77" scale9Grid="19,15,19,15" width="656" height="294"/>
+		<e:Scroller id="u_scrollerItem" width="618" height="275" y="95" visible="true" x="113">
+			<e:List id="u_listItem"/>
+		</e:Scroller>
+		<e:Group y="396" visible="true" right="109">
+			<e:Image id="u_imgItem" x="0" y="0" visible="true" width="29" height="33"/>
+			<e:Label id="u_txtHave" text="拥有：9999" y="9" size="16" textColor="0xF0E4B0" visible="true" x="41" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group id="u_btnExchange" y="384" scaleX="1" scaleY="1" horizontalCenter="2.5" visible="true">
+			<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow2"/>
+			<e:Image source="exchangeShopUI_json.exchangeShopUI_txt_dh" touchEnabled="false" verticalCenter="-2.5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Image id="u_btnClose" x="757" y="43" visible="true" source="exchangeShopUI_json.exchangeShopUI_btn_close" width="39" height="50"/>
+	</e:Group>
+</e:Skin>

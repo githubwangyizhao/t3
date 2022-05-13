@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PromoteRecordSkin"
+	 width="453"
+	height="247" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17609095708"/>
+	<e:Image width="453" height="247" horizontalCenter="0" verticalCenter="0" source="shareUI_json.shareUI_di_1"/>
+	<e:Label id="u_txtTitle" text="推广记录" textAlign="center" size="18" textColor="0xF0E4B0" stroke="2" strokeColor="0x333333" bold="true" y="14" horizontalCenter="8.5"/>
+	<e:Scroller id="u_scrollerItem" width="410" height="170" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="6.5" verticalCenter="14">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="u_txtNone" text="暂无推广记录" textAlign="center" size="22" textColor="0xF0E4B0" stroke="2" strokeColor="0x333333" bold="true" horizontalCenter="0" verticalCenter="8.5" wordWrap="true" lineSpacing="12"/>
+</e:Skin>

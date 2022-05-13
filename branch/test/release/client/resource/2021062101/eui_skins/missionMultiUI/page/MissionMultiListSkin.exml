@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionMultiListSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="178338e3eb7"/>
+	<e:Group id="u_btnSelect" x="42" y="114">
+		<e:Label id="u_txtSelect" text="A single:" x="0" bold="true" size="20" textColor="0x8999AC" visible="true" y="7"/>
+		<e:Group id="u_grpCost" x="220" y="0">
+			<e:Image id="u_imgIcon" x="0" y="0" source="userMainUI_json.userMainUI_u_yinbi_a" visible="true"/>
+			<e:Label text="2000" x="30.94" y="8.2" size="20" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtSingleCost" textColor="0x00E22B"/>
+		</e:Group>
+		<e:Image id="u_iconArrow" visible="true" y="10" x="303" source="missionMultiUI_json.missionMultiUI_icon_1"/>
+	</e:Group>
+	<e:Image id="u_imgNone" source="missionMultiUI_json.missionMultiUI_none" y="500" horizontalCenter="0"/>
+	<e:Scroller id="u_scrollerItem" width="567" height="740" y="159" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="1">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_btnInput" x="72" y="914" visible="true">
+		<e:Image x="0" y="0" visible="true" scale9Grid="80,17,81,17" anchorOffsetX="0" width="260" source="missionMultiUI_json.missionMultiUI_bg_password"/>
+		<e:Image x="6" y="10" visible="true" source="missionMultiUI_json.missionMultiUI_icon_2"/>
+		<e:Label id="u_txtTips" text="Enter invitation code" textColor="0x5F7089" size="20" bold="true" visible="true" x="37" y="17"/>
+	</e:Group>
+	<e:Label id="u_txtTime" text="(10s)" x="418" y="964" size="18" bold="true" width="142" textAlign="center" stroke="1"/>
+	<e:Group id="u_btnRefresh" x="418" y="911" visible="true" width="142" height="55">
+		<e:Image x="0" y="0" visible="true" width="142" height="55" source="commonsUI_json.commonsUI_btn_7"/>
+		<e:Label id="u_txtRefresh" text="Refresh" bold="true" size="22" horizontalCenter="0" verticalCenter="0" textColor="0x38445D"/>
+	</e:Group>
+</e:Skin>

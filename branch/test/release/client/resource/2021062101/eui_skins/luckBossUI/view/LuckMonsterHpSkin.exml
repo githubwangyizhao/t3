@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckMonsterHpSkin"
+	 width="170"
+	height="19" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="170" visible="true" y="0" x="0" source="commonUI_json.commonUI_jindu_1" scale9Grid="11,6,10,7"/>
+	<e:Image id="u_hpLineimg" width="165" visible="true" source="commonUI_json.commonUI_jindu_2" scale9Grid="9,5,10,4" x="3" verticalCenter="-0.5"/>
+	<e:Image id="u_hpimg" width="165" visible="true" scale9Grid="9,5,10,4" source="commonUI_json.commonUI_jindu_3" y="2" x="3"/>
+	<e:Group x="-27" y="-4">
+		<e:Image x="0" y="0" visible="true" source="luckBossFightUI_json.luckBossFightUI_icon_roll"/>
+		<e:Label id="u_txtTag" text="5" y="4.5" bold="true" size="20" visible="true" textColor="0xFFFCA9" x="10"/>
+	</e:Group>
+	<e:Label id="u_txtHp" text="100/1000" size="16" horizontalCenter="0.5" verticalCenter="1.5" textColor="0xFFFFFF"/>
+</e:Skin>

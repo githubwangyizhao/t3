@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CoinViewSkin"
+	 width="284"
+	height="478" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" source="shopHallUI_json.shopHallUI_img_nrbg" width="284" height="478" scale9Grid="20,20,20,20"/>
+	<e:Group id="u_headTitle" x="0" y="0" width="284" height="55">
+		<e:Image source="shopHallUI_json.shopHallUI_img_bt2" height="55" y="0" width="284" horizontalCenter="0"/>
+		<e:Image y="15" horizontalCenter="-25" source="shopHallUI_json.shopHallUI_icon_jbsd"/>
+		<e:Label id="u_txtCoin" text="金币" y="15" height="28" fontFamily="Microsoft YaHei" size="16" textAlign="center" verticalAlign="middle" horizontalCenter="15"/>
+	</e:Group>
+	<e:List id="u_coinList" height="400" x="10" y="56"/>
+</e:Skin>

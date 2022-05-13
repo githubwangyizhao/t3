@@ -1,0 +1,15 @@
+红包条件表,,,,,,,
+int|key,str|useless,str,str|useless,int|useless,int|useless,str|useless,int
+,,,"[]",,0,,
+id,decs,content,content_list,type,is_individual,red_number_list,red_time
+"id","描述","红包描述内容","红包内容条件【conditions_enum.csv】","档位【红包表type】","是否单人条件【0：单人  1：本服累计】","红包数量范围值","每个红包存在时间【秒】"
+1,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,7]",1,,"[2,4]",20
+2,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,29]",2,,"[3,6]",20
+3,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,99]",3,,"[4,8]",20
+4,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,299]",4,,"[6,12]",20
+5,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,499]",5,,"[8,16]",20
+6,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,799]",6,,"[10,20]",20
+7,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,1999]",7,,"[12,24]",20
+8,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,2999]",8,,"[14,28]",20
+9,单笔储值,感谢大佬|c102{%text}$c发送的福利,"[recharge_money_daliy,4999]",9,,"[16,32]",20
+999,boss击杀,测试内容114,,999,,"[10,21]",20

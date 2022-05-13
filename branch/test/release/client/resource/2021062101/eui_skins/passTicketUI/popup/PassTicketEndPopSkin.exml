@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketEndPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonUI_json.commonUI_bg" scale9Grid="10,85,10,9" width="900" height="500" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label text="温馨提示" y="96" bold="true" size="20" horizontalCenter="0" id="u_txtTitle"/>
+	<e:Image source="commonUI_json.commonUI_btn_close_2" x="884" y="88" id="u_btnClose"/>
+	<e:Label text="离赛季结束还有" y="202" id="u_txtTime" size="18" bold="true" horizontalCenter="0"/>
+	<e:Label text="离赛季结束还有" y="276" id="u_txtMsg" size="18" bold="true" horizontalCenter="0" x="515" width="578" textAlign="center" wordWrap="true" lineSpacing="10"/>
+	<e:Label id="u_btnBuy" text="确定" y="462" width="100" height="30" textAlign="center" verticalAlign="middle" size="18" bold="true" background="true" backgroundColor="0x000000" horizontalCenter="0"/>
+</e:Skin>

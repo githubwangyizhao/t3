@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatMainViewSkin"
+	 width="281"
+	height="72" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="sceneMainUI_json.sceneMainUI_chat_bg"/>
+	<e:Scroller id="u_scrollerItem" height="60" anchorOffsetX="0" anchorOffsetY="0" width="240" visible="true" y="6" x="21">
+		<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	</e:Scroller>
+	<e:Image id="u_btnClick" width="281" height="72" alpha="0" source="sceneMainUI_json.sceneMainUI_chat_bg" scale9Grid="94,24,93,24" locked="true"/>
+</e:Skin>

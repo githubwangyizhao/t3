@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckBossViewSkin"
+	 width="178"
+	height="160" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="luckBossUI_json.luckBossUI_bg_3" x="0" y="0" visible="true"/>
+	<e:Image id="u_bossIcon" x="6" y="3" visible="true" source="luckBossUI_json.luckBossUI_icon_boss1"/>
+	<e:Group x="6" y="3">
+		<e:Image source="luckBossUI_json.luckBossUI_bg_6" x="0" y="0" visible="true"/>
+		<e:Image id="u_bossIdx" source="luckBossUI_json.luckBossUI_num_1" visible="true" scaleX="0.8" scaleY="0.8" y="9" x="7"/>
+	</e:Group>
+	<e:Image source="luckBossUI_json.luckBossUI_bg_5" y="97" scale9Grid="9,9,8,8" width="166" horizontalCenter="0" visible="true" x="6"/>
+	<e:Image source="luckBossUI_json.luckBossUI_num_icon_jb1" x="8" y="85" visible="true" id="u_imgGold"/>
+	<e:Label id="u_txtMsg" text="下注区" y="130" size="16" textColor="0x6B4A39" horizontalCenter="0" visible="true" x="65" bold="true"/>
+	<e:Group x="0" y="-3" id="u_grpMyCost" visible="true">
+		<e:Image source="luckBossUI_json.luckBossUI_bg_7" y="126" visible="true" scale9Grid="55,9,56,4" height="28" horizontalCenter="0"/>
+		<e:Label id="u_txtMyCost" text="$50K" y="132" size="20" textColor="0x6B4A39" visible="true" bold="true" horizontalCenter="0"/>
+		<e:Image source="luckBossUI_json.luckBossUI_select2" x="0" y="0" visible="true"/>
+	</e:Group>
+</e:Skin>

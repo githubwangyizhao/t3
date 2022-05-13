@@ -1,0 +1,6 @@
+share_task_type 分享有礼任务类型表,,,,,,,,
+int|key,int,str,str,str,int,int,str,int
+,1,,,,0,,,
+task_type,type,sign,name,approach_list,is_share,show_type,desc,activity_id
+"任务类型id","任务类型（对应share_type表类型）","标识","活动名称","触发条件","是否邀请任务","显示类型","备注","活动id"
+101,1,share_task,邀请好友,,1,1,创建角色并进入游戏,

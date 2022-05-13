@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TurntableUISkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="174530bfb71" visible="false" locked="true"/>
+	<e:Image source="turntableUI_json.turntableUI_bg2" x="122" y="717" visible="true" scale9Grid="135,57,136,2" height="140"/>
+	<e:Image y="209" x="5" visible="true" scale9Grid="203,552,204,1" source="turntableUI_json.turntableUI_bg1"/>
+	<e:Image id="u_imgBlade1" source="turntableUI_json.turntableUI_light" visible="true" anchorOffsetX="75" anchorOffsetY="65.5" x="324" y="322.5" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade2" anchorOffsetX="75" anchorOffsetY="65.5" x="424" y="354.5" rotation="36" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade3" anchorOffsetX="75" anchorOffsetY="65.5" x="485" y="438.5" rotation="72" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade4" anchorOffsetX="75" anchorOffsetY="65.5" x="484" y="542.5" rotation="108" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade5" anchorOffsetX="75" anchorOffsetY="65.5" x="422" y="625.5" rotation="144" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade6" anchorOffsetX="75" anchorOffsetY="65.5" x="323" y="656.5" rotation="180" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade7" anchorOffsetX="75" anchorOffsetY="65.5" x="225" y="624.5" rotation="216" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade8" anchorOffsetX="75" anchorOffsetY="65.5" x="164" y="540.5" rotation="252" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade9" anchorOffsetX="75" anchorOffsetY="65.5" x="164" y="436.5" rotation="288" touchEnabled="false"/>
+	<e:Image source="turntableUI_json.turntableUI_light" visible="true" id="u_imgBlade10" anchorOffsetX="75" anchorOffsetY="65.5" x="225" y="353.5" rotation="324" touchEnabled="false"/>
+	<e:Image id="u_imgJiantou" source="turntableUI_json.turntableUI_arrow1" visible="true" anchorOffsetX="80" anchorOffsetY="156" y="487" x="325" touchEnabled="false"/>
+	<e:Image id="u_imgRoll" source="turntableUI_json.turntableUI_arrow2" visible="true" anchorOffsetX="82.5" anchorOffsetY="82.5" x="324.5" y="489.5" touchEnabled="false"/>
+	<e:Group x="173" y="751">
+		<e:Image source="turntableUI_json.turntableUI_jindu_di" x="0" y="11" visible="true" scale9Grid="17,9,17,9" width="254"/>
+		<e:Image id="u_imgJindu" source="turntableUI_json.turntableUI_jindu" x="2" y="0" scale9Grid="5,16,194,17" width="250" visible="true"/>
+		<e:Label id="u_txtJindu" text="1/1" bold="true" size="22" stroke="1.5" horizontalCenter="4.5" visible="true" textColor="0xFFF9D5" y="15"/>
+	</e:Group>
+	<e:Image source="turntableUI_json.turntableUI_box" x="393" y="723" visible="true"/>
+	<e:Image id="u_imgRed" source="commonsUI_json.commonsUI_red_1" x="459" y="728"/>
+	<e:Image id="u_btnReward" source="commonsUI_json.commonUI_box_1" x="406" y="728" alpha="0"/>
+	<e:Label id="u_txtTime" text="Reset  00:00:00" y="802" size="20" bold="true" textColor="0x25E00C" horizontalCenter="0"/>
+	<e:Group x="89" y="856" width="202">
+		<e:Image id="u_btnOnce" source="turntableUI_json.turntableUI_btn_once" x="2" y="0" visible="true" width="200" height="66"/>
+		<e:Group y="66" horizontalCenter="-3">
+			<e:Label id="u_txtExpend1" text="Cost:" y="13" bold="true" size="22" stroke="1.5" strokeColor="0x202F46" textColor="0xFFF4B2" visible="true" x="0"/>
+			<e:Image id="u_imgIcon1" source="commonsUI_json.commonsUI_item_icon" x="54" y="2" width="45" height="45"/>
+			<e:Label text="500" x="95" bold="true" size="28" visible="true" id="u_txtCost1" y="11" stroke="1" strokeColor="0x654747" textColor="0xFFF4B2"/>
+		</e:Group>
+	</e:Group>
+	<e:Group x="355" y="856" width="202" visible="true">
+		<e:Image id="u_btnTen" x="2" y="0" visible="true" source="turntableUI_json.turntableUI_btn_ten" width="200" height="66"/>
+		<e:Group y="66" horizontalCenter="5">
+		<e:Label text="Cost:" x="-1" y="13" bold="true" size="22" stroke="1.5" strokeColor="0x202F46" textColor="0xFFF4B2" visible="true" id="u_txtExpend2"/>
+		<e:Image id="u_imgIcon2" source="commonsUI_json.commonsUI_item_icon" x="54" y="2" width="45" height="45"/>
+		<e:Label text="4800" x="95" bold="true" size="28" stroke="2" strokeColor="0x6B5032" textColor="0xFFF4B2" visible="true" id="u_txtCost2" y="11"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="u_btnClose" source="turntableUI_json.turntableUI_btn_close" x="464" y="274" visible="true" width="85" height="94"/>
+</e:Skin>

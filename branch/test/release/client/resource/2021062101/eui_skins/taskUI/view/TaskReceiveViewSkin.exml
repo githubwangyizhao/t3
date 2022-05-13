@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.TaskReceiveViewSkin"
+	 width="845"
+	height="230" xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="8.8" y="0" width="827" height="148" scale9Grid="20,20,20,20" visible="true" source="taskUI_json.taskUI_zkbg"/>
+	<e:Label id="u_taskName" text="Label" y="20" width="225" height="52" textAlign="left" verticalAlign="middle" left="21" fontFamily="Microsoft YaHei" size="20" textColor="0xF0E4B0"/>
+	<e:Image id="u_imgJd1" source="taskUI_json.taskUI_jd1" x="20.5" y="75.5" width="416" height="24.5" scale9Grid="10,6,10,7" visible="true"/>
+	<e:Image id="u_imgJd2" source="taskUI_json.taskUI_jd2" x="20.5" y="75.5" width="416" height="24.5" scale9Grid="9,5,8,4" visible="true"/>
+	<e:Label id="u_txtJd" text="10/50" x="212" y="78" height="20" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle" size="16" textColor="0xF0E4B0"/>
+	<e:Image id="u_imgReceive" source="taskUI_json.taskUI_receive" x="710" y="54"/>
+	<e:Label id="u_txtDesc" text="描述" y="167" width="717" height="58" verticalAlign="top" left="69" fontFamily="Microsoft YaHei" size="20" textColor="0x8E7E6F" textAlign="left" lineSpacing="10" bold="true"/>
+	<e:Group width="227.826" height="105.184" x="463" y="20" visible="false"/>
+</e:Skin>

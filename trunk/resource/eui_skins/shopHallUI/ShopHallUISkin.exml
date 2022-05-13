@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopHallUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179e4153e7f"/>
+	<e:Image id="u_imgBg" scale9Grid="23,23,24,24" visible="true" horizontalCenter="0"/>
+	<e:Image id="u_imgBottom" visible="true" source="shopHallUI_json.shopHallUI_img_pagedi" height="75" y="565" scale9Grid="19,24,19,25" width="1136" horizontalCenter="0"/>
+</e:Skin>

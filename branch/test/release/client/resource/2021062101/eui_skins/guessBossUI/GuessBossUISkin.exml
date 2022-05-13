@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessBossUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176b8000309"/>
+	<e:Image source="guessBossUI_json.guessBossUI_bg" horizontalCenter="-1.5" y="103" visible="true"/>
+	<e:Image source="guessBossUI_json.guessBossUI_bg3" y="830" visible="true" horizontalCenter="-1.5" height="163" scale9Grid="189,64,189,1"/>
+	<e:Scroller id="u_scrollerItem" width="470" height="110" y="856" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group x="59">
+		<e:Label id="u_txtDesc" text="rule" y="0" textAlign="left" anchorOffsetX="0" size="22" anchorOffsetY="0" x="0" width="470" lineSpacing="10" strokeColor="0x453A32" wordWrap="true" textColor="0x424C60" bold="true"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_btnChallenge" y="391" visible="true" horizontalCenter="6" width="142" height="128">
+		<e:Image x="3" y="0" visible="true" source="commonsUI_json.commonsUI_btn_6"/>
+		<e:Image y="45" visible="true" horizontalCenter="0" source="commonsUI_json.commonsUI_challenge"/>
+	</e:Group>
+</e:Skin>

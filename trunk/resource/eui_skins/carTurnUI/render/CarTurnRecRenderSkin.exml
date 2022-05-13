@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="EndlessFightRecRenderSkin"
+	 width="778"
+	height="40" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgbg" source="endlessFightRecordUI_json.endlessFightRecordUI_list1" scaleX="1.358"/>
+	<e:Label id="u_time" text="2021/11/04 12:05 AM" y="11.432" textColor="0xF6E4B5" size="16" fontFamily="Microsoft YaHei" horizontalCenter="-227.5"/>
+	<e:Image id="u_imgbet" source="commonUI_json.commonUI_icon_2" scaleX="0.75" scaleY="0.75" anchorOffsetX="20" anchorOffsetY="19" x="383.713" y="18"/>
+	<e:Label id="u_txtbet" text="投注" y="11.797" size="16" fontFamily="Microsoft YaHei" textColor="0xF6E4B5" horizontalCenter="39" x="852"/>
+	<e:Image id="u_imggain" x="602.644" y="4" source="commonUI_json.commonUI_icon_2" scaleX="0.75" scaleY="0.75"/>
+	<e:Label id="u_txtgain" text="盈利" y="12.14" size="16" fontFamily="Microsoft YaHei" textColor="0xF6E4B5" horizontalCenter="277"/>
+</e:Skin>

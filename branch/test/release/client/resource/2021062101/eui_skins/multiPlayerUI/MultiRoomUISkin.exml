@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiRoomUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176220e0dcd"/>
+	<e:Label id="u_txtOwner" text="Homeowner:" x="43" y="119" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000"/>
+	<e:Label text="Room ID:" x="43" y="155" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtRoomId"/>
+	<e:Label text="Invitation code:" y="155" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtCode" horizontalCenter="21"/>
+	<e:Label text="copy" x="525" y="157" size="20" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtcopy" bold="true" textColor="0x4DEA00"/>
+	<e:Label text="Participants:" x="428" y="527" bold="true" size="20" textColor="0x53B4FF" stroke="1.5" visible="true" strokeColor="0x000000" id="u_txtPart"/>
+	<e:Image y="187" visible="true" horizontalCenter="0.5" height="375" source="commonsUI_json.commonUI_box_2" scale9Grid="29,29,30,30" width="585"/>
+	<e:Group id="u_grpInfo" x="48" y="569">
+		<e:Image source="commonsUI_json.commonsUI_line2" y="9" visible="true" x="29"/>
+		<e:Label id="u_txtInfo" text="Information" size="22" bold="true" visible="true" y="0" textColor="0x38445D" x="221"/>
+		<e:Image x="0" y="92" visible="true" source="multiRoomUI_json.multiRoomUI_boss_di1"/>
+		<e:Group x="15" y="133" visible="true">
+		<e:Image source="multiPlayerUI_json.multiPlayerUI_boss_di2" y="0" visible="true" x="0"/>
+		<e:Group id="u_grpLv" height="23" horizontalCenter="8" y="4">
+			<e:Image source="numberText_json.num_role_level_l" x="0"/>
+		</e:Group>
+		</e:Group>
+		<e:Label id="u_txtMana" text="Mana cost per participant:" x="191" y="141" bold="true" size="18" visible="true" stroke="1.5" strokeColor="0x72777F"/>
+		<e:Image source="commonsUI_json.commonsUI_line" y="192" scale9Grid="114,1,114,0" width="484" x="30"/>
+	</e:Group>
+	<e:Group id="u_grpHead" width="400" y="195" visible="true" horizontalCenter="0">
+	</e:Group>
+	<e:Group id="u_grpOwner" x="91" y="789">
+		<e:Label text="You current VIP2" x="0" y="0" size="18" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtVip" textColor="0xFFD800"/>
+		<e:Label text="The percentage of mana reward for each bureau: 2%" x="0" y="34" size="18" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtPer" width="479" lineSpacing="8"/>
+		<e:Label id="u_txtAuto" text="All ready auto start" x="285" y="84" size="18" bold="true" textColor="0x4C5B7B"/>
+		<e:Group id="u_btnGou" x="461" y="72" width="33" height="33" visible="true">
+			<e:Image source="commonsUI_json.commonsUI_gou _di" x="0" y="0" visible="true"/>
+			<e:Image id="u_iconGou" source="commonsUI_json.commonsUI_gou" horizontalCenter="1.5" verticalCenter="-1.5" visible="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnLeave" visible="true" y="910" x="77">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_3" scale9Grid="79,15,1,2" width="200"/>
+		<e:Label id="u_txtLeave" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="Leave" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnReady" visible="true" y="910" x="369">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_3" scale9Grid="79,15,1,2" width="200"/>
+		<e:Label id="u_txtReady" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="Ready" horizontalCenter="0" visible="true"/>
+	</e:Group>
+</e:Skin>

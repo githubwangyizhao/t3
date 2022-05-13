@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.VipAwardRenderSkin"
+	 width="126"
+	height="150" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="shopPopUI_json.shopPopUI_img_popk"/>
+	<e:Label id="u_txtawardName" text="Label" y="131.435" size="16" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" horizontalCenter="-0.5"/>
+	<e:Image id="u_imgIcon" x="12.928" y="15" width="100" height="100"/>
+</e:Skin>

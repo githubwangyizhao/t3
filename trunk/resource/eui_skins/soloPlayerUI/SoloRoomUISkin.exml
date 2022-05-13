@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.SoloRoomUISkin"
+	 width="640"
+	height="1128" xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="25" y="95" width="590" height="900" scale9Grid="29,29,30,30" source="commonsUI_json.commonUI_box_2"/>
+	<e:Image id="u_img1" width="200" height="150" x="50.472" y="323.897"/>
+	<e:Label text="玩家" x="96" y="374" width="102.633" height="62.002" textAlign="center" fontFamily="Microsoft YaHei" verticalAlign="middle"/>
+	<e:Image id="u_img2" width="200" height="150" x="377" y="322"/>
+	<e:Label text="玩家" x="427" y="374" width="99.265" height="58.843" textAlign="center" fontFamily="Microsoft YaHei" verticalAlign="middle"/>
+	<e:Label text="VS" x="271" y="421" width="89.159" height="51" textAlign="center" fontFamily="Microsoft YaHei" verticalAlign="middle"/>
+	<e:Label id="u_btnStart" text="Start" y="721" width="89.159" height="51" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle" horizontalCenter="0" visible="false"/>
+	<e:Label text="medal:" fontFamily="Microsoft YaHei" x="58.84" y="532"/>
+	<e:Label id="u_txtMana1" fontFamily="Microsoft YaHei" x="133.892" y="532"/>
+	<e:Label text="medal:" fontFamily="Microsoft YaHei" x="390.524" y="532"/>
+	<e:Label id="u_txtMana2" fontFamily="Microsoft YaHei" x="466.524" y="532.684"/>
+</e:Skin>

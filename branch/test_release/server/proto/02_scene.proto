@@ -1,0 +1,537 @@
+import "03_fight.proto";
+import "01_player.proto";
+
+// 场景内玩家身上的效果
+message PlayerEffectInScene {
+    required uint32 skill_id = 1;                  // 效果编号，monster_effect表skill_id字段的值
+    required int32 timestamp = 2;                   // 效果结束时间
+}
+
+//场景玩家
+message ScenePlayer {
+    required int32 player_id = 1;                   //玩家id
+    required string nickname = 2;                   //玩家昵称
+    required int32 sex = 3;                         //性别 [0:男 1:女]
+    required int32 level = 4;                       //等级
+    required int32 vip_level = 5;                   //vip等级
+    required uint32 hp = 6;                         //血量
+    required uint32 max_hp = 7;                     //最大血量
+    required int32 move_speed = 8;                  //移动速度
+    required int32 x = 9;
+    required int32 y = 10;
+    required int32 go_x = 11;
+    required int32 go_y = 12;
+    required int32 move_type = 13;                  //移动类型 0:普通 1:冲刺
+    required int32 dir = 14;                        //方向
+    repeated MovePath move_path = 15;               //移动路径 (优先取此值)
+    required int32 title_id = 17;                   //称号id
+    required int32 magic_weapon_id = 18;            //法宝id
+    repeated Buff buff_list = 21;                   //buff列表
+    required int32 anger = 22;                      //怒氣
+    required int32 anger_skill_effect = 23;         //怒气技能特效id
+
+    required int32 hero_id = 26;                    //英雄id
+    required int32 hero_arms_id = 27;               //英雄武器id
+    required int32 hero_ornaments_id = 28;          //英雄饰品id
+
+    required int32 dizzy_close_time = 32;           //眩晕结束时间
+    required PlayerOtherData player_other_data = 33;//玩家其他数据
+
+    required int32 kuangbao_time = 34;               // 狂暴结束时间
+
+    repeated PlayerEffectInScene player_effect_in_scene = 45;    // 场景内其他玩家玩家身上的功能怪技能效果
+}
+
+//场景怪物
+message SceneMonster {
+    required int32 scene_monster_id = 1;            //怪物对象id
+    required int32 monster_id = 2;                  //怪物id
+    required int32 x = 3;
+    required int32 y = 4;
+    repeated MovePath move_path = 5;                //移动路径
+    required int32 move_speed = 6;                  //移动速度
+    required int32 dir = 7;                         //方向
+    required uint32 hp = 8;                         //血量
+    required uint32 max_hp = 9;                     //最大血量
+    repeated Buff buff_list = 10;                   //buff列表
+    required int32 belong_player_id = 11;           //奖励归属的玩家id
+    required int32 level = 12;                      //等级
+    required int32 owner_player_id = 13;            //归属的玩家id
+    required int32 bind_don_end_time = 14;          //冰冻结束时间
+    required int32 destroy_time = 15;               //销毁时间(s)
+
+    required int32 is_call_monster = 17;            //是否召唤怪
+    optional WaitSkill wait_skill = 18;             //蓄力技能
+}
+
+//简单场景怪物数据
+message SceneSimplifyMonster {
+    required int32 monster_id = 2;                  //怪物id
+    required int32 x = 3;
+    required int32 y = 4;
+    required int32 time = 5;                        //复活时间(小于当前时间为已复活)
+}
+
+//场景物品
+message SceneItem {
+    required int32 id = 1;                          //场景物品id
+    required int32 type = 2;                        //类型[0:掉落物 1:采集物]
+    required int32 base_id = 4;                     //子id (掉落物->对应道具id 采集物->collect.id)
+    required int32 num = 5;                         //数量
+    required int32 x = 6;
+    required int32 y = 7;
+    required int32 scene_monsrer_id = 8;            //掉落该物品的怪物唯一id (掉落物有效)
+    required int32 owner_player_id = 9;             //归属玩家id (掉落物有效)
+}
+
+//金币排行榜
+message GoldRanking {
+    required int32 ranking = 1;                     //名次
+    required uint64 gold_value = 2;                 //金币值
+    required uint64 money_value = 3;                //美元值
+    required ModelHeadFigure model_head_figure = 4; //模型头像外观
+    message GoldRankingEvent{
+        required int32 event_id = 1;                //事件id(16:神龙祝福)
+        required int32 time = 2;                    //结束事件
+    }
+    repeated GoldRankingEvent event_list = 5;       //金币排行榜事件
+}
+
+//场景物品id
+message SceneItemId {
+    required int32 type = 1;                        //类型[0:掉落物 1:采集物]
+    required int32 id = 2;                          //场景物品唯一id
+}
+
+//移动路径
+message MovePath {
+    required int32 x = 1;
+    required int32 y = 2;
+}
+
+// 场景npc数据
+message SceneNpcData {
+    required int32 scene_id = 1;                    //场景id
+    required int32 x = 2;                           //x
+    required int32 y = 3;                           //y
+    required int32 npc_id = 4;                      //npc id
+    required string npc_name = 5;                   //npc新名字(""时,用模板数据)
+}
+
+//进入场景
+message m_enter_scene_tos {
+    required int32 scene_id = 1;                    //场景id
+}
+
+//进入场景
+message m_enter_scene_toc {
+    required int32 scene_id = 1;                    //场景id
+    enum ENUM {
+        success = 1;                                //成功
+        fail = 2;                                   //失败
+        need_power = 3;                             //战力限制
+        no_enough_prop = 4;                         //道具不足
+        not_authority = 7;                          //不满足进场景条件
+    }
+    required ENUM result = 2;
+}
+
+//通知准备加载场景
+message m_notice_prepare_scene_toc {
+    required int32 scene_id = 1;
+}
+
+//请求加载场景数据
+message m_load_scene_tos {
+    required int32 screen_width = 1;                //屏幕宽度
+    required int32 screen_high = 2;                 //屏幕高度
+}
+
+//加载场景数据
+message m_load_scene_toc {
+    required int32 scene_id = 1;                    //场景id
+    repeated ScenePlayer scene_player_list = 2;     //场景玩家列表
+    repeated SceneMonster scene_monster_list = 3;   //场景怪物列表
+    repeated SceneItem scene_item_list = 4;         //场景物品列表
+}
+
+//同场景同步
+message m_sync_scene_toc {
+    repeated int32 remove_scene_player_id_list = 1; //移除的玩家对象id列表
+    repeated int32 remove_scene_monster_id_list = 2;//移除的怪物对象id列表
+    repeated SceneItemId remove_scene_item_id_list = 3; //移除的物品对象id列表
+    repeated ScenePlayer scene_player_list = 4;     //加载场景玩家列表
+    repeated SceneMonster scene_monster_list = 5;   //加载场景怪物列表
+    repeated SceneItem scene_item_list = 6;         //加载场景物品列表
+}
+
+//通知玩家进入场景
+message m_notice_scene_player_enter_toc {
+    required ScenePlayer scene_player = 1;          //场景玩家
+}
+
+//通知玩家离开场景
+message m_notice_scene_player_leave_toc {
+    required int32 player_id = 1;                   //玩家id
+}
+
+//玩家复活
+message m_player_rebirth_tos {
+}
+
+//玩家复活
+message m_player_rebirth_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+    }
+    required ENUM result = 2;
+}
+
+//玩家移动
+message m_player_move_tos {
+    required int32 x = 1;               //x
+    required int32 y = 2;               //y
+    required int32 move_type = 3;       //移动类型 0:普通 1:冲刺 2:技能
+    required int32 high = 4;            //跳跃高度
+    required int32 time = 5;            //到达时间点
+    required string action_id = 6;      //动作id
+}
+
+//玩家移动步伐
+message m_player_move_step_tos {
+    required int32 x = 1; // x
+    required int32 y = 2; // y
+}
+
+//玩家停止移动
+message m_player_stop_move_tos {
+    required int32 x = 1; // x
+    required int32 y = 2; // y
+}
+
+//通知玩家移动
+message m_notice_player_move_toc {
+    required int32 player_id = 1;
+    required int32 go_x = 2;
+    required int32 go_y = 3;
+    required int32 move_type = 4; //移动类型 0:普通 1:冲刺 2:技能
+    repeated MovePath move_path = 5; //移动路径 (优先取此值)
+    required int32 high = 6; // 跳跃高度
+    required int32 time = 7; // 到达时间点
+    required string action_id = 8; // 动作id
+}
+
+//通知玩家停止移动
+message m_notice_player_stop_move_toc {
+    required int32 player_id = 1;
+    required int32 x = 2;
+    required int32 y = 3;
+}
+
+//通知玩家瞬移
+message m_notice_player_teleport_toc {
+    required int32 player_id = 1;           // 玩家id
+    required int32 x = 2;                   // 当前x
+    required int32 y = 3;                   // 当前y
+}
+
+//纠正玩家位置
+message m_notice_correct_player_pos_toc {
+    required int32 x = 1;
+    required int32 y = 2;
+}
+
+//通知怪物进入场景
+message m_notice_monster_enter_toc {
+    repeated SceneMonster scene_monster_list = 1; // 场景怪物
+}
+
+//通知怪物离开场景
+message m_notice_monster_leave_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+}
+
+//通知怪物移动
+message m_notice_monster_move_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+    repeated MovePath move_path = 2;        // 移动路径
+}
+
+//通知怪物停止移动
+message m_notice_monster_stop_move_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+    required int32 x = 2;                   // 当前x
+    required int32 y = 3;                   // 当前y
+}
+
+//通知怪物瞬移
+message m_notice_monster_teleport_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+    required int32 x = 2;                   // 当前x
+    required int32 y = 3;                   // 当前y
+}
+
+//通知物品进入场景
+message m_notice_item_enter_toc {
+    repeated SceneItem scene_item_list = 1; // 场景物品
+}
+
+//通知物品离开场景
+message m_notice_item_leave_toc {
+    repeated int32 scene_item_id_list = 1; // 场景物品id
+    required int32 type = 2; // 类型
+}
+
+//通知场景物品归属改变
+message m_notice_scene_item_owner_change_toc {
+    required int32 scene_item_id = 1; // 场景物品id
+    required int32 owner = 2; // 归属玩家id
+}
+
+//通知玩家死亡
+message m_notice_player_death_toc {
+    required int32 attacker_id = 1;             //攻击者id
+    required int32 attacker_type = 2;           //攻击者类型[1:玩家 2:怪物]
+    required string name = 3;                   //名字
+    required int32 rebirth_time = 4;            //复活所需时间(s) [<0: 不可复活]
+    required int32 scene_id = 5;                //场景id
+}
+
+//查询玩家位置
+message m_query_player_pos_tos {
+    required int32 player_id = 1;               //玩家id
+    required int32 type = 2;                    //类型
+}
+
+//查询玩家位置
+message m_query_player_pos_toc {
+    required int32 player_id = 1;               //玩家id
+    required int32 x = 2;                       //x
+    required int32 y = 3;                       //y
+    required int32 type = 4;                    //类型
+
+}
+
+//通知对象血量变化
+message m_notice_obj_hp_change_toc {
+    required int32 obj_type = 1;                //对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;                  //对象id
+    required int32 effect_id = 3;               //关联 effect_type 表
+    required int32 change_value = 4;            //改变的血量
+    required uint32 new_hp = 5;                 //新的血量
+    required int32 release_obj_type = 6;        //施法者对象类型 (1:玩家 2:怪物)
+    required int32 release_obj_id = 7;          //施法者对象id
+}
+
+// 通知怪物属性变化
+message m_notice_monster_attr_change_toc {
+    required int32 scene_monster_id = 1;        //怪物对象id
+     message monster_attr_change{
+        required Attr monsterattr = 1;
+        required int32 value = 2;
+    }
+    repeated monster_attr_change list = 2;      //怪物属性变化列表
+}
+
+// 传送
+message m_transmit_tos {
+    required int32 scene_id = 1; // 场景
+    required int32 x = 2; //x
+    required int32 y = 3; //y
+}
+
+// 通知准备传送
+message m_notice_prepare_transmit_toc {
+}
+
+// 更新npc数据
+message m_update_npc_date_toc {
+    repeated SceneNpcData npc_data = 1; // 场景npc数据
+}
+
+// 通知简易怪物数据
+message m_notice_simplify_monster_pos_toc {
+    repeated SceneSimplifyMonster monster = 1; // 怪物数据
+}
+
+message monster {
+    required int32 scene_monster_id = 1; //怪物对象id
+    required int32 monster_id = 2;      //怪物id
+    required int32 x = 3;
+    required int32 y = 4;
+}
+
+// 获取场景怪物列表 (视野内 没有怪物的时候请求)
+message m_get_monster_list_tos {
+}
+
+// 获取场景怪物列表 (视野内 没有怪物的时候请求)
+message m_notice_monster_list_toc {
+    repeated monster monster_list = 1; //怪物列表
+}
+
+// 通知怒氣變更
+message m_notice_anger_change_toc {
+    required int32 anger = 1; //當前怒氣值
+}
+
+// 通知特殊技能变更
+message m_notice_special_skill_change_toc {
+    required int32 player_id = 1;                   //玩家id
+    required int32 special_skill_id = 24;           //身上帶的特殊技能id
+    required int32 special_skill_expire_time = 25;  //身上帶的特殊技能过期时间戳
+    required int32 scene_monster_id = 26;           //場景怪物id
+}
+
+// 通知展示翻牌
+message m_notice_show_fanpai_toc {
+    repeated int32 id_list = 1;                     //翻牌列表
+}
+
+// 翻牌
+message m_notice_fanpai_tos {
+    required int32 id = 1;                          //翻牌id
+}
+
+message m_notice_fanpai_toc {
+    required int32 id = 1;                          //翻牌id
+    repeated Prop award_list = 2;                   //奖励列表
+}
+
+// 通知boss副本状态
+message m_notice_boss_state_toc {
+    required int32 state = 1;                       //状态(0:不可挑战;1:等待中;2:战斗中)
+    required int32 time = 2;                        //等待中的结束时间戳
+    required int32 mission_type = 3;                //副本类型
+    required int32 mission_id = 4;                  //副本id
+}
+
+// 挑战boss
+message m_challenge_boss_tos {
+}
+
+// 发送消息或者表情包
+message m_send_msg_tos {
+    required int32 type = 1;                        //0:消息;1:表情包
+    required int32 id = 2;
+}
+message m_notice_send_msg_toc {
+    required int32 type = 1;                        //0:消息;1:表情包
+    required int32 id = 2;
+    required int32 player_id = 3;
+}
+
+// 通知场景金币小妖活动状态
+message m_notice_scene_jbxy_state_toc {
+    required int32 state = 1;                       //状态(0:关闭;1:开启)
+    required int32 monster_id = 2;                  //金币小妖怪物id
+    optional int32 close_time = 3;                  //开启状态才有的参数，关闭时间
+    optional int32 player_id = 4;                   //击杀玩家id(关闭时有机率有)
+}
+
+//采集场景物品
+message m_player_collect_tos {
+    repeated int32 scene_item_id = 1;               //场景物品id列表
+}
+
+// 主动通知金币排行榜
+message m_get_gold_ranking_toc {
+    repeated GoldRanking gold_ranking_list = 1;     //金币排名列表
+}
+
+// 通知怪物恢复血量
+message m_notice_monster_restore_hp_toc {
+    required int32 obj_id = 1;                      // 怪物对象id
+    required uint32 new_hp = 2;                     // 新的血量
+}
+
+// 请求展示动作
+message m_show_action_tos{
+    optional int32 action_id = 1 [default=0];      // 动作id
+}
+
+// 玩家展示动作信息推送
+message m_show_action_notice_toc{
+    required int32 player_id = 1;
+    required int32 action_id = 2;
+}
+
+// 广播玩家狂暴信息
+message m_player_kuangbao_info_notice_toc{
+    required int32 player_id = 1;
+    required int32 time = 2;                // 结束时间戳
+}
+
+// 通知boss死亡
+message m_notice_boss_die_toc {
+    required int32 boss_id = 1;                     //boss_id
+    required int32 kill_player_id = 2;              //击杀玩家id
+    required int32 award = 3;                       //奖励
+}
+
+// 通知怪物说话
+message m_notice_monster_speak_toc {
+    required int32 monster_id = 1;              // 怪物id
+    required int32 id = 2;
+}
+
+// 时间轴事件
+message TimeEvent {
+    required int64 time = 1;                // 开始时间(ms)
+    required int32 type = 2;                // 类型(1:鱼潮; 2:boss; 3:箱子; 4转盘; 5拉霸; 6金币小妖; 7功能怪; 8神龙; 9任务; 10幸运彩球)
+    repeated int32 params = 3;              // 额外参数列表(对事件类型type补充) (2-Boss[boss编号], 7-功能怪[效果id], 9-任务[任务类型], 10-彩球[] 其他-具体根据事件type填写参数)
+}
+
+// 事件开始时，通知结束时间戳
+message m_notice_time_stop_toc {
+    required int32 type = 1;                // 类型 事件类型
+    repeated int32 params = 2;              // 额外参数列表(对事件类型type补充) (2-Boss[boss编号], 9-任务[任务类型,阶段(1任务阶段,2活动阶段),任务Id], 10-彩球[key,数量,倍率] 其他-具体根据事件type填写参数)
+    required int64 time = 3;                // 结束时间戳(ms)
+    required int64 start_time = 4;          // 开始时间戳(ms)
+}
+
+// 通知初始化时间轴事件列表
+message m_notice_init_time_event_list_toc {
+    required int32 is_sleep = 1;            // 是否暂停
+    required int64 sleep_time = 2;          // 暂停时间(ms)
+    repeated TimeEvent time_event_list = 3; // 时间轴事件列表
+}
+
+// 通知增加时间轴事件列表
+message m_notice_add_time_event_list_toc {
+    repeated TimeEvent time_event_list = 1; // 时间轴事件列表
+}
+
+// 通知时间轴事件列表暂停
+message m_notice_time_event_list_sleep_toc {
+}
+
+// 通知时间轴事件列表继续
+message m_notice_time_event_list_start_toc {
+    required int64 sleep_time = 1;          // 时间(ms)
+}
+
+// 通知排行榜事件
+message m_notice_rank_event_toc {
+    required int32 type = 1;                // 类型(0:boss;1:炸弹怪;2:赏金怪;3:大招;4:陨石;5:飓风;6:金币小妖)
+    required uint32 value = 2;              // 值
+    required int32 player_id = 3;           // 玩家id
+    required uint64 total_value = 4;        // 总值
+}
+
+//进入单人场景
+message m_enter_single_scene_tos {
+    required int32 scene_id = 1;                    //场景id
+}
+message m_enter_single_scene_toc {
+    required int32 scene_id = 1;                    //场景id
+    enum ENUM {
+        success = 1;                                //成功
+        fail = 2;                                   //失败
+        need_power = 3;                             //战力限制
+        no_enough_prop = 4;                         //道具不足
+        not_authority = 7;                          //不满足进场景条件
+    }
+    required ENUM result = 2;
+}

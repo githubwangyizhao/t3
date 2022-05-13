@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuyPropRenderSkin"
+	 width="249"
+	height="190" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgQuality" width="249" height="190" source="shopHallUI_json.shopHallUI_img1_3"/>
+	<e:Group id="u_btnBuyProp" width="249" height="190">
+		<e:Image id="u_imgQ" x="65" y="10" visible="true" scaleX="0.9" scaleY="0.9"/>
+		<e:Image id="u_imgIcon" x="65" scaleX="0.9" scaleY="0.9" y="10"/>
+		<e:Label id="u_txtPropName" text="道具名字" y="128.368" size="16" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" visible="true" stroke="1" textColor="0xEEF4FB" horizontalCenter="0.5"/>
+		<e:Group y="158" scaleX="1" scaleY="1" horizontalCenter="-0.5">
+			<e:Image id="u_imgBuyIcon" x="-12" y="-8" source="commonUI_json.commonUI_icon_4" scaleX="0.9" scaleY="0.9" width="40" height="40"/>
+			<e:Label id="u_txtAmount" text="金币数量" textAlign="center" verticalAlign="middle" size="18" scaleX="1" scaleY="1" height="22" x="24" fontFamily="Microsoft YaHei" textColor="0xEEF4FB" y="2"/>
+		</e:Group>
+		<e:Group id="u_grpNum" y="10" right="9"/>
+		<e:Image id="u_imghbsTag" source="shopHallUI_json.shopNumUI_hbs_tag" x="-2.974" y="0.821" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoEventSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798cec6692"/>
+	<e:Scroller id="u_scrollItem" width="877" height="489" x="170" y="92">
+		<e:Group>
+			<e:List id="u_EventList">
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_imgTop" source="commonUI_json.commonUI_icon_jts" x="1088" y="66.5" visible="true"/>
+	<e:Image id="u_imgBottom" source="commonUI_json.commonUI_icon_jtx" x="1088" y="558" visible="true"/>
+	<e:VScrollBar id="u_eventScrollBar" width="20" height="476" x="1091" y="81.5" skinName="VScrollBarSkin"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_zz" width="1264" height="100" rotation="180" x="1200" y="100" visible="true" locked="true"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_zz" x="-64" y="538.5" height="100" width="1264" visible="true" locked="true"/>
+</e:Skin>

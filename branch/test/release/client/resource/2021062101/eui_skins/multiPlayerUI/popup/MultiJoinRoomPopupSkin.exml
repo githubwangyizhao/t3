@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiJoinRoomPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1761d9a3283"/>
+	<e:Image source="commonPanelUI_json.commonPanelUI_panel_4" y="428" visible="true" x="76"/>
+	<e:Image y="428" source="multiPlayerUI_json.multiPlayerUI_join_room" x="195"/>
+	<e:Label id="u_txtRoomId" text="Room ID    11" x="140" y="520" size="24" visible="true" textColor="0x4C5B7B" bold="true"/>
+	<e:Label id="u_txtPass" text="Password" x="140" y="573" size="24" visible="true" textColor="0x4C5B7B" bold="true"/>
+	<e:Group id="u_btnInput" y="558" visible="true" x="262">
+		<e:Image source="multiPlayerUI_json.multiPlayerUI_txt_di1" x="0" y="0" visible="true" anchorOffsetX="0" width="240" scale9Grid="80,17,81,17"/>
+		<e:EditableText id="u_txtInput" anchorOffsetX="0" anchorOffsetY="0" size="24" bold="true" promptColor="0x5E7089" width="220" visible="true" height="41" verticalCenter="0" horizontalCenter="0" verticalAlign="middle" textColor="0x4C5B7B" maxChars="6"/>
+	</e:Group>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close" x="512" y="428" visible="true"/>
+	<e:Group id="u_btnCancel" y="648" visible="true" scaleX="0.9" scaleY="0.9" x="348">
+		<e:Image visible="true" source="commonsUI_json.commonsUI_btn_1" scale9Grid="64,16,1,1" width="140" height="60"/>
+		<e:Label id="u_txtCancel" text="Cancel" bold="true" size="24" horizontalCenter="0" verticalCenter="0" textColor="0x38445D"/>
+	</e:Group>
+	<e:Group id="u_btnOK" y="648" visible="true" scaleX="0.9" scaleY="0.9" x="162">
+		<e:Image visible="true" source="commonsUI_json.commonsUI_btn_1" scale9Grid="64,16,1,1" width="140" height="60"/>
+		<e:Label id="u_txtOK" text="OK" bold="true" size="24" horizontalCenter="0" verticalCenter="0" textColor="0x38445D"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightChipSelectPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfda0a2b8"/>
+	<e:Group horizontalCenter="0" verticalCenter="1" width="582">
+		<e:Image x="0" anchorOffsetX="0" y="0" anchorOffsetY="0" source="commonUI_json.commonUI_img_popdi" scaleY="1" width="579.48" height="523.191" scale9Grid="33,173,33,174" visible="true" scaleX="1"/>
+		<e:Image source="commonUI_json.commonUI_img_titlebg" x="-49.65699999999998" scaleY="1" scaleX="1" y="2.3069999999999595" visible="true"/>
+		<e:Image y="8.533000000000015" scaleX="1" scaleY="1" source="endlessFightUI_json.endlessFightUI_chip_title" horizontalCenter="0"/>
+		<e:Image source="commonUI_json.commonUI_img_inner" y="88" width="544.477" height="329" scale9Grid="23,10,24,11" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="484.19600000000014" y="1.4780000000000086" scaleX="1" scaleY="1"/>
+		<e:Scroller id="u_scrollerItem" height="318" width="530" visible="true" y="92.55" horizontalCenter="1">
+			<e:List id="u_listItem" horizontalCenter="-59.496500000000026" visible="true"/>
+		</e:Scroller>
+		<e:Group id="u_btnOK" y="452" width="140" height="50" visible="true" scaleX="1" scaleY="1" horizontalCenter="0">
+			<e:Image scale9Grid="58,17,59,16" source="commonUI_json.commonUI_img_btnyellow" horizontalCenter="0" y="2"/>
+			<e:Image source="commonUI_json.commonUI_img_sure" horizontalCenter="0" y="2"/>
+		</e:Group>
+		<e:Label id="u_textTitle" text="请选择6个您常用的筹码金额" y="48" size="18" fontFamily="Microsoft YaHei" horizontalCenter="0" textColor="0xB3B3B3"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketTaskViewSkin"
+	 width="310"
+	height="130" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonUI_json.commonUI_box_1" x="0" y="0" scale9Grid="17,17,16,16" anchorOffsetX="0" width="310" anchorOffsetY="0" height="130"/>
+	<e:Group id="u_mcTitle" x="45" y="23">
+		<e:Image id="u_imgTitle" source="commonUI_json.commonUI_star_1" x="0" y="7"/>
+		<e:Label text="任务描述任务描述任务描述" y="0" id="u_txtDesc" bold="true" size="18" width="154" wordWrap="true" lineSpacing="8" textAlign="center" x="85"/>
+	</e:Group>
+	<e:Group id="u_mcJindu" x="12" y="100" visible="false">
+		<e:Image source="commonUI_json.commonUI_jindu_1" x="0" y="0" scale9Grid="11,6,10,7" width="154"/>
+		<e:Image source="commonUI_json.commonUI_jindu_2" x="2" y="2" id="u_imgJindu" scale9Grid="9,5,10,4" width="150"/>
+		<e:Label text="1000/1000" size="16" bold="true" id="u_txtJindu" horizontalCenter="0" y="2"/>
+	</e:Group>
+	<e:Group id="u_mcUnique" x="18" y="86" visible="true">
+		<e:Image source="passTicketUI_json.passTicketUI_lock" x="0" y="0"/>
+		<e:Label text="钻石通行证专属" x="36" size="16" bold="true" id="u_txtUnique" y="14"/>
+	</e:Group>
+	<e:Group x="208" y="95">
+		<e:Image id="u_imgExp" source="commonUI_json.commonUI_icon_juan" x="0" y="0"/>
+		<e:Label text="1000" x="33" size="16" bold="true" id="u_txtExp" verticalCenter="0"/>
+	</e:Group>
+	<e:Image id="u_imgMark" source="commonUI_json.commonUI_icon_wh" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

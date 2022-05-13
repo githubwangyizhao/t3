@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.TaskMainUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17965312a9e"/>
+	<e:Scroller id="u_scrollItem" width="845" height="504" x="221" visible="true" verticalCenter="-2.5">
+		<e:Group id="u_grpItem" visible="true"/>
+	</e:Scroller>
+	<e:Image id="u_btnTop" source="taskUI_json.taskUI_arrow" x="1105" y="77.5" rotation="179.591" anchorOffsetX="-0.9" anchorOffsetY="1" width="19" height="14" visible="true"/>
+	<e:Image id="u_imgMask" horizontalCenter="0" bottom="0" source="cardMainUI_json.cardMainUI_bg2" scale9Grid="379,56,378,57" touchEnabled="false"/>
+	<e:VScrollBar id="u_vsItem" width="18.5" height="473" x="1086" y="84" skinName="VScrollBarSkin"/>
+	<e:Image id="u_btnBottom" source="taskUI_json.taskUI_arrow" x="1085.5" y="561" width="18.5" height="13.5" visible="true"/>
+</e:Skin>

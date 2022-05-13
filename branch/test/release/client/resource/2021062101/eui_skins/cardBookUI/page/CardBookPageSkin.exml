@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardBookPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17955ba23e3"/>
+	<e:Scroller id="u_scrollerItem" width="849" height="520" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="219" verticalCenter="-40">
+		<e:Group id="u_mcContent">
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_imgMask" horizontalCenter="0" bottom="0" source="cardMainUI_json.cardMainUI_bg2" scale9Grid="379,56,378,57" touchEnabled="false"/>
+</e:Skin>

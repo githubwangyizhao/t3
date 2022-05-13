@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RankRenderSkin"
+	 width="936"
+	height="91" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image id="u_bg" x="0" y="0" source="rankUI_json.rankUI_renderBg1" visible="true"/>
+	<e:Image id="u_rankImg" verticalCenter="0" horizontalCenter="-412" source="rankUI_json.rankUI_icon_1"/>
+	<e:Group id="u_grpHead" x="143.3" y="8" width="70" height="76">
+		<e:Image id="u_imgFirst" source="rankUI_json.rankUI_img_hg" x="0" y="0" scaleX="0.7" scaleY="0.7" rotation="349.673"/>
+	</e:Group>
+	<e:Label id="u_nameLb" text="S1.小明明天去上学" x="260" textColor="0xF0E4B0" size="16" fontFamily="Microsoft YaHei" verticalCenter="0"/>
+	<e:Group id="u_grpGold" x="615" verticalCenter="0.5">
+		<e:Image id="u_imgGold" source="commonUI_json.commonUI_icon_2" x="0" y="-4" width="30" height="30" scaleX="1" scaleY="1"/>
+		<e:Label id="u_goldLb" text="999.92K" fontFamily="Microsoft YaHei" size="16" textColor="0xF0E4B0" horizontalCenter="20" scaleX="1" scaleY="1" verticalCenter="0"/>
+	</e:Group>
+    <e:Group id="u_grpDiamond" x="768" verticalCenter="0.5">
+		<e:Image id="u_imgRmb" source="commonUI_json.commonUI_icon_4" width="30" height="30" scaleX="1" scaleY="1" y="-4"/>
+		<e:Label id="u_diamondLb" text="999.92K" fontFamily="Microsoft YaHei" size="16" textColor="0xF0E4B0" horizontalCenter="20" scaleX="1" scaleY="1" verticalCenter="0"/>
+	</e:Group>
+	<ns1:NumberView id="u_numVip" width="74" height="20" x="479" y="39"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+// 客户端打点日志
+
+// 客户端打点日志
+message m_client_log_tos {
+    required int32 id = 1;                      // ID
+}

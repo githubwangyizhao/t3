@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RewardReceiveSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="171e7d4d78f"/>
+	<e:Group id="u_grpMain" width="1136" height="640" touchEnabled="false" anchorOffsetY="320" horizontalCenter="0" y="320">
+		<e:Image y="115.02800000000002" horizontalCenter="0.5" visible="true" x="-120" scaleX="1" scaleY="1" source="rewardUI_json.rewardUI_bg"/>
+		<e:Label id="u_txtTip" text="点击屏幕继续" y="550.25" size="18" touchEnabled="false" fontFamily="Microsoft YaHei" textColor="0xa5a5a5" visible="true" horizontalCenter="0" x="514" scaleX="1" scaleY="1"/>
+		<e:Image source="rewardUI_json.rewardUI_title" y="62" horizontalCenter="0" visible="true" x="355" scaleX="1" scaleY="1"/>
+		<e:Image source="rewardUI_json.rewardUI_title_bg" y="24" horizontalCenter="-2.5" visible="true" x="239" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

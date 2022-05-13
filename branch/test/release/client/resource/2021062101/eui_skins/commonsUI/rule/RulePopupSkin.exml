@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RulePopupSkin" width="540" height="419" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" anchorOffsetY="0" source="commonPanelUI_json.commonPanelUI_panel_4" width="540" height="419" x="0" y="0" scale9Grid="236,101,7,3"/>
+	<e:Scroller id="u_scrollerItem" width="470" height="303" y="72.5" anchorOffsetX="0" anchorOffsetY="0" x="35">
+		<e:Group x="59" y="161">
+		<e:Label id="u_txtMsg" text="rule" y="0" textAlign="left" anchorOffsetX="0" size="22" anchorOffsetY="0" x="0" width="470" lineSpacing="10" strokeColor="0x453a32" wordWrap="true" textColor="0x424c60" bold="true"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_btnClose" y="-3" source="commonsUI_json.commonsUI_btn_close" right="20" left="480" width="40" height="40"/>
+	<e:Image id="imgTitle" y="4" source="commonsUI_json.commonsUI_rule" horizontalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MonsterRollRenderSkin"
+	 width="65"
+	height="60" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_icon" horizontalCenter="0" verticalCenter="0" source="monsterRollUI_json.monsterRollUI_fruit_6"/>
+</e:Skin>

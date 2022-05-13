@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShareRenderSkin"
+	 width="730"
+	height="127" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1760856b9a3"/>
+	<e:Image visible="true" source="shareUI_json.shareUI_linebg" width="730" horizontalCenter="0" verticalCenter="-0.5"/>
+	<e:Label id="u_txtDesc" text="Successfully Successfully Successfully Successfully" y="19" bold="true" size="18" visible="true" width="230" lineSpacing="5" wordWrap="true" height="42" textColor="0x3F393C" right="10"/>
+	<e:Group id="u_btnReceive" visible="true" width="107" height="45" bottom="13" right="66">
+		<e:Image id="u_btnIcon" visible="true" scale9Grid="64,22,2,21" width="107" source="shareUI_json.shareUI_btn_klq" x="0" y="0"/>
+		<e:Label id="u_txtReceive" bold="true" textColor="0x573118" size="24" verticalCenter="-2.5" text="Receive" horizontalCenter="-3.5" visible="false" width="84" height="18" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="u_receiveRed" x="94" y="-4" source="commonUI_json.commonUI_red"/>
+		<e:Image id="u_imgReceived" x="21" y="-13" visible="true" source="shareUI_json.shareUI_iconbg2" width="62" height="58"/>
+	</e:Group>
+</e:Skin>

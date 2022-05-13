@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DirectShopPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c2bf4da98"/>
+	<e:Image id="u_imgbg" x="97" y="6" visible="true"/>
+	<e:Group id="u_btnClose" x="927.25" y="81.29" width="60" height="60">
+		<e:Image x="0" y="0" visible="true" source="directShopUI_json.directShopUI_img_close" width="60" height="60" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+		<e:Image x="13" y="13" visible="true" source="directShopUI_json.directShopUI_img_close" width="28" height="28" scaleX="1.3" scaleY="1.3"/>
+	</e:Group>
+	<e:Group id="u_btnCoin" x="196.706" y="151.9">
+		<e:Image id="u_imgcoinSel" source="directShopUI_json.directShopUI_img_coinsel1" visible="true"/>
+		<e:Image id="u_imgcoinunSel" source="directShopUI_json.directShopUI_img_coinsel2" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnJuanZ" x="386.65" y="151.62">
+		<e:Image id="u_imgjzSel" source="directShopUI_json.directShopUI_img_jzsel1" x="0" y="0.2" visible="true"/>
+		<e:Image id="u_imgjzunSel" source="directShopUI_json.directShopUI_img_jzsel2" x="0.04" y="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnBuy" x="660" y="439" visible="true" width="214" height="63">
+		<e:Image x="0" y="0" visible="true" source="directShopUI_json.directShopUI_btn_buy"/>
+		<e:Group y="15.091" right="49">
+			<e:Group id="u_grpNum" height="31" y="0" right="61"/>
+			<e:Image id="u_imgBuy" visible="true" source="directShopUI_json.directShopUI_img_cash" right="0"/>
+		</e:Group>
+		<e:Image id="u_imgMw" source="directShopUI_json.directShopUI_img_buyout" verticalCenter="0" horizontalCenter="0" visible="false"/>
+	</e:Group>
+	<e:Image source="directShopUI_json.directShopUI_img_buycount" x="648" y="413" visible="true" scale9Grid="80,9,81,8" alpha="1"/>
+    <e:Label id="u_txtbuyCount" x="673.148" y="419" fontFamily="Microsoft YaHei" text="今日剩余购买次数 3/3次" size="16" textColor="0xFAFAFA" stroke="1" visible="true"/>
+	<e:Label id="u_txttimeKj" text="距下次刷新:10:25:17" x="493" y="518" size="16" fontFamily="Microsoft YaHei" textColor="0x19D84B" stroke="1"/>
+</e:Skin>

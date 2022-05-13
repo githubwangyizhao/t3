@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveGiftsListPopup"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7cdd9a5a"/>
+	<e:Scroller id="u_scrollerItem" width="943" height="393.955" x="99.346" y="164.588" visible="true">
+		<e:List id="u_listItem" x="-2" y="34" scaleX="1" scaleY="1"/>
+	</e:Scroller>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_img_dz" x="56" y="368" visible="true" zIndex="211"/>
+	<e:Label id="u_textTip" text="Label" verticalCenter="0" horizontalCenter="0"/>
+</e:Skin>

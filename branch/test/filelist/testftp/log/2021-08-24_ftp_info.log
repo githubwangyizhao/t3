@@ -1,0 +1,40 @@
+15:45:37	test	开始上传:../../release/client/resource/	==>/resource/
+15:45:37	上传res版本:	2021082401
+15:56:26	test	====>结束上传		上传处理总数: 16231个;总共用时: 10 分 49 秒
+15:56:26	test	开始上传:../../release/client/resource/	==>/resource/
+15:56:26	test	====>结束上传		上传处理总数: 0个;总共用时: 0 秒
+15:56:26	test	开始上传:../../release/client/resource/	==>/resource/
+15:56:26	test	====>结束上传		上传处理总数: 0个;总共用时: 0 秒
+15:56:27	test	开始上传版本	ok:../../release/client/test/	==>/
+16:52:16	test	开始上传:../../release/client/resource/	==>/resource/
+16:52:16	上传res版本:	2021082402
+16:52:32	test	====>结束上传		上传处理总数: 362个;总共用时: 16 秒
+16:52:32	test	开始上传:../../release/client/resource/	==>/resource/
+16:52:32	test	====>结束上传		上传处理总数: 0个;总共用时: 0 秒
+16:52:33	test	开始上传:../../release/client/resource/	==>/resource/
+16:52:33	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+16:52:33	test	开始上传版本	ok:../../release/client/test/	==>/
+17:21:22	test	开始上传:../../release/client/resource/	==>/resource/
+17:21:22	上传res版本:	2021082403
+17:22:18	test	====>结束上传		上传处理总数: 1486个;总共用时: 56 秒
+17:22:19	test	开始上传:../../release/client/resource/	==>/resource/
+17:22:19	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+17:22:19	test	开始上传:../../release/client/resource/	==>/resource/
+17:22:19	test	====>结束上传		上传处理总数: 0个;总共用时: 0 秒
+17:22:19	test	开始上传版本	ok:../../release/client/test/	==>/
+17:39:37	test	开始上传:../../release/client/resource/	==>/resource/
+17:39:38	上传res版本:	2021082404
+17:39:39	test	====>结束上传		上传处理总数: 34个;总共用时: 2 秒
+17:39:39	test	开始上传:../../release/client/resource/	==>/resource/
+17:39:40	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+17:39:40	test	开始上传:../../release/client/resource/	==>/resource/
+17:39:40	test	====>结束上传		上传处理总数: 0个;总共用时: 0 秒
+17:39:40	test	开始上传版本	ok:../../release/client/test/	==>/
+18:18:09	test	开始上传:../../release/client/resource/	==>/resource/
+18:18:09	上传res版本:	2021082405
+18:18:10	test	====>结束上传		上传处理总数: 21个;总共用时: 1 秒
+18:18:11	test	开始上传:../../release/client/resource/	==>/resource/
+18:18:11	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+18:18:11	test	开始上传:../../release/client/resource/	==>/resource/
+18:18:11	test	====>结束上传		上传处理总数: 0个;总共用时: 0 秒
+18:18:11	test	开始上传版本	ok:../../release/client/test/	==>/

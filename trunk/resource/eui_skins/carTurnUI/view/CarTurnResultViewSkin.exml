@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnResultView"
+	 width="525"
+	height="100" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image source="carTurnUI_json.carTurnUI_img_bg2"/>
+	<ns1:NumberView id="u_numView" verticalCenter="17.5" horizontalCenter="0"/>
+	<e:Label id="u_textTitle" text="恭喜你获得" size="26" horizontalCenter="0.5" verticalCenter="-14" textColor="0xF0E4B0"/>
+</e:Skin>

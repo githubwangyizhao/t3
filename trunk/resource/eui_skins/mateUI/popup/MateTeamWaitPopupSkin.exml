@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateTeamWaitPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17bdcd90eac"/>
+	<e:Label text="2/4" y="345" id="u_txtNum" visible="true" size="22" bold="true" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Group id="u_btnClose" y="445" x="358" width="160" height="59" visible="true" touchChildren="false">
+		<e:Image source="commonUI_json.commonUI_img_btnbule2" x="0" y="0" visible="true"/>
+		<e:Image source="mateTeamWaitUI_json.mateTeamWaitUI_txt_qxdj" visible="true" y="15" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_btnTeam" y="445" x="618" width="160" height="59" visible="true" touchChildren="false">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow2"/>
+		<e:Image visible="true" source="mateTeamWaitUI_json.mateTeamWaitUI_txt_dwzm" horizontalCenter="0" y="15"/>
+	</e:Group>
+</e:Skin>

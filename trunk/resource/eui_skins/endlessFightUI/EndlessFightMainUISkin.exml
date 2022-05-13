@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightMainUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17cfd98cc4d"/>
+	<e:Image id="u_imgBg" horizontalCenter="0" visible="true"/>
+	<e:Group id="u_grpIcon" width="905" height="530.59" y="24.41" visible="true" x="118.5">
+	</e:Group>
+	<e:Group id="u_grpIconLight" width="905" height="530.59" y="24.41" visible="true" x="118.5"/>
+	<e:Group id="u_grpBet" width="905" height="530.59" y="24.41" visible="true" x="118.5"/>
+	<e:Group id="u_grpTrend" y="110.998" visible="true" zIndex="111" horizontalCenter="1" width="698" height="53">
+		<e:Image width="638" height="53" verticalCenter="0" source="endlessFightUI_json.endlessFightUI_record_bg" visible="true" scale9Grid="12,20,15,20" left="0"/>
+		<e:Image id="u_btnTrend" verticalCenter="1.5" source="endlessFightUI_json.endlessFightUI_btn_trend" visible="true" width="58" height="58" x="640.667"/>
+		<e:List id="u_listTrend" y="5" x="10"/>
+	</e:Group>
+	<e:Group id="u_grpGain" width="116" height="569" y="0.01" touchEnabled="false" touchChildren="false" x="1027.5">
+		<e:Image source="endlessFightUI_json.endlessFightUI_gain_title" y="51.998" visible="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_grpAsset" width="116" height="569" y="0.01" touchEnabled="false" touchChildren="false" x="-4.5">
+		<e:Image source="endlessFightUI_json.endlessFightUI_asset_title" y="52.83" visible="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_grpChip" width="669.482" height="104.243" y="536.151" horizontalCenter="-0.5" visible="true">
+		<e:Image source="endlessFightUI_json.endlessFightUI_img_chip_bg" scaleX="1" scaleY="1" y="40.808" horizontalCenter="0.7590000000000146" touchEnabled="false" visible="true"/>
+		<e:Image id="u_btnRecur" scaleX="1" scaleY="1" source="endlessFightUI_json.endlessFightUI_last" x="546.479" y="11.699999999999932" width="83" height="83"/>
+	</e:Group>
+	<e:Group id="u_grpRight" x="976.5" y="569.167" visible="true">
+		<e:Group id="u_grpOnLine" y="0" visible="true" height="61" scaleX="1" scaleY="1" width="61">
+			<e:Image scaleX="1" scaleY="1" source="endlessFightUI_json.endlessFightUI_btn_other"/>
+		</e:Group>
+		<e:Group id="u_grpMenu" y="0" visible="true" width="61" height="61" scaleX="1" scaleY="1" x="83">
+			<e:Image scaleX="1" scaleY="1" source="endlessFightUI_json.endlessFightUI_btn_menu"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpMyInfo" x="16" y="564" width="163">
+		<e:Image source="endlessFightUI_json.endlessFightUI_img_my_head_bg"/>
+		<e:Image x="72.004" y="11.496" width="146" height="26" source="endlessFightUI_json.endlessFightUI_menu_bet_bg_0" visible="true" scale9Grid="10,9,49,51"/>
+		<e:Image id="u_imgFrame" x="4" y="4" scaleX="0.9" scaleY="0.9"/>
+		<e:Image id="u_imgHead" x="9" y="8" scaleX="0.5" scaleY="0.5"/>
+		<e:Image id="u_btnCharge" source="commonUI_json.commonUI_head_add" y="15.622" x="189.081" scaleX="0.5" scaleY="0.5" width="40" height="40"/>
+		<e:Image id="u_imgMoneyIcon" source="endlessFightUI_json.endlessFightUI_iocn_2" y="14.822" scaleX="0.8" scaleY="0.8" x="77.664"/>
+		<e:Label id="u_textName" text="Label" y="45.282" size="16" textColor="0xF0E4B0" horizontalCenter="58.5"/>
+		<e:Label id="u_textMoney" text="Label" y="17.514" size="16" textColor="0xF0E4B0" horizontalCenter="61.5"/>
+	</e:Group>
+	<e:Group id="u_grpFly" horizontalCenter="-568" touchEnabled="false" touchChildren="false"/>
+	<e:Group id="u_grpResidue" y="-5.474" horizontalCenter="0" visible="true">
+		<e:Image source="endlessFightUI_json.endlessFightUI_time_bg" scaleX="1" scaleY="1"/>
+		<ns1:NumberView id="u_numTime" verticalCenter="0" horizontalCenter="77"/>
+	</e:Group>
+	<e:Group id="u_grpWait" horizontalCenter="0.5" visible="false" width="1380" height="640">
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="0" source="endlessFightUI_json.endlessFightUI_img_tip_bg_1" verticalCenter="0" scale9Grid="88,34,533,22" height="160"/>
+		<e:Image source="endlessFightUI_json.endlessFightUI_img_wait" horizontalCenter="1" verticalCenter="4"/>
+		<e:Label id="u_textTip" y="348" horizontalCenter="-1" text="(参与上一轮而获得的奖励，会通过邮件发放)" fontFamily="Microsoft YaHei" size="20"/>
+		<ns1:NumberView id="u_waitTime" horizontalCenter="0" x="644" y="272" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

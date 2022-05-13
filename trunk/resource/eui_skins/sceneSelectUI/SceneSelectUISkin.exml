@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneSelectUISkin"
+	 width="1136"
+ xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="640">
+	<w:Config id="175fe7cf8d8"/>
+	<e:Image id="u_bg" horizontalCenter="0" verticalCenter="0" visible="true"/>
+	<e:Label id="u_tip" text="禁止私下交易紅寶石，參與每日活動即可獲得" y="591.352" size="18" bold="true" stroke="1" horizontalCenter="70" textColor="0xFF0000"/>
+	<e:Group id="u_pageGrp" x="0" y="7" anchorOffsetX="119.5">
+		<e:Image source="commonUI_json.commonUI_page_di" x="0" y="0"/>
+		<e:Image id="u_pageBtn0" x="119.8" y="21" width="142" height="294" source="sceneSelectUI_json.sceneSelectUI_1_1"/>
+		<e:Image source="sceneSelectUI_json.sceneSelectUII_line" x="120" y="315"/>
+		<e:Image id="u_pageBtn1" y="315" x="119.8" width="142" height="294" source="sceneSelectUI_json.sceneSelectUI_2_2"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" height="505" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0.5" width="995" x="141">
+		<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AnnouncePopupSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c9c537444"/>
+	 
+	<e:Image source="announceUI_json.announceUI_bj" x="253" y="78"/>
+	<e:Image source="announceUI_json.announceUI_title" x="650" y="45" locked="true"/>
+	<e:Image source="announceUI_json.announceUI_zhao" y="0" horizontalCenter="0" locked="true"/>
+	<e:Image id="u_btnClose" source="announceUI_json.announceUI_btn_close" x="1015" y="79"/>
+	<e:Scroller id="u_scrollerItem" width="590" height="433" y="133.83" anchorOffsetX="0" anchorOffsetY="0" x="475">
+		<e:Group x="59" y="161">
+		<e:Label id="u_txtMsg" text="尊敬的玩家：     " y="0" textAlign="left" anchorOffsetX="0" size="22" anchorOffsetY="0" x="0" width="590" lineSpacing="10" fontFamily="Microsoft YaHei" textColor="0xffffff"/>
+		</e:Group>
+	</e:Scroller>
+	 
+	
+</e:Skin>

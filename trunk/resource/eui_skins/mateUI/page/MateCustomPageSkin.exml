@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateCustomPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c9bca7c68"/>
+	<e:Image source="mateUI_json.mateUI_bg2" x="199" y="0" visible="true"/>
+	<e:Group x="533" y="462">
+		<e:Image id="u_costItem" width="50" height="50" x="0" y="0"/>
+		<e:Group x="64" y="9">
+		<e:Image width="110" x="0" source="commonUI_json.commonUI_jz_di2" scale9Grid="15,11,14,10" height="40" y="-6"/>
+		<e:EditableText id="u_inputCost" width="100" textAlign="center" verticalAlign="middle" size="16" fontFamily="Microsoft YaHei" restrict="0-9" textColor="0xFFFFFF" text="999999999" height="16" stroke="1" horizontalCenter="0" verticalCenter="-2"/>
+		</e:Group>
+		<e:Label text="X" x="48.5" fontFamily="Microsoft YaHei" size="18" verticalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_enterSet" touchChildren="false" y="534" x="377" width="160" height="59">
+		<e:Image y="0" x="0" source="commonUI_json.commonUI_img_btnyellow2" visible="true"/>
+		<e:Image horizontalCenter="0" verticalCenter="-0.5" source="mateUI_json.mateUI_set_password"/>
+	</e:Group>
+	<e:Group id="u_enterBtn" touchChildren="false" y="534" x="717" width="160" height="59" visible="true">
+		<e:Image y="0" x="0" visible="true" source="commonUI_json.commonUI_img_btnbule2"/>
+		<e:Image horizontalCenter="0" verticalCenter="-0.5" source="mateUI_json.mateUI_enter"/>
+	</e:Group>
+	<e:Group id="u_btnRule" y="65" x="1000" width="129" height="24">
+		<e:Image source="commonUI_json.commonUI_btn_th" x="0" y="0" width="23" height="23"/>
+		<e:Image x="23" source="commonUI_json.commonUI_img_rule" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

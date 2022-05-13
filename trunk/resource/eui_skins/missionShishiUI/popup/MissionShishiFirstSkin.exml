@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionShishiFirstSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176d7285aad"/>
+	<e:Group id="u_grpTitle" y="375" horizontalCenter="0.5">
+		<e:Image source="missionShishiResultUI_json.missionShishiResultUI_txt_di" y="0" visible="true" x="0"/>
+		<e:Label id="u_txtName1" text="一等奖" y="10" size="16" textColor="0xF0E4B0" bold="true" visible="true" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_grpNum1" y="440" height="47" horizontalCenter="0" x="792">
+		<e:Image source="missionShishiResultUI_json.missionShishiResultUI_txt_get" x="0" y="12" visible="true"/>
+		<e:Image id="u_itemIcon" source="commonUI_json.commonUI_icon_2" x="50" y="0" width="47" height="47" visible="true"/>
+		<e:Label id="u_txtWin1" text="9999" x="93" y="14" textColor="0xF0E4B0" size="22" bold="true" visible="true" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_btnSure" y="525" visible="true" width="160" height="59" horizontalCenter="0" x="783">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow2" x="0" y="0" visible="true"/>
+		<e:Image horizontalCenter="-1" verticalCenter="-5.5" visible="true" source="missionShishiResultUI_json.missionShishiResultUI_txt_sure" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1771ebac9cf"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_bg" width="957.535" height="514.083" scale9Grid="44,44,44,43" visible="true" x="89" y="61.385" locked="true"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_titdi" x="228.82" y="63" visible="true" locked="true"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_detail" x="519.745" y="70.941" height="19.319" visible="true" locked="true"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_btn_leftdi" x="89" y="95.26" width="121.677" height="477.32" visible="true" locked="true"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_btn_leftjian" x="91" y="112" visible="true" height="461.613" locked="true"/>
+	<e:Image id="u_btnClose" source="monsterInfoUI_json.monsterInfoUI_img_close" x="951.215" y="62.552" visible="true" width="93.776"/>
+</e:Skin>

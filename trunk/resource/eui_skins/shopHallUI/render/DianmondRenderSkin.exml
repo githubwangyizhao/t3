@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DianmondRenderSkin"
+	 width="249"
+	height="190" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="249" height="190" source="shopHallUI_json.shopHallUI_img1_3"/>
+	<e:Group id="u_btnBuy" width="249" height="190">
+		<e:Image id="u_imgIcon" scaleX="0.8" scaleY="0.8" x="40" y="0"/>
+		<e:Label id="u_txtExp" text="VIP 经验 + " y="128.028" size="16" width="111" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" horizontalCenter="2.75" textColor="0xE5B749" stroke="1"/>
+		<e:Label id="u_txtCash" text="$2" y="162.994" size="18" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" textColor="0xEEF4FB" bold="true" horizontalCenter="1"/>
+		<e:Group id="u_grpNum" y="10" right="9"/>
+	</e:Group>
+</e:Skin>

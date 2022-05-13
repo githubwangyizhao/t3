@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DebugUISkin"
+	 width="640"
+	height="100" xmlns:e="http://ns.egret.com/eui">
+	<e:Image anchorOffsetX="0" width="640" anchorOffsetY="0" height="100" source="commonUI_box" scale9Grid="3,3,4,4"/>
+	<e:Group id="u_imgDraw" x="0" y="0">
+		<e:Image height="39" x="0" y="0" source="commonUI_di_1" scale9Grid="36,8,56,9" width="640"/>
+		<e:Label text="Debug调试" y="8" bold="true" size="22" textColor="0xFFFFFF" x="272"/>
+	</e:Group>
+	<e:Group x="0" bottom="0">
+		<e:EditableText id="u_textInput" width="395" height="34" text="" x="13" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入文本..." size="26" bold="true" textColor="0xFFFFFF" y="13" promptColor="0xffffff"/>
+		<e:Group id="u_btnSend" visible="true" x="447" y="0">
+			<e:Image y="0" visible="true" x="0" height="60" source="commonUI_box_0" scale9Grid="2,2,1,1" width="113"/>
+			<e:Label bold="true" size="18" verticalCenter="0" text="调试" horizontalCenter="0" visible="true" textColor="0xffffff"/>
+		</e:Group>
+		<e:Image id="u_btnClose" x="618" y="20" scaleX="-1" source="commonUI_btn_close_1"/>
+	</e:Group>
+</e:Skin>

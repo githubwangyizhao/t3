@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ArenaUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" verticalCenter="0" visible="true" horizontalCenter="0"/>
+	<e:Scroller id="u_scrollerItem" height="440" anchorOffsetX="0" anchorOffsetY="0" width="1110" visible="true" y="100" horizontalCenter="0">
+		<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	</e:Scroller>
+</e:Skin>

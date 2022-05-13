@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawRender"
+	 width="32"
+	height="45" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe809e9b"/>
+	<e:Group visible="true" width="32" height="45">
+		<e:Image id="u_imgType" source="endlessFightUI_json.endlessFightUI_boss_icon"/>
+		<e:Image id="u_imgHead" y="19" horizontalCenter="0" width="24" height="24"/>
+	</e:Group>
+</e:Skin>

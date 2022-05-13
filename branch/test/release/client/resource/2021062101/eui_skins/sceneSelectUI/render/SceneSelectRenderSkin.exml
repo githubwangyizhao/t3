@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneSelectRenderSkin"
+	 width="314"
+	height="405" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175fe8393fa"/>
+	<e:Group id="u_btnClick" x="43" y="65" width="251" height="270">
+		<e:Image id="u_imgBj" source="sceneSelectUI_json.sceneSelectUI_bj" x="0" y="0"/>
+		<e:Image id="u_imgMonster" source="sceneSelectUI_json.sceneSelectUI_img" y="-67" x="-26" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgShow" source="sceneSelectUI_json.sceneSelectUI_show" x="-38" y="158"/>
+		<e:Image id="u_imgName" source="sceneSelectUI_json.sceneSelectUI_name" y="206" horizontalCenter="-15"/>
+	</e:Group>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_icon_bg" x="37.032" y="345.111" locked="true"/>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_icon_bg" x="100.33333333333333" y="345.111" locked="true"/>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_icon_bg" x="163.95266666666666" y="345.111" locked="true"/>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_icon_bg" x="226.746" y="345.111" locked="true" visible="true"/>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_more" x="227.254" y="344.873" visible="true"/>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_icon_bg" x="38.302" y="345.508" id="u_imgIcon1" width="50" height="50"/>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_icon_bg" x="101.603" y="345.508" id="u_imgIcon2" width="50" height="50"/>
+	<e:Image source="sceneSelectUI_json.sceneSelectUI_icon_bg" x="165.222" y="345.508" id="u_imgIcon3" width="50" height="50"/>
+	<e:Image id="u_btnMore" source="sceneSelectUI_json.sceneSelectUI_more" x="37.254" y="344.873" width="240" alpha="0"/>
+</e:Skin>

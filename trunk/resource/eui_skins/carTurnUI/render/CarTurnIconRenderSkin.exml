@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.carTurnIconRenderSkin"
+	 width="60"
+	height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe809e9b"/>
+	<e:Group visible="true" width="60" height="60">
+		<e:Image id="u_imgIcon" visible="true" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="u_selectBg" visible="true" touchEnabled="false" scaleX="1" scaleY="1" scale9Grid="2,3,5,3" alpha="0" source="carTurnUI_json.carTurnUI_bet_select_bg_3" horizontalCenter="0.75" verticalCenter="0.25"/>
+	</e:Group>
+</e:Skin>

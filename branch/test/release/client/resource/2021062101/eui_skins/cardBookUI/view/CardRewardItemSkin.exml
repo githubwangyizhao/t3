@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardRewardItemSkin"
+	 width="100"
+	height="100" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="100" height="100" x="0" y="0"/>
+	<e:Image id="u_imgReceive" source="cardBookUI_json.cardBookUI_received" x="0" y="14" visible="true"/>
+</e:Skin>

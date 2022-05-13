@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckBossFightHeadRenderSkin"
+	 width="68"
+	height="68" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_mcHead" x="0" y="0">
+		<e:Image id="u_imgHead" x="0" y="0" visible="true" source="luckBossFightUI_json.luckBossFightUI_head1"/>
+		<e:Image x="35" y="40" visible="true" source="luckBossFightUI_json.luckBossFightUI_icon_roll"/>
+		<e:Label id="u_txtTag" text="5" y="44" bold="true" size="20" visible="true" textColor="0xFFFCA9" x="45"/>
+	</e:Group>
+	<e:Image id="u_imgDie" source="luckBossFightUI_json.luckBossFightUI_die" x="10" y="7" visible="true"/>
+</e:Skin>

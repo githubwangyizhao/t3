@@ -1,0 +1,71 @@
+16:28:28	test	开始上传:../../release/client/resource/	==>/resource/
+16:28:28	上传res版本:	2021073101
+16:30:06	test	====>结束上传		上传处理总数: 2257个;总共用时: 1 分 39 秒
+16:30:06	test	开始上传:../../release/client/resource/	==>/resource/
+16:30:07	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+16:30:07	test	开始上传:../../release/client/resource/	==>/resource/
+16:30:08	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+16:30:08	test	开始上传版本	ok:../../release/client/test/	==>/
+18:13:08	test	开始上传:../../release/client/resource/	==>/resource/
+18:13:08	上传res版本:	2021073102
+18:13:27	test	====>结束上传		上传处理总数: 452个;总共用时: 20 秒
+18:13:27	test	开始上传:../../release/client/resource/	==>/resource/
+18:13:28	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+18:13:28	test	开始上传:../../release/client/resource/	==>/resource/
+18:13:29	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+18:13:29	test	开始上传版本	ok:../../release/client/test/	==>/
+18:55:09	test	开始上传:../../release/client/resource/	==>/resource/
+18:55:10	上传res版本:	2021073103
+18:55:13	test	====>结束上传		上传处理总数: 51个;总共用时: 4 秒
+18:55:13	test	开始上传:../../release/client/resource/	==>/resource/
+18:55:14	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+18:55:14	test	开始上传:../../release/client/resource/	==>/resource/
+18:55:15	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+18:55:15	test	开始上传版本	ok:../../release/client/test/	==>/
+19:15:13	test	开始上传:../../release/client/resource/	==>/resource/
+19:15:13	上传res版本:	2021073104
+19:15:15	test	====>结束上传		上传处理总数: 24个;总共用时: 3 秒
+19:15:15	test	开始上传:../../release/client/resource/	==>/resource/
+19:15:16	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+19:15:16	test	开始上传:../../release/client/resource/	==>/resource/
+19:15:17	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+19:15:17	test	开始上传版本	ok:../../release/client/test/	==>/
+19:37:38	test	开始上传:../../release/client/resource/	==>/resource/
+19:37:39	上传res版本:	2021073105
+19:37:40	test	====>结束上传		上传处理总数: 27个;总共用时: 2 秒
+19:37:41	test	开始上传:../../release/client/resource/	==>/resource/
+19:37:42	test	====>结束上传		上传处理总数: 0个;总共用时: 2 秒
+19:37:42	test	开始上传:../../release/client/resource/	==>/resource/
+19:37:43	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+19:37:43	test	开始上传版本	ok:../../release/client/test/	==>/
+19:38:56	test	开始上传:../../release/client/resource/	==>/resource/
+19:38:57	上传res版本:	2021073106
+19:38:59	test	====>结束上传		上传处理总数: 23个;总共用时: 3 秒
+19:38:59	test	开始上传:../../release/client/resource/	==>/resource/
+19:39:00	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+19:39:00	test	开始上传:../../release/client/resource/	==>/resource/
+19:39:01	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+19:39:01	test	开始上传版本	ok:../../release/client/test/	==>/
+19:41:46	test	开始上传:../../release/client/resource/	==>/resource/
+19:41:47	test	====>结束上传		上传处理总数: 0个;总共用时: 2 秒
+19:41:47	test	开始上传:../../release/client/resource/	==>/resource/
+19:41:48	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+19:41:48	test	开始上传:../../release/client/resource/	==>/resource/
+19:41:49	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+19:41:49	test	开始上传版本	ok:../../release/client/test/	==>/
+20:01:25	test	开始上传:../../release/client/resource/	==>/resource/
+20:01:26	上传res版本:	2021073107
+20:01:28	test	====>结束上传		上传处理总数: 20个;总共用时: 3 秒
+20:01:28	test	开始上传:../../release/client/resource/	==>/resource/
+20:01:29	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+20:01:29	test	开始上传:../../release/client/resource/	==>/resource/
+20:01:30	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+20:01:30	test	开始上传版本	ok:../../release/client/test/	==>/
+21:20:36	test	开始上传:../../release/client/resource/	==>/resource/
+21:20:37	上传res版本:	2021073108
+21:20:39	test	====>结束上传		上传处理总数: 24个;总共用时: 3 秒
+21:20:39	test	开始上传:../../release/client/resource/	==>/resource/
+21:20:40	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+21:20:40	test	开始上传:../../release/client/resource/	==>/resource/
+21:20:41	test	====>结束上传		上传处理总数: 0个;总共用时: 1 秒
+21:20:42	test	开始上传版本	ok:../../release/client/test/	==>/

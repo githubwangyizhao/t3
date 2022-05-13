@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionShishiFirstSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176d7285aad"/>
+	<e:Image x="0" y="157" visible="true" source="missionShishiResultUI_json.missionShishiResultUI_bg"/>
+	<e:Image source="missionJieSuanUI_json.missionJieSuanUI_ss_finish" y="335" visible="true" horizontalCenter="4"/>
+	<e:Group verticalCenter="8" horizontalCenter="0">
+		<e:Label id="u_txtName" text="Winning the second prize：XXXX" y="0" size="20" bold="true" visible="true" wordWrap="true" horizontalCenter="0"/>
+		<e:Group y="30" height="20" horizontalCenter="0">
+			<e:Label id="u_txtMana" text="Acquire mana：" y="0" size="20" bold="true" visible="true" wordWrap="true" x="0"/>
+			<e:Image id="u_imgGold" source="commonsUI_json.commonsUI_item_icon" x="140" width="50" height="50" visible="true" y="-15"/>
+			<e:Label id="u_txtCount" text="XXXX" y="0" size="20" bold="true" visible="true" wordWrap="true" x="189" textColor="0xFCFF00"/>
+		</e:Group>
+		<e:Scroller id="u_scrollerItem" width="410" height="60" y="70" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="0">
+			<e:Group bottom="0" horizontalCenter="0">
+			<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="u_grpCost" y="145" height="20" horizontalCenter="0">
+			<e:Label id="u_txtCost" text="The total cost of the game:" y="0" size="20" bold="true" visible="true" wordWrap="true" x="0"/>
+			<e:Image id="u_imgGold2" source="commonsUI_json.commonsUI_item_icon" x="253" width="50" height="50" visible="true" y="-15"/>
+			<e:Label id="u_txtCount2" text="XXXX" y="0" size="20" bold="true" visible="true" wordWrap="true" x="302" textColor="0xC9C9D6"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnOK" visible="true" y="688" horizontalCenter="6.5" width="135" height="65">
+		<e:Image y="0" visible="true" x="0" scale9Grid="79,15,1,2" source="commonsUI_json.commonsUI_btn_1"/>
+		<e:Label id="u_txtOK" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="OK" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close" x="567" y="337" visible="true" width="40" height="40"/>
+</e:Skin>

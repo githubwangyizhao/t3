@@ -1,0 +1,110 @@
+{
+	"sceneEffectArray": [],
+	"npcArray": [],
+	"mapEventArray": [],
+	"monsterArray": [
+		{
+			"level": 1,
+			"x": 1200,
+			"monster_id": 2300001,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99041,
+			"rebrith": -2
+		},
+		{
+			"level": 10,
+			"x": 1200,
+			"monster_id": 2300010,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 990410,
+			"rebrith": -2
+		},
+		{
+			"level": 2,
+			"x": 1200,
+			"monster_id": 2300002,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99042,
+			"rebrith": -2
+		},
+		{
+			"level": 3,
+			"x": 1200,
+			"monster_id": 2300003,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99043,
+			"rebrith": -2
+		},
+		{
+			"level": 4,
+			"x": 1200,
+			"monster_id": 2300004,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99044,
+			"rebrith": -2
+		},
+		{
+			"level": 5,
+			"x": 1200,
+			"monster_id": 2300005,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99045,
+			"rebrith": -2
+		},
+		{
+			"level": 6,
+			"x": 1200,
+			"monster_id": 2300006,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99046,
+			"rebrith": -2
+		},
+		{
+			"level": 7,
+			"x": 1200,
+			"monster_id": 2300007,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99047,
+			"rebrith": -2
+		},
+		{
+			"level": 8,
+			"x": 1200,
+			"monster_id": 2300008,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99048,
+			"rebrith": -2
+		},
+		{
+			"level": 9,
+			"x": 1200,
+			"monster_id": 2300009,
+			"y": 780,
+			"delay": 0,
+			"round": 1,
+			"only_id": 99049,
+			"rebrith": -2
+		}
+	],
+	"map_id": 9903,
+	"gatherArray": [],
+	"trapArray": []
+}

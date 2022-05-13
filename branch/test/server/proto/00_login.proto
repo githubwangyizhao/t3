@@ -1,0 +1,89 @@
+//登录请求
+message m_login_tos {
+    required string server_id = 1; //服务器id
+    required int32 login_type = 2; //登录类型
+    required string ticket = 3; //登录密钥
+    required string acc_id = 4; //帐号id
+    required string pf = 5; // 渠道id
+    required int32 platform = 6; //qq 平台独有 platform
+    required int32 entry = 7; //入口 0:正常 1:QQ宠物
+    required string qua = 8; //qq 平台独有 qua
+    required int32 time = 9; // 时间戳
+    required string platform_id = 10; // 平台id(我们自己定义的平台id)
+    required string via = 11; // qq 平台独有 via
+    required int32 is_gm_login = 12; // 是否gm 帐号登录
+    required string gm_account = 13; // gm帐号
+}
+
+//登录返回
+message m_login_toc {
+    enum ENUM {
+        success = 1; //成功
+        no_role = 2; //没有角色
+        disable_login = 3; //禁止登录
+        verify_fail = 4; //验证失败
+        token_expire = 5; //密钥过期
+        acc_no_exists = 6; //帐号不存在
+        login_frequent = 7; //频繁登录
+        unknow = 8; //未知
+    }
+    required ENUM result = 1;
+    repeated string random_man_name = 2;    //随机男名字
+    repeated string random_women_name = 3;  //随机女名字
+    required uint32 player_id = 4; //玩家id
+    required uint32 is_open_ios_charge = 5; //是否开启ios充值
+    optional string pro_setting = 6; // 预加载值
+}
+
+//创建角色
+message m_create_role_tos {
+    required string server_id = 1; //服务器id
+    required string acc_id = 2; //帐号id
+    required string nickname = 3; //昵称
+    required int32 sex = 4; //性别 0:男 1:女
+    required string from = 5; //来源  iOS, Android 等
+    required string extra = 6; //额外数据
+    required string friend_code = 7; // 分享码
+}
+
+//创建角色返回
+message m_create_role_toc {
+    enum ENUM {
+        success = 1; //成功
+        used = 2; //名字被使用
+        invalid_string = 3; //非法字符串
+        too_long = 4; //名字过长
+        unknow = 5; //未知
+        already_create_role = 6;// 已经创建角色
+    }
+    required ENUM result = 1;
+    required uint32 player_id = 2; //玩家id
+}
+
+
+//进入游戏
+message m_enter_game_tos {
+}
+
+//心跳
+message m_heart_beat_tos {
+    optional string heartbeat_code = 1;       // 校验心跳有效性的加密字符串，若n=0，则该值为空，反之则从n-1的heart_beat_toc协议获取
+}
+message m_heart_beat_toc {
+    optional string heartbeat_code = 1;       // 下次心跳时需要发送到服务端的code
+}
+
+
+//通知登出
+message m_notice_logout_toc {
+    enum ENUM {
+        login_in_other = 1; //在别处登录
+        system_maintenance = 2; //服务器维护
+        cheat = 3; //涉嫌外挂
+        gm_kill = 4; //管理员踢出
+        disable_login = 5; //帐号被封
+        fatigue = 6;// 防沉迷
+        black_ip_list = 7;//登录ip为黑名单ip
+    }
+    required ENUM reason = 1;
+}

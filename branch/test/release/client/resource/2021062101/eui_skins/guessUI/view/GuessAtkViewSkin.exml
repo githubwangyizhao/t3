@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GuessAtkViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798dbd511a"/>
+	<e:Image source="guessUI_json.guessUI_img_bg2" y="94.606" scale9Grid="39,39,40,40" width="939.617" height="448.267" horizontalCenter="1"/>
+	<e:Image source="guessUI_json.guessUI_img_txtBg" x="276.995" y="113.024" scale9Grid="20,13,20,5" width="581.389" visible="true"/>
+	<e:Label id="u_textTitle" text="BOSS【总攻击】是多少？" x="467.307" y="120.777" size="18" textColor="0xF0E4B0"/>
+	<e:Image id="u_btnClean" source="guessUI_json.guessUI_btn_clean" x="848" y="548.375"/>
+	<e:Group width="910.07" height="375.212" x="113.851" y="153.732">
+		<e:List id="u_listItem"/>
+	</e:Group>
+	<e:Group x="122.706" y="526.456" id="u_grpChip" width="709" height="118">
+		<e:List id="u_chipList"/>
+	</e:Group>
+</e:Skin>

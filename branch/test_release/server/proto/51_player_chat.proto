@@ -1,0 +1,75 @@
+//玩家聊天
+
+import "01_player.proto";
+
+message MsgInfo {
+    optional ModelHeadFigure model_head_figure = 1;     //头像数据
+    required string msg_data = 2;                       //信息
+    required int32 template_id = 3;                     //消息模版id
+    repeated string arg_list = 4;                       //参数列表
+    optional int32 loop_num = 5;                        //循环次数
+    required int32 time = 6;                            //发送时间
+}
+
+message ChatInfo {
+    required int32 channel = 1;                         //频道
+    optional int32 id = 2;                              //(私聊频道:玩家id)
+    repeated MsgInfo msg_data_list = 3;                 //消息数据列表
+}
+
+//频道聊天
+message m_channel_chat_tos {
+    required int32 channel = 1;                         //频道
+    optional int32 id = 2;                              //(私聊频道:玩家id)
+    required string msg_data = 3;                       //信息
+}
+message m_channel_chat_toc {
+    enum ENUM {
+        success = 1;                                    //成功
+        fail = 2;                                       //失败
+        level_limit = 3;                                //等级限制
+        too_quick = 4;                                  //发消息太快
+        too_long = 5;                                   //消息太长
+        not_enough_vip_level = 6;                       //VIP等级不足
+        no_condition = 7;                               //被禁言
+    }
+    required ENUM reason = 100;
+    required int32 channel = 1;                         //频道
+    optional int32 id = 2;                              //(私聊频道:玩家id)
+    required string msg_data = 3;                       //信息
+}
+
+//广播频道消息列表
+message m_broadcast_channel_msg_list_toc {
+    repeated ChatInfo chat_data_list = 1;               //聊天数据列表
+}
+
+// 获得玩家信息
+message m_get_player_chat_info_tos {
+    required string nickname = 1;                       // 玩家名字
+}
+message m_get_player_chat_info_toc {
+    enum ENUM {
+        success = 1;                                    // 成功
+        fail = 2;                                       // 失败
+        not_authority = 3;                              // 该玩家所在服务器正在停服
+        none = 4;                                       // 玩家不存在
+        no_condition = 5;                               // 条件不足不能搜索
+    }
+    required ENUM result = 100;
+    optional string signature = 1;                      // 个性签名
+    optional ModelHeadFigure model_head_figure = 2;     // 头像数据
+}
+
+message ChatPlayerOnline {
+    required int32 player_id = 1;                       // 玩家id
+    required int32 state = 2;                           // 在线状态
+}
+
+// 获取玩家列表在线状态
+message m_get_player_list_online_status_tos {
+    repeated int32 player_id_list = 1;                  // 玩家id列表
+}
+message m_get_player_list_online_status_toc {
+    repeated ChatPlayerOnline player_online_state = 1;  // 玩家在线状态
+}

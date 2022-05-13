@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldTreeRuleSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d473797ed"/>
+	<e:Image x="176.39" y="108.762" visible="true" source="commonUI_json.commonUI_img_popdi" width="758.25" scale9Grid="33,173,33,174" height="421.126" locked="true"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" x="215.664" y="111.148" visible="true" locked="true"/>
+	<e:Image source="commonUI_json.commonUI_img_rule" x="513.065" y="117.839" locked="true"/>
+	<e:Image id="u_btnClose" x="838.672" y="110.424" width="93" height="34" visible="true" source="commonUI_json.commonUI_btn_close_4"/>
+	<e:Label id="u_txtRule" text="激活" x="206.714" y="169.076" width="688" fontFamily="Microsoft YaHei" visible="true" size="18" textColor="0xEFE3AF"/>
+	<e:Image id="u_imgRule" x="203" y="230" height="279" width="433.364"/>
+	<e:Image source="worldTreeRuleUI_json.worldTreeRuleUI_hero" x="175.13" y="219.32" scaleX="0.75" scaleY="0.75"/>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GodDragonViewSkin"
+	 width="106"
+	height="140" xmlns:e="http://ns.egret.com/eui">
+	<e:Group>
+		<e:Image id="u_btnOpen" x="3" y="5" scaleX="1" scaleY="1" source="godDragonUI_json.godDragonUI_rechage"/>
+		<e:Label id="u_txtProgress" text="0/100" y="61" scaleX="1" scaleY="1" size="18" textColor="0xF0E4B0" horizontalCenter="2"/>
+		<e:Label id="u_textTime" text="00:00" y="116" scaleX="1" scaleY="1" size="18" textColor="0xF0E4B0" horizontalCenter="2"/>
+		<e:Image y="81" x="2" source="vipUI_json.vipUI_jdt1" width="90"/>
+		<e:Image id="u_imgProgress" width="0" height="20" y="81" x="2" source="vipUI_json.vipUI_jdt2"/>
+	</e:Group>
+</e:Skin>

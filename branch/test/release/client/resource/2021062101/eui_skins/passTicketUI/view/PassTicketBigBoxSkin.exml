@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketBigBoxSkin"
+	 width="340"
+	height="120" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="u_txtName" text="额外大宝箱" x="140" y="6" size="20" bold="true"/>
+	<e:Label text="额外大宝箱" x="140" y="38" id="u_txtMsg" size="16" bold="true" width="179" wordWrap="true" lineSpacing="8"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BagRenderSkin" width="101" height="101" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176b2ff3619"/>
+	<e:Image id="u_imgBj" scale9Grid="13,13,14,14" source="bagUI_json.bagUI_img_gzbg" x="4" y="4"/>
+	<e:Image id="u_imgSelected" visible="true" alpha="1" source="bagUI_json.bagUI_img_xz"/>
+</e:Skin>

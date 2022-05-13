@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightOverallPage"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_title" source="endlessFightTrendUI_json.endlessFightTrendUI_title" y="128" x="512"/>
+	<e:Image id="u_slide_hero" source="endlessFightTrendUI_json.endlessFightTrendUI_slide_red" y="120" left="131" width="365" visible="true"/>
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_hero1" x="112" y="72"/>
+	<ns1:NumberView id="u_numHero" width="72" height="33" y="123" x="421"/>
+	<e:Image id="u_slide_monster" source="endlessFightTrendUI_json.endlessFightTrendUI_slide_blue" y="120" right="131" width="365" visible="true"/>
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_monster1" x="808" y="72"/>
+	<ns1:NumberView id="u_numMonster" width="72" height="33" y="123" x="645"/>
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_bottomLine" y="162" width="873" horizontalCenter="0.5" fillMode="scale" scale9Grid="3,0,4,1"/>
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_tableBg1" y="170" width="875" fillMode="repeat" scale9Grid="7,20,6,222" visible="true" horizontalCenter="0"/>
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_line" x="202" y="170" height="255"/>
+	<e:Label id="u_sortLb" text="局数" y="189" size="16" textColor="0xF0E4B0" horizontalCenter="-400"/>
+	<e:Group x="148" y="233" locked="true">
+		<e:Image y="0" width="30" height="29" horizontalCenter="0" source="endlessFightUI_json.endlessFightUI_5_icon"/>
+		<e:Image y="50" width="30" height="29" horizontalCenter="0" source="endlessFightUI_json.endlessFightUI_10_icon"/>
+		<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_hero" x="0" y="100"/>
+		<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_monter" x="0" y="150"/>
+	</e:Group>
+	<e:Scroller id="u_scroller" width="800" height="253" x="204" y="171">
+		<e:List id="u_list"/>
+	</e:Scroller>
+	<e:Scroller id="u_lineScroller" width="800" height="253" x="204" y="171" visible="true" touchEnabled="false" touchChildren="false">
+		<e:Group id="u_lineGrp"/>
+	</e:Scroller>
+</e:Skin>

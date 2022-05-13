@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateResultPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17be768a065"/>
+	<e:Image source="mateResultUI_json.mateResultUI_bg" x="-120.5" y="115.641" visible="true"/>
+	<e:Image source="mateResultUI_json.mateResultUI_bg_guang" x="30.558" y="-131.146" visible="true"/>
+	<e:Image source="mateResultUI_json.mateResultUI_qzh" x="447.866" visible="true"/>
+	<e:Image source="mateResultUI_json.mateResultUI_qzbord" x="399.922" y="-60.446" visible="true"/>
+	<e:Image source="mateResultUI_json.mateResultUI_qzq" x="453.435" y="-1" visible="true"/>
+	<e:Image id="u_imgWinTitle" source="mateResultUI_json.mateResultUI_win_title" x="540.244" y="6.048" visible="true"/>
+	<e:Image source="mateResultUI_json.mateResultUI_qzinner" x="501.718" y="14.154" visible="true"/>
+	<e:Image id="u_imgwinhead" scaleX="0.7" scaleY="0.7" x="526" y="35"/>
+	<e:Image id="u_imgwinframe" y="25" x="516" scaleX="0.85" scaleY="0.85"/>
+	<e:Image id="u_imgIcon" source="mateResultUI_json.mateResultUI_head_draw" x="514" y="14" visible="true"/>
+	<e:Image id="u_imgResult" source="mateResultUI_json.mateResultUI_jiesuan" y="164.573" visible="true" horizontalCenter="1"/>
+	<e:Label id="u_txtwinName" text="玩家名字六个字" y="127.704" size="18" visible="true" textColor="0xE9D6A5" fontFamily="Microsoft YaHei" horizontalCenter="1"/>
+	<e:Group id="u_btnSure" x="488" y="547" width="160" height="59">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow2" x="0" y="0" visible="true"/>
+		<e:Image source="commonUI_json.commonUI_img_sure" x="14.97" y="1.98" width="131.705" height="50.246" visible="true"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BubbleItemRenderSkin" width="310" height="72" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="userMainUI_json.userMainUI_u_line" x="20" y="70" width="270"/>
+	<e:Label id="u_txtContext" text="就这？你太菜了！" x="2" y="2" anchorOffsetX="0" width="306" size="16" textAlign="center" touchEnabled="false" height="68" lineSpacing="6" verticalAlign="middle" textColor="0xF0E4B0"/>
+	<e:Image id="u_imgOver" x="2" y="2" scale9Grid="12,12,76,76" anchorOffsetY="0" height="68" anchorOffsetX="0" width="306" alpha="0" source="commonUI_box" visible="true"/>
+</e:Skin>

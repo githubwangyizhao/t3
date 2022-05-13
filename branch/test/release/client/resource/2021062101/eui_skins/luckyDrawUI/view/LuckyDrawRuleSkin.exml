@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawRule"
+	 width="374"
+	height="243" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="374" height="243" x="0" y="0" visible="true" scale9Grid="203,124,49,21" source="luckyDrawUI_json.luckyDrawUI_ruleBg"/>
+	<e:Label id="u_txtTitle" text="规则说明" y="12.82" textAlign="center" size="18" textColor="0xFFE2C5" stroke="2" strokeColor="0x333333" bold="true" visible="true" horizontalCenter="5"/>
+	<e:Scroller width="314" height="156" y="56" horizontalCenter="5">
+		<e:Group>
+		<e:Label id="u_txtMsg" text="规则" textColor="0xF0E4B0" size="14" width="314" wordWrap="true" lineSpacing="12" y="3"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

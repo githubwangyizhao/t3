@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="accessRenderSkin" width="600" height="86" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image verticalCenter="0" horizontalCenter="0" visible="true" x="0" y="0" scaleX="1" scaleY="1" source="accessUI_json.accessUI_bg_render" scale9Grid="30,10,570,55"/>
+	<e:Image id="u_imgIcon" x="25" visible="true" width="70" height="70" verticalCenter="-2.5"/>
+	<e:Label id="u_txtName" text="Label" scaleX="1" scaleY="1" size="20" visible="true" textColor="0x3F393C" verticalAlign="middle" textAlign="center" verticalCenter="0" horizontalCenter="-30.5" fontFamily="Microsoft YaHei"/>
+	<e:Image id="u_btnGoto" x="458" verticalCenter="0" visible="true" source="accessUI_json.accessUI_btn_1"/>
+</e:Skin>

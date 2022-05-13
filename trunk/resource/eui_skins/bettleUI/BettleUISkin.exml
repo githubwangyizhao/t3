@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BettleUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cea15af23"/>
+	<e:Image id="u_imgBg" visible="true" horizontalCenter="0"/>
+	<e:Group id="u_pageGrp" width="135">
+		<e:Image x="-122" y="0" source="commonUI_json.commonUI_page_di" visible="true"/>
+		<e:Image y="246" visible="true" source="commonUI_json.commonUI_line2"/>
+		<e:Image y="442" visible="true" source="commonUI_json.commonUI_line2"/>
+	</e:Group>
+	<e:Group id="u_mcRight" x="875" y="0" width="261">
+		<e:Image source="bettleUI_json.bettleUI_di" width="261" height="640" scale9Grid="11,10,12,11" y="0"/>
+		<e:Image source="bettleUI_json.bettleUI_rule_design" y="359" visible="true" horizontalCenter="0"/>
+		<e:Image y="49" source="bettleUI_json.bettleUI_txt_di" visible="true" horizontalCenter="0"/>
+		<e:Image x="0" y="287" source="bettleUI_json.bettleUI_rank_di" visible="true"/>
+		<e:Image id="u_imgNoRank" source="bettleUI_json.bettleUI_no_rank" y="98" horizontalCenter="0.5"/>
+		<e:Scroller id="u_scrollerItem" height="215" anchorOffsetX="0" anchorOffsetY="0" width="260" visible="true" x="0" y="82">
+			<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" y="0"/>
+		</e:Scroller>
+		<e:Scroller width="240" height="250" y="374" visible="true" horizontalCenter="0.5">
+			<e:Group>
+			<e:Label id="u_txtRule" text="规则" size="16" width="240" wordWrap="true" lineSpacing="12" y="3" fontFamily="Microsoft YaHei" textColor="0x8693A7" bold="true"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Label id="u_titleRank" text="排名" y="57" fontFamily="Microsoft YaHei" size="14" bold="true" x="13"/>
+		<e:Label id="u_titleName" text="用户名" y="57" fontFamily="Microsoft YaHei" size="14" bold="true" horizontalCenter="-9.5"/>
+		<e:Label id="u_titleWin" text="胜场" y="57" fontFamily="Microsoft YaHei" size="14" bold="true" horizontalCenter="83.5"/>
+		<e:Label id="u_myRank" text="未上榜" x="6" y="310" fontFamily="Microsoft YaHei" size="14" bold="true" visible="true"/>
+		<e:Label id="u_myName" text="s1.玩家名字七个字" y="310" fontFamily="Microsoft YaHei" size="14" bold="true" width="140" textAlign="center" x="51" visible="true"/>
+		<e:Label id="u_myWin" text="9999" y="310" fontFamily="Microsoft YaHei" size="14" bold="true" textAlign="center" visible="true" horizontalCenter="88.5"/>
+		<e:Label id="u_titleRule" text="规则说明" y="341" fontFamily="Microsoft YaHei" size="16" bold="true" horizontalCenter="0" textColor="0xF0E4B0"/>
+	</e:Group>
+	<e:Group id="u_rewardGrp" visible="true" horizontalCenter="-71" verticalCenter="0" scaleX="2" scaleY="2">
+		<e:Image y="0" scale9Grid="137,29,137,28" x="0" source="bettleUI_json.bettleUI_rewardBg"/>
+		<e:Group x="150" y="24">
+		<e:Image id="u_imgRank" source="bettleUI_json.bettleUI_rank_1" x="0" y="0"/>
+		<e:Group id="u_grpItem" x="70" y="-2">
+			<e:Image id="u_rewardItem" x="0" verticalCenter="0" source="commonUI_json.commonUI_icon_52"/>
+		</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

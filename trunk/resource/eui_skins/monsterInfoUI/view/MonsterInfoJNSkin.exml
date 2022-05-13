@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoJNSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c96c5b64f"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_jn_bg" x="220.559" y="105.853" visible="true"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_jn_bg" x="220.559" y="267" visible="true"/>
+	<e:Image id="u_imgDZ" x="274" y="131" scaleX="1.02" scaleY="1.02"/>
+	<e:Image y="288.5" x="269.5" source="userMainUI_json.userMainUI_d_dangti" scaleX="1.1" scaleY="1.1"/>
+	<e:Label id="u_txtdzName" text="技能名字啊啊" y="131.124" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" size="20" left="447" textAlign="left"/>
+	<e:Label id="u_txtdzDesc" text="技能介绍技能技能介绍技能介绍技能介绍技能介绍技能介绍技能介绍技能介" x="449" y="169.291" size="16" fontFamily="Microsoft YaHei" visible="true" width="540" height="70" multiline="true" lineSpacing="6" textColor="0xFFFFFF"/>
+	<e:Label id="u_txtdtName" text="技能名字啊啊" x="445.775" y="290.66" size="20" fontFamily="Microsoft YaHei" textColor="0xF0E4B0"/>
+	<e:Label id="u_txtdtDesc" text="技能介绍技能介绍" x="449" y="328.5" size="16" width="540" height="70" lineSpacing="6" textColor="0xFFFFFF"/>
+</e:Skin>

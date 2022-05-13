@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionShiShiRankSkin"
+	 width="241"
+	height="53" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" y="0" visible="true" x="0" source="missionFightUI_json.missionFightUI_rank_bg2" scale9Grid="80,18,81,17"/>
+	<e:Image source="missionFightUI_json.missionFightUI_rank1" x="15" y="6" scaleX="0.65" scaleY="0.65" visible="false" id="u_imgRank"/>
+	<e:Label text="s1.玩家名称" x="71" y="8" id="u_txtName" size="16" visible="true" textColor="0xEAF1F9" stroke="1" fontFamily="Microsoft YaHei"/>
+	<e:Label text="伤害:  58%" y="28" id="u_txtValue" textColor="0xFF4647" size="16" stroke="2" visible="true" x="71" fontFamily="Microsoft YaHei"/>
+	<e:Group id="u_grpRank" x="19" y="8" width="36" height="36">
+		<e:Image source="missionFightUI_json.missionFightUI_rank_bg4" x="0" y="0" visible="true"/>
+		<e:Label id="u_txtRank" text="6" y="10" size="16" visible="true" bold="true" textColor="0x9B9D9F" horizontalCenter="-0.5" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

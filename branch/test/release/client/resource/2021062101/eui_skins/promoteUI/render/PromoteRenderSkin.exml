@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PromoteRenderSkin"
+	 width="420"
+	height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17608d76d63"/>
+	<e:Image visible="true" anchorOffsetY="0" scale9Grid="182,19,183,2" horizontalCenter="0" source="shareUI_json.shareUI_line_bj" bottom="0"/>
+	<e:Label id="u_txtInfo1" text="Number" x="15" y="12" size="16" visible="true" textColor="0x3F393C" bold="true"/>
+	<e:Label id="u_txtInfo2" text="Number" x="15" y="33" size="16" visible="true" textColor="0x3F393C" bold="true"/>
+	<e:Label id="u_txtInfo3" text="Number" x="15" y="54" size="16" visible="true" textColor="0x3F393C" bold="true"/>
+	<e:Label id="u_txtInfo4" text="Number" x="15" y="75" size="16" visible="true" textColor="0x3F393C" bold="true"/>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.SceneUnlockViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a7fc0cedb"/>
+	<e:Image horizontalCenter="0" visible="true" source="sceneUnlockUI_json.sceneUnlockUI_unlock_bg" y="132"/>
+	<e:Image id="u_monsterImg" horizontalCenter="0" source="" verticalCenter="-22.5"/>
+	<e:Image source="sceneUnlockUI_json.sceneUnlockUI_title" y="106" horizontalCenter="0"/>
+	<e:Image y="332.218" horizontalCenter="0" source="sceneUnlockUI_json.sceneUnlockUI_nameBg"/>
+	<e:Image id="u_nameImg" y="338.218" horizontalCenter="0"/>
+	<e:Group id="u_goBtn" y="410.99" width="158" height="57" horizontalCenter="0">
+		<e:Image x="0" y="0" width="158" height="57" visible="true" source="commonUI_json.commonUI_img_btnbule2"/>
+		<e:Label id="u_goLabel" text="前 往" size="18" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_closeBtn" text="留在原地" y="473.25" size="16" touchEnabled="true" fontFamily="Microsoft YaHei" textColor="0xA5A5A5" visible="true" horizontalCenter="0" x="514" scaleX="1" scaleY="1" width="100" height="25" textAlign="center" verticalAlign="middle"/>
+</e:Skin>

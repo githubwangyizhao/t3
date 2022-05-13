@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmDontTouchWhiteUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image horizontalCenter="0.5" width="1136" height="640" verticalCenter="8.5" anchorOffsetY="0" source="commonUI_json.commonUI_qipao_1" scale9Grid="12,12,11,11"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_1"/>
+	<e:Image width="494" height="610" visible="true" source="commonUI_json.commonUI_icon_q_7" scale9Grid="40,40,40,40" x="581" y="15"/>
+	<e:Group id="u_gameBox" height="600" anchorOffsetX="0" width="480" y="20" x="588">
+	</e:Group>
+	<e:Image id="u_mask" height="600" width="480" visible="false" y="20" x="588" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4"/>
+	<e:Label id="u_txtRule" text="玩法说明：在一定时间内点击所有下落的黑色方块，漏掉或者按错游戏都会结束。方块会随着游戏时间的推进而加快下落速度。" y="228" size="22" anchorOffsetX="0" bold="true" textAlign="left" textColor="0xD5757C" width="456" horizontalCenter="-274" lineSpacing="8" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_txtCountdown" text="分数：50" y="145" size="22" anchorOffsetX="0" bold="true" textAlign="left" textColor="0xD5757C" horizontalCenter="-274" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_txtScore" text="分数：50" y="176" size="22" anchorOffsetX="0" bold="true" textAlign="left" textColor="0xD5757C" horizontalCenter="-274" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_btnStart" text="开始游戏" y="488" size="30" anchorOffsetX="0" bold="true" textAlign="left" textColor="0xD5757C" horizontalCenter="-274" fontFamily="Microsoft YaHei" visible="true"/>
+	<e:Label text="别踩白块" y="93" bold="true" size="22" textColor="0xDD3535" fontFamily="Microsoft YaHei" horizontalCenter="-274"/>
+</e:Skin>

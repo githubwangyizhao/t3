@@ -1,0 +1,139 @@
+// 无尽对决
+
+import "01_player.proto";
+
+// 投注信息
+message WheelCommon {
+    required uint32 id = 1;                                 // 键
+    required int64 value = 2;                               // 值
+}
+
+// 排行信息
+message WheelRankInfo {
+    required uint32 rank = 1;                               // 排行
+    required ModelHeadFigure model_head_figure = 2;         // 头像
+}
+
+// 进入无尽对决模式
+message m_join_wheel_tos {
+    required uint32 type = 1;                               // 类型
+}
+message m_join_wheel_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        function_no_open = 3;                               // 功能未开启
+    }
+    required ENUM result = 1;                               // 结果
+    required uint32 type = 2;                               // 类型
+    repeated WheelCommon bet_list = 3;                      // 投注列表.id:bet_id;value:num
+    required uint64 time_ms = 4;                            // 本轮结算时间ms
+    repeated WheelRankInfo left_rank_info = 5;              // 资产排行榜
+    repeated WheelRankInfo right_rank_info = 6;             // 赚钱排行榜
+    repeated WheelCommon my_bet_list = 7;                   // 自己的投注列表.id:bet_id;value:num
+    repeated WheelCommon record_list = 8;                   // 走势图记录列表
+}
+
+// 投注
+message m_bet_tos {
+    required uint32 bet_id = 1;                             // 投注id
+    required uint32 num = 2;                                // 数量
+}
+message m_bet_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        function_no_open = 3;                               // 功能未开启
+        not_authority = 4;                                  // 当前不可投注(未到投注时间)
+        no_enough_prop = 5;                                 // 道具不足
+    }
+    required ENUM result = 1;                               // 结果
+    required uint32 bet_id = 2;                             // 投注id
+    required uint32 num = 3;                                // 数量
+}
+
+// 通知投注
+message m_notice_bet_toc {
+    required uint32 player_id = 1;                          // 玩家id
+    required uint32 bet_id = 2;                             // 投注id
+    required uint64 num = 3;                                // 数量
+    required uint64 total_num = 4;                          // 总数
+    required uint64 my_total_num = 5;                       // 自己的总数
+}
+
+message WheelRecord {
+    required uint32 u_id = 1;                               // 第几期
+    optional uint32 result_id = 2;                          // 类型走势图时有,显示真正的结果id
+    message WheelIdRecord{
+        required uint32 id = 1;                             // id
+        required uint32 value = 2;                          // 几回合没中(0:投中了)
+    }
+    repeated WheelIdRecord wheel_id_record_list = 3;        //列表
+}
+
+// 获得走势图记录
+message m_get_record_tos {
+    required uint32 type = 1;                               // (1:类型走势图.2:单体走势图)
+}
+message m_get_record_toc {
+    required uint32 type = 1;                               // (1:类型走势图.2:单体走势图)
+    repeated WheelRecord record_list = 2;                   // 走势图记录列表
+}
+
+// 玩家投注记录
+message WheelPlayerBetRecord {
+    required uint32 time = 1;                               // 时间
+    required uint32 type = 2;                               // 类型
+    required uint64 bet_num = 3;                            // 投注数量
+    required uint64 award_num = 4;                          // 奖励数量
+}
+
+// 获得玩家投注记录
+message m_get_bet_record_tos {
+}
+message m_get_bet_record_toc {
+    repeated WheelPlayerBetRecord record_list = 1;          // 记录列表
+}
+
+// 排行信息
+message WheelPlayerRankInfo {
+    required uint32 rank = 1;                               // 排行
+    required ModelHeadFigure model_head_figure = 2;         // 头像
+    required uint64 num = 3;                                // 累计投注金额
+    required uint32 win_num = 4;                            // 累计获胜局数
+}
+
+// 获得玩家列表
+message m_get_player_list_tos {
+}
+message m_get_player_list_toc {
+    repeated WheelPlayerRankInfo player_list = 1;           // 记录列表
+}
+
+// 结算
+message m_balance_toc {
+    required uint32 type = 1;                               // 类型
+    repeated WheelCommon award_list = 2;                    // 玩家奖励列表.key:player_id;value:award_num
+    required uint64 time_ms = 3;                            // 下轮结算时间
+    repeated WheelRankInfo left_rank_info = 4;              // 资产排行榜
+    repeated WheelRankInfo right_rank_info = 5;             // 赚钱排行榜
+}
+
+//退出无尽对决
+message m_exit_wheel_tos {
+}
+
+// 延续上把
+message m_use_last_bet_tos {
+}
+message m_use_last_bet_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        function_no_open = 3;                               // 功能未开启
+        not_authority = 4;                                  // 当前不可投注(未到投注时间)
+        no_enough_prop = 5;                                 // 道具不足
+        none = 6;                                           // 上一把没投注
+    }
+    required ENUM result = 1;                               // 结果
+}

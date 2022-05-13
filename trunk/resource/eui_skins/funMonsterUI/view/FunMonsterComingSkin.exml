@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.FunMonsterComingSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_grpMain" horizontalCenter="0.5" y="80">
+		<e:Image id="u_imgBg" source="funMonsterUI_json.FunMonsterUI_img_Bg" scaleX="1" scaleY="1" x="1414"/>
+		<e:Image id="u_imgIcon" source="funMonsterUI_json.FunMonsterUI_icon_15" y="6"/>
+		<e:Image id="u_imgName" source="funMonsterUI_json.FunMonsterUI_name_9" y="-110" horizontalCenter="23.5"/>
+	</e:Group>
+</e:Skin>

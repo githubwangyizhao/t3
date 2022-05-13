@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BagUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175fe300122"/>
+	<e:Image id="u_imgBg" visible="true" scale9Grid="10,33,10,34" source="bagUI_json.bagUI_bg" width="1136" height="640" horizontalCenter="0"/>
+	<e:Group id="u_grpExist" x="766" y="300">
+		<e:Group id="u_btnUse" x="58" y="213" visible="true">
+			<e:Image id="u_imgUse" visible="true" source="bagUI_json.bagUI_btn_Use"/>
+			<e:Label id="u_txtUse" text="使 用" x="85.5" y="17.5" visible="true" size="20" fontFamily="Microsoft YaHei" bold="true" textAlign="center" verticalAlign="middle" textColor="0xF0E4B0" width="47.5"/>
+		</e:Group>
+		<e:Label id="u_txtName" text="冰冻卷轴" verticalAlign="middle" size="16" fontFamily="Microsoft YaHei" y="0" visible="true" width="75" height="18.5" textAlign="center" textColor="0xF0E4B0" x="129"/>
+		<e:Label id="u_txtDetail" text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" scaleX="1" scaleY="1" size="16" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" visible="true" multiline="true" y="31" width="245" x="77" lineSpacing="4" textColor="0xA5A5A5"/>
+		<e:Group id="u_grpAccess" x="0" y="86.5" height="47" width="358" visible="true">
+			<e:Image source="bagUI_json.bagUI_img_line" y="7.5" visible="true" scaleX="1" scaleY="1" x="14" height="2.2" width="306"/>
+			<e:Label id="u_txtAccess" text="Label" y="25.5" size="16" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textAlign="left" verticalAlign="middle" left="158" textColor="0xA5A5A5" multiline="true"/>
+			<e:Label id="u_txtAccessTit" text="获取途径：" x="79" y="26.5" textColor="0xA5A5A5" size="16" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller id="u_scrollItem" width="720" height="582" y="57" anchorOffsetX="0" anchorOffsetY="0" x="47">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_grpItemIcon" width="120" height="120" x="873" y="163"/>
+	<e:Group id="u_grpMask" x="843.5" y="276.5" visible="false">
+		<e:Image width="58.123" height="56.295" x="59.25" y="0" visible="true" source="bagUI_json.bagUI_img_k"/>
+		<e:Label text="背包中没有任何物品" x="0" y="89" size="20" textColor="0xA5A5A5" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,79 @@
+// 日常活跃任务
+//OPEN_DEBUG
+
+// ########################################################################################################
+//  日常任务相关
+// ########################################################################################################
+// 每日任务数据
+message DailyTaskData {
+    required int32 id = 1;                                      // id
+    required uint64 value = 2;                                  // 值
+    required int32 state = 3;                                   // 状态(0:未领取,1:可领取,2:已领取)
+}
+
+// 查询日常活跃任务（登录后客户端主动查询）
+message m_get_info_tos {
+}
+message m_get_info_toc {
+    required int32 points = 1;                                   // 活跃积分总值
+    repeated int32 points_rewards = 2;                           // 已领取积分宝箱奖励id数组
+    repeated DailyTaskData daily_task_data_list = 3;            // 每日任务数据列表
+}
+
+// 领取每日任务奖励
+message m_get_award_tos {
+    required int32 id = 1;                                      // id
+}
+message m_get_award_toc {
+    enum ENUM {
+        success = 1;                                            // 成功
+        fail = 2;                                               // 失败
+        not_enough_grid = 3;                                    // 格子不足
+        not_authority = 4;                                      // 不可领取
+        already_get = 5;                                       // 已经领取
+    }
+    required ENUM result = 1;
+    required int32 id = 2;                                      // id
+    required int32 points = 3;                                  // 活跃积分总值
+}
+
+// 通知更新每日任务数据
+message m_notice_update_daily_task_data_toc {
+    repeated DailyTaskData daily_task_data_list = 2;            // 每日任务数据列表
+}
+
+// 通知任务刷新
+message m_notice_reset_daily_task_data_toc {
+}
+
+// ########################################################################################################
+//  积分宝箱相关
+// ########################################################################################################
+// 领取积分宝箱奖励
+message m_get_points_award_tos{
+    required int32 id = 1;                                      // 宝箱id序号
+}
+message m_get_points_award_toc{
+    enum ENUM {
+        success = 1;                                            // 成功
+        fail = 2;                                               // 失败
+        not_authority = 3;                                      // 不可领取
+        already_get = 4;                                        // 已经领取
+    }
+    required ENUM result = 1;
+    required int32 id = 2;                                      // id
+}
+
+// ########################################################################################################
+//  任务展示相关
+// ########################################################################################################
+// 任务展示
+message TaskShow {
+    required int32 key = 1;                                     // 键(1:daily_task,2:achievement,3:task)
+    required int32 value = 2;                                   // 值(daily_task的是id,achievement的是类型,task的是task_id)
+}
+
+// 通知更新任务展示
+message m_notice_update_task_show_toc {
+    required TaskShow task_show = 1;                            // 任务展示
+}

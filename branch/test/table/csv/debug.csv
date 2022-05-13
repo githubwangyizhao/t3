@@ -1,0 +1,9 @@
+调试功能,,,
+int|key,str,str,str
+,,,
+id,name,csv_name,args
+"类型","功能名字","对应表格名",
+1,给道具,item,"[PropType, PropId, Num]"
+2,调任务,task,"[TaskId]"
+3,加等级,,"[level]"
+4,设置vip等级,,"[vip_level]"

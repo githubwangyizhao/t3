@@ -1,0 +1,16 @@
+buff表,,,,,,,
+int|key,str|useless,str,int|useless,int,int,str|useless,int|useless
+,"[]",,,,,"[]",
+id,effect_list,trigger_node_list,success_rate,continue_time,interval_time,success_need_type_list,buff_type
+"Id","效果列表（读buff_new_effect表）","触发节点[0:添加触发","生效概率","持续时间(ms)","间隔时间(ms)","有对应类型buff存在才生效，空列表则必生效不做判断","buff分类（读buff_new_type表）"
+100,"[[dizzy]]",0,10000,3000,,,1
+200,"[[knock1,500]]",0,10000,3000,,,2
+300,"[[knock2,200,500]]",0,10000,3000,,,3
+400,"[[knock3,250,90,500]]",0,10000,3000,,,4
+10,"[[dizzy]]",0,10000,50,,,1
+20,"[[knock1,500]]",0,10000,50,,,2
+30,"[[knock2,200,500]]",0,10000,50,,,3
+40,"[[knock3,250,90,500]]",0,10000,50,,,4
+50,"[[knock4]]",0,10000,1000,,,2
+60,"[[knock5,40]]",0,10000,500,,,3
+70,"[[knock6,300,90]]",0,10000,500,,,4

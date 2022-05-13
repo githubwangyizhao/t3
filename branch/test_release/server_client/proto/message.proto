@@ -1,0 +1,5685 @@
+//Auto Created :2021-12-02 15:09:02.5012013 +0800 CST m=+0.008979801
+
+package proto;
+
+/*************************************login:[0, 100]********************************************/
+//<m_login_login_tos:1>
+//<m_login_login_toc:2>
+//<m_login_create_role_tos:3>
+//<m_login_create_role_toc:4>
+//<m_login_enter_game_tos:5>
+//<m_login_heart_beat_tos:6>
+//<m_login_heart_beat_toc:7>
+//<m_login_notice_logout_toc:8>
+//登录请求
+message m_login_login_tos {
+    required string server_id = 1; //服务器id
+    required int32 login_type = 2; //登录类型
+    required string ticket = 3; //登录密钥
+    required string acc_id = 4; //帐号id
+    required string pf = 5; // 渠道id
+    required int32 platform = 6; //qq 平台独有 platform
+    required int32 entry = 7; //入口 0:正常 1:QQ宠物
+    required string qua = 8; //qq 平台独有 qua
+    required int32 time = 9; // 时间戳
+    required string platform_id = 10; // 平台id(我们自己定义的平台id)
+    required string via = 11; // qq 平台独有 via
+    required int32 is_gm_login = 12; // 是否gm 帐号登录
+    required string gm_account = 13; // gm帐号
+}
+
+//登录返回
+message m_login_login_toc {
+    enum ENUM {
+        success = 1; //成功
+        no_role = 2; //没有角色
+        disable_login = 3; //禁止登录
+        verify_fail = 4; //验证失败
+        token_expire = 5; //密钥过期
+        acc_no_exists = 6; //帐号不存在
+        login_frequent = 7; //频繁登录
+        unknow = 8; //未知
+    }
+    required ENUM result = 1;
+    repeated string random_man_name = 2;    //随机男名字
+    repeated string random_women_name = 3;  //随机女名字
+    required uint32 player_id = 4; //玩家id
+    required uint32 is_open_ios_charge = 5; //是否开启ios充值
+    optional string pro_setting = 6; // 预加载值
+}
+
+//创建角色
+message m_login_create_role_tos {
+    required string server_id = 1; //服务器id
+    required string acc_id = 2; //帐号id
+    required string nickname = 3; //昵称
+    required int32 sex = 4; //性别 0:男 1:女
+    required string from = 5; //来源  iOS, Android 等
+    required string extra = 6; //额外数据
+    required string friend_code = 7; // 分享码
+}
+
+//创建角色返回
+message m_login_create_role_toc {
+    enum ENUM {
+        success = 1; //成功
+        used = 2; //名字被使用
+        invalid_string = 3; //非法字符串
+        too_long = 4; //名字过长
+        unknow = 5; //未知
+        already_create_role = 6;// 已经创建角色
+    }
+    required ENUM result = 1;
+    required uint32 player_id = 2; //玩家id
+}
+
+
+//进入游戏
+message m_login_enter_game_tos {
+}
+
+//心跳
+message m_login_heart_beat_tos {
+    optional string heartbeat_code = 1;       // 校验心跳有效性的加密字符串，若n=0，则该值为空，反之则从n-1的heart_beat_toc协议获取
+}
+message m_login_heart_beat_toc {
+    optional string heartbeat_code = 1;       // 下次心跳时需要发送到服务端的code
+}
+
+
+//通知登出
+message m_login_notice_logout_toc {
+    enum ENUM {
+        login_in_other = 1; //在别处登录
+        system_maintenance = 2; //服务器维护
+        cheat = 3; //涉嫌外挂
+        gm_kill = 4; //管理员踢出
+        disable_login = 5; //帐号被封
+        fatigue = 6;// 防沉迷
+        black_ip_list = 7;//登录ip为黑名单ip
+    }
+    required ENUM reason = 1;
+}
+
+/*************************************player:[100, 200]********************************************/
+//<m_player_init_player_data_toc:101>
+//<m_player_notice_player_attr_change_toc:102>
+//<m_player_notice_player_string_attr_change_toc:103>
+//<m_player_notice_fun_active_toc:104>
+//<m_player_notice_server_time_toc:105>
+//<m_player_change_pk_mode_tos:106>
+//<m_player_change_pk_mode_toc:107>
+//<m_player_get_player_attr_tos:108>
+//<m_player_get_player_attr_toc:109>
+//<m_player_change_name_tos:110>
+//<m_player_change_name_toc:111>
+//<m_player_change_sex_tos:112>
+//<m_player_change_sex_toc:113>
+//<m_player_update_client_data_tos:114>
+//<m_player_delete_client_data_tos:115>
+//<m_player_adjust_tos:116>
+//<m_player_adjust_toc:117>
+//<m_player_customer_url_tos:118>
+//<m_player_customer_url_toc:119>
+//<m_player_visitor_binding_tos:120>
+//<m_player_visitor_binding_toc:121>
+//<m_player_get_server_time_tos:122>
+//<m_player_get_server_time_toc:123>
+//<m_player_modify_nickname_gender_tos:124>
+//<m_player_modify_nickname_gender_toc:125>
+//<m_player_set_player_data_tos:126>
+//<m_player_set_player_data_toc:127>
+//<m_player_notice_player_xiu_zhen_value_toc:128>
+//<m_player_collect_delay_rewards_tos:129>
+//<m_player_level_upgrade_tos:130>
+//<m_player_level_upgrade_toc:131>
+//<m_player_bind_mobile_tos:132>
+//<m_player_bind_mobile_toc:133>
+//<m_player_bind_res_toc:134>
+//<m_player_get_level_award_tos:135>
+//<m_player_get_level_award_toc:136>
+//<m_player_update_player_signature_tos:137>
+//<m_player_update_player_signature_toc:138>
+//<m_player_get_player_info_tos:139>
+//<m_player_get_player_info_toc:140>
+//<m_player_world_tree_award_tos:141>
+//<m_player_world_tree_award_toc:142>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//玩家基本数据
+message RoleData {
+    required string nickname = 1;       //昵称
+    required int32 sex = 2;             //性别
+    required int32 level = 3;           //等级
+    required int32 exp = 4;             //经验
+    required int32 vip_level = 8;       //vip等级
+    required string server_id = 9;      //服务器id
+    required int32 player_id = 10;      //玩家id
+    optional int32 type = 11;           //玩家类型(0为普通号，1为内部号，2为gm号，3为永远可充值玩家，4为自动创角玩家)
+    required PlayerOtherData player_other_data = 12;//玩家其他数据
+}
+
+// 其他数据
+message PlayerOtherData {
+    required int32 head_id = 1;         //头像id
+    required int32 head_frame_id = 2;   //头像框id
+    required int32 chat_qi_pao_id = 3;  //聊天气泡id
+}
+
+// 玩家信息
+message PlayerBaseInfo {
+     required int32 player_id = 1;      //玩家id
+     required string nickname = 2;      //昵称
+     required int32 head_id = 3;       //头像id
+     required int32 head_frame_id = 4;   //头像框id
+}
+
+//模型外观
+message ModelFigure {
+    required int32 player_id = 1;       //玩家id
+    required int32 sex = 2;             //性别
+    required int32 head_id = 3;         //头像id
+    required int32 title_id = 4;        //称号id
+    required int32 magic_weapon_id = 5; //法宝id
+    required int32 hero_id = 6;         //英雄id
+    required int32 hero_arms_id = 7;    //英雄武器id
+    required int32 hero_ornaments_id = 8;//英雄饰品id
+}
+
+//模型头像外观
+message ModelHeadFigure {
+    required int32 player_id = 1;   //玩家id
+    required int32 sex = 2;         //性别
+    required string nickname = 3;   //昵称
+    required int32 head_id = 4;     //头像id
+    required int32 vip_level = 5;   //vip等级
+    required int32 level = 6;       //等级
+    required int32 head_frame_id = 7;// 头像框id
+}
+
+// 玩家属性
+message AttrData {
+    required int32 id = 1; //属性id
+    required int32 value = 2; // 属性值
+}
+
+//属性
+enum Attr {
+    hp = 3;                 //血量
+    max_hp = 4;             //最大血量
+    vip_level = 5;          //vip等级
+    level = 6;              //等级
+    exp = 8;                //经验
+    title_id = 9;           //称号id
+    magic_weapon_id = 10;   //法宝id
+    move_type = 12;         //移动类型(0正常|1冲刺|2技能)
+    move_speed = 13;        //移动速度
+    belong_player_id = 14;  //归属者id
+    pk_mode = 16;           //Pk模式
+    name = 17;              //昵称
+    sex = 18;               //性别
+    hero_id = 20;           //英雄id
+    hero_arms_id = 21;      //英雄武器id
+    hero_ornaments_id = 22; //英雄饰品id
+    head_id = 23;           //头像id
+    head_frame_id = 24;     //头像框id
+    chat_qi_pao_id = 25;    //聊天气泡id
+}
+
+// 功能数据
+message Player_FunctionList {
+    required int32 fun_id = 1;      // 功能id
+    required int32 award_state = 2; // 领取状态
+}
+
+//初始化玩家数据
+message m_player_init_player_data_toc {
+    required RoleData role_data = 1;                                                //玩家基本数据
+    required string server_time = 2;                                                //服务器时间 (毫秒)
+    repeated int32 fun_id_list = 3;                                                 //功能id列表
+    repeated Prop prop_list = 4;                                                    //道具列表
+    repeated times times_list = 5;                                                  //次数列表
+    repeated passed_mission passed_mission_list = 6;                                //通关副本列表
+    repeated ClientData client_data_list = 7;                                       //客户端数据列表
+    repeated int32 mail_real_id = 8;                                                //邮件实际id列表
+    repeated int32 award_fun_id_list = 9;                                           //功能奖励领取id列表
+    repeated int32 red_fun_id_list = 10;                                            //有小红点的功能列表
+    repeated Activity_Data activity_data = 11;                                      //活动时间列表
+    repeated AchievementData achievement_data_list = 12;                            //成就数据列表
+    required int32 first_charge_state = 13;                                         //首充状态
+    required VipData vip_data = 14;                                                 //vip数据
+    required SevenLoginData seven_login_data = 15;                                  //七天登录数据
+//    required OnlineAwardData online_award_data = 16;                                //在线奖励数据
+    required EverydaySignData everyday_sign_data = 17;                              //每日签到数据
+    required int32 open_server_time = 18;                                           //开服时间
+    required int32 collect_state = 19;                                              //收藏领取状态(0:未收藏, 2:已收藏)
+    required int32 share_count = 20;                                                //分享次数
+    repeated ShareFriendData share_friend_data = 21;                                //分享好友数据列表
+    repeated ShopData charge_shop_data = 22;                                        //平台商城数据
+    required int32 pk_mode = 23;                                                    //pk模式
+    required int32 platform_concern_state = 24;                                     //平台关注状态
+    required int32 platform_certification_state = 25;                               //平台认证状态
+    repeated sysCommonData sysCommonDataList = 26;                                  //公共系统列表
+//    repeated DailyTaskData daily_task_data_list = 27;                               //每日任务数据列表
+    required TaskInfo task_info = 28;                                               //主线任务信息
+    required PlayerPromoteData player_promote_data = 29;                            //玩家推广数据
+    required TaskShow task_show = 30;                                               //任务展示
+    required int32 anger = 31;                                                      //怒气值
+    required string invitation_code = 33;                                           //邀请码
+    repeated ShareTaskAwardData share_task_award_data_list = 34;                    //分享好友数据列表
+    required PlayerHero player_hero = 35;                                           //玩家英雄
+    repeated CardBook card_book_list = 36;                                          //卡牌图鉴列表
+    optional int32 seize_treasure_type_id = 47;                                     //今日夺宝类型编号（参考treasure_hunt_type.csv表的id字段）
+    optional int32 seize_times = 48;                                                //玩家夺宝转盘次数
+    optional int32 seize_lucky_value = 49;                                          //玩家夺宝转盘当前幸运值
+    optional bool zhi_gou_completed = 50;                                           //直购礼包完成标志
+    optional string bind_mobile = 51;                                               //是否绑定手机号码 0为否，其他值为用户手机号，默认0
+    optional uint32 already_give_level = 52;                                        //已经领取的等级
+    optional string signature = 53;                                                 //个性签名
+}
+
+//通知玩家数据变化(整形)
+message m_player_notice_player_attr_change_toc {
+    required int32 player_id = 1; // 玩家id
+    message attr_change{
+        required Attr attr = 1;
+        required uint32 value = 2;
+    }
+    repeated attr_change list = 2; //玩家属性变化列表
+}
+
+//通知玩家数据变化(字符串)
+message m_player_notice_player_string_attr_change_toc {
+    required int32 player_id = 1;           // 玩家id
+    message string_attr_change{
+        required Attr attr = 1;
+        required string value = 2;
+    }
+    repeated string_attr_change list = 2; //玩家字符串属性变化列表
+}
+
+//通知功能激活
+message m_player_notice_fun_active_toc {
+    repeated int32 fun_id_list = 1; //功能id列表
+}
+
+// 通知服务端时间（毫秒）
+message m_player_notice_server_time_toc {
+    required string server_time = 1;           //服务器时间 (毫秒)
+}
+
+// 改变pk模式
+message m_player_change_pk_mode_tos {
+    required int32 pk_mode = 1; //pk模式
+}
+
+// 领取功能奖励
+message m_player_change_pk_mode_toc {
+    enum ENUM {
+        success = 1;            // 成功
+        fail = 2;               // 失败
+    }
+    required ENUM result = 1;
+    required int32 pk_mode = 2; //pk模式
+}
+
+// 获得玩家属性数据
+message m_player_get_player_attr_tos {
+    required int32 player_id = 1;   //玩家id
+}
+message m_player_get_player_attr_toc {
+    required int32 player_id = 1;   //玩家id
+    repeated AttrData attr_data = 2;
+}
+
+// 改名卡
+message m_player_change_name_tos {
+    required string name = 1;   //名称
+}
+message m_player_change_name_toc {
+    enum ENUM {
+        success = 1; //成功
+        used = 2; //名字被使用
+        invalid_string = 3; //非法字符串
+        too_long = 4; //名字过长
+        not_enough_times = 5;   // 次数不足
+        fail = 6; //失败
+    }
+    required ENUM result = 1;
+    required string name = 2;
+}
+
+// 改性别
+message m_player_change_sex_tos {
+    required int32 sex = 1;   //性别 [0:男 1:女]
+}
+message m_player_change_sex_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; //失败
+    }
+    required ENUM result = 1;
+    required int32 sex = 2;
+}
+
+// 客户端数据
+message ClientData {
+    required string id = 1;                      // id(20个字符)
+    required string value = 2;                   // value(20个字符)
+}
+// 更新客户端数据
+message m_player_update_client_data_tos {
+    repeated ClientData client_data_list = 1;   // 客户端数据列表
+}
+
+// 删除客户端数据
+message m_player_delete_client_data_tos {
+    repeated string id_list = 1;                 // 客户端数据id列表
+}
+
+// 统计adjust数据
+message m_player_adjust_tos {
+    message attr_change{
+        required string attr = 1;
+        required string value = 2;
+    }
+    repeated attr_change list = 1; //玩家字符串属性变化列表
+}
+message m_player_adjust_toc {
+    enum ENUM {
+        success = 1; // 成功
+        fail = 2; // 失败
+        already_exists = 3; // 已经存在
+    }
+    required ENUM result = 1;
+}
+
+// 客服链接协议
+message m_player_customer_url_tos {
+}
+message m_player_customer_url_toc {
+    enum ENUM {
+        success = 1;        // 成功
+        fail = 2;           // 接口请求失败
+        not_data = 3;       // 没有有效数据
+    }
+    required ENUM result = 1;
+    message customer_url_data{
+        required string url = 1;
+    }
+    repeated customer_url_data customer_url = 2;
+}
+
+// 游客绑定
+message m_player_visitor_binding_tos {
+    required string channel = 1;
+    required string acc_id = 2;
+}
+message m_player_visitor_binding_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        not_a_visitor = 2;                  // m_player_visitor_binding_tos协议发送的channel不是visitor
+        binding_same_acc_id = 3;            // 重复绑定同一个账号
+        not_allowed_to_binding = 4;         // 当前账号已被绑定其他渠道
+        player_not_exists = 5;              // 玩家数据不存在
+        unknown = 6;                        // 未知错误
+    }
+    required ENUM result = 1;
+    required string channel = 2;
+}
+
+// 获得服务器时间 (毫秒)
+message m_player_get_server_time_tos {
+}
+message m_player_get_server_time_toc {
+    required string server_time = 2;        //服务器时间 (毫秒)
+}
+
+message m_player_modify_nickname_gender_tos {
+    required int32 gender = 1; // 性别
+    required string nickname = 2; // 昵称
+}
+message m_player_modify_nickname_gender_toc {
+    enum ENUM {
+        success = 1; // 成功
+        used = 2; //名字被使用
+        invalid_string = 3; //非法字符串
+        too_long = 4; //名字过长
+        fail = 5; //失败
+        not_authority = 6; // 没有权限修改，就是该玩家在自动创角后已经修改过一次昵称与性别了
+        unknown = 7; // 未知错误
+    }
+    required ENUM result = 1;
+    optional int32 gender = 2;  // 客户端上报的性别
+    optional string nickname = 3; // 客户端上报的昵称
+}
+
+// 设置玩家数据
+message m_player_set_player_data_tos {
+    required int32 type = 1;    // 类型(1:头像,2:头像框,3:聊天气泡id)
+    required int32 id = 2;      // Id
+}
+message m_player_set_player_data_toc {
+    enum ENUM {
+        success = 1;            // 成功
+        fail = 2;               // 失败
+        no_enough_prop = 3;     // 未拥有该头像或者头像框或聊天气泡
+        not_authority = 4;      // 没权利
+    }
+    required ENUM result = 1;
+    required int32 type = 2;    // 类型(1:头像,2:头像框,3:聊天气泡id)
+    required int32 id = 3;      // Id
+}
+
+// 通知玩家修正值
+message m_player_notice_player_xiu_zhen_value_toc {
+    message xiuzhendata{
+        required int32 id = 1;                    // (1新手修正,2全服修正,3个人修正,4钻石修正)
+        required int64 value = 2;
+    }
+    repeated xiuzhendata lists = 2;
+}
+
+// 领取玩家在场景内滞留的奖励
+message m_player_collect_delay_rewards_tos {
+    required int32 type = 1;               // 来源(1-战斗,9-翻牌,10-拉霸,11-转盘,12-炸弹)
+}
+
+// 升级
+message m_player_level_upgrade_tos {
+}
+message m_player_level_upgrade_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_enough_prop = 3;             // 道具不足
+        not_authority = 4;              // 已满级
+    }
+    required ENUM result = 100;
+    required int32 old_level = 1;
+    required int32 new_level = 2;
+    repeated Prop prop_list = 3;
+}
+
+// 绑定手机
+message m_player_bind_mobile_tos {
+    required string code = 1;           // 短信验证码
+    required string mobile = 2;         // 接收短信验证码的手机号码
+}
+message m_player_bind_mobile_toc {
+    enum ENUM {
+        success = 1;                    // 成功 账号绑定成功
+        expire = 2;                     // 验证码超时
+        invalid_code = 3;               // 验证码错误
+        fail = 4;                       // 其他错误原因
+    }
+    required ENUM result = 1;
+}
+
+// 玩家绑定手机号码成功后，推送协议给客户端方便客户端修改数据
+message m_player_bind_res_toc {
+    required int32 bind_mobile = 1;     // 玩家是否绑定手机号 0为否，1为是，默认0
+}
+
+// 获得等级奖励
+message m_player_get_level_award_tos {
+    required int32 level = 1;           // 等级
+}
+message m_player_get_level_award_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        not_authority = 3;              // 等级不足
+        already_get = 4;                // 已经领取
+    }
+    required ENUM result = 100;
+    required int32 level = 1;           // 等级
+}
+
+// 更新个性签名
+message m_player_update_player_signature_tos {
+    required string signature = 1;      // 个性签名
+}
+message m_player_update_player_signature_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        not_authority = 3;              // 没权利
+        invalid_string = 4;             // 非法字符串
+        too_long = 5;                   // 长度过长
+        not_enough_times = 6;           // 次数不足
+    }
+    required ENUM result = 100;
+    required string signature = 1;      // 个性签名
+}
+
+// 获得玩家信息
+message m_player_get_player_info_tos {
+    required int32 player_id = 1;       // 玩家id
+}
+message m_player_get_player_info_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        not_authority = 3;              // 该玩家所在服务器正在停服
+        none = 4;                       // 玩家不存在
+    }
+    required ENUM result = 100;
+    optional string signature = 1;      // 个性签名
+    optional ModelHeadFigure model_head_figure = 2;// 头像数据
+}
+
+// 世界树奖励请求
+message m_player_world_tree_award_tos{
+}
+message m_player_world_tree_award_toc{
+     enum RESULT {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        times_limit = 3;                // 次数限制
+    }
+    required RESULT result = 1;
+    repeated Prop prop_list = 2;      // 奖励道具列表
+}
+/*************************************scene:[200, 300]********************************************/
+//<m_scene_enter_scene_tos:201>
+//<m_scene_enter_scene_toc:202>
+//<m_scene_notice_prepare_scene_toc:203>
+//<m_scene_load_scene_tos:204>
+//<m_scene_load_scene_toc:205>
+//<m_scene_sync_scene_toc:206>
+//<m_scene_notice_scene_player_enter_toc:207>
+//<m_scene_notice_scene_player_leave_toc:208>
+//<m_scene_player_rebirth_tos:209>
+//<m_scene_player_rebirth_toc:210>
+//<m_scene_player_move_tos:211>
+//<m_scene_player_move_step_tos:212>
+//<m_scene_player_stop_move_tos:213>
+//<m_scene_notice_player_move_toc:214>
+//<m_scene_notice_player_stop_move_toc:215>
+//<m_scene_notice_player_teleport_toc:216>
+//<m_scene_notice_correct_player_pos_toc:217>
+//<m_scene_notice_monster_enter_toc:218>
+//<m_scene_notice_monster_leave_toc:219>
+//<m_scene_notice_monster_move_toc:220>
+//<m_scene_notice_monster_stop_move_toc:221>
+//<m_scene_notice_monster_teleport_toc:222>
+//<m_scene_notice_item_enter_toc:223>
+//<m_scene_notice_item_leave_toc:224>
+//<m_scene_notice_scene_item_owner_change_toc:225>
+//<m_scene_notice_player_death_toc:226>
+//<m_scene_query_player_pos_tos:227>
+//<m_scene_query_player_pos_toc:228>
+//<m_scene_notice_obj_hp_change_toc:229>
+//<m_scene_notice_monster_attr_change_toc:230>
+//<m_scene_transmit_tos:231>
+//<m_scene_notice_prepare_transmit_toc:232>
+//<m_scene_update_npc_date_toc:233>
+//<m_scene_notice_simplify_monster_pos_toc:234>
+//<m_scene_get_monster_list_tos:235>
+//<m_scene_notice_monster_list_toc:236>
+//<m_scene_notice_anger_change_toc:237>
+//<m_scene_notice_special_skill_change_toc:238>
+//<m_scene_notice_show_fanpai_toc:239>
+//<m_scene_notice_fanpai_tos:240>
+//<m_scene_notice_fanpai_toc:241>
+//<m_scene_notice_boss_state_toc:242>
+//<m_scene_challenge_boss_tos:243>
+//<m_scene_send_msg_tos:244>
+//<m_scene_notice_send_msg_toc:245>
+//<m_scene_notice_scene_jbxy_state_toc:246>
+//<m_scene_player_collect_tos:247>
+//<m_scene_get_gold_ranking_toc:248>
+//<m_scene_notice_monster_restore_hp_toc:249>
+//<m_scene_show_action_tos:250>
+//<m_scene_show_action_notice_toc:251>
+//<m_scene_player_kuangbao_info_notice_toc:252>
+//<m_scene_notice_boss_die_toc:253>
+//<m_scene_notice_monster_speak_toc:254>
+//<m_scene_notice_time_stop_toc:255>
+//<m_scene_notice_init_time_event_list_toc:256>
+//<m_scene_notice_add_time_event_list_toc:257>
+//<m_scene_notice_time_event_list_sleep_toc:258>
+//<m_scene_notice_time_event_list_start_toc:259>
+//<m_scene_notice_rank_event_toc:260>
+//<m_scene_enter_single_scene_tos:261>
+//<m_scene_enter_single_scene_toc:262>
+
+
+
+// 场景内玩家身上的效果
+message PlayerEffectInScene {
+    required uint32 skill_id = 1;                  // 效果编号，monster_effect表skill_id字段的值
+    required int32 timestamp = 2;                   // 效果结束时间
+}
+
+//场景玩家
+message ScenePlayer {
+    required int32 player_id = 1;                   //玩家id
+    required string nickname = 2;                   //玩家昵称
+    required int32 sex = 3;                         //性别 [0:男 1:女]
+    required int32 level = 4;                       //等级
+    required int32 vip_level = 5;                   //vip等级
+    required uint32 hp = 6;                         //血量
+    required uint32 max_hp = 7;                     //最大血量
+    required int32 move_speed = 8;                  //移动速度
+    required int32 x = 9;
+    required int32 y = 10;
+    required int32 go_x = 11;
+    required int32 go_y = 12;
+    required int32 move_type = 13;                  //移动类型 0:普通 1:冲刺
+    required int32 dir = 14;                        //方向
+    repeated MovePath move_path = 15;               //移动路径 (优先取此值)
+    required int32 title_id = 17;                   //称号id
+    required int32 magic_weapon_id = 18;            //法宝id
+    repeated Buff buff_list = 21;                   //buff列表
+    required int32 anger = 22;                      //怒氣
+    required int32 anger_skill_effect = 23;         //怒气技能特效id
+
+    required int32 hero_id = 26;                    //英雄id
+    required int32 hero_arms_id = 27;               //英雄武器id
+    required int32 hero_ornaments_id = 28;          //英雄饰品id
+
+    required int32 dizzy_close_time = 32;           //眩晕结束时间
+    required PlayerOtherData player_other_data = 33;//玩家其他数据
+
+    required int32 kuangbao_time = 34;               // 狂暴结束时间
+
+    repeated PlayerEffectInScene player_effect_in_scene = 45;    // 场景内其他玩家玩家身上的功能怪技能效果
+}
+
+//场景怪物
+message SceneMonster {
+    required int32 scene_monster_id = 1;            //怪物对象id
+    required int32 monster_id = 2;                  //怪物id
+    required int32 x = 3;
+    required int32 y = 4;
+    repeated MovePath move_path = 5;                //移动路径
+    required int32 move_speed = 6;                  //移动速度
+    required int32 dir = 7;                         //方向
+    required uint32 hp = 8;                         //血量
+    required uint32 max_hp = 9;                     //最大血量
+    repeated Buff buff_list = 10;                   //buff列表
+    required int32 belong_player_id = 11;           //奖励归属的玩家id
+    required int32 level = 12;                      //等级
+    required int32 owner_player_id = 13;            //归属的玩家id
+    required int32 bind_don_end_time = 14;          //冰冻结束时间
+    required int32 destroy_time = 15;               //销毁时间(s)
+
+    required int32 is_call_monster = 17;            //是否召唤怪
+    optional WaitSkill wait_skill = 18;             //蓄力技能
+}
+
+//简单场景怪物数据
+message SceneSimplifyMonster {
+    required int32 monster_id = 2;                  //怪物id
+    required int32 x = 3;
+    required int32 y = 4;
+    required int32 time = 5;                        //复活时间(小于当前时间为已复活)
+}
+
+//场景物品
+message SceneItem {
+    required int32 id = 1;                          //场景物品id
+    required int32 type = 2;                        //类型[0:掉落物 1:采集物]
+    required int32 base_id = 4;                     //子id (掉落物->对应道具id 采集物->collect.id)
+    required int32 num = 5;                         //数量
+    required int32 x = 6;
+    required int32 y = 7;
+    required int32 scene_monsrer_id = 8;            //掉落该物品的怪物唯一id (掉落物有效)
+    required int32 owner_player_id = 9;             //归属玩家id (掉落物有效)
+}
+
+//金币排行榜
+message GoldRanking {
+    required int32 ranking = 1;                     //名次
+    required uint64 gold_value = 2;                 //金币值
+    required uint64 money_value = 3;                //美元值
+    required ModelHeadFigure model_head_figure = 4; //模型头像外观
+    message GoldRankingEvent{
+        required int32 event_id = 1;                //事件id(16:神龙祝福)
+        required int32 time = 2;                    //结束事件
+    }
+    repeated GoldRankingEvent event_list = 5;       //金币排行榜事件
+}
+
+//场景物品id
+message SceneItemId {
+    required int32 type = 1;                        //类型[0:掉落物 1:采集物]
+    required int32 id = 2;                          //场景物品唯一id
+}
+
+//移动路径
+message MovePath {
+    required int32 x = 1;
+    required int32 y = 2;
+}
+
+// 场景npc数据
+message SceneNpcData {
+    required int32 scene_id = 1;                    //场景id
+    required int32 x = 2;                           //x
+    required int32 y = 3;                           //y
+    required int32 npc_id = 4;                      //npc id
+    required string npc_name = 5;                   //npc新名字(""时,用模板数据)
+}
+
+//进入场景
+message m_scene_enter_scene_tos {
+    required int32 scene_id = 1;                    //场景id
+}
+
+//进入场景
+message m_scene_enter_scene_toc {
+    required int32 scene_id = 1;                    //场景id
+    enum ENUM {
+        success = 1;                                //成功
+        fail = 2;                                   //失败
+        need_power = 3;                             //战力限制
+        no_enough_prop = 4;                         //道具不足
+        not_authority = 7;                          //不满足进场景条件
+    }
+    required ENUM result = 2;
+}
+
+//通知准备加载场景
+message m_scene_notice_prepare_scene_toc {
+    required int32 scene_id = 1;
+}
+
+//请求加载场景数据
+message m_scene_load_scene_tos {
+    required int32 screen_width = 1;                //屏幕宽度
+    required int32 screen_high = 2;                 //屏幕高度
+}
+
+//加载场景数据
+message m_scene_load_scene_toc {
+    required int32 scene_id = 1;                    //场景id
+    repeated ScenePlayer scene_player_list = 2;     //场景玩家列表
+    repeated SceneMonster scene_monster_list = 3;   //场景怪物列表
+    repeated SceneItem scene_item_list = 4;         //场景物品列表
+}
+
+//同场景同步
+message m_scene_sync_scene_toc {
+    repeated int32 remove_scene_player_id_list = 1; //移除的玩家对象id列表
+    repeated int32 remove_scene_monster_id_list = 2;//移除的怪物对象id列表
+    repeated SceneItemId remove_scene_item_id_list = 3; //移除的物品对象id列表
+    repeated ScenePlayer scene_player_list = 4;     //加载场景玩家列表
+    repeated SceneMonster scene_monster_list = 5;   //加载场景怪物列表
+    repeated SceneItem scene_item_list = 6;         //加载场景物品列表
+}
+
+//通知玩家进入场景
+message m_scene_notice_scene_player_enter_toc {
+    required ScenePlayer scene_player = 1;          //场景玩家
+}
+
+//通知玩家离开场景
+message m_scene_notice_scene_player_leave_toc {
+    required int32 player_id = 1;                   //玩家id
+}
+
+//玩家复活
+message m_scene_player_rebirth_tos {
+}
+
+//玩家复活
+message m_scene_player_rebirth_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+    }
+    required ENUM result = 2;
+}
+
+//玩家移动
+message m_scene_player_move_tos {
+    required int32 x = 1;               //x
+    required int32 y = 2;               //y
+    required int32 move_type = 3;       //移动类型 0:普通 1:冲刺 2:技能
+    required int32 high = 4;            //跳跃高度
+    required int32 time = 5;            //到达时间点
+    required string action_id = 6;      //动作id
+}
+
+//玩家移动步伐
+message m_scene_player_move_step_tos {
+    required int32 x = 1; // x
+    required int32 y = 2; // y
+}
+
+//玩家停止移动
+message m_scene_player_stop_move_tos {
+    required int32 x = 1; // x
+    required int32 y = 2; // y
+}
+
+//通知玩家移动
+message m_scene_notice_player_move_toc {
+    required int32 player_id = 1;
+    required int32 go_x = 2;
+    required int32 go_y = 3;
+    required int32 move_type = 4; //移动类型 0:普通 1:冲刺 2:技能
+    repeated MovePath move_path = 5; //移动路径 (优先取此值)
+    required int32 high = 6; // 跳跃高度
+    required int32 time = 7; // 到达时间点
+    required string action_id = 8; // 动作id
+}
+
+//通知玩家停止移动
+message m_scene_notice_player_stop_move_toc {
+    required int32 player_id = 1;
+    required int32 x = 2;
+    required int32 y = 3;
+}
+
+//通知玩家瞬移
+message m_scene_notice_player_teleport_toc {
+    required int32 player_id = 1;           // 玩家id
+    required int32 x = 2;                   // 当前x
+    required int32 y = 3;                   // 当前y
+}
+
+//纠正玩家位置
+message m_scene_notice_correct_player_pos_toc {
+    required int32 x = 1;
+    required int32 y = 2;
+}
+
+//通知怪物进入场景
+message m_scene_notice_monster_enter_toc {
+    repeated SceneMonster scene_monster_list = 1; // 场景怪物
+}
+
+//通知怪物离开场景
+message m_scene_notice_monster_leave_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+}
+
+//通知怪物移动
+message m_scene_notice_monster_move_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+    repeated MovePath move_path = 2;        // 移动路径
+}
+
+//通知怪物停止移动
+message m_scene_notice_monster_stop_move_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+    required int32 x = 2;                   // 当前x
+    required int32 y = 3;                   // 当前y
+}
+
+//通知怪物瞬移
+message m_scene_notice_monster_teleport_toc {
+    required int32 scene_monster_id = 1;    // 场景怪物id
+    required int32 x = 2;                   // 当前x
+    required int32 y = 3;                   // 当前y
+}
+
+//通知物品进入场景
+message m_scene_notice_item_enter_toc {
+    repeated SceneItem scene_item_list = 1; // 场景物品
+}
+
+//通知物品离开场景
+message m_scene_notice_item_leave_toc {
+    repeated int32 scene_item_id_list = 1; // 场景物品id
+    required int32 type = 2; // 类型
+}
+
+//通知场景物品归属改变
+message m_scene_notice_scene_item_owner_change_toc {
+    required int32 scene_item_id = 1; // 场景物品id
+    required int32 owner = 2; // 归属玩家id
+}
+
+//通知玩家死亡
+message m_scene_notice_player_death_toc {
+    required int32 attacker_id = 1;             //攻击者id
+    required int32 attacker_type = 2;           //攻击者类型[1:玩家 2:怪物]
+    required string name = 3;                   //名字
+    required int32 rebirth_time = 4;            //复活所需时间(s) [<0: 不可复活]
+    required int32 scene_id = 5;                //场景id
+}
+
+//查询玩家位置
+message m_scene_query_player_pos_tos {
+    required int32 player_id = 1;               //玩家id
+    required int32 type = 2;                    //类型
+}
+
+//查询玩家位置
+message m_scene_query_player_pos_toc {
+    required int32 player_id = 1;               //玩家id
+    required int32 x = 2;                       //x
+    required int32 y = 3;                       //y
+    required int32 type = 4;                    //类型
+
+}
+
+//通知对象血量变化
+message m_scene_notice_obj_hp_change_toc {
+    required int32 obj_type = 1;                //对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;                  //对象id
+    required int32 effect_id = 3;               //关联 effect_type 表
+    required int32 change_value = 4;            //改变的血量
+    required uint32 new_hp = 5;                 //新的血量
+    required int32 release_obj_type = 6;        //施法者对象类型 (1:玩家 2:怪物)
+    required int32 release_obj_id = 7;          //施法者对象id
+}
+
+// 通知怪物属性变化
+message m_scene_notice_monster_attr_change_toc {
+    required int32 scene_monster_id = 1;        //怪物对象id
+     message monster_attr_change{
+        required Attr monsterattr = 1;
+        required int32 value = 2;
+    }
+    repeated monster_attr_change list = 2;      //怪物属性变化列表
+}
+
+// 传送
+message m_scene_transmit_tos {
+    required int32 scene_id = 1; // 场景
+    required int32 x = 2; //x
+    required int32 y = 3; //y
+}
+
+// 通知准备传送
+message m_scene_notice_prepare_transmit_toc {
+}
+
+// 更新npc数据
+message m_scene_update_npc_date_toc {
+    repeated SceneNpcData npc_data = 1; // 场景npc数据
+}
+
+// 通知简易怪物数据
+message m_scene_notice_simplify_monster_pos_toc {
+    repeated SceneSimplifyMonster monster = 1; // 怪物数据
+}
+
+message monster {
+    required int32 scene_monster_id = 1; //怪物对象id
+    required int32 monster_id = 2;      //怪物id
+    required int32 x = 3;
+    required int32 y = 4;
+}
+
+// 获取场景怪物列表 (视野内 没有怪物的时候请求)
+message m_scene_get_monster_list_tos {
+}
+
+// 获取场景怪物列表 (视野内 没有怪物的时候请求)
+message m_scene_notice_monster_list_toc {
+    repeated monster monster_list = 1; //怪物列表
+}
+
+// 通知怒氣變更
+message m_scene_notice_anger_change_toc {
+    required int32 anger = 1; //當前怒氣值
+}
+
+// 通知特殊技能变更
+message m_scene_notice_special_skill_change_toc {
+    required int32 player_id = 1;                   //玩家id
+    required int32 special_skill_id = 24;           //身上帶的特殊技能id
+    required int32 special_skill_expire_time = 25;  //身上帶的特殊技能过期时间戳
+    required int32 scene_monster_id = 26;           //場景怪物id
+}
+
+// 通知展示翻牌
+message m_scene_notice_show_fanpai_toc {
+    repeated int32 id_list = 1;                     //翻牌列表
+}
+
+// 翻牌
+message m_scene_notice_fanpai_tos {
+    required int32 id = 1;                          //翻牌id
+}
+
+message m_scene_notice_fanpai_toc {
+    required int32 id = 1;                          //翻牌id
+    repeated Prop award_list = 2;                   //奖励列表
+}
+
+// 通知boss副本状态
+message m_scene_notice_boss_state_toc {
+    required int32 state = 1;                       //状态(0:不可挑战;1:等待中;2:战斗中)
+    required int32 time = 2;                        //等待中的结束时间戳
+    required int32 mission_type = 3;                //副本类型
+    required int32 mission_id = 4;                  //副本id
+}
+
+// 挑战boss
+message m_scene_challenge_boss_tos {
+}
+
+// 发送消息或者表情包
+message m_scene_send_msg_tos {
+    required int32 type = 1;                        //0:消息;1:表情包
+    required int32 id = 2;
+}
+message m_scene_notice_send_msg_toc {
+    required int32 type = 1;                        //0:消息;1:表情包
+    required int32 id = 2;
+    required int32 player_id = 3;
+}
+
+// 通知场景金币小妖活动状态
+message m_scene_notice_scene_jbxy_state_toc {
+    required int32 state = 1;                       //状态(0:关闭;1:开启)
+    required int32 monster_id = 2;                  //金币小妖怪物id
+    optional int32 close_time = 3;                  //开启状态才有的参数，关闭时间
+    optional int32 player_id = 4;                   //击杀玩家id(关闭时有机率有)
+}
+
+//采集场景物品
+message m_scene_player_collect_tos {
+    repeated int32 scene_item_id = 1;               //场景物品id列表
+}
+
+// 主动通知金币排行榜
+message m_scene_get_gold_ranking_toc {
+    repeated GoldRanking gold_ranking_list = 1;     //金币排名列表
+}
+
+// 通知怪物恢复血量
+message m_scene_notice_monster_restore_hp_toc {
+    required int32 obj_id = 1;                      // 怪物对象id
+    required uint32 new_hp = 2;                     // 新的血量
+}
+
+// 请求展示动作
+message m_scene_show_action_tos{
+    optional int32 action_id = 1 [default=0];      // 动作id
+}
+
+// 玩家展示动作信息推送
+message m_scene_show_action_notice_toc{
+    required int32 player_id = 1;
+    required int32 action_id = 2;
+}
+
+// 广播玩家狂暴信息
+message m_scene_player_kuangbao_info_notice_toc{
+    required int32 player_id = 1;
+    required int32 time = 2;                // 结束时间戳
+}
+
+// 通知boss死亡
+message m_scene_notice_boss_die_toc {
+    required int32 boss_id = 1;                     //boss_id
+    required int32 kill_player_id = 2;              //击杀玩家id
+    required int32 award = 3;                       //奖励
+}
+
+// 通知怪物说话
+message m_scene_notice_monster_speak_toc {
+    required int32 monster_id = 1;              // 怪物id
+    required int32 id = 2;
+}
+
+// 时间轴事件
+message TimeEvent {
+    required int64 time = 1;                // 开始时间(ms)
+    required int32 type = 2;                // 类型(1:鱼潮; 2:boss; 3:箱子; 4转盘; 5拉霸; 6金币小妖; 7功能怪; 8神龙; 9任务; 10幸运彩球)
+    repeated int32 params = 3;              // 额外参数列表(对事件类型type补充) (2-Boss[boss编号], 7-功能怪[效果id], 9-任务[任务类型], 10-彩球[] 其他-具体根据事件type填写参数)
+}
+
+// 事件开始时，通知结束时间戳
+message m_scene_notice_time_stop_toc {
+    required int32 type = 1;                // 类型 事件类型
+    repeated int32 params = 2;              // 额外参数列表(对事件类型type补充) (2-Boss[boss编号], 9-任务[任务类型,阶段(1任务阶段,2活动阶段),任务Id], 10-彩球[key,数量,倍率] 其他-具体根据事件type填写参数)
+    required int64 time = 3;                // 结束时间戳(ms)
+    required int64 start_time = 4;          // 开始时间戳(ms)
+}
+
+// 通知初始化时间轴事件列表
+message m_scene_notice_init_time_event_list_toc {
+    required int32 is_sleep = 1;            // 是否暂停
+    required int64 sleep_time = 2;          // 暂停时间(ms)
+    repeated TimeEvent time_event_list = 3; // 时间轴事件列表
+}
+
+// 通知增加时间轴事件列表
+message m_scene_notice_add_time_event_list_toc {
+    repeated TimeEvent time_event_list = 1; // 时间轴事件列表
+}
+
+// 通知时间轴事件列表暂停
+message m_scene_notice_time_event_list_sleep_toc {
+}
+
+// 通知时间轴事件列表继续
+message m_scene_notice_time_event_list_start_toc {
+    required int64 sleep_time = 1;          // 时间(ms)
+}
+
+// 通知排行榜事件
+message m_scene_notice_rank_event_toc {
+    required int32 type = 1;                // 类型(0:boss;1:炸弹怪;2:赏金怪;3:大招;4:陨石;5:飓风;6:金币小妖)
+    required uint32 value = 2;              // 值
+    required int32 player_id = 3;           // 玩家id
+    required uint64 total_value = 4;        // 总值
+}
+
+//进入单人场景
+message m_scene_enter_single_scene_tos {
+    required int32 scene_id = 1;                    //场景id
+}
+message m_scene_enter_single_scene_toc {
+    required int32 scene_id = 1;                    //场景id
+    enum ENUM {
+        success = 1;                                //成功
+        fail = 2;                                   //失败
+        need_power = 3;                             //战力限制
+        no_enough_prop = 4;                         //道具不足
+        not_authority = 7;                          //不满足进场景条件
+    }
+    required ENUM result = 2;
+}
+
+/*************************************fight:[300, 400]********************************************/
+//<m_fight_fight_tos:301>
+//<m_fight_notice_fight_fail_toc:302>
+//<m_fight_notice_fight_result_toc:303>
+//<m_fight_notice_add_buff_toc:304>
+//<m_fight_notice_remove_buff_toc:305>
+//<m_fight_use_item_tos:306>
+//<m_fight_use_item_toc:307>
+//<m_fight_notice_bin_dong_skill_toc:308>
+//<m_fight_notice_get_function_monster_award_toc:309>
+//<m_fight_notice_fight_wait_skill_toc:310>
+//<m_fight_wait_skill_trigger_tos:311>
+//<m_fight_dizzy_time_reduce_tos:312>
+//<m_fight_dizzy_time_reduce_toc:313>
+//<m_fight_notice_add_effect_toc:314>
+//<m_fight_blind_box_reward_toc:315>
+
+//buff
+message Buff {
+    required int32 id = 1;                  // buff id
+    required int32 level = 2;               // buff 等级
+    required int32 left_time = 3;           // 剩余时间(ms)
+}
+
+//effect
+message Effect {
+    required int32 id = 1;                  // 关联 effect_type.csv 表
+    required uint32 data = 2;               // 数据
+}
+
+//分段伤害
+message HurtSection {
+    required uint32 hurt = 1;               // 伤害
+    required int32 delay = 2;               // 延迟(ms)
+}
+
+//战斗
+message m_fight_fight_tos {
+    required int32 skill_id = 1;            // 技能id
+    required int32 dir = 2;                 // 方向
+    required int32 target_id = 3;           // 目标id
+    required int32 target_type = 4;         // 目标者类型
+    required int32 attack_type = 5;         // 攻击类型 (1:玩家 2:怪物 3:妖灵 4:法宝 5:buff触发)
+    required int32 mano_value = 6;          // 消耗灵力值
+}
+
+//战斗失败
+message m_fight_notice_fight_fail_toc {
+    enum ENUM {
+        cd_time = 1;    //cd 时间
+        fail = 2;       //失败
+    }
+    required ENUM reason = 1;
+}
+
+//被攻击者
+message DefenderResult{
+    required int32 defender_id = 1;         // 被攻击者id
+    required int32 defender_type = 2;       // 被攻击者类型(1:玩家 2:怪物)
+    required uint32 hp = 3;                 // 血量
+    required uint32 hurt = 4;               // 伤害
+    enum ENUM {
+        normal = 1;    //普通
+        dodge = 2;     //闪避
+        crit = 3;      //暴击
+    }
+    required ENUM type = 5;                 // 攻击结果类型
+    required int32 x = 6;                   // 击退坐标 >0 有效
+    required int32 y = 7;                   // 击退坐标 >0 有效
+    repeated Buff buff_list = 8;            // 添加的buff列表
+    repeated Effect effect_list = 9;        // 触发的effect列表
+    repeated HurtSection hurt_section_list = 10;// 伤害列表
+    required int32 total_mano = 11;         // 累计灵力值
+    required int32 all_total_mano = 12;     // 全部玩家累计灵力值
+    required int32 beat_times= 13;          // 受击次数
+    required int32 mano_award = 14;         // 灵力值奖励 暂定待检测其他逻辑是否合法(-1:打到空箱子)
+
+    required int32 exp = 17;                // 經驗
+
+    required int32 special_event = 18;      // 特殊事件 1:召唤怪 2:红包雨 3:翻牌 12:炸弹怪 15:金币小妖
+    required int32 dizzy_close_time = 19;   // 眩晕结束时间
+    required int32 award_player_id = 20;    // 获得奖励的玩家id
+}
+
+//通知战报
+message m_fight_notice_fight_result_toc {
+    required int32 attacker_id = 1;         // 攻击者id
+    required int32 attacker_type = 2;       // 攻击者类型(1:玩家 2:怪物 3:妖灵 4:法宝)
+    required int32 x = 3;
+    required int32 y = 4;
+    required int32 dir = 5;
+    required int32 target_id = 6;           // 目标id
+    required int32 target_type = 7;         // 目标者类型
+    required int32 skill_id = 8;            // 技能id(只有大招和普攻走这里)
+    required int32 skill_level = 9;         // 技能等级
+    required int32 skill_effect = 10 [default=0]; // 技能效果
+    repeated DefenderResult defender_result_list = 13; //被攻击者列表
+    required int32 anger = 18;              // 怒氣
+    required int32 anger_skill_effect = 19 [default=0];      // 大招新的特效id
+}
+
+//通知添加buff
+message m_fight_notice_add_buff_toc {
+    required int32 obj_type = 1;            // 对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;              // 对象id
+    required Buff buff = 3;                 // buff
+}
+
+//通知移除buff
+message m_fight_notice_remove_buff_toc {
+    required int32 obj_type = 1;            // 对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;              // 对象id
+    repeated int32 buff_id_list = 3;        // buff id 列表
+}
+
+// 使用技能
+message m_fight_use_item_tos {
+    required int32 item_id = 1;
+    required int32 mano_value = 2;          // 消耗灵力值
+}
+
+message m_fight_use_item_toc {
+    required int32 item_id = 1;
+    enum ENUM {
+        success = 0;
+        cd_time = 1;    //cd 时间
+        fail = 2;       //失败
+    }
+    required ENUM reason = 2;
+}
+
+//通知释放冰冻技能
+message m_fight_notice_bin_dong_skill_toc {
+    required int32 player_id = 1; // 玩家id
+    message attr_change{
+        required int32 scene_monster_id = 1;// 怪物对象id
+        required int32 destroy_time = 2;    // 销毁时间
+        required int32 end_time = 3;        // 冰冻结束时间
+    }
+    repeated attr_change list = 2;
+}
+
+// 通知获得功能怪物奖励
+message m_fight_notice_get_function_monster_award_toc {
+    required int32 special_event = 1;               // 9翻牌（翻牌类型） 10拉霸（拉霸类型） 11转盘（转盘类型）
+    required int32 special_event_type = 2;          // 对应类型
+    message FunctionMonsterAward{
+        required int32 id = 3;                      // 对应类型表的id
+        repeated Prop prop_list = 4;                // 奖励列表
+    }
+    repeated FunctionMonsterAward award_list = 3;   // 奖励列表
+}
+
+// 蓄力技能
+message WaitSkill {
+    required int32 dir = 1;                         //方向
+    required int32 x = 2;
+    required int32 y = 3;
+}
+
+// 通知使用蓄力技能
+message m_fight_notice_fight_wait_skill_toc {
+    required int32 obj_type = 1;                    // 施法对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;                      // 施法对象id
+    required int32 skill_id = 3;                    // 技能id
+    required int64 end_time = 4;                    // 结束时间戳
+    repeated WaitSkill wait_skill = 5;              // 蓄力技能
+}
+
+// 蓄力技能触发
+message m_fight_wait_skill_trigger_tos {
+    required int32 skill_id = 1;                    // 技能id(4:怒气技能)
+}
+
+message m_fight_dizzy_time_reduce_tos {
+    required int32 times = 1;                       // 单位时间内玩家点击次数
+}
+message m_fight_dizzy_time_reduce_toc {
+    required int64 timestamp = 1;                   // 晕眩结束时间戳
+    required int32 player_id = 2;                   // 减少晕眩时间的玩家编号
+}
+
+//通知添加buff
+message m_fight_notice_add_effect_toc {
+    required int32 obj_type = 1;                    // 对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;                      // 对象id
+    required Buff buff = 3;                         // buff
+}
+
+// 通知箱子结算
+message m_fight_blind_box_reward_toc {
+    message BlindBoxReward {
+        required int32 player_id = 1;                           // 玩家编号
+        required ModelHeadFigure model_head = 2;                // 玩家模型头像外观
+        required int32 grand_price = 3;                         // 是否获得大奖 0 1
+        repeated Prop award_list = 4;                           // 奖励列表
+    }
+    repeated BlindBoxReward blind_box_reward = 1;               // 奖励列表
+}
+
+/*************************************times:[400, 500]********************************************/
+//<m_times_add_times_tos:401>
+//<m_times_add_times_toc:402>
+//<m_times_notice_times_change_toc:403>
+//购买次数
+message m_times_add_times_tos {
+    required int32 times_id = 1;
+}
+//购买次数
+message m_times_add_times_toc {
+    enum ENUM {
+        success = 1; //成功
+        need_ingot = 2; //元宝不足
+        need_coin = 3; //铜钱不足
+        fail = 4;// 失败
+        times_limit = 5; //购买次数限制
+    }
+    required ENUM result = 1;
+    required int32 times_id = 2; //次数id
+}
+
+//次数
+message times {
+    required int32 times_id = 1; //次数id
+    required int32 value = 2;    //剩余次数
+    required int32 buy_times = 3; //今日已购买次数
+    required int32 max_times = 4;    //最大的免费次数
+    required int32 recover_time = 5; //恢复时间
+    required int32 use_times = 6; //已用次数
+    required int32 max_can_buy_times = 7;    //最大可购买次数
+}
+
+//通知次数变化
+message m_times_notice_times_change_toc {
+    repeated times times_list= 1; //变化次数列表
+}
+
+
+
+
+
+/*************************************prop:[500, 600]********************************************/
+//<m_prop_notice_update_prop_toc:501>
+//<m_prop_use_item_tos:502>
+//<m_prop_use_item_toc:503>
+//<m_prop_sell_item_tos:504>
+//<m_prop_sell_item_toc:505>
+//<m_prop_merge_tos:506>
+//<m_prop_merge_toc:507>
+//OPEN_DEBUG
+//道具
+message Prop {
+    required int32 prop_id = 1;         // 道具id
+    required uint64 num = 2;            // 道具数量
+}
+
+// 奖励状态
+message awardState {
+    required int32 id = 1;              // 编号id
+    required int32 state = 2;           // 状态(0:不可领取、1：可领取、2：已领取)
+}
+
+// 背包
+message Bag {
+    required int32 bag_type = 1;        // 背包类型
+    required int32 num = 2;             // 格子数
+}
+
+//通知道具列表更新
+message m_prop_notice_update_prop_toc {
+    repeated Prop prop_list = 1; //道具列表更新
+    required int32 log_type = 2;// 日志类型
+}
+
+//使用物品
+message m_prop_use_item_tos {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+}
+message m_prop_use_item_toc {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        no_condition = 3;// 条件不足
+    }
+    required ENUM result = 3;
+    repeated Prop prop_list = 4; // 道具列表
+}
+
+//出售物品
+message m_prop_sell_item_tos {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+}
+message m_prop_sell_item_toc {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+    }
+    required ENUM result = 3;
+    repeated Prop prop_list = 4; //获得的道具列表
+}
+
+// 合成
+message m_prop_merge_tos {
+    required int32 id = 1;      // id
+    required int32 num = 2;     // 数量
+}
+message m_prop_merge_toc {
+    enum ENUM {
+        success = 1;            // 成功
+        fail = 2;               // 失败
+        no_enough_prop = 3;     // 材料不够
+        not_enough_grid = 4;    // 格子不够
+        not_authority = 5;      // 未在合成时间内
+    }
+    required ENUM result = 1;   // 结果
+    required int32 id = 2;      // Id
+    required int32 num = 3;     // 数量
+}
+/*************************************chat:[600, 700]********************************************/
+//<m_chat_channel_chat_tos:601>
+//<m_chat_channel_chat_toc:602>
+//<m_chat_broadcast_channel_msg_toc:603>
+//<m_chat_broadcast_channel_msg_list_toc:604>
+//频道聊天
+//频道 channel [1:世界 2:仙盟 3:系统 5.仙界 6.结婚]
+
+message MsgData {
+    required int32 player_id = 1;       //玩家id
+    required string nickname = 2;       //玩家昵称
+    required int32 sex = 3;             //性别 [0:男 1;女]
+    required int32 vip_level = 4;       //玩家vip等级
+    required int32 head_id = 5;         //头像id
+    required string serverId = 6;       //服务器id
+    required int32 channel = 7;         //频道
+    required string msg = 8;            //信息
+    required int32 template_id = 9;     //消息模版id
+    repeated string arsg_list = 10;     //参数列表
+    required int32 loop_num = 11;       //循环次数
+    optional int32 is_forbid = 12;      //是否禁言(客户端用)
+}
+
+//频道聊天
+message m_chat_channel_chat_tos {
+    required int32 channel = 1; //频道
+    required string msg = 2; //信息
+}
+
+//频道聊天失败
+message m_chat_channel_chat_toc {
+    enum ENUM {
+        level_limit = 1;    //等级限制
+        too_quick = 2;      //发消息太快
+        too_long = 3;       //消息太长
+        no_faction = 4;     //没有仙盟
+        fail = 5;           //失败
+    }
+    required ENUM fail_reason = 1;
+}
+
+//广播频道消息
+message m_chat_broadcast_channel_msg_toc {
+    required int32 player_id = 1;       //玩家id
+    required string nickname = 2;       //玩家昵称
+    required int32 sex = 3;             //性别 [0:男 1;女]
+    required int32 vip_level = 4;       //玩家vip等级
+    required int32 head_id = 5;         //头像id
+    required string serverId = 6;       //服务器id
+    required int32 channel = 7;         //频道
+    required string msg = 8;            //信息
+    required int32 template_id = 9;     //消息模版id
+    repeated string arsg_list = 10;     //参数列表
+    required int32 loop_num = 11;       //循环次数
+    optional int32 is_forbid = 12;      //是否禁言(客户端用)
+}
+
+//广播频道消息列表
+message m_chat_broadcast_channel_msg_list_toc {
+    repeated MsgData msg_data_list = 1; //消息列表
+}
+
+/*************************************mission:[700, 800]********************************************/
+//<m_mission_challenge_mission_tos:701>
+//<m_mission_challenge_mission_toc:702>
+//<m_mission_notice_mission_result_toc:703>
+//<m_mission_exit_mission_tos:704>
+//<m_mission_notice_passed_mission_toc:705>
+//<m_mission_notice_mission_close_time_toc:706>
+//<m_mission_notice_mission_round_toc:707>
+//<m_mission_notice_total_award_toc:708>
+//<m_mission_notice_mission_ranking_toc:709>
+//<m_mission_get_award_tos:710>
+//<m_mission_get_award_toc:711>
+//<m_mission_notice_mission_schedule_toc:712>
+//<m_mission_boss_rebirth_tos:713>
+//<m_mission_boss_rebirth_toc:714>
+//<m_mission_notice_shi_shi_settle_toc:715>
+//<m_mission_notice_shi_shi_time_toc:716>
+//<m_mission_notice_shi_shi_value_toc:717>
+//<m_mission_guess_get_record_tos:718>
+//<m_mission_guess_get_record_toc:719>
+//<m_mission_notice_guess_boss_cost_my_mana_toc:720>
+//<m_mission_notice_guess_boss_cost_total_mana_toc:721>
+//<m_mission_notice_guess_boss_mission_result_toc:722>
+//<m_mission_notice_guess_boss_mission_time_toc:723>
+//<m_mission_either_notice_state_toc:724>
+//<m_mission_either_either_tos:725>
+//<m_mission_either_notice_result_toc:726>
+//<m_mission_scene_boss_bet_tos:727>
+//<m_mission_scene_boss_bet_reset_tos:728>
+//<m_mission_notice_scene_boss_bet_toc:729>
+//<m_mission_notice_scene_boss_step_toc:730>
+//<m_mission_notice_scene_boss_result_toc:731>
+//<m_mission_notice_scene_boss_dao_num_change_toc:732>
+//<m_mission_notice_scene_boss_boss_update_pos_toc:733>
+//<m_mission_notice_new_guess_result_toc:734>
+//<m_mission_lucky_boss_bet_tos:735>
+//<m_mission_lucky_boss_bet_toc:736>
+//<m_mission_lucky_boss_bet_reset_tos:737>
+//<m_mission_lucky_boss_bet_reset_toc:738>
+//<m_mission_lucky_boss_bet_modification_toc:739>
+//<m_mission_lucky_boss_bet_info_toc:740>
+//<m_mission_lucky_boss_status_tos:741>
+//<m_mission_lucky_boss_status_toc:742>
+//<m_mission_notice_lucky_boss_result_toc:743>
+//<m_mission_notice_lucky_boss_fight_toc:744>
+//<m_mission_notice_one_on_one_rate_toc:745>
+//<m_mission_notice_ready_notice_toc:746>
+//<m_mission_hero_versus_boss_bet_tos:747>
+//<m_mission_hero_versus_boss_bet_toc:748>
+//<m_mission_hero_versus_boss_bet_reset_tos:749>
+//<m_mission_hero_versus_boss_bet_reset_toc:750>
+//<m_mission_hero_versus_boss_bet_modification_toc:751>
+//<m_mission_hero_versus_boss_bet_info_toc:752>
+//<m_mission_notice_hero_versus_boss_result_toc:753>
+//<m_mission_hero_versus_boss_status_toc:754>
+//<m_mission_notice_hero_versus_boss_fight_toc:755>
+//<m_mission_notice_hero_versus_boss_rate_toc:756>
+//<m_mission_get_hero_versus_boss_record_tos:757>
+//<m_mission_get_hero_versus_boss_record_toc:758>
+
+
+
+//伤害排行榜
+message HurtRanking {
+    required int32 ranking = 1; //名次
+    required int32 player_id = 2; //玩家id
+    required string player_name = 3; //玩家名称
+    required uint32 hurt = 4; //伤害
+}
+
+//挑战副本
+message m_mission_challenge_mission_tos {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //副本id
+}
+
+//挑战副本
+message m_mission_challenge_mission_toc {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //副本id
+    enum ENUM {
+        success = 1; //成功
+        function_no_open = 2; //功能未开启
+        fail = 3; // 失败
+        activity_no_open = 4; // 活动未开启
+        not_online = 5; // 怪物已死亡
+        times_limit = 6;// 次数限制
+        not_authority = 8;  // 不满足可挑战条件
+        time_limit = 9;     // 时间限制
+    }
+    required ENUM result = 3;
+}
+
+//通知副本挑战结果
+message m_mission_notice_mission_result_toc {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //副本id
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+    }
+    required ENUM result = 3;
+    repeated Prop add_prop_list = 4; //获取的道具列表
+}
+
+//退出副本
+message m_mission_exit_mission_tos {
+}
+
+//通关副本
+message passed_mission {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //通关副本id
+}
+
+//通知更新通关副本
+message m_mission_notice_passed_mission_toc {
+    required passed_mission passed_mission = 1; //通关副本
+}
+
+//通知副本结束时间戳
+message m_mission_notice_mission_close_time_toc {
+    required int32 time = 1; //副本结束时间戳
+}
+
+//通知副本波次
+message m_mission_notice_mission_round_toc {
+    required int32 total_round = 1; //总波次
+    required int32 round = 2; //当前波次
+}
+
+//通知累计奖励
+message m_mission_notice_total_award_toc {
+    repeated Prop total_prop_list = 1; //累计获取的道具列表
+}
+
+//通知副本伤害排行
+message m_mission_notice_mission_ranking_toc {
+    repeated HurtRanking hurt_ranking_list = 1; //伤害排名列表
+    required int32 self_hurt = 2; //自己的伤害
+    required int32 mission_type = 3; //副本类型
+    required int32 self_rank = 4; //自己的排名
+}
+
+//领取奖励
+message m_mission_get_award_tos {
+    required int32 type = 1; //1 单倍奖励 3: 三倍 5: 五倍奖励
+}
+
+//领取奖励
+message m_mission_get_award_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        no_enough_prop = 3; //道具不足
+    }
+    required ENUM result = 1;
+}
+
+//通知副本进度
+message m_mission_notice_mission_schedule_toc {
+    required int32 total_value = 1; //总进度数量
+    required int32 now_value = 2; //当前进度
+}
+
+//boss 立即复活
+message m_mission_boss_rebirth_tos {
+    required int32 mission_type = 1;        //副本类型(仅 围剿boss 和猎杀boss 有效)
+    required int32 mission_id = 2;        //副本id
+}
+//boss 立即复活
+message m_mission_boss_rebirth_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        already_rebirth = 3;// 已经复活
+        no_enough_prop = 4; // 道具不足
+    }
+    required ENUM result = 1;
+    required int32 mission_type = 2;   //副本类型
+    required int32 mission_id = 3;   //副本id
+}
+
+// ------------------------时时副本------------------------
+// 时时副本通知结果
+message m_mission_notice_shi_shi_settle_toc {
+    required int32 winPlayerId = 1; // 赢的玩家Id
+    required string winName = 2;     // 赢的名字
+    required int64 value = 3;       // 赢的奖励
+    required int32 next_type = 4;   // 类型(0:休息,1:最终大奖,2:小奖)
+    required int32 type = 5;        // 类型(0:休息,1:最终大奖,2:小奖)
+    required int32 nextEndTime = 6; // 下一次结算时间
+    message last_data{
+        required string lastWinName = 1;     // 小奖得主名字
+        required int64 lastValue = 2;        // 小奖得主赢的奖励
+    }
+    repeated last_data last_data_list = 7;   // 只有在大奖时有用
+    optional int32 total_cost_value = 8;     // 总消耗值，在大奖才有
+}
+// 时时副本时间(玩家进入副本时给)
+message m_mission_notice_shi_shi_time_toc {
+    required int32 type = 5;        // 类型(0:休息,1:最终大奖,2:小奖)
+    required int32 nextEndTime = 6; // 下一次结算时间
+    required int64 value = 7;      // 当前总积分
+}
+// 时时副本总积分值(定时)
+message m_mission_notice_shi_shi_value_toc {
+    required int64 value = 7;      // 当前总积分
+}
+// -----------------------------end
+
+//----------------------猜一猜副本 start -----------------------------
+// 猜一猜记录
+message GuessBossRecord {
+    required int32 id = 1;                              //期数id
+    required int32 boss_id = 2;                         //boss_id
+}
+
+// 猜一猜消耗
+message GuessBossCost {
+    required int32 boss_id = 1;                         //boss_id
+    required uint64 num = 2;                            //消耗数量
+}
+
+// 获得猜一猜各期记录
+message m_mission_guess_get_record_tos {
+}
+message m_mission_guess_get_record_toc {
+    repeated GuessBossRecord guess_boss_record_list = 1;//猜boss记录列表
+}
+
+// 通知猜一猜自己消耗的灵力值 使用lucky_boss_
+message m_mission_notice_guess_boss_cost_my_mana_toc {
+    repeated GuessBossCost guess_boss_cost = 1;         //猜boss的消耗
+}
+
+// 通知猜一猜全部人消耗的灵力值
+message m_mission_notice_guess_boss_cost_total_mana_toc {
+    repeated GuessBossCost guess_boss_cost = 1;         //猜boss的消耗
+}
+
+// 猜一猜结果战斗
+message GuessBossResultFight {
+    required int32 round_id = 1;                        //第几轮
+    required int32 attack_id = 2;                       //攻击BossId
+    repeated int32 die_id_list = 3;                     //死亡BossId列表
+}
+
+//通知猜一猜副本挑战结果
+message m_mission_notice_guess_boss_mission_result_toc {
+    required int32 boss_id = 1;                         //死亡boss_id
+    repeated Prop award_list = 2;                       //获取的道具列表
+    repeated GuessBossResultFight guess_boss_result_fight_list = 3;//战斗过程列表
+    repeated int32 boss_id_list = 4;                    //boss位置随机列表
+    optional int32 total_cost_value = 5;                //总消耗值
+}
+
+//通知猜一猜副本挑战时间和状态
+message m_mission_notice_guess_boss_mission_time_toc {
+    required int32 state = 1;                           //状态(1:战斗中,0:等待boss复活)
+    required int32 timestamp = 2;                       //结束时间戳
+}
+//----------------------猜一猜副本 end -----------------------------
+
+// ------------------------时时副本------------------------
+// 选择副本通知状态
+message m_mission_either_notice_state_toc {
+    required int32 round = 1;           // 轮数
+    required int32 type = 2;            // 类型(0:战斗,1:选择)
+    required int32 award_value = 3;     // 奖励金币值
+    required int32 end_time = 4;        // 结束时间
+}
+
+// 选择副本玩家选择
+message m_mission_either_either_tos {
+    required int32 either_value = 1;    // 类型(0:离开,1:继续)
+}
+
+// 选择副本通知玩家结果
+message m_mission_either_notice_result_toc {
+    required int32 result_state = 1;    // 类型(0:自己选择离开,1:选择失败,2:时间到了,被踢出去,3:通关)
+    required int32 award_value = 2;     // 奖励金币值
+}
+// -----------------------------end
+
+// ------------------------场景boss副本------------------------
+// 场景boss 竞猜数据
+message SceneBossBet {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+    required int32 id = 2;                                  //id
+    required int32 my_num = 3;                              //自己的数量
+    required int32 total_num = 4;                           //总数量
+}
+
+// 场景boss 竞猜奖励
+message SceneBossBetAward {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+    required int32 id = 2;                                  //id
+    required int32 num = 3;                                 //奖励数量
+}
+
+// 场景boss 竞猜
+message m_mission_scene_boss_bet_tos {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+    required int32 id = 2;                                  //id
+    required int32 num = 3;                                 //数量
+}
+
+// 场景boss 竞猜重置
+message m_mission_scene_boss_bet_reset_tos {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+}
+
+// 通知场景boss 竞猜
+message m_mission_notice_scene_boss_bet_toc {
+    repeated SceneBossBet scene_boss_bet_list = 1;          //场景boss 竞猜数据列表
+}
+
+// 通知场景boss 阶段
+message m_mission_notice_scene_boss_step_toc {
+    required int32 step = 1;                                //阶段(1:竞猜,2:战斗中)
+    required int32 time = 2;                                //结束时间戳
+}
+
+// 通知场景boss 挑战结果
+message m_mission_notice_scene_boss_result_toc {
+    required int32 result = 1;                              //结果(0:失败;1:胜利)
+    required string win_name = 2;                           //胜利玩家的名字(空字符串即为自己)
+    required int32 win_award_value = 3;                     //胜利玩家击杀boss奖励
+    repeated SceneBossBetAward scene_boss_bet_award = 4;    //竞猜奖励列表
+    required int32 player_id = 5;                           //胜利玩家id
+    repeated Prop prop_list = 6;                            //奖励道具列表
+}
+
+// 通知场景boss 猜刀数副本 刀数改变
+message m_mission_notice_scene_boss_dao_num_change_toc {
+    required int32 value = 1;                               //刀数
+}
+
+// 通知场景boss 猜位置副本 位置改变
+message m_mission_notice_scene_boss_boss_update_pos_toc {
+    required int32 pos_id = 1;                              //位置
+}
+
+// -----------------------------end
+
+// ---------------------------新六选一副本start-------------
+// 开始移动
+message GuessSceneMove {
+    required int64 time = 1;
+    required int32 monster_id = 2;
+    required int32 x = 3;                   // 目标x
+    required int32 y = 4;                   // 目标y
+}
+
+// 结束移动
+message GuessSceneStepMove {
+    required int64 time = 1;
+    required int32 monster_id = 2;
+    required int32 x = 3;                   // 到达x
+    required int32 y = 4;                   // 到达y
+}
+
+// 战斗
+message GuessSceneFight {
+    required int64 time = 1;
+    required int32 monster_id = 2;
+    required int32 skill_id = 3;
+    required int32 target_monster_id = 4;    // 目标怪物id
+    message GuessSceneFightDefender{
+        required int32 monster_id = 1;          // 怪物id
+        required uint32 hp = 2;                 // 血量(为0死亡)
+    }
+    repeated GuessSceneFightDefender defender_list = 5; // 受攻击列表
+}
+
+// 通知新的六选一副本战斗结果
+message m_mission_notice_new_guess_result_toc {
+    repeated GuessSceneMove move_list = 1;
+    repeated GuessSceneStepMove stop_move_list = 2;
+    repeated GuessSceneFight fight_list = 3;
+    message BetAward{
+        required int32 bet = 1;                 // 竞猜id
+        required uint32 award_value = 2;        // 奖励
+    }
+    repeated BetAward bet_award_list = 4;       // 竞猜奖励
+}
+
+// 下注
+message m_mission_lucky_boss_bet_tos {
+    required int32 pos = 1;     // 下注类型
+    required int32 bet = 2;         // 注
+}
+
+message BetModification {
+    required int32 pos = 1; // boss位置
+    required int32 bet = 2; // 指定位置的boss的下注总数
+}
+
+// 下注结果
+message m_mission_lucky_boss_bet_toc {
+    enum ENUM {
+        success = 1; //成功
+        no_enough_prop = 2; // 道具不足
+        already_start = 3; // 已经开始
+        not_authority = 4;  // 已达上限
+        none = 5;           // 还没开始
+        unknown = 6;       // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 清空下注
+message m_mission_lucky_boss_bet_reset_tos {
+
+}
+
+// 清空下注结果
+message m_mission_lucky_boss_bet_reset_toc {
+    enum ENUM {
+        success = 1; //成功
+        failure = 2; // 失败
+        unknown = 3; // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 通知所有玩家，总的下注信息(数值不包含接收消息玩家自己的下注值)
+message m_mission_lucky_boss_bet_modification_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 推送给指定玩家，他自己的下注情况
+message m_mission_lucky_boss_bet_info_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 查询六选一状态
+message m_mission_lucky_boss_status_tos {
+    required int32 operation = 1;                       // 1: 为进入下注页面，0: 为离开下注页面
+}
+
+// 查询六选一状态 返回结果
+message m_mission_lucky_boss_status_toc {
+    required int32 state = 1;                           // 状态 0为等待开始投注，1为等待进入倒计时，3为
+    required int32 timestamp = 2;                       // 结束时间戳
+    required int32 players = 3;                         // 点开投注页面的玩家数量
+    optional int32 operation = 4;                       // 1: 为进入下注页面，0: 为离开下注页面
+    optional int32 previous_timestamp = 5;              // 上一个状态的开始时间戳
+}
+
+// 猜一猜结果通知协议
+message m_mission_notice_lucky_boss_result_toc {
+    required int32 boss_id = 1;                         // 死亡boss_id
+    repeated Prop award_list = 2;                       // 获取的道具列表
+}
+
+// 1v1被攻击者
+message OneOnOneDefenderResult {
+    required int32 defender_id = 1;         // 被攻击者id
+    required int32 defender_type = 2;       // 被攻击者类型(1:玩家 2:怪物)
+    required uint32 hp = 3;                 // 血量
+    required uint32 hurt = 4;               // 伤害
+    enum ENUM {
+        normal = 1;    //普通
+        dodge = 2;     //闪避
+        crit = 3;      //暴击
+    }
+    required ENUM type = 5;                 // 攻击结果类型
+    required int32 x = 6;                   // 击退坐标 >0 有效
+    required int32 y = 7;                   // 击退坐标 >0 有效
+    repeated Buff buff_list = 8;            // 添加的buff列表
+    repeated Effect effect_list = 9;        // 触发的effect列表
+    repeated HurtSection hurt_section_list = 10;// 伤害列表
+    required int32 total_mano = 11;         // 累计灵力值
+    required int32 all_total_mano = 12;     // 全部玩家累计灵力值
+    required int32 beat_times= 13;          // 受击次数
+    required int32 mano_award = 14;         // 灵力值奖励
+
+    required int32 exp = 17;                // 經驗
+
+    required int32 special_event = 18;      // 特殊事件 1:召唤怪 2:红包雨 3:翻牌 12:炸弹怪 15:金币小妖
+    required int32 dizzy_close_time = 19;   // 眩晕结束时间
+    required int32 award_player_id = 20;    // 获得奖励的玩家id
+    required int64 timestamp = 21;          // 飘血时间戳
+}
+
+message m_mission_notice_lucky_boss_fight_toc {
+    required int32 attacker_id = 1;         // 攻击者id
+    required int32 attacker_type = 2;       // 攻击者类型(1:玩家 2:怪物 3:妖灵 4:法宝)
+    required int32 x = 3;                   // boss目标坐标
+    required int32 y = 4;                   // boss目标坐标
+    required int32 dir = 5;                 // boss朝向
+    required int32 target_id = 6;           // 目标id
+    required int32 target_type = 7;         // 目标者类型
+    required int32 skill_id = 8;            // 技能id
+    required int32 skill_level = 9;         // 技能等级
+    repeated OneOnOneDefenderResult defender_result_list = 13; //被攻击者列表
+    required int32 anger = 18;              // 怒氣
+    required int64 timestamp = 19;          // 时间戳
+}
+
+message WinnerRate {
+    required int32 boss_id = 1; // 英雄id
+    required float rate = 2; // 胜率：0.xx
+    required int32 monster_id = 3; // 怪物id
+}
+
+message m_mission_notice_one_on_one_rate_toc {
+    repeated WinnerRate winne_rate = 2;
+}
+
+message m_mission_notice_ready_notice_toc {
+    required int32 delay = 1; // 倒计时的秒数
+}
+
+// 2021-07-20 hero versus boss新协议
+// 下注
+message m_mission_hero_versus_boss_bet_tos {
+    required int32 pos = 1;     // 下注类型
+    required int32 bet = 2;         // 注
+}
+
+// 下注结果
+message m_mission_hero_versus_boss_bet_toc {
+    enum ENUM {
+        success = 1; //成功
+        no_enough_prop = 2; // 道具不足
+        already_start = 3; // 已经开始
+        not_authority = 4;  // 已达上限
+        none = 5;           // 还没开始
+        unknown = 6;       // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 清空下注
+message m_mission_hero_versus_boss_bet_reset_tos {
+
+}
+
+// 清空下注结果
+message m_mission_hero_versus_boss_bet_reset_toc {
+    enum ENUM {
+        success = 1; //成功
+        failure = 2; // 失败
+        unknown = 3; // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 通知所有玩家，总的下注信息(数值不包含接收消息玩家自己的下注值)
+message m_mission_hero_versus_boss_bet_modification_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 推送给指定玩家，他自己的下注情况
+message m_mission_hero_versus_boss_bet_info_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 猜一猜结果通知协议
+message m_mission_notice_hero_versus_boss_result_toc {
+    required int32 boss_id = 1;                         // 死亡boss_id
+    repeated Prop award_list = 2;                       // 获取的道具列表
+}
+
+// 查询六选一状态 返回结果
+message m_mission_hero_versus_boss_status_toc {
+    required int32 state = 1;                           // 状态 0为等待开始投注，1为等待进入倒计时，3为
+    required int32 timestamp = 2;                       // 结束时间戳
+    required int32 players = 3;                         // 点开投注页面的玩家数量
+    optional int32 operation = 4;                       // 1: 为进入下注页面，0: 为离开下注页面
+    optional int32 previous_timestamp = 5;              // 上一个状态的开始时间戳
+    optional int32 winner_hero = 6;                     // 不为0: 获胜hero_id; 0为: 没有到显示英雄庆祝动作的时候
+}
+
+// hero versus boss 被攻击者
+message HeroVersusBossDefenderResult {
+    required int32 defender_id = 1;         // 被攻击者id
+    required int32 defender_type = 2;       // 被攻击者类型(1:玩家 2:怪物)
+    required uint32 hp = 3;                 // 血量
+    required uint32 hurt = 4;               // 伤害
+    enum ENUM {
+        normal = 1;    //普通
+        dodge = 2;     //闪避
+        crit = 3;      //暴击
+    }
+    required ENUM type = 5;                 // 攻击结果类型
+    required int32 x = 6;                   // 击退坐标 >0 有效
+    required int32 y = 7;                   // 击退坐标 >0 有效
+    repeated Buff buff_list = 8;            // 添加的buff列表
+    repeated Effect effect_list = 9;        // 触发的effect列表
+    repeated HurtSection hurt_section_list = 10;// 伤害列表
+    required int32 total_mano = 11;         // 累计灵力值
+    required int32 all_total_mano = 12;     // 全部玩家累计灵力值
+    required int32 beat_times= 13;          // 受击次数
+    required int32 mano_award = 14;         // 灵力值奖励
+
+    required int32 exp = 17;                // 經驗
+
+    required int32 special_event = 18;      // 特殊事件 1:召唤怪 2:红包雨 3:翻牌 12:炸弹怪 15:金币小妖
+    required int32 dizzy_close_time = 19;   // 眩晕结束时间
+    required int32 award_player_id = 20;    // 获得奖励的玩家id
+    required int64 timestamp = 21;          // 飘血时间戳
+}
+
+// hero versus boss 战斗协议
+message m_mission_notice_hero_versus_boss_fight_toc {
+    required int32 attacker_id = 1;         // 攻击者id
+    required int32 attacker_type = 2;       // 攻击者类型(1:玩家 2:怪物 3:妖灵 4:法宝)
+    required int32 x = 3;                   // boss目标坐标
+    required int32 y = 4;                   // boss目标坐标
+    required int32 dir = 5;                 // boss朝向
+    required int32 target_id = 6;           // 目标id
+    required int32 target_type = 7;         // 目标者类型
+    required int32 skill_id = 8;            // 技能id
+    required int32 skill_level = 9;         // 技能等级
+    repeated HeroVersusBossDefenderResult defender_result_list = 13; //被攻击者列表
+    required int32 anger = 18;              // 怒氣
+    required int64 timestamp = 19;          // 时间戳
+}
+
+message m_mission_notice_hero_versus_boss_rate_toc {
+    repeated WinnerRate winne_rate = 2;
+}
+
+message HeroVersusBossRecord {
+    required int32 hero_id = 1;                         // 英雄id
+    required int32 monster_id = 2;                      // 怪物id
+    required int32 winner = 3;                          // 胜者（0为英雄，1为怪物）
+    required int32 timestamp = 4;                       // 战斗时间，时间戳
+}
+
+// 获得猜一猜各期记录
+message m_mission_get_hero_versus_boss_record_tos {
+    required int32 hero_id = 1;                         // 英雄id
+}
+message m_mission_get_hero_versus_boss_record_toc {
+    repeated HeroVersusBossRecord hero_versus_boss_record = 1;  //猜boss记录列表
+}
+
+/*************************************mail:[800, 900]********************************************/
+//<m_mail_get_mail_info_tos:801>
+//<m_mail_get_mail_info_toc:802>
+//<m_mail_read_mail_tos:803>
+//<m_mail_read_mail_toc:804>
+//<m_mail_get_item_mail_tos:805>
+//<m_mail_get_item_mail_toc:806>
+//<m_mail_delete_mail_tos:807>
+//<m_mail_delete_mail_toc:808>
+//<m_mail_add_mail_toc:809>
+//<m_mail_remove_mail_toc:810>
+// 邮件系统
+
+
+// 邮件内容完整数据
+message Mail_Info {
+    required int32 mail_real_id = 1;//邮件实际id
+    required int32 mail_id = 2;     //邮件模板id
+    required string title_name = 3; //邮件标题
+    required int32 state = 4;       //邮件状态 1:已读 2:已取附件
+    required string content = 5;    //内容
+    repeated string param_list = 6; //参数
+    repeated Prop prop_list = 7;     //道具列表
+    required int32 valid_time = 9;  //有效时间
+    required int32 create_time = 10;//创建时间
+}
+// 邮件内容简单数据
+message MailSimple_Info {
+    required int32 mail_real_id = 1;// 邮件实际id
+    required int32 mail_id = 2;     // 邮件模板id
+    required string title_name = 3; // 邮件标题
+    required int32 state = 4;       // 邮件状态 1:已读 2:已取附件
+    required int32 is_attach = 5;   // 是不有附件    1:有附件
+    required int32 valid_time = 9;  // 有效时间
+    required int32 create_time = 10;// 创建时间
+}
+
+// 邮件信息
+message m_mail_get_mail_info_tos {
+}
+// 邮件信息
+message m_mail_get_mail_info_toc {
+    repeated MailSimple_Info mail_simple_info = 1; // 简单的邮件信息
+}
+
+// 读邮件
+message m_mail_read_mail_tos {
+    required int32 mail_real_id = 1; // 邮件实际id
+}
+// 读邮件
+message m_mail_read_mail_toc {
+    enum ENUM {
+        success = 1;  //成功
+        fail = 2;     // 失败
+    }
+    required ENUM result = 1;
+    required Mail_Info mail_info = 2; // 简单的邮件信息
+}
+
+// 提取附件邮件
+message m_mail_get_item_mail_tos {
+    required int32 mail_real_id = 1; // 邮件实际id 0:提取全部
+}
+// 提取附件邮件
+message m_mail_get_item_mail_toc {
+    enum ENUM {
+        success = 1;    //成功
+        fail = 2;       // 失败
+        not_enough_grid = 7;// 格子不足
+        old_item_time = 8;  // 附件过期
+        not_authority = 9;  // 没道具提取
+        none = 10;
+    }
+    required ENUM result = 1;
+    repeated int32 mail_real_id = 2; // 邮件实际id
+}
+
+// 删除邮件
+message m_mail_delete_mail_tos {
+    required int32 mail_real_id = 1; // 邮件实际id 0:提取全部
+}
+// 删除邮件
+message m_mail_delete_mail_toc {
+    enum ENUM {
+        success = 1;    //成功
+        fail = 2;       // 失败
+        none = 10;      // 无可删除的邮件
+    }
+    required ENUM result = 1;
+    repeated int32 mail_real_id = 2; // 邮件实际id
+}
+
+// 增加新邮件
+message m_mail_add_mail_toc {
+    repeated MailSimple_Info mail_simple_info = 1; // 简单的邮件信息
+}
+
+// 减少邮件
+message m_mail_remove_mail_toc {
+    repeated int32 mail_real_id = 2; // 邮件实际id
+}
+
+/*************************************vip:[900, 1000]********************************************/
+//<m_vip_get_vip_award_tos:901>
+//<m_vip_get_vip_award_toc:902>
+//<m_vip_notice_vip_data_toc:903>
+
+// vip数据
+message VipData {
+    required int32 vip_level = 1;                   // vip等级
+    required int32 vip_exp = 2;                     // vip经验
+    repeated VipAwardInfo vip_award_info = 3;       // vip奖励列表
+}
+
+// vip奖励列表
+message VipAwardInfo {
+    required int32 vip_level = 1;       // vip等级
+    required int32 state = 2;           // vip领取状态
+}
+
+// 领取vip奖励
+message m_vip_get_vip_award_tos {
+    required int32 vip_level = 1;       // vip等级
+}
+// 领取vip奖励
+message m_vip_get_vip_award_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        already_have = 3;               // 已领取
+        not_authority = 4;              // 不可领取
+    }
+    required ENUM result = 1;
+    required int32 vip_level = 2;       // vip等级
+}
+
+// 通知玩家vip数据
+message m_vip_notice_vip_data_toc {
+    required VipData vip_data = 1;      // vip数据
+}
+
+
+/*************************************debug:[10000, 10100]********************************************/
+//<m_debug_debug_tos:10001>
+//<m_debug_debug_toc:10002>
+//debug调试
+
+//debug
+message m_debug_debug_tos {
+    required int32 type = 1;            //类型
+    repeated int32 param_list = 2;      //参数列表
+}
+
+//debug
+message m_debug_debug_toc {
+    required int32 type = 1;            //类型
+    enum ENUM {
+        success = 1;    //成功
+        fail = 2;       //失败
+    }
+    required ENUM result = 2;
+}
+
+/*************************************client_log:[1000, 1100]********************************************/
+//<m_client_log_client_log_tos:1001>
+// 客户端打点日志
+
+// 客户端打点日志
+message m_client_log_client_log_tos {
+    required int32 id = 1;                      // ID
+}
+
+/*************************************achievement:[1100, 1200]********************************************/
+//<m_achievement_get_info_tos:1101>
+//<m_achievement_get_info_toc:1102>
+//<m_achievement_get_award_tos:1103>
+//<m_achievement_get_award_toc:1104>
+//<m_achievement_notice_update_achievement_data_toc:1105>
+// 成就
+//OPEN_DEBUG
+
+// 成就数据
+message AchievementData {
+    required int32 type = 1;                                    // 成就类型
+    required int32 id = 2;                                      // 成就id
+    required uint64 value = 3;                                  // 值
+    required int32 state = 4;                                   // 状态(0:未领取,1:可领取,2:已领取)
+}
+
+// 获得成就信息
+message m_achievement_get_info_tos {
+}
+message m_achievement_get_info_toc {
+    repeated AchievementData achievement_data_list = 1;         // 成就数据列表
+}
+
+// 领取成就奖励
+message m_achievement_get_award_tos {
+    required int32 type = 1;                                    // 成就类型
+}
+message m_achievement_get_award_toc {
+    enum ENUM {
+        success = 1;                                            // 成功
+        fail = 2;                                               // 失败
+        not_enough_grid = 3;                                    // 格子不足
+        not_authority = 4;                                      // 不可领取
+        already_have = 5;                                       // 已经领取
+    }
+    required ENUM result = 1;
+    required AchievementData achievement_data = 2;              // 成就数据
+}
+
+// 通知更新成就数据
+message m_achievement_notice_update_achievement_data_toc {
+    required AchievementData achievement_data = 1;              // 成就数据列表
+}
+/*************************************rank:[1200, 1300]********************************************/
+//<m_rank_get_rank_info_tos:1201>
+//<m_rank_get_rank_info_toc:1202>
+// 排行榜
+
+
+message RankInfo {
+    required int32 player_id = 1;   //玩家id
+    required int32 rank = 2;        //玩家排名
+    required string name = 3;       //玩家名字
+    required int32 vip_level = 4;   //玩家vip等级
+    required int64 value = 5;       //当前排行值(等级，各榜战力)
+    required int32 sex = 6;         //性别
+    required int32 head_id = 7;     //头像id
+    repeated int32 vip_prerogative_card = 8;   // 获得特权卡列表
+    required uint32 other_value = 9; //额外显示值
+}
+
+// 排行榜信息
+message m_rank_get_rank_info_tos {
+    required int32 fun_id = 1;   //功能id
+    required int32 page_num = 2; //页数 (1 - 5页)  1 / 20条
+}
+
+// 排行榜信息
+message m_rank_get_rank_info_toc {
+    required int32 fun_id = 1;      //功能id
+    required int32 page_num = 2;    //页数
+    required int32 first_show_value = 3;    //第一名显示的值
+    optional ModelFigure model_figure = 4;   //第一名形象
+    required int32 my_rank = 5;             //自己的排名
+    repeated RankInfo rank_info = 6;        //排名数据
+    required int32 total_num = 7;           //数据条数
+}
+
+/*************************************shop:[1300, 1400]********************************************/
+//<m_shop_get_shop_info_tos:1301>
+//<m_shop_get_shop_info_toc:1302>
+//<m_shop_shop_item_tos:1303>
+//<m_shop_shop_item_toc:1304>
+//<m_shop_notice_shop_state_toc:1305>
+//<m_shop_withdraw_tos:1306>
+//<m_shop_withdraw_toc:1307>
+//<m_shop_withdraw_notify_toc:1308>
+//<m_shop_withdraw_history_tos:1309>
+//<m_shop_withdraw_history_toc:1310>
+//商店数据
+message ShopData {
+    required int32 id = 1;              //编号id
+    required int32 buy_count = 2;       //购买数量
+    required int32 state = 3;           // 可领取状态 0:不可领取;1:可领取;2:已领取
+}
+
+//获得商店信息
+message m_shop_get_shop_info_tos {
+    required int32 shop_type = 1;   // 商店类型
+}
+//获得商店信息
+message m_shop_get_shop_info_toc {
+    repeated ShopData shop_data = 1; // 商店数据
+    required int32 shop_type = 2;   // 商店类型
+}
+
+//购买物品
+message m_shop_shop_item_tos {
+    required int32 id = 1;              //编号id
+    required int32 buy_count = 2;       //购买数量
+}
+//购买物品
+message m_shop_shop_item_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        function_no_open = 3;// 功能未开启
+        no_enough_prop = 4; // 道具不足
+        not_enough_grid = 5;// 格子不足
+        times_limit = 6; // 次数上限
+        not_authority = 7;  // 没权限购买
+        activity_no_open = 8; // 活动未开启
+    }
+    required ENUM result = 1;
+    required int32 id = 2;              //编号id
+    required int32 buy_count = 3;       //购买数量
+}
+
+// 通知商品id状态
+message m_shop_notice_shop_state_toc {
+    required int32 id = 1;              // 编号id
+    required int32 state = 3;           // 可领取状态 0:不可领取;1:可领取;2:已领取
+}
+
+// 玩家发起装备回收协议
+message m_shop_withdraw_tos {
+    required int32 id = 1;
+}
+
+// 后端返回玩家装备回收协议
+message m_shop_withdraw_toc {
+    enum ENUM {
+        success = 1; //成功
+        unavailable_account = 2;     // 非普通账号不允许提现
+        vip_limit = 3;        // vip等级必须大于1
+        not_authority = 4;      // 金币不足
+        times_limit = 5;     // 超过每日限制
+        unknown = 6;// 未知原因
+    }
+    required ENUM result = 1;
+    required string url = 2; // 链接
+}
+
+// 玩家在装备交易平台确定提交回收申请后，下发通知客户端
+message m_shop_withdraw_notify_toc {
+    required int32 status = 1; // 状态：0为失败，1为成功，2为审核中
+}
+
+// 玩家获取自己的装备回收记录
+message m_shop_withdraw_history_tos {
+}
+message SingleWithdrawInfo {
+    required int32 id = 1; // 回收物品编号
+    required string time = 2; // 创建回收记录的时间戳
+    required int32 status = 3; // 状态：0为失败，1为成功，2为审核中
+}
+// 后端返回玩家装备回收记录
+message m_shop_withdraw_history_toc {
+    enum ENUM {
+        success = 1; //成功
+        failure = 2;     // 失败
+    }
+    repeated SingleWithdrawInfo single_withdraw_info = 2;
+}
+
+/*************************************activity:[1400, 1500]********************************************/
+//<m_activity_restart_all_activity_toc:1401>
+//<m_activity_update_activity_time_toc:1402>
+// 活动时间
+//OPEN_DEBUG
+
+// 活动数据
+message Activity_Data {
+    required int32 activity_id = 1;         // 活动id
+    required int32 start_time = 2;          // 开始时间
+    required int32 close_time = 3;          // 结束时间
+    required int32 activity_state = 4;      // 活动状态 0:活动销毁 1:活动准备开启 2:活动开启 3:活动关闭
+    required int32 player_join_state = 5;   // 玩家活动参加状态 0:未参加活动 1:参加 2:活动结束
+}
+
+// 重置活动数据
+message m_activity_restart_all_activity_toc {
+    repeated Activity_Data activity_data = 1;       // 活动数据
+}
+
+// 更新活动时间数据
+message m_activity_update_activity_time_toc {
+    repeated Activity_Data activity_data = 1;       // 活动数据
+}
+/*************************************charge:[1500, 1600]********************************************/
+//<m_charge_notice_is_open_charge_toc:1501>
+//<m_charge_charge_tos:1502>
+//<m_charge_charge_toc:1503>
+//<m_charge_notice_charge_data_toc:1504>
+//<m_charge_get_charge_type_tos:1505>
+//<m_charge_get_charge_type_toc:1506>
+// 充值数据
+
+// 充值请求数据
+message ChargeRequestData {
+    required string key = 1;    // 参数
+    required string value = 2; // 值
+}
+
+message chargeTypeData {
+    required int32 idx = 1; // 支付方式编号
+    required string name = 2; // 支付方式名称
+}
+
+// 通知是否开启充值状态
+message m_charge_notice_is_open_charge_toc {
+    required int32 is_open = 1;     // 是否开启1:为开启
+}
+
+// 充值
+message m_charge_charge_tos {
+    required int32 item_id = 3;             // 购买物品id
+    required int32 count = 4;               // 物品数量
+    optional int32 charge_type_idx = 5;     // 支付方式，可选，现阶段只有台湾才有，其他平台没有
+}
+// 充值
+message m_charge_charge_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 7;      // 没权限购买
+        no_enough_prop = 8;     // 道具不足(平台需要返回者ChargeRequestData 时使用)
+        already_have = 9;       // 存在订单
+        times_limit = 10;       // 购买次数限制
+    }
+    required ENUM result = 1;
+    required int32 item_id = 3;             // 购买物品id
+    required int32 count = 4;               // 物品数量
+    required float charge_value = 5;        // 需要充值的值   道具不足时，元宝数有效
+    repeated ChargeRequestData charge_request_data = 6;    // 请求充值数据
+    optional int32 charge_type_idx = 7;     // 支付方式，可选，现阶段只有台湾才有，其他平台没有
+}
+
+// 通知充值成功后的数据
+message m_charge_notice_charge_data_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        refuse = 3;      // 拒绝支付
+    }
+    required ENUM result = 1;
+    required int32 item_id = 3;             // 购买物品id
+    required int32 count = 4;               // 物品数量
+}
+
+message m_charge_get_charge_type_tos {
+}
+message m_charge_get_charge_type_toc {
+    required int32 status = 1; // 状态：1为获取成功；2为获取失败
+    repeated chargeTypeData charge_type_data = 2; // 支付方式
+}
+
+/*************************************invest:[1600, 1700]********************************************/
+//<m_invest_init_notice_toc:1601>
+//<m_invest_get_invest_award_tos:1602>
+//<m_invest_get_invest_award_toc:1603>
+//<m_invest_notice_invest_type_data_update_toc:1604>
+// 投资
+//DEBUG
+
+// 投资类型数据
+message InvestTypeData {
+    required int32 type = 1;                            // type
+    required int32 is_buy = 2;                          // 是否已经购买
+    repeated InvestData invest_data = 3;                // 投资数据列表
+}
+
+// 投资数据
+message InvestData {
+    required int32 id = 1;                              // id
+    required int32 state = 2;                           // 状态(0:未领取,1:可领取,2:已领取)
+}
+
+// 初始化通知投资计划所有数据
+message m_invest_init_notice_toc {
+    repeated InvestTypeData invest_type_data_list = 1;  // 投资计划类型数据列表
+}
+
+// 获得投资奖励
+message m_invest_get_invest_award_tos {
+    required int32 type = 1;                            // 类型
+    required int32 id = 2;                              // id
+}
+message m_invest_get_invest_award_toc {
+    enum ENUM {
+        success = 1;                                    // 成功
+        fail = 2;                                       // 失败
+        node = 3;                                       // 未购买
+        not_authority = 4;                              // 不可领取
+        already_get = 5;                                // 已经领取
+    }
+    required int32 type = 1;                            // 类型
+    required int32 id = 2;                              // id
+    required ENUM result = 99;                          // 结果
+}
+
+// 通知投资类型数据更新
+message m_invest_notice_invest_type_data_update_toc {
+    required InvestTypeData invest_type_data = 1;       // 投资类型数据
+}
+/*************************************everyday_sign:[1700, 1800]********************************************/
+//<m_everyday_sign_everyday_sign_tos:1701>
+//<m_everyday_sign_everyday_sign_toc:1702>
+//<m_everyday_sign_notice_day_toc:1703>
+// 每天签到
+// 每天签到数据
+message EverydaySignData {
+    required int32 day = 1; // 第几天
+    repeated int32 today = 2; // 已签到数据
+    required int32 round = 3;   // 第几个30天
+}
+
+// 每日签到/补签
+message m_everyday_sign_everyday_sign_tos {
+    required int32 today = 1; // 天数
+    required int32 round = 2;   // 第几个30天
+}
+// 每日签到/补签
+message m_everyday_sign_everyday_sign_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        not_authority = 3; // 没有权利
+        function_no_open = 4; // 功能未开启
+        already_have = 5; // 已经领取
+        not_enough_grid = 6; // 没有空格子
+        no_enough_prop = 7; // 道具不足
+    }
+    required ENUM result = 1;
+    required int32 today = 2; // 天数
+    required int32 round = 3;   // 第几个30天
+}
+
+message m_everyday_sign_notice_day_toc {
+    required int32 day = 1; // 第几天
+    required int32 round = 2;   // 第几个30天
+}
+/*************************************seven_login:[1800, 1900]********************************************/
+//<m_seven_login_give_award_tos:1801>
+//<m_seven_login_give_award_toc:1802>
+//<m_seven_login_update_cumulative_day_toc:1803>
+// 七天登入
+//OPEN_DEBUG
+
+// 七天登录数据
+message SevenLoginData {
+    repeated int32 already_give_list = 1;   // 已领天数列表
+    required int32 cumulative_day = 2;      // 累计登录天数
+}
+
+// 七天登录骰子奖励
+message SevenLoginDice {
+    required int32 type = 1;                // 类型(1:基本奖励,2:连续登录,3:VIP奖励)
+    required int32 value = 2;               // 值
+}
+
+// 领取七天登入奖励
+message m_seven_login_give_award_tos {
+    required int32 today = 1;               // 天数
+}
+message m_seven_login_give_award_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        function_no_open = 3;               // 功能未开启
+        not_authority = 4;                  // 不可领取
+        already_have = 5;                   // 已经领取
+        not_enough_grid = 6;                // 背包容量不足
+    }
+    required ENUM result = 100;
+    required int32 today = 1;               // 天数
+    required int32 dice_id = 2;             // 骰子id
+    repeated SevenLoginDice dice_list = 3;  // 骰子奖励列表
+}
+
+//  更新累计登录天数
+message m_seven_login_update_cumulative_day_toc {
+    required int32 cumulative_day = 1;      // 累计登录天数
+}
+
+/*************************************platform_function:[1900, 2000]********************************************/
+//<m_platform_function_share_tos:1901>
+//<m_platform_function_share_toc:1902>
+//<m_platform_function_get_share_friend_give_tos:1903>
+//<m_platform_function_get_share_friend_give_toc:1904>
+//<m_platform_function_notice_share_friend_toc:1905>
+//<m_platform_function_notice_share_count_toc:1906>
+//<m_platform_function_notice_platform_vip_level_toc:1907>
+//<m_platform_function_get_platform_award_info_tos:1908>
+//<m_platform_function_get_platform_award_info_toc:1909>
+//<m_platform_function_get_share_task_info_tos:1910>
+//<m_platform_function_get_share_task_info_toc:1911>
+//<m_platform_function_get_share_task_award_tos:1912>
+//<m_platform_function_get_share_task_award_toc:1913>
+//<m_platform_function_notice_share_task_toc:1914>
+//<m_platform_function_refresh_open_key_tos:1915>
+//<m_platform_function_refresh_open_key_toc:1916>
+// 平台功能
+
+// 分享好友数据
+message ShareFriendData {
+    required int32 id = 1;
+    required int32 state = 2;
+}
+
+// 邀请任务数据
+message ShareTaskAwardData {
+    required int32 task_type = 1;   // 任务类型
+    required int32 task_id = 2;   // 任务id
+    required int32 state = 3;   // 状态
+    required int32 value = 4;   // 完成值
+}
+
+// 分享
+message m_platform_function_share_tos {
+}
+// 分享
+message m_platform_function_share_toc {
+    enum ENUM {
+        success = 1;    //成功
+        fail = 2;       // 失败
+        times_limit = 3; // 次数上限
+    }
+    required ENUM result = 1;
+}
+
+// 领取好友邀请奖励
+message m_platform_function_get_share_friend_give_tos {
+    required int32 id = 1;
+}
+// 领取好友邀请奖励
+message m_platform_function_get_share_friend_give_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        not_enough_grid = 4; // 格子不足
+        not_authority = 5; // 没领取权限
+        already_have = 6; // 已领取
+    }
+    required ENUM result = 1;
+    required int32 id = 2;
+}
+
+// 通知好友邀请状态
+message m_platform_function_notice_share_friend_toc {
+    repeated ShareFriendData share_friend_data = 1;
+}
+// 0点通知分享次数
+message m_platform_function_notice_share_count_toc {
+    required int32 share_count = 1;   // 分享次数
+}
+
+// 当前通知vip等级
+message m_platform_function_notice_platform_vip_level_toc {
+    required int32 p_vip_level = 1;         // vip等级 0:vip失效或没有vip
+    required int32 p_vip_award_state = 2;   // vip奖励领取状态(0:不可领取，1:可领取，2:已领取)
+}
+
+// 获得平台物品信息
+message m_platform_function_get_platform_award_info_tos {
+    required int32 id = 1;              // 平台物品id
+}
+// 获得平台物品信息
+message m_platform_function_get_platform_award_info_toc {
+    repeated ShareFriendData inof_data = 1;     // 平台物品列表信息
+}
+
+// 获得邀请任务信息
+message m_platform_function_get_share_task_info_tos {
+    required int32 show_type = 1;   // 显示类型show_type
+}
+// 获得邀请任务信息
+message m_platform_function_get_share_task_info_toc {
+    repeated ShareTaskAwardData share_task_award_data = 1;  // 分享任务数据
+    required int32 show_type = 2;   // 显示类型show_type
+}
+
+// 领取邀请任务奖励
+message m_platform_function_get_share_task_award_tos {
+    required int32 task_type = 1;   // 任务类型
+    required int32 task_id = 2;   // 任务id
+}
+// 领取邀请任务奖励
+message m_platform_function_get_share_task_award_toc {
+    enum ENUM {
+        success = 1;        //成功
+        fail = 2;           // 失败
+        not_enough_grid = 4;    // 格子不足
+        not_authority = 5;      // 没领取权限
+        already_have = 6;       // 已领取
+    }
+    required ENUM result = 1;
+    required ShareTaskAwardData share_task_award_data = 2;  // 下一个分享任务数据
+}
+
+// 通知邀请任务数据变化
+message m_platform_function_notice_share_task_toc {
+    repeated ShareTaskAwardData share_task_award_data = 1;  // 分享任务数据
+}
+
+// 刷新openkey
+message m_platform_function_refresh_open_key_tos {
+    required string open_key = 1;      // open_key
+}
+message m_platform_function_refresh_open_key_toc {
+}
+
+/*************************************gift_code:[2000, 2100]********************************************/
+//<m_gift_code_gift_code_tos:2001>
+//<m_gift_code_gift_code_toc:2002>
+
+
+// 礼包兑换码
+message m_gift_code_gift_code_tos {
+    required string gift_code_id = 1;
+}
+// 礼包兑换码
+message m_gift_code_gift_code_toc {
+    enum ENUM {
+        success = 1;             //成功
+        fail = 2;                //失败
+        function_no_open = 4;    //功能未开启
+        not_enough_grid = 5;// 格子不足
+        already_get = 6; // 已经领取
+        too_quick = 7; // 请求太快
+        expire = 8; // 礼包码过期
+        vip_level_limit = 9; // VIP等级限制
+        level_limit = 10; // 等级限制
+        not_exists = 11;    // 礼包码不存在
+    }
+    required ENUM result = 1;
+    repeated Prop item_list = 2; //奖励列表
+}
+/*************************************video:[2100, 2200]********************************************/
+//<m_video_get_award_tos:2101>
+//<m_video_get_award_toc:2102>
+//视频奖励
+
+//领取视频奖励
+message m_video_get_award_tos {
+    required int32 id = 1; //视频id
+}
+
+//领取视频奖励
+message m_video_get_award_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; //失败
+        times_limit = 3; //次数限制
+    }
+    required ENUM result = 1;
+    required int32 id = 2; //视频id
+    repeated Prop award_list = 3; //奖励列表
+}
+
+/*************************************many_people_boss:[2200, 2300]********************************************/
+//<m_many_people_boss_get_room_list_tos:2201>
+//<m_many_people_boss_get_room_list_toc:2202>
+//<m_many_people_boss_join_room_tos:2203>
+//<m_many_people_boss_join_room_toc:2204>
+//<m_many_people_boss_create_room_tos:2205>
+//<m_many_people_boss_create_room_toc:2206>
+//<m_many_people_boss_start_tos:2207>
+//<m_many_people_boss_start_toc:2208>
+//<m_many_people_boss_participate_in_tos:2209>
+//<m_many_people_boss_participate_in_toc:2210>
+//<m_many_people_boss_kick_out_player_tos:2211>
+//<m_many_people_boss_set_is_all_ready_start_tos:2212>
+//<m_many_people_boss_set_is_all_ready_start_toc:2213>
+//<m_many_people_boss_ready_tos:2214>
+//<m_many_people_boss_ready_toc:2215>
+//<m_many_people_boss_leave_room_tos:2216>
+//<m_many_people_boss_notice_leave_room_toc:2217>
+//<m_many_people_boss_notice_player_join_toc:2218>
+//<m_many_people_boss_notice_player_leave_toc:2219>
+//<m_many_people_boss_notice_player_ready_toc:2220>
+//<m_many_people_boss_notice_player_fight_start_toc:2221>
+//<m_many_people_boss_notice_player_fight_result_toc:2222>
+//<m_many_people_boss_notice_owner_fight_result_toc:2223>
+//多人BOSS
+
+
+
+
+// 房间数据
+message RoomData {
+    required int32 room_id = 1;                         //房间id
+    required int32 boss_id = 2;                         //BossId
+    required int32 people_count = 3;                    //房间人数
+    required int32 is_lock = 4;                         //是否上锁
+}
+
+// 房间玩家数据
+message RoomPlayerData {
+    required int32 pos_id = 1;                          //房间位置id
+    required ModelHeadFigure model_head_figure = 2;     //玩家头像数据
+    required int32 is_ready = 3;                        //是否准备（0：未准备，1：已准备）
+    required int32 is_room_owner = 4;                   //是否是房主
+}
+
+// 房间详情数据
+message RoomDetailsData {
+    required RoomData room_data = 1;                    //房间数据
+    required string invitation_code = 2;                //邀请码
+    repeated RoomPlayerData room_player_data_list = 3;  //房间玩家数据列表
+    required int32 is_room_owner = 4;                   //是否是房主
+    required int32 is_all_ready_auto_start = 5;         //是否全部准备自动开始
+    required string owner_name = 6;                     //房主名字
+    required int32 owner_level = 7;                     //房主等级
+}
+
+//获取房间列表
+message m_many_people_boss_get_room_list_tos {
+    required int32 boss_id = 1;                         //BossId(0:All,Other:BossId)
+}
+message m_many_people_boss_get_room_list_toc {
+    repeated RoomData room_data_list = 1;               //房间列表
+    required int32 boss_id = 2;                         //BossId(0:All,Other:BossId)
+}
+
+//加入房间
+message m_many_people_boss_join_room_tos {
+    required int32 room_id = 1;                         //房间id
+    required string password = 2;                       //密码(最多6个字符)
+    required string invitation_code = 3;                //邀请码
+}
+message m_many_people_boss_join_room_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+        not_authority = 4;          //没有权力（达到人数上限）
+        no_condition = 5;           //条件不足
+        already_join_room = 6;      //已经加入一个房间
+        error_password = 7;         //密码错误
+        none = 8;                   //房间不存在
+        time_limit = 9;             //被房主T出房间,十秒内不能进入
+    }
+    required ENUM result = 1;                           //结果
+    optional RoomDetailsData room_details_data = 2;     //房间详细数据
+}
+
+//创建房间
+message m_many_people_boss_create_room_tos {
+    required int32 boss_id = 1;                         //BossId
+    required int32 is_lock = 2;                         //是否设置密码
+    required string password = 3;                       //密码
+}
+message m_many_people_boss_create_room_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        no_condition = 3;           //条件不满足
+        already_join_room = 4;      //已经加入一个房间
+        none = 5;                   //密码不能为空
+    }
+    required ENUM result = 1;                           //结果
+    optional RoomDetailsData room_details_data = 2;     //房间详细数据
+}
+
+//开始
+message m_many_people_boss_start_tos {
+}
+message m_many_people_boss_start_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_authority = 3;          //没有权力（不是房主）
+        not_enough_number = 4;      //人数不足
+        already_start = 5;          //已经开始
+        no_condition = 6;           //有人未准备
+    }
+    required ENUM result = 1;                           //结果
+}
+
+//房主参与Boss战斗
+message m_many_people_boss_participate_in_tos {
+    required int32 is_participate_in = 1;               //(0:取消,1:加入)
+}
+message m_many_people_boss_participate_in_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+    }
+    required ENUM result = 1;                           //结果
+    required int32 is_participate_in = 2;               //(0:取消,1:加入)
+}
+
+//房主踢出玩家
+message m_many_people_boss_kick_out_player_tos {
+    required int32 pos_id = 1;                          //位置id
+}
+
+//房主设置是否全员准备开始游戏
+message m_many_people_boss_set_is_all_ready_start_tos {
+    required int32 is_all_ready_start = 1;              //是否全部准备自动开始
+}
+message m_many_people_boss_set_is_all_ready_start_toc {
+    required int32 is_all_ready_start = 1;              //是否全部准备自动开始
+}
+
+//准备
+message m_many_people_boss_ready_tos {
+    required int32 is_ready = 1;                        //是否准备(0:取消,1:准备)
+}
+message m_many_people_boss_ready_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+    }
+    required ENUM result = 1;                           //结果
+    required int32 is_ready = 2;                        //是否准备(0:取消,1:准备)
+}
+
+//离开房间
+message m_many_people_boss_leave_room_tos {
+}
+
+//通知玩家自己离开房间
+message m_many_people_boss_notice_leave_room_toc {
+    required int32 type = 1;                            //类型(0:灵力值不足提醒充值;1:被房主T出;2:房主关闭房间;3:正常退出房间)
+}
+
+//通知玩家加入房间
+message m_many_people_boss_notice_player_join_toc {
+    required RoomPlayerData room_player_data = 1;       //玩家数据
+}
+
+//通知玩家离开房间
+message m_many_people_boss_notice_player_leave_toc {
+    required int32 pos_id = 1;                          //位置id
+}
+
+//通知玩家准备
+message m_many_people_boss_notice_player_ready_toc {
+    required int32 pos_id = 1;                          //位置id
+    required int32 is_ready = 2;                        //是否准备（0：未准备，1：已准备）
+}
+
+//通知玩家战斗开始
+message m_many_people_boss_notice_player_fight_start_toc {
+    optional int32 mission_time = 1;                    //副本持续时间
+}
+
+//通知玩家战斗结束
+message m_many_people_boss_notice_player_fight_result_toc {
+    required int32 is_first_prize = 1;                  //是否一等奖
+    repeated Prop prop_list = 2;                        //奖励列表
+    optional RoomDetailsData room_details_data = 3;     //房间详细数据
+    required int32 rank = 4;                            //排名
+    required int32 result = 5;                          //结果(0:失败,1:成功)
+    required string win_name = 6;                       //胜利者的名字
+}
+
+//通知房主副本结算抽佣
+message m_many_people_boss_notice_owner_fight_result_toc {
+    required int32 mana = 1;                            //灵力(0:战斗失败)
+    optional RoomDetailsData room_details_data = 2;     //房间详细数据
+}
+/*************************************sys_common:[2300, 2400]********************************************/
+//<m_sys_common_change_state_tos:2301>
+//<m_sys_common_change_state_toc:2302>
+//<m_sys_common_notice_sys_common_toc:2303>
+// 公共系统
+
+// 公共系统数据
+message sysCommonData {
+    required int32 id = 1;  // id
+    required int32 state = 2;  // 状态（0：未装备，1：已装备）
+}
+
+// 改变状态
+message m_sys_common_change_state_tos {
+    required int32 id = 1;  // id
+}
+// 改变状态
+message m_sys_common_change_state_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        function_no_open = 3;   //功能未开启
+        already_have = 4;//已经穿戴
+        none = 5;//未激活
+        need_level = 6;//玩家等级不足
+    }
+    required ENUM result = 1;
+    required int32 id = 2;  // id
+}
+
+// 通知公共系统数据变更
+message m_sys_common_notice_sys_common_toc {
+    repeated sysCommonData sysCommonDataList = 1;  // 公共系统数据
+}
+/*************************************daily_task:[2400, 2500]********************************************/
+//<m_daily_task_get_info_tos:2401>
+//<m_daily_task_get_info_toc:2402>
+//<m_daily_task_get_award_tos:2403>
+//<m_daily_task_get_award_toc:2404>
+//<m_daily_task_notice_update_daily_task_data_toc:2405>
+//<m_daily_task_notice_reset_daily_task_data_toc:2406>
+//<m_daily_task_get_points_award_tos:2407>
+//<m_daily_task_get_points_award_toc:2408>
+//<m_daily_task_notice_update_task_show_toc:2409>
+// 日常活跃任务
+//OPEN_DEBUG
+
+// ########################################################################################################
+//  日常任务相关
+// ########################################################################################################
+// 每日任务数据
+message DailyTaskData {
+    required int32 id = 1;                                      // id
+    required uint64 value = 2;                                  // 值
+    required int32 state = 3;                                   // 状态(0:未领取,1:可领取,2:已领取)
+}
+
+// 查询日常活跃任务（登录后客户端主动查询）
+message m_daily_task_get_info_tos {
+}
+message m_daily_task_get_info_toc {
+    required int32 points = 1;                                   // 活跃积分总值
+    repeated int32 points_rewards = 2;                           // 已领取积分宝箱奖励id数组
+    repeated DailyTaskData daily_task_data_list = 3;            // 每日任务数据列表
+}
+
+// 领取每日任务奖励
+message m_daily_task_get_award_tos {
+    required int32 id = 1;                                      // id
+}
+message m_daily_task_get_award_toc {
+    enum ENUM {
+        success = 1;                                            // 成功
+        fail = 2;                                               // 失败
+        not_enough_grid = 3;                                    // 格子不足
+        not_authority = 4;                                      // 不可领取
+        already_get = 5;                                       // 已经领取
+    }
+    required ENUM result = 1;
+    required int32 id = 2;                                      // id
+    required int32 points = 3;                                  // 活跃积分总值
+}
+
+// 通知更新每日任务数据
+message m_daily_task_notice_update_daily_task_data_toc {
+    repeated DailyTaskData daily_task_data_list = 2;            // 每日任务数据列表
+}
+
+// 通知任务刷新
+message m_daily_task_notice_reset_daily_task_data_toc {
+}
+
+// ########################################################################################################
+//  积分宝箱相关
+// ########################################################################################################
+// 领取积分宝箱奖励
+message m_daily_task_get_points_award_tos{
+    required int32 id = 1;                                      // 宝箱id序号
+}
+message m_daily_task_get_points_award_toc{
+    enum ENUM {
+        success = 1;                                            // 成功
+        fail = 2;                                               // 失败
+        not_authority = 3;                                      // 不可领取
+        already_get = 4;                                        // 已经领取
+    }
+    required ENUM result = 1;
+    required int32 id = 2;                                      // id
+}
+
+// ########################################################################################################
+//  任务展示相关
+// ########################################################################################################
+// 任务展示
+message TaskShow {
+    required int32 key = 1;                                     // 键(1:daily_task,2:achievement,3:task)
+    required int32 value = 2;                                   // 值(daily_task的是id,achievement的是类型,task的是task_id)
+}
+
+// 通知更新任务展示
+message m_daily_task_notice_update_task_show_toc {
+    required TaskShow task_show = 1;                            // 任务展示
+}
+/*************************************promote:[2500, 2600]********************************************/
+//<m_promote_get_promote_record_tos:2501>
+//<m_promote_get_promote_record_toc:2502>
+//<m_promote_get_award_tos:2503>
+//<m_promote_get_award_toc:2504>
+//<m_promote_notice_player_promote_data_toc:2505>
+//<m_promote_notice_promote_times_toc:2506>
+//<m_promote_invitation_code_tos:2507>
+//<m_promote_invitation_code_toc:2508>
+// 推广
+//OPEN_DEBUG
+
+
+
+// 玩家推广信息
+message PlayerPromoteData {
+    required int32 times = 1;                           //剩余次数
+    required int32 record_red = 2;                      //记录是否红点
+    repeated PromoteInfo promote_info_list = 3;         //推广信息
+}
+
+// 推广信息
+message PromoteInfo {
+    required int32 tier_id = 1;                         //几级代理
+    required int32 number = 2;                          //数量
+    required int32 mana = 3;                            //灵力
+    required int32 vip_exp = 4;                         //vip经验
+}
+
+// 推广记录
+message PromoteRecord {
+    required int32 real_id = 1;                         //实际id
+    required int32 id = 2;                              //模板id
+    repeated string param_list = 3;                     //参数
+    required int32 time = 4;                            //时间
+}
+
+// 获得推广记录
+message m_promote_get_promote_record_tos {
+}
+message m_promote_get_promote_record_toc {
+    repeated PromoteRecord promote_record_list = 1;
+}
+
+// 获得奖励
+message m_promote_get_award_tos {
+}
+message m_promote_get_award_toc {
+    enum ENUM {
+        success = 1;        // 成功
+        fail = 2;           // 失败
+        times_limit = 3;    // 次数上限
+        none = 4;           // 没有可领取的奖励
+    }
+    required ENUM result = 1;
+    required int32 mana = 2;                            //灵力
+    required int32 vip_exp = 3;                         //vip经验
+}
+
+// 通知玩家推广数据
+message m_promote_notice_player_promote_data_toc {
+    required PlayerPromoteData player_promote_info_data = 1;
+}
+
+// 通知刷新玩家次数
+message m_promote_notice_promote_times_toc {
+}
+
+// 邀请码
+message m_promote_invitation_code_tos {
+    required string invitation_code = 1;                // 邀请码
+}
+message m_promote_invitation_code_toc {
+    enum ENUM {
+        success = 1;        // 成功
+        fail = 2;           // 失败
+        already_get = 3;    // 这个账号已经被邀请过了
+        none = 4;           // 邀请码不存在
+        not_authority = 5;  // 邀请人和被邀请人是同一个人
+    }
+    required ENUM result = 1;
+}
+/*************************************task:[2600, 2700]********************************************/
+//<m_task_get_award_tos:2601>
+//<m_task_get_award_toc:2602>
+//<m_task_notice_task_change_toc:2603>
+//<m_task_bounty_query_info_tos:2604>
+//<m_task_bounty_query_info_toc:2605>
+//<m_task_bounty_accept_tos:2606>
+//<m_task_bounty_accept_toc:2607>
+//<m_task_bounty_get_award_tos:2608>
+//<m_task_bounty_get_award_toc:2609>
+//<m_task_bounty_refresh_tos:2610>
+//<m_task_bounty_refresh_toc:2611>
+//<m_task_bounty_notice_change_toc:2612>
+//<m_task_bounty_notice_reset_toc:2613>
+//主线任务
+
+//任务信息
+message TaskInfo {
+    required int32 task_id = 1; //当前任务id
+    required int32 num = 2;     //当前数量
+    required int32 status = 3;  //任务状态(0:不可领取,1:可领取,2:已领取,即任务流程结束)
+}
+
+//领取任务奖励
+message m_task_get_award_tos {
+}
+message m_task_get_award_toc {
+    required int32 task_id = 1; //领取的任务id
+    enum ENUM {
+        success = 1; //成功
+        unfinish = 2; //未完成
+        fail = 3;// 失败
+    }
+    required ENUM result = 2;
+}
+
+//通知任务变更
+message m_task_notice_task_change_toc {
+    required TaskInfo task_info = 1;
+}
+
+// ########################################################################################################
+//  赏金任务相关
+// ########################################################################################################
+// 查询任务信息
+message m_task_bounty_query_info_tos {
+}
+message m_task_bounty_query_info_toc {
+    required bool accept_state = 1;     // 是否接受过任务
+    repeated TaskInfo tasks = 2;        // 任务数据（如果accept_state值为真，表示已经接受过任务，则只返回已接受的任务数据，否者返回可选择接受的所有任务数据）
+    required int32 reset_times = 3;     // 当天累计重置任务次数
+    required int32 accept_times = 4;    // 当天累计接受任务次数
+}
+
+// 接受赏金任务
+message m_task_bounty_accept_tos{
+    required int32 task_id = 1;         // 任务id
+}
+message m_task_bounty_accept_toc{
+    enum Result {
+        success = 1;            // 成功
+        not_enough_times = 2;   // 次数不足
+        already_exists = 4;     // 已接受过任务
+        fail = 5;               // 失败
+    }
+
+    required int32 task_id = 1;
+    required Result result = 2;
+}
+
+// 领取赏金任务奖励
+message m_task_bounty_get_award_tos {
+}
+message m_task_bounty_get_award_toc {
+    enum Result {
+        success = 1;        // 成功
+        not_exists = 2;     // 未接受任务
+        undone = 3;         // 未完成
+        already_get = 4;    // 已领取
+        fail = 5;           // 失败
+    }
+
+    required int32 task_id = 1;      // 任务id
+    required Result result = 2;
+}
+
+// 刷新赏金任务
+message m_task_bounty_refresh_tos {
+}
+message m_task_bounty_refresh_toc {
+    enum Result {
+        success = 1;            // 成功
+        no_enough_prop = 2;     // 道具不足
+        not_authority = 3;      // 存在未完成的任务
+        interface_cd_time = 4;  // 任务刷新过于频繁
+        fail = 5;               // 失败
+    }
+
+    required Result result = 1;
+}
+
+// 通知任务变更
+message m_task_bounty_notice_change_toc {
+    required TaskInfo task_info = 1;
+}
+
+// 通知任务重置
+message m_task_bounty_notice_reset_toc {
+}
+/*************************************red_packet:[2700, 2800]********************************************/
+//<m_red_packet_notice_player_red_packet_toc:2701>
+//<m_red_packet_get_red_packet_tos:2702>
+//<m_red_packet_get_red_packet_toc:2703>
+//<m_red_packet_notice_player_red_packet_clear_toc:2704>
+// 红包
+//OPEN_DEBUG
+
+
+
+// 红包
+message RedPacketConditionData {
+    required int32 id = 1; // 红包条件id
+    repeated RedPacketData red_packet_data = 2; // 红包
+    repeated string param_list = 3; //参数
+}
+
+// 红包
+message RedPacketData {
+    required int32 red_packet_id = 1; // 红包id
+    required int64 r_id = 2; // 唯一id
+    required int32 clear_time = 3; // 清除时间
+}
+
+// 通知红包
+message m_red_packet_notice_player_red_packet_toc {
+    required RedPacketConditionData red_packet = 1; // 红包
+}
+
+// 领取红包
+message m_red_packet_get_red_packet_tos {
+    required int64 r_id = 1; // 红包唯一id
+}
+message m_red_packet_get_red_packet_toc {
+    enum ENUM {
+        success = 1;              //成功
+        fail = 2;                 //失败
+    }
+    required ENUM result = 1;
+    required int64 r_id = 2; // 红包id
+    repeated Prop prop_list = 3; //道具列表
+}
+
+// 通知红包清除
+message m_red_packet_notice_player_red_packet_clear_toc {
+    repeated int64 r_id_list = 1; // 红包id列表
+}
+
+/*************************************brave_one:[2800, 2900]********************************************/
+//<m_brave_one_get_info_list_tos:2801>
+//<m_brave_one_get_info_list_toc:2802>
+//<m_brave_one_create_tos:2803>
+//<m_brave_one_create_toc:2804>
+//<m_brave_one_enter_tos:2805>
+//<m_brave_one_enter_toc:2806>
+//<m_brave_one_clean_tos:2807>
+//<m_brave_one_clean_toc:2808>
+//<m_brave_one_notice_fight_scene_toc:2809>
+//<m_brave_one_wait_scene_toc:2810>
+//<m_brave_one_ready_start_toc:2811>
+//<m_brave_one_fight_player_toc:2812>
+//<m_brave_one_win_player_toc:2813>
+// 勇敢者（1v1）
+//OPEN_DEBUG
+
+
+
+
+// 勇敢者数据
+message braveOneData {
+    required int32 id = 1;      // 房间id
+    required int32 realId = 2;  // 房间实际id
+    required int32 pos_id = 3;  // 位置（1:先手，2:后手）
+    required ModelHeadFigure modelHeadFigure = 4;
+    required int32 start_time = 5;  // 开始时间
+}
+
+// 获得当前信息列表
+message m_brave_one_get_info_list_tos {
+    required int32 page = 1; // 房间类型
+}
+message m_brave_one_get_info_list_toc {
+    required int32 page = 1; // 房间类型
+    repeated braveOneData braveOneDataList = 2; // 勇敢者数据列表
+}
+
+// 创建勇敢者房间数据
+message m_brave_one_create_tos {
+    required int32 id = 1;      // 房间id
+    required int32 pos_id = 2;  // 位置（1:先手，2:后手）
+}
+message m_brave_one_create_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有权利创建
+        already_have = 5;       // 已经创建
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 id = 1;      // 房间id
+    optional braveOneData braveOneData = 3; // 勇敢者数据列表
+}
+
+// 进入房间
+message m_brave_one_enter_tos {
+    required int32 realId = 2;  // 房间实际id
+}
+message m_brave_one_enter_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有达到条件进入
+        none = 4;               // 没有房间
+        already_have = 5;       // 不能进入自己的/已经有对手/自己有房间
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 realId = 2;  // 房间实际id
+    optional braveOneData braveOneData = 3; // 创建者勇敢者数据
+}
+// 取消房间
+message m_brave_one_clean_tos {
+}
+message m_brave_one_clean_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        none = 4;   // 没有房间
+        already_have = 5;       // 已经有对手
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+}
+
+// 通知对手准备进入场景
+message m_brave_one_notice_fight_scene_toc {
+    required braveOneData braveOneData = 2; // 勇敢者数据列表
+}
+
+// 等待其他玩家进入最后时间
+message m_brave_one_wait_scene_toc {
+    required int32 wait_end_time = 2;  // 等待最后时间
+}
+// 准备开始
+message m_brave_one_ready_start_toc {
+    required int32 start_time = 2;  // 开始时间
+}
+
+// 当前可以打的人
+message m_brave_one_fight_player_toc {
+    required int32 player_id = 1;       // 玩家id
+    required int32 end_fight_time = 2;  // 最后攻击时间
+}
+// 赢的玩家数据
+message m_brave_one_win_player_toc {
+    required int32 id = 1;      // 房间id
+    required ModelHeadFigure modelHeadFigure = 4;
+}
+
+
+
+
+
+
+/*************************************step_by_step_sy:[2900, 3000]********************************************/
+//<m_step_by_step_sy_enter_tos:2901>
+//<m_step_by_step_sy_enter_toc:2902>
+//<m_step_by_step_sy_fight_tos:2903>
+//<m_step_by_step_sy_fight_toc:2904>
+//<m_step_by_step_sy_get_award_tos:2905>
+//<m_step_by_step_sy_get_award_toc:2906>
+//<m_step_by_step_sy_fight_result_toc:2907>
+// 步步紧逼
+//OPEN_DEBUG
+
+// 进入房间
+message m_step_by_step_sy_enter_tos {
+    required int32 id = 1;      // 房间id
+}
+message m_step_by_step_sy_enter_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有达到条件进入
+        already_have = 5;       // 已进入房间
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 id = 1;      // 房间id
+}
+
+// 继续挑战
+message m_step_by_step_sy_fight_tos {
+}
+message m_step_by_step_sy_fight_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有达到条件进入
+        none = 4;               // 没有可挑战了
+        already_have = 5;       // 不能进入自己的
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 loop_num = 2;        // 挑战轮数
+    required int32 end_fight_time = 3;  // 最后攻击时间
+}
+
+// 领取奖励
+message m_step_by_step_sy_get_award_tos {
+}
+message m_step_by_step_sy_get_award_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        none = 4;   // 没有房间
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 loop_num = 2;    // 前轮数(已打过的)
+}
+
+// 当前轮数据
+message m_step_by_step_sy_fight_result_toc {
+    required int32 loop_num = 1;    // 前轮数(已打过的)
+    required int32 is_win = 2;      // 是否赢(1:赢 0:输)
+}
+
+
+
+
+/*************************************turn_table:[3000, 3100]********************************************/
+//<m_turn_table_draw_tos:3001>
+//<m_turn_table_draw_toc:3002>
+//<m_turn_table_get_award_tos:3003>
+//<m_turn_table_get_award_toc:3004>
+//<m_turn_table_notice_reset_toc:3005>
+// 转盘抽奖
+//OPEN_DEBUG
+
+
+
+// 抽奖
+message m_turn_table_draw_tos {
+    required int32 times = 1;               // 抽奖次数
+}
+message m_turn_table_draw_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        function_no_open = 3;               // 功能未开启
+        not_enough_grid = 4;                // 没有空格子
+        no_enough_prop = 5;                 // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 times = 1;               // 抽奖次数
+    repeated int32 id_list = 2;             // 抽到的id列表
+    required int32 value = 3;               // 抽奖进度值
+}
+
+// 领取进度奖励奖励
+message m_turn_table_get_award_tos {
+}
+message m_turn_table_get_award_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        function_no_open = 3;               // 功能未开启
+        not_enough_grid = 4;                // 没有空格子
+        not_authority = 5;                  // 进度值不足
+    }
+    required ENUM result = 99;
+    repeated Prop prop_list = 1;            // 奖励列表
+}
+
+// 通知进度重置
+message m_turn_table_notice_reset_toc {
+}
+/*************************************shi_shi_room:[3100, 3200]********************************************/
+//<m_shi_shi_room_get_room_list_tos:3101>
+//<m_shi_shi_room_get_room_list_toc:3102>
+//<m_shi_shi_room_create_room_tos:3103>
+//<m_shi_shi_room_create_room_toc:3104>
+//<m_shi_shi_room_join_room_tos:3105>
+//<m_shi_shi_room_join_room_toc:3106>
+//<m_shi_shi_room_start_tos:3107>
+//<m_shi_shi_room_start_toc:3108>
+//<m_shi_shi_room_kick_out_player_tos:3109>
+//<m_shi_shi_room_ready_tos:3110>
+//<m_shi_shi_room_ready_toc:3111>
+//<m_shi_shi_room_leave_room_tos:3112>
+//<m_shi_shi_room_notice_leave_room_toc:3113>
+//<m_shi_shi_room_notice_player_join_toc:3114>
+//<m_shi_shi_room_notice_player_leave_toc:3115>
+//<m_shi_shi_room_notice_player_ready_toc:3116>
+//<m_shi_shi_room_notice_player_fight_start_toc:3117>
+//<m_shi_shi_room_notice_room_owner_change_toc:3118>
+//<m_shi_shi_room_notice_player_fight_result_toc:3119>
+//<m_shi_shi_room_notice_shi_shi_value_toc:3120>
+//时时多人BOSS
+
+
+
+
+// 时时房间数据
+message ShiShiRoomData {
+    required int32 room_id = 1;                             //房间id
+    required int32 mission_id = 2;                          //副本id
+    required int32 people_count = 3;                        //房间人数
+    required int32 is_lock = 4;                             //是否上锁
+}
+
+// 时时房间玩家数据
+message ShiShiRoomPlayerData {
+    required int32 pos_id = 1;                              //房间位置id
+    required ModelHeadFigure model_head_figure = 2;         //玩家头像数据
+    required int32 is_ready = 3;                            //是否准备（0：未准备，1：已准备）
+    required int32 is_room_owner = 4;                       //是否是房主
+}
+
+// 时时房间详情数据
+message ShiShiRoomDetailsData {
+    required ShiShiRoomData room_data = 1;                  //房间数据
+    required string invitation_code = 2;                    //邀请码
+    repeated ShiShiRoomPlayerData room_player_data_list = 3;//房间玩家数据列表
+    required int32 is_room_owner = 4;                       //是否是房主
+    required string owner_name = 6;                         //房主名字
+    required int32 owner_level = 7;                         //房主等级
+}
+
+//获取房间列表
+message m_shi_shi_room_get_room_list_tos {
+    required int32 mission_id = 1;                          //副本id(0:All,Other:副本id)
+}
+message m_shi_shi_room_get_room_list_toc {
+    repeated ShiShiRoomData room_data_list = 1;             //房间列表
+    required int32 mission_id = 2;                          //副本id(0:All,Other:副本id)
+}
+
+//创建房间
+message m_shi_shi_room_create_room_tos {
+    required int32 mission_id = 1;                          //副本id
+    required int32 is_lock = 2;                             //是否设置密码
+    required string password = 3;                           //密码
+}
+message m_shi_shi_room_create_room_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        no_condition = 3;           //条件不满足
+        already_join_room = 4;      //已经加入一个房间
+        none = 5;                   //密码不能为空
+    }
+    required ENUM result = 1;                               //结果
+    optional ShiShiRoomDetailsData room_details_data = 2;   //房间详细数据
+}
+
+//加入房间
+message m_shi_shi_room_join_room_tos {
+    required int32 room_id = 1;                             //房间id
+    required string password = 2;                           //密码(最多6个字符)
+    required string invitation_code = 3;                    //邀请码
+}
+message m_shi_shi_room_join_room_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+        not_authority = 4;          //没有权力（达到人数上限）
+        no_condition = 5;           //条件不足
+        already_join_room = 6;      //已经加入一个房间
+        error_password = 7;         //密码错误
+        none = 8;                   //房间不存在
+        time_limit = 9;             //被房主T出房间,十秒内不能进入
+    }
+    required ENUM result = 1;                               //结果
+    optional ShiShiRoomDetailsData room_details_data = 2;   //房间详细数据
+}
+
+//开始
+message m_shi_shi_room_start_tos {
+}
+message m_shi_shi_room_start_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_authority = 3;          //没有权力（不是房主）
+        not_enough_number = 4;      //人数不足
+        already_start = 5;          //已经开始
+        no_condition = 6;           //有人未准备
+    }
+    required ENUM result = 1;                               //结果
+}
+
+//房主踢出玩家
+message m_shi_shi_room_kick_out_player_tos {
+    required int32 pos_id = 1;                              //位置id
+}
+
+//准备
+message m_shi_shi_room_ready_tos {
+    required int32 is_ready = 1;                            //是否准备(0:取消,1:准备)
+}
+message m_shi_shi_room_ready_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+    }
+    required ENUM result = 1;                               //结果
+    required int32 is_ready = 2;                            //是否准备(0:取消,1:准备)
+}
+
+//离开房间
+message m_shi_shi_room_leave_room_tos {
+}
+
+//通知玩家自己离开房间
+message m_shi_shi_room_notice_leave_room_toc {
+    required int32 type = 1;                                //类型(0:灵力值不足提醒充值;1:被房主T出;2:房主关闭房间;3:正常退出房间)
+}
+
+//通知玩家加入房间
+message m_shi_shi_room_notice_player_join_toc {
+    required ShiShiRoomPlayerData room_player_data = 1;     //玩家数据
+}
+
+//通知玩家离开房间
+message m_shi_shi_room_notice_player_leave_toc {
+    required int32 pos_id = 1;                              //位置id
+}
+
+//通知玩家准备
+message m_shi_shi_room_notice_player_ready_toc {
+    required int32 pos_id = 1;                              //位置id
+    required int32 is_ready = 2;                            //是否准备（0：未准备，1：已准备）
+}
+
+//通知玩家战斗开始
+message m_shi_shi_room_notice_player_fight_start_toc {
+}
+
+//通知房间房主改变
+message m_shi_shi_room_notice_room_owner_change_toc {
+    required int32 pos_id = 1;                              //位置id
+}
+
+//通知玩家战斗结束
+message m_shi_shi_room_notice_player_fight_result_toc {
+    repeated Prop prop_list = 1;                            //奖励列表
+    optional ShiShiRoomDetailsData room_details_data = 2;   //房间详细数据
+    optional string win_name = 3;                           //胜利者的名字
+    optional int32 total_cost_value = 4;                    //总消耗值
+    optional int32 win_player_id = 5;                       //胜利玩家id
+}
+
+// 时时副本总积分值(定时)
+message m_shi_shi_room_notice_shi_shi_value_toc {
+    required int64 value = 1;      // 当前总积分
+}
+/*************************************hero:[3200, 3300]********************************************/
+//<m_hero_charge_hero_parts_tos:3201>
+//<m_hero_charge_hero_parts_toc:3202>
+//<m_hero_unlock_hero_tos:3203>
+//<m_hero_unlock_hero_toc:3204>
+//<m_hero_hero_up_star_tos:3205>
+//<m_hero_hero_up_star_toc:3206>
+//<m_hero_notice_hero_unlock_parts_toc:3207>
+//<m_hero_notice_unlock_hero_toc:3208>
+//英雄
+//OPEN_DEBUG
+
+//英雄
+message Hero {
+    required int32 id = 1;              // 英雄id
+    required int32 star = 2;            // 英雄星级
+}
+
+//玩家英雄
+message PlayerHero {
+    required int32 id = 1;              // 英雄id
+    required int32 arms = 2;            // 穿戴中的英雄武器
+    required int32 ornaments = 3;       // 穿戴中的英雄饰品
+    repeated int32 list = 4;            // 拥有的英雄部件列表
+    repeated Hero hero_list = 5;        // 英雄列表
+}
+
+//改变英雄以及装饰
+message m_hero_charge_hero_parts_tos {
+    required int32 id = 1;              // 英雄id
+    required int32 arms = 2;            // 穿戴中的英雄武器
+    required int32 ornaments = 3;       // 穿戴中的英雄饰品
+}
+message m_hero_charge_hero_parts_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_condition = 3;               // 条件不足
+    }
+    required ENUM result = 100;
+    required int32 id = 1;              // 英雄id
+    required int32 arms = 2;            // 穿戴中的英雄武器
+    required int32 ornaments = 3;       // 穿戴中的英雄饰品
+}
+
+//解锁英雄
+message m_hero_unlock_hero_tos {
+    required int32 id = 1;              // 英雄id
+}
+message m_hero_unlock_hero_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_enough_prop = 3;             // 道具不足
+        already_have = 4;               // 已解锁
+    }
+    required ENUM result = 100;
+    required int32 id = 1;              // 英雄id
+}
+
+//英雄升星
+message m_hero_hero_up_star_tos {
+    required int32 id = 1;              // 英雄id
+}
+message m_hero_hero_up_star_toc {
+    enum ENUM {
+        success = 1;                    // 成功
+        fail = 2;                       // 失败
+        no_enough_prop = 3;             // 道具不足
+        not_authority = 4;              // 已满星
+        none = 5;                       // 没有这个英雄
+    }
+    required ENUM result = 100;
+    required int32 id = 1;              // 英雄id
+    required int32 star = 2;            // 英雄星级
+}
+
+//通知解锁英雄部件
+message m_hero_notice_hero_unlock_parts_toc {
+    required int32 parts_id = 1;        // 解锁 部件id
+}
+
+//通知解锁英雄
+message m_hero_notice_unlock_hero_toc {
+    required int32 id = 1;              // 英雄id
+    required int32 star = 2;            // 英雄星级
+    repeated int32 parts_id = 3;        // 部件id列表
+}
+
+/*************************************card:[3300, 3400]********************************************/
+//<m_card_get_award_tos:3301>
+//<m_card_get_award_toc:3302>
+//<m_card_notice_card_update_toc:3303>
+//卡牌
+//OPEN_DEBUG
+
+
+
+//卡牌图鉴
+message CardBook {
+    required int32 card_book_id = 1;        // 卡牌图鉴id
+    required int32 state = 2;               // 状态(0:未领取或可领取,2:已领取)
+    repeated CardTitle card_title_list = 3; // 卡牌标题列表
+}
+
+//卡牌标题
+message CardTitle {
+    required int32 card_title_id = 1;       // 卡牌标题id
+    required int32 state = 2;               // 状态(0:未领取或可领取,2:已领取)
+    repeated Card card_list = 3;            // 卡牌列表
+}
+
+//卡牌
+message Card {
+    required int32 card_id = 1;             // 卡牌id
+    required int32 state = 2;               // 状态(0:未领取或可领取,2:已领取)
+    required int32 num = 3;                 // 数量
+}
+
+//获得奖励
+message m_card_get_award_tos {
+    required int32 type = 1;                // 类型(1:卡牌图鉴,2:卡牌标题,3:卡牌)
+    required int32 id = 2;                  // id
+}
+message m_card_get_award_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        no_condition = 3;                   // 条件不足
+    }
+    required ENUM result = 100;
+    required int32 type = 1;                // 类型(1:卡牌图鉴,2:卡牌标题,3:卡牌)
+    required int32 id = 2;                  // id
+    repeated Prop prop_list = 3;            // 道具列表
+}
+
+//通知卡牌更新
+message m_card_notice_card_update_toc {
+    required int32 card_id = 1;             // 卡牌id
+    required int32 num = 2;                 // 数量
+}
+
+/*************************************seize_treasure:[3400, 3500]********************************************/
+//<m_seize_treasure_currency_seize_treasure_type_toc:3401>
+//<m_seize_treasure_get_treasure_tos:3402>
+//<m_seize_treasure_get_treasure_toc:3403>
+//<m_seize_treasure_get_extra_award_tos:3404>
+//<m_seize_treasure_get_extra_award_toc:3405>
+//<m_seize_treasure_get_extra_award_status_tos:3406>
+//<m_seize_treasure_get_extra_award_status_toc:3407>
+//卡牌
+//OPEN_DEBUG
+
+
+
+message m_seize_treasure_currency_seize_treasure_type_toc {
+  required int32 type_id = 1; // 今天夺宝类型编号
+}
+
+
+message m_seize_treasure_get_treasure_tos {
+  required int32 type = 1;      // 类型：1为一抽，2为5抽
+}
+message m_seize_treasure_get_treasure_toc {
+  enum ENUM {
+    success = 1;                        // 成功
+    no_enough_prop = 2;                   // 寻宝券不足
+    invalid_platform = 3;             // 无效平台 平台不支持寻宝
+    invalid_seize_treasure_data = 4;  // 无效的夺宝数据
+    unknown = 5;                       // 未知结果
+  }
+  required ENUM result = 1;
+  repeated Prop prop_list = 2;            // 道具列表get_seize_treasure_id_by_award_list
+  optional int32 times = 3;               // 夺宝次数 成功时才返回
+  optional int32 value = 4;               // 幸运值 成功时才返回
+  optional string idx = 5;                // 获得奖励的下标
+}
+
+// 获取夺宝转盘额外奖励
+message m_seize_treasure_get_extra_award_tos {
+  required int32 idx = 1;             // treasure_hunt_type.csv的achievement_list的下标，从0开始
+}
+message m_seize_treasure_get_extra_award_toc {
+  enum ENUM {
+    success = 1;                        // 成功
+    no_enough_seize_times = 2;        // 次数不足以领取额外奖励
+    no_achievement_list = 3;             // 没有可领取的额外奖励列表
+    no_achievement_wait_4_get = 4;  // 没有等待领取的奖励
+    unknown = 5;                       // 未知结果
+  }
+  required ENUM result = 1;
+  repeated Prop prop_list = 2;            // 道具列表
+  required int32 times = 3;               // 夺宝次数 成功时才返回
+}
+
+// 获取夺宝转盘额外奖励
+message m_seize_treasure_get_extra_award_status_tos {
+
+}
+// 夺宝转盘额外奖励
+message m_seize_treasure_get_extra_award_status_toc {
+  enum ENUM {
+    success = 1;                        // 成功
+    failure = 2;                        // 失败
+    unknown = 3;                        // 未知结果
+  }
+  required ENUM result = 1;
+  optional string status = 2;             // 一个字符串，用半角逗号间隔，可选值为0：无法领取；1：已领取；2：可领取未领取
+}
+/*************************************card_summon:[3500, 3600]********************************************/
+//<m_card_summon_do_summon_tos:3501>
+//<m_card_summon_do_summon_toc:3502>
+// 图鉴召唤
+// OPEN_DEBUG
+
+
+
+// 图鉴召唤请求
+message m_card_summon_do_summon_tos {
+  required int32 type = 1;      // 类型：1为一抽，2为十连抽
+}
+message m_card_summon_do_summon_toc {
+  enum ENUM {
+    success = 1;                      // 成功
+    not_authority = 2;                // 无效召唤方式
+    no_enough_prop = 3;               // 道具不足
+    unknown = 4;                      // 未知结果
+  }
+  required ENUM result = 1;
+  repeated Prop prop_list = 2;        // 道具列表
+}
+/*************************************shen_long:[3600, 3700]********************************************/
+//<m_shen_long_draw_tos:3601>
+//<m_shen_long_draw_toc:3602>
+//<m_shen_long_notice_scene_shen_long_state_toc:3603>
+// 神龙
+// OPEN_DEBUG
+
+// 抽奖
+message m_shen_long_draw_tos {
+}
+message m_shen_long_draw_toc {
+  enum ENUM {
+    success = 1;                                  //成功
+    fail = 2;                                     //失败
+    not_authority = 3;                            //条件不足
+    no_enough_prop = 4;                           //道具不足
+  }
+  required ENUM result = 1;
+  required int32 type = 2;                        //类型
+  required int32 id = 3;                          //id
+}
+
+// 通知开始场景神龙活动状态
+message m_shen_long_notice_scene_shen_long_state_toc {
+  required int32 state = 1;                       //状态(0:关闭;1:开启)
+  optional int32 type = 2;                        //类型(读表)  开启才有
+  optional int32 close_time = 3;                  //开启状态才有的参数，关闭时间
+  optional string player_name = 4;                //获得神龙状态的玩家名字(关闭时有机率有)
+  optional int32 player_id = 5;                   //获得神龙状态的玩家id(关闭时有机率有)
+}
+
+/*************************************skill:[3700, 3800]********************************************/
+//<m_skill_use_skill_tos:3701>
+//<m_skill_use_skill_toc:3702>
+//<m_skill_notice_active_skill_change_toc:3703>
+// 技能
+// OPEN_DEBUG
+
+//主动技能
+message ActiveSkill {
+    required int32 active_skill_id = 1;             // 主动技能id{类型(1-闪现技能,2-单体技能)}
+    required int32 level = 2;                       // 等级
+    required int32 times = 3;                       // 充能次数
+    required int32 next_recover_time = 4;            // 下一个技能回复时间戳
+    required int32 can_use_time = 5;                // 可以使用技能时间
+}
+
+// 使用技能
+message m_skill_use_skill_tos {
+    required int32 active_skill_id = 1;             // 主动技能id{类型(1-闪现技能,2-单体技能)}
+    optional int32 dir = 2;                         // 0 - 360(施法方向)
+    repeated int32 params = 3;                      // 参数列表，对active_skill_id字段的补充(1-闪现技能[],2-单体技能[攻击目标类型, 攻击目标者id, 消耗灵力值])
+}
+message m_skill_use_skill_toc {
+    enum ENUM {
+        success = 1;                                // 成功
+        fail = 2;                                   // 失败
+        cd_time = 3;                                // cd时间
+        not_authority = 4;                          // 不可施法
+    }
+    required ENUM result = 1;
+    required int32 active_skill_id = 2;             // 主动技能id(类型(1:闪现))
+    optional int32 dir = 3;                         // 0 - 360(施法方向)
+    required ActiveSkill active_skill = 4;          // 主动技能
+}
+
+// 通知主动技能改变
+message m_skill_notice_active_skill_change_toc {
+    repeated ActiveSkill active_skill_list = 1;     // 主动技能
+}
+
+/*************************************tongxingzheng:[3800, 3900]********************************************/
+//<m_tongxingzheng_task_info_notice_toc:3801>
+//<m_tongxingzheng_task_daily_update_notice_toc:3802>
+//<m_tongxingzheng_task_month_update_notice_toc:3803>
+//<m_tongxingzheng_task_daily_reward_collect_tos:3804>
+//<m_tongxingzheng_task_daily_reward_collect_toc:3805>
+//<m_tongxingzheng_task_month_reward_collect_tos:3806>
+//<m_tongxingzheng_task_month_reward_collect_toc:3807>
+//<m_tongxingzheng_purchase_unlock_tos:3808>
+//<m_tongxingzheng_purchase_unlock_toc:3809>
+//<m_tongxingzheng_reward_info_notice_toc:3810>
+//<m_tongxingzheng_purchase_level_tos:3811>
+//<m_tongxingzheng_purchase_level_toc:3812>
+//<m_tongxingzheng_collect_level_reward_tos:3813>
+//<m_tongxingzheng_collect_level_reward_toc:3814>
+// 通行证
+// OPEN_DEBUG
+
+
+
+
+//###################################
+// 通行证任务
+//###################################
+// 通行证任务信息推送（登录/跨天时）
+message m_tongxingzheng_task_info_notice_toc{
+    optional int32 day = 1;                       // 月度任务当前解锁天数
+    repeated TaskInfo daily_tasks = 2;            // 每日任务列表
+    repeated TaskInfo month_tasks = 3;            // 月度任务列表
+    required int32 time = 4;                      // 月度任务结束时间
+}
+
+// 通知每日任务更新
+message m_tongxingzheng_task_daily_update_notice_toc{
+     repeated TaskInfo tasks = 1;
+}
+
+// 通知月度任务更新
+message m_tongxingzheng_task_month_update_notice_toc{
+     repeated TaskInfo tasks = 1;
+}
+
+// 领取每日任务奖励
+message m_tongxingzheng_task_daily_reward_collect_tos{
+    required int32 id = 1;                 // 任务id
+}
+message m_tongxingzheng_task_daily_reward_collect_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_authority = 2;                // 任务不存在
+        no_finish = 3;                    // 任务未完成
+        already_get = 4;                  // 已领取
+        unknown = 5;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    repeated Prop prop_list = 2;            // 奖励列表
+    required int32 id = 3;                  // 任务id
+}
+
+// 领取月度任务奖励
+message m_tongxingzheng_task_month_reward_collect_tos{
+    required int32 id = 1;                 // 任务id
+}
+message m_tongxingzheng_task_month_reward_collect_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_authority = 2;                // 任务不存在
+        no_finish = 3;                    // 任务未完成
+        already_get = 4;                  // 已领取
+        unknown = 5;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    repeated Prop prop_list = 2;            // 奖励列表
+    required int32 id = 3;                  // 任务id
+}
+
+//##################################
+// 通行证等级奖励
+//##################################
+// 付费解锁钻石通行证
+message m_tongxingzheng_purchase_unlock_tos{
+    required int32 type = 1;                // 购买类型 (1-普通购买；2-高级购买)
+}
+message m_tongxingzheng_purchase_unlock_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        no_enough_prop = 2;               // 钻石不足
+        already_buy = 3;                  // 已购买
+        unknown = 4;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    required int32 type = 2;                // 购买类型
+}
+
+// 通行证等级奖励信息推送（登录/升级/任务领奖/购买高级通行证时）
+message m_tongxingzheng_reward_info_notice_toc{
+    optional int64 lv = 1;                         // 通行证当前等级
+    optional int64 exp = 2;                       // 通行证经验
+    repeated int32 silver_rewards = 3;            // 白银等级奖励已领取列表
+    repeated int32 diamond_rewards = 4;           // 钻石等级奖励已领取列表
+    required int32 box_num = 5;                   // 额外大型宝箱个数
+    required bool is_buy = 6;                     // 是否购买钻石通行证
+    required int32 txz_id = 7;                    // 通行证id
+}
+
+// 购买等级
+message m_tongxingzheng_purchase_level_tos{
+}
+message m_tongxingzheng_purchase_level_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        no_enough_prop = 2;               // 钻石不足
+        not_authority = 3;                // 满级无法继续购买
+        unknown = 4;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+}
+
+// 领取通行证等级奖励
+message m_tongxingzheng_collect_level_reward_tos{
+    required int32 type = 1;                // 领取奖励类型 (1-白银等级奖励；2-钻石等级奖励；3-大型宝箱奖励)
+    optional int32 lv = 2 [default=0];      // 等级
+}
+message m_tongxingzheng_collect_level_reward_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_authority = 2;                // 不满足领奖条件
+        fail = 3;                         // 未获得通行证
+        not_exists = 4;                   // 奖励不存在
+        already_get = 5;                  // 已领取
+        unknown = 6;                      // 未知错误
+    }
+    required ENUM result = 1;
+    repeated Prop prop_list = 2;            // 奖励列表
+    required int32 type = 3;                // 领取奖励类型
+    required int32 lv = 4;                  // 等级
+}
+
+
+
+/*************************************jiangjinchi:[3900, 4000]********************************************/
+//<m_jiangjinchi_info_notice_toc:3901>
+//<m_jiangjinchi_get_info_tos:3902>
+//<m_jiangjinchi_get_info_toc:3903>
+//<m_jiangjinchi_do_draw_tos:3904>
+//<m_jiangjinchi_do_draw_toc:3905>
+//<m_jiangjinchi_reward_double_tos:3906>
+//<m_jiangjinchi_reward_double_toc:3907>
+//<m_jiangjinchi_result_tos:3908>
+//<m_jiangjinchi_result_toc:3909>
+// 奖金池
+// OPEN_DEBUG
+
+
+
+// 奖金池信息推送 【进场景 | 攻击怪】
+message m_jiangjinchi_info_notice_toc{
+    required int32 state = 1;           // 功能状态 （-1:功能已关闭 0:抽奖条件未达成 1:抽奖阶段 2:翻倍阶段）
+    required int32 atk_times = 2;       // 普攻次数
+    required int32 scene_id = 3;        // 场景id
+}
+
+// 查询奖池信息
+message m_jiangjinchi_get_info_tos{
+}
+message m_jiangjinchi_get_info_toc{
+    required int32 pool = 1;              // 当前奖金池数量
+}
+
+// 抽奖
+message m_jiangjinchi_do_draw_tos{
+}
+message m_jiangjinchi_do_draw_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_open = 2;                     // 功能已关闭
+        error_state = 3;                  // 不在抽奖阶段
+        already_draw = 4;                 // 已经翻过牌
+        system_error = 5;                 // 系统内部出错
+        unknown = 6;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    required int32 draw_num = 2;           // 抽中数量
+    repeated int32 missed_nums = 3;       // 未抽中数量列表
+    required int32 double_num = 4;         // 下一次翻倍可获得数量
+    required bool is_can_double = 5;       // 是否可以翻倍
+    required int32 doubled_times = 6;      // 翻倍次数
+}
+
+// 奖励翻倍
+message m_jiangjinchi_reward_double_tos{
+}
+message m_jiangjinchi_reward_double_toc{
+    enum ENUM {
+        success = 1;                      // 翻倍成功
+        fail = 2;                         // 翻倍失败
+        not_open = 3;                     // 功能已关闭
+        not_chance = 4;                   // 没有机会翻牌
+        error_state = 5;                  // 不在翻倍阶段
+        unknown = 6;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    required int32 draw_num = 2;          // 翻倍后的奖励数量
+    required int32 extra_num = 3;         // 额外奖励数量
+    required int32 double_num = 4;        // 下一次翻倍可获得数量
+    required bool is_can_double = 5;      // 是否可以继续翻倍
+    required int32 doubled_times = 6;     // 翻倍次数
+}
+
+// 结算
+message m_jiangjinchi_result_tos{
+}
+message m_jiangjinchi_result_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_open = 2;                     // 功能已关闭
+        error_state = 3;                  // 未翻牌
+    }
+
+    required ENUM result = 1;
+    required int32 draw_num = 2;          // 抽奖奖励数量
+    required int32 extra_num = 3;         // 额外奖励数量
+}
+/*************************************leichong:[4000, 4100]********************************************/
+//<m_leichong_info_query_tos:4001>
+//<m_leichong_info_query_toc:4002>
+//<m_leichong_get_reward_tos:4003>
+//<m_leichong_get_reward_toc:4004>
+// 累充奖励
+// OPEN_DEBUG
+
+
+
+// 获取累充奖励列表
+message m_leichong_info_query_tos{
+}
+message m_leichong_info_query_toc{
+    message Leichong {
+        required int32 id = 1;              // 编号
+        required uint32 done = 2;           // 已完成充值金额
+        required uint32 target = 3;         // 目标充值金额
+        required int32 state = 4;           // 奖励状态 【0-未完成 | 1-可领取 | 2-已领取】
+        repeated Prop award_list = 5;       // 奖励列表
+    }
+
+    required int32 activity_id = 1;          // 活动id 【-1表示活动关闭 | 其他值为活动id】
+    repeated Leichong list = 2;              // 累充列表
+}
+
+// 领取累充奖励
+message m_leichong_get_reward_tos{
+    required int32 activity_id = 1;     // 活动id
+    required int32 id = 2;              // 任务编号
+}
+message m_leichong_get_reward_toc{
+   enum ENUM {
+        success = 1;                      // 成功
+        already_get = 2;                  // 已领取
+        undone = 3;                       // 未完成
+    }
+
+    required int32 activity_id = 1;         // 活动id
+    required int32 id = 2;                  // 任务编号
+    repeated Prop prop_list = 3;            // 奖励列表
+    required ENUM result = 4;               // 结果
+}
+
+
+
+/*************************************special_prop:[4100, 4200]********************************************/
+//<m_special_prop_notice_init_data_toc:4101>
+//<m_special_prop_notice_update_special_prop_toc:4102>
+//<m_special_prop_special_prop_merge_tos:4103>
+//<m_special_prop_special_prop_merge_toc:4104>
+//<m_special_prop_sell_special_prop_tos:4105>
+//<m_special_prop_sell_special_prop_toc:4106>
+// 特殊道具(时空胶囊)
+//OPEN_DEBUG
+
+// 特殊道具(时空胶囊)
+message SpecialProp {
+    required int32 prop_id = 1;                 // 道具id
+    required uint32 prop_obj_id = 2;            // 道具唯一id
+    required uint64 num = 3;                    // 道具数量
+    optional uint32 expire_time = 4;            // 过期时间戳
+}
+
+// 通知特殊道具(时空胶囊)初始化数据
+message m_special_prop_notice_init_data_toc {
+    repeated SpecialProp prop_list = 1;         // 道具列表
+}
+
+// 通知特殊道具列表更新
+message m_special_prop_notice_update_special_prop_toc {
+    repeated SpecialProp prop_list = 1;         // 道具列表
+    required int32 log_type = 2;                // 日志类型
+}
+
+// 时空转换
+message m_special_prop_special_prop_merge_tos {
+    required int32 prop_obj_id = 1;             // 道具唯一id
+}
+message m_special_prop_special_prop_merge_toc {
+    enum ENUM {
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+        no_enough_prop = 3;                     // 材料不够
+        not_enough_grid = 4;                    // 格子不够
+        not_authority = 5;                      // 未在合成时间内
+    }
+    required int32 prop_id = 1;                 // 道具id
+    required ENUM result = 99;                  // 结果
+}
+
+// 出售
+message m_special_prop_sell_special_prop_tos {
+    required int32 prop_obj_id = 1;             // 道具唯一id
+}
+message m_special_prop_sell_special_prop_toc {
+    enum ENUM {
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+    }
+    required int32 prop_obj_id = 1;             // 道具唯一id
+    required ENUM result = 99;
+}
+/*************************************scene_event:[4200, 4300]********************************************/
+//<m_scene_event_do_laba_tos:4201>
+//<m_scene_event_do_laba_toc:4202>
+//<m_scene_event_do_turntable_tos:4203>
+//<m_scene_event_do_turntable_toc:4204>
+//<m_scene_event_do_money_three_tos:4205>
+//<m_scene_event_do_money_three_toc:4206>
+//<m_scene_event_notice_money_three_result_toc:4207>
+//<m_scene_event_notice_task_toc:4208>
+//<m_scene_event_query_balls_data_tos:4209>
+//<m_scene_event_query_balls_data_toc:4210>
+//<m_scene_event_notice_drop_ball_toc:4211>
+//<m_scene_event_notice_balls_result_toc:4212>
+// 场景事件
+// OPEN_DEBUG
+
+
+
+
+// 拉霸请求
+message m_scene_event_do_laba_tos{
+}
+message m_scene_event_do_laba_toc{
+    enum Result{
+        success = 1;                      // 成功
+        not_open = 2;                     // 事件未开始或已经结束
+        failure = 3;                      // 失败
+        no_enough_prop = 4;               // 道具数量不足
+    }
+
+    required int32 id = 2;                  // 结果Id
+    repeated Prop prop_list = 3;            // 奖励列表
+    required Result result = 4;
+}
+
+// 转盘请求
+message m_scene_event_do_turntable_tos{
+}
+message m_scene_event_do_turntable_toc{
+    enum Result{
+        success = 1;                      // 成功
+        not_open = 2;                     // 事件未开始或已经结束
+        failure = 3;                      // 失败
+        no_enough_prop = 4;               // 道具数量不足
+    }
+
+    required int32 id = 2;                  // 结果Id
+    repeated Prop prop_list = 3;            // 奖励列表
+    required Result result = 4;
+}
+
+// 请求摇钱树
+message m_scene_event_do_money_three_tos{
+}
+message m_scene_event_do_money_three_toc{
+    enum Result{
+        success = 1;                      // 成功
+        not_open = 2;                     // 事件未开始或已经结束
+        failure = 3;                      // 失败
+        no_enough_prop = 4;               // 道具数量不足
+    }
+
+    required int32 id = 2;                  // 结果Id
+    repeated Prop prop_list = 3;            // 奖励列表
+    required Result result = 4;
+}
+
+// 摇钱树结算通知
+message m_scene_event_notice_money_three_result_toc{
+    message ResultInfo{
+        required PlayerBaseInfo player_info = 1;        // 玩家信息
+        repeated Prop prop_list = 2;                    // 奖励列表
+    }
+
+    repeated ResultInfo results = 1;           // 结算清单
+}
+
+// 通知任务信息
+message m_scene_event_notice_task_toc{
+    required int32 num = 1;
+}
+
+// 查询彩球数据
+message m_scene_event_query_balls_data_tos{
+}
+message m_scene_event_query_balls_data_toc{
+    repeated int32 balls = 1;               // 玩家已获得的数字彩球列表
+}
+
+// 彩球掉落通知 undo
+message m_scene_event_notice_drop_ball_toc{
+    required int32 number = 1;              // 掉落彩球编号
+    required int32 own_player_id = 2;       // 彩球归属玩家id
+    required int32 x = 3;
+    required int32 y = 4;
+}
+
+// 彩球结算通知
+message m_scene_event_notice_balls_result_toc{
+    message ResultInfo{
+        required PlayerBaseInfo player_info = 1;        // 玩家信息
+        repeated Prop prop_list = 2;                    // 奖励列表
+    }
+
+    repeated ResultInfo results = 1;           // 中奖信息
+    required int32 luck = 2;                   // 幸运球数字
+}
+/*************************************match_scene:[4300, 4400]********************************************/
+//<m_match_scene_get_info_tos:4301>
+//<m_match_scene_get_info_toc:4302>
+//<m_match_scene_match_tos:4303>
+//<m_match_scene_match_toc:4304>
+//<m_match_scene_cancel_match_tos:4305>
+//<m_match_scene_cancel_match_toc:4306>
+//<m_match_scene_notice_match_num_change_toc:4307>
+//<m_match_scene_notice_match_fail_toc:4308>
+//<m_match_scene_notice_rank_toc:4309>
+//<m_match_scene_notice_time_toc:4310>
+//<m_match_scene_notice_result_toc:4311>
+// 匹配场
+// OPEN_DEBUG
+
+
+
+
+// 获得信息
+message m_match_scene_get_info_tos{
+}
+message m_match_scene_get_info_toc{
+    message Info{
+        required int32 id = 1;                  // 匹配场id
+        required int32 award = 2;               // 累计奖励数
+        optional string name = 3;               // 玩家名字
+        optional int32 score = 4;               // 得分
+    }
+    repeated Info info_list = 1;                // 信息列表
+}
+
+// ------------------------------------match start-------------------------------------------
+// 匹配
+message m_match_scene_match_tos{
+    required int32 id = 1;                      // 匹配场id
+}
+message m_match_scene_match_toc{
+    enum Result{
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+        not_authority = 3;                      // 不满足进场景条件
+        no_enough_prop = 4;                     // 道具数量不足
+    }
+    required Result result = 1;                 // 结果Id
+    optional int32 id = 2;                      // 匹配场id
+    optional int32 num = 3;                     // 当前人数
+}
+
+// 取消匹配
+message m_match_scene_cancel_match_tos{
+}
+message m_match_scene_cancel_match_toc{
+    enum Result{
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+    }
+    required Result result = 1;                 // 结果
+}
+
+// 通知匹配人数变更
+message m_match_scene_notice_match_num_change_toc{
+    required int32 id = 1;                      // 匹配场id
+    required int32 num = 2;                     // 当前人数
+}
+
+// 通知超时匹配失败
+message m_match_scene_notice_match_fail_toc{
+    required int32 id = 1;                      // 匹配场id
+}
+
+// ------------------------------------match end-------------------------------------------
+
+// ------------------------------------fight start-------------------------------------------
+
+// 匹配场排名
+message MatchSceneRank{
+    required int32 rank = 1;                    // 排名
+    required int32 score = 2;                   // 积分
+    required int32 zi_dan = 3;                  // 子弹
+    required ModelHeadFigure model_head_figure = 4;// 模型头像数据
+}
+
+// 通知排行榜
+message m_match_scene_notice_rank_toc{
+    repeated MatchSceneRank rank_list = 1;      // 通知结束时间
+}
+
+// 通知时间
+message m_match_scene_notice_time_toc{
+    required int32 start_time = 1;              // 开始时间
+    required int32 end_time = 2;                // 结束时间
+}
+
+// 通知结果
+message m_match_scene_notice_result_toc{
+    message Result{
+        required int32 rank = 1;                // 排名
+        repeated Prop prop_list = 2;            // 奖励道具列表
+        required ModelHeadFigure model_head_figure = 3;// 模型头像数据
+    }
+    repeated Result result_list = 1;    // 排行列表
+}
+
+// ------------------------------------fight end-------------------------------------------
+
+/*************************************first_charge:[4400, 4500]********************************************/
+//<m_first_charge_init_data_first_recharge_toc:4401>
+//<m_first_charge_notice_data_update_toc:4402>
+//<m_first_charge_get_award_tos:4403>
+//<m_first_charge_get_award_toc:4404>
+// 匹配场
+// OPEN_DEBUG
+
+// 首充
+message FirstCharge {
+    required int32 type = 1;                    // 档位(1 or 2)
+    required int32 is_buy = 2;                  // 是否已经购买
+    repeated FirstChargeData list = 3;          // 列表
+}
+message FirstChargeData {
+    required int32 day = 1;                     // 天数
+    required int32 state = 3;                   // 状态(0:不可领取,1:可领取,2:已领取)
+}
+
+// 初始化
+message m_first_charge_init_data_first_recharge_toc{
+    repeated FirstCharge first_charge_list = 1; // 匹配场id
+}
+
+// 通知数据更新
+message m_first_charge_notice_data_update_toc{
+    required FirstCharge first_charge = 1;
+}
+
+// 领取奖励
+message m_first_charge_get_award_tos {
+    required int32 type = 1;                    // 档位(1 or 2)
+    required int32 day = 2;                     // 天数
+}
+message m_first_charge_get_award_toc {
+    enum ENUM {
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+        not_enough_grid = 3;                    // 格子不足
+        not_authority = 4;                      // 不可领取
+        already_get = 5;                        // 已经领取
+    }
+    required ENUM result = 1;
+    required int32 type = 2;                    // 档位(1 or 2)
+    required int32 day = 3;                     // 天数
+}
+/*************************************verify_code:[4500, 4600]********************************************/
+//<m_verify_code_sms_code_tos:4501>
+//<m_verify_code_sms_code_toc:4502>
+//<m_verify_code_get_area_code_tos:4503>
+//<m_verify_code_get_area_code_toc:4504>
+//<m_verify_code_get_my_sms_code_toc:4505>
+// 发送短信验证码
+message m_verify_code_sms_code_tos{
+  required string mobile = 1;         // 手机号码
+  required int32 operation = 2;       // 动作：1为绑定手机号验证码，2为赠送系统短信验证码
+}
+message m_verify_code_sms_code_toc{
+  enum ENUM {
+    success = 1;                    // 成功 短信验证码下发成功
+    invalid_mobile = 2;             // 无效手机号
+    fail = 3;                       // 验证码下发失败
+  }
+  required ENUM result = 1;
+  optional int32 code = 2;            // 验证码内容，内网环境下不会真的发送短信验证码，因此返回仅供客户端console打印使用
+  required int32 wait_time = 3;       // 允许再次点击发送短信验证码的时间戳
+}
+
+message AreaCodeRegion {
+  required string area_code = 1;    // 获取当前玩家所使用的app的手机号码隶属国家/地区的区号
+  optional string region = 2;       // 获取当前玩家所使用的app的手机区号隶属国家/地区的名字
+}
+// 玩家获取自己这个app的手机号码所属国家/地区，和手机号码区号
+message m_verify_code_get_area_code_tos{
+}
+message m_verify_code_get_area_code_toc {
+  repeated AreaCodeRegion area_code_region = 1;
+//  required string area_code = 1;    // 获取当前玩家所使用的app的手机号码隶属国家/地区的区号
+//  optional string region = 2;       // 获取当前玩家所使用的app的手机区号隶属国家/地区的名字
+}
+
+message SmsCodeInfo{
+  required string mobile = 1;       // 已经发送了短信验证码的手机号
+  required uint32 type = 2;         // 短信验证码类型
+  required string expire = 3;       // 下次可以点击获取同类型短信验证码按钮的时间
+  optional string code = 4;         // 短信验证码
+}
+// 通知登陆玩家，自己所获取的验证码
+message m_verify_code_get_my_sms_code_toc{
+  repeated SmsCodeInfo sms_code_info = 1;
+}
+/*************************************match_scene_room:[4600, 4700]********************************************/
+//<m_match_scene_room_notice_unread_num_toc:4601>
+//<m_match_scene_room_get_room_list_tos:4602>
+//<m_match_scene_room_get_room_list_toc:4603>
+//<m_match_scene_room_exit_room_list_tos:4604>
+//<m_match_scene_room_add_room_toc:4605>
+//<m_match_scene_room_delete_room_toc:4606>
+//<m_match_scene_room_notice_room_people_num_change_toc:4607>
+//<m_match_scene_room_create_room_tos:4608>
+//<m_match_scene_room_create_room_toc:4609>
+//<m_match_scene_room_world_recruit_tos:4610>
+//<m_match_scene_room_world_recruit_toc:4611>
+//<m_match_scene_room_recruit_tos:4612>
+//<m_match_scene_room_recruit_toc:4613>
+//<m_match_scene_room_join_room_tos:4614>
+//<m_match_scene_room_join_room_toc:4615>
+//<m_match_scene_room_leave_room_tos:4616>
+//<m_match_scene_room_leave_room_toc:4617>
+//<m_match_scene_room_notice_people_num_change_toc:4618>
+//匹配场房间
+
+
+
+//匹配场房间数据
+message MatchSceneRoomData {
+    required int32 type = 1;                                //类型(0:世界招募,1:指定招募)
+    required int32 room_id = 2;                             //房间id
+    required ModelHeadFigure model_head_figure = 3;         //头像
+    required int32 cost_num = 4;                            //房间消耗
+    required int32 is_lock = 5;                             //是否上锁(0未上锁,1:上锁)
+    required int32 recruit_time = 6;                        //招募时间
+    required int32 people_num = 7;                          //玩家数量
+}
+
+//通知未读数量
+message m_match_scene_room_notice_unread_num_toc {
+    required int32 num = 1;                                 //未读数量
+}
+
+//获取房间列表
+message m_match_scene_room_get_room_list_tos {
+}
+message m_match_scene_room_get_room_list_toc {
+    repeated MatchSceneRoomData room_data_list = 1;         //房间列表
+}
+
+//退出房间列表
+message m_match_scene_room_exit_room_list_tos {
+}
+
+//增加房间
+message m_match_scene_room_add_room_toc {
+    required MatchSceneRoomData room_data = 1;              //房间
+}
+
+//删除房间
+message m_match_scene_room_delete_room_toc {
+    required int32 type = 1;                                //类型(0:全部,1:指定招募)
+    required int32 room_id = 2;                             //房间id
+}
+
+//通知房间人数变化
+message m_match_scene_room_notice_room_people_num_change_toc {
+    required int32 room_id = 1;                             //房间id
+    required uint32 people_num = 2;                         //玩家人数
+}
+
+//创建房间
+message m_match_scene_room_create_room_tos {
+    optional string password = 1;                           //密码
+    required uint32 cost_num = 2;                           //入场券数量
+}
+message m_match_scene_room_create_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        no_condition = 3;                                   //条件不满足
+        already_join_room = 4;                              //已经加入一个房间
+    }
+    required ENUM result = 1;                               //结果
+}
+
+//世界招募
+message m_match_scene_room_world_recruit_tos {
+}
+message m_match_scene_room_world_recruit_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        time_limit = 3;                                     //时间限制
+    }
+    required ENUM result = 1;                               //结果
+    required int32 limit_time = 2;                          //限制时间
+}
+
+//招募
+message m_match_scene_room_recruit_tos {
+    required string player_name = 1;                        //招募玩家名字
+}
+message m_match_scene_room_recruit_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        time_limit = 3;                                     //时间限制
+        none = 4;                                           //查无此人
+        no_condition = 5;                                   //该玩家不在线
+    }
+    required ENUM result = 1;                               //结果
+    required int32 limit_time = 2;                          //限制时间
+}
+
+//加入房间
+message m_match_scene_room_join_room_tos {
+    required int32 room_id = 1;                             //房间id
+    required string password = 2;                           //密码(最多4个字符)
+}
+message m_match_scene_room_join_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        not_enough_mana = 3;                                //道具不足
+        no_condition = 4;                                   //条件不足
+        already_join_room = 5;                              //已经加入一个房间
+        error_password = 6;                                 //密码错误
+        none = 7;                                           //房间不存在
+    }
+    required ENUM result = 1;                               //结果
+    required sint32 people_num = 2;                         //房间人数
+}
+
+//离开房间
+message m_match_scene_room_leave_room_tos {
+}
+message m_match_scene_room_leave_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        no_condition = 3;                                   //房主离开解散
+    }
+    required ENUM result = 1;                               //结果
+}
+
+//通知人数变化
+message m_match_scene_room_notice_people_num_change_toc {
+    required uint32 people_num = 1;                         //玩家人数
+}
+/*************************************gift:[4700, 4800]********************************************/
+//<m_gift_select_player_tos:4701>
+//<m_gift_select_player_toc:4702>
+//<m_gift_give_gift_tos:4703>
+//<m_gift_give_gift_toc:4704>
+//<m_gift_init_mail_info_toc:4705>
+//<m_gift_read_mail_tos:4706>
+//<m_gift_read_mail_toc:4707>
+//<m_gift_get_item_mail_tos:4708>
+//<m_gift_get_item_mail_toc:4709>
+//<m_gift_delete_mail_tos:4710>
+//<m_gift_delete_mail_toc:4711>
+//<m_gift_add_mail_toc:4712>
+//<m_gift_remove_mail_toc:4713>
+//<m_gift_gift_mail_record_tos:4714>
+//<m_gift_gift_mail_record_toc:4715>
+// 送礼
+
+
+
+// 查询玩家
+message m_gift_select_player_tos {
+    required uint32 player_id = 1;                          // 玩家id
+}
+message m_gift_select_player_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        none = 3;                                           // 没有该玩家
+    }
+    required ENUM result = 1;                               // 结果
+    optional string player_name = 2;                        // 玩家名字
+}
+
+// 送礼
+message m_gift_give_gift_tos {
+    required uint32 player_id = 1;                          // 玩家id
+    repeated Prop prop_list = 2;                            // 道具列表
+    required string code = 3;                               // 验证码
+}
+message m_gift_give_gift_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+        expire = 4;                                         // 验证码过期
+        invalid_code = 5;                                   // 验证码错误
+        function_no_open = 6;                               // 功能未开启
+    }
+    required ENUM result = 1;                               // 结果
+}
+
+// 礼物邮件数据
+message GiftMailInfo {
+    required int32 mail_real_id = 1;                        // 邮件实际id
+    required int32 mail_id = 2;                             // 邮件模板id
+    required string title_content = 3;                      // 邮件标题内容
+    repeated string param_list = 4;                         // 邮件标题参数
+    required int32 is_read = 5;                             // 是否已读
+    required int32 attachment_state = 6;                    // 附件状态 0无附件,1:有附件,2:有附件并且已领取
+    required int32 create_time = 7;                         // 创建时间
+}
+
+// 邮件信息
+message m_gift_init_mail_info_toc {
+    repeated GiftMailInfo gift_mail_info_list = 1;          // 简单的邮件信息
+}
+
+// 读邮件
+message m_gift_read_mail_tos {
+    required int32 mail_real_id = 1;                        // 邮件实际id
+}
+message m_gift_read_mail_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+    }
+    required ENUM result = 1;
+    required int32 mail_real_id = 2;                        // 邮件实际id
+    required int32 mail_id = 3;                             // 邮件模板id
+    required string content = 4;                            // 邮件内容
+    repeated string param_list = 5;                         // 邮件参数
+    repeated Prop prop_list = 6;                            // 附件道具列表
+}
+
+// 提取附件邮件
+message m_gift_get_item_mail_tos {
+    required int32 mail_real_id = 1;                        // 邮件实际id 0:全部
+}
+message m_gift_get_item_mail_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        not_enough_grid = 3;                                // 格子不足
+        not_authority = 4;                                  // 没道具提取
+    }
+    required ENUM result = 1;
+    repeated int32 mail_real_id_list = 2;                   // 邮件实际id列表
+    repeated Prop prop_list = 3;                            // 附件道具列表
+}
+
+// 删除邮件
+message m_gift_delete_mail_tos {
+    required int32 mail_real_id = 1;                        // 邮件实际id 0:全部
+}
+message m_gift_delete_mail_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        not_authority = 3;                                  // 道具未领取
+        none = 4;                                           // 无可删除的邮件
+    }
+    required ENUM result = 1;
+    repeated int32 mail_real_id_list = 2;                   // 邮件实际id列表
+}
+
+// 增加新邮件
+message m_gift_add_mail_toc {
+    repeated GiftMailInfo gift_mail_info_list = 1;          // 邮件信息
+}
+// 减少邮件
+message m_gift_remove_mail_toc {
+    repeated int32 mail_real_id = 2; // 邮件实际id
+}
+
+// 赠送者获取自己的赠送记录
+message m_gift_gift_mail_record_tos {}
+message ReceiverInfo{
+    required int32 receiver = 2;                            // 收件人玩家编号
+    required string receiver_name = 3;                      // 收件人玩家昵称（带区服）
+    required int32 create_time = 4;                         // 赠送时间戳
+    repeated Prop prop_list = 5;                            // 附件道具列表
+}
+message m_gift_gift_mail_record_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+    }
+    required ENUM result = 1;
+    repeated ReceiverInfo receiver_info_list = 2;               // 收件人信息
+}
+/*************************************wheel:[4800, 4900]********************************************/
+//<m_wheel_join_wheel_tos:4801>
+//<m_wheel_join_wheel_toc:4802>
+//<m_wheel_bet_tos:4803>
+//<m_wheel_bet_toc:4804>
+//<m_wheel_notice_bet_toc:4805>
+//<m_wheel_get_record_tos:4806>
+//<m_wheel_get_record_toc:4807>
+//<m_wheel_get_bet_record_tos:4808>
+//<m_wheel_get_bet_record_toc:4809>
+//<m_wheel_get_player_list_tos:4810>
+//<m_wheel_get_player_list_toc:4811>
+//<m_wheel_balance_toc:4812>
+//<m_wheel_exit_wheel_tos:4813>
+//<m_wheel_use_last_bet_tos:4814>
+//<m_wheel_use_last_bet_toc:4815>
+// 无尽对决
+
+
+
+// 投注信息
+message WheelCommon {
+    required uint32 id = 1;                                 // 键
+    required int64 value = 2;                               // 值
+}
+
+// 排行信息
+message WheelRankInfo {
+    required uint32 rank = 1;                               // 排行
+    required ModelHeadFigure model_head_figure = 2;         // 头像
+}
+
+// 进入无尽对决模式
+message m_wheel_join_wheel_tos {
+    required uint32 type = 1;                               // 类型
+}
+message m_wheel_join_wheel_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        function_no_open = 3;                               // 功能未开启
+    }
+    required ENUM result = 1;                               // 结果
+    required uint32 type = 2;                               // 类型
+    repeated WheelCommon bet_list = 3;                      // 投注列表.id:bet_id;value:num
+    required uint64 time_ms = 4;                            // 本轮结算时间ms
+    repeated WheelRankInfo left_rank_info = 5;              // 资产排行榜
+    repeated WheelRankInfo right_rank_info = 6;             // 赚钱排行榜
+    repeated WheelCommon my_bet_list = 7;                   // 自己的投注列表.id:bet_id;value:num
+    repeated WheelCommon record_list = 8;                   // 走势图记录列表
+}
+
+// 投注
+message m_wheel_bet_tos {
+    required uint32 bet_id = 1;                             // 投注id
+    required uint32 num = 2;                                // 数量
+}
+message m_wheel_bet_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        function_no_open = 3;                               // 功能未开启
+        not_authority = 4;                                  // 当前不可投注(未到投注时间)
+        no_enough_prop = 5;                                 // 道具不足
+    }
+    required ENUM result = 1;                               // 结果
+    required uint32 bet_id = 2;                             // 投注id
+    required uint32 num = 3;                                // 数量
+}
+
+// 通知投注
+message m_wheel_notice_bet_toc {
+    required uint32 player_id = 1;                          // 玩家id
+    required uint32 bet_id = 2;                             // 投注id
+    required uint64 num = 3;                                // 数量
+    required uint64 total_num = 4;                          // 总数
+    required uint64 my_total_num = 5;                       // 自己的总数
+}
+
+message WheelRecord {
+    required uint32 u_id = 1;                               // 第几期
+    optional uint32 result_id = 2;                          // 类型走势图时有,显示真正的结果id
+    message WheelIdRecord{
+        required uint32 id = 1;                             // id
+        required uint32 value = 2;                          // 几回合没中(0:投中了)
+    }
+    repeated WheelIdRecord wheel_id_record_list = 3;        //列表
+}
+
+// 获得走势图记录
+message m_wheel_get_record_tos {
+    required uint32 type = 1;                               // (1:类型走势图.2:单体走势图)
+}
+message m_wheel_get_record_toc {
+    required uint32 type = 1;                               // (1:类型走势图.2:单体走势图)
+    repeated WheelRecord record_list = 2;                   // 走势图记录列表
+}
+
+// 玩家投注记录
+message WheelPlayerBetRecord {
+    required uint32 time = 1;                               // 时间
+    required uint32 type = 2;                               // 类型
+    required uint64 bet_num = 3;                            // 投注数量
+    required uint64 award_num = 4;                          // 奖励数量
+}
+
+// 获得玩家投注记录
+message m_wheel_get_bet_record_tos {
+}
+message m_wheel_get_bet_record_toc {
+    repeated WheelPlayerBetRecord record_list = 1;          // 记录列表
+}
+
+// 排行信息
+message WheelPlayerRankInfo {
+    required uint32 rank = 1;                               // 排行
+    required ModelHeadFigure model_head_figure = 2;         // 头像
+    required uint64 num = 3;                                // 累计投注金额
+    required uint32 win_num = 4;                            // 累计获胜局数
+}
+
+// 获得玩家列表
+message m_wheel_get_player_list_tos {
+}
+message m_wheel_get_player_list_toc {
+    repeated WheelPlayerRankInfo player_list = 1;           // 记录列表
+}
+
+// 结算
+message m_wheel_balance_toc {
+    required uint32 type = 1;                               // 类型
+    repeated WheelCommon award_list = 2;                    // 玩家奖励列表.key:player_id;value:award_num
+    required uint64 time_ms = 3;                            // 下轮结算时间
+    repeated WheelRankInfo left_rank_info = 4;              // 资产排行榜
+    repeated WheelRankInfo right_rank_info = 5;             // 赚钱排行榜
+}
+
+//退出无尽对决
+message m_wheel_exit_wheel_tos {
+}
+
+// 延续上把
+message m_wheel_use_last_bet_tos {
+}
+message m_wheel_use_last_bet_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        function_no_open = 3;                               // 功能未开启
+        not_authority = 4;                                  // 当前不可投注(未到投注时间)
+        no_enough_prop = 5;                                 // 道具不足
+        none = 6;                                           // 上一把没投注
+    }
+    required ENUM result = 1;                               // 结果
+}
+/*************************************laba:[4900, 5000]********************************************/
+//<m_laba_spin_tos:4901>
+//<m_laba_spin_toc:4902>
+//<m_laba_spin2_tos:4903>
+//<m_laba_spin2_toc:4904>
+//<m_laba_get_adjust_info_tos:4905>
+//<m_laba_get_adjust_info_toc:4906>
+// 拉霸小游戏
+
+// 转动（组合）拉霸机
+message m_laba_spin_tos {
+    required int32 id = 1;                                // 拉霸机编号
+    required int64 num = 2;                               // 下注金额
+}
+message m_laba_spin_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+    }
+    message grids {
+        repeated int32 list = 1;
+    }
+    message freegameresult {
+        repeated grids grids_list = 2;                      // freegame结果列表
+    }
+    message freegamecombo {
+         repeated int32 combos = 3;                         // freegame连击奖励列表
+    }
+
+    required ENUM result = 1;                               // 结果
+    repeated grids grids_list = 2;                          // 拉霸结果列表
+    repeated int32 combos = 3;                              // 拉霸连击奖励列表
+    repeated freegameresult freegame_results = 4;           // freegame结果列表集合
+    repeated freegamecombo freegame_combos = 5;             // freegame连击奖励列表集合
+    required int32 id = 6;
+    required int32 num = 7;
+}
+
+// 转动（连线）拉霸机
+message m_laba_spin2_tos {
+    required int32 id = 1;                                // 拉霸机编号
+    required int64 num = 2;                               // 下注金额
+}
+message m_laba_spin2_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+    }
+    message grids {
+        repeated int32 list = 1;
+    }
+
+    required ENUM result = 1;                               // 结果
+    required grids grid_list = 2;                          // 普通格子数据列表
+    required grids special_grid_list = 3;                  // 特殊格子数据列表
+    required int32 award_num = 4;                          // 普通拉霸机奖励数
+    repeated grids fg_grid_lists = 5;                      // freegame普通格子数据列表集合
+    repeated grids fg_special_grid_lists = 6;              // freegame特殊格子数据列表集合
+    repeated int32 fg_award_num_list = 7;                  // freegame拉霸机奖励数列表
+    required int32 id = 8;
+    required int32 num = 9;
+}
+
+// 获取拉霸机修正数据
+message m_laba_get_adjust_info_tos{
+    required int32 id = 1;                                // 拉霸机编号
+    required int32 cost_rate = 2;                         // 消耗倍率
+}
+message m_laba_get_adjust_info_toc{
+    repeated int64 data_list = 1;                         // 数据【当前奖池值，拉霸状态值，当前拉霸人数】
+}
+/*************************************one_vs_one:[5000, 5100]********************************************/
+//<m_one_vs_one_get_room_list_tos:5001>
+//<m_one_vs_one_get_room_list_toc:5002>
+//<m_one_vs_one_exit_room_list_tos:5003>
+//<m_one_vs_one_join_room_tos:5004>
+//<m_one_vs_one_join_room_toc:5005>
+//<m_one_vs_one_notice_update_room_data_toc:5006>
+//<m_one_vs_one_notice_scene_skill_limit_toc:5007>
+//1v1房间
+
+
+
+//1v1房间数据
+message OneVsOneRoomData {
+    required int32 room_id = 1;                             //房间id
+    repeated ModelHeadFigure model_head_figure_list = 2;    //玩家头像
+}
+
+message OneVsOneRankData {
+    required int32 rank = 1;                                //排行
+    required ModelHeadFigure model_head_figure = 2;         //玩家头像
+    required int32 value = 3;                               //值
+}
+
+//获取1v1房间列表
+message m_one_vs_one_get_room_list_tos {
+    required int32 type = 1;
+}
+message m_one_vs_one_get_room_list_toc {
+    required int32 type = 1;
+    repeated OneVsOneRoomData room_list = 2;                //房间列表
+    repeated OneVsOneRankData rank_list = 3;                //排行列表
+    required int32 my_win_value = 4;                        //我的胜场
+}
+
+//退出房间列表
+message m_one_vs_one_exit_room_list_tos {
+}
+
+//加入房间
+message m_one_vs_one_join_room_tos {
+    required int32 type = 1;                                //类型
+    required int32 room_id = 2;                             //房间id
+}
+message m_one_vs_one_join_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        not_enough_mana = 3;                                //道具不足
+        no_condition = 4;                                   //人数已满
+    }
+    required ENUM result = 1;                               //结果
+}
+
+//通知更新房间数据
+message m_one_vs_one_notice_update_room_data_toc {
+    required int32 type = 1;
+    repeated OneVsOneRoomData room_list = 2;                //房间数据
+}
+
+//通知场景技能上限
+message m_one_vs_one_notice_scene_skill_limit_toc {
+    message skill_limit{
+        required int32 skill_id = 1;
+        required int32 times_limit = 2;
+    }
+    repeated skill_limit skill_limit_list = 1;      //场景技能上限列表
+}
+/*************************************player_chat:[5100, 5200]********************************************/
+//<m_player_chat_channel_chat_tos:5101>
+//<m_player_chat_channel_chat_toc:5102>
+//<m_player_chat_broadcast_channel_msg_list_toc:5103>
+//<m_player_chat_get_player_chat_info_tos:5104>
+//<m_player_chat_get_player_chat_info_toc:5105>
+//<m_player_chat_get_player_list_online_status_tos:5106>
+//<m_player_chat_get_player_list_online_status_toc:5107>
+//玩家聊天
+
+
+
+message MsgInfo {
+    optional ModelHeadFigure model_head_figure = 1;     //头像数据
+    required string msg_data = 2;                       //信息
+    required int32 template_id = 3;                     //消息模版id
+    repeated string arg_list = 4;                       //参数列表
+    optional int32 loop_num = 5;                        //循环次数
+    required int32 time = 6;                            //发送时间
+}
+
+message ChatInfo {
+    required int32 channel = 1;                         //频道
+    optional int32 id = 2;                              //(私聊频道:玩家id)
+    repeated MsgInfo msg_data_list = 3;                 //消息数据列表
+}
+
+//频道聊天
+message m_player_chat_channel_chat_tos {
+    required int32 channel = 1;                         //频道
+    optional int32 id = 2;                              //(私聊频道:玩家id)
+    required string msg_data = 3;                       //信息
+}
+message m_player_chat_channel_chat_toc {
+    enum ENUM {
+        success = 1;                                    //成功
+        fail = 2;                                       //失败
+        level_limit = 3;                                //等级限制
+        too_quick = 4;                                  //发消息太快
+        too_long = 5;                                   //消息太长
+        not_enough_vip_level = 6;                       //VIP等级不足
+        no_condition = 7;                               //被禁言
+    }
+    required ENUM reason = 100;
+    required int32 channel = 1;                         //频道
+    optional int32 id = 2;                              //(私聊频道:玩家id)
+    required string msg_data = 3;                       //信息
+}
+
+//广播频道消息列表
+message m_player_chat_broadcast_channel_msg_list_toc {
+    repeated ChatInfo chat_data_list = 1;               //聊天数据列表
+}
+
+// 获得玩家信息
+message m_player_chat_get_player_chat_info_tos {
+    required string nickname = 1;                       // 玩家名字
+}
+message m_player_chat_get_player_chat_info_toc {
+    enum ENUM {
+        success = 1;                                    // 成功
+        fail = 2;                                       // 失败
+        not_authority = 3;                              // 该玩家所在服务器正在停服
+        none = 4;                                       // 玩家不存在
+        no_condition = 5;                               // 条件不足不能搜索
+    }
+    required ENUM result = 100;
+    optional string signature = 1;                      // 个性签名
+    optional ModelHeadFigure model_head_figure = 2;     // 头像数据
+}
+
+message ChatPlayerOnline {
+    required int32 player_id = 1;                       // 玩家id
+    required int32 state = 2;                           // 在线状态
+}
+
+// 获取玩家列表在线状态
+message m_player_chat_get_player_list_online_status_tos {
+    repeated int32 player_id_list = 1;                  // 玩家id列表
+}
+message m_player_chat_get_player_list_online_status_toc {
+    repeated ChatPlayerOnline player_online_state = 1;  // 玩家在线状态
+}
+/*************************************room:[5200, 5300]********************************************/
+//<m_room_get_room_list_tos:5201>
+//<m_room_get_room_list_toc:5202>
+//<m_room_leave_room_list_tos:5203>
+//<m_room_notice_room_list_change_toc:5204>
+//<m_room_enter_room_tos:5205>
+//<m_room_enter_room_toc:5206>
+//<m_room_leave_room_tos:5207>
+//<m_room_notice_room_start_toc:5208>
+//<m_room_notice_fighting_toc:5209>
+//<m_room_ready_tos:5210>
+//<m_room_notice_player_ready_toc:5211>
+//<m_room_add_frame_action_tos:5212>
+//<m_room_push_frame_info_toc:5213>
+//<m_room_fight_result_tos:5214>
+//<m_room_fight_result_toc:5215>
+// 帧同步房间
+
+
+
+message RoomInfo{
+    required int32 room_id = 1;                  // 房间id
+    repeated ModelHeadFigure player_list = 2;   // 玩家信息列表
+}
+
+message RoomRankInfo{
+    required int32 rank = 1;                                // 排行
+    required ModelHeadFigure model_head_figure = 2;         // 玩家信息
+    required int32 value = 3;
+}
+
+// 获取房间列表
+message m_room_get_room_list_tos{
+    required int32 type = 1;            // 房间类型
+}
+message m_room_get_room_list_toc{
+    required int32 type = 1;
+    repeated RoomInfo room_list = 2;        // 房间信息列表
+    repeated RoomRankInfo rank_list = 3;    // 排行榜信息列表
+    required int32 my_score = 4;            // 我的胜场数
+}
+
+// 离开房间列表
+message m_room_leave_room_list_tos{
+}
+
+// 房间列表变更通知
+message m_room_notice_room_list_change_toc{
+    required int32 type = 1;
+    repeated RoomInfo room_list = 2;      // 变更的房间列表
+}
+
+// 进入房间
+message m_room_enter_room_tos{
+    required int32 type = 1;            // 房间类型
+    required int32 room_id = 2;          // 房间id
+}
+message m_room_enter_room_toc{
+     enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+        member_full = 4;                                    // 人数已满
+     }
+     required ENUM result = 1;
+}
+
+// 离开房间（房间开始前有效）
+message m_room_leave_room_tos{
+}
+
+// 通知房间开始
+message m_room_notice_room_start_toc{
+    required int32 type = 1;                    // 房间类型
+    required int32 roomid = 2;                  // 房间id
+    required int32 seed = 3;                    // 随机种子
+    repeated ModelHeadFigure player_list = 4;   // 玩家信息列表
+    repeated int32 ready_list = 5;              // 完成准备的玩家id列表
+    required uint64 endTime = 6;                // 玩家准备阶段结束时间戳（毫秒）
+    required int32 index = 7;                   // 玩家在帧数据数组中的索引位置
+}
+
+// 通知战斗开始
+message m_room_notice_fighting_toc{
+    required uint64 endTime = 1;                // 战斗结束时间戳（毫秒）
+}
+
+// 准备就绪
+message m_room_ready_tos{
+}
+
+// 通知玩家完成准备
+message m_room_notice_player_ready_toc{
+    required int32 playerid = 1;                // 玩家id
+}
+
+// 更新客户端操作
+message m_room_add_frame_action_tos{
+    required int32 action = 1;                  // 帧动作
+}
+
+// 同步帧数据
+message m_room_push_frame_info_toc{
+    message frameInfo{
+        required int32 frame = 1;                // 帧id
+        repeated int32 actions = 2;              // 帧操作列表[玩家1动作，玩家2动作，...]
+    }
+
+    repeated frameInfo frameDatas = 1;           // 帧数据列表
+}
+
+// 战斗结果上报
+message m_room_fight_result_tos{
+    required int32 winner = 1;                  // 获胜者玩家id
+}
+message m_room_fight_result_toc{
+    required int32 winner = 1;
+}

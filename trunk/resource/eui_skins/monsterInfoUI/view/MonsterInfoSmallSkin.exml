@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoSmallSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17989078514"/>
+	<e:Label id="u_txtMsg" text="描述描述描述" y="104" bold="true" size="18" horizontalCenter="60.5" textColor="0xAEAEAE" width="800" textAlign="center" lineSpacing="8" height="44" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+	<e:Scroller id="u_scrollSmall" width="812" height="413" x="222" y="156">
+		<e:Group>
+		<e:List id="u_smallList"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

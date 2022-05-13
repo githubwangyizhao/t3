@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateTeamListPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c733165af"/>
+	<e:Image y="60" width="960" height="520" horizontalCenter="0" visible="true" source="commonUI_json.commonUI_img_popdi" scale9Grid="33,78,33,415"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" y="63" visible="true" horizontalCenter="-5.5"/>
+	<e:Image y="71" horizontalCenter="0.5" source="mateTeamWaitUI_json.mateTeamWaitUI_txt_zm" visible="true"/>
+	<e:Image id="u_btnClose" x="952" y="62" source="commonUI_json.commonUI_btn_close_4" width="93" height="34" visible="true"/>
+	<e:Image source="commonUI_json.commonUI_img_inner" y="106" width="619" height="460" scale9Grid="23,10,24,11" x="101" visible="true"/>
+	<e:Image source="mateTeamWaitUI_json.mateTeamWaitUI_title_bg1" x="101" y="106" visible="true"/>
+	<e:Scroller id="u_scrollerItem1" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="148" width="580" height="416" x="119">
+		<e:Group visible="true">
+		<e:List id="u_listItem1" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_imgNone1" source="mateTeamWaitUI_json.mateTeamWaitUI_recruit_none" x="266" y="217" visible="true"/>
+	<e:Image source="commonUI_json.commonUI_img_inner" y="106" width="305" height="460" scale9Grid="23,10,24,11" x="729" visible="true"/>
+	<e:Image x="729" y="106" visible="true" source="mateTeamWaitUI_json.mateTeamWaitUI_title_bg2"/>
+	<e:Scroller id="u_scrollerItem2" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="145" width="287" height="416" x="742">
+		<e:Group visible="true">
+		<e:List id="u_listItem2" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image source="mateTeamWaitUI_json.mateTeamWaitUI_recruit_none" x="737" y="217" visible="true" id="u_imgNone2"/>
+	<e:Label id="u_txtTitle1" text="世界招募" y="111" fontFamily="Microsoft YaHei" size="20" x="120" visible="true" textColor="0xF0E4B0"/>
+	<e:Label text="指定招募" y="111" fontFamily="Microsoft YaHei" size="20" id="u_txtTitle2" x="748" visible="true" textColor="0xF0E4B0"/>
+</e:Skin>

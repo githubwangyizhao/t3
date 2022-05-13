@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainFightViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1686ffa7f00" visible="false"/>
+	<e:Image id="u_btnJian" source="userMainUI_json.userMainUI_d_btn_jian" x="917.992" y="575.022"/>
+	<e:Image id="u_btnAdd" source="userMainUI_json.userMainUI_d_btn_add" x="1064.992" y="574.016"/>
+	<e:Image id="u_btnAttack" source="userMainUI_json.userMainUI_attack_btn" x="948.472" y="443.273" width="130" height="130"/>
+	<e:Image id="u_btnNotice" source="userMainUI_json.userMainUI_u_btn_lt" x="1066.166" y="225.353" width="44" height="44"/>
+	<e:Group id="u_btnTask" x="1063.94" y="161.35" width="44" height="44">
+		<e:Image source="userMainUI_json.userMainUI_u_btn_rw" x="0" y="0"/>
+	</e:Group>
+</e:Skin>

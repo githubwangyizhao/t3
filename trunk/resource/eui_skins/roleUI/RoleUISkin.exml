@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1761d9454ab"/>
+	<e:Image id="u_imgBg1" visible="true" horizontalCenter="0"/>
+	<e:Image id="u_imgBg2" visible="true" horizontalCenter="0"/>
+	<e:Group id="u_mcRight" y="0" visible="true" x="635" width="501">
+		<e:Image source="roleUI_json.roleUI_img_di" x="0" y="0" visible="true"/>
+		<e:Image id="u_imgQuailty" x="163" y="53" visible="true" source="roleUI_json.roleUI_quality_3"/>
+		<e:Image source="roleUI_json.roleUI_title_di2" x="97" y="153" visible="true"/>
+		<e:Image source="roleUI_json.roleUI_txt_desc" x="118" y="166" visible="true"/>
+		<e:Image source="roleUI_json.roleUI_title_di2" x="63" y="332" visible="true"/>
+		<e:Image x="84" y="345" visible="true" source="roleUI_json.roleUI_txt_skill"/>
+		<e:Image source="roleUI_json.roleUI_title_di" x="58" y="403" visible="true"/>
+		<e:Image source="roleUI_json.roleUI_line" x="49" y="506" scale9Grid="19,0,19,1" width="450"/>
+        <e:Image id="u_imgBiSha" visible="true" scale9Grid="69,43,70,42" width="100" height="100" y="401" x="56.5"/>
+		<e:Group id="u_btnSure" x="197" y="544" visible="false" width="160" height="59">
+			<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow2"/>
+			<e:Image source="roleUI_json.roleUI_txt_fight" horizontalCenter="1" verticalCenter="-2.5" visible="true" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="u_grpPath" y="495" visible="false" x="200" width="156" height="156">
+			<e:Image source="roleUI_json.roleUI_lock" visible="true" scaleX="0.72" scaleY="0.72"/>
+			<e:Label id="u_txtTips" text="首充获得" size="18" visible="true" textAlign="center" wordWrap="true" bold="true" lineSpacing="8" horizontalCenter="1" stroke="1" y="113" textColor="0x1ADE4D" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Image id="u_imgIsFight" source="roleUI_json.roleUI_img_fight" x="210" y="506" visible="false"/>
+        <e:Label id="u_txtSkillName" text="技能名称" y="418.342" size="16" textColor="0xF0E4B0" visible="true" fontFamily="Microsoft YaHei" bold="true" x="164"/>
+		<e:Label text="英雄" y="208" id="u_txtheroInfo" size="16" visible="true" width="377" wordWrap="true" lineSpacing="8" x="111" fontFamily="Microsoft YaHei" textColor="0x8693A7" bold="true" stroke="1" height="112" anchorOffsetX="0"/>
+		<e:Label text="绍英雄介绍英雄介绍英雄英绍英雄介绍英雄介绍英雄英" y="448" id="u_txtLockMsg" size="16" visible="true" width="340" wordWrap="true" lineSpacing="8" x="150" fontFamily="Microsoft YaHei" textColor="0x8693A7" bold="true" stroke="1" height="40"/>
+		<e:Label id="u_txtTitle2" text="解锁条件" x="72" y="383" stroke="2" size="16" visible="true" fontFamily="Microsoft YaHei" textColor="0xFFDE00"/>
+        <e:Group id="u_btnTips" x="407" y="297" width="80" height="40" visible="true">
+			<e:Image visible="true" source="roleUI_json.roleUI_btn_check" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Label id="u_txtHeroName" text="蚩尤" size="32" visible="true" y="87" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" horizontalCenter="67.5"/>
+	</e:Group>
+	<e:Image id="u_btnSound" source="commonUI_json.commonUI_box" y="0" alpha="0" scale9Grid="3,3,4,4" width="620" height="640" visible="true" locked="true"/>
+	<e:Group id="u_mcLeft" x="91" y="541" visible="true">
+		<e:Group id="u_btnLeft" x="0" y="0" width="52" height="66" visible="true">
+			<e:Image source="roleUI_json.roleUI_arrow" visible="true" verticalCenter="0" horizontalCenter="0" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="u_btnRight" width="52" height="66" x="415" y="0">
+			<e:Image height="46" source="roleUI_json.roleUI_arrow" visible="true" touchEnabled="false" verticalCenter="0" horizontalCenter="0" scaleX="-1"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

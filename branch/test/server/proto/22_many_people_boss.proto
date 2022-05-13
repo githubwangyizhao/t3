@@ -1,0 +1,182 @@
+//多人BOSS
+
+import "01_player.proto";
+import "05_prop.proto";
+
+// 房间数据
+message RoomData {
+    required int32 room_id = 1;                         //房间id
+    required int32 boss_id = 2;                         //BossId
+    required int32 people_count = 3;                    //房间人数
+    required int32 is_lock = 4;                         //是否上锁
+}
+
+// 房间玩家数据
+message RoomPlayerData {
+    required int32 pos_id = 1;                          //房间位置id
+    required ModelHeadFigure model_head_figure = 2;     //玩家头像数据
+    required int32 is_ready = 3;                        //是否准备（0：未准备，1：已准备）
+    required int32 is_room_owner = 4;                   //是否是房主
+}
+
+// 房间详情数据
+message RoomDetailsData {
+    required RoomData room_data = 1;                    //房间数据
+    required string invitation_code = 2;                //邀请码
+    repeated RoomPlayerData room_player_data_list = 3;  //房间玩家数据列表
+    required int32 is_room_owner = 4;                   //是否是房主
+    required int32 is_all_ready_auto_start = 5;         //是否全部准备自动开始
+    required string owner_name = 6;                     //房主名字
+    required int32 owner_level = 7;                     //房主等级
+}
+
+//获取房间列表
+message m_get_room_list_tos {
+    required int32 boss_id = 1;                         //BossId(0:All,Other:BossId)
+}
+message m_get_room_list_toc {
+    repeated RoomData room_data_list = 1;               //房间列表
+    required int32 boss_id = 2;                         //BossId(0:All,Other:BossId)
+}
+
+//加入房间
+message m_join_room_tos {
+    required int32 room_id = 1;                         //房间id
+    required string password = 2;                       //密码(最多6个字符)
+    required string invitation_code = 3;                //邀请码
+}
+message m_join_room_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+        not_authority = 4;          //没有权力（达到人数上限）
+        no_condition = 5;           //条件不足
+        already_join_room = 6;      //已经加入一个房间
+        error_password = 7;         //密码错误
+        none = 8;                   //房间不存在
+        time_limit = 9;             //被房主T出房间,十秒内不能进入
+    }
+    required ENUM result = 1;                           //结果
+    optional RoomDetailsData room_details_data = 2;     //房间详细数据
+}
+
+//创建房间
+message m_create_room_tos {
+    required int32 boss_id = 1;                         //BossId
+    required int32 is_lock = 2;                         //是否设置密码
+    required string password = 3;                       //密码
+}
+message m_create_room_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        no_condition = 3;           //条件不满足
+        already_join_room = 4;      //已经加入一个房间
+        none = 5;                   //密码不能为空
+    }
+    required ENUM result = 1;                           //结果
+    optional RoomDetailsData room_details_data = 2;     //房间详细数据
+}
+
+//开始
+message m_start_tos {
+}
+message m_start_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_authority = 3;          //没有权力（不是房主）
+        not_enough_number = 4;      //人数不足
+        already_start = 5;          //已经开始
+        no_condition = 6;           //有人未准备
+    }
+    required ENUM result = 1;                           //结果
+}
+
+//房主参与Boss战斗
+message m_participate_in_tos {
+    required int32 is_participate_in = 1;               //(0:取消,1:加入)
+}
+message m_participate_in_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+    }
+    required ENUM result = 1;                           //结果
+    required int32 is_participate_in = 2;               //(0:取消,1:加入)
+}
+
+//房主踢出玩家
+message m_kick_out_player_tos {
+    required int32 pos_id = 1;                          //位置id
+}
+
+//房主设置是否全员准备开始游戏
+message m_set_is_all_ready_start_tos {
+    required int32 is_all_ready_start = 1;              //是否全部准备自动开始
+}
+message m_set_is_all_ready_start_toc {
+    required int32 is_all_ready_start = 1;              //是否全部准备自动开始
+}
+
+//准备
+message m_ready_tos {
+    required int32 is_ready = 1;                        //是否准备(0:取消,1:准备)
+}
+message m_ready_toc {
+    enum ENUM {
+        success = 1;                //成功
+        fail = 2;                   //失败
+        not_enough_mana = 3;        //灵力值不足
+    }
+    required ENUM result = 1;                           //结果
+    required int32 is_ready = 2;                        //是否准备(0:取消,1:准备)
+}
+
+//离开房间
+message m_leave_room_tos {
+}
+
+//通知玩家自己离开房间
+message m_notice_leave_room_toc {
+    required int32 type = 1;                            //类型(0:灵力值不足提醒充值;1:被房主T出;2:房主关闭房间;3:正常退出房间)
+}
+
+//通知玩家加入房间
+message m_notice_player_join_toc {
+    required RoomPlayerData room_player_data = 1;       //玩家数据
+}
+
+//通知玩家离开房间
+message m_notice_player_leave_toc {
+    required int32 pos_id = 1;                          //位置id
+}
+
+//通知玩家准备
+message m_notice_player_ready_toc {
+    required int32 pos_id = 1;                          //位置id
+    required int32 is_ready = 2;                        //是否准备（0：未准备，1：已准备）
+}
+
+//通知玩家战斗开始
+message m_notice_player_fight_start_toc {
+    optional int32 mission_time = 1;                    //副本持续时间
+}
+
+//通知玩家战斗结束
+message m_notice_player_fight_result_toc {
+    required int32 is_first_prize = 1;                  //是否一等奖
+    repeated Prop prop_list = 2;                        //奖励列表
+    optional RoomDetailsData room_details_data = 3;     //房间详细数据
+    required int32 rank = 4;                            //排名
+    required int32 result = 5;                          //结果(0:失败,1:成功)
+    required string win_name = 6;                       //胜利者的名字
+}
+
+//通知房主副本结算抽佣
+message m_notice_owner_fight_result_toc {
+    required int32 mana = 1;                            //灵力(0:战斗失败)
+    optional RoomDetailsData room_details_data = 2;     //房间详细数据
+}

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.ExchangeStoreRenderSkin"
+	 width="156"
+	height="172" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="exchangeStoreUI_json.exchangeStoreUI_itemBg" x="0" y="0" visible="true"/>
+	<e:Image id="u_iconBg" width="80" height="80" y="20" horizontalCenter="0"/>
+	<e:Image id="u_iconImg" width="80" height="80" horizontalCenter="0" y="20"/>
+	<e:Label id="u_iconName" text="钻石" y="102" horizontalCenter="1" size="17" bold="true"/>
+	<e:Label id="u_numLb" text="999" y="115" size="15" right="10" textAlign="right"/>
+	<e:Group id="u_buyGrp" y="131" horizontalCenter="0" x="28">
+		<e:Image id="u_buyItem" width="40" height="40" x="0" y="0"/>
+		<ns1:NumberView id="u_buyNum" width="60" height="20" x="41" y="10"/>
+	</e:Group>
+	<e:Label id="u_owned" text="已拥有" y="141.716" horizontalCenter="2" size="18" bold="true" x="72" textColor="0x8693A7" visible="false"/>
+</e:Skin>

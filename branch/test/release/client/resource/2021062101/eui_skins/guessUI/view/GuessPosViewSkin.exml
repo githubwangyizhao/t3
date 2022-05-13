@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GuessPosViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798dbd9d6f"/>
+	<e:Image source="guessUI_json.guessUI_img_bg2" y="94.31" scale9Grid="39,39,40,40" width="940.025" height="262.341" horizontalCenter="0"/>
+	<e:Image source="guessUI_json.guessUI_img_txtBg" x="276.995" y="113.024" scale9Grid="20,13,20,5" width="581.389" visible="true"/>
+	<e:Label id="u_textTitle" text="BOSS【总攻击】是多少？" x="467.307" y="120.777" size="18" textColor="0xF0E4B0"/>
+	<e:Image source="guessUI_json.guessUI_img_bg2" y="354.354" scale9Grid="39,39,40,40" width="474.210431939394" height="189.192" x="98.537"/>
+	<e:Image source="guessUI_json.guessUI_img_bg2" y="354.354" scale9Grid="39,39,40,40" width="474.210431939394" height="189.192" x="565.027"/>
+	<e:Image id="u_btnClean" source="guessUI_json.guessUI_btn_clean" x="848" y="548.375"/>
+	<e:Label id="u_textRateName0" text="赔率" x="316.437" y="421.383" size="18" textColor="0x62463C" visible="true"/>
+	<e:Label id="u_textRate_1" text="x1.8" x="316.489" y="454.164" size="18" textColor="0x62463C" visible="true" bold="true"/>
+	<e:Label id="u_textRateName1" text="赔率" x="784.606" y="421.471" size="18" textColor="0x62463C" visible="true"/>
+	<e:Label id="u_textRate_0" text="赔率 x5.5" x="523.879" y="312.852" size="20" textColor="0x62463C" visible="true" bold="true"/>
+	<e:Label id="u_textRate_2" text="x1.8" x="784.658" y="454.252" size="18" textColor="0x62463C" visible="true" bold="true"/>
+	<e:Group width="905.07" height="149.212" x="118.851" y="153.732">
+		<e:List id="u_listItem"/>
+	</e:Group>
+	<e:Group width="903.07" height="152.212" x="123.851" y="367.732" visible="true">
+		<e:List id="u_listItem1"/>
+	</e:Group>
+	<e:Group id="u_grpChip" x="122.706" y="526.456" width="709" height="118">
+		<e:List id="u_chipList" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

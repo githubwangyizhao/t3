@@ -1,0 +1,73 @@
+// 推广
+//OPEN_DEBUG
+
+import  "05_prop.proto";
+
+// 玩家推广信息
+message PlayerPromoteData {
+    required int32 times = 1;                           //剩余次数
+    required int32 record_red = 2;                      //记录是否红点
+    repeated PromoteInfo promote_info_list = 3;         //推广信息
+}
+
+// 推广信息
+message PromoteInfo {
+    required int32 tier_id = 1;                         //几级代理
+    required int32 number = 2;                          //数量
+    required int32 mana = 3;                            //灵力
+    required int32 vip_exp = 4;                         //vip经验
+}
+
+// 推广记录
+message PromoteRecord {
+    required int32 real_id = 1;                         //实际id
+    required int32 id = 2;                              //模板id
+    repeated string param_list = 3;                     //参数
+    required int32 time = 4;                            //时间
+}
+
+// 获得推广记录
+message m_get_promote_record_tos {
+}
+message m_get_promote_record_toc {
+    repeated PromoteRecord promote_record_list = 1;
+}
+
+// 获得奖励
+message m_get_award_tos {
+}
+message m_get_award_toc {
+    enum ENUM {
+        success = 1;        // 成功
+        fail = 2;           // 失败
+        times_limit = 3;    // 次数上限
+        none = 4;           // 没有可领取的奖励
+    }
+    required ENUM result = 1;
+    required int32 mana = 2;                            //灵力
+    required int32 vip_exp = 3;                         //vip经验
+}
+
+// 通知玩家推广数据
+message m_notice_player_promote_data_toc {
+    required PlayerPromoteData player_promote_info_data = 1;
+}
+
+// 通知刷新玩家次数
+message m_notice_promote_times_toc {
+}
+
+// 邀请码
+message m_invitation_code_tos {
+    required string invitation_code = 1;                // 邀请码
+}
+message m_invitation_code_toc {
+    enum ENUM {
+        success = 1;        // 成功
+        fail = 2;           // 失败
+        already_get = 3;    // 这个账号已经被邀请过了
+        none = 4;           // 邀请码不存在
+        not_authority = 5;  // 邀请人和被邀请人是同一个人
+    }
+    required ENUM result = 1;
+}

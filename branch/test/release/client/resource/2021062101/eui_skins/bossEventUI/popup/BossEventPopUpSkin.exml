@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.BossEventUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17969d65b28"/>
+	<e:Image id="u_imgBg" visible="true" y="0" x="0"/>
+	<e:Image source="bossEventUI_json.boossEventUI_name_line" x="160.686" y="435.613"/>
+	<e:Image id="u_imgMonst_Head" x="114.89" y="137.118" touchEnabled="false"/>
+	<e:Image id="u_btnTo" source="bossEventUI_json.boossEventUI_img_go" x="863.92" y="300.77"/>
+	<e:Label id="u_textReach" text="BOSS抵达时间：" x="849.981" y="368.691" size="14" textColor="0xF0E4B0"/>
+	<e:Label id="u_textTime" text="战斗中..." x="969.72" y="368.291" size="16" textColor="0xF0E4B0" bold="true"/>
+	<e:Image source="bossEventUI_json.boossEventUI_name_bg" x="456.491" y="190.406"/>
+	<e:Label id="u_textName" text="牛魔王的小亲亲" y="228.106" size="24" bold="true" visible="true" textColor="0xFDF9D4" horizontalCenter="33"/>
+	<e:Label id="u_textShed" text="BOSS掉落:" x="330.728" y="324.478" size="24" visible="true" textColor="0xFFFADB"/>
+	<e:Label id="u_textDesc" text="牛魔王又去找玉面狐狸了。。。" x="335.893" y="425.513" size="16" textColor="0x595856"/>
+	<e:Group id="u_mcLeft" y="80.091" width="100" x="1">
+		<e:Image source="bossEventUI_json.boossEventUI_img_left" y="0" x="0" scaleX="1" scaleY="1"/>
+		<e:Image id="u_btnBack" source="bossEventUI_json.bossEventUI_back" x="4.648" scaleX="1" scaleY="1" y="199"/>
+	</e:Group>
+</e:Skin>

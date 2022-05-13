@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NpcBubbleSkin"
+	 width="120"
+	height="50" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" height="92" width="246" source="sceneMainUI_json.sceneMainUI_npc_tip_bg" y="0" scale9Grid="28,18,261,72" scaleX="0.5" scaleY="0.5" horizontalCenter="0"/>
+	<e:Label text="对话对话对话对话对话对话对话" y="10" id="u_txtMsg0" size="14" fontFamily="Microsoft YaHei" width="98" lineSpacing="2" visible="true" x="12"/>
+	<e:Label id="u_txtMsg" text="对话对话对话对话对话对话" y="10" size="14" fontFamily="Microsoft YaHei" width="98" lineSpacing="2" visible="true" x="12"/>
+</e:Skin>

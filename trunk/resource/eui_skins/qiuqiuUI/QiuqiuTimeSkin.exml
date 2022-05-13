@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QiuqiuTimeSkin" width="1136" height="67" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d4afff314"/>
+	<e:Image source="qiuqiuUI_json.qiuqiuUI_time_bj" visible="true" y="0" horizontalCenter="4"/>
+	<e:Image id="u_iconMyLv1" source="qiuqiuUI_json.qiuqiuUI_lv_1" x="170" y="-7" visible="true"/>
+	<e:Image id="u_iconMyLv2" source="qiuqiuUI_json.qiuqiuUI_lv_2" x="445" y="-7" visible="true"/>
+	<e:Image source="qiuqiuUI_json.qiuqiuUI_lv_1" x="650" y="-7" id="u_iconOtherLv1"/>
+	<e:Image source="qiuqiuUI_json.qiuqiuUI_lv_1" x="925" y="-7" id="u_iconOtherLv2"/>
+	<e:Image source="commonUI_json.commonUI_jindu_1" scale9Grid="11,6,10,7" y="12" width="226" x="219" visible="true"/>
+	<e:Image id="u_myJindu" source="qiuqiuUI_json.qiuqiuUI_jindu_1" x="221" y="14" visible="true"/>
+	<e:Image source="commonUI_json.commonUI_jindu_1" scale9Grid="11,6,10,7" y="12" width="226" x="699" visible="true"/>
+	<e:Image x="701" y="14" id="u_otherJindu" visible="true" source="qiuqiuUI_json.qiuqiuUI_jindu_2"/>
+	<ns1:NumberView id="u_mcNum" width="20" height="20" y="1.5" horizontalCenter="4" x="633"/>
+	<e:Label id="u_txtMyJindu" text="80" stroke="1" fontFamily="Microsoft YaHei" size="16" strokeColor="0x16408E" bold="true" y="14" horizontalCenter="-236"/>
+	<e:Label text="80" stroke="1" fontFamily="Microsoft YaHei" size="16" id="u_txtOtherJindu" strokeColor="0x16408E" bold="true" x="802" y="14"/>
+	
+</e:Skin>

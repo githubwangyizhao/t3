@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShareRenderSkin"
+	 width="662"
+	height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1760856b9a3"/>
+	<e:Image source="shareUI_json.shareUI_list_bg" x="0" y="0" height="120" scale9Grid="221,34,220,33"/>
+	<e:Label id="u_txtDesc" text="Successfully " y="12" bold="true" size="16" visible="true" width="300" fontFamily="Microsoft YaHei" lineSpacing="5" wordWrap="true" x="154" textColor="0xF0E4B0" stroke="1"/>
+	<e:Group id="u_btnReceive" visible="true" x="496" verticalCenter="0">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image id="u_btnIcon" visible="true" source="shareUI_json.shareUI_receive" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="u_receiveRed" x="106" y="-4" source="commonUI_json.commonUI_red"/>
+	</e:Group>
+	<e:Image id="u_imgReceived" source="shareUI_json.shareUI_yinz" x="507" y="23" visible="false"/>
+</e:Skin>

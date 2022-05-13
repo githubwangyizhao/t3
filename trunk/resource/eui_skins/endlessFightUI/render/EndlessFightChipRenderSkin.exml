@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightChipRenderSkin"
+	 width="104"
+	height="107" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe7509d4"/>
+	<e:Group id="u_grpParent" visible="true" width="104" height="107">
+		<e:Image id="u_imgIcon" scaleX="1" scaleY="1" horizontalCenter="0.5" source="endlessFightUI_json.endlessFightUI_img_chip_500" verticalCenter="5" visible="true"/>
+		<e:Image id="u_imgSelect" scaleX="1" scaleY="1" visible="false" source="endlessFightUI_json.endlessFightUI_chip_select" verticalCenter="0" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

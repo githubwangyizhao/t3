@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.BindPhonePopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c779aeaa8"/>
+	<e:Image scaleX="1" scaleY="1" fillMode="clip" visible="true" touchEnabled="true" horizontalCenter="-15" verticalCenter="-28" source="bindPhoneUI_json.bindPhoneUI_img_3"/>
+	<e:Image id="u_btnClose" x="1035" y="77" scaleX="1" scaleY="1" visible="true" source="commonUI_json.commonUI_btn_close_2" width="30" height="30"/>
+	<e:Label id="u_textPinTime" text="Label" x="886.2" y="410.44" scaleX="1" scaleY="1" size="16" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+	<e:Group x="571.305" y="338.251">
+		<e:Image source="bindPhoneUI_json.bindPhoneUI_img_bg1" x="96.02800000000003" y="1.8470000000000368" width="326" height="36" scale9Grid="12,12,13,13" visible="true" scaleX="1" scaleY="1"/>
+		<e:Label id="u_textPhoneCode" text="手机号码：" x="1.251" touchEnabled="false" textAlign="center" scaleX="1" scaleY="1" size="18" bold="true" fontFamily="Microsoft YaHei" y="10.008" textColor="0xFFFFFF"/>
+		<e:EditableText id="u_editPhone" width="303.45" height="26.671" x="106.458" scaleX="1" scaleY="1" visible="true" size="18" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" promptColor="0x818EA1" inputType="2" maxChars="11" restrict="0-9" fontFamily="Microsoft YaHei" verticalCenter="0"/>
+	</e:Group>
+	<e:Group x="575.259" y="398.154">
+		<e:Image source="bindPhoneUI_json.bindPhoneUI_img_bg1" x="92.07400000000001" y="1.509000000000043" width="206" height="36" scale9Grid="12,12,13,13" visible="true" scaleX="1" scaleY="1"/>
+		<e:Label id="u_textPin" text="验 证 码：" y="9.884999999999991" touchEnabled="false" textAlign="center" x="1.6429999999999936" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" size="18" bold="true" textColor="0xFFFFFF"/>
+		<e:EditableText id="u_editPin" width="185.706" height="26.671" x="102.503" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" size="18" inputType="2" maxChars="6" restrict="a-z 0-9" fontFamily="Microsoft YaHei" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_btnGetPin" x="874.369" y="393.221" visible="true" width="122" height="46">
+		<e:Image source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Image scaleX="1" scaleY="1" source="bindPhoneUI_json.bindPhoneUI_img_get_pin" x="9" y="11"/>
+	</e:Group>
+	<e:Group id="u_btnBind" y="470.904" width="122" height="46" horizontalCenter="215">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow" horizontalCenter="0"/>
+		<e:Image scaleX="1" scaleY="1" source="bindPhoneUI_json.bindPhoneUI_btn_bind" y="11" x="9"/>
+	</e:Group>
+	<e:Group id="u_grpArea" x="569.552" y="279.564" visible="true" width="420" height="33">
+		<e:Label id="u_textAreaCode" text="国家地区：" x="3.205" y="8.77" touchEnabled="false" textAlign="center" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" size="18" bold="true" textColor="0xFFFFFF" visible="true"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,127 @@
+//匹配场房间
+
+import "01_player.proto";
+
+//匹配场房间数据
+message MatchSceneRoomData {
+    required int32 type = 1;                                //类型(0:世界招募,1:指定招募)
+    required int32 room_id = 2;                             //房间id
+    required ModelHeadFigure model_head_figure = 3;         //头像
+    required int32 cost_num = 4;                            //房间消耗
+    required int32 is_lock = 5;                             //是否上锁(0未上锁,1:上锁)
+    required int32 recruit_time = 6;                        //招募时间
+    required int32 people_num = 7;                          //玩家数量
+}
+
+//通知未读数量
+message m_notice_unread_num_toc {
+    required int32 num = 1;                                 //未读数量
+}
+
+//获取房间列表
+message m_get_room_list_tos {
+}
+message m_get_room_list_toc {
+    repeated MatchSceneRoomData room_data_list = 1;         //房间列表
+}
+
+//退出房间列表
+message m_exit_room_list_tos {
+}
+
+//增加房间
+message m_add_room_toc {
+    required MatchSceneRoomData room_data = 1;              //房间
+}
+
+//删除房间
+message m_delete_room_toc {
+    required int32 type = 1;                                //类型(0:全部,1:指定招募)
+    required int32 room_id = 2;                             //房间id
+}
+
+//通知房间人数变化
+message m_notice_room_people_num_change_toc {
+    required int32 room_id = 1;                             //房间id
+    required uint32 people_num = 2;                         //玩家人数
+}
+
+//创建房间
+message m_create_room_tos {
+    optional string password = 1;                           //密码
+    required uint32 cost_num = 2;                           //入场券数量
+}
+message m_create_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        no_condition = 3;                                   //条件不满足
+        already_join_room = 4;                              //已经加入一个房间
+    }
+    required ENUM result = 1;                               //结果
+}
+
+//世界招募
+message m_world_recruit_tos {
+}
+message m_world_recruit_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        time_limit = 3;                                     //时间限制
+    }
+    required ENUM result = 1;                               //结果
+    required int32 limit_time = 2;                          //限制时间
+}
+
+//招募
+message m_recruit_tos {
+    required string player_name = 1;                        //招募玩家名字
+}
+message m_recruit_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        time_limit = 3;                                     //时间限制
+        none = 4;                                           //查无此人
+        no_condition = 5;                                   //该玩家不在线
+    }
+    required ENUM result = 1;                               //结果
+    required int32 limit_time = 2;                          //限制时间
+}
+
+//加入房间
+message m_join_room_tos {
+    required int32 room_id = 1;                             //房间id
+    required string password = 2;                           //密码(最多4个字符)
+}
+message m_join_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        not_enough_mana = 3;                                //道具不足
+        no_condition = 4;                                   //条件不足
+        already_join_room = 5;                              //已经加入一个房间
+        error_password = 6;                                 //密码错误
+        none = 7;                                           //房间不存在
+    }
+    required ENUM result = 1;                               //结果
+    required sint32 people_num = 2;                         //房间人数
+}
+
+//离开房间
+message m_leave_room_tos {
+}
+message m_leave_room_toc {
+    enum ENUM {
+        success = 1;                                        //成功
+        fail = 2;                                           //失败
+        no_condition = 3;                                   //房主离开解散
+    }
+    required ENUM result = 1;                               //结果
+}
+
+//通知人数变化
+message m_notice_people_num_change_toc {
+    required uint32 people_num = 1;                         //玩家人数
+}

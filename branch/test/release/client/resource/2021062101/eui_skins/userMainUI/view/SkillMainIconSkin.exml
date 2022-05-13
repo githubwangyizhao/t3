@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SkillMainIconSkin"
+	 width="87"
+	height="87" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175fd99a0c0"/>
+	<e:Image id="u_imgBj" source="userMainUI_json.userMainUI_d_skill_k" visible="false"/>
+	<e:Image source="userMainUI_json.userMainUI_d_skill_bj" horizontalCenter="0" verticalCenter="0" visible="true"/>
+	<e:Image id="u_imgIcon" horizontalCenter="0" verticalCenter="0" source="userMainUI_json.userMainUI_d_skill_203"/>
+	<e:Label id="u_txtCd" text="60" size="26" anchorOffsetX="0" textAlign="right" borderColor="0x0A0909" border="false" fontFamily="Arial" scaleX="1" scaleY="1" textColor="0xFFFFFF" stroke="1" strokeColor="0x131313" bold="true" verticalCenter="0" horizontalCenter="0"/>
+	<e:Group id="u_mcCount" y="60.75" horizontalCenter="0">
+		<e:Image id="u_imgCount" source="userMainUI_json.userMainUI_d_skill_num" x="0" y="0" scale9Grid="16,4,1,24" width="40"/>
+		<e:Label id="u_txtCount" text="69" size="18" anchorOffsetX="0" textAlign="right" borderColor="0x0A0909" border="false" fontFamily="Arial" scaleX="1" scaleY="1" textColor="0xFFFFFF" bold="true" y="5.75" stroke="1" strokeColor="0x131313" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image id="u_btnClick" width="76" height="76" source="commonUI_json.commonUI_box" scale9Grid="3,3,3,3" alpha="0" horizontalCenter="0" verticalCenter="0" visible="true"/>
+</e:Skin>

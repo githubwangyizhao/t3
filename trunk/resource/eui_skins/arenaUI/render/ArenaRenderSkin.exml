@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ArenaRenderSkin"
+	 width="375"
+	height="440" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" x="0" y="0" visible="true"/>
+	<e:Image id="u_imgName" y="227" horizontalCenter="0.5"/>
+	<e:Image id="u_imgLock" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-30" visible="true" source="arenaUI_json.arenaUI_lock"/>
+	<e:Group id="u_enterBtn" y="374" width="158" height="57" touchChildren="false" visible="true" horizontalCenter="0.5">
+		<e:Image id="u_imgEnter" source="arenaUI_json.arenaUI_btn1"/>
+	</e:Group>
+</e:Skin>

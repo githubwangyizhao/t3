@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MainAttackSkillIconSkin"
+	 width="40"
+	height="40" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="userMainUI_json.userMainUI_buff_bj"/>
+	<e:Image id="u_imgIcon" source="userMainUI_json.userMainUI_buff_106" x="5" y="5"/>
+	<e:Label id="u_txtCd" text="60" size="16" anchorOffsetX="0" textAlign="right" borderColor="0x0A0909" border="false" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xFFFFFF" stroke="1" strokeColor="0x131313" bold="true" horizontalCenter="0" y="13.164"/>
+</e:Skin>

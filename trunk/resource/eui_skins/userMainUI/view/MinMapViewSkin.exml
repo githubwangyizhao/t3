@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.minMapViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a1e66ea4f"/>
+	<e:Group id="u_mainInfo" visible="true" width="234.804" height="156">
+		<e:Image id="u_btnMonsterInfo" y="114" x="191.175" width="40" height="40" source="userMainUI_json.userMainUI_x_xx"/>
+		<e:Image id="u_btnRank" x="191.175" y="60.218" width="40" height="40" source="userMainUI_json.userMainUI_x_ph"/>
+		<e:Image id="u_btnCheckMap" x="191.175" y="2" width="40" height="40" visible="true" source="userMainUI_json.userMainUI_x_dt"/>
+		<e:Image x="6.867" y="165.328" visible="false"/>
+		<e:Group id="u_mcMoney0" y="169.716" name="u_mcMoney1" scaleX="1" scaleY="1" visible="false" horizontalCenter="-24.902">
+			<e:Label id="u_txtMoney0" text="999.83M" multiline="false" size="16" scaleX="1" scaleY="1" textAlign="center" visible="true" y="2.067" fontFamily="Microsoft YaHei" horizontalCenter="12.5" textColor="0xF0E4B0"/>
+			<e:Image id="u_imgMoney0" x="-4.421" visible="true" source="commonUI_icon_2" y="-8" scaleX="0.8" scaleY="0.8"/>
+		</e:Group>
+		<e:Group id="u_mcMoney1" y="198.612" name="u_mcMoney1" scaleX="1" scaleY="1" visible="false" horizontalCenter="-23.902">
+			<e:Label id="u_txtMoney1" text="999.83M" multiline="false" size="16" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" textAlign="center" visible="true" horizontalCenter="11.5" y="-0.248" textColor="0xF0E4B0"/>
+			<e:Image id="u_imgMoney1" x="-5.791" visible="true" source="commonUI_icon_4" scaleX="0.8" scaleY="0.8" y="-8.628"/>
+		</e:Group>
+		<e:Image id="u_imgBuy" source="commonUI_json.commonUI_head_add" x="189" y="173" visible="false"/>
+	</e:Group>
+    <e:Image id="u_imgMask" source="commonUI_json.commonUI_box" width="1136" height="640" alpha="0"/>
+	<e:Group id="u_grpMap" width="183.333" height="156" visible="true">
+		<e:Image id="u_imgMap" x="0" y="0"/>
+		<e:Group id="u_grpDownLayer0"/>
+		<e:Group id="u_grpDownLayer1"/>
+		<e:Group id="u_grpMidLayer"/>
+		<e:Group id="u_grpUpLayer"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EntranceIconSkin" width="105" height="105" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17660548cb7" x="8" y="6"/>
+	<e:Image id="u_imgIcon" source="entranceUI_json.1011_icon_ent" y="6" horizontalCenter="0" touchEnabled="false" locked="true"/>
+	<e:Label id="u_txtDesc" text="" y="85" anchorOffsetX="0" multiline="false" size="16" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="0" textColor="0x00ff03" stroke="1" strokeColor="0x232323" touchEnabled="false" locked="true"/>
+	<e:Image id="u_imgName" source="entranceUI_json.1011_name_ent" y="41" horizontalCenter="0" touchEnabled="false" locked="true"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" x="17" y="7" scale9Grid="1,1,8,8" width="71" anchorOffsetY="0" height="76" alpha="0" locked="true"/>
+</e:Skin>

@@ -1,0 +1,2593 @@
+[
+	{
+		"client_key": "id"
+	},
+	{
+		"id": 101,
+		"name": "九天玄女",
+		"folder_path": "player/101/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 102,
+		"name": "蚩尤",
+		"folder_path": "player/102/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-127
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 103,
+		"name": "荷鲁斯",
+		"folder_path": "player/103/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-119
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 104,
+		"name": "女修罗",
+		"folder_path": "player/104/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-119
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			64,
+			112
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 105,
+		"name": "雷震子",
+		"folder_path": "player/105/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-4
+		],
+		"name_off_list": [
+			0,
+			-139
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			131
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 106,
+		"name": "湿婆",
+		"folder_path": "player/106/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-123
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 107,
+		"name": "恶灵船长",
+		"folder_path": "player/107/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-130
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			74,
+			122
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 108,
+		"name": "牛魔王",
+		"folder_path": "player/108/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-152
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			94,
+			144
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 109,
+		"name": "忍者",
+		"folder_path": "player/109/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-129
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			60,
+			129
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 110,
+		"name": "孙悟空",
+		"folder_path": "player/110/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-130
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 111,
+		"name": "阿波罗",
+		"folder_path": "player/111/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-16
+		],
+		"name_off_list": [
+			0,
+			-116
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			70,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 112,
+		"name": "须佐之男",
+		"folder_path": "player/112/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-123
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|attack03#*|injure#*|move#*|pose#*|skill#*|stand#*|tujin#*|xuanyun#*",
+		"fps": "60|60|60|40|40|40|40|40|40|40"
+	},
+	{
+		"id": 1001,
+		"name": "怪物-1",
+		"folder_path": "monster/1001/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			2,
+			-23
+		],
+		"name_off_list": [
+			1,
+			-73
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			82,
+			66
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.95,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "28|28|28|28|28"
+	},
+	{
+		"id": 1002,
+		"name": "怪物-2",
+		"folder_path": "monster/1002/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-20
+		],
+		"name_off_list": [
+			12,
+			-90
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			68,
+			73
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.35,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "36|36|36|36|36"
+	},
+	{
+		"id": 1003,
+		"name": "怪物-3",
+		"folder_path": "monster/1003/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			-1,
+			-24
+		],
+		"name_off_list": [
+			3,
+			-84
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			40,
+			66
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.55,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1004,
+		"name": "怪物-4",
+		"folder_path": "monster/1004/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			1,
+			-33
+		],
+		"name_off_list": [
+			1,
+			-110
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			84,
+			99
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.3,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1005,
+		"name": "怪物-5",
+		"folder_path": "monster/1005/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-22
+		],
+		"name_off_list": [
+			-2,
+			-94
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			124,
+			85
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.85,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1006,
+		"name": "怪物-6",
+		"folder_path": "monster/1006/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-34
+		],
+		"name_off_list": [
+			1,
+			-113
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			60,
+			100
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.5,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1007,
+		"name": "怪物-7",
+		"folder_path": "monster/1007/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			2,
+			-23
+		],
+		"name_off_list": [
+			1,
+			-99
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			88,
+			90
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [
+			-1,
+			47,
+			1
+		],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.83,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1008,
+		"name": "怪物-8",
+		"folder_path": "monster/1008/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-16
+		],
+		"name_off_list": [
+			0,
+			-116
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			84,
+			105
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.38,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1009,
+		"name": "怪物-9",
+		"folder_path": "monster/1009/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-24
+		],
+		"name_off_list": [
+			-2,
+			-139
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			124,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.82,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1010,
+		"name": "怪物-10",
+		"folder_path": "monster/1010/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-22
+		],
+		"name_off_list": [
+			0,
+			-143
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			98,
+			122
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.55,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1011,
+		"name": "怪物-11",
+		"folder_path": "monster/1011/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-50
+		],
+		"name_off_list": [
+			-2,
+			-131
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			144,
+			101
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.85,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1012,
+		"name": "怪物-12",
+		"folder_path": "monster/1012/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-39
+		],
+		"name_off_list": [
+			0,
+			-149
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			134,
+			120
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.72,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1013,
+		"name": "怪物-13",
+		"folder_path": "monster/1013/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-40
+		],
+		"name_off_list": [
+			-1,
+			-172
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			98,
+			132
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.68,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1014,
+		"name": "怪物-14",
+		"folder_path": "monster/1014/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-24
+		],
+		"name_off_list": [
+			0,
+			-146
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			82,
+			143
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.85,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 1051,
+		"name": "黄金大剑士",
+		"folder_path": "monster/1051/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			22
+		],
+		"name_off_list": [
+			0,
+			-149
+		],
+		"time_over_off_list": [
+			0,
+			-12
+		],
+		"hot_list": [
+			0,
+			0,
+			136,
+			141
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.7,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "30|30|30|30|30"
+	},
+	{
+		"id": 1052,
+		"name": "黄金铁甲兽",
+		"folder_path": "monster/1052/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-56
+		],
+		"name_off_list": [
+			0,
+			-145
+		],
+		"time_over_off_list": [
+			0,
+			-12
+		],
+		"hot_list": [
+			0,
+			0,
+			126,
+			138
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.95,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "30|30|30|30|30"
+	},
+	{
+		"id": 1053,
+		"name": "黄金护卫",
+		"folder_path": "monster/1053/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-35
+		],
+		"name_off_list": [
+			0,
+			-167
+		],
+		"time_over_off_list": [
+			0,
+			-12
+		],
+		"hot_list": [
+			0,
+			0,
+			110,
+			158
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.7,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "30|30|30|30|30"
+	},
+	{
+		"id": 1054,
+		"name": "黄金熔岩",
+		"folder_path": "monster/1054/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-39
+		],
+		"name_off_list": [
+			0,
+			-147
+		],
+		"time_over_off_list": [
+			0,
+			-12
+		],
+		"hot_list": [
+			0,
+			0,
+			128,
+			136
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.9,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "30|30|30|30|30"
+	},
+	{
+		"id": 1055,
+		"name": "黄金甲士",
+		"folder_path": "monster/1055/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-138
+		],
+		"time_over_off_list": [
+			0,
+			-12
+		],
+		"hot_list": [
+			0,
+			0,
+			146,
+			116
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.65,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "30|30|30|30|30"
+	},
+	{
+		"id": 1056,
+		"name": "黄金破坏者",
+		"folder_path": "monster/1056/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-42
+		],
+		"name_off_list": [
+			0,
+			-144
+		],
+		"time_over_off_list": [
+			0,
+			-12
+		],
+		"hot_list": [
+			0,
+			0,
+			120,
+			143
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "30|30|30|30|30"
+	},
+	{
+		"id": 2001,
+		"name": "炸弹",
+		"folder_path": "monster/2001/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-22
+		],
+		"name_off_list": [
+			0,
+			-127
+		],
+		"time_over_off_list": [
+			0,
+			-25
+		],
+		"hot_list": [
+			0,
+			0,
+			82,
+			130
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.38,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 2003,
+		"name": "火球",
+		"folder_path": "monster/2003/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-35
+		],
+		"name_off_list": [
+			0,
+			-120
+		],
+		"time_over_off_list": [
+			0,
+			-25
+		],
+		"hot_list": [
+			0,
+			0,
+			118,
+			141
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.9,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24|24"
+	},
+	{
+		"id": 2005,
+		"name": "闪电",
+		"folder_path": "monster/2005/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-20
+		],
+		"name_off_list": [
+			0,
+			-157
+		],
+		"time_over_off_list": [
+			0,
+			-27
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			161
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.6,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24|24"
+	},
+	{
+		"id": 2007,
+		"name": "地震",
+		"folder_path": "monster/2007/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			11,
+			-48
+		],
+		"name_off_list": [
+			0,
+			-146
+		],
+		"time_over_off_list": [
+			0,
+			-27
+		],
+		"hot_list": [
+			0,
+			0,
+			150,
+			177
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.55,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24|24"
+	},
+	{
+		"id": 2010,
+		"name": "星陨领主",
+		"folder_path": "monster/2010/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-60
+		],
+		"name_off_list": [
+			0,
+			-155
+		],
+		"time_over_off_list": [
+			0,
+			-25
+		],
+		"hot_list": [
+			0,
+			0,
+			128,
+			154
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.85,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24|24"
+	},
+	{
+		"id": 2011,
+		"name": "飓风领主",
+		"folder_path": "monster/2011/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-32
+		],
+		"name_off_list": [
+			0,
+			-164
+		],
+		"time_over_off_list": [
+			0,
+			-25
+		],
+		"hot_list": [
+			0,
+			0,
+			102,
+			149
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.8,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 2012,
+		"name": "奥玛教主",
+		"folder_path": "monster/2012/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-21
+		],
+		"name_off_list": [
+			0,
+			-137
+		],
+		"time_over_off_list": [
+			0,
+			-25
+		],
+		"hot_list": [
+			0,
+			0,
+			98,
+			147
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.7,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24|24"
+	},
+	{
+		"id": 2013,
+		"name": "暗影领主",
+		"folder_path": "monster/2013/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			19,
+			-43
+		],
+		"name_off_list": [
+			0,
+			-143
+		],
+		"time_over_off_list": [
+			0,
+			-25
+		],
+		"hot_list": [
+			0,
+			0,
+			108,
+			149
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.85,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|run#*|stand#*",
+		"fps": "24|24|24|24|24|24"
+	},
+	{
+		"id": 2014,
+		"name": "幽冥鬼火",
+		"folder_path": "monster/2014/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-36
+		],
+		"name_off_list": [
+			0,
+			-131
+		],
+		"time_over_off_list": [
+			0,
+			-24
+		],
+		"hot_list": [
+			0,
+			0,
+			122,
+			134
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.8,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|move#*|stand#*",
+		"fps": "24|24|24|24|24"
+	},
+	{
+		"id": 2101,
+		"name": "金币小妖",
+		"folder_path": "monster/2101/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 3,
+		"hand_icon": "",
+		"offset_list": [
+			2,
+			-39
+		],
+		"name_off_list": [
+			0,
+			-130
+		],
+		"time_over_off_list": [
+			0,
+			-20
+		],
+		"hot_list": [
+			0,
+			0,
+			124,
+			140
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.73,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "die#5|move#*|run#*|stand#*",
+		"fps": "24|24|24|24"
+	},
+	{
+		"id": 2201,
+		"name": "混沌",
+		"folder_path": "monster/2201/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 3,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-14
+		],
+		"name_off_list": [
+			-1,
+			-204
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			196,
+			195
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.4,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|jump#*|move#*|pose#*|stand#*",
+		"fps": "24|24|24|24|24|24|24"
+	},
+	{
+		"id": 2202,
+		"name": "恐惧之翼",
+		"folder_path": "monster/2202/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			5
+		],
+		"name_off_list": [
+			0,
+			-172
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			140,
+			169
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.15,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|stand#*",
+		"fps": "24|24|24|24"
+	},
+	{
+		"id": 2203,
+		"name": "石头",
+		"folder_path": "monster/2203/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-187
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			190,
+			172
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|jump#*|move#*|pose#*|stand#*",
+		"fps": "24|24|24|24|24|24|24"
+	},
+	{
+		"id": 2204,
+		"name": "火焰",
+		"folder_path": "monster/2204/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-3
+		],
+		"name_off_list": [
+			0,
+			-178
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			184,
+			175
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1.28,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack01#*|attack02#*|die#*|jump#*|move#*|pose#*|stand#*",
+		"fps": "24|24|24|24|24|24|24"
+	},
+	{
+		"id": 10001,
+		"name": "慕容仙子",
+		"folder_path": "npc/1001/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-50
+		],
+		"name_off_list": [
+			0,
+			-145
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			137
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack#*|die#*|move#*|skill#*|stand#5",
+		"fps": "12|12|12|12|12|12|16|12|12"
+	},
+	{
+		"id": 10002,
+		"name": "青折上仙",
+		"folder_path": "npc/1002/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-50
+		],
+		"name_off_list": [
+			0,
+			-145
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			137
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack#*|die#*|move#*|skill#*|stand#5",
+		"fps": "12|12|12|12|12|12|16|12|12"
+	},
+	{
+		"id": 10003,
+		"name": "少毅上仙",
+		"folder_path": "npc/1003/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-50
+		],
+		"name_off_list": [
+			0,
+			-145
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			137
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack#*|die#*|move#*|skill#*|stand#5",
+		"fps": "12|12|12|12|12|12|16|12|12"
+	},
+	{
+		"id": 10004,
+		"name": "白龙将士",
+		"folder_path": "npc/1004/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-50
+		],
+		"name_off_list": [
+			0,
+			-145
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			137
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack#*|die#*|move#*|skill#*|stand#5",
+		"fps": "12|12|12|12|12|12|16|12|12"
+	},
+	{
+		"id": 10005,
+		"name": "白辰太子",
+		"folder_path": "npc/1005/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-50
+		],
+		"name_off_list": [
+			0,
+			-145
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			137
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack#*|die#*|move#*|skill#*|stand#5",
+		"fps": "12|12|12|12|12|12|16|12|12"
+	},
+	{
+		"id": 10006,
+		"name": "紫茗",
+		"folder_path": "npc/1006/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "",
+		"offset_list": [
+			0,
+			-50
+		],
+		"name_off_list": [
+			0,
+			-145
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			137
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.75,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "attack#*|die#*|move#*|skill#*|stand#5",
+		"fps": "12|12|12|12|12|12|16|12|12"
+	},
+	{
+		"id": 20001,
+		"name": "红衣女",
+		"folder_path": "npc/20001/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.7,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20002,
+		"name": "蓝衣女",
+		"folder_path": "npc/20002/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 0.7,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20003,
+		"name": "绿衣女",
+		"folder_path": "npc/20003/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20004,
+		"name": "棕衣女",
+		"folder_path": "npc/20004/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20005,
+		"name": "橙色老年女",
+		"folder_path": "npc/20005/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20006,
+		"name": "棕色老年女",
+		"folder_path": "npc/20006/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20007,
+		"name": "花纹裙子女",
+		"folder_path": "npc/20007/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20008,
+		"name": "绿色长裙女",
+		"folder_path": "npc/20008/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20009,
+		"name": "红色长裙女",
+		"folder_path": "npc/20009/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20010,
+		"name": "深蓝长裙女",
+		"folder_path": "npc/20010/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20011,
+		"name": "红色貂皮老头",
+		"folder_path": "npc/20011/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20012,
+		"name": "蓝色貂皮老头",
+		"folder_path": "npc/20012/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20013,
+		"name": "红色帽子男",
+		"folder_path": "npc/20013/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20014,
+		"name": "蓝色帽子男",
+		"folder_path": "npc/20014/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20015,
+		"name": "红色斗篷男",
+		"folder_path": "npc/20015/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	},
+	{
+		"id": 20016,
+		"name": "黄色斗篷男",
+		"folder_path": "npc/20016/",
+		"folder_transform_path": "",
+		"mirror": 1,
+		"die_type": 0,
+		"hand_icon": "null",
+		"offset_list": [
+			0,
+			-25
+		],
+		"name_off_list": [
+			0,
+			-112
+		],
+		"time_over_off_list": [
+			0,
+			0
+		],
+		"hot_list": [
+			0,
+			0,
+			80,
+			110
+		],
+		"yuchao_off_list": [],
+		"shouji_off_list": [],
+		"leiji_effect_off_list": [],
+		"leiji_off_list": [],
+		"lock_off_list": [],
+		"lock_to_off_list": [],
+		"scale": 1,
+		"hot_x": 160,
+		"hot_y": 160,
+		"action": "move#*|stand#*",
+		"fps": "12|12"
+	}
+]

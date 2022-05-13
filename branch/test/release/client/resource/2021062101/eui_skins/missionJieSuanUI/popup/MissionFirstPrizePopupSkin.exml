@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionFirstPrizePopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1762be93dfe"/>
+	<e:Image source="missionJieSuanUI_json.missionJieSuanUI_bg" y="0" x="0" visible="true"/>
+	<e:Image source="missionJieSuanUI_json.missionJieSuanUI_title" y="175" visible="true" horizontalCenter="-1.5"/>
+	<e:Label id="u_txtMsg" text="Congratulations on winning the first prize" y="343" size="20" bold="true" visible="true" horizontalCenter="0"/>
+	<e:Label text="Ranking :  " y="395" size="20" bold="true" visible="true" id="u_txtRank" horizontalCenter="0"/>
+	<e:Image source="missionJieSuanUI_json.missionJieSuanUI_design" y="459" horizontalCenter="6.5"/>
+	<e:Image source="missionJieSuanUI_json.missionJieSuanUI_rewarded" x="271" y="455" visible="true"/>
+	<e:Group id="u_grpReward" height="220" y="510" horizontalCenter="0"/>
+	<e:Group id="u_btnOK" visible="true" y="770" horizontalCenter="6.5" width="135" height="65">
+		<e:Image y="0" visible="true" x="0" scale9Grid="79,15,1,2" source="commonsUI_json.commonsUI_btn_1"/>
+		<e:Label id="u_txtOK" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="OK" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close" x="567" y="181" visible="true" width="40" height="40"/>
+</e:Skin>

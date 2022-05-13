@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a146b108"/>
+	<e:Image id="u_bg" visible="true" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group id="u_iconGrp" x="14" y="85" visible="true" height="504" width="910">
+	</e:Group>
+	<e:Group x="196" y="205">
+		<e:Image id="u_centerBg" visible="true" source="luckyDrawUI_json.luckyDrawUI_centerBg" scale9Grid="40,40,40,40" x="0" y="0"/>
+		<e:Group id="u_valueGrp" x="0" y="0" visible="true" width="546" height="265">
+			<e:Image source="luckyDrawUI_json.luckyDrawUI_gray" x="91" y="29"/>
+			<e:Image id="u_lightImg" source="luckyDrawUI_json.luckyDrawUI_high" y="58.52" x="123"/>
+			<e:Image id="u_tipBtn" x="9.226" y="8" width="23" height="23" source="commonUI_json.commonUI_btn_th"/>
+			<e:Label id="u_luckyTip" text="幸运值越高，获得稀有物品的机会就会越大！" y="87" size="18" strokeColor="0x333333" stroke="2" height="63.802" width="168.782" lineSpacing="8" x="303" textColor="0xFFFFFF" visible="true" fontFamily="Microsoft YaHei"/>
+			<e:Label id="u_valueLb" text="10" x="427.283" y="36" size="25" bold="true" textColor="0xFFDE00" fontFamily="Microsoft YaHei"/>
+			<e:Image source="luckyDrawUI_json.luckyDrawUI_curValue" x="299.938" y="32.124"/>
+		</e:Group>
+		<e:Group id="u_awardGrp" y="14" visible="false" width="536" height="146" x="4">
+			<e:Image source="luckyDrawUI_json.luckyDrawUI_title" y="0" horizontalCenter="0"/>
+			<e:Scroller id="u_awdScroller" width="480" height="80" y="54" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0">
+			<e:List id="u_awdList" y="264" x="0"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="u_btn_0" x="26.71" y="181.7" visible="true" touchChildren="false" width="228" height="67">
+			<e:Image x="0" y="0" source="luckyDrawUI_json.luckyDrawUI_btnBg" visible="true"/>
+			<e:Group y="15" touchEnabled="false" horizontalCenter="-53">
+				<e:Image x="0" y="0" source="commonUI_json.commonUI_icon_4"/>
+				<e:Label id="u_txtCost1" text="100" x="36" y="12" size="22" stroke="1" textColor="0xFFFFFF" fontFamily="Microsoft YaHei"/>
+				<e:Image source="luckyDrawUI_json.luckyDrawUI_btn_draw0" y="11" right="-105"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_btn_1" x="296.71" y="181.56" visible="true" touchChildren="false" width="228" height="67">
+			<e:Image x="0" y="0" source="luckyDrawUI_json.luckyDrawUI_btnBg" visible="true"/>
+			<e:Group y="15" horizontalCenter="-53" touchEnabled="false">
+				<e:Image x="0" y="0" source="commonUI_json.commonUI_icon_4"/>
+				<e:Label id="u_txtCost2" text="500" x="36" y="12" size="22" stroke="1" textColor="0xFFFFFF" fontFamily="Microsoft YaHei"/>
+				<e:Image y="11" source="luckyDrawUI_json.luckyDrawUI_btn_draw1" right="-105"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group x="923" y="47">
+		<e:Image source="luckyDrawUI_json.luckyDrawUI_etrTitle" y="0" x="0"/>
+		<e:Label id="u_countLb" text="本周累计：5个" y="37.44" size="16" textAlign="center" stroke="2" lineSpacing="15" textColor="0xF0E4B0" strokeColor="0x231413" horizontalCenter="8" fontFamily="Microsoft YaHei"/>
+		<e:Image source="luckyDrawUI_json.luckyDrawUI_task_bg" x="40" y="60"/>
+		<e:Image id="u_etrCur" source="luckyDrawUI_json.luckyDrawUI_bg_cur" x="49" y="60" scale9Grid="3,7,2,7" height="10"/>
+		<e:Scroller id="u_extraScroller" width="161" height="420" y="70" visible="true" x="27.88">
+			<e:List id="u_extraList"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Image id="u_storeBtn" source="luckyDrawUI_json.luckyDrawUI_store" x="915.24" y="534.97" visible="true" width="221" height="96"/>
+</e:Skin>

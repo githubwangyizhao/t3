@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketRewardPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a3265783c"/>
+	<e:Group id="u_mcLeft" x="121" y="147">
+		<e:Scroller id="u_scrollerItem" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="160" y="0" width="855" height="493">
+			<e:Group id="u_mcReward" visible="true">
+			<e:Image id="u_imgJinduBg" x="0" y="234" source="passTicketRewardUI_json.passTicketRewardUI_jindu1" visible="true" scale9Grid="7,6,7,5"/>
+			<e:Image id="u_imgJindu" visible="true" scaleX="1" scaleY="1" y="233" x="0" source="passTicketRewardUI_json.passTicketRewardUI_jindu2" scale9Grid="31,7,31,7"/>
+			<e:Group id="u_btnBuyLv" x="444" y="224" visible="true" width="99" height="38">
+				<e:Image source="passTicketRewardUI_json.passTicketRewardUI_btn_lv" x="0" y="0" visible="true"/>
+				<e:Image source="commonUI_json.commonUI_icon_4" x="15" y="4" width="28" height="28" visible="true" touchEnabled="false"/>
+				<e:Label id="u_txtLvCost" text="250" x="45" y="12" size="16" visible="true" touchEnabled="false" textColor="0xFFFFFF" stroke="1" bold="true" fontFamily="Microsoft YaHei"/>
+			</e:Group>
+			</e:Group>
+		</e:Scroller>
+		<e:Image source="passTicketRewardUI_json.passTicketRewardUI_mask_bg" x="160" scale9Grid="6,16,6,17" height="500" y="-3"/>
+		<e:Image source="passTicketRewardUI_json.passTicketRewardUI_hj_bg1" x="0" y="0" visible="true"/>
+		<e:Image id="u_imgTicket1" x="7" y="18" visible="true" source="passTicketRewardUI_json.passTicketRewardUI_hj_bg2"/>
+		<e:Image source="passTicketRewardUI_json.passTicketRewardUI_txt_hj_txz" x="23" y="158" visible="true"/>
+		<e:Group id="u_btnBuy" x="28" y="190" width="110" height="42">
+			<e:Image source="commonUI_json.commonUI_img_btnbule" x="0" y="0" scaleX="0.9" scaleY="0.9" visible="true"/>
+			<e:Image source="passTicketRewardUI_json.passTicketRewardUI_txt_qy" visible="true" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Image id="u_imgYqy" source="passTicketRewardUI_json.passTicketRewardUI_icon_yqy" x="52" y="198"/>
+		<e:Image source="passTicketRewardUI_json.passTicketRewardUI_by_bg1" x="0" y="243" visible="true"/>
+		<e:Image source="passTicketRewardUI_json.passTicketRewardUI_by_bg2" x="7" y="261" visible="true"/>
+		<e:Image source="passTicketRewardUI_json.passTicketRewardUI_txt_by_txz" x="23" y="425" visible="true"/>
+	</e:Group>
+</e:Skin>

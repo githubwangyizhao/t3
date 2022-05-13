@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BoxBalancePopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b1973d150"/>
+	<e:Image id="u_imgBg" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" width="1136" height="640" horizontalCenter="0" alpha="0.8"/>
+	<e:Label id="u_txtdown" text="关闭(5)" y="571.5" size="16" fontFamily="Microsoft YaHei" visible="true" textColor="0x8693A7" touchEnabled="false" horizontalCenter="0"/>
+</e:Skin>

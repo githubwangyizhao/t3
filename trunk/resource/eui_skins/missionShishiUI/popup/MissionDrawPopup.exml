@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MissionDrawPopup"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17ac34d3846"/>
+	<e:Image id="u_lightBg" source="missionDrawUI_json.missionDrawUI_bomb" horizontalCenter="0" verticalCenter="-15" alpha="0"/>
+	<e:Group id="u_bgGrp" scaleX="1" horizontalCenter="0" verticalCenter="-15">
+		<e:Image id="u_bgImg" visible="true" scaleX="1" horizontalCenter="0" verticalCenter="0" anchorOffsetX="476" anchorOffsetY="234" source="missionDrawUI_json.missionDrawUI_bg_2"/>
+		<e:Group id="u_rewardGrp" horizontalCenter="0" y="316">
+			<e:Image id="u_itemIcon" width="40" height="40" x="0" y="0" source="commonUI_json.commonUI_icon_2"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="u_titleImg" source="missionDrawUI_json.missionDrawUI_title" horizontalCenter="-11" verticalCenter="-134" anchorOffsetX="324" anchorOffsetY="97" scaleX="1"/>
+</e:Skin>

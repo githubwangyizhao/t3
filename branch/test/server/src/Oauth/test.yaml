@@ -1,0 +1,9 @@
+clients:
+  - client_id: 123
+    client_secret: abc
+    ip: 192.168.31.153
+    iss: iss-abc
+  - client_id: 234
+    client_secret: asdf
+    ip: 192.168.31.160
+    iss: iss-asdf

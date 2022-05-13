@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleWeapTipSkin"
+	 width="230"
+	height="146" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgSelect" source="roleUI_json.roleUI_select1" x="0" y="0" visible="true"/>
+	<e:Image id="u_imgIcon" width="70" height="70" x="82" y="25"/>
+	<e:Image id="u_imgLock" source="roleUI_json.roleUI_lock" x="102" y="33" visible="true"/>
+	<e:Label text="技能名" y="107" size="16" textColor="0xF0E4B0" visible="true" id="u_txtName" horizontalCenter="3" x="94"/>
+	<e:Label text="技能名技能名技能名技能名技能名" y="98" size="16" visible="true" id="u_txtDesc" width="200" textAlign="center" lineSpacing="7" textColor="0xA5A5A5" x="15"/>
+	<e:Image visible="true" id="u_btnClick" width="230" height="146" source="commonUI_json.commonUI_box" alpha="0"/>
+</e:Skin>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemMergePopupSkin" width="456" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="262">
+	<w:Config id="179782a4258"/>
+	<e:Image id="u_imgBg" source="commonUI_json.commonUI_di_2" x="0" y="0" visible="true" scale9Grid="27,27,15,13" width="456" height="262"/>
+	<e:Label id="u_txtName" text="道具名称" y="25" size="16" visible="true" textColor="0xF0E4B0" x="205"/>
+	<e:Label text="拥有数量" y="53" size="16" id="u_txtHave" visible="true" textColor="0x369800" x="205"/>
+	<e:Image source="commonUI_json.commonUI_box_1" x="18" y="85" scale9Grid="17,17,16,16" width="422" height="114" visible="true"/>
+	<e:Label id="u_descTip" text="【物品描述】" y="96" size="16" visible="true" textColor="0xB4AA84" horizontalCenter="0"/>
+	<e:Label id="u_txtDesc" text="描述描述" y="121" wordWrap="true" width="380" textAlign="center" size="14" textColor="0xB6B5B3" lineSpacing="10" horizontalCenter="0"/>
+	<e:Group x="143" y="145">
+		<e:Image source="mergeUI_json.mergeUI_dk" x="0" y="0" visible="true" scale9Grid="13,13,14,14" width="170"/>
+		<e:Label id="u_txtCount" text="0" size="18" visible="true" horizontalCenter="0.5" verticalCenter="1" textColor="0xB3AC92"/>
+	</e:Group>
+	<e:Image id="u_btnAdd" x="326" y="147" visible="true" source="mergeUI_json.mergeUI_btn_jia" width="38" height="38"/>
+	<e:Image id="u_btnJian" x="94" y="147" width="38" height="38" source="mergeUI_json.mergeUI_btn_jian"/>
+	<e:Image id="u_btnMax" source="mergeUI_json.mergeUI_max" x="375" y="147" visible="true" width="58" height="38"/>
+	<e:Image id="u_btnMin" source="mergeUI_json.mergeUI_min" x="24" y="147" visible="true" width="58" height="38"/>
+	<e:Image id="u_btnMerge" source="mergeUI_json.mergeUI_merge" y="209" visible="true" horizontalCenter="0"/>
+</e:Skin>

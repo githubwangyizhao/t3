@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.SoloCapitalListUISkin"
+	 width="547"
+	height="54" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_backImg" source="commonsUI_json.commonUI_box_2" x="0.874" y="-1" width="547" height="54" scale9Grid="29,29,30,30"/>
+	<e:Group id="u_btnChoose" width="547" height="54" x="2" y="-1">
+		<e:Label id="u_txtCapital" text="Magnification" size="20" horizontalCenter="-180.5" verticalCenter="0"/>
+		<e:Label text="Cost:" size="20" horizontalCenter="-55" verticalCenter="1"/>
+		<e:Label id="u_txtCost" text="99999" size="20" verticalCenter="0" horizontalCenter="37.5"/>
+		<e:Label text="Win:" size="20" horizontalCenter="109.5" verticalCenter="1"/>
+		<e:Label id="u_txtWin" text="99999" size="20" verticalCenter="0" horizontalCenter="200.5"/>
+		<e:Image id="u_iconCost" horizontalCenter="-13" verticalCenter="0.5" scaleX="0.6" scaleY="0.6"/>
+		<e:Image id="u_iconWin" horizontalCenter="147" verticalCenter="0.5" scaleX="0.6" scaleY="0.6"/>
+	</e:Group>
+</e:Skin>

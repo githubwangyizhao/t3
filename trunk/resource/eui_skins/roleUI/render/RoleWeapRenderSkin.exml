@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleWeapTipSkin"
+	 width="218"
+	height="95" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_mcItem" x="0" y="0">
+		<e:Image source="roleUI_json.roleUI_part_item" x="0" y="0" visible="true"/>
+		<e:Image id="u_imgIcon" width="70" height="70" x="10" y="10"/>
+	</e:Group>
+	<e:Image source="roleUI_json.roleUI_is_wear" y="53" visible="true" id="u_imgWear" x="132"/>
+	<e:Image id="u_imgLock" source="roleUI_json.roleUI_lock2" x="-4" y="-5" visible="true"/>
+	<e:Label text="名称" y="16" size="16" textColor="0xF0E4B0" visible="true" id="u_txtName" stroke="2" horizontalCenter="46"/>
+	<e:Label text="魔装机神·牛魔王" y="27" size="14" visible="true" id="u_txtDesc" lineSpacing="7" textColor="0xA5A5A5" x="93" width="125" stroke="2" textAlign="center"/>
+	<e:Image id="u_imgSelect" source="roleUI_json.roleUI_part_select" visible="true" verticalCenter="1" scale9Grid="81,36,80,36" height="95" x="-24"/>
+	<e:Image visible="true" id="u_btnClick" width="218" height="95" source="commonUI_json.commonUI_box" alpha="0" locked="true"/>
+	<e:Group x="109" y="46" id="u_btnWear" visible="true" width="95" height="37">
+		<e:Image source="roleUI_json.roleUI_btn_wear" x="0" y="0" visible="true"/>
+		<e:Image source="roleUI_json.roleUI_txt_wear" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="accessSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" anchorOffsetX="0" anchorOffsetY="0" width="582.566" visible="true" height="363.805" scaleX="1" scaleY="1" y="112.06" source="commonUI_json.commonUI_img_popdi" x="277" scale9Grid="33,173,33,174"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" x="228.34" y="115.129" visible="true"/>
+	<e:Image y="122.629" horizontalCenter="1" x="731" visible="true" source="accessUI_json.accessUI_img_access"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="764.47" y="114.231"/>
+	<e:Group id="u_mcItem" width="565.82" height="145.4" x="285" y="156">
+		<e:Image source="commonUI_json.commonUI_img_inner" x="2.8809999999999434" y="3.7039999999999793" width="560.205" height="139.333" scale9Grid="23,10,24,11" scaleX="1" scaleY="1"/>
+		<e:Label id="u_itemName" text="金币" y="27.56" size="20" fontFamily="Microsoft YaHei" left="139" textColor="0xF0E4B0"/>
+		<e:Label id="U_txtDesc" text="道具说明" y="57.2" size="16" fontFamily="Microsoft YaHei" textColor="0xA5A5A5" left="139" width="400" wordWrap="true" lineSpacing="8" height="64"/>
+	</e:Group>
+	<e:Group id="u_mcAccess" y="308.534" visible="true" width="550.679" horizontalCenter="0.5">
+		<e:Scroller id="u_scrollerItem" width="547.805" y="35.06" anchorOffsetX="0" anchorOffsetY="0" visible="true" height="50" x="1">
+			<e:List id="u_listAccess" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Scroller>
+		<e:Image x="6.317" y="8.956999999999994" scaleX="1" scaleY="1" source="accessUI_json.accessUI_spline"/>
+		<e:Label id="u_txtPath2" text="获取途径" size="18" anchorOffsetX="0" textAlign="center" verticalAlign="middle" scaleX="1" scaleY="1" visible="true" bold="true" fontFamily="Microsoft YaHei" x="242" y="7" textColor="0x887D64"/>
+	</e:Group>
+	<w:Config id="1616a1f29c6"/>
+</e:Skin>

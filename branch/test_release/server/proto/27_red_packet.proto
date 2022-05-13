@@ -1,0 +1,42 @@
+// 红包
+//OPEN_DEBUG
+
+import "05_prop.proto";
+
+// 红包
+message RedPacketConditionData {
+    required int32 id = 1; // 红包条件id
+    repeated RedPacketData red_packet_data = 2; // 红包
+    repeated string param_list = 3; //参数
+}
+
+// 红包
+message RedPacketData {
+    required int32 red_packet_id = 1; // 红包id
+    required int64 r_id = 2; // 唯一id
+    required int32 clear_time = 3; // 清除时间
+}
+
+// 通知红包
+message m_notice_player_red_packet_toc {
+    required RedPacketConditionData red_packet = 1; // 红包
+}
+
+// 领取红包
+message m_get_red_packet_tos {
+    required int64 r_id = 1; // 红包唯一id
+}
+message m_get_red_packet_toc {
+    enum ENUM {
+        success = 1;              //成功
+        fail = 2;                 //失败
+    }
+    required ENUM result = 1;
+    required int64 r_id = 2; // 红包id
+    repeated Prop prop_list = 3; //道具列表
+}
+
+// 通知红包清除
+message m_notice_player_red_packet_clear_toc {
+    repeated int64 r_id_list = 1; // 红包id列表
+}

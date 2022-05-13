@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LuckRotaryTableSkin" width="1134" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b8a81c9a9"/>
+	<e:Group id="u_grpTable" anchorOffsetX="358.7" anchorOffsetY="282" width="713" height="660" x="578.7" y="281">
+		<e:Image x="-212.27" y="0.3" source="luckrotaUI_json.luckrota_di"/>
+		<e:Image source="luckrotaUI_json.luckrota_zi1" x="-85.65" y="210.66"/>
+		<e:Image source="rotaryTableUI_json.rotaryTableUI_img_ding" x="81.5" y="0.61" height="686.392" width="682.99" scaleX="0.81" scaleY="0.81"/>
+		<e:Image id="u_guang_bg" source="rotaryTableUI_json.rotaryTableUI_img_di" x="355.02" y="278.75" anchorOffsetX="350" anchorOffsetY="350" visible="false"/>
+		<e:Image id="u_gpZhuan" alpha="1" width="316" height="316" anchorOffsetY="158" anchorOffsetX="158" horizontalCenter="1.5" verticalCenter="-49" source=""/>
+		<e:Image x="294.92" y="102.28" visible="true" width="130.403" height="101.352" source="luckrotaUI_json.luckrota_jiantou"/>
+		<e:Image x="308.82" y="233.2" source="rotaryTableUI_json.rotaryTableUI_img_center" touchEnabled="true"/>
+		<e:Image id="u_guang_1" source="rotaryTableUI_json.rotaryTableUI_img_guyun1" x="351.7" y="278.67" anchorOffsetX="128" anchorOffsetY="128" touchEnabled="false" visible="false"/>
+		<e:Image id="u_guang_2" source="rotaryTableUI_json.rotaryTableUI_img_guyun3" x="353.7" y="277.67" anchorOffsetX="300" anchorOffsetY="300" touchEnabled="false" visible="false"/>
+		<e:Image source="luckrotaUI_json.luckrota_zi2" x="567" y="238"/>
+		<e:Image id="u_endShow" x="360.5" y="268.76" anchorOffsetX="98.48" anchorOffsetY="139.39" rotation="29.19" touchEnabled="false" scaleX="1" scaleY="1" source="luckrotaUI_json.luckrota_xuanzhong" visible="false"/>
+		<e:Label id="u_cdLabel" text="00:30" x="574.06" y="265" textColor="0x14ff07" size="25" anchorOffsetX="0" width="100.33" textAlign="center" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_btnStart" x="626" y="351" anchorOffsetX="62" anchorOffsetY="61" scaleX="1">
+			<e:Image source="luckrotaUI_json.luckrota_kaishi" x="0" y="0"/>
+			<e:Image id="u_costImg" width="25" height="25" x="26.66" y="71.93"/>
+			<e:Label id="u_costLabel" text="20000" x="54.3" y="76.08" size="17" anchorOffsetX="0" width="129.25" textColor="0xedd710" textAlign="left" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group id="u_btnClick" x="615.72" y="67.5" width="50" height="50">
+			<e:Image source="luckrotaUI_json.luckrota_guanbi" width="50" height="50" alpha="0"/>
+			<e:Image source="luckrotaUI_json.luckrota_guanbi" width="28" height="28" x="11" y="11"/>
+		</e:Group>
+	</e:Group><e:Group id="u_grpNum" width="384.666" height="112" scaleX="0.81" scaleY="0.81" anchorOffsetX="188.61" anchorOffsetY="53" y="529.36" x="603.1" touchChildren="false" touchEnabled="false"/>
+	<e:Image id="u_guangyun" source="rotaryTableUI_json.rotaryTableUI_img_guyun2" x="588" y="518.05" anchorOffsetX="300" anchorOffsetY="300" touchEnabled="false" visible="false"/>
+	<e:Image id="u_line1" x="576.25" y="277.93" anchorOffsetX="350" anchorOffsetY="350" scaleX="0.81" scaleY="0.81" source="rotaryTableUI_json.rotaryTableUI_quan1" touchEnabled="false" visible="false"/>
+	<e:Image id="u_line2" x="577.68" y="278.42" anchorOffsetX="350" anchorOffsetY="350" scaleX="0.95" scaleY="0.95" source="rotaryTableUI_json.rotaryTableUI_quan2" touchEnabled="false" visible="false"/>
+	<e:Image id="u_line3" x="576.36" y="275.51" anchorOffsetX="350" anchorOffsetY="350" scaleX="0.8" scaleY="0.8" source="rotaryTableUI_json.rotaryTableUI_quan3" touchEnabled="false" visible="false"/>
+	<e:Button id="u_btnClose" label="" width="50" height="50" verticalCenter="-255" horizontalCenter="313" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="luckrotaUI_json.luckrota_guanbi"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	
+</e:Skin>

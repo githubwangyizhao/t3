@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CarTurnRecordSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfd55ebe5"/>
+	<e:Image x="163.88" y="108.68" source="commonUI_json.commonUI_img_popdi" width="806.924" scale9Grid="33,173,33,174" visible="true" height="422" locked="true"/>
+	<e:Image id="u_btnClose" x="874.859" y="110.712" source="commonUI_json.commonUI_btn_close_4" visible="true"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" x="226.958" y="110" visible="true" locked="true"/>
+	<e:Image source="carTurnRecordUI_json.carTurnRecordUI_title" x="532" y="117" visible="true" locked="true"/>
+	<e:Image source="carTurnRecordUI_json.carTurnRecordUI_listdi" x="177.132" y="154.934" width="781" height="364.784" scale9Grid="20,20,20,20" visible="true" locked="true"/>
+	<e:Group x="178" y="157" visible="true">
+		<e:Image source="carTurnRecordUI_json.carTurnRecordUI_list2" visible="true" scaleX="1.358" y="-1.214"/>
+		<e:Image source="carTurnRecordUI_json.carTurnRecordUI_time" x="138.845" y="9.52" visible="true"/>
+		<e:Image source="carTurnRecordUI_json.carTurnRecordUI_bet" x="390.448" y="8.19" visible="true"/>
+		<e:Image source="carTurnRecordUI_json.carTurnRecordUI_gain" x="629.723" y="9.41" visible="true"/>
+	</e:Group>
+	<e:Scroller id="u_recordScroll" width="780" height="323.082" x="178" y="196.536" visible="true">
+		<e:List id="u_recordList" visible="true">
+		</e:List>
+	</e:Scroller>
+</e:Skin>

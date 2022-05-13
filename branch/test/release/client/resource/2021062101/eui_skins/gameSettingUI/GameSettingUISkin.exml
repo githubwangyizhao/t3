@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GameSettingUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17880e35ff2"/>
+	<e:Image x="289.833" y="61.5" visible="true" source="gameSettingUI_json.gameSettingUI__setBg" width="557" height="497.833" scale9Grid="10,80,40,10"/>
+	<e:Image x="310.5" y="81.667" visible="true" source="gameSettingUI_json.gameSettingUI_set"/>
+	<e:Label id="u_titleLb" text="设置" x="343" y="89.666" textColor="0xF0E4B0" size="16" bold="true"/>
+	<e:Image id="u_btnClose" source="gameSettingUI_json.gameSettingUI_btn_close" x="812" y="90"/>
+	<e:Group id="u_btnPerson" x="432" y="151">
+		<e:Image source="gameSettingUI_json.gameSettingUI_iconBg" scaleX="1" scaleY="1" alpha="0"/>
+		<e:Image source="gameSettingUI_json.gameSettingUI_iconSet" x="59" y="56" visible="true"/>
+	</e:Group>
+	<e:Label id="u_txtId" text="ID：" x="533" size="16" fontFamily="Microsoft YaHei" height="20" verticalAlign="middle" y="200" textColor="0xA5A5A5"/>
+	<e:Label text="名稱" x="533" size="16" id="u_txtName" fontFamily="Microsoft YaHei" height="20" verticalAlign="middle" y="170" textColor="0xF0E4B0"/>
+	<e:Image id="u_btnEdit" source="gameSettingUI_json.gameSettingUI_nameEdit" x="678" y="166"/>
+	<e:Image source="gameSettingUI_json.gameSettingUI_line" y="250" width="520" horizontalCenter="0"/>
+    <e:Group id="u_mc_soundBg" width="474" height="50" y="264" visible="true" horizontalCenter="0">
+			<e:Image x="5" visible="true" source="gameSettingUI_json.gameSettingUI_music" verticalCenter="0"/>
+			<e:Label id="u_soundValue" text="70%" x="432" size="16" textColor="0xF0E4B0" verticalCenter="0" textAlign="right"/>
+	</e:Group>
+	<e:Group id="u_mc_soundeEffect" y="324" width="474" height="50" horizontalCenter="0">
+		<e:Image x="6" verticalCenter="0" source="gameSettingUI_json.gameSettingUI_effect"/>
+		<e:Label id="u_effectValue" text="70%" x="432" size="16" textColor="0xF0E4B0" verticalCenter="0" textAlign="right"/>
+	</e:Group>
+	<e:Group id="u_mc_playerEffect" y="384" width="226" height="55" x="331" visible="true">
+		<e:Label id="u_txtPlayerEff" text="顯示玩家特效：" x="10" size="16" fontFamily="Microsoft YaHei" verticalCenter="0" verticalAlign="middle" textColor="0xA5A5A5"/>
+		<e:Image id="u_btnPlayerEffect" x="134" verticalCenter="0" source="gameSettingUI_json.gameSettingUI_btn_on"/>
+	</e:Group>
+	<e:Group id="u_mc_player" y="384" width="226" height="55" x="578" visible="true">
+		<e:Label id="u_txtPlayer" text="顯示其他玩家：" x="6" size="16" verticalCenter="0" fontFamily="Microsoft YaHei" verticalAlign="middle" textColor="0xA5A5A5"/>
+		<e:Image id="u_btnPlayer" x="130" verticalCenter="0" source="gameSettingUI_json.gameSettingUI_btn_off"/>
+	</e:Group>
+	<e:Group id="u_btnAccount" visible="true" y="464" horizontalCenter="0" x="713">
+		<e:Image y="0" visible="true" x="0" scale9Grid="64,15,2,3" anchorOffsetX="0" anchorOffsetY="0" source="gameSettingUI_json.gameSettingUI_btn_bg"/>
+		<e:Label id="u_btnName" text="切换账号" y="14" size="20" textColor="0xF0E4B0" bold="true" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

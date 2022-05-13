@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QiuqiuJinduSkin" width="400" height="89" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d4b03c2b3"/>
+	<e:Image y="35" scale9Grid="12,6,4,2" width="234" source="commonUI_json.commonUI_jindu_1" horizontalCenter="0"/>
+	<e:Image id="u_imgJindu" source="commonUI_json.commonUI_jindu_2" y="37" scale9Grid="9,6,7,3" width="230" x="85"/>
+	<e:Label id="u_txtJindu" text="80%" y="36" size="17" stroke="2" textColor="0x82F428" horizontalCenter="0"/>
+	<e:Label id="u_txtLevel2" text="1级" y="28" size="30" stroke="2" x="323" textColor="0xf4570c"/>
+	<e:Label id="u_txtLevel1" text="1级" y="28" size="30" stroke="2" textColor="0xF4570C" textAlign="right" right="326"/>
+</e:Skin>

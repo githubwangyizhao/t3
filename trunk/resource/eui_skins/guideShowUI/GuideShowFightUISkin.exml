@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GuideShowFightUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b9f51ea48"/>
+	<e:Image id="u_imgBj1" source="guideShowUI_json.guideShowUI_fight_1" scale9Grid="537,213,13,214" width="568"/>
+	<e:Image id="u_imgBj2" source="guideShowUI_json.guideShowUI_fight_2" x="568" width="568" scale9Grid="24,213,207,214"/>
+	<e:Image id="u_btnClick" source="guideShowUI_json.guideShowUI_btn" y="230" horizontalCenter="0" visible="true"/>
+</e:Skin>

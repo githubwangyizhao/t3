@@ -1,0 +1,39 @@
+// 发送短信验证码
+message m_sms_code_tos{
+  required string mobile = 1;         // 手机号码
+  required int32 operation = 2;       // 动作：1为绑定手机号验证码，2为赠送系统短信验证码
+}
+message m_sms_code_toc{
+  enum ENUM {
+    success = 1;                    // 成功 短信验证码下发成功
+    invalid_mobile = 2;             // 无效手机号
+    fail = 3;                       // 验证码下发失败
+  }
+  required ENUM result = 1;
+  optional int32 code = 2;            // 验证码内容，内网环境下不会真的发送短信验证码，因此返回仅供客户端console打印使用
+  required int32 wait_time = 3;       // 允许再次点击发送短信验证码的时间戳
+}
+
+message AreaCodeRegion {
+  required string area_code = 1;    // 获取当前玩家所使用的app的手机号码隶属国家/地区的区号
+  optional string region = 2;       // 获取当前玩家所使用的app的手机区号隶属国家/地区的名字
+}
+// 玩家获取自己这个app的手机号码所属国家/地区，和手机号码区号
+message m_get_area_code_tos{
+}
+message m_get_area_code_toc {
+  repeated AreaCodeRegion area_code_region = 1;
+//  required string area_code = 1;    // 获取当前玩家所使用的app的手机号码隶属国家/地区的区号
+//  optional string region = 2;       // 获取当前玩家所使用的app的手机区号隶属国家/地区的名字
+}
+
+message SmsCodeInfo{
+  required string mobile = 1;       // 已经发送了短信验证码的手机号
+  required uint32 type = 2;         // 短信验证码类型
+  required string expire = 3;       // 下次可以点击获取同类型短信验证码按钮的时间
+  optional string code = 4;         // 短信验证码
+}
+// 通知登陆玩家，自己所获取的验证码
+message m_get_my_sms_code_toc{
+  repeated SmsCodeInfo sms_code_info = 1;
+}

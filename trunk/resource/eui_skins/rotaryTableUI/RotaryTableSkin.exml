@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RotaryTableSkin" width="1134" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_grpTable" y="321" anchorOffsetX="365.7" anchorOffsetY="321" x="576.7" width="713" height="660">
+		<e:Image x="10.731" y="8.303" source="rotaryTableUI_json.rotaryTableUI_imgbg" height="621.297" width="702.172"/>
+		<e:Image source="rotaryTableUI_json.rotaryTableUI_img_ding" x="25.505" y="-26.392" height="686.392" width="682.99"/>
+		<e:Image id="u_guang_bg" source="rotaryTableUI_json.rotaryTableUI_img_di" x="363" y="320" anchorOffsetX="350" anchorOffsetY="350" visible="false"/>
+		<e:Image id="u_gpZhuan" alpha="1" width="388" height="386" anchorOffsetY="193" anchorOffsetX="190" horizontalCenter="8.5" verticalCenter="-10" source=""/>
+		<e:Image x="301.557" y="122.941" visible="true" width="130.403" height="101.352" source="rotaryTableUI_json.rotaryTableUI_img_point"/>
+		<e:Image x="316.8" y="271.841" visible="true" source="rotaryTableUI_json.rotaryTableUI_img_center"/>
+		<e:Image id="u_guang_1" source="rotaryTableUI_json.rotaryTableUI_img_guyun1" x="365" y="320" anchorOffsetX="128" anchorOffsetY="128" visible="false"/>
+		<e:Image id="u_guang_2" source="rotaryTableUI_json.rotaryTableUI_img_guyun3" x="367" y="319" anchorOffsetX="300" anchorOffsetY="300" visible="false"/>
+		<e:Image id="u_endShow" source="rotaryTableUI_json.rotaryTableUI_img_select" x="368.48" y="289.39" anchorOffsetX="98.48" anchorOffsetY="139.39" rotation="29.19" visible="false"/>
+	</e:Group><e:Group id="u_grpNum" width="384.666" height="112" scaleX="1" scaleY="1" anchorOffsetX="188.61" anchorOffsetY="53" y="546" visible="true" x="569.095"/>
+	<e:Image id="u_guangyun" source="rotaryTableUI_json.rotaryTableUI_img_guyun2" x="559" y="534" anchorOffsetX="300" anchorOffsetY="300" visible="false"/>
+	<e:Image id="u_line1" x="573" y="317" anchorOffsetX="350" anchorOffsetY="350" scaleX="0.95" scaleY="0.95" source="rotaryTableUI_json.rotaryTableUI_quan1" visible="false"/>
+	<e:Image id="u_line2" x="573" y="319" anchorOffsetX="350" anchorOffsetY="350" scaleX="0.95" scaleY="0.95" source="rotaryTableUI_json.rotaryTableUI_quan2" visible="false"/>
+	<e:Image id="u_line3" x="577" y="320.75" anchorOffsetX="350" anchorOffsetY="350" scaleX="0.97" scaleY="0.97" source="rotaryTableUI_json.rotaryTableUI_quan3" visible="false"/>
+	
+</e:Skin>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BubbleViewSkin" width="380" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" source="userMainUI_json.userMainUI_xinxi_bj" scale9Grid="6,76,9,8" width="380" height="640" y="0" x="0" visible="true"/>
+	<e:Scroller id="u_chatScrollerItem" width="310" height="566" anchorOffsetX="0" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1" x="0" y="72">
+		<e:Group>
+		<e:List id="u_chatListItem"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Scroller id="u_faceScrollerItem" width="310" height="566" anchorOffsetX="0" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1" x="0" y="72">
+		<e:Group>
+		<e:List id="u_faceListItem"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group width="70" height="283" x="310" y="72">
+		<e:Image id="u_imgChatStatus" x="0" width="70" height="283" verticalCenter="0" source="userMainUI_json.userMainUI_u_select"/>
+		<e:Image id="u_btnChat" source="userMainUI_json.userMainUI_u_btn_lt" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="70" height="283" x="310" y="355">
+		<e:Image id="u_imgFaceStatus" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="userMainUI_json.userMainUI_u_select" width="70" height="283"/>
+		<e:Image verticalCenter="0" id="u_btnFace" source="userMainUI_json.userMainUI_u_btn_lt" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image source="userMainUI_json.userMainUI_xinxi_tupiao" x="20" y="23"/>
+	<e:Label id="u_txtTitle" text="快捷信息" x="57" y="23" textColor="0xF0E4B0" height="27" verticalAlign="middle" size="16"/>
+	<e:Image id="u_btnClose" source="userMainUI_json.userMainUI_u_btn_gb" x="334" y="29" width="16" height="16"/>
+</e:Skin>

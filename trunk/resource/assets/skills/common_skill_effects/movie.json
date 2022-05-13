@@ -1,0 +1,58 @@
+{
+    "body": {
+        "name": "body",
+        "Note": "特效说明",
+        "BlendMode": "auto",
+        "Alpha": 100,
+        "ScaleX": 1,
+        "ScaleY": 1,
+        "Frames": 12,
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "Rotation": 0,
+        "RGB": 16777215,
+        "Address": "skills\\common_skill_effects\\302\\body.png"
+    },
+    "line": {
+        "name": "line",
+        "Note": "特效说明",
+        "BlendMode": "add",
+        "Alpha": 100,
+        "ScaleX": 1,
+        "ScaleY": 1,
+        "Frames": 12,
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "Rotation": 90,
+        "RGB": 16777215,
+        "Address": "skills\\common_skill_effects\\302\\line.png"
+    },
+    "body_301": {
+        "name": "body_301",
+        "Note": "特效说明",
+        "BlendMode": "add",
+        "Alpha": 100,
+        "ScaleX": 1,
+        "ScaleY": 1,
+        "Frames": 12,
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "Rotation": 0,
+        "RGB": 16777215,
+        "Address": "skills\\common_skill_effects\\body_301.png"
+    },
+    "line_301": {
+        "name": "line_301",
+        "Note": "特效说明",
+        "BlendMode": "auto",
+        "Alpha": 100,
+        "ScaleX": 1,
+        "ScaleY": 1,
+        "Frames": 12,
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "Rotation": 0,
+        "RGB": 16777215,
+        "Address": "skills\\common_skill_effects\\line_301.png"
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketTaskViewSkin"
+	 width="327"
+	height="125" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_grpTitle" x="0" y="0" visible="true">
+		<e:Image anchorOffsetX="0" anchorOffsetY="0" source="passTicketTaskUI_json.passTicketTaskUI_bg1" visible="true" id="u_imgBg" x="0" y="0"/>
+		<e:Image id="u_imgTitle" visible="true"/>
+		<e:Image id="u_imgExpBg" source="passTicketTaskUI_json.passTicketTaskUI_exp_bg1" visible="true" x="0" y="0"/>
+		<e:Image id="u_imgMask" source="commonUI_json.commonUI_box" width="325" height="110" visible="true" y="2" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_mcJindu" x="164" y="92" visible="true">
+		<e:Image source="passTicketTaskUI_json.passTicketTaskUI_jindu1" x="0" y="0" scale9Grid="9,5,9,6" width="157"/>
+		<e:Image source="passTicketTaskUI_json.passTicketTaskUI_jindu2" id="u_imgJindu" visible="true" x="2" y="2" scale9Grid="51,4,51,4"/>
+		<e:Label text="1000/1000" size="16" id="u_txtJindu" stroke="1" textColor="0xFFFFFF" y="0" horizontalCenter="0.5" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Image x="0" y="77" visible="true" source="passTicketTaskUI_json.passTicketTaskUI_exp"/>
+	<e:Image source="commonUI_json.commonUI_red" y="4" x="311" id="u_imgRed" visible="true"/>
+	<e:Image id="u_imgReceive" source="passTicketTaskUI_json.passTicketTaskUI_icon_ylq" x="28" y="10" visible="false"/>
+	<e:Image id="u_imgWenhao" visible="true" source="passTicketTaskUI_json.passTicketTaskUI_wenhao1" x="0" y="0"/>
+	<e:Group id="u_mcUnique" x="166" y="86" visible="false">
+		<e:Image id="u_imgLock" source="passTicketTaskUI_json.passTicketTaskUI_lock" x="0" y="0"/>
+		<e:Label text="黄金通行证专属" x="28" size="16" id="u_txtUnique" stroke="2" visible="true" y="5" textColor="0xFFDE00" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Label text="任务描述任务描述任务" y="10" id="u_txtDesc" bold="true" size="16" width="150" wordWrap="true" lineSpacing="7" textAlign="center" textColor="0xF0E4B0" visible="true" horizontalCenter="72.5" verticalAlign="middle" x="176" height="70" fontFamily="Microsoft YaHei"/>
+	<e:Label text="5000" size="18" id="u_txtExp" textColor="0xF0E4B0" visible="true" y="92" bold="true" x="48" stroke="1" fontFamily="Microsoft YaHei"/>
+	<e:Label text="任务待刷新" size="16" id="u_txtRefresh" stroke="2" visible="true" y="93" horizontalCenter="78.5" x="202" textColor="0xFFFFFF" fontFamily="Microsoft YaHei"/>
+</e:Skin>

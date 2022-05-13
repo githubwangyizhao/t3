@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateRoomIconSkin"
+	 width="88"
+	height="88" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_btnClick" width="88" height="88" y="0" x="0">
+		<e:Image source="commonUI_json.commonUI_team_icon" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="u_grpRed" x="55" y="10">
+			<e:Image x="0" y="0" scale9Grid="7,7,8,8" source="commonUI_json.commonUI_red2"/>
+			<e:Label id="u_txtNum" text="99" size="12" fontFamily="Microsoft YaHei" bold="true" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

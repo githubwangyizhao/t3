@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatInfoRenderSkin"
+	 width="526"
+	height="102" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_player1" x="0" y="0" visible="true">
+		<e:Group id="u_grpHead1" y="0" x="0" width="58" height="58">
+			<e:Image id="u_imgHead1" width="46" height="46" x="6" y="6"/>
+			<e:Image id="u_imgFrame1" width="58" height="58" x="0" y="0"/>
+		</e:Group>
+		<e:Group x="60" y="8">
+			<e:Image id="u_imgVip1" source="userMainUI_json.userMainUI_c_vip_1" width="37" height="24" y="0" visible="false" x="0"/>
+			<e:Label id="u_txtName1" text="玩家" y="5" size="16" textAlign="left" visible="true" scaleX="1" scaleY="1" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" strokeColor="0x9F987A"/>
+		</e:Group>
+		<e:Group y="42" x="55" visible="true" width="390" height="60">
+			<e:Image id="u_imgBg1" y="0" visible="true" width="390" height="60" source="chatUI_json.chatUI_render_bg1" x="0" scale9Grid="9,9,41,42"/>
+			<e:Label id="u_txtMsg1" y="8" size="16" textAlign="left" visible="true" scaleX="1" scaleY="1" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" lineSpacing="8" x="10" strokeColor="0x000000" width="370" text="客服"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_player2" x="81" visible="true">
+		<e:Group id="u_grpHead2" width="58" height="58" x="387" y="0">
+		<e:Image id="u_imgHead2" width="46" height="46" x="6" y="6"/>
+		<e:Image id="u_imgFrame2" width="58" height="58" x="0" y="0"/>
+		</e:Group>
+		<e:Group y="8" right="60">
+		<e:Image id="u_imgVip2" source="userMainUI_json.userMainUI_c_vip_1" width="37" height="24" y="0" visible="false" x="0"/>
+		<e:Label id="u_txtName2" text="玩家" y="5" size="16" textAlign="left" visible="true" scaleX="1" scaleY="1" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" strokeColor="0x9F987A"/>
+		</e:Group>
+		<e:Group y="42" visible="true" width="390" height="60" x="0">
+		<e:Image id="u_imgBg2" y="0" visible="true" width="390" height="60" source="chatUI_json.chatUI_render_bg1" scale9Grid="9,9,41,42" right="0"/>
+		<e:Label id="u_txtMsg2" y="8" size="16" textAlign="left" visible="true" scaleX="1" scaleY="1" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" lineSpacing="8" x="10" strokeColor="0x000000" width="370" text="客服"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpSys" x="0" y="0" visible="false">
+		<e:Image id="u_imgSysBg" source="chatUI_json.chatUI_di_2" width="526" x="0" y="0" scale9Grid="13,13,24,24" height="38"/>
+		<e:Label id="u_txtSysMsg" text="服客服客服客" y="10" size="16" textAlign="left" visible="true" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" lineSpacing="7" x="10" width="504" textColor="0xFF3030" strokeColor="0x000000"/>
+	</e:Group>
+</e:Skin>

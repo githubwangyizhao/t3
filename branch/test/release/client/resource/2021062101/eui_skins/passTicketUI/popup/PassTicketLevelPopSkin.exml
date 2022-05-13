@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketLevelPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonUI_json.commonUI_bg" scale9Grid="10,85,10,9" width="900" height="500" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="u_txtTitle" text="解锁奖励" y="96" bold="true" size="20" horizontalCenter="0"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_2" x="884" y="88" width="30" height="30"/>
+	<e:Label text="是否解锁下一级奖励" y="305" bold="true" horizontalCenter="0.5" italic="true" x="74" size="18"/>
+	<e:Group id="u_btnBuy" y="447" horizontalCenter="0.5">
+		<e:Image source="commonUI_json.commonUI_di_2" scale9Grid="23,23,24,24" y="0" x="0" width="107" height="59"/>
+		<e:Group y="12" horizontalCenter="0">
+		<e:Image id="u_iconCost" source="commonUI_json.commonUI_icon_juan" x="0" y="0" width="27" height="27"/>
+		<e:Label id="u_txtCost" text="15" size="20" textColor="0xF0E4B0" visible="true" x="35" y="4" bold="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

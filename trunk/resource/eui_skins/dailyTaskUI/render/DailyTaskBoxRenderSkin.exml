@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DailyTaskBoxRenderSkin"
+	 width="110"
+	height="70" xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="0" y="0" source="dailyTaskUI_json.dailyTaskUI_boxBg" width="70" height="70"/>
+	<e:Image id="u_itemIcon" x="0" y="0" width="70" height="70" source="dailyTaskUI_json.dailyTaskUI_box"/>
+	<e:Image id="u_dotTip" source="commonUI_json.commonUI_red" x="55" y="10"/>
+	<e:Image id="u_receivedImg" x="0" y="0" width="70" height="70" source="commonUI_json.commonUI_received"/>
+	<e:Label id="u_countLb" text="150" y="17" size="16" fontFamily="Microsoft YaHei" x="72"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" x="0" y="0" width="70" height="70" alpha="0"/>
+</e:Skin>

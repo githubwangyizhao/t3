@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessMyCostRenderSkin"
+	 width="110"
+	height="129" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176d0848d9a"/>
+	<e:Image x="0" y="25" visible="true" source="guessInsideUI_json.guessInsideUI_head"/>
+	<e:Image visible="true" id="u_imgIcon" width="139" height="155" y="-4" scaleX="0.9" scaleY="0.9" horizontalCenter="0"/>
+	<e:Image id="u_iconNum" source="guessInsideUI_json.guessInsideUI_srl_1" x="74" y="28" visible="true"/>
+	<e:Image source="guessInsideUI_json.guessInsideUI_di_1" y="101" scale9Grid="46,9,45,9" width="99" height="28" horizontalCenter="0" x="6"/>
+	<e:Label id="u_txtCost" text="1234567" y="106" bold="true" size="20" horizontalCenter="0" x="16"/>
+	<e:Image id="u_btnClick" source="commonsUI_json.commonUI_box_1" x="0" y="13" scale9Grid="26,27,27,27" width="110" height="115" alpha="0"/>
+</e:Skin>

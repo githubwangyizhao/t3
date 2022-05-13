@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MailUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17604b82636"/>
+	<e:Image horizontalCenter="-1" fillMode="scale" visible="true" y="67.821" scale9Grid="10,78,10,9" width="842" height="505" source="mailUI_json.mailUI_img_bg"/>
+	<e:Image source="mailUI_json.mailUI_img_bg3" y="67.821" width="842" height="505" horizontalCenter="0"/>
+	<e:Image y="70.605" source="mailUI_json.mailUI_titleBg" horizontalCenter="0.5" visible="true"/>
+	<e:Image source="mailUI_json.mailUI_icon_title" y="78.493" horizontalCenter="0.5" visible="true"/>
+	<e:Group id="u_grpCentre" x="155.058" y="111.588" touchEnabled="false">
+		<e:Image source="mailUI_json.mailUI_img_bg1" x="-7.060999999999979" y="358.7399999999999" visible="true" touchEnabled="false" scaleX="1" scaleY="1"/>
+		<e:Image source="mailUI_json.mailUI_img_line1" x="380.49800000000016" y="-8.360000000000014" height="467" visible="true" scale9Grid="0,18,1,19" width="1" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Scroller id="u_scrollItem" width="381.926" height="359.734" x="155.058" y="111.588" visible="true">
+		<e:List id="u_listItem" x="0" y="0" scaleX="1" scaleY="1"/>
+	</e:Scroller>
+	<e:Group id="u_gapDescBg" x="535.027" y="104.088" width="452" visible="false" height="465.14">
+		<e:Label id="u_textTitle" text="充值钻石" y="31.656" size="20" scaleX="1" scaleY="1" zIndex="1" bold="true" textAlign="center" visible="true" textColor="0xF0E4B0" x="12" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_textDesc" x="13.254" y="75.988" size="16" textAlign="left" fontFamily="Microsoft YaHei" verticalAlign="middle" width="420" scaleX="1" scaleY="1" lineSpacing="6" text="一件获取页面需要优化二件获取页面需要优化三件获取页面需要优化四件获取页面需要优化五件获取页面需要优化六件获取页面需要优化七件获取页面需要优化八件获取页面需要优化九件获取页面需要优化十件获取页面需要优化一件获取页面需要优化二件获取页面需要优化三件获取页面需要优化四件获取页面需要优化五件获取页面需要优化" textColor="0xA5A5A5"/>
+		<e:Image source="mailUI_json.mailUI_img_line2" x="13" y="59.304" visible="true"/>
+		<e:Group id="u_grpRecerive" x="313.205" y="398.599" visible="true" width="122" height="46">
+			<e:Image scaleX="1" scaleY="1" visible="true" source="commonUI_json.commonUI_img_btnyellow"/>
+			<e:Image id="u_imgRecerive" source="mailUI_json.mailUI_btn_text_get" horizontalCenter="0" visible="true"/>
+		</e:Group>
+		<e:Group id="u_grpAffix" x="13" y="238.228" visible="true">
+			<e:Image source="mailUI_json.mailUI_img_line4" x="0" y="0" visible="true" scaleX="1" scaleY="1"/>
+			<e:Image source="mailUI_json.mailUI_icon_award" x="5.368000000000009" y="1.5480000000000018" visible="true" scaleX="1" scaleY="1"/>
+			<e:Image source="mailUI_json.mailUI_img_fj" x="31.408000000000015" y="3.995999999999981" visible="true" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpNoMail" y="245.74" visible="false" horizontalCenter="2">
+		<e:Image source="mailUI_json.mailUI_hint" scaleX="1" scaleY="1" visible="true" y="1" horizontalCenter="0"/>
+		<e:Label id="u_textNoMail" text="邮箱中无任何邮件" size="16" y="131.411" horizontalCenter="-1" visible="true" textColor="0x887D64" fontFamily="Microsoft YaHei"/>
+		<e:Image source="mailUI_json.mailUI_img_line3" y="133.133" horizontalCenter="-167" visible="true"/>
+		<e:Image source="mailUI_json.mailUI_img_line3" y="133.133" skewY="180" anchorOffsetX="126" horizontalCenter="166" visible="true"/>
+	</e:Group>
+	<e:Group id="u_grpTip" y="230.218" visible="false" x="555.632">
+		<e:Image source="mailUI_json.mailUI_img_line3" y="131.908" x="2.152" visible="true"/>
+		<e:Image source="mailUI_json.mailUI_img_line3" y="131.908" skewY="180" anchorOffsetX="126" horizontalCenter="142" visible="true"/>
+		<e:Image source="mailUI_json.mailUI_hint" scaleX="1" scaleY="1" visible="true" horizontalCenter="0"/>
+		<e:Label id="u_textReadclick" text="点击左侧邮件打开" size="16" y="131.091" horizontalCenter="1" textColor="0x887D64" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Image id="u_btnClose" y="69.204" source="commonUI_json.commonUI_btn_close_4" horizontalCenter="372.5" visible="true" width="93" height="34"/>
+	<e:Group id="u_grpAllRecerive" y="502.625" visible="true" horizontalCenter="-151" width="122" height="46">
+		<e:Image horizontalCenter="0" visible="true" scaleX="1" scaleY="1" source="commonUI_json.commonUI_img_btnyellow" width="122" height="46"/>
+		<e:Image id="u_textAllRecerive" source="mailUI_json.mailUI_btn_text_allget" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_grpAllDel" y="502.625" horizontalCenter="-300" x="137.093" visible="true" width="122" height="46">
+		<e:Image visible="true" scaleX="1" scaleY="1" horizontalCenter="0" source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Image id="u_textAllDel" source="mailUI_json.mailUI_text_all_delete"/>
+	</e:Group>
+</e:Skin>

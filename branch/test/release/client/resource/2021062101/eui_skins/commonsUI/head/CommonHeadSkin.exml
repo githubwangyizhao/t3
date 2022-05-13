@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonHeadSkin" width="1136" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="169b92d017d"/>
+	<e:Image visible="true" source="commonUI_head_right" y="0" right="0"/>
+	<e:Group id="u_mcMoney0" x="752.928" y="0.634" name="u_mcMoney0">
+		<e:Label id="u_txtMoney0" text="999,999" anchorOffsetX="0" multiline="false" size="18" scaleX="1" scaleY="1" textAlign="center" textColor="0xF0E4B0" visible="true" bold="true" y="10.6" horizontalCenter="18.5" width="86" fontFamily="Microsoft YaHei"/>
+		<e:Image id="u_imgMoney0" x="0" visible="true" width="39" height="39" y="1" source="commonUI_icon_gold"/>
+	</e:Group>
+	<e:Group id="u_mcMoney1" x="890" y="0.634" name="u_mcMoney1">
+		<e:Label id="u_txtMoney1" text="999,999" anchorOffsetX="0" multiline="false" size="18" scaleX="1" scaleY="1" textAlign="center" textColor="0xF0E4B0" visible="true" bold="true" y="10.6" horizontalCenter="18.5" width="86" fontFamily="Microsoft YaHei"/>
+		<e:Image id="u_imgMoney1" x="0" visible="true" width="39" height="39" y="1" source="commonUI_icon_juan"/>
+	</e:Group>
+	<e:Group id="u_mcNotice" y="8.096" scaleX="1" scaleY="1" touchEnabled="false" x="320">
+		<e:Image id="u_imgNotice" source="commonUI_json.commonUI_di_1" y="0" scale9Grid="48,8,48,8" visible="true" width="420" x="0"/>
+		<e:Image source="commonUI_json.commonUI_laba" x="4" y="3" visible="true"/>
+		<e:Label id="u_txtNotice" size="17" anchorOffsetX="0" wordWrap="false" multiline="false" textColor="0xF0E4B0" visible="true" scaleX="1" scaleY="1" x="34" strokeColor="0x333333" y="4" text="欢迎到来" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_mcLeft" x="0" y="-1">
+		<e:Label id="u_txtTitle" text="英雄" anchorOffsetX="0" multiline="false" size="20" scaleX="1" scaleY="1" textAlign="left" textColor="0xF0E4B0" visible="true" bold="true" x="84.744" y="8" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_btnClose" x="5.98" width="125" height="35">
+			<e:Image source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" width="125" height="35" scaleX="1" scaleY="1" alpha="0" x="0"/>
+			<e:Image x="46" y="6" visible="true" source="commonUI_json.commonUI_btn_close_1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnAdd" x="1018.804" y="2.102" width="56" height="35">
+		<e:Image source="commonUI_json.commonUI_box" x="0" y="0" scale9Grid="3,3,4,4" width="56" height="35" scaleX="1" scaleY="1" alpha="0"/>
+		<e:Image source="commonUI_json.commonUI_head_add" x="10.343" y="4.598"/>
+	</e:Group>
+	<e:Group id="u_btnEntrance" x="1079.683" y="1.041" width="55" height="37">
+		<e:Image source="commonUI_json.commonUI_box" x="0" y="0" scale9Grid="3,3,4,4" width="55" height="37" scaleX="1" scaleY="1" alpha="0"/>
+		<e:Image source="commonUI_json.commonUI_head_btn" x="14.174" y="8.429"/>
+	</e:Group>
+</e:Skin>

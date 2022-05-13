@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmJigsawLookSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1740af62ef0"/>
+	<e:Image x="264" y="-8" scale9Grid="181,105,92,31" anchorOffsetX="0" width="609" anchorOffsetY="0" height="649"/>
+	<e:Image id="u_btnClose" x="929" y="0" source="commonUI_json.commonUI_btn_close_3.png"/>
+	<e:Label text="查看原图" x="529" y="25" textColor="0x8f6768" size="18" bold="true" fontFamily="Microsoft YaHei"/>
+	<e:Group x="283" y="41.5">
+		<e:Image source="smJigsawUI_json.smJigsawUI_di1" x="0" y="0" scale9Grid="44,79,59,475" anchorOffsetX="0" width="566" anchorOffsetY="0" height="610"/>
+		<e:Image id="u_imgBj" horizontalCenter="0" verticalCenter="0" width="500" height="500"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="AchievementRenderSkin"
+	 width="564"
+	height="158" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175feba4fa6"/>
+	<e:Image source="achievementUI_json.achievementUI_di" x="0" y="0" visible="true"/>
+	<e:Label id="u_txtName" text="Monster" x="16" y="17" size="20" bold="true" visible="true" textColor="0x38445D"/>
+	<e:Label text="Kill 50 monsters" x="18" y="61" size="18" visible="true" id="u_txtDesc" textColor="0x38445D"/>
+	<e:Group x="14" y="88" visible="true">
+		<e:Image source="commonsUI_json.commonsUI_jindu_6" x="0" y="0" height="23" width="350" scale9Grid="8,9,219,13"/>
+		<e:Image id="u_jindu" source="commonsUI_json.commonsUI_jindu_5" height="15" scale9Grid="76,10,75,5" width="340" y="4" x="5"/>
+		<e:Label id="u_txtJindu" text="40/100" size="16" bold="true" y="4" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label text="Reward:" x="12" y="124" size="18" visible="true" id="u_txtReward" textColor="0x38445D"/>
+	<e:Group id="u_grpReward" x="90" y="111">
+		<e:Image id="u_itemIcon" source="commonsUI_json.commonsUI_item_icon" x="0" y="0" width="40" height="40"/>
+		<e:Label id="u_txtCount" text="x9999" x="39" size="20" bold="true" y="10"/>
+	</e:Group>
+	<e:Group id="u_btnGo" y="48" visible="true" x="409" width="136" height="65">
+		<e:Image id="u_imgGo" y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_2"/>
+		<e:Label id="u_txtGo" text="GO" bold="true" horizontalCenter="0.5" textColor="0x573118" size="22" verticalCenter="0"/>
+		<e:Image id="u_imgRed" source="commonsUI_json.commonsUI_red_1" x="114" y="-3"/>
+	</e:Group>
+	<e:Image id="u_imgReceived" source="commonsUI_json.commonsUI_received" x="433" y="49" visible="false"/>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ServerListItemSkin" width="371" height="46" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="loginUI_json.loginUI_liebiao"/>
+	<e:Image id="u_imgType" x="19" y="6.5" source="loginUI_json.loginUI_type_1"/>
+	<e:Label id="u_txtName" text="s.21 我的世界" x="66" size="18" anchorOffsetX="0" y="15" fontFamily="Microsoft YaHei" textColor="0xf0e4b0"/>
+	<e:Image id="u_imgHuo" source="loginUI_json.loginUI_huo" x="323" y="3.5"/>
+</e:Skin>

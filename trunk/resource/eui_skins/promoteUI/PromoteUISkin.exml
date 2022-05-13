@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PromoteUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17608b4a798"/>
+	<e:Image id="u_btnRule" y="459" visible="true" touchEnabled="true" width="36" height="36" x="155" source="shareUI_json.shareUI_rule"/>
+	<e:Group id="u_btnInfo" x="155" y="508" width="36" height="36">
+		<e:Image x="0" y="0" visible="true" touchEnabled="false" source="shareUI_json.shareUI_info" width="36" height="36"/>
+		<e:Image id="u_imgRed" x="28.17" y="0.83" source="commonUI_json.commonUI_red" visible="true" width="10" height="10"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" width="662" height="303" y="172" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="300">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+	<e:Label id="u_txtTimes" text="今日可领1/1" y="481.001" size="16" textAlign="center" visible="true" height="18" x="536.988" textColor="0x1ADE4D" fontFamily="Microsoft YaHei"/>
+	<e:Group id="u_btnReceive" x="510" y="498">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow2" x="0" y="0" width="140" height="52"/>
+		<e:Image source="shareUI_json.shareUI_receive" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="u_receiveRed" x="124" y="-3.876" source="commonUI_json.commonUI_red"/>
+	</e:Group>
+	<e:Group id="u_btnShare" x="710" y="498">
+		<e:Image source="commonUI_json.commonUI_img_btnbule2" x="0" y="0" width="144" height="52"/>
+		<e:Image source="shareUI_json.shareUI_btn_title" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

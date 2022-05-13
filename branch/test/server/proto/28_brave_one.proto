@@ -1,0 +1,108 @@
+// 勇敢者（1v1）
+//OPEN_DEBUG
+
+import "01_player.proto";
+import "05_prop.proto";
+
+// 勇敢者数据
+message braveOneData {
+    required int32 id = 1;      // 房间id
+    required int32 realId = 2;  // 房间实际id
+    required int32 pos_id = 3;  // 位置（1:先手，2:后手）
+    required ModelHeadFigure modelHeadFigure = 4;
+    required int32 start_time = 5;  // 开始时间
+}
+
+// 获得当前信息列表
+message m_get_info_list_tos {
+    required int32 page = 1; // 房间类型
+}
+message m_get_info_list_toc {
+    required int32 page = 1; // 房间类型
+    repeated braveOneData braveOneDataList = 2; // 勇敢者数据列表
+}
+
+// 创建勇敢者房间数据
+message m_create_tos {
+    required int32 id = 1;      // 房间id
+    required int32 pos_id = 2;  // 位置（1:先手，2:后手）
+}
+message m_create_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有权利创建
+        already_have = 5;       // 已经创建
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 id = 1;      // 房间id
+    optional braveOneData braveOneData = 3; // 勇敢者数据列表
+}
+
+// 进入房间
+message m_enter_tos {
+    required int32 realId = 2;  // 房间实际id
+}
+message m_enter_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有达到条件进入
+        none = 4;               // 没有房间
+        already_have = 5;       // 不能进入自己的/已经有对手/自己有房间
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 realId = 2;  // 房间实际id
+    optional braveOneData braveOneData = 3; // 创建者勇敢者数据
+}
+// 取消房间
+message m_clean_tos {
+}
+message m_clean_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        none = 4;   // 没有房间
+        already_have = 5;       // 已经有对手
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+}
+
+// 通知对手准备进入场景
+message m_notice_fight_scene_toc {
+    required braveOneData braveOneData = 2; // 勇敢者数据列表
+}
+
+// 等待其他玩家进入最后时间
+message m_wait_scene_toc {
+    required int32 wait_end_time = 2;  // 等待最后时间
+}
+// 准备开始
+message m_ready_start_toc {
+    required int32 start_time = 2;  // 开始时间
+}
+
+// 当前可以打的人
+message m_fight_player_toc {
+    required int32 player_id = 1;       // 玩家id
+    required int32 end_fight_time = 2;  // 最后攻击时间
+}
+// 赢的玩家数据
+message m_win_player_toc {
+    required int32 id = 1;      // 房间id
+    required ModelHeadFigure modelHeadFigure = 4;
+}
+
+
+
+
+

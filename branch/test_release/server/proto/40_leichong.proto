@@ -1,0 +1,40 @@
+// 累充奖励
+// OPEN_DEBUG
+
+import "05_prop.proto";
+
+// 获取累充奖励列表
+message m_info_query_tos{
+}
+message m_info_query_toc{
+    message Leichong {
+        required int32 id = 1;              // 编号
+        required uint32 done = 2;           // 已完成充值金额
+        required uint32 target = 3;         // 目标充值金额
+        required int32 state = 4;           // 奖励状态 【0-未完成 | 1-可领取 | 2-已领取】
+        repeated Prop award_list = 5;       // 奖励列表
+    }
+
+    required int32 activity_id = 1;          // 活动id 【-1表示活动关闭 | 其他值为活动id】
+    repeated Leichong list = 2;              // 累充列表
+}
+
+// 领取累充奖励
+message m_get_reward_tos{
+    required int32 activity_id = 1;     // 活动id
+    required int32 id = 2;              // 任务编号
+}
+message m_get_reward_toc{
+   enum ENUM {
+        success = 1;                      // 成功
+        already_get = 2;                  // 已领取
+        undone = 3;                       // 未完成
+    }
+
+    required int32 activity_id = 1;         // 活动id
+    required int32 id = 2;                  // 任务编号
+    repeated Prop prop_list = 3;            // 奖励列表
+    required ENUM result = 4;               // 结果
+}
+
+

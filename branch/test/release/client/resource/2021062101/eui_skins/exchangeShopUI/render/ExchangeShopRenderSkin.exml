@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.ExchangeShopRenderSkin"
+	 width="100"
+	height="133" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgSelect" source="exchangeShopUI_json.exchangeShopUI_select" y="0" visible="true" x="0"/>
+	<e:Image id="u_itemIcon" source="exchangeShopUI_json.exchangeShopUI_item_icon" y="109" scaleX="0.7" scaleY="0.7" width="29" height="33" x="30" visible="true"/>
+	<e:Label id="u_txtCost" text="15" size="16" textColor="0xF0E4B0" visible="true" x="52" y="114"/>
+</e:Skin>

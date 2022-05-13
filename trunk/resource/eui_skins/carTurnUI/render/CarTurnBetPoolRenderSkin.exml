@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnBetPoolRenderSkin"
+	 width="159"
+	height="120" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe8b4ddc"/>
+	<e:Group id="u_grpParent" visible="true" width="159" height="120">
+		<e:Image id="u_imgBg" scaleX="1" scaleY="1" scale9Grid="32,19,66,79" visible="true" pixelHitTest="true" touchEnabled="true" source="carTurnUI_json.carTurnUI_bet_normal_5"/>
+		<e:Image id="u_imgGold" y="-0.034" source="carTurnUI_json.carTurnUI_iocn_2" visible="true" width="24" height="24" scaleX="0.7" scaleY="0.7" x="56" touchEnabled="false"/>
+		<ns1:NumberView id="u_numTotal" width="11" height="14" x="74.333" y="2"/>
+		<ns1:NumberView id="u_numSelf" width="11" height="14" y="96.683" horizontalCenter="0"/>
+		<e:Group id="u_grpTypeIcon_1" visible="true" right="11" top="27" touchEnabled="false">
+			<e:Image id="u_imgType_1" source="carTurnUI_json.carTurnUI_img_frame" scaleX="1" scaleY="1" width="30" height="30" visible="true"/>
+			<ns1:NumberView id="u_numOdds_1" width="11" height="14" y="32" horizontalCenter="0"/>
+		</e:Group>
+		<e:Image id="u_imgLight" visible="true" alpha="0" source="carTurnUI_json.carTurnUI_bet_select_bg_1" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

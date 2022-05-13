@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="InvRebateUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="590" height="869" y="94" source="commonsUI_json.commonUI_box_2" horizontalCenter="-1" scale9Grid="29,29,30,30"/>
+	<e:Image source="shareUI_json.shareUI_bg" x="46" y="116.764"/>
+	<e:Group id="u_btnBuy" width="135" height="65" x="407.271" y="189.413">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" x="1.531" y="-0.714"/>
+		<e:Label id="u_txtBuy" text="Buy" x="38.735" y="14.286" bold="true" textColor="0x573118" borderColor="0x060605"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" width="550" height="663.092" y="288.88" rotation="359.942" horizontalCenter="0.5">
+		<e:Group horizontalCenter="0" height="667.255">
+			<e:List id="u_listItem" y="3"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image width="142.233" height="50" x="107.756" y="144.252"/>
+	<e:Image width="200" height="50" x="107" y="211"/>
+</e:Skin>

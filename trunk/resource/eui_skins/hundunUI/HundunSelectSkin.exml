@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HundunSelectSkin" width="1134" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_bg" top="0" bottom="0" width="1480" horizontalCenter="0" source="hundunSelectBg_json.hundunSelectBg_bg_1"/>
+	<e:Scroller id="u_sc" width="985.34" height="525.33" x="119.35" y="77" anchorOffsetY="0" anchorOffsetX="0">
+		<e:Group anchorOffsetX="0" width="1245.34" height="525">
+		<e:Group x="42" y="55">
+			<e:Image id="u_img_start_1" source="hundunSellectUI_json.hundunSellectUI_jinru" x="110" y="365"/>
+			<e:Image source="hundunSellectUI_json.hundunSellectUI_bg1_1" x="0" y="0"/>
+			<e:Image id="u_img_startRect_1" x="0.91" y="-5.15" width="360" height="360" alpha="0" source="hundunSellectUI_json.hundunSellectUI_bg1_1"/>
+			<e:Image x="19" y="265" scaleX="0.9" scaleY="0.9" source="hundunSellectUI_json.hundunSellectUI_type1"/>
+		</e:Group>
+		<e:Group x="442" y="55">
+			<e:Image id="u_img_start_2" x="112" y="362" source="hundunSellectUI_json.hundunSellectUI_jinru"/>
+			<e:Image x="0" y="0" source="hundunSellectUI_json.hundunSellectUI_bg2_1"/>
+			<e:Image x="19" y="265" scaleX="0.9" scaleY="0.9" source="hundunSellectUI_json.hundunSellectUI_type2"/>
+		</e:Group>
+			<e:Image id="u_img_startRect_2" x="443.91" y="54.85" width="360" height="360" alpha="0" source="hundunSellectUI_json.hundunSellectUI_bg1_1"/>
+		<e:Group x="836" y="55">
+			<e:Image source="hundunSellectUI_json.hundunSellectUI_jinru_wjs" x="112" y="362"/>
+			<e:Image x="0" y="0" source="hundunSellectUI_json.hundunSellectUI_bg3_0"/>
+			<e:Image source="hundunSellectUI_json.hundunSellectUI_weijiesuo" x="135" y="66"/>
+		</e:Group>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_left" y="70" x="-47">
+		<e:Image x="-73.68" y="6" source="commonUI_json.commonUI_page_di"/>
+		<e:Image id="u_btn_type2" x="48.93" y="249.64" source="hundunSellectUI_json.hundunSellectUI_type1_1"/>
+		<e:Image id="u_btn_type1" x="48.61" y="-38.63" source="hundunSellectUI_json.hundunSellectUI_type2_2"/>
+		<e:Image y="248.01" source="commonUI_json.commonUI_line2" x="47.67"/>
+	</e:Group>
+</e:Skin>

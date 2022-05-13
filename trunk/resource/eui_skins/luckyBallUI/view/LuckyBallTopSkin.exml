@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckyBallTopSkin"
+	 width="221"
+	height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c10600080"/>
+	<e:Group y="0" horizontalCenter="0">
+		<e:Image source="luckyBallUI_json.luckyBallUI_pool_di" visible="true" x="0" y="0"/>
+		<e:Group id="u_mcPro" y="14" scaleX="0.4" scaleY="0.4" visible="true" x="70"/>
+	</e:Group>
+	<e:Image source="luckyBallUI_json.luckyBallUI_txt_di" horizontalCenter="0" verticalCenter="26"/>
+	<e:Group id="u_grpCountDown" y="56" horizontalCenter="0">
+		<e:Image source="luckyBallUI_json.luckyBallUI_time_title" x="0" y="0"/>
+	</e:Group>
+</e:Skin>

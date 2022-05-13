@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SevenDaysRenderSkin"
+	 width="124"
+	height="155" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_contentGrp" x="0" y="20">
+		<e:Image id="u_imgBg" source="sevenDaysUI_json.sevenDaysUI_tab" x="0" y="0"/>
+		<e:Label id="u_txtDay" text="第1天" y="17.67" size="15" fontFamily="Microsoft YaHei" visible="true" horizontalCenter="0"/>
+		<e:Label id="u_awardLb" text="50" size="16" stroke="1" fontFamily="Microsoft YaHei" right="16" bottom="15"/>
+		<e:Image id="u_mask" source="sevenDaysUI_json.sevenDaysUI_tab0" y="0"/>
+		<e:Image id="u_received" source="commonUI_json.commonUI_received" width="60" height="60" horizontalCenter="0" y="52"/>
+	</e:Group>
+</e:Skin>

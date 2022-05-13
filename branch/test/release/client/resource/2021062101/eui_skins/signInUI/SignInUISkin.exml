@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SignInUISkin"
+	 width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17603d75c7b"/>
+	<e:Image x="188" y="47.4" visible="true" touchEnabled="false" source="signInUI_json.signInUI_bg"/>
+	<e:Scroller id="u_scrollerItem" width="842" height="480.206" y="125.39" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="223.212">
+		<e:Group width="635">
+			<e:List id="u_listItem"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

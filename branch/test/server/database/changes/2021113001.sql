@@ -1,0 +1,1 @@
+ALTER TABLE `wheel_pool` ADD COLUMN `id` tinyint(4) not null default 0 COMMENT '当前id' AFTER `value`;

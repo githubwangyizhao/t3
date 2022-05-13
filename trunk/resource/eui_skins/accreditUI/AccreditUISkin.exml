@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AccreditUISkin" width="820" height="443" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" width="759.566" visible="true" height="416.81" scaleX="1" scaleY="1" y="14.06" source="commonUI_json.commonUI_img_popdi" scale9Grid="33,173,33,174" horizontalCenter="0"/>
+	<e:Image source="commonUI_json.commonUI_img_inner" y="63" width="690.205" height="190.333" scale9Grid="23,10,24,11" scaleX="1" scaleY="1" horizontalCenter="-0.5"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="693.47" y="16.23"/>
+	<e:Label id="u_txtMsg" text="s" y="73" anchorOffsetX="0" textAlign="center" stroke="2" size="26" strokeColor="0x254d60" horizontalCenter="0" width="654" verticalAlign="middle" height="169" anchorOffsetY="0" fontFamily="Microsoft YaHei"/>
+</e:Skin>

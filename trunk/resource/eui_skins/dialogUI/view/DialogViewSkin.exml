@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DialogViewSkin" width="150" height="434" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="dialogUI_json.dialogUI_btn_select"/>
+	<e:Image id="u_imgGou" y="3" source="dialogUI_json.dialogUI_gou" horizontalCenter="9"/>
+	<e:Label id="u_txtMsg" text="跳过" y="91" size="22" bold="true" textAlign="center" textColor="0x804a5f" anchorOffsetY="0" height="252" verticalAlign="middle" anchorOffsetX="0" width="34" lineSpacing="4" x="63" fontFamily="Microsoft YaHei"/>
+</e:Skin>

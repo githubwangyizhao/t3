@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d3125821e"/>
+	<e:Image scale9Grid="33,66,33,406" width="786" height="520" visible="true" source="commonUI_json.commonUI_img_popdi" y="60" x="174"/>
+	<e:Image source="chatUI_json.chatUI_bg_light" x="177" y="96" width="780" height="481" visible="true"/>
+	<e:Image source="chatUI_json.chatUI_di_1" x="418" y="518" visible="true"/>
+	<e:Image source="chatUI_json.chatUI_bg_left" x="177" y="96" width="241" height="481" scale9Grid="40,22,40,23" visible="true"/>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_titlebg" y="62" visible="true" horizontalCenter="0"/>
+	<e:Image id="u_imgTitle" y="71" visible="true" source="chatUI_json.chatUI_channel_1" horizontalCenter="0"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="864" y="62" visible="true" width="93" height="34"/>
+	<e:Image source="chatUI_json.chatUI_bg_search" x="177" y="103" visible="true"/>
+	<e:EditableText id="u_inputSearch" width="165" textAlign="center" size="16" fontFamily="Microsoft YaHei" text="输入id" height="24" visible="true" x="194" textColor="0x8693A7" bold="true" verticalAlign="middle" y="111"/>
+	<e:Group id="u_btnSearch" x="361" y="108" width="44" height="30">
+		<e:Image source="chatUI_json.chatUI_txt_search" visible="true" horizontalCenter="-0.5" verticalCenter="0"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem2" height="400" anchorOffsetX="0" anchorOffsetY="0" width="526" y="105" visible="true" x="424">
+		<e:List id="u_listItem2" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	</e:Scroller>
+	<e:Scroller id="u_scrollerItem1" height="362" anchorOffsetX="0" anchorOffsetY="0" width="249" y="157" visible="true" x="178">
+		<e:List id="u_listItem1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	</e:Scroller>
+	<e:Image source="chatUI_json.chatUI_di_3" x="429" y="532" scale9Grid="11,11,12,12" width="395" visible="true"/>
+	<e:Image id="u_btnEmo" source="chatUI_json.chatUI_btnEmo" x="432" y="533" width="33" height="31" visible="false"/>
+	<e:EditableText id="u_inputMsg" width="350" textAlign="center" verticalAlign="middle" size="16" fontFamily="Microsoft YaHei" text="输入消息" height="30" visible="true" textColor="0x8693A7" bold="true" x="469" y="534"/>
+	<e:Group id="u_btnSend" x="831" y="525" touchChildren="false" width="122" height="46">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow" x="0" y="0" visible="true"/>
+		<e:Image source="chatUI_json.chatUI_txt_send" horizontalCenter="-1.5" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_grpSelect" x="177" y="519">
+		<e:Image source="chatUI_json.chatUI_btn_bg3" x="0" y="0" visible="true"/>
+		<e:Group id="u_btnSelectAll" x="7" y="8" touchChildren="false" visible="true" width="112" height="46">
+			<e:Image source="chatUI_json.chatUI_btn_bg1" x="0" y="0" visible="true"/>
+			<e:Image id="u_imgSelectAll" source="chatUI_json.chatUI_txt_all"/>
+		</e:Group>
+		<e:Group x="122" y="8" touchChildren="false" visible="true" id="u_btnRemove" width="112" height="46">
+			<e:Image x="0" y="0" visible="true" source="chatUI_json.chatUI_btn_bg2"/>
+			<e:Image source="chatUI_json.chatUI_txt_remove"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="u_btnUnSend" source="commonUI_json.commonUI_box" x="418" y="518" scale9Grid="3,3,4,4" width="542" height="62" alpha="0" visible="true"/>
+</e:Skin>

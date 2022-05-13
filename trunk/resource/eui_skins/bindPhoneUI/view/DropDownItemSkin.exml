@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DropDownItemSkin"
+	 width="316"
+	height="40" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="316" height="40">
+		<e:Image id="u_imgSelect" verticalCenter="0" width="316" height="40" visible="true" horizontalCenter="0" scale9Grid="2,2,1,1" source="bindPhoneUI_json.bindPhoneUI_img_box_1" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Label id="u_textContent" text="1" textAlign="center" size="20" verticalAlign="middle" fontFamily="Microsoft YaHei" width="316" horizontalCenter="0" verticalCenter="0" touchEnabled="false" x="0" y="10" scaleX="1" scaleY="1"/>
+		<e:Image source="commonUI_json.commonUI_line2" horizontalCenter="0" width="360" bottom="0" scale9Grid="36,0,46,1" x="-22" y="37.999999999999986" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

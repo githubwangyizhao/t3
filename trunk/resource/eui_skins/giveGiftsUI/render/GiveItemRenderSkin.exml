@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveItemRender"
+	 width="501"
+	height="91" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7cdd9d15"/>
+	<e:Group visible="true" width="501" height="91">
+		<e:Image id="u_imgIcon" x="-6" scaleX="1" scaleY="1" source="giveGiftsUI_json.giveGiftsUI_img_gem" width="91" height="95" verticalCenter="0"/>
+		<e:Group id="u_btnReduce" x="98.718" verticalCenter="0" width="44" height="41">
+			<e:Image x="0" scaleX="1" scaleY="1" visible="true" verticalCenter="2" width="44" height="37" y="-17" source="commonUI_json.commonUI_img_btnbule3"/>
+			<e:Label text="min" verticalCenter="0" horizontalCenter="0" size="16" textColor="0xCEDFF0" fontFamily="Microsoft YaHei" bold="true"/>
+		</e:Group>
+		<e:Group id="u_btnAdd" x="450.17" verticalCenter="0" width="44" height="41">
+			<e:Image x="0" scaleX="1" scaleY="1" visible="true" verticalCenter="2" width="44" height="37" y="-17" source="commonUI_json.commonUI_img_btnbule3"/>
+			<e:Label text="max" horizontalCenter="0" verticalCenter="0" size="16" textColor="0xCEDFF0" fontFamily="Microsoft YaHei" bold="true"/>
+		</e:Group>
+		<e:Image width="132" x="230.506" height="43" source="giveGiftsUI_json.giveGiftsUI_edit_bg" scale9Grid="7,7,22,19" scaleX="1" scaleY="1" verticalCenter="2" visible="true"/>
+		<e:EditableText id="u_editCount" width="117.334" height="30" x="237.616" size="16" prompt="0" scaleX="1" scaleY="1" verticalCenter="1.5" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" touchEnabled="false" restrict="0-9"/>
+		<e:Group id="u_btnReduceTen" x="151.394" verticalCenter="0" width="72" height="41">
+			<e:Image x="0" scaleX="1" scaleY="1" visible="true" verticalCenter="2" width="72" height="37" source="commonUI_json.commonUI_img_btnbule3" y="-17"/>
+			<e:Label id="u_textMin" text="-200" size="20" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" textColor="0xCEDFF0" bold="true"/>
+		</e:Group>
+		<e:Group id="u_btnAddTen" x="368.718" verticalCenter="0" width="72" height="41">
+			<e:Image x="0" scaleX="1" scaleY="1" visible="true" verticalCenter="2" width="72" height="37" source="commonUI_json.commonUI_img_btnbule3" y="-17"/>
+			<e:Label id="u_textMax" text="+200" size="20" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei" borderColor="0x1C5382" textColor="0xCEDFF0" bold="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmJigsawUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgUiBj" source="smJigsawUI_json.smJigsawUI_bj" x="0" y="0" width="1136" height="640" scale9Grid="80,250,480,36"/>
+	<e:Image id="u_imgTit" source="smJigsawUI_json.smJigsawUI_tit" x="158" y="31" height="84"/>
+	<e:Image id="u_btnClose" x="11" y="15" source="commonUI_json.commonUI_btn_close_1"/>
+	<e:Group id="u_mcTop" x="12" y="157" height="119">
+		<e:Image source="smJigsawUI_json.smJigsawUI_di2" x="0" y="0" anchorOffsetX="0" width="494" height="142" scale9Grid="35,40,35,39"/>
+		<e:Image id="u_btnLook" source="smJigsawUI_json.smJigsawUI_look" x="41.68" y="13.67"/>
+		<e:Image source="commonUI_json.commonUI_box_4" x="159" y="21.5" scale9Grid="4,3,25,20" anchorOffsetX="0" width="316" anchorOffsetY="0" height="105"/>
+		<e:Label id="u_txtTip" text="发现被破坏的藏宝图碎片，请在规定时间内拖动图片，完成宝图还原" x="179.34" y="35.65" textColor="0xd4797f" bold="true" width="293" size="21.5" lineSpacing="2" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_mcMain" x="526">
+		<e:Image id="u_imgBj" anchorOffsetY="0" height="633" x="0" source="smJigsawUI_json.smJigsawUI_di1" y="0" scale9Grid="52,79,48,475" width="602"/>
+		<e:Group id="u_mcMap" width="535" height="535" x="34" anchorOffsetX="0" y="49"/>
+		<e:Group id="u_mcTime" x="-480.5" y="547">
+			<e:Label id="u_txtTime" text="40s" y="29" size="30" anchorOffsetX="0" bold="true" textAlign="left" x="206.5" textColor="0xfc94b3" strokeColor="0xfdfdfd" stroke="2" fontFamily="Microsoft YaHei"/>
+			<e:Group x="0" y="0">
+				<e:Image source="commonUI_json.commonUI_progress_1_bj" x="0" y="0" scale9Grid="16,4,20,9" width="472"/>
+				<e:Image id="u_imgProgress" source="commonUI_json.commonUI_progress_1" x="2.5" y="2.5" scale9Grid="10,3,28,7" width="467"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="u_mcStep" x="-320" y="454.5">
+			<e:Image source="smWuziqiUI_json.smWuziqiUI_zi_bj" x="0" y="0"/>
+			<e:Label id="u_txtName" text="剩余：9步" y="3.5" bold="true" size="19" scaleX="1" scaleY="1" strokeColor="0x048770" textAlign="center" stroke="1" textColor="0x00FFBD" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

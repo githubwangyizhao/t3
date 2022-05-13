@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainTaskViewSkin"
+	 width="291"
+	height="68" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" x="0" y="0" source="userMainUI_json.userMainUI_zx" width="162" scale9Grid="68,8,170,52"/>
+	<e:Label id="u_txtTask" text="任务描述" y="22" size="18" textAlign="left" bold="true" x="70.5" textColor="0xF0E4B0"/>
+	<e:Image id="u_btnTask" width="291" height="68" source="commonUI_json.commonUI_box" alpha="0"/>
+</e:Skin>

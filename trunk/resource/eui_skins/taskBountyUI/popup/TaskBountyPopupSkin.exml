@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.TaskBountyPopup"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7779132b"/>
+	<e:Image x="55.845" y="103.863" visible="true" source="taskBountyPopUI_json.taskBountyPopUI_bg"/>
+	<e:Image source="taskBountyPopUI_json.taskBountyPopUI_bg1" y="176" visible="true" horizontalCenter="0.5"/>
+	<e:Label id="u_countLb" text="剩余赏金任务次数 4/4" y="216" size="17" textColor="0xFFFFFF" right="104" textAlign="right"/>
+	<e:Label id="u_tipLb" text="每天0点重置" y="476.692" size="17" bold="true" textAlign="right" textColor="0xFFFFFF" right="104"/>
+	<e:Group id="u_btnClose" width="60" height="60" x="983.839" y="120" touchChildren="false">
+		<e:Image source="taskBountyPopUI_json.taskBountyPopUI_close" y="15" scaleX="1" scaleY="1" horizontalCenter="0"/>
+	</e:Group>
+	<e:Scroller id="u_scroller" width="806" height="188" y="243.824" visible="true" x="243">
+		<e:List id="u_list"/>
+	</e:Scroller>
+	<e:Group y="440.66" horizontalCenter="78">
+		<e:Label id="u_costNum" text="5" x="0" y="9" size="18"/>
+		<e:Image id="u_costItem" width="30" height="30" x="12" y="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnRefresh" y="465.498" visible="true" x="585">
+		<e:Image source="commonUI_json.commonUI_img_btnbule" x="0" y="0"/>
+		<e:Image source="taskBountyPopUI_json.taskBountyPopUI_refresh" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Image source="taskBountyPopUI_json.taskBountyPopUI_tip" x="66.503" y="433.328"/>
+</e:Skin>

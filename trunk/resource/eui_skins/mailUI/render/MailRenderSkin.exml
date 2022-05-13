@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MailUIRenderSkin"
+	 width="380"
+	height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17912d9bb33"/>
+	<e:Group id="u_grpMain" visible="true">
+		<e:Image source="mailUI_json.mailUI_img_bg2" visible="true" y="1" x="1"/>
+		<e:Image id="u_imgNew" source="mailUI_json.mailUI_tag_new" x="336.696" y="16.627" visible="true"/>
+		<e:Group x="18" y="16" visible="true">
+			<e:Label text="充值钻石" size="16" textAlign="left" id="u_textTitle" border="false" visible="true" scaleX="1" scaleY="1" y="6" x="27" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+			<e:Image id="u_imgRead" source="mailUI_json.mailUI_img_icon_not_read" visible="true" scaleX="1" scaleY="1" left="0" y="1"/>
+			<e:Image id="u_imgIcon" source="mailUI_json.mailUI_icon_award" y="2" visible="true" scaleX="1" scaleY="1" right="-31"/>
+		</e:Group>
+		<e:Label text="2021/04/13  14:50" x="17.619" y="54.54" size="14" textAlign="left" strokeColor="0x333333" id="u_textTime" borderColor="0x333333" visible="true" textColor="0xB3B3B3" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Image id="u_imgSelect" scaleX="1" scaleY="1" visible="true" source="mailUI_json.mailUI_select_base" x="-3" y="-2" touchEnabled="false"/>
+</e:Skin>

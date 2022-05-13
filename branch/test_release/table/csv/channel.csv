@@ -1,0 +1,9 @@
+渠道表,,,,
+str|key,str|key,str,str,int
+,,,,
+platform_id,channel,sign,name,id
+"平台","渠道","标识","渠道名称","编号id"
+local,local_test,local_test,测试渠道,7
+djs,test,test,测试渠道,32
+moy,moy,moy,默往,112
+indonesia,fb,fb,facebook,1000

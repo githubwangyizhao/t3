@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RedPacketReceiveSkin" width="463" height="126" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgIcon" x="57" y="20" source="commonsUI_json.commonsUI_item_icon"/>
+	<e:Image id="u_imgJia" source="numberText_json.num_sy_j" x="132" y="27"/>
+</e:Skin>

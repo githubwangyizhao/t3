@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmFindFaultUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17332ec1ad2"/>
+	<e:Image id="u_imgBj" scale9Grid="80,210,480,130" source=""/>
+	<e:Image id="u_btnClose" x="983" y="39" source="commonUI_btn_close_3.png" width="36" height="36"/>
+	<e:Label id="u_txtChabie" text="差别：" y="49" bold="true" size="20" textColor="0xA65665" x="377"/>
+	<e:Group id="u_mcImg" x="2" y="110">
+		<e:Image id="u_imgIcon1" y="0" source="" width="460" height="500" x="0"/>
+		<e:Image id="u_imgIcon2" source="" y="0" width="460" height="500" x="667"/>
+		<e:Group id="u_mcTime" y="403" horizontalCenter="0.5">
+			<e:Image x="0" y="0" source="commonUI_box" scale9Grid="1,1,8,8" width="130" height="27"/>
+			<e:Label id="u_txtTime" text="剩余时间：78" y="5" bold="true" size="18" scaleX="1" scaleY="1" strokeColor="0x03665d" textAlign="center" stroke="1" textColor="0x02ffbe" horizontalCenter="0.5"/>
+		</e:Group>
+		<e:Group id="u_mcStep" y="453" horizontalCenter="0.5">
+			<e:Image x="0" y="0" source="commonUI_box" scale9Grid="1,1,8,8" width="130" height="27"/>
+			<e:Label id="u_txtStep" text="剩余时间：78" y="5" bold="true" size="18" scaleX="1" scaleY="1" strokeColor="0x03665D" textAlign="center" stroke="1" textColor="0x02FFBE" horizontalCenter="0.5"/>
+		</e:Group>
+		<e:Label text="在右图中找出区别于左图的点" y="157" bold="true" size="20" textColor="0xa65665" horizontalCenter="0" width="186" lineSpacing="8"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.SeniorInvestViewSkin"
+	 width="800"
+	height="400" xmlns:e="http://ns.egret.com/eui">
+    <e:Scroller id="u_seniorScroll" width="760" height="360" x="20" y="20">
+		<e:List id="u_seniorList"/>
+	</e:Scroller>
+</e:Skin>

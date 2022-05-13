@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleListUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798e47962c"/>
+	<e:Image id="u_imgBg" visible="true" horizontalCenter="0"/>
+	<e:Group id="u_mcRight" x="940" y="53">
+		<e:Image source="roleListUI_json.roleListUI_icon_yx" x="0" y="0" visible="true"/>
+		<e:Label id="u_txtOwned" text="获得英雄：" x="27" y="3" touchEnabled="false" size="18" visible="true" textColor="0xF0E4B0" bold="true"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="87" width="1010" height="550" x="123">
+		<e:Group visible="true">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_mcTab" x="-1" y="3" width="120">
+		<e:Image scale9Grid="40,22,40,23" x="-121" verticalCenter="0" source="commonUI_json.commonUI_page_di"/>
+		<e:Image source="roleListUI_json.roleListUI_order_title" y="110" horizontalCenter="0"/>
+		<e:Image source="roleListUI_json.roleListUI_line" y="140" visible="true" x="0"/>
+		<e:List id="u_sortList" x="-7" y="137"/>
+		<e:Group x="-7" y="137" visible="false">
+		<e:Image source="roleListUI_json.roleListUI_order_select" x="0" y="0" visible="true"/>
+		<e:Image source="roleListUI_json.roleListUI_tab1_1" x="13" y="21" visible="true"/>
+		</e:Group>
+		<e:Group x="-7" y="189" visible="false">
+		<e:Image source="roleListUI_json.roleListUI_order_select" x="0" y="0" visible="true"/>
+		<e:Image x="13" y="21" visible="true" source="roleListUI_json.roleListUI_tab2_1"/>
+		<e:Image source="roleListUI_json.roleListUI_line" x="7" y="61"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

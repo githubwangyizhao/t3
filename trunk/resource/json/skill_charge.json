@@ -1,0 +1,1 @@
+[{"client_key":"id"},{"id":1,"sign":"teleport","desc":"突进技能","charge_time":500,"charge_cd_time":0,"times":3,"inti_times":1,"parameter_desc":"突进距离","parameter_list":[300]},{"id":2,"sign":"single_goal","desc":"单体技能","charge_time":10000,"charge_cd_time":0,"times":1,"inti_times":0,"parameter_desc":"攻击次数（当今拥有值，小于当前消耗*次数，提示击毙/钻石不足）","parameter_list":[50]}]

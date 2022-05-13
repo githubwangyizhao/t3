@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatEmoViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d325ff278"/>
+	<e:Image source="chatUI_json.chatUI_di_4" x="427" y="280" visible="true" scale9Grid="23,23,22,24" width="464" height="236"/>
+</e:Skin>

@@ -1,0 +1,33 @@
+// 每天签到
+// 每天签到数据
+message EverydaySignData {
+    required int32 day = 1; // 第几天
+    repeated int32 today = 2; // 已签到数据
+    required int32 round = 3;   // 第几个30天
+}
+
+// 每日签到/补签
+message m_everyday_sign_tos {
+    required int32 today = 1; // 天数
+    required int32 round = 2;   // 第几个30天
+}
+// 每日签到/补签
+message m_everyday_sign_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        not_authority = 3; // 没有权利
+        function_no_open = 4; // 功能未开启
+        already_have = 5; // 已经领取
+        not_enough_grid = 6; // 没有空格子
+        no_enough_prop = 7; // 道具不足
+    }
+    required ENUM result = 1;
+    required int32 today = 2; // 天数
+    required int32 round = 3;   // 第几个30天
+}
+
+message m_notice_day_toc {
+    required int32 day = 1; // 第几天
+    required int32 round = 2;   // 第几个30天
+}

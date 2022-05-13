@@ -1,0 +1,64 @@
+// 步步紧逼
+//OPEN_DEBUG
+
+// 进入房间
+message m_enter_tos {
+    required int32 id = 1;      // 房间id
+}
+message m_enter_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有达到条件进入
+        already_have = 5;       // 已进入房间
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 id = 1;      // 房间id
+}
+
+// 继续挑战
+message m_fight_tos {
+}
+message m_fight_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        not_authority = 3;      // 没有达到条件进入
+        none = 4;               // 没有可挑战了
+        already_have = 5;       // 不能进入自己的
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 loop_num = 2;        // 挑战轮数
+    required int32 end_fight_time = 3;  // 最后攻击时间
+}
+
+// 领取奖励
+message m_get_award_tos {
+}
+message m_get_award_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        none = 4;   // 没有房间
+        function_no_open = 6;   // 功能未开启
+        not_enough_grid = 7;    // 没有空格子
+        no_enough_prop = 8;     // 道具不足
+    }
+    required ENUM result = 99;
+    required int32 loop_num = 2;    // 前轮数(已打过的)
+}
+
+// 当前轮数据
+message m_fight_result_toc {
+    required int32 loop_num = 1;    // 前轮数(已打过的)
+    required int32 is_win = 2;      // 是否赢(1:赢 0:输)
+}
+
+
+

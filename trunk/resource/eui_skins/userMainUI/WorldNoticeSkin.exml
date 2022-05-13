@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WorldNoticeSkin" width="450" height="37" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgbg" source="commonUI_json.commonUI_di_1" y="6" scale9Grid="48,8,48,8" visible="true" width="440"/>
+	<e:Image source="commonUI_json.commonUI_laba" x="4" y="9" visible="true"/>
+	<e:Label id="u_text" size="14" anchorOffsetX="0" wordWrap="false" multiline="false" textColor="0xF0E4B0" visible="true" scaleX="1" scaleY="1" x="34" stroke="2" strokeColor="0x333333" y="12" text="欢迎到来" bold="true" height="18" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FloatTipUISkin" width="1136" height="58" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_tipGroup" width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="u_tipBG" horizontalCenter="0" verticalCenter="0" scale9Grid="156,9,3,39" source="commonUI_json.commonUI_float_bg" height="57"/>
+		<e:Label id="u_tipLabel" textColor="0xFFFFFF" bold="true" horizontalCenter="0" verticalCenter="-5.5"  size="26" wordWrap="true" lineSpacing="8" maxWidth="600" textAlign="center" text=""/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketBuyPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonUI_json.commonUI_bg" scale9Grid="10,85,10,9" width="900" height="500" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="u_txtTitle" text="获取通行证" y="96" bold="true" size="20" horizontalCenter="0"/>
+	<e:Image id="u_btnTips" source="commonUI_json.commonUI_btn_th" x="135" y="98" width="20" height="20"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_2" x="884" y="88" width="30" height="30"/>
+	<e:Group x="225" y="310">
+		<e:Image source="commonUI_json.commonUI_di_2" x="0" y="0" anchorOffsetX="0" width="277" anchorOffsetY="0" height="212" scale9Grid="23,23,24,24"/>
+		<e:Label text="钻石通行证" y="32.93" bold="true" horizontalCenter="0.5" italic="true"/>
+		<e:Label text="解锁钻石通行证和任务奖励" y="97.93" bold="true" horizontalCenter="0.5" italic="true" x="74" size="18"/>
+		<e:Group id="u_btnBuy1" y="135" horizontalCenter="0">
+			<e:Image source="commonUI_json.commonUI_di_2" scale9Grid="23,23,24,24" y="0" x="0" width="107" height="59"/>
+			<e:Group y="12" horizontalCenter="0">
+				<e:Image id="u_iconCost1" source="commonUI_json.commonUI_icon_juan" x="0" y="0" width="27" height="27"/>
+				<e:Label id="u_txtCost1" text="15" size="20" textColor="0xF0E4B0" visible="true" x="35" y="4" bold="true"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group x="622" y="310">
+		<e:Image source="commonUI_json.commonUI_di_2" x="0" y="0" anchorOffsetX="0" width="277" anchorOffsetY="0" height="212" scale9Grid="23,23,24,24"/>
+		<e:Label text="钻石通行证礼包" y="32.93" bold="true" horizontalCenter="0.5" italic="true"/>
+		<e:Label text="钻石通行证+10级奖励" y="97.93" bold="true" horizontalCenter="0.5" italic="true" x="74" size="18"/>
+		<e:Group y="135" id="u_btnBuy2" horizontalCenter="0">
+			<e:Image source="commonUI_json.commonUI_di_2" scale9Grid="23,23,24,24" y="0" x="0" width="107" height="59"/>
+			<e:Group y="12" horizontalCenter="0">
+			<e:Image id="u_iconCost2" source="commonUI_json.commonUI_icon_juan" x="0" y="0" width="27" height="27"/>
+			<e:Label id="u_txtCost2" text="15" size="20" textColor="0xF0E4B0" visible="true" x="35" y="4" bold="true"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

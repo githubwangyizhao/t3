@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionEitherRenderSkin"
+	 width="580"
+	height="60" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="u_txtName" text="副本id： " x="141" verticalCenter="0"/>
+	<e:Image id="u_btnSelect" source="commonsUI_json.commonUI_box_1" scale9Grid="26,27,27,27" width="580" height="60" alpha="0" verticalCenter="0"/>
+</e:Skin>

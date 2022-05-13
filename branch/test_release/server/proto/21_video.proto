@@ -1,0 +1,18 @@
+//视频奖励
+import "05_prop.proto";
+//领取视频奖励
+message m_get_award_tos {
+    required int32 id = 1; //视频id
+}
+
+//领取视频奖励
+message m_get_award_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; //失败
+        times_limit = 3; //次数限制
+    }
+    required ENUM result = 1;
+    required int32 id = 2; //视频id
+    repeated Prop award_list = 3; //奖励列表
+}

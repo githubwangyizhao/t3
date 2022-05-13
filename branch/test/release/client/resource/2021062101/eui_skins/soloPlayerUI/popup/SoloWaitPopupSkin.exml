@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.SoloWaitPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_numGrp" width="300" height="300" x="155.864" y="368.738">
+		<e:Label id="u_txtNum" text="0" width="119.216" height="118.973" horizontalCenter="2.5" verticalCenter="-5.5" size="89" textAlign="center" verticalAlign="middle" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveGiftsUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_pageGrp" width="118" height="550" x="0" visible="true" y="61">
+		<e:Image x="-121" anchorOffsetX="0" anchorOffsetY="0" visible="true" source="commonUI_json.commonUI_page_di" scale9Grid="80,209,79,209" scaleX="1" scaleY="1" y="-58"/>
+	</e:Group>
+</e:Skin>

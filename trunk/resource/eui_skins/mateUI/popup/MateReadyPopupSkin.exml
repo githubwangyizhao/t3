@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateReadyPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17be7a5fd40"/>
+	<e:Image source="mateReadyUI_json.mateReadyUI_bg" y="106" visible="true" horizontalCenter="0.5"/>
+</e:Skin>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateTeamPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c72bc629b"/>
+	<e:Image id="u_imgBg" horizontalCenter="0" visible="true" source=""/>
+	<e:Image source="commonUI_json.commonUI_box" x="163" y="131" alpha="0" width="815" scale9Grid="3,3,4,4" height="343"/>
+	<e:Group id="u_btnWorld" width="310" height="270" touchChildren="false" x="211" y="169">
+		<e:Group width="310" height="270" x="0" y="0" touchEnabled="false">
+			<e:Image visible="true" width="407" height="346" source="mateTeamWaitUI_json.mateTeamWaitUI_recruit_icon1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group width="310" height="270" id="u_btnFirend" touchChildren="false" x="621" y="169">
+		<e:Group width="310" height="270" x="0" y="0" touchEnabled="false">
+		<e:Image visible="true" width="407" height="346" horizontalCenter="0" verticalCenter="0" source="mateTeamWaitUI_json.mateTeamWaitUI_recruit_icon2"/>
+		</e:Group>
+	</e:Group>
+	<e:Label id="u_txtTime1" text="恢复时间" fontFamily="Microsoft YaHei" size="18" y="435" stroke="1" horizontalCenter="0"/>
+	<e:Label id="u_txtBlank" text="点击空白处关闭" y="544" size="14" visible="true" touchEnabled="false" textColor="0x8693A7" bold="true" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+</e:Skin>

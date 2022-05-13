@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TagViewSkin"
+	 width="283"
+	height="94" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_btnClick" x="0" y="0">
+		<e:Image id="u_imgBg" source="shopHallUI_json.shopHallUI_img_tagdi" scale9Grid="94,31,95,32" y="0" scaleX="1" scaleY="1" x="0"/>
+		<e:Image id="u_imgUncheck" y="0" horizontalCenter="-0.5" source=""/>
+		<e:Image id="u_imgSelect" y="0" scale9Grid="94,31,95,32" horizontalCenter="-0.5" source=""/>
+		<e:Image id="u_imgSplit" source="shopHallUI_json.shopHallUI_img_split" y="22.5" x="282"/>
+	</e:Group>
+</e:Skin>

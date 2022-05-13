@@ -1,0 +1,36 @@
+//购买次数
+message m_add_times_tos {
+    required int32 times_id = 1;
+}
+//购买次数
+message m_add_times_toc {
+    enum ENUM {
+        success = 1; //成功
+        need_ingot = 2; //元宝不足
+        need_coin = 3; //铜钱不足
+        fail = 4;// 失败
+        times_limit = 5; //购买次数限制
+    }
+    required ENUM result = 1;
+    required int32 times_id = 2; //次数id
+}
+
+//次数
+message times {
+    required int32 times_id = 1; //次数id
+    required int32 value = 2;    //剩余次数
+    required int32 buy_times = 3; //今日已购买次数
+    required int32 max_times = 4;    //最大的免费次数
+    required int32 recover_time = 5; //恢复时间
+    required int32 use_times = 6; //已用次数
+    required int32 max_can_buy_times = 7;    //最大可购买次数
+}
+
+//通知次数变化
+message m_notice_times_change_toc {
+    repeated times times_list= 1; //变化次数列表
+}
+
+
+
+

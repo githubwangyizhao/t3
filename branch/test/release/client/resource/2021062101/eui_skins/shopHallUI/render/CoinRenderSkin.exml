@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CoinRenderSkin"
+	 width="150"
+	height="190" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="shopHallUI_json.shopHallUI_img_jbd" width="150" height="190"/>
+   	<e:Group id="u_btnBuyCoin" width="150" height="190">
+		<e:Image id="u_imgIcon" x="22" y="22" width="111" height="81"/>
+		<e:Label id="u_txtBuyNum" text="num" y="107" height="17" size="16" textAlign="center" width="111" horizontalCenter="2.5"/>
+		<e:Label id="u_txtExp" text="VIP 经验 + " y="129" size="16" width="111" horizontalCenter="2.5" textAlign="center" verticalAlign="middle"/>
+		<e:Label id="u_txtCash" text="$ 2" y="162" size="16" horizontalCenter="1.5"/>
+	</e:Group>
+</e:Skin>

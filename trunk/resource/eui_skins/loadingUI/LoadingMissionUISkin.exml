@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingMissionUISkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="loadingMissionUI_json.loadingMissionUI_bg" x="0" y="0" scale9Grid="1,1,3,3" anchorOffsetX="0" width="192" anchorOffsetY="0" height="243"/>
+	<e:Image id="hand1" source="loadingMissionUI_json.loadingMissionUI_hard1" x="-29" y="194.5" scaleX="2" scaleY="2"/>
+	<e:Image id="hand2" source="loadingMissionUI_json.loadingMissionUI_hard2" x="297" y="521" scaleX="2" scaleY="2"/>
+	<e:Image id="ray1" source="loadingMissionUI_json.loadingMissionUI_ray1" x="-92" y="-127" scaleX="4" scaleY="4"/>
+	<e:Image id="ray2" source="loadingMissionUI_json.loadingMissionUI_ray2" x="142" y="152" scaleX="4" scaleY="4"/>
+	<e:Image id="star" source="loadingMissionUI_json.loadingMissionUI_star" x="-5.5" y="259" blendMode="add" anchorOffsetX="0" width="381" anchorOffsetY="0" height="381" scaleX="2" scaleY="2"/>
+</e:Skin>

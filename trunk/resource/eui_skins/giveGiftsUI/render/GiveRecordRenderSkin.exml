@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveRecordRenderSkin"
+	 width="934"
+	height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17ca75e1083"/>
+	<e:Group visible="true">
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_img_render_bg" scaleX="1" scaleY="1" scale9Grid="29,27,28,26" width="934" visible="true"/>
+		<e:Label id="u_textDate" text="10月20日" x="23.005" y="17.002" size="18" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_textContent" text="您大手" x="21.663" y="45.333" size="18" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

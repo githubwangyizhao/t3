@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessTishiPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="178ba01b3cf"/>
+	<e:Image source="gussTishiUI_json.gussTishiUI_bg" y="102" horizontalCenter="0" visible="true"/>
+	<e:Image id="u_btnClose" source="gussTishiUI_json.gussTishiUI_close" x="534" y="136" width="37" height="35"/>
+	<e:Group id="u_mcTishi" y="950" horizontalCenter="0.5">
+		<e:Label id="u_txtTishiMsg" text="Not reminded" y="11.1" anchorOffsetX="0" size="22" multiline="true" wordWrap="true" anchorOffsetY="0" lineSpacing="8" touchEnabled="false" strokeColor="0xEDB295" bold="true" right="38" height="33" verticalAlign="middle" textAlign="right" textColor="0xFFFFFF"/>
+		<e:Group x="150" y="0">
+		<e:Image source="commonsUI_json.commonsUI_gou _di" x="0" y="0"/>
+		<e:Image id="u_imgGou" source="commonsUI_json.commonsUI_gou" x="1" y="0"/>
+		</e:Group>
+		<e:layout>
+		<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessEffectPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176e4eee8d4"/>
+	<e:Image id="u_imgBg" source="guessEffectUI_json.guessEffectUI_bg" y="395" horizontalCenter="0"/>
+</e:Skin>

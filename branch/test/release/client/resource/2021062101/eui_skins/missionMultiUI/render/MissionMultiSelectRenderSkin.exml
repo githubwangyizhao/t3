@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionMultiSelectRenderSkin"
+	 width="400"
+	height="56" xmlns:e="http://ns.egret.com/eui">
+	<e:Image y="0" horizontalCenter="0" source="missionMultiUI_json.missionMultiUI_select_di2"/>
+	<e:Label text="A single consumption:" x="23" size="20" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtSingle" textColor="0xFFFFFF" y="18"/>
+	<e:Group id="u_grpIcon" x="242" y="12">
+		<e:Image id="u_imgIcon" x="0" y="0" source="userMainUI_json.userMainUI_u_yinbi_a" visible="true"/>
+		<e:Label text="2000" x="37" y="4" size="24" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtSingleCost" textColor="0x00E22B"/>
+	</e:Group>
+</e:Skin>

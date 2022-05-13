@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnMainTrendRenderSkin"
+	 width="32"
+	height="29" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe809e9b"/>
+	<e:Group visible="true" width="32" height="29">
+		<e:Image id="u_imgHead" horizontalCenter="0" width="30" height="29"/>
+	</e:Group>
+</e:Skin>

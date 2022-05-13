@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BagUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175fe300122"/>
+	<e:Image id="u_imgBg" visible="true" scale9Grid="10,33,10,34" horizontalCenter="0" source=""/>
+	<e:Image id="u_imgLeft" source="commonUI_json.commonUI_page_di" x="-120" y="7" locked="true"/>
+	<e:Scroller id="u_scrollItem" width="662" height="582" y="57" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="133">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+	<e:Group id="u_mcRight" width="333" height="583" x="802" y="57" visible="true">
+		<e:Image source="bagUI_json.bagUI_huawen" x="48" y="16"/>
+		<e:Image source="bagUI_json.bagUI_huawen2" y="307" horizontalCenter="0"/>
+		<e:Image id="u_imgSelectItem" x="101" y="85"/>
+		<e:Label id="u_txtName" text="道具名称" y="217" size="17" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" strokeColor="0x565353" textAlign="center" horizontalCenter="0.5"/>
+		<e:Label id="u_txtMsg" text="" x="28.5" y="253" size="17" fontFamily="Microsoft YaHei" textColor="0xFFFFFF" stroke="1" strokeColor="0x565353" width="269" height="53" textAlign="left" lineSpacing="6"/>
+		<e:Label id="u_txtGetTishi" text="获取途径：" y="327" size="16" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x565353" textAlign="right" textColor="0xF0E4B0" right="168"/>
+		<e:Label text="获取途径：" y="327" size="16" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x565353" textAlign="left" id="u_txtGet" x="172" textColor="0xEBCC00" lineSpacing="10" width="120" multiline="true"/>
+		<e:Label id="u_txtSellItem" text="出售成功可回收：589745金币" y="439" size="18" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x565353" textAlign="left" lineSpacing="10" horizontalCenter="-2.5" textColor="0x02fc2b"/>
+		<e:Group id="u_mcItemTime" y="435" width="333" locked="true" visible="false">
+			<e:Image id="u_imgItem" y="0" x="124.355" width="35" height="35"/>
+			<e:Label id="u_txtItemTishi" text="消耗：" y="11" size="16" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x565353" textAlign="right" right="199"/>
+			<e:Label id="u_txtItem" text="消耗：" y="11" size="16" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x565353" textAlign="left" x="159.347" textColor="0x04F472"/>
+			<e:Label text="过期时间：" y="90" size="16" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x565353" textAlign="center" id="u_txtTimeOut" textColor="0xEBCC00" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="u_btnClick" y="472" width="122" height="46" horizontalCenter="0">
+			<e:Image source="commonUI_json.commonUI_img_btnyellow" x="0" y="0"/>
+			<e:Label text="使用" y="14" size="19" fontFamily="Microsoft YaHei" stroke="1" textAlign="center" id="u_txtClick" textColor="0xFFFAD9" strokeColor="0x71501F" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

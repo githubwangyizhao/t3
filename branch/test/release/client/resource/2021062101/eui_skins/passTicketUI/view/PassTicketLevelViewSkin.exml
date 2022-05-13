@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketLevelViewSkin"
+	 width="150"
+	height="370" xmlns:e="http://ns.egret.com/eui">
+	<e:Group y="214" horizontalCenter="0" x="60">
+		<e:Image source="commonUI_json.commonUI_icon_juan" x="2" y="0"/>
+		<e:Label id="u_txtLv" text="100" x="0" y="4" size="16" bold="true" width="31" textAlign="center"/>
+	</e:Group>
+	<e:Image id="u_imgReceive1" source="passTicketUI_json.passTicketUI_ylq" x="8" y="249" touchEnabled="false"/>
+	<e:Image source="passTicketUI_json.passTicketUI_ylq" x="-5" y="39" id="u_imgReceive2" touchEnabled="false"/>
+	<e:Image id="u_imgLock" source="passTicketUI_json.passTicketUI_lock" x="20" y="49" touchEnabled="false"/>
+	<e:Image width="96" height="96" y="255" horizontalCenter="0" visible="false"/>
+	<e:Image width="120" height="120" y="55" horizontalCenter="0" x="37" visible="false"/>
+</e:Skin>

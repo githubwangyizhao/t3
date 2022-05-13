@@ -1,0 +1,21 @@
+// 活动时间
+//OPEN_DEBUG
+
+// 活动数据
+message Activity_Data {
+    required int32 activity_id = 1;         // 活动id
+    required int32 start_time = 2;          // 开始时间
+    required int32 close_time = 3;          // 结束时间
+    required int32 activity_state = 4;      // 活动状态 0:活动销毁 1:活动准备开启 2:活动开启 3:活动关闭
+    required int32 player_join_state = 5;   // 玩家活动参加状态 0:未参加活动 1:参加 2:活动结束
+}
+
+// 重置活动数据
+message m_restart_all_activity_toc {
+    repeated Activity_Data activity_data = 1;       // 活动数据
+}
+
+// 更新活动时间数据
+message m_update_activity_time_toc {
+    repeated Activity_Data activity_data = 1;       // 活动数据
+}

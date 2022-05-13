@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ServerListUISkin" width="1136" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15f94954e51"/>
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" source="loginUI_json.loginUI_bg_1" visible="true" scale9Grid="309,156,15,29" y="146.581" x="255"/>
+	<e:Image source="loginUI_json.loginUI_title" y="156.386" horizontalCenter="2"/>
+	<e:Image y="209.984" anchorOffsetX="0" width="389.808" anchorOffsetY="0" height="229.75" visible="true" source="loginUI_json.loginUI_id_3" x="436.882" scale9Grid="18,15,14,3"/>
+	<e:Scroller id="u_scroller_type" width="120" height="232" x="309.074" y="209" anchorOffsetX="0" anchorOffsetY="0" visible="true">
+		<e:List id="u_list_type"/>
+	</e:Scroller>
+	<e:Scroller id="u_scroller_item" width="377" height="211" x="443.459" y="218" anchorOffsetX="0" anchorOffsetY="0" visible="true">
+		<e:List id="u_list_item"/>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MonsterRollUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a2eaf5a3"/>
+	<e:Image id="u_startBtn" source="monsterRollUI_json.monsterRollUI_start" x="754.256" y="223.717"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" source="monsterRollUI_json.monsterRollUI_slot_bg" visible="true"/>
+	<e:Group id="u_slotGrp" width="315.932" height="120.259" horizontalCenter="0" verticalCenter="12" visible="true">
+	</e:Group>
+	<e:Image source="monsterRollUI_json.monsterRollUI_win" y="171.586" horizontalCenter="-5.5"/>
+</e:Skin>

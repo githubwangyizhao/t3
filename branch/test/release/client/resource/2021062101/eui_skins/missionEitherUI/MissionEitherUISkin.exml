@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionEitherUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Scroller id="u_scrollerItem" width="590" height="600" y="157" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0" x="10">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="u_txtMsg" text="副本id： " y="940" horizontalCenter="0"/>
+	<e:Group id="u_btnGame" y="790" horizontalCenter="0">
+		<e:Image source="commonsUI_json.commonsUI_btn_6" y="0" x="8"/>
+		<e:Image y="47" x="0" source="commonsUI_json.commonsUI_challenge"/>
+	</e:Group>
+</e:Skin>

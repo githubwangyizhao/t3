@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemUsePopupSkin"
+	 width="345"
+	height="287.5" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175fe479208"/>
+	<e:Image id="u_imgBg" visible="true" height="287.5" y="0" width="345" x="0" source="commonUI_json.commonUI_di_2" scale9Grid="23,23,24,24"/>
+	<e:Label id="u_txtName" text="Name" y="25.5" size="18" visible="true" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" height="14.5" textAlign="left" verticalAlign="middle" left="108"/>
+	<e:Label text="Holdings:  99,999,999,999" y="52" size="18" visible="true" id="u_txtHoldings" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" left="108"/>
+	<e:Image id="u_imgBg2" width="320" height="180" y="85" visible="true" source="bagUI_json.bagUI_img_gzbg" scale9Grid="17,17,16,16" x="13"/>
+	<e:Label id="u_txtDescTitle" text="desc" y="90" width="169" height="23.5" size="18" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" textColor="0xB1A782" horizontalCenter="5"/>
+	<e:Label text="AAA" size="18" visible="true" id="u_txtDescribe" width="258.5" lineSpacing="6" wordWrap="true" textAlign="center" verticalAlign="middle" textColor="0xBCBBBA" fontFamily="Microsoft YaHei" y="116" multiline="true" horizontalCenter="0"/>
+	<e:Group id="u_grpSource" y="135" width="258.5" horizontalCenter="0">
+		<e:Label id="u_txtSourTitle" text="source" y="0" size="18" fontFamily="Microsoft YaHei" textColor="0xB1A782" width="170" textAlign="center" verticalAlign="middle" height="24.5" horizontalCenter="3.5" x="56"/>
+		<e:Label text="aaa" size="18" visible="true" id="u_txtSource" width="257.5" lineSpacing="6" wordWrap="true" x="1" textAlign="left" verticalAlign="middle" fontFamily="Microsoft YaHei" y="25.5" textColor="0xBCBBBA" multiline="true"/>
+	</e:Group>
+</e:Skin>

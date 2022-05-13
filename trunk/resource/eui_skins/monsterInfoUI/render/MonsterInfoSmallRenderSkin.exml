@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoSmallRenderSkin"
+	 width="154"
+	height="187" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="6.792" width="154" height="180" scale9Grid="17,17,16,16" source="monsterInfoUI_json.monsterInfoUI_img_dt5"/>
+	<e:Image id="u_imgMoster" visible="true" scale9Grid="50,0,77,84" y="1.792"/>
+	<e:Label id="u_txtName" text="name" y="130.292" height="22" size="16" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle" textColor="0xF0E4B0" horizontalCenter="0.5"/>
+	<e:Group id="u_grpBei" height="24" y="159.792" horizontalCenter="-1">
+		<e:Image id="u_imgIcon" width="24" height="24" scaleX="1" scaleY="1" left="0"/>
+	</e:Group>
+	<e:Image id="u_imgdc" x="110.454" y="0.117"/>
+</e:Skin>

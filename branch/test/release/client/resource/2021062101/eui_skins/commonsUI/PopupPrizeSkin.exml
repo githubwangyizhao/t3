@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PopupPrizeSkin" width="566" height="460" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" anchorOffsetX="0" width="567.67" y="0" anchorOffsetY="0" height="454" source="commonPanelUI_json.commonPanelUI_panel_4" scale9Grid="234,57,57,96"/>
+	<e:Image y="50.2" anchorOffsetX="0" width="513" anchorOffsetY="0" height="129.4" horizontalCenter="1.5" alpha="0.5" source="commonsUI_json.commonUI_box_2" scale9Grid="30,23,17,30"/>
+	<e:Image y="3" horizontalCenter="0.5" source="commonsUI_json.commonsUI_tishi"/>
+	<e:Image y="219" anchorOffsetX="0" width="507" anchorOffsetY="0" height="132" horizontalCenter="0.5" scale9Grid="10,11,14,15" alpha="0.6" source="commonsUI_json.commonUI_box_2"/>
+	<e:Image id="btnClose" x="510.5" y="-3" source="commonsUI_btn_close"/>
+	<e:Label id="txtPrize" text="共获得以下收益(奖励已发送至背包)" size="26" bold="true" anchorOffsetX="0" textAlign="left" anchorOffsetY="0" y="189.5" x="36" textColor="0x335b70"/>
+	<e:Scroller id="scrollerItem" width="478" height="99" y="65.5" anchorOffsetX="0" anchorOffsetY="0" x="46">
+		<e:Group x="59" y="161">
+		<e:Label id="txtMsg" text="" y="0" textAlign="center" bold="true" anchorOffsetX="0" size="21" anchorOffsetY="0" textColor="0xFFFFFF" x="0" width="477" lineSpacing="6"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="btnLeft" x="130" y="366">
+		<e:Image x="0" y="0" source="commonsUI_json.commonsUI_btn_2"/>
+		<e:Label id="txtLeft" text="确定" size="24" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1" bold="true" strokeColor="0xa05a38" horizontalCenter="0" verticalCenter="0" textColor="0x3b1601"/>
+	</e:Group>
+	<e:Group id="btnRight" y="366" x="334">
+		<e:Image x="0" y="0" source="commonsUI_json.commonsUI_btn_2"/>
+		<e:Label id="txtRight" text="取消" size="24" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1" bold="true" strokeColor="0xa05a38" horizontalCenter="0" verticalCenter="0" textColor="0x3b1601"/>
+	</e:Group>
+</e:Skin>

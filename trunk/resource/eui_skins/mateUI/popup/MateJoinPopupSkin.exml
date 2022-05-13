@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateJoinPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c73315c9c"/>
+	<e:Image anchorOffsetX="0" y="157" anchorOffsetY="0" source="commonUI_json.commonUI_img_popdi" scaleY="1" width="526" height="284" visible="true" x="304" scale9Grid="33,59,33,421"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" x="225" scaleY="1" scaleX="1" y="160" visible="true"/>
+	<e:Image source="commonUI_json.commonUI_img_notice" y="166" visible="true" horizontalCenter="0"/>
+	<e:Image source="commonUI_json.commonUI_img_inner" x="317" y="240" width="498" height="110" visible="true" scale9Grid="23,10,24,11"/>
+	<e:Image id="u_btnCLose" source="commonUI_json.commonUI_btn_close_4" x="733" y="159" visible="true" width="93" height="34"/>
+	<e:Group y="266" horizontalCenter="0" x="686">
+		<e:Image y="0" width="330" x="0" height="56" source="commonUI_json.commonUI_img_titbox" scale9Grid="12,12,13,13"/>
+		<e:EditableText id="u_txtInput" width="320" height="20" textAlign="center" verticalAlign="middle" size="20" restrict="0-9" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalCenter="-1" bold="true" promptColor="0x8693A7" textColor="0xFFFFFF"/>
+	</e:Group>
+	<e:Group id="u_btnJoin" y="371" width="122" height="46" horizontalCenter="0" x="756" visible="true" touchChildren="false">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image source="mateTeamWaitUI_json.mateTeamWaitUI_txt_jr" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_txtTitle" text="请输入密码" y="208" bold="true" fontFamily="Microsoft YaHei" size="20" textColor="0xF0E4B0" stroke="1" horizontalCenter="0" visible="true"/>
+</e:Skin>

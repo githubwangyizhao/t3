@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UpgradeUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c346b92eb"/>
+	<e:Image id="u_imgBg" scale9Grid="28,25,29,25" visible="true" horizontalCenter="0" y="0"/>
+	<e:Scroller id="u_scrollerItem" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="71" width="1014" height="543" x="112">
+        <e:List id="u_listItem" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+    </e:Scroller>
+</e:Skin>

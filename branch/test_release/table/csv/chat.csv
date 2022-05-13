@@ -1,0 +1,8 @@
+chat頻道,,,,,,,,,,
+int|key,int,str,str,str,int,int,int,int,int,int
+,,,,,,,,,,
+id,index,name,main_chat,sign,is_send,send_cd_time,send_limit,broadcast_need_level,broadcast_need_vip_level,record_num
+"編號","排序","频道名","聊天入口頻道","标识","1可发言","发言CD时间","频道发言文字上限","广播需求等级","广播需求VIP等级","聊天记录保存数量"
+1,1,官方,|c111【官方】{%text}$c,system,0,0,0,1,1,20
+2,2,公共,|c110【公共】$c|c101{%text}$c,world,1,15,50,50,8,20
+3,3,私人,|c101【私聊】{%text}$c,private,1,5,50,50,1,20

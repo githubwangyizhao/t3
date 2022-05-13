@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveGiftsListPopup"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7cdd9a5a"/>
+	<e:Group id="u_grpCentre" x="86" y="160" visible="true" width="474" height="400">
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_mail_bg" x="0" y="0" height="400" scale9Grid="157,19,158,39" visible="true" width="474" scaleX="1" scaleY="1"/>
+		<e:Group id="u_grpAllRecerive" y="339.625" visible="true" horizontalCenter="94" width="122" height="46" x="270.00000000000006" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" visible="true" scaleX="1" scaleY="1" source="commonUI_json.commonUI_img_btnyellow" width="122" height="46"/>
+		<e:Image id="u_textAllRecerive" horizontalCenter="0" visible="true" source="giveGiftsUI_json.giveGiftsUI_btn_text_allget"/>
+		</e:Group>
+		<e:Group id="u_grpAllDel" y="340.625" horizontalCenter="-95" x="80" visible="true" width="122" height="46" scaleX="1" scaleY="1">
+		<e:Image visible="true" scaleX="1" scaleY="1" horizontalCenter="0" source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Image id="u_textAllDel" x="-1" y="0" visible="true" source="giveGiftsUI_json.giveGiftsUI_text_all_delete"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_gapDescBg" x="564.027" y="157.088" width="487" visible="false" height="407.14">
+		<e:Label id="u_textTitle" text="充值钻石" y="6.656" size="20" scaleX="1" scaleY="1" zIndex="1" bold="true" textAlign="center" visible="true" x="14" fontFamily="Microsoft YaHei" textColor="0x434564"/>
+		<e:Label id="u_textDesc" x="34.254" y="47.988" size="16" textAlign="left" fontFamily="Microsoft YaHei" verticalAlign="middle" width="420" scaleX="1" scaleY="1" lineSpacing="6" text="一件获取页面需要优化二件获取页面需要优化三件获取页面需要优化四件获取页面需要优化五件获取页面需要优化六件获取页面需要优化七件获取页面需要优化八件获取页面需要优化九件获取页面需要优化十件获取页面需要优化一件获取页面需要优化二件获取页面需要优化三件获取页面需要优化四件获取页面需要优化五件获取页面需要优化" textColor="0xFFFFFF" visible="true"/>
+		<e:Image x="13" y="35.304" visible="true" source="giveGiftsUI_json.giveGiftsUI_mail_line"/>
+		<e:Group id="u_grpRecerive" x="194" y="342.537" visible="true" width="122" height="46">
+		<e:Image scaleX="1" scaleY="1" visible="true" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image id="u_imgRecerive" horizontalCenter="0" visible="true" source="giveGiftsUI_json.giveGiftsUI_btn_text_get"/>
+		</e:Group>
+		<e:Group id="u_grpAffix" x="5" y="195.228" visible="true">
+		<e:Image x="2.408" y="1.996" visible="true" scaleX="1" scaleY="1" source="giveGiftsUI_json.giveGiftsUI_mail_affix"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller id="u_scrollItem" width="481" height="304.955" x="85.346" y="159.588" visible="true">
+		<e:List id="u_listItem" x="0" y="0" scaleX="1" scaleY="1"/>
+	</e:Scroller>
+	<e:Group id="u_grpNoMail" y="245.74" visible="false" horizontalCenter="2">
+		<e:Image scaleX="1" scaleY="1" visible="true" y="1" horizontalCenter="0" source="giveGiftsUI_json.giveGiftsUI_hint"/>
+		<e:Label id="u_textNoMail" text="邮箱中无任何邮件" size="16" y="131.411" horizontalCenter="-1" visible="true" fontFamily="Microsoft YaHei" textColor="0xFFFFFF"/>
+		<e:Image y="133.133" horizontalCenter="-153" visible="true" source="giveGiftsUI_json.giveGiftsUI_img_line2"/>
+		<e:Image y="133.133" skewY="180" anchorOffsetX="126" horizontalCenter="152" visible="true" source="giveGiftsUI_json.giveGiftsUI_img_line2"/>
+	</e:Group>
+	<e:Group id="u_grpTip" y="246.218" visible="false" x="555.632">
+		<e:Image y="131.908" x="2.152" visible="true" source="giveGiftsUI_json.giveGiftsUI_img_line2"/>
+		<e:Image y="131.908" skewY="180" anchorOffsetX="126" horizontalCenter="142" visible="true" source="giveGiftsUI_json.giveGiftsUI_img_line2"/>
+		<e:Image scaleX="1" scaleY="1" visible="true" horizontalCenter="0" source="giveGiftsUI_json.giveGiftsUI_hint"/>
+		<e:Label id="u_textReadclick" text="点击左侧邮件打开" size="16" y="131.091" horizontalCenter="1" fontFamily="Microsoft YaHei" textColor="0xFFFFFF"/>
+	</e:Group>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_img_dz" x="56" y="368" visible="true" zIndex="211"/>
+</e:Skin>

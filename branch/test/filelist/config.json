@@ -1,0 +1,18 @@
+{
+	"CsvFilesPath": "./files.csv",	
+	"OnDataDir":"/mnt/test_release/",
+	"OnDataPath": "resource/",
+	"GoDataPath": "../release/client/resource/",
+	"GoServerVersionPath": "",
+	"ClientInitialCsvPath": "resource/json/",
+	"ClientInitialJsonFile": "default.res.json",
+	"ClientSwfPath":"release/client/js/",
+	"ManifestPath": "release/client/manifest.json",
+	"SettingPath":"resource/setting.json",
+	"PlatformConfigJsonPath":"/mnt/test_release/platform_config_json/",
+	"IsZip":false,
+	"ClinetOutFileType":"json",
+	"IsAll":false,
+	"JsZip":false,
+	"CpuDouble":1
+}

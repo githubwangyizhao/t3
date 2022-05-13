@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmFappyBirdUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBg" source="smFappyBirdUI_json.smFappyBirdUI_bg" width="1136" height="640"/>
+	<e:Label id="u_txtScore" text="当前得分：1" size="25" anchorOffsetX="0" bold="true" textAlign="left" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" y="86" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_btnStart" text="开始游戏" border="true" background="true" backgroundColor="0xED7692" bold="true" borderColor="0xFFFFFF" width="148" height="47" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" stroke="2" strokeColor="0x996363" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="u_bird" source="commonUI_json.commonUI_icon_2" x="548" y="300"/>
+	<e:Image id="u_btnClose" x="11" y="15" source="commonUI_json.commonUI_btn_close_1"/>
+</e:Skin>

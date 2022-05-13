@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GuessUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798d2b54d1"/>
+	<e:Image source="guessUI_json.guessUI_img_bg" y="80" scaleX="1" scaleY="1" horizontalCenter="0" x="0"/>
+	<e:Image source="guessUI_json.guessUI_img_title" y="39.939" horizontalCenter="0.5" x="0" scaleX="1" scaleY="1"/>
+	<e:Group x="79.496" y="53.227" id="u_grpUp">
+		<e:Label id="u_textTime" text="剩余竞猜时间：0156" y="2.509" size="18" textColor="0xFF0000" textAlign="left" left="29" x="31.50400000000002" scaleX="1" scaleY="1"/>
+		<e:Image source="guessUI_json.guessUI_icon_warn" x="0" y="0" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

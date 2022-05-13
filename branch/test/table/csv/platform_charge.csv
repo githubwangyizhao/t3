@@ -1,0 +1,7 @@
+platform_charge 品台第三方充值表,,,
+int|key,str,str,str
+,,,
+id,sign,name,desc
+"唯一key","标识","标识","属性名称说明(用#分隔)"
+1,atm,ATM虛擬賬號轉賬,金額#訂單建立時間#繳款期限#銀行名稱#虛擬賬號
+2,cvs,超商代碼繳費,金額#訂單建立時間#繳款期限#超商代碼

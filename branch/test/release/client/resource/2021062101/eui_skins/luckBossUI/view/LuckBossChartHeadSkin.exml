@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckBossChartHeadSkin"
+	 width="99"
+	height="48" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="luckBossChartUI_json.luckBossChartUI_head_bg" x="1" y="1" visible="true"/>
+	<e:Image id="u_imgHead" x="0" y="0" scaleX="0.7" scaleY="0.7" visible="true" source="luckBossFightUI_json.luckBossFightUI_head1"/>
+	<e:Group id="u_grpNum" y="9" horizontalCenter="19.5">
+	</e:Group>
+</e:Skin>

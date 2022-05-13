@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.TaskBountyView"
+	 width="326"
+	height="52" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="taskBountyUI_json.taskBountyUI_bg" y="0" x="0"/>
+	<e:Image id="u_tipGrp" source="taskBountyUI_json.taskBountyUI_tip" horizontalCenter="0" visible="false" verticalCenter="0"/>
+	<e:Group id="u_redGrp" y="0" x="10">
+		<e:Image source="taskBountyUI_json.taskBountyUI_red0" x="0" y="0"/>
+		<e:Image id="u_redItem" source="taskBountyUI_json.taskBountyUI_red1" x="0" y="0" visible="true"/>
+	</e:Group>
+	<e:Label id="u_valueLb" text="10/30" y="42.504" size="12" horizontalCenter="-127" stroke="1"/>
+	<e:Group x="67.658" y="4" id="u_taskGrp" visible="true" touchChildren="false">
+		<e:Label id="u_taskDes" text="击杀蛤蟆击杀蛤蟆：" y="4.862" size="14" x="0" visible="true"/>
+		<e:Label id="u_awardLb" text="奖励：" x="0" y="24" size="14" textColor="0xF0E4B0"/>
+		<e:Group id="u_awardItem0" x="45" y="15">
+		<e:Image id="u_itemImg0" width="30" height="30" x="0" y="0"/>
+		<e:Label id="u_countLb0" text="9999" x="30" size="14" textColor="0xF0E4B0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="u_awardItem1" x="127" y="15">
+		<e:Image id="u_itemImg1" width="30" height="30" x="0" y="0"/>
+		<e:Label id="u_countLb1" text="9999" x="30" size="14" textColor="0xF0E4B0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnGrp" width="260" height="52" y="0"/>
+</e:Skin>

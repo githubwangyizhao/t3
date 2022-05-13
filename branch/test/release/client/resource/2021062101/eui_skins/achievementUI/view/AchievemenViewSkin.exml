@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="AchievemenViewSkin"
+	 width="564"
+	height="770" xmlns:e="http://ns.egret.com/eui">
+	<e:Scroller id="u_scrollerItem" width="564" height="770" anchorOffsetX="0" anchorOffsetY="0" visible="true">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionMultiBossSkin"
+	 width="177"
+	height="140" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgSelect" visible="true" source="missionMultiUI_json.missionMultiUI_boss_select_1" horizontalCenter="0" y="70"/>
+	<e:Image id="u_btnClick" alpha="0" scale9Grid="26,27,27,27" width="177" height="140" visible="true" source="commonsUI_json.commonUI_box_1"/>
+</e:Skin>

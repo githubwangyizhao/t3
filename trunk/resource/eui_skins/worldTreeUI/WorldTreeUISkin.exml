@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldTreeUISkin"
+	 width="237"
+	height="226" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d4736cb1a"/>
+	<e:Group id="u_grpContent" touchChildren="true" touchEnabled="true" width="164" height="164" anchorOffsetX="82" anchorOffsetY="82" x="129" y="99">
+		<e:Image id="u_clickGrp" width="159" height="109" y="8.068" x="-4.034" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" alpha="0"/>
+		<e:Group id="u_slideGrp" x="-10" y="0" visible="true" touchEnabled="false">
+			<e:Image visible="true" source="worldTreeUI_json.worldTreeUI_jindi" x="0"/>
+			<e:Group id="u_grpValue" x="4" y="1">
+				<e:Image id="u_valueImg" visible="true" source="worldTreeUI_json.worldTreeUI_jintop" y="0" scale9Grid="10,4,118,5" x="0"/>
+			</e:Group>
+			<e:Image id="u_imgMask" visible="true" y="1" x="4" height="13" source="commonUI_json.commonUI_box" alpha="0" scale9Grid="3,3,4,4" width="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

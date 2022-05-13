@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightTrendPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17d5668c9ae"/>
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_bg" width="895" height="470" scale9Grid="15,15,15,15" horizontalCenter="0" y="106.943" visible="true"/>
+	<e:Label id="u_closeTip" text="點擊空白處關閉窗口" y="596.077" horizontalCenter="0" size="16" touchEnabled="false" visible="true" textColor="0x8693A7" fontFamily="Microsoft YaHei"/>
+</e:Skin>

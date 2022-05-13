@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideSelectSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_bg" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="u_imgTitle" source="guideSelectUI_json.guideSelectUI_select_title" y="108" anchorOffsetY="20" anchorOffsetX="168" x="567"/>
+	<e:Group id="u_btnSelect1" x="409" y="317" width="200" height="290" anchorOffsetX="100" anchorOffsetY="145">
+		<e:Image y="0" source="guideSelectUI_json.guideSelectUI_select_1"/>
+	</e:Group>
+	<e:Group id="u_btnSelect2" x="724" y="317" width="200" height="290" anchorOffsetX="100" anchorOffsetY="145">
+		<e:Image y="0" source="guideSelectUI_json.guideSelectUI_select_2"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,48 @@
+//卡牌
+//OPEN_DEBUG
+
+import "05_prop.proto";
+
+//卡牌图鉴
+message CardBook {
+    required int32 card_book_id = 1;        // 卡牌图鉴id
+    required int32 state = 2;               // 状态(0:未领取或可领取,2:已领取)
+    repeated CardTitle card_title_list = 3; // 卡牌标题列表
+}
+
+//卡牌标题
+message CardTitle {
+    required int32 card_title_id = 1;       // 卡牌标题id
+    required int32 state = 2;               // 状态(0:未领取或可领取,2:已领取)
+    repeated Card card_list = 3;            // 卡牌列表
+}
+
+//卡牌
+message Card {
+    required int32 card_id = 1;             // 卡牌id
+    required int32 state = 2;               // 状态(0:未领取或可领取,2:已领取)
+    required int32 num = 3;                 // 数量
+}
+
+//获得奖励
+message m_get_award_tos {
+    required int32 type = 1;                // 类型(1:卡牌图鉴,2:卡牌标题,3:卡牌)
+    required int32 id = 2;                  // id
+}
+message m_get_award_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        no_condition = 3;                   // 条件不足
+    }
+    required ENUM result = 100;
+    required int32 type = 1;                // 类型(1:卡牌图鉴,2:卡牌标题,3:卡牌)
+    required int32 id = 2;                  // id
+    repeated Prop prop_list = 3;            // 道具列表
+}
+
+//通知卡牌更新
+message m_notice_card_update_toc {
+    required int32 card_id = 1;             // 卡牌id
+    required int32 num = 2;                 // 数量
+}

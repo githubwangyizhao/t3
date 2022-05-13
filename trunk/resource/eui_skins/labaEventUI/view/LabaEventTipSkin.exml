@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LabaEventView"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b1ec924b2"/>
+	<e:Group id="u_goBtn" y="395" horizontalCenter="-0.5">
+		<e:Image x="0" y="0" source="commonUI_json.commonUI_img_btnyellow2" width="143" height="53" visible="true"/>
+		<e:Image source="commonUI_json.commonUI_img_kaishi" horizontalCenter="0" verticalCenter="-2"/>
+	</e:Group>
+	<e:Image id="u_btnClose" source="labaEventUI_json.labaEventUI_close" x="740" y="104" visible="true"/>
+	<e:Label id="u_closeTip" text="3s后关闭" y="452" size="16" stroke="1" strokeColor="0x000000" bold="true" textColor="0x1ADE4D" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+</e:Skin>

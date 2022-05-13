@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainTaskPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c16762d75"/>
+	<e:Image width="584" height="355" y="150" visible="true" horizontalCenter="0" source="commonUI_json.commonUI_img_popdi" scale9Grid="33,85,33,382"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" y="151" visible="true" horizontalCenter="0"/>
+	<e:Image y="157" visible="true" horizontalCenter="0" source="mainTaskPopUI_json.mainTaskPopUItxt_task"/>
+	<e:Image source="mainTaskPopUI_json.mainTaskPopUI_img_bg" x="289" y="308" scale9Grid="23,10,24,11" width="395" height="132" visible="true"/>
+	<e:Group id="u_btnClick" x="507" y="448" width="122" height="46" visible="true">
+		<e:Image visible="true" scaleX="1" scaleY="1" horizontalCenter="0" source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Image id="u_imgGo" scaleX="1" scaleY="1" horizontalCenter="0" touchEnabled="false" verticalCenter="0" source="commonUI_json.commonUI_img_get"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="108" y="1" touchEnabled="false"/>
+		<e:Group id="u_grpEff" x="61" y="24" touchEnabled="false" touchChildren="false"/>
+	</e:Group>
+	<e:Image id="u_btnClose" x="764" y="152" source="commonUI_json.commonUI_btn_close_4" width="93" height="34" visible="true"/>
+	<e:Label id="u_txtTitle" text="任务描述:" y="205" size="16" visible="true" bold="true" textColor="0xF0E4B0" x="291" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_txtMsg" text="任务描述" y="235" textAlign="left" anchorOffsetX="0" size="16" anchorOffsetY="0" x="291" width="390" lineSpacing="8" strokeColor="0x453A32" wordWrap="true" bold="true" textColor="0x7B879A" fontFamily="Microsoft YaHei" visible="true"/>
+	<e:Label text="奖励: " y="319" id="u_txtReward" size="16" visible="true" x="305" textColor="0xD35F04" fontFamily="Microsoft YaHei" bold="true"/>
+	<e:Label id="u_txtFuncDesc" text="任务描述:" y="467" size="16" visible="true" bold="true" fontFamily="Microsoft YaHei" horizontalCenter="198.5" textColor="0x1ADE4D"/>
+	<e:Group id="u_btnSkip" x="693" y="220">
+		<e:Image id="u_imgIcon" source="mainTaskPopUI_json.mainTaskPopUI_icon" x="0" y="0"/>
+		<e:Image source="mainTaskPopUI_json.mainTaskPopUI_jindu_bg" y="196" visible="true" x="4"/>
+		<e:Image id="u_imgJindu" source="mainTaskPopUI_json.mainTaskPopUI_jindu" x="8" y="200" scale9Grid="46,3,47,4" width="139" visible="true"/>
+		<e:Label id="u_txtCur" text="当前进度" y="175" size="16" visible="true" bold="true" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+		<e:Label id="u_txtJindu" text="5/10" y="198" size="14" visible="true" bold="true" fontFamily="Microsoft YaHei" stroke="1" textColor="0xFFFFFF" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

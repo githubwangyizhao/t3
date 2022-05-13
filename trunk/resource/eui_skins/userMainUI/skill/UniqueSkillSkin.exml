@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UniqueSkillSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a558f0777"/>
+	<e:Image id="u_imgMask" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" width="1136" height="640" alpha="0.5" visible="true"/>
+	<e:Group id="u_mcImg" x="0" y="44" width="867" visible="true">
+		<e:Group id="u_grpImg" y="0" horizontalCenter="0">
+			<e:Image source="uniqueSkillUI_json.uniqueSkillUI_di2" y="0" visible="true" x="0"/>
+			<e:Image source="uniqueSkillUI_json.uniqueSkillUI_di1" visible="true" x="0" y="62"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="u_imgName" visible="true" width="543" height="203" anchorOffsetX="271.5" anchorOffsetY="101.5" x="500" y="450"/>
+</e:Skin>

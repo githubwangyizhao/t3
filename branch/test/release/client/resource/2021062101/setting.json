@@ -1,0 +1,13 @@
+{
+	"cdn":"http://192.168.31.100/t3/resource/",
+	"versions":"nil",
+	"firstversions":"nil",
+	"isdebug":1,
+	"channel":"local",
+	"platform_id":"local",
+	"server_list_url_recent":"http://192.168.31.100:13004/login?platform_id=local&acc_id=[acc_id]&password=[password]&promote=[promote]&&version=[version]&app_id=[app_id]",
+	"server_list_url_all":"http://192.168.31.100:13004/all?platform_id=local&acc_id=[acc_id]",
+	"server_list_group_num":100,
+	"is_product":"192.168.31.100:6663/version",
+	"is_open": 1
+}

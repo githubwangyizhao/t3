@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiCreateBossHeadSkin"
+	 width="110"
+	height="105" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="multiCreateUI_json.multiCreateUI_bossHead" visible="true" id="u_imgHeadBG" y="1" x="0"/>
+	<e:Image source="multiCreateUI_json.multiCreateUI_lock" id="u_imgLock" visible="true" y="-8" x="8"/>
+	<e:Image visible="true" id="u_imgIcon" width="139" height="155" source="multiCreateUI_json.multiCreateUI_icon" scaleX="0.8" scaleY="0.8" horizontalCenter="0" y="-19"/>
+	<e:Image source="multiCreateUI_json.multiCreateUI_select" visible="false" id="u_imgSelect" x="9" y="-5"/>
+	<e:Group id="u_grpLv" x="15" y="78" width="81" height="27" locked="true">
+		<e:Image source="multiCreateUI_json.multiCreateUI_di1" y="0" visible="true" x="0"/>
+		<e:Label text="Lv:80" size="20" bold="true" horizontalCenter="0" verticalCenter="1.5" textColor="0x576685" id="u_txtLv"/>
+	</e:Group>
+</e:Skin>

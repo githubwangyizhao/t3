@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ServerListUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15f94954e51"/>
+	<e:Image source="loginUI_json.loginUI_k_bj" horizontalCenter="0" width="910" height="420" y="105" scale9Grid="33,177,30,313"/>
+	<e:Image source="loginUI_json.loginUI_k_zuodi" x="115" y="141" scale9Grid="15,22,90,20" height="381"/>
+	<e:Image source="loginUI_json.loginUI_k_biaoti" y="109" horizontalCenter="0.5" locked="true"/>
+	<e:Image source="loginUI_json.loginUI_k_zuojianguang" x="115" y="55.5" locked="true"/>
+	<e:Image source="loginUI_json.loginUI_line" x="238" y="177" width="781" locked="true"/>
+	<e:Group x="797" y="144" locked="true">
+		<e:Image source="loginUI_json.loginUI_type_1" x="139" y="0"/>
+		<e:Image source="loginUI_json.loginUI_type_1_img" x="165" y="3"/>
+		<e:Image source="loginUI_json.loginUI_type_2" x="68" y="0"/>
+		<e:Image source="loginUI_json.loginUI_type_2_img" x="92" y="3"/>
+		<e:Image source="loginUI_json.loginUI_type_3" x="0" y="0"/>
+		<e:Image source="loginUI_json.loginUI_type_3_img" x="25" y="3"/>
+	</e:Group>
+	<e:Image source="loginUI_json.loginUI_xuanfu_title" y="115" horizontalCenter="0.5"/>
+	<e:Label id="u_txtLogin" text="s.21 我的世界" x="253" size="18" anchorOffsetX="0" y="151.5" fontFamily="Microsoft YaHei" textColor="0xF0E4B0"/>
+	<e:Image id="u_btnClose" source="loginUI_json.loginUI_k_close" x="927" y="107" width="93" height="34" locked="true"/>
+	<e:Scroller id="u_scroller_item" width="752" height="335" x="253.46" y="183" anchorOffsetX="0" anchorOffsetY="0" locked="true">
+		<e:List id="u_list_item"/>
+	</e:Scroller>
+	<e:Scroller id="u_scroller_type" width="135" height="377" x="111.07" y="142" anchorOffsetX="0" anchorOffsetY="0" locked="true">
+		<e:List id="u_list_type"/>
+	</e:Scroller>
+</e:Skin>

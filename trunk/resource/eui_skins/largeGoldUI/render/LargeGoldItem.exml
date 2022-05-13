@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RankRenderSkin"
+	 width="300"
+	height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b0fdcc26b"/>
+	<e:Group id="u_grpMain" width="260" height="30" visible="true">
+		<e:Image id="u_bg" scaleX="1" scaleY="1" visible="true" x="-7.238" y="-6.251" source="userMainUI_json.userMainUI_renderBg1"/>
+		<e:Group id="u_grpGold" visible="false" x="83.107" y="0.329">
+			<e:Image source="commonUI_json.commonUI_icon_2" width="30" height="30"/>
+		</e:Group>
+		<e:Group id="u_grpDiamond" scaleX="1" scaleY="1" visible="false" x="83.577" y="4.29">
+			<e:Image source="commonUI_json.commonUI_icon_4" width="30" height="30" y="-4"/>
+		</e:Group>
+		<e:Image x="80.846" y="-3" visible="true" source="userMainUI_json.userMainUI_division"/>
+		<e:Label id="u_textName" text="玩家名称..." x="7.701" y="9.22" size="14" textColor="0xF0E4B0" visible="true" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

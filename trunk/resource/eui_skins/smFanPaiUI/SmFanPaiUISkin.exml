@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmFanPaiUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="smFanPaiUI_json.smFanPaiUI_bg" width="1136" height="640"/>
+	<e:Label id="u_txtCountdown" text="倒计时：50" size="25" anchorOffsetX="0" bold="true" textAlign="left" horizontalCenter="0" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" y="54" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_txtStep" text="剩余次数：5" y="87" size="22" anchorOffsetX="0" bold="true" textAlign="center" width="176" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Label text="翻牌" y="21" size="24" bold="true" stroke="1.5" strokeColor="0xE67497" textColor="0xFFFFFF" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Group id="u_cardBox" y="135" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	<e:Image id="u_btnClose" x="11" y="15" source="commonUI_json.commonUI_btn_close_1"/>
+</e:Skin>

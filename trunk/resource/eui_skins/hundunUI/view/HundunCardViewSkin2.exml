@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HundunCardViewSkin2" width="141" height="141" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_kuang" x="0" y="0" anchorOffsetX="-1.01" anchorOffsetY="0" source="hundunUI2_json.hundunUI2_itemBg_7" visible="false"/>
+	<e:Image id="u_icon" x="0" y="0" anchorOffsetX="-1.01" anchorOffsetY="0" source="hundunUI2_json.hundunUI2_item_8"/>
+	<e:Group id="u_gp_effect" x="70.5" y="70.5">
+	</e:Group>
+</e:Skin>

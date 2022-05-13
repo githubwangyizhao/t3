@@ -1,0 +1,109 @@
+// 平台功能
+
+// 分享好友数据
+message ShareFriendData {
+    required int32 id = 1;
+    required int32 state = 2;
+}
+
+// 邀请任务数据
+message ShareTaskAwardData {
+    required int32 task_type = 1;   // 任务类型
+    required int32 task_id = 2;   // 任务id
+    required int32 state = 3;   // 状态
+    required int32 value = 4;   // 完成值
+}
+
+// 分享
+message m_share_tos {
+}
+// 分享
+message m_share_toc {
+    enum ENUM {
+        success = 1;    //成功
+        fail = 2;       // 失败
+        times_limit = 3; // 次数上限
+    }
+    required ENUM result = 1;
+}
+
+// 领取好友邀请奖励
+message m_get_share_friend_give_tos {
+    required int32 id = 1;
+}
+// 领取好友邀请奖励
+message m_get_share_friend_give_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        not_enough_grid = 4; // 格子不足
+        not_authority = 5; // 没领取权限
+        already_have = 6; // 已领取
+    }
+    required ENUM result = 1;
+    required int32 id = 2;
+}
+
+// 通知好友邀请状态
+message m_notice_share_friend_toc {
+    repeated ShareFriendData share_friend_data = 1;
+}
+// 0点通知分享次数
+message m_notice_share_count_toc {
+    required int32 share_count = 1;   // 分享次数
+}
+
+// 当前通知vip等级
+message m_notice_platform_vip_level_toc {
+    required int32 p_vip_level = 1;         // vip等级 0:vip失效或没有vip
+    required int32 p_vip_award_state = 2;   // vip奖励领取状态(0:不可领取，1:可领取，2:已领取)
+}
+
+// 获得平台物品信息
+message m_get_platform_award_info_tos {
+    required int32 id = 1;              // 平台物品id
+}
+// 获得平台物品信息
+message m_get_platform_award_info_toc {
+    repeated ShareFriendData inof_data = 1;     // 平台物品列表信息
+}
+
+// 获得邀请任务信息
+message m_get_share_task_info_tos {
+    required int32 show_type = 1;   // 显示类型show_type
+}
+// 获得邀请任务信息
+message m_get_share_task_info_toc {
+    repeated ShareTaskAwardData share_task_award_data = 1;  // 分享任务数据
+    required int32 show_type = 2;   // 显示类型show_type
+}
+
+// 领取邀请任务奖励
+message m_get_share_task_award_tos {
+    required int32 task_type = 1;   // 任务类型
+    required int32 task_id = 2;   // 任务id
+}
+// 领取邀请任务奖励
+message m_get_share_task_award_toc {
+    enum ENUM {
+        success = 1;        //成功
+        fail = 2;           // 失败
+        not_enough_grid = 4;    // 格子不足
+        not_authority = 5;      // 没领取权限
+        already_have = 6;       // 已领取
+    }
+    required ENUM result = 1;
+    required ShareTaskAwardData share_task_award_data = 2;  // 下一个分享任务数据
+}
+
+// 通知邀请任务数据变化
+message m_notice_share_task_toc {
+    repeated ShareTaskAwardData share_task_award_data = 1;  // 分享任务数据
+}
+
+// 刷新openkey
+message m_refresh_open_key_tos {
+    required string open_key = 1;      // open_key
+}
+message m_refresh_open_key_toc {
+}

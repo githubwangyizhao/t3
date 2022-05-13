@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmWuYinUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1740ed136d4" source="smWuYinBGUI_json.smWuYinBGUI_bg" visible="false"/>
+	<e:Image id="u_imgBg" source="smWuYinBGUI_json.smWuYinBGUI_bg" width="1136" height="640" scale9Grid="213,462,214,462" y="0"/>
+	<e:Image source="smWuYinUI_json.smWuYinUI_title" horizontalCenter="0.5"/>
+	<e:Group id="u_mcContent" x="-10" y="138" width="660">
+		<e:Image y="0" source="smWuYinUI_json.smWuYinUI_kuang" x="0" height="494" scale9Grid="220,94,220,140"/>
+		<e:List id="u_itemList" y="90" horizontalCenter="0"/>
+		<e:Label id="u_txtStep" text="剩余步数：5" y="67" size="20" anchorOffsetX="0" bold="true" textAlign="center" width="176" textColor="0xe29cb2" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+		<e:Image id="u_imgTargetBg" y="76" source="smWuYinUI_json.smWuYinUI_title2" horizontalCenter="0.5"/>
+		<e:Group id="u_countDown" y="319.5" horizontalCenter="0">
+			<e:Image width="382" source="commonUI_json.commonUI_jindu_1" scale9Grid="11,6,10,7"/>
+			<e:Image id="u_imageProgress" width="378" x="2" y="2" source="commonUI_json.commonUI_jindu_2" scale9Grid="9,5,10,4"/>
+			<e:Label id="u_txtCountdown" text="40S" y="34" textColor="0xffffff" size="20" bold="true" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label text="根据乐谱奏出正确的音律" y="385" size="20" textColor="0xffffff" bold="true" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_clickBox" y="125" x="587">
+			<e:Image x="1" y="-4" source="smWuYinUI_json.smWuYinUI_btn_1"/>
+			<e:Image x="114" y="-3" source="smWuYinUI_json.smWuYinUI_btn_2"/>
+			<e:Image x="220" y="-3" source="smWuYinUI_json.smWuYinUI_btn_3"/>
+			<e:Image x="319" y="-2" source="smWuYinUI_json.smWuYinUI_btn_4"/>
+			<e:Image x="405" y="-1" source="smWuYinUI_json.smWuYinUI_btn_5"/>
+			<e:Image id="u_btnClick1" source="commonUI_json.commonUI_box_1" x="23" y="49" scale9Grid="2,2,16,16" width="110" height="159" alpha="0" name="u_btnName1" locked="true"/>
+			<e:Image id="u_btnClick2" source="commonUI_json.commonUI_box_1" x="143" y="49" scale9Grid="2,2,16,16" width="97" height="142" alpha="0" name="u_btnName2" locked="true"/>
+			<e:Image id="u_btnClick3" source="commonUI_json.commonUI_box_1" x="251" y="49" scale9Grid="2,2,16,16" width="93" height="135" alpha="0" name="u_btnName3" locked="true"/>
+			<e:Image id="u_btnClick4" source="commonUI_json.commonUI_box_1" x="354" y="49" scale9Grid="2,2,16,16" width="84" height="124" alpha="0" name="u_btnName4" locked="true"/>
+			<e:Image id="u_btnClick5" source="commonUI_json.commonUI_box_1" x="443" y="49" scale9Grid="2,2,16,16" width="78" height="109" alpha="0" name="u_btnName5" locked="true"/>
+		</e:Group>
+		<e:Group id="u_btnStart" height="63" y="339" x="232">
+			<e:Image source="commonUI_json.commonUI_img_btnyellow2"/>
+			<e:Label text="开 始" size="20" bold="true" textColor="0xFEFEFF" stroke="1.5" strokeColor="0xe37696" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="u_btnClose" x="29" y="17" source="commonUI_json.commonUI_btn_close_1"/>
+</e:Skin>

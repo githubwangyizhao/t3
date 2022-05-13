@@ -1,0 +1,19 @@
+t_mission_type,,,,,,,,,,,,,,,,,,,,,,,,,
+int|key,str,int,str,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,str,int
+,,,,0,0,0,1,1,,0,0,0,0,1,0,0,0,0,0,0,0,0,,{},0
+id,sign,is_client,desc,log_type,function_id,function_config_id,kind,tab_type,video_id,tab_sort,delay_time,continue_time,is_can_sweep,is_sweep_need_passed,is_notice_round,is_round_award,is_record_passed,is_repeat_challenge,is_must_passed_last,sweep_times_id,times_id,del_times_node,is_rebirth,conditions_count_tuple,is_can_be_bet
+"undefined","标识","是否在客户端显示","描述","日志类型id","功能id","页面id","类别[1:单人副本 2:多人副本 3:多人唯一副本4:多人分线副本]","页签类型(1=材料,2=装备,3=资源)适用副本大厅","对应视频Id","页签排序","延迟启动时间(ms)","副本持续时间(ms)","是否可以扫荡","扫荡是否必须先通关","是否通知波次[0:不通知波次 1: 通知波次 2:通知怪物数量]","是否每波奖励","是否记录通关id","通关后是否可以重复挑战","是否必须完成上一关卡","扫荡消耗次数id(为0则消耗挑战次数)","挑战消耗次数id (0:没有次数限制)","扣次数节点[0:进入副本扣次数 1:通关副本扣次数 2:特殊 3:扫荡]","是否可以复活","挑战成功触发次数条件","是否允许投注(0或空为否，1为是，默认0)"
+1,zhu_xian,,主线副本,81,,,1,1,,,0,180000,,,,,1,0,0,,,,0,,
+99,pagoda,,爬塔,82,,2014,1,4,,1,0,180000,,,,,1,1,1,,0,0,0,,
+100,world_boss,,世界boss,83,,,3,,,,,1200000,,,,,,,,,,,,,
+101,many_people_boss,,多人boss,71,404,,2,,,,0,300000,,,,,1,0,,,,,0,,
+102,guess_boss,,六选1 ,85,406,,3,,,,,,,,,,,,,,,,,,1
+103,shishi_boss,,时时彩,86,407,,3,,,,,,,,,,,,,,,,,,
+104,brave_one_sys,,勇敢者（1v1）,94,408,,2,,,,,60000,,,,,,,,,,,,,
+105,step_by_step_sys,,步步紧逼,95,409,,1,,,,,60000,,,,,,,,,,,,,
+106,many_people_shishi,,组队时时彩,96,410,,2,,,,,60000,,,,,,,,,,,,,
+107,mission_either_or,,二选一副本,101,415,,1,,,,,180000,,,,,,,,,,,,,
+108,mission_hero_pk_boss,,英雄Pkboss,126,420,,3,,,,,180000,,,,,,,,,,,,,1
+201,mission_scene_boss_location,,世界场景BOSS-位置,106,,,4,,,,,300000,,,,,,,,,,,,,
+202,mission_scene_boss_time_and_count,,世界场景BOSS-刀数和秒数,107,,,4,,,,,300000,,,,,,,,,,,,,
+999,ceshi,,测试,999,,,1,,,,,9000000,,,,,,,,,,,,,

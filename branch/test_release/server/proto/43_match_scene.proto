@@ -1,0 +1,92 @@
+// 匹配场
+// OPEN_DEBUG
+
+import "01_player.proto";
+import "05_prop.proto";
+
+// 获得信息
+message m_get_info_tos{
+}
+message m_get_info_toc{
+    message Info{
+        required int32 id = 1;                  // 匹配场id
+        required int32 award = 2;               // 累计奖励数
+        optional string name = 3;               // 玩家名字
+        optional int32 score = 4;               // 得分
+    }
+    repeated Info info_list = 1;                // 信息列表
+}
+
+// ------------------------------------match start-------------------------------------------
+// 匹配
+message m_match_tos{
+    required int32 id = 1;                      // 匹配场id
+}
+message m_match_toc{
+    enum Result{
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+        not_authority = 3;                      // 不满足进场景条件
+        no_enough_prop = 4;                     // 道具数量不足
+    }
+    required Result result = 1;                 // 结果Id
+    optional int32 id = 2;                      // 匹配场id
+    optional int32 num = 3;                     // 当前人数
+}
+
+// 取消匹配
+message m_cancel_match_tos{
+}
+message m_cancel_match_toc{
+    enum Result{
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+    }
+    required Result result = 1;                 // 结果
+}
+
+// 通知匹配人数变更
+message m_notice_match_num_change_toc{
+    required int32 id = 1;                      // 匹配场id
+    required int32 num = 2;                     // 当前人数
+}
+
+// 通知超时匹配失败
+message m_notice_match_fail_toc{
+    required int32 id = 1;                      // 匹配场id
+}
+
+// ------------------------------------match end-------------------------------------------
+
+// ------------------------------------fight start-------------------------------------------
+
+// 匹配场排名
+message MatchSceneRank{
+    required int32 rank = 1;                    // 排名
+    required int32 score = 2;                   // 积分
+    required int32 zi_dan = 3;                  // 子弹
+    required ModelHeadFigure model_head_figure = 4;// 模型头像数据
+}
+
+// 通知排行榜
+message m_notice_rank_toc{
+    repeated MatchSceneRank rank_list = 1;      // 通知结束时间
+}
+
+// 通知时间
+message m_notice_time_toc{
+    required int32 start_time = 1;              // 开始时间
+    required int32 end_time = 2;                // 结束时间
+}
+
+// 通知结果
+message m_notice_result_toc{
+    message Result{
+        required int32 rank = 1;                // 排名
+        repeated Prop prop_list = 2;            // 奖励道具列表
+        required ModelHeadFigure model_head_figure = 3;// 模型头像数据
+    }
+    repeated Result result_list = 1;    // 排行列表
+}
+
+// ------------------------------------fight end-------------------------------------------

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoSpecRenderSkin"
+	 width="240"
+	height="463" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_dt4" x="0" y="0" width="240" height="463" scale9Grid="17,17,16,16"/>
+	<e:Image id="u_imgMonster" y="11" visible="true" x="3"/>
+	<e:Image id="u_imgMosName" x="2" y="245"/>
+	<e:Label id="u_txtMosDesc" text="desc" y="296" width="228" height="156.5" size="12" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="top" lineSpacing="10" x="7" textColor="0xFFFFFF"/>
+	<e:Image source="monsterInfoUI_json.monsterInfoUI_img_fengge" x="0" y="268" width="240"/>
+</e:Skin>

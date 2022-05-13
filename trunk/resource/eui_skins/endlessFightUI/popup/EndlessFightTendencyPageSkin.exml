@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightTendencyPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_tableBg2" y="120" width="875" scale9Grid="6,23,9,410" visible="true" horizontalCenter="0"/>
+	<e:Label id="u_sortLb" text="局数" y="133" size="16" textColor="0xF0E4B0" horizontalCenter="-400"/>
+	<e:Group x="153" y="167" locked="true">
+		<e:Image width="30" height="29" x="0" y="0" source="endlessFightUI_json.endlessFightUI_1_icon"/>
+		<e:Image width="30" height="29" x="0" y="40.5" source="endlessFightUI_json.endlessFightUI_2_icon"/>
+		<e:Image width="30" height="29" x="0" y="81.5" source="endlessFightUI_json.endlessFightUI_3_icon"/>
+		<e:Image width="30" height="29" x="0" y="122" source="endlessFightUI_json.endlessFightUI_4_icon"/>
+		<e:Image width="30" height="29" x="0" y="162.5" source="endlessFightUI_json.endlessFightUI_6_icon"/>
+		<e:Image width="30" height="29" x="0" y="203" source="endlessFightUI_json.endlessFightUI_7_icon"/>
+		<e:Image width="30" height="29" x="0" y="243.5" source="endlessFightUI_json.endlessFightUI_8_icon"/>
+		<e:Image width="30" height="29" x="0" y="284.5" source="endlessFightUI_json.endlessFightUI_9_icon"/>
+		<e:Image width="30" height="29" x="0" y="325" source="endlessFightUI_json.endlessFightUI_5_icon"/>
+		<e:Image width="30" height="29" x="0" y="365.5" source="endlessFightUI_json.endlessFightUI_10_icon"/>
+	</e:Group>
+	<e:Image source="endlessFightTrendUI_json.endlessFightTrendUI_line" x="202" y="120" height="447"/>
+	<e:Scroller id="u_scroller" width="800" height="445" x="204" y="121">
+		<e:List id="u_list"/>
+	</e:Scroller>
+	<e:Scroller id="u_lineScroller" width="800" height="445" x="204" y="121" visible="true" touchEnabled="false" touchChildren="false">
+		<e:Group id="u_lineGrp"/>
+	</e:Scroller>
+</e:Skin>

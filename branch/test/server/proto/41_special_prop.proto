@@ -1,0 +1,50 @@
+// 特殊道具(时空胶囊)
+//OPEN_DEBUG
+
+// 特殊道具(时空胶囊)
+message SpecialProp {
+    required int32 prop_id = 1;                 // 道具id
+    required uint32 prop_obj_id = 2;            // 道具唯一id
+    required uint64 num = 3;                    // 道具数量
+    optional uint32 expire_time = 4;            // 过期时间戳
+}
+
+// 通知特殊道具(时空胶囊)初始化数据
+message m_notice_init_data_toc {
+    repeated SpecialProp prop_list = 1;         // 道具列表
+}
+
+// 通知特殊道具列表更新
+message m_notice_update_special_prop_toc {
+    repeated SpecialProp prop_list = 1;         // 道具列表
+    required int32 log_type = 2;                // 日志类型
+}
+
+// 时空转换
+message m_special_prop_merge_tos {
+    required int32 prop_obj_id = 1;             // 道具唯一id
+}
+message m_special_prop_merge_toc {
+    enum ENUM {
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+        no_enough_prop = 3;                     // 材料不够
+        not_enough_grid = 4;                    // 格子不够
+        not_authority = 5;                      // 未在合成时间内
+    }
+    required int32 prop_id = 1;                 // 道具id
+    required ENUM result = 99;                  // 结果
+}
+
+// 出售
+message m_sell_special_prop_tos {
+    required int32 prop_obj_id = 1;             // 道具唯一id
+}
+message m_sell_special_prop_toc {
+    enum ENUM {
+        success = 1;                            // 成功
+        fail = 2;                               // 失败
+    }
+    required int32 prop_obj_id = 1;             // 道具唯一id
+    required ENUM result = 99;
+}

@@ -1,0 +1,11 @@
+{
+    "src": "./xlsx/*.xlsx",
+    "dest": "../client/h5_publish/resource/json/",
+    "dest2": "../resource/json/",
+    "tsDest": "../client/h5_publish/src/data/",
+    "csvDest":"./csv/",
+    "ignoreFile": [
+        
+    ],
+    "language": "tw"
+}

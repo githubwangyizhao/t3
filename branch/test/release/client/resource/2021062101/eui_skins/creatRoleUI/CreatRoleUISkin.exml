@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CreatRoleUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16b8d5ace1b"/>
+	<e:Image source="creatRoleUI_bj_jpg" y="0" x="-125" visible="true"/>
+	<e:Image source="creatRole_json.creatRoleUI_bj" x="173.285" y="274.845" visible="true" locked="true"/>
+	<e:Image source="creatRole_json.creatRoleUI_role" x="46.031" y="177.125" visible="true" locked="true"/>
+	<e:Image source="creatRole_json.creatRoleUI_kuang" y="336.251" scale9Grid="18,13,17,13" width="273" x="491"/>
+	<e:EditableText id="u_txtName" width="223" height="35" text="dsadasdfa" y="339" anchorOffsetX="0" anchorOffsetY="0" textAlign="center" verticalAlign="middle" size="24" strokeColor="0xabafce" border="false" bold="true" x="496" textColor="0xffffff" visible="true"/>
+	<e:Image id="u_btnRandomName" source="creatRole_json.creatRoleUI_shaizi" x="723.813" y="336.908" width="36" height="37" visible="true"/>
+	<e:Label id="u_txtTime" text="10s" y="351" textAlign="left" anchorOffsetX="0" size="20" anchorOffsetY="0" lineSpacing="6" x="772.314" textColor="0x00ff00" stroke="2" strokeColor="0x037739"/>
+	<e:Label id="u_txtTishi" y="305.156" textAlign="center" anchorOffsetX="0" size="20" anchorOffsetY="0" lineSpacing="6" strokeColor="0x037739" textColor="0x6D665C" bold="true" horizontalCenter="63" text="title"/>
+	<e:Label text="性别：" y="409.188" textAlign="right" anchorOffsetX="0" size="20" anchorOffsetY="0" lineSpacing="6" textColor="0x6D665C" strokeColor="0x037739" bold="true" id="u_txtSex" right="584"/>
+	<e:Image id="u_btnGame" source="creatRole_json.creatRoleUI_btn" y="461.969" horizontalCenter="70"/>
+	<e:Group id="u_btnMan" x="554.5" y="397.72" width="84" height="41">
+		<e:Image source="creatRole_json.creatRoleUI_gou_bj" x="51.5" y="4.25"/>
+		<e:Image source="creatRole_json.creatRoleUI_nan" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="u_btnWoman" x="656.09" y="398.85" width="84" height="41">
+		<e:Image source="creatRole_json.creatRoleUI_gou_bj" x="51.94" y="2.81"/>
+		<e:Image source="creatRole_json.creatRoleUI_nv" x="0" y="0"/>
+	</e:Group>
+	<e:Image id="u_imgSex0" source="creatRole_json.creatRoleUI_gou" x="605.69" y="395"/>
+	<e:Image id="u_imgSex1" source="creatRole_json.creatRoleUI_gou" x="706.813" y="395"/>
+</e:Skin>

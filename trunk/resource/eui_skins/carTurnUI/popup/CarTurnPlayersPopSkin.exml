@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurntPlayersPop"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17cef19846d"/>
+	<e:Image y="110" width="804" height="420" visible="true" scale9Grid="27,103,50,367" source="commonUI_json.commonUI_img_popdi" horizontalCenter="0"/>
+	<e:Image y="111.988" horizontalCenter="0" visible="true" source="commonUI_json.commonUI_img_titlebg"/>
+	<e:Image y="118.501" horizontalCenter="0" visible="true" source="carTurnPlayersUI_json.carTurnPlayersUI_title"/>
+	<e:Image id="u_closeBtn" x="873.532" y="111.988" width="93" height="34" source="commonUI_json.commonUI_btn_close_4" visible="true"/>
+	<e:Scroller id="u_scroller" width="783" height="370" y="156" horizontalCenter="0" visible="true">
+		<e:List id="u_list"/>
+	</e:Scroller>
+</e:Skin>

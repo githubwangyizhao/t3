@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiPlayerHeadViewSkin"
+	 width="167"
+	height="159" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0" scaleX="1.2" scaleY="1.2">
+		<e:Image id="u_imgBg" x="0" y="12" visible="true" source="multiRoomUI_json.multiRoomUI_head1"/>
+		<e:Group id="u_grpHave" x="0" y="0" visible="true">
+			<e:Image id="u_imgHead" source="userMainUI_json.userMainUI_u_headIcon" horizontalCenter="3" verticalCenter="-10.5" visible="true"/>
+			<e:Image source="multiRoomUI_json.multiRoomUI_di_1" x="0" y="90" visible="true"/>
+			<e:Label id="u_txtLv" text="Lv.22" y="93" size="18" stroke="1.5" textColor="0xFFFC25" visible="true" horizontalCenter="0"/>
+			<e:Label text="Name" y="112" size="18" stroke="1.5" id="u_txtName" visible="true" horizontalCenter="0"/>
+			<e:Image source="multiRoomUI_json.multiRoomUI_ready" x="35" y="47" id="u_imgReady" visible="false" locked="true"/>
+			<e:Image source="multiRoomUI_json.multiRoomUI_kick" x="99" y="0" visible="false" id="u_btnKick"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

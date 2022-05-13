@@ -1,0 +1,95 @@
+//主线任务
+
+//任务信息
+message TaskInfo {
+    required int32 task_id = 1; //当前任务id
+    required int32 num = 2;     //当前数量
+    required int32 status = 3;  //任务状态(0:不可领取,1:可领取,2:已领取,即任务流程结束)
+}
+
+//领取任务奖励
+message m_get_award_tos {
+}
+message m_get_award_toc {
+    required int32 task_id = 1; //领取的任务id
+    enum ENUM {
+        success = 1; //成功
+        unfinish = 2; //未完成
+        fail = 3;// 失败
+    }
+    required ENUM result = 2;
+}
+
+//通知任务变更
+message m_notice_task_change_toc {
+    required TaskInfo task_info = 1;
+}
+
+// ########################################################################################################
+//  赏金任务相关
+// ########################################################################################################
+// 查询任务信息
+message m_bounty_query_info_tos {
+}
+message m_bounty_query_info_toc {
+    required bool accept_state = 1;     // 是否接受过任务
+    repeated TaskInfo tasks = 2;        // 任务数据（如果accept_state值为真，表示已经接受过任务，则只返回已接受的任务数据，否者返回可选择接受的所有任务数据）
+    required int32 reset_times = 3;     // 当天累计重置任务次数
+    required int32 accept_times = 4;    // 当天累计接受任务次数
+}
+
+// 接受赏金任务
+message m_bounty_accept_tos{
+    required int32 task_id = 1;         // 任务id
+}
+message m_bounty_accept_toc{
+    enum Result {
+        success = 1;            // 成功
+        not_enough_times = 2;   // 次数不足
+        already_exists = 4;     // 已接受过任务
+        fail = 5;               // 失败
+    }
+
+    required int32 task_id = 1;
+    required Result result = 2;
+}
+
+// 领取赏金任务奖励
+message m_bounty_get_award_tos {
+}
+message m_bounty_get_award_toc {
+    enum Result {
+        success = 1;        // 成功
+        not_exists = 2;     // 未接受任务
+        undone = 3;         // 未完成
+        already_get = 4;    // 已领取
+        fail = 5;           // 失败
+    }
+
+    required int32 task_id = 1;      // 任务id
+    required Result result = 2;
+}
+
+// 刷新赏金任务
+message m_bounty_refresh_tos {
+}
+message m_bounty_refresh_toc {
+    enum Result {
+        success = 1;            // 成功
+        no_enough_prop = 2;     // 道具不足
+        not_authority = 3;      // 存在未完成的任务
+        interface_cd_time = 4;  // 任务刷新过于频繁
+        fail = 5;               // 失败
+    }
+
+    required Result result = 1;
+}
+
+// 通知任务变更
+message m_bounty_notice_change_toc {
+    required TaskInfo task_info = 1;
+}
+
+// 通知任务重置
+message m_bounty_notice_reset_toc {
+}

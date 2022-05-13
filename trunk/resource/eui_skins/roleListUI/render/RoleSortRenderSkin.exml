@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleSortRenderSkin"
+	 width="133"
+	height="63" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgLine" source="roleListUI_json.roleListUI_line" y="59" x="7"/>
+	<e:Image id="u_imgSelect" source="roleListUI_json.roleListUI_order_select" x="0" y="0" visible="true"/>
+	<e:Image id="u_imgName" x="13" y="21" visible="true" source="roleListUI_json.roleListUI_tab2_1"/>
+	<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="100" y="10"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" alpha="0" horizontalCenter="0" verticalCenter="0" width="100" height="40"/>
+</e:Skin>

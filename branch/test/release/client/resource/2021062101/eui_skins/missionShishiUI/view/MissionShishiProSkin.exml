@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionShishiProSkin"
+	 width="370"
+	height="102" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176d5977c7c"/>
+	<e:Image source="missionJieSuanUI_json.missionJieSuanUI_ss_pool" y="0" visible="true" horizontalCenter="1"/>
+	<e:Group id="u_grpPro" x="0" y="49" height="53">
+		<e:Image source="missionJieSuanUI_json.missionJieSuanUI_ss_dikuang" x="0" y="0" visible="true"/>
+	</e:Group>
+</e:Skin>

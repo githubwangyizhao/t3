@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionUIExitBtnSkin"
+	 width="68"
+	height="72" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonsUI_json.commonsUI_back_2"/>
+</e:Skin>

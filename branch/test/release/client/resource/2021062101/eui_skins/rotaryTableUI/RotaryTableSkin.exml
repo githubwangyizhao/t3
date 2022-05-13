@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RotaryTableSkin" width="1134" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group alpha="1" anchorOffsetX="272" anchorOffsetY="252" left="272" top="55" bottom="98" right="334">
+		<e:Image x="88.69" y="62.21" source="rotaryTableUI_json.rotaryTableUI_bg1"/>
+		<e:Group id="u_gpZhuan" x="278.05" y="256" anchorOffsetX="157.5" anchorOffsetY="157.5" width="315" height="315">
+			<e:Rect width="1" height="1" x="157.5" y="157.5"/>
+			<e:Image x="1" y="9" alpha="1" source="rotaryTableUI_json.rotaryTableUI_part4"/>
+			<e:Rect width="7" height="118.5" x="156" y="155" anchorOffsetY="117.5" anchorOffsetX="4" rotation="349.32" visible="false"/>
+		</e:Group>
+		<e:Image x="123.65" y="92.98" source="rotaryTableUI_json.rotaryTableUI_part2" locked="true"/>
+		<e:Image id="u_btnStart" x="276.98" y="252.69" anchorOffsetX="58" anchorOffsetY="50" source="rotaryTableUI_json.rotaryTableUI_bt1" locked="true"/>
+		<e:Image x="225.12" y="63.2" source="rotaryTableUI_json.rotaryTableUI_part3" locked="true"/>
+	</e:Group>
+</e:Skin>

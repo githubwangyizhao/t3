@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XieyiPopupSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b3423da41"/>
+	<e:Image scale9Grid="39,102,25,368" horizontalCenter="0" width="910" height="517" source="commonUI_img_popdi" y="48"/>
+	<e:Image y="50" horizontalCenter="0.5" source="commonUI_img_titlebg"/>
+	<e:Image y="96.5" scale9Grid="27,10,16,6" horizontalCenter="0" width="880" height="454" source="commonUI_img_inner"/>
+	<e:Image id="u_btnClose" x="927" y="50" width="93" height="34" source="commonUI_btn_close_4"/>
+	<e:Label id="u_txtTitle" y="54.61" size="25" bold="true" stroke="1" text="Title" textColor="0xefead9" horizontalCenter="1" fontFamily="Microsoft YaHei" italic="true"/>
+	<e:Label id="u_txtLoading" text="loading..." size="40" bold="true" horizontalCenter="1" x="258" y="295" fontFamily="Microsoft YaHei" textColor="0xba7735"/>
+	<e:Label id="u_txtTishi" size="20" horizontalCenter="1.5" x="268" y="585" text="time" textColor="0x9b9b9b" touchEnabled="false" fontFamily="Microsoft YaHei"/>
+	<e:Scroller id="u_scrollerItem" width="848" height="424" y="111.5" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group x="59" y="161">
+		<e:Label id="u_txtMsg" text="尊敬的玩家：     " y="0" textAlign="left" anchorOffsetX="0" size="18" anchorOffsetY="0" x="0" width="848" lineSpacing="8" fontFamily="Microsoft YaHei" textColor="0xF9F0CA"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

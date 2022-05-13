@@ -1,0 +1,8 @@
+scene_type场景类型表,,
+int|key,str,str
+,,
+id,name,sign
+"ID","名称","标识"
+1,世界地图,world_scene
+2,副本,mission
+3,匹配场,match_scene

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a146b108"/>
+	<e:Image source="luckyDrawUI_json.luckyDrawUI_bg" x="188" y="47" visible="true"/>
+	<e:Group id="u_iconGrp" x="224.983" y="96.779" visible="true" height="484.695" width="652">
+		<e:Image id="u_iconBg_0" x="2.372" y="12.828" source="luckyDrawUI_json.luckyDrawUI_iconBg" visible="true"/>
+		<e:Image id="u_iconBg_1" x="133" y="12.828" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_2" x="267.284" y="12.828" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_3" x="397.588" y="12.828" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_4" x="529" y="12.828" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_5" x="529" y="126.992" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_6" x="529" y="239" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_7" x="529" y="352.0939" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_8" x="398.663" y="352.093" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_9" x="266.208" y="352.093" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_10" x="134.828" y="352.093" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_11" x="2.372" y="352.093" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_12" x="2.372" y="239.005" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_iconBg_13" x="2.372" y="126.992" source="luckyDrawUI_json.luckyDrawUI_iconBg"/>
+		<e:Image id="u_selectBg" x="2.372" y="12.828" visible="true" source="luckyDrawUI_json.luckyDrawUI_flash" alpha="1"/>
+		<e:Image visible="true" source="luckyDrawUI_json.luckyDrawUI_centerBg" scale9Grid="40,40,40,40" x="130" y="124"/>
+	</e:Group>
+	<e:Group id="u_valueGrp" x="360.612" y="222.261" visible="true" width="384.639" height="213.619">
+		<e:Image source="luckyDrawUI_json.luckyDrawUI_effect" x="6" y="-12"/>
+		<e:Image id="u_tipBtn" source="luckyDrawUI_json.luckyDrawUI_tip" x="6.412" y="9.716" width="25" height="25"/>
+		<e:Label id="u_luckyLb" text="当前幸运值" size="22" bold="true" textAlign="center" strokeColor="0x333333" stroke="1" lineSpacing="5" textColor="0xFFFFFF" x="159" y="30"/>
+		<e:Label id="u_luckyTip" text="幸运值越高，获得稀有物品的机会就会越大！" y="66.444" size="16" strokeColor="0x333333" stroke="2" height="36.595" width="210.062" textColor="0xA5A5A5" lineSpacing="8" x="159"/>
+		<e:Label id="u_valueLb" text="10" x="270.607" y="19.607" size="38" textColor="0xFDB702" bold="true"/>
+	</e:Group>
+	<e:Group id="u_awardGrp" y="230" visible="false" horizontalCenter="-14">
+		<e:Image source="luckyDrawUI_json.luckyDrawUI_title" y="0" horizontalCenter="0"/>
+		<e:Scroller id="u_awdScroller" width="360" height="60" y="39.34" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0">
+		<e:List id="u_awdList" x="433" y="264"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="u_btn_0" x="370" y="358">
+		<e:Image x="0" y="0" source="luckyDrawUI_json.luckyDrawUI_btnBg" visible="true"/>
+		<e:Label text="夺宝1次" textColor="0x333333" size="22" bold="true" horizontalCenter="0" verticalCenter="-8"/>
+		<e:Image source="luckyDrawUI_json.luckyDrawUI_diamond" x="63" y="54"/>
+		<e:Label text="100" x="88.121" y="55.272" size="16" textColor="0xF0E4B0"/>
+	</e:Group>
+	<e:Group id="u_btn_1" x="555" y="358">
+		<e:Image x="0" y="0" source="luckyDrawUI_json.luckyDrawUI_btnBg"/>
+		<e:Image source="luckyDrawUI_json.luckyDrawUI_diamond" x="63" y="54"/>
+		<e:Label text="500" x="88.121" y="55.272" size="16" textColor="0xF0E4B0"/>
+		<e:Label text="夺宝5次" textColor="0x333333" size="22" bold="true" horizontalCenter="0" verticalCenter="-8"/>
+	</e:Group>
+	<e:Group x="946.09" y="65" visible="true">
+		<e:Label id="u_extraTitle" text="额外奖励" y="0" size="20" horizontalCenter="0" textAlign="center" bold="true" stroke="2" strokeColor="0x52140F"/>
+		<e:Label id="u_countLb" text="本周累计\n5个" y="39.28" size="16" horizontalCenter="0" textAlign="center" stroke="2" strokeColor="0x52140F" lineSpacing="15"/>
+		<e:Scroller id="u_extraScroller" width="94" height="305" x="0" y="100.13">
+			<e:List id="u_extraList"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Image source="luckyDrawUI_json.luckyDrawUI_extra" x="910" y="385" touchEnabled="false" visible="true"/>
+	<e:Group id="u_storeBtn" x="878.36" y="550">
+		<e:Image source="luckyDrawUI_json.luckyDrawUI_store" x="0" y="0" visible="true"/>
+		<e:Label text="兑换商店" x="80.64" y="22" size="22" textColor="0xF0E4B0" bold="true"/>
+	</e:Group>
+</e:Skin>

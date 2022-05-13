@@ -1,0 +1,7 @@
+- name: sync_package
+  hosts: '{{ host }}'
+  vars:
+  tasks:
+  - name: sync {{src}} to {{dest}}
+    synchronize: src={{src}}  dest={{dest}} compress=yes delete={{delete}} recursive=yes checksum=yes rsync_opts=--verbose,--exclude-from=exclude.txt 
+

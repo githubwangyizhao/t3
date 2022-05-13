@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleUpStarPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17935519dcf"/>
+	<e:Image source="roleUpStarUI_json.roleUpStarUI_bg" y="116" visible="true" horizontalCenter="0"/>
+	<e:Image source="roleUpStarUI_json.roleUpStarUI_bg2" y="24" visible="true" horizontalCenter="0"/>
+	<e:Image source="roleUpStarUI_json.roleUpStarUI_title_2" y="63" horizontalCenter="0"/>
+	<e:Image source="roleUpStarUI_json.roleUpStarUI_arrow" y="169" visible="true" horizontalCenter="0"/>
+	<e:Image source="roleUpStarUI_json.roleUpStarUI_title_bg" y="266" scale9Grid="80,9,81,8" width="800" horizontalCenter="0"/>
+	<e:Image source="roleUpStarUI_json.roleUpStarUI_title_1" y="261" visible="true" horizontalCenter="0"/>
+	<e:Group id="u_curStar" x="457" y="183" width="37" height="35"/>
+	<e:Group x="644" y="183" id="u_nextStar" visible="true" width="37" height="35"/>
+	<e:Label id="u_txtBlank" text="点击空白处关闭窗口" y="552" size="16" stroke="2" visible="true" touchEnabled="false" textColor="0xFFFFFF" horizontalCenter="0"/>
+	<e:List id="u_listItem" y="324" horizontalCenter="0"/>
+</e:Skin>

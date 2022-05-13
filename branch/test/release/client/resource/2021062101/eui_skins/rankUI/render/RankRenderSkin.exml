@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RankRenderSkin"
+	 width="487"
+	height="87" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_bg" source="rankUI_json.xxBg_1" x="0" y="0"/>
+	<e:Image id="u_rankImg" source="rankUI_json.rankUI_icon_1" verticalCenter="0" horizontalCenter="-192"/>
+	<e:Label id="u_nameLb" text="S1.小明明天去上学" x="202.334" y="18.5" textColor="0xF0E4B0" size="16" fontFamily="Arial"/>
+	<e:Image source="commonUI_json.commonUI_icon_gold" x="203.167" y="42.833" width="30" height="30"/>
+	<e:Label id="u_goldLb" text="999.92K" y="49.999" size="16" textColor="0xF0E4B0" horizontalCenter="25.5"/>
+	<e:Image source="commonUI_json.commonUI_icon_juan" x="340.834" y="42.833" width="30" height="30"/>
+	<e:Label id="u_diamondLb" text="999.92K" y="50.665" size="16" textColor="0xF0E4B0" horizontalCenter="163.5"/>
+	<e:Group id="u_grpHead" x="100" y="4">
+		<e:Image id="u_icon" source="rankUI_json.rankUI_icon" x="3" width="60" height="60" verticalCenter="1" visible="false" y="-83" scaleX="1" scaleY="1"/>
+		<e:Image id="u_imgFirst" source="rankUI_json.rankUI_img_hg" x="4" y="0" scaleX="1" scaleY="1" visible="false"/>
+	</e:Group>
+</e:Skin>

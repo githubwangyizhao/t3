@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WithdrawalUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="178b0de3414"/>
+	<e:Image id="u_imgTitle" y="42" source="withdrawalUI_json.withdrawalUI_bg" visible="true" horizontalCenter="-1.5"/>
+	<e:Label id="u_txtTime" text="剩余时间: 10:00:00" y="301" size="20" visible="true" right="60" bold="true" textColor="0xF1AAAA" stroke="1.5" strokeColor="0x342929"/>
+	<e:Scroller id="u_scrollerItem" width="555" height="650" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="340" horizontalCenter="0.5">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+</e:Skin>

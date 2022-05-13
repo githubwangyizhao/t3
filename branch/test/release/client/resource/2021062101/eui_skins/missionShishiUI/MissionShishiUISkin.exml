@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MissionShishiUISkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="missionShishiUI_json.missionShishiUI_bj" y="103" horizontalCenter="0"/>
+	<e:Image source="guessBossUI_json.guessBossUI_bg3" y="793" visible="true" horizontalCenter="-1.5" height="195" scale9Grid="189,64,189,1"/>
+	<e:Scroller id="u_scrollerItem" width="470" height="140" y="820" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group x="59" y="161">
+		<e:Label id="u_txtDesc" text="rule" y="0" textAlign="left" anchorOffsetX="0" size="22" anchorOffsetY="0" width="470" lineSpacing="10" strokeColor="0x453A32" wordWrap="true" textColor="0x424C60" bold="true" horizontalCenter="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_btnGame" y="618" horizontalCenter="0" width="142" height="128">
+		<e:Image source="commonsUI_json.commonsUI_btn_6" y="0" x="8"/>
+		<e:Image y="47" x="0" source="commonsUI_json.commonsUI_challenge"/>
+	</e:Group>
+</e:Skin>

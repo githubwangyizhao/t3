@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.PersonalizationUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="179e95a734e"/>
+	<e:Image width="796.876" height="500.755" x="168.814" y="59" scale9Grid="180,80,10,10" visible="true" source="personalizationUI_json.personUI_bg0"/>
+	<e:Image x="185.5" y="79.667" visible="true" source="gameSettingUI_json.gameSettingUI_set"/>
+	<e:Label id="u_titleLb" text="设置" x="218" y="87.666" textColor="0xF0E4B0" size="16" bold="true"/>
+	<e:Image id="u_closeBtn" source="gameSettingUI_json.gameSettingUI_btn_close" x="934" y="90"/>
+	<ns1:PersonalButton id="u_btn0" label="头像" x="170" y="132" width="132" height="100">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="personalizationUI_json.personUI_btnBg" source.down="personalizationUI_json.personUI_pageSle"/>
+			<e:Label id="labelDisplay" size="16" textColor="0xF0E4B0" bold="true" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:PersonalButton>
+	<ns1:PersonalButton id="u_btn1" label="头像框" x="170" y="234" width="132" height="100">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="personalizationUI_json.personUI_btnBg" source.down="personalizationUI_json.personUI_pageSle"/>
+			<e:Label id="labelDisplay" size="16" textColor="0xF0E4B0" bold="true" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:PersonalButton>
+	<ns1:PersonalButton id="u_btn2" label="聊天框" x="170" y="336" width="132" height="100">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="personalizationUI_json.personUI_btnBg" source.down="personalizationUI_json.personUI_pageSle"/>
+			<e:Label id="labelDisplay" size="16" textColor="0xF0E4B0" bold="true" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:PersonalButton>
+	<e:Group x="322" y="145">
+		<e:Image source="personalizationUI_json.personUI_bg1" x="0" y="0" width="421" height="398" scale9Grid="20,20,20,20"/>
+		<e:Label id="u_titleLb1" text="头像框" y="19" textColor="0xF0E4B0" size="16" horizontalCenter="0"/>
+		<e:Image source="personalizationUI_json.personUI_line" y="45" horizontalCenter="0"/>
+		<e:Scroller id="u_scroller" width="385" height="312" y="71" horizontalCenter="0" visible="true">
+			<e:List id="u_list"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group x="759" y="145">
+		<e:Image source="personalizationUI_json.personUI_bg1" x="0" y="0" width="194" height="399" scale9Grid="20,20,20,20"/>
+		<e:Image id="u_icon" width="100" height="100" y="60" horizontalCenter="0"/>
+		<e:Group id="u_detailGrp" y="175" horizontalCenter="0">
+			<e:Label text="头像框名称" y="0" textColor="0xF0E4B0" size="16" id="u_nameLb" horizontalCenter="0"/>
+			<e:Label id="u_detailLb" text="开宝箱获得获取" y="43" size="16" textColor="0xA5A5A5" lineSpacing="5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="u_choseBtn" y="292" horizontalCenter="0">
+			<e:Image source="personalizationUI_json.personUI_btn_bg" y="0" width="159" visible="true" horizontalCenter="0"/>
+			<e:Label id="u_choseLb" text="选择" size="20" textColor="0xF0E4B0" horizontalCenter="0" verticalCenter="-3"/>
+			<e:Image id="u_lockImg" source="personalizationUI_json.personUI_lock" x="8" y="5"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

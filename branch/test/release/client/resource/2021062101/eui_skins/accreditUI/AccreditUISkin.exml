@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AccreditUISkin" width="640" height="507" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="commonPanelUI_json.commonPanelUI_panel_3" y="12" scale9Grid="80,52,480,170" height="497"/>
+	<e:Image source="commonsUI_json.commonsUI_tishi" y="17" horizontalCenter="0"/>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close_2" x="550" y="13"/>
+	<e:Label id="u_txtMsg" text="s" y="92" anchorOffsetX="0" textAlign="center" stroke="2" size="26" strokeColor="0x254d60" horizontalCenter="0" width="480" verticalAlign="middle" height="194"/>
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckBossFTPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a34194f3"/>
+	<e:Image source="luckBossFTUI_json.luckBossFTUI_img_js" x="32" y="0" visible="true"/>
+	<e:Image source="luckBossFTUI_json.luckBossFTUI_img_tc" x="514" y="160" visible="true"/>
+	<e:Scroller id="u_scrollerItem" width="460" height="265" y="180" visible="true" x="544">
+		<e:Group x="59" visible="true">
+		<e:Label id="u_txtMsg" text="1、西游记" y="0" textAlign="left" anchorOffsetX="0" size="14" anchorOffsetY="0" x="0" width="460" lineSpacing="10" wordWrap="true" bold="true" strokeColor="0x000000" textColor="0xE9DDAB" visible="true"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_btnClose" source="luckBossFTUI_json.luckBossFTUI_btn_qd" x="723" y="503" visible="true"/>
+</e:Skin>

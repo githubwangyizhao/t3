@@ -1,0 +1,2 @@
+ALTER TABLE player_gift_mail MODIFY COLUMN title_param varchar(256) NOT NULL DEFAULT '0' COMMENT '邮件标题参数';
+ALTER TABLE player_gift_mail MODIFY COLUMN content_param varchar(512) NOT NULL DEFAULT '0' COMMENT '内容参数';

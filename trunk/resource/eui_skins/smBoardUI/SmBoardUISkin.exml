@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmBoardUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" source="smJigsawUI_json.smJigsawUI_bj" x="0" y="0" scale9Grid="80,215,480,94" width="1136" height="640"/>
+	<e:Image id="u_imgRen" source="smBoardUI_json.smBoardUI_ren" x="95" y="475.7" width="49.50000000000001" height="86.13000000000001" rotation="0" anchorOffsetY="43"/>
+	<e:Group id="u_mcFloor1" x="0" y="517">
+		<e:Image id="u_imgRight1" y="0" anchorOffsetX="0" width="160" anchorOffsetY="0" height="120" horizontalCenter="0" source="commonUI_json.commonUI_box"/>
+		<e:Image id="u_imgCenter1" y="1" height="35" width="25" x="68" source="commonUI_json.commonUI_box_0"/>
+	</e:Group>
+	<e:Group id="u_mcFloor2" x="415" y="520">
+		<e:Image id="u_imgRight2" y="0" anchorOffsetX="0" width="225" anchorOffsetY="0" height="120" horizontalCenter="0" source="commonUI_json.commonUI_box"/>
+		<e:Image id="u_imgCenter2" y="1" height="35" width="25" x="100" source="commonUI_json.commonUI_box_0"/>
+	</e:Group>
+	<e:Group id="u_mcFloor3" x="752" y="520">
+		<e:Image id="u_imgRight3" y="0" anchorOffsetX="0" width="225" anchorOffsetY="0" height="120" horizontalCenter="0" source="commonUI_json.commonUI_box"/>
+		<e:Image id="u_imgCenter3" y="1" height="35" width="25" x="100" source="commonUI_json.commonUI_box_0"/>
+	</e:Group>
+	<e:Group id="u_mcFloor4" x="1030" y="520">
+		<e:Image id="u_imgRight4" y="0" anchorOffsetX="0" width="225" anchorOffsetY="0" height="120" horizontalCenter="0" source="commonUI_json.commonUI_box"/>
+		<e:Image id="u_imgCenter4" y="1" height="35" width="25" x="100" source="commonUI_json.commonUI_box_0"/>
+	</e:Group>
+	<e:Image id="u_imgAnswer" x="152" y="524" height="8" scaleY="-1" scale9Grid="5,1,12,2" width="361" source="commonUI_json.commonUI_line1"/>
+	<e:Image id="u_imgBan" x="152" y="520" width="480" height="8" anchorOffsetX="0" anchorOffsetY="4" rotation="270" source="commonUI_json.commonUI_line1"/>
+	<e:Label id="u_txtScore" text="Label" x="457" y="34" strokeColor="0xf2689f" stroke="1.5" bold="true" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_txtTime" text="Label" x="600.5" y="34" strokeColor="0xF2689F" stroke="1.5" bold="true" fontFamily="Microsoft YaHei"/>
+	<e:Image id="u_imgTouch" x="0" y="150" scale9Grid="1,1,8,8" width="1136" anchorOffsetY="0" height="486" alpha="0" source="commonUI_json.commonUI_box"/>
+	<e:Image id="u_btnClose" x="21.75" y="20" source="commonUI_json.commonUI_btn_close_1"/>
+	<e:Group id="u_btnProp" x="338" y="35">
+		<e:Label text="瞄准器" bold="true" size="24" stroke="1" strokeColor="0xf46e96" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

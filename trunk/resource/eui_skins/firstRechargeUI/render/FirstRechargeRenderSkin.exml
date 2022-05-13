@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.FirstRechargeRenderSkin"
+	 width="280"
+	height="271" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" x="0" y="0" source="firstRechargeUI_json.firstRechargeUI_item_1"/>
+	<e:Image id="u_imgTitle" y="1" source="firstRechargeUI_json.firstRechargeUI_btn_0_tt1" horizontalCenter="0"/>
+	<e:Image id="u_imgReceive" source="commonUI_json.commonUI_received" y="189" horizontalCenter="0"/>
+	<e:Label id="u_txtTips" text="0點後重新登錄可以領取" y="207" anchorOffsetX="0" anchorOffsetY="0" size="20" fontFamily="Microsoft YaHei" stroke="1" textColor="0x1ADE4D" x="19" width="245" lineSpacing="6" bold="true" verticalAlign="middle" height="51" textAlign="center"/>
+	<e:Group id="u_btnRecharge" x="35" y="198" width="214" height="63" visible="false">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="firstRechargeUI_json.firstRechargeUI_btn_bg" visible="true"/>
+		<e:Image id="u_imgClick" y="17" touchEnabled="false" visible="true" horizontalCenter="0" source="firstRechargeUI_json.firstRechargeUI_btn_0_1"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="163" y="8"/>
+	</e:Group>
+	<e:Group id="u_mcReceive" x="10" y="36" touchChildren="false" touchEnabled="false" touchThrough="false">
+		<e:Image source="commonUI_json.commonUI_box" x="0" y="0" scale9Grid="1,1,8,8" anchorOffsetX="0" width="129" anchorOffsetY="0" height="158" alpha="0.6"/>
+		<e:Image source="commonUI_json.commonUI_received" x="25" y="37"/>
+	</e:Group>
+</e:Skin>

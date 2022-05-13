@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1761d9454ab"/>
+	<e:Image id="u_imgBg" visible="true" source="roleUI_json.roleUI_bg"/>
+	<e:Image id="u_imgMask" visible="true" source="roleUI_json.roleUI_mask" bottom="0" scale9Grid="61,33,61,33" width="1136"/>
+	<e:Group id="u_mcLeft" x="36" y="141" visible="true">
+		<e:Group x="4" y="0" visible="true">
+			<e:Image id="u_imgQuailty" x="0" y="0" visible="true" source="roleUI_json.roleUI_quality_3"/>
+			<e:Image id="u_btnTips" source="roleUI_json.roleUI_btn_tips" x="186" y="6" visible="true" width="26" height="26"/>
+			<e:Label id="u_txtHeroName" text="雷霆式神·雷震子雷" bold="true" size="18" stroke="2" visible="true" y="10" textColor="0xFFFFFF" horizontalCenter="-18"/>
+		</e:Group>
+		<e:Image x="4" y="52" visible="true" source="roleUI_json.roleUI_video_bg1" scale9Grid="26,28,12,11" width="210" height="254"/>
+		<e:Group id="u_btnBisha" x="5" y="56" width="208" height="128">
+			<e:Image width="208" height="128" visible="true" source="roleUI_json.roleUI_video_bg2" scale9Grid="69,43,70,42" x="0" y="0"/>
+			<e:Image id="u_imgBiSha" visible="true" scale9Grid="69,43,70,42" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="u_imgBiShaPlay" source="roleUI_json.roleUI_play" visible="true" horizontalCenter="5" verticalCenter="-2.5"/>
+			<e:Image id="u_imgBiShaLock" source="roleUI_json.roleUI_lock" visible="true" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Scroller id="u_scrollerIBisha" width="180" height="110" y="188" x="19" visible="true">
+			<e:Group x="59">
+			<e:Label id="u_txtBisha" text="必杀：释放剑气，对一定范围" y="3" textAlign="left" anchorOffsetX="0" size="16" anchorOffsetY="0" x="0" width="180" lineSpacing="12" wordWrap="true" strokeColor="0x000000" textColor="0xF0E4B0"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="u_btnSure" x="0" y="329" visible="true" width="218" height="58">
+			<e:Image source="roleUI_json.roleUI_btn_Bg" x="0" y="0" visible="true"/>
+			<e:Label id="u_txtSure" text="选 择" size="20" bold="true" visible="true" textColor="0xF0E4B0" horizontalCenter="0" verticalCenter="-1"/>
+		</e:Group>
+		<e:Group id="u_grpPath" y="329" visible="true" x="0" width="218" height="58">
+			<e:Image id="u_tipsBg" x="0" y="0" scale9Grid="15,12,4,11" visible="true" source="roleUI_json.roleUI_btn_Bg"/>
+			<e:Label id="u_txtTips" text="夺宝活动有机会动有机会" size="16" visible="true" textAlign="center" wordWrap="true" textColor="0xE9DDAB" bold="true" width="145" lineSpacing="8" verticalCenter="-2" x="61"/>
+			<e:Image source="roleUI_json.roleUI_lock" x="24" verticalCenter="-1.5" visible="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_mcMid" x="324" y="440" visible="true">
+		<e:Group x="0" y="0" visible="true">
+		<e:Image id="u_btnLeft" x="0" source="roleUI_json.roleUI_arrow" y="0" width="25" height="38"/>
+		<e:Image id="u_btnRight" height="38" source="roleUI_json.roleUI_arrow" width="25" scaleX="-1" x="489" y="0" visible="true"/>
+		</e:Group>
+		<e:Group id="u_grpItem" x="125" y="128" visible="true">
+		<e:Group x="21" y="5">
+			<e:Image id="u_imgJinduBg" x="0" y="0" visible="true" source="commonUI_json.commonUI_jindu_5" scale9Grid="65,10,65,7" width="198"/>
+			<e:Image id="u_imgJindu" source="commonUI_json.commonUI_jindu_6" x="7" y="5" scale9Grid="49,5,47,4" width="184" visible="true"/>
+			<e:Label id="u_txtJindu" text="90/100" y="5" size="16" bold="true" stroke="2" visible="true" horizontalCenter="-3.5" textColor="0xF0E4B0" strokeColor="0x000000"/>
+		</e:Group>
+		<e:Image id="u_itemIcon" x="0" y="0" visible="true" source="roleUI_json.roleUI_item_icon" width="34" height="32"/>
+		</e:Group>
+		<e:Group id="u_btnUp" x="175" y="128" width="138" height="58" visible="true">
+		<e:Image scaleX="1" scaleY="1" y="0" visible="true" x="0" source="roleUI_json.roleUI_btn_star"/>
+		<e:Label id="u_txtUp" text="升 星" bold="true" size="20" textColor="0xFFF7D2" horizontalCenter="1" verticalCenter="-2" visible="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_mcRight" x="1019" y="239" visible="true">
+		<e:Image id="u_btnWeap" source="roleUI_json.roleUI_pic_wq" x="0" y="0" visible="true" width="78" height="78"/>
+		<e:Image id="u_btnDesign" source="roleUI_json.roleUI_pic_zs" x="0" y="118" visible="true" width="78" height="78"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessTotalSkin"
+	 width="260"
+	height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176ccf322d4"/>
+	<e:Group id="u_grpTotal" horizontalCenter="0" y="6">
+		<e:Image id="u_imgIcon" source="commonsUI_json.commonsUI_item_icon" x="0" y="0" width="45" height="45"/>
+		<e:Image x="47" visible="true" verticalCenter="0" source="guessInsideUI_json.guessInsideUI_cost_m"/>
+	</e:Group>
+	<e:Group y="-39" horizontalCenter="6.5">
+		<e:Image x="0" y="0" visible="true" source="guessInsideUI_json.guessInsideUI_boss_title"/>
+		<e:Image id="u_imgBossId" x="77" y="0" visible="true" source="guessInsideUI_json.guessInsideUI_boss_1"/>
+	</e:Group>
+</e:Skin>

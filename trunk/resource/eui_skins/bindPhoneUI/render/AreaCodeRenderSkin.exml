@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.AreaCodeRenderSkin"
+	 width="326"
+	height="18" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="u_textContent" text="1" y="1.047" horizontalCenter="3.5" textAlign="center" size="18" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+</e:Skin>

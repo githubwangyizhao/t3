@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CourseUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="178d8ed8912"/>
+	<e:Image source="courseUI_json.courseUI_bg" visible="true" horizontalCenter="0" verticalCenter="-20"/>
+	<e:Image id="u_imgIcon" source="courseUI_json.courseUI_tips1" y="240" visible="true" horizontalCenter="-2.5"/>
+	<e:Label id="u_txtMsg" text="Click the plus sign to adjust the weapon magnification The higher the multiplier,the more money you get" y="389.934" size="18" bold="true" stroke="2" strokeColor="0x581D20" horizontalCenter="0" textAlign="center" wordWrap="true" lineSpacing="5" width="500" height="41" verticalAlign="middle"/>
+	<e:Group y="424.934" horizontalCenter="0" visible="true">
+		<e:Image id="u_imgDian1" source="courseUI_json.courseUI_icon1" x="0" y="0" visible="true"/>
+		<e:Image x="33" y="0" visible="true" id="u_imgDian2" source="courseUI_json.courseUI_icon1"/>
+		<e:Image source="courseUI_json.courseUI_icon1" x="66" y="0" visible="true" id="u_imgDian3"/>
+		<e:Image source="courseUI_json.courseUI_icon1" x="99" y="0" visible="true" id="u_imgDian4"/>
+	</e:Group>
+	<e:Group id="u_grpMc" x="399.583" y="179.464">
+		<e:Image id="u_btnClose" source="courseUI_json.courseUI_close" x="397" y="0" visible="true" width="37" height="35"/>
+		<e:Image id="u_btnLeft" visible="true" y="103" scaleX="-1" source="courseUI_json.courseUI_arrow1" width="69" height="77" x="0"/>
+		<e:Image id="u_btnRight" visible="true" y="103" x="328" source="courseUI_json.courseUI_arrow2" width="69" height="77"/>
+	</e:Group>
+</e:Skin>

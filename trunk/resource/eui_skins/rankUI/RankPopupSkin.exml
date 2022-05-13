@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RankUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179d0fe1f26"/>
+	<e:Image x="89.27" y="62.243" width="956" height="516.923" visible="true" scale9Grid="27,103,50,367" source="commonUI_json.commonUI_img_popdi"/>
+	<e:Image source="rankUI_json.rankUI_titleBg" y="65" x="225"/>
+	<e:Image source="rankUI_json.rankUI_title" x="520" y="72"/>
+	<e:Image id="u_closeBtn" x="949.711" y="64.352" width="93" height="34" source="commonUI_json.commonUI_btn_close_4"/>
+	<e:Scroller id="u_scroller" width="936" height="468.535" y="107.563" horizontalCenter="0" visible="true">
+		<e:List id="u_list"/>
+	</e:Scroller>
+</e:Skin>

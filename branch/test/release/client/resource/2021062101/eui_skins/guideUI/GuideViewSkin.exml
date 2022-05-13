@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideViewSkin" width="200" height="109" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" anchorOffsetX="0" width="200" anchorOffsetY="0" height="109" source="commonsUI_json.commonUI_box_3" scale9Grid="24,20,71,21"/>
+	<e:Label id="u_txtMsg" text="三段式翻板阀二部发沙发出版社吃不完吃吧sw" y="12" size="18" textAlign="left" textColor="0xFFFFFF" x="10" width="182" lineSpacing="6" wordWrap="true"/>
+</e:Skin>

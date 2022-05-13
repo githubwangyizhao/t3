@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightOverallRenderSkin"
+	 width="50"
+	height="253" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image id="u_imgBg" x="0" y="0" width="50" height="253" source="endlessFightTrendUI_json.endlessFightTrendUI_renderBg"/>
+	<ns1:NumberView id="u_sortNum" width="30" height="16" y="18" horizontalCenter="0"/>
+	<ns1:NumberView id="u_num2" width="30" height="16" y="70" horizontalCenter="0"/>
+	<ns1:NumberView width="30" height="16" y="120" id="u_num3" horizontalCenter="0" x="20"/>
+	<ns1:NumberView width="30" height="16" y="170" id="u_num1" horizontalCenter="0" x="20"/>
+	<ns1:NumberView width="30" height="16" y="220" id="u_num0" horizontalCenter="0" x="20"/>
+</e:Skin>

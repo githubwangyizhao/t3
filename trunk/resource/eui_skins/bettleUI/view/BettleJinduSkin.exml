@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BettleJinduSkin"
+	 width="649"
+	height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cef7a8512"/>
+	<e:Image source="bettleJinduUI_json.bettleJinduUI_bg" visible="true" y="-1" x="0"/>
+	<e:Image source="bettleJinduUI_json.bettleJinduUI_blue_di" visible="true" y="1" x="13"/>
+	<e:Group id="u_grpRed" y="1" visible="true" x="13">
+		<e:Image visible="true" x="0" source="bettleJinduUI_json.bettleJinduUI_red_di" y="0"/>
+	</e:Group>
+	<e:Image id="u_imgMask" source="commonUI_json.commonUI_box" y="1" width="622" height="21" scale9Grid="3,3,4,4" visible="true" right="13"/>
+	<e:Image source="bettleJinduUI_json.bettleJinduUI_time_di" y="22" horizontalCenter="0"/>
+	<e:Image source="bettleJinduUI_json.bettleJinduUI_arrow" y="3" horizontalCenter="0"/>
+	<e:Label id="u_txtScore1" text="999999999" fontFamily="Microsoft YaHei" size="16" bold="true" stroke="1" y="3" left="30" textColor="0xFFFFFF"/>
+	<e:Label id="u_txtScore2" text="999999999" fontFamily="Microsoft YaHei" size="16" bold="true" stroke="1" y="3" right="30"/>
+	<e:Image id="u_imgRedTips" source="bettleJinduUI_json.bettleJinduUI_red_tips" y="0" visible="false" touchEnabled="false" horizontalCenter="0"/>
+</e:Skin>

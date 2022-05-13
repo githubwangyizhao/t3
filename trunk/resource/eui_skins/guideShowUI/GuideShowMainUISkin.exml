@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideShowMainUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17b9f410cb4"/>
+	<e:Image id="u_imgBj1" source="guideShowUI_json.guideShowUI_main_1" scale9Grid="507,13,34,54" width="600" height="92"/>
+	<e:Image id="u_imgBj2" source="guideShowUI_json.guideShowUI_main_2" x="0" y="92" height="462" scale9Grid="473,221,59,65"/>
+	<e:Image id="u_imgBj3" source="guideShowUI_json.guideShowUI_main_3" y="554" height="89" width="874" scale9Grid="35,4,35,98"/>
+	<e:Image id="u_imgJiantou" source="guideShowUI_json.guideShowUI_gongneng" y="416" width="98" height="137" horizontalCenter="0"/>
+	<e:Image id="u_btnClick" source="guideShowUI_json.guideShowUI_btn" horizontalCenter="0" y="230"/>
+</e:Skin>

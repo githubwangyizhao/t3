@@ -1,0 +1,9 @@
+t_pk_mode,,,,
+int|key,str,str,str,str
+0,,,,
+id,title,sign,desc,title_color
+"模式ID","模式名称","标识","描述","名称颜色"
+0,和平,pk_peace,不可对玩家造成伤害,0x01ff19
+1,仙盟,pk_faction,可对非本仙盟玩家造成伤害,0x00a0e9
+2,对决,pk_battle,可对指定玩家伤害,0xffeb45
+3,全体,pk_world,可对所有玩家造成伤害,0xff0000

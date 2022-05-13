@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="VipViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17ab3271cb5"/>
+	<e:Image id="u_imgbg" source="shopHallUI_json.shopHallUI_img_vipdi" visible="true" width="1258" scaleX="1" scaleY="1" y="74.71" x="0" scale9Grid="992,36,206,35"/>
+	<e:Group id="u_grpvipContent" y="60.08" x="8" width="1021.946" visible="true">
+		<e:Image x="-7.642" y="-20.472" source="shopHallUI_json.shopHallUI_img_vipicon" scaleX="0.7" scaleY="0.7" visible="true"/>
+		<e:Group id="u_grpVip" width="48.32" height="50.165" x="76.901" y="23.712"/>
+		<e:Group y="35.53" x="221.388" visible="true">
+		<e:Label id="u_txtMsg" text="再充值 $8          即可升级至" y="3.952" size="20" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle" visible="true" scaleX="1" scaleY="1" left="1" textColor="0xE4EBF3"/>
+		<e:Group id="u_grpNum" width="83.592" height="28" y="-1.231" x="176"/>
+		</e:Group>
+		<e:Group id="u_grpPro" x="216.384" y="76.081" visible="true" height="15" width="848">
+		<e:Image id="u_imgjinDu1" x="0" y="0" width="848" source="shopHallUI_json.shopHallUI_img_jindu1" scale9Grid="18,6,17,6" height="15" visible="true"/>
+		<e:Image id="u_imgjinDu" width="845" visible="true" height="12" source="shopHallUI_json.shopHallUI_img_jindu2" scale9Grid="226,5,227,4" y="1.5" x="1.5"/>
+		<e:Label id="u_txtjinDu" text="90/100" y="1.71" size="14" height="15" fontFamily="Microsoft YaHei" strokeColor="0x000000" x="396.487" stroke="1" textColor="0xEDEDED" visible="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Label id="u_txtVipTop" text="VIP 已满级" size="26" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" height="49" textAlign="left" verticalAlign="middle" visible="false" bold="true" width="390" y="93.528" left="244"/>
+	<e:Image source="shopHallUI_json.shopHallUI_img_titvip" x="312.12" y="177.662" visible="true"/>
+	<e:Image source="shopHallUI_json.shopHallUI_img_vip" x="578" y="188" visible="true"/>
+	<e:Group id="u_grpVipPr" height="30.5" y="188" visible="true" right="562"/>
+	<e:Scroller id="u_awardScroll" width="1012" height="328.5" y="235.015" x="62">
+		<e:List id="u_awardList" y="-1.7" x="0"/>
+	</e:Scroller>
+	<e:Image id="u_btnLeft" x="27.5" height="40.569" width="29.349" source="shopHallUI_json.shopHallUI_img_jiantou" y="385"/>
+	<e:Image id="u_btnRight" x="1108.5" y="422" source="shopHallUI_json.shopHallUI_img_jiantou" rotation="180" width="29.21" height="42.736"/>
+    <e:Image id="u_imgMask" source="shopHallUI_json.shopHallUI_img_mask" y="521" width="1136" visible="true" horizontalCenter="0" scale9Grid="13,14,12,15"/>
+</e:Skin>

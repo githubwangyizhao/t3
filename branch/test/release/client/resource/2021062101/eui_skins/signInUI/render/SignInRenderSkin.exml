@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SignInRenderSkin"
+	 width="132"
+	height="159" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_ImgSignInBg" visible="true" horizontalCenter="0" y="0" source="signInUI_json.signInUI_tab1"/>
+	<e:Label id="u_txtDay" text="第1日" y="8" size="16" fontFamily="Microsoft YaHei" visible="true" textColor="0xF0E4B0" verticalAlign="middle" textAlign="center" backgroundColor="0xFFFFFF" background="false" borderColor="0x000000" border="false" bold="false" strokeColor="0x8E5E3D" sortableChildren="false" stroke="1.5" horizontalCenter="0" touchEnabled="false"/>
+	<e:Label id="u_txtSignInCount" text="1000" y="42" size="16" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" touchEnabled="false" textColor="0x14151A" horizontalCenter="0"/>
+	<e:Image id="u_imgMulti" x="0" y="0" visible="true" source="signInUI_json.signInUI_double" touchEnabled="false"/>
+	<e:Group id="u_receivedGrp" width="132" height="159" x="0" y="0" visible="false" touchEnabled="false" touchChildren="false">
+		<e:Image source="signInUI_json.signInUI_mask" visible="true" x="1" y="1"/>
+		<e:Image source="signInUI_json.signInUI_chose" y="45" horizontalCenter="0" visible="true"/>
+		<e:Label text="已签到" y="90" size="18" textColor="0xF0E4B0" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Image id="u_imgResign" visible="true" touchEnabled="false" source="signInUI_json.signInUI_sign" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" y="65" scale9Grid="3,3,4,4" width="90" height="80" alpha="0" x="21" visible="true"/>
+</e:Skin>

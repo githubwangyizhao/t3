@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionShishiProSkin"
+	 width="221"
+	height="59" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176d5977c7c"/>
+	<e:Image id="u_imgBg" y="0" visible="true" x="0" source="missionFightUI_json.missionFightUI_bg_pool_2"/>
+	<e:Group id="u_mcPro" y="14" visible="true" x="70"/>
+</e:Skin>

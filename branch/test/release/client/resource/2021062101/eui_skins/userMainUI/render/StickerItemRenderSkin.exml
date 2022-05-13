@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.StickerItemRenderSkin"
+	 width="90"
+	height="90" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgSticker" width="90" height="90" x="0" y="0"/>
+	<e:Image id="u_imgLock" source="roleUI_json.roleUI_lock" horizontalCenter="0" verticalCenter="0" width="20" height="26"/>
+	<e:Label id="u_txtOutput" text="获取途径" y="76" size="12" textColor="0xF0E4B0" horizontalCenter="0"/>
+</e:Skin>

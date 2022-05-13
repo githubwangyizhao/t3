@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="AchievementUISkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="175feab16b7"/>
+	<e:Image source="commonsUI_json.commonUI_box_2" y="192" scale9Grid="29,29,30,30" visible="true" anchorOffsetX="0" width="586" horizontalCenter="0" height="797"/>
+	<e:Group id="u_btnPage1" x="54" y="107" name="btnName1" width="108" height="86" touchChildren="false">
+		<e:Image id="u_imgPage1" x="0" y="2" visible="true" source="achievementUI_json.achievementUI_1_2"/>
+		<e:Image id="u_imgRed1" source="commonsUI_json.commonsUI_red_1" x="75" y="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnPage2" x="194" y="107" name="btnName2" width="108" height="86" touchChildren="false">
+		<e:Image id="u_imgPage2" x="0" y="2" visible="true" source="achievementUI_json.achievementUI_2_1" width="108" height="84"/>
+		<e:Image source="commonsUI_json.commonsUI_red_1" x="75" y="0" id="u_imgRed2" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnPage3" x="333" y="107" name="btnName3" width="108" height="86" touchChildren="false">
+		<e:Image x="0" y="0" visible="true" id="u_imgPage3" source="achievementUI_json.achievementUI_3_1" width="108" height="84"/>
+		<e:Image source="commonsUI_json.commonsUI_red_1" x="75" y="0" id="u_imgRed3" visible="true"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonHeadSkin" width="1136" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="169b92d017d"/>
+	<e:Image source="commonUI_head_right" y="0" right="0" touchEnabled="false" scale9Grid="874,5,11,30"/>
+	<e:Group id="u_mcMoney0" x="729.93" y="19.5" name="u_mcMoney0" anchorOffsetX="58" anchorOffsetY="20">
+		<e:Label id="u_txtMoney0" text="999,999,9" anchorOffsetX="44" multiline="false" size="18" scaleX="1" scaleY="1" textAlign="center" textColor="0xF0E4B0" visible="true" bold="true" y="21.6" width="100" fontFamily="Microsoft YaHei" anchorOffsetY="9" x="77"/>
+		<e:Image id="u_imgMoney0" x="20" visible="true" y="20" source="commonUI_icon_2" width="40" height="40" anchorOffsetX="20" anchorOffsetY="20"/>
+	</e:Group>
+	<e:Group id="u_mcMoney1" x="866" y="19.3" name="u_mcMoney1" anchorOffsetX="60" anchorOffsetY="20">
+		<e:Label id="u_txtMoney1" text="999,999,9" anchorOffsetX="44" multiline="false" size="18" scaleX="1" scaleY="1" textAlign="center" textColor="0xF0E4B0" visible="true" bold="true" y="21.6" width="100" fontFamily="Microsoft YaHei" anchorOffsetY="9" x="75"/>
+		<e:Image id="u_imgMoney1" x="20" visible="true" width="40" height="40" y="20" source="commonUI_icon_4" anchorOffsetX="20" anchorOffsetY="20"/>
+	</e:Group>
+	<e:Group id="u_mcMoney2" x="999" y="19.3" name="u_mcMoney1" anchorOffsetX="60" anchorOffsetY="20">
+		<e:Label id="u_txtMoney2" text="999,999,9" anchorOffsetX="44" multiline="false" size="18" scaleX="1" scaleY="1" textAlign="center" textColor="0xF0E4B0" visible="true" bold="true" y="21.6" width="100" fontFamily="Microsoft YaHei" anchorOffsetY="9" x="75"/>
+		<e:Image id="u_imgMoney2" x="20" visible="true" width="40" height="40" y="20" anchorOffsetX="20" anchorOffsetY="20" source="commonUI_icon_52"/>
+	</e:Group>
+	<e:Group id="u_mcLeft" x="0" y="-1">
+		<e:Label id="u_txtTitle" text="英雄" anchorOffsetX="0" multiline="false" size="20" scaleX="1" scaleY="1" textAlign="left" textColor="0xF0E4B0" visible="true" bold="true" x="94.74" y="17" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_btnClose" x="2.98" width="180" height="56" y="-1">
+			<e:Image source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" width="180" height="56" scaleX="1" scaleY="1" alpha="0"/>
+			<e:Image x="25" y="4" visible="true" source="commonUI_json.commonUI_btn_close_1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnAdd" x="1058.8" y="2.102" width="66" height="35" visible="true">
+		<e:Image source="commonUI_json.commonUI_box" x="0" y="0" scale9Grid="3,3,4,4" width="66" height="35" scaleX="1" scaleY="1" alpha="0"/>
+		<e:Image source="commonUI_json.commonUI_head_add" x="8.64" y="-2.08"/>
+	</e:Group>
+</e:Skin>

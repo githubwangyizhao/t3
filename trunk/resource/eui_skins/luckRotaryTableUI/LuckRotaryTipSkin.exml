@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LuckRotaryTipSkin" width="1134" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_grpTable" y="318" anchorOffsetX="365.7" anchorOffsetY="321" width="713" height="660" x="567.7">
+		<e:Group id="u_gpAnim" x="363.85" y="334.15">
+		</e:Group>
+		<e:Group id="u_gpStart" x="282" y="406.79">
+			<e:Image x="0" y="0" anchorOffsetX="0" width="171" anchorOffsetY="0" height="62" scale9Grid="6,5,18,4" source="commonUI_json.commonUI_img_btnyellow2"/>
+			<e:Image source="commonUI_json.commonUI_img_kaishi" x="33" y="18"/>
+		</e:Group>
+		<e:Label id="u_cdLabel" text="3s后关闭" y="478.79" size="16" textAlign="center" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="10.5" textColor="0x1ADE4D" bold="true" stroke="1" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	
+</e:Skin>

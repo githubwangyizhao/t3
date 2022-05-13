@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmWuYinRenderSkin" width="74" height="74" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBg" horizontalCenter="0" verticalCenter="0" source="smWuYinUI_json.smWuYinUI_ball_1"/>
+	<e:Image id="u_imgTxt" source="smWuYinUI_json.smWuYinUI_txt_1" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

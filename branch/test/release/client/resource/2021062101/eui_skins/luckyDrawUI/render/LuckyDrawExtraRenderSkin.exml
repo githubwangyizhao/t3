@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyDrawExtraRenderSkin"
+	 width="95"
+	height="85" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="luckyDrawUI_json.luckyDrawUI_boxBg" y="0" horizontalCenter="0" width="85" height="85"/>
+	<e:Image id="u_boxIcon" x="0" y="3" source="luckyDrawUI_json.luckyDrawUI_box"/>
+	<e:Label id="u_countLb" text="5个" y="68" textColor="0xF0E4B0" size="16" textAlign="center" horizontalCenter="0" stroke="2" strokeColor="0x000000"/>
+	<e:Group id="u_receivedGrp" x="23" y="8" visible="false">
+		<e:Image visible="true" source="luckyDrawUI_json.luckyDrawUI_chose" y="0" x="0"/>
+		<e:Label text="已领取" y="38" size="16" textColor="0x30C524" stroke="2" x="1"/>
+	</e:Group>
+</e:Skin>

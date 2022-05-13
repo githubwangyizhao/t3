@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.WelfareUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a12f72f6"/>
+	<e:Image x="46" y="56" width="151" height="550" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="10,10,10,10" visible="true" source="welfareUI_json.welfareUI_bg"/>
+</e:Skin>

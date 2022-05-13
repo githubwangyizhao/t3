@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiMainRenderSkin"
+	 width="567"
+	height="174" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17617f29564"/>
+	<e:Image source="multiPlayerUI_json.multiPlayerUI_di" x="9" y="0" visible="true"/>
+	<e:Label id="u_txtMana" text="Mana quantity required:" x="159" y="17" bold="true" size="19" visible="true" stroke="1.5" strokeColor="0x72777F"/>
+	<e:Label text="Participants: 0/5" x="159" y="43" bold="true" size="19" visible="true" stroke="1.5" strokeColor="0x72777F" id="u_txtPartic"/>
+	<e:Label text="Limit: VIP1" x="329" y="42" bold="true" size="19" visible="true" stroke="1.5" strokeColor="0x72777F" id="u_txtVip"/>
+	<e:Image source="multiPlayerUI_json.multiPlayerUI_boss_di1" x="0" y="83" visible="true"/>
+	<e:Group x="16" y="124">
+		<e:Image source="multiPlayerUI_json.multiPlayerUI_boss_di2" y="0" visible="true" x="0"/>
+		<e:Group id="u_grpLv" height="23" horizontalCenter="8" y="4">
+			<e:Image source="numberText_json.num_role_level_l"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnJoin" visible="true" x="441" y="56" width="122" height="59">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_1" scale9Grid="64,15,2,3" scaleX="0.9" scaleY="0.9"/>
+		<e:Label id="u_txtJoin" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="Join" horizontalCenter="0" visible="true"/>
+		<e:Image id="u_iconLock" source="commonsUI_json.commonsUI_btn_suo" x="90" y="-14"/>
+	</e:Group>
+</e:Skin>

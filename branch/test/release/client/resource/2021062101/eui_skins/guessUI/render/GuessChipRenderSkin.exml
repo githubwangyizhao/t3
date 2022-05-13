@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GuessChipRenderSkin"
+	 width="106"
+	height="112" xmlns:e="http://ns.egret.com/eui">
+	<e:Group x="0.664" y="3.291" scaleX="1" scaleY="1">
+		<e:Group id="u_grpChip" scaleX="1" scaleY="1"/>
+		<e:Image source="guessUI_json.guessUI_img_selected1" x="0" y="-2" id="u_imgChip_Light" visible="false"/>
+	</e:Group>
+</e:Skin>

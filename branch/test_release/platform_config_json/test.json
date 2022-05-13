@@ -1,0 +1,9 @@
+{
+	"IsPack":true,
+	"platform_id":"test",
+	"channel":"test",
+	"cdn":"http://47.102.119.76:7080/game",
+	"server_list_url_recent":"http://47.102.119.76:7001/login?platform_id=test&acc_id=[acc_id]&password=[password]&channel=test&promote=[promote]&version=[version]&app_id=[app_id]",
+	"server_list_url_all":"http://47.102.119.76:7001/all?platform_id=test&acc_id=[acc_id]&channel=test",
+	"is_product":"http://47.102.119.76:6666/version"
+}

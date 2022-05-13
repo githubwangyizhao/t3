@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoTagSkin"
+	 width="137"
+	height="53" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_btnClick" height="53" width="137">
+		<e:Image source="monsterInfoUI_json.monsterInfoUI_img_line" x="1" y="54" visible="false"/>
+		<e:Image id="u_imgTag" source="monsterInfoUI_json.monsterInfoUI_btn_icon2" x="-3.23" y="-4.522" visible="false" scaleX="1" scaleY="1" width="137"/>
+		<e:Image id="u_imgSelect2" x="-1.815" y="-3.583" visible="true" source="monsterInfoUI_json.monsterInfoUI_btn_select_2_1"/>
+		<e:Image id="u_imgSelect1" x="-1.388" y="-4.236" scaleX="1" scaleY="1" visible="true" source="monsterInfoUI_json.monsterInfoUI_btn_select_1_1"/>
+	</e:Group>
+</e:Skin>

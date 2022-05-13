@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MainAttackSkillViewSkin"
+	 width="375"
+	height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" source="userMainUI_json.userMainUI_u_tishi" scale9Grid="17,15,2,2" width="371" anchorOffsetY="0" height="50" anchorOffsetX="0"/>
+	<e:Image source="commonUI_json.commonUI_icon_gold" x="13" y="6"/>
+</e:Skin>

@@ -1,0 +1,11 @@
+{
+	"IsPack":true,
+	"platform_id":"local",
+	"channel":"local",
+	"cdn":"47.102.119.76:7080/game",
+	"server_list_url_recent":"47.102.119.76:7001/login?platform_id=local&acc_id=[acc_id]&password=[password]&channel=local&promote=[promote]&version=[version]&app_id=[app_id]",
+	"server_list_url_all":"47.102.119.76:7001/all?platform_id=local&acc_id=[acc_id]&channel=local",
+	"is_product":"47.102.119.76:6666/version",
+	"upgrade": "47.102.119.76:6663/upgrade?app_id=[app_id]&version=[version]&platform=[platform]&mode=production",
+	"static_resource": "47.102.119.76:6663/static_resource?app_id=[app_id]&version=[version]"
+}

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MailUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17604b82636"/>
+	<e:Image horizontalCenter="-1" fillMode="scale" visible="true" y="69.416" scale9Grid="10,78,10,9" width="840" height="500" source="commonUI_json.commonUI_bg"/>
+	<e:Scroller id="u_scrollItem" width="350" height="378" x="147.508" y="141.58" visible="true">
+		<e:Group y="-0.452" x="0.895">
+			<e:List id="u_listItem" x="0" y="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_gapDescBg" x="497.216" y="140.672" width="490" visible="false">
+		<e:Label id="u_textTitle" text="充值钻石" y="26.276" size="22" scaleX="1" scaleY="1" zIndex="1" bold="true" textAlign="center" horizontalCenter="4" textColor="0xF0E6D2" visible="true"/>
+		<e:Label id="u_textGoods" text="附件" y="205.81" size="20" textColor="0x3F393C" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" bold="true" textAlign="center" horizontalCenter="3.5" visible="false"/>
+		<e:Label id="u_textDesc" x="36.926" y="84.596" size="16" textAlign="left" fontFamily="Microsoft YaHei" verticalAlign="middle" width="420" scaleX="1" scaleY="1" lineSpacing="6" text="一件获取页面需要优化二件获取页面需要优化三件获取页面需要优化四件获取页面需要优化五件获取页面需要优化六件获取页面需要优化七件获取页面需要优化八件获取页面需要优化九件获取页面需要优化十件获取页面需要优化一件获取页面需要优化二件获取页面需要优化三件获取页面需要优化四件获取页面需要优化五件获取页面需要优化" textColor="0x999587"/>
+		<e:Image source="mailUI_json.mailUI_img_line2" x="20.536" y="68.254" width="448"/>
+		<e:Image id="u_imgAttach_Line" source="mailUI_json.mailUI_img_line2" x="20.536" y="221.856" width="448"/>
+		<e:Image source="mailUI_json.mailUI_img_line2" x="19.864" y="311.136" width="448"/>
+		<e:Group id="u_grpRecerive" x="174.616" y="346.232" visible="true">
+			<e:Image scaleX="1" scaleY="1" source="mailUI_json.mailUI_all_delete" width="140" height="50" visible="true"/>
+			<e:Label id="u_textRecerive" text="删 除" verticalCenter="0" horizontalCenter="1" textColor="0xF0E4B0" size="20"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpNoMail" y="272.74" visible="true" horizontalCenter="0" width="164">
+		<e:Image source="mailUI_json.mailUI_hint" scaleX="1" scaleY="1" visible="true" x="51.964" y="0"/>
+		<e:Label id="u_textNoMail" text="邮箱中无任何邮件" size="20" y="89.411" textColor="0x999587" x="3.225"/>
+	</e:Group>
+	<e:Group id="u_grpTip" y="271.106" visible="false" x="668.612">
+		<e:Image source="mailUI_json.mailUI_hint" scaleX="1" scaleY="1" visible="true" x="43.361" y="0"/>
+		<e:Label id="u_textReadclick" text="请点击邮件阅读" size="20" y="88.051" horizontalCenter="2" textColor="0x999587"/>
+	</e:Group>
+	<e:Image source="mailUI_json.mailUI_icon_title" x="160.908" y="94.244"/>
+	<e:Label text="邮件" x="205.873" y="99.489" size="16" textColor="0xF0E4B0"/>
+	<e:Image id="u_btnClose" x="952.652" y="99.022" source="commonUI_json.commonUI_btn_close_2" width="16" height="16"/>
+	<e:Group id="u_grpAllRecerive" x="148.193" y="520.064" visible="true">
+		<e:Image source="mailUI_json.mailUI_btn_allget" horizontalCenter="0" visible="true" scaleX="1" scaleY="1"/>
+		<e:Label id="u_textAllRecerive" text="全部领取" horizontalCenter="-0.5" y="17.03" size="20" textColor="0xF0E4B0"/>
+	</e:Group>
+	<e:Group id="u_grpAllDel" y="520.15" horizontalCenter="-157.5" x="137.093" visible="true">
+		<e:Image source="mailUI_json.mailUI_all_delete" visible="true" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<e:Label id="u_textAllDel" text="全部删除" horizontalCenter="0.5" size="20" textColor="0xF0E4B0" x="57" y="16.48" visible="true"/>
+	</e:Group>
+	<e:Image id="u_imgCentreLine" source="mailUI_json.mailUI_img_line1" x="496.556" y="141.228" height="428"/>
+</e:Skin>

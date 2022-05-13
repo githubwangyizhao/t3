@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DailyTaskUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17c30a8a495"/>
+	<e:Image id="u_bg" visible="true" touchEnabled="false" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="u_bg1" horizontalCenter="0" verticalCenter="0" x="578" y="330" visible="true"/>
+	<e:Image source="dailyTaskUI_json.dailyTaskUI_title" x="618.37" y="43.95"/>
+	<e:Group id="u_ruleBtn" width="60" height="60" x="1060.008" y="54.504" touchChildren="false">
+		<e:Image source="commonUI_json.commonUI_btn_th" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" width="23" height="23"/>
+	</e:Group>
+	<e:Image y="125" width="515" height="476.278" visible="true" horizontalCenter="291" source="dailyTaskUI_json.dailyTaskUI_tableBg" scale9Grid="27,16,28,16"/>
+	<e:Scroller id="u_scroller" width="505" height="400" y="140" visible="true" x="607">
+		<e:List id="u_listItem" height="288.104"/>
+	</e:Scroller>
+	<e:Group id="u_getBtn" x="973.13" y="550">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow" x="0" y="0"/>
+		<e:Image source="dailyTaskUI_json.dailyTaskUI_get" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" scaleX="1" scaleY="1" x="108"/>
+	</e:Group>
+	<e:Group x="127.6" y="543.42" visible="true">
+		<e:Image source="dailyTaskUI_json.dailyTaskUI_valueBg" x="0" y="0" visible="true"/>
+		<e:Label id="u_pointLb" text="今日活跃度" y="18.946" size="16" horizontalCenter="-2"/>
+		<ns1:NumberView id="u_pointNum" width="100" height="26" y="43.29" horizontalCenter="-2"/>
+	</e:Group>
+	<e:Group x="256" y="582.319">
+		<e:Image source="dailyTaskUI_json.dailyTaskUI_taskBg" x="0" y="0" width="665" visible="true" scale9Grid="35,10,36,3"/>
+		<e:Image id="u_pointCur" source="dailyTaskUI_json.dailyTaskUI_taskValue" x="12" verticalCenter="0" width="120" height="9" scale9Grid="16,3,16,3"/>
+		<e:Image id="u_pointStart" source="dailyTaskUI_json.dailyTaskUI_taskStart" x="2" verticalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Scroller id="u_boxScroller" width="590" height="70" x="318" y="558.531" visible="true">
+		<e:List id="u_boxList"/>
+	</e:Scroller>
+</e:Skin>

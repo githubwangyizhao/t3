@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="VScrollBarSkin"
+	 width="17"
+	height="390" xmlns:e="http://ns.egret.com/eui">
+	<e:Image height="100%" horizontalCenter="0" source="commonUI_json.commonUI_img_line"/>
+	<e:Group id="thumb" x="0" y="0" width="17" height="32">
+		<e:Image scale9Grid="4,8,6,15" visible="true" y="0" horizontalCenter="0" source="commonUI_json.commonUI_img_hk"/>
+	</e:Group>
+</e:Skin>

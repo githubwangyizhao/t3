@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.BossEventTipView"
+	 width="525"
+	height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17c79404200"/>
+	<e:Group width="525" height="100" visible="true">
+		<e:Image source="bossEventUI_json.boossEventUI_img_bg2" scaleX="1" scaleY="1" visible="true"/>
+		<e:Label id="u_textMsg" text="恭喜111111111111111111111111111111" y="24" horizontalCenter="1" size="18" textAlign="center" textColor="0xF0E4B0" stroke="1"/>
+		<e:Group id="u_grpGold" y="50" horizontalCenter="0" width="200" height="22">
+			<ns1:NumberView id="u_numView" width="40" height="22" scaleX="0.33" scaleY="0.33" horizontalCenter="0"/>
+			<e:Label id="u_textGet" text="Label" size="18" y="4" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" x="0"/>
+			<e:Label id="u_textGolg" text="玩儿人" y="4" size="18" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" x="146"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

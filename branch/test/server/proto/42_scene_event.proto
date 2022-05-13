@@ -1,0 +1,94 @@
+// 场景事件
+// OPEN_DEBUG
+
+import "05_prop.proto";
+import "01_player.proto";
+
+// 拉霸请求
+message m_do_laba_tos{
+}
+message m_do_laba_toc{
+    enum Result{
+        success = 1;                      // 成功
+        not_open = 2;                     // 事件未开始或已经结束
+        failure = 3;                      // 失败
+        no_enough_prop = 4;               // 道具数量不足
+    }
+
+    required int32 id = 2;                  // 结果Id
+    repeated Prop prop_list = 3;            // 奖励列表
+    required Result result = 4;
+}
+
+// 转盘请求
+message m_do_turntable_tos{
+}
+message m_do_turntable_toc{
+    enum Result{
+        success = 1;                      // 成功
+        not_open = 2;                     // 事件未开始或已经结束
+        failure = 3;                      // 失败
+        no_enough_prop = 4;               // 道具数量不足
+    }
+
+    required int32 id = 2;                  // 结果Id
+    repeated Prop prop_list = 3;            // 奖励列表
+    required Result result = 4;
+}
+
+// 请求摇钱树
+message m_do_money_three_tos{
+}
+message m_do_money_three_toc{
+    enum Result{
+        success = 1;                      // 成功
+        not_open = 2;                     // 事件未开始或已经结束
+        failure = 3;                      // 失败
+        no_enough_prop = 4;               // 道具数量不足
+    }
+
+    required int32 id = 2;                  // 结果Id
+    repeated Prop prop_list = 3;            // 奖励列表
+    required Result result = 4;
+}
+
+// 摇钱树结算通知
+message m_notice_money_three_result_toc{
+    message ResultInfo{
+        required PlayerBaseInfo player_info = 1;        // 玩家信息
+        repeated Prop prop_list = 2;                    // 奖励列表
+    }
+
+    repeated ResultInfo results = 1;           // 结算清单
+}
+
+// 通知任务信息
+message m_notice_task_toc{
+    required int32 num = 1;
+}
+
+// 查询彩球数据
+message m_query_balls_data_tos{
+}
+message m_query_balls_data_toc{
+    repeated int32 balls = 1;               // 玩家已获得的数字彩球列表
+}
+
+// 彩球掉落通知 undo
+message m_notice_drop_ball_toc{
+    required int32 number = 1;              // 掉落彩球编号
+    required int32 own_player_id = 2;       // 彩球归属玩家id
+    required int32 x = 3;
+    required int32 y = 4;
+}
+
+// 彩球结算通知
+message m_notice_balls_result_toc{
+    message ResultInfo{
+        required PlayerBaseInfo player_info = 1;        // 玩家信息
+        repeated Prop prop_list = 2;                    // 奖励列表
+    }
+
+    repeated ResultInfo results = 1;           // 中奖信息
+    required int32 luck = 2;                   // 幸运球数字
+}

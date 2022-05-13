@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardMainUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17963e1c50d"/>
+	<e:Group id="u_mcLeft" x="0" y="147">
+		<e:Image source="cardMainUI_json.cardMainUI_bg" x="1" y="0" visible="true"/>
+		<e:Image id="u_btnColse" source="cardMainUI_json.cardMainUI_close" x="5" y="129" visible="true"/>
+	</e:Group>
+</e:Skin>

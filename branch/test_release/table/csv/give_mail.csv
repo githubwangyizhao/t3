@@ -1,0 +1,8 @@
+give_mail,Column,Column [1],,Column [2],,Column [3],Column [4],Column [5],Column [6]
+int|key,str,str,int,int,int,str,int,int,str
+,,,1,,0,,,,
+id,sign,name,type,sender_id,weight_value,content,award_id,valid_time,desc
+"邮件ID","标识","名称","邮件方式(1:模板;2:修改标题)","发件人ID","邮件重要值(0最小)","内容","奖励组ID","有效期(s)","备注"
+#礼物盒邮件,,,,,,,,,
+40001,give_mail_ruby,{%text}的礼物,,1,10,{%text}赠送了你礼物，请尽快领取！,0,1,text=玩家名字
+40002,give_mail_ruby1,{%text}的礼物,,1,10,您大手一挥！送了|c107{%text}$c个{%text}给|c105{%text}$c,0,1,text=玩家名字

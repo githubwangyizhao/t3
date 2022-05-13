@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CardPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a3d213aa6"/>
+	<e:Label id="u_flipCountLb" text="剩余翻牌次数：3" y="570" size="18" bold="true" horizontalCenter="-83.5" textAlign="center" textColor="0xFAF7D1" stroke="2" strokeColor="0x9C5E22" visible="false" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_txtCountdown" text="5s后自动翻牌" y="570" horizontalCenter="74" size="18" fontFamily="Microsoft YaHei" bold="true" visible="false" textAlign="center" stroke="2" strokeColor="0x9C5E22" textColor="0xFAF7D1"/>
+	<e:Group id="u_cardGrp" width="720" height="480" horizontalCenter="0" verticalCenter="-15">
+	</e:Group>
+</e:Skin>

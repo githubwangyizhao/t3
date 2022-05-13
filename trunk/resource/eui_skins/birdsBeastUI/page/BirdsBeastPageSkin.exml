@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BirdsBeastPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Scroller id="u_scrollerItem" height="440" anchorOffsetX="0" anchorOffsetY="0" width="1008" visible="true" x="128" y="100">
+		<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	</e:Scroller>
+</e:Skin>

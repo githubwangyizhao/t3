@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatChannelRenderSkin"
+	 width="249"
+	height="63" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgSelect" source="chatUI_json.chatUI_select" x="0" y="0" visible="true"/>
+	<e:Group id="u_grpMsg" x="9" y="6">
+		<e:Image id="u_imgHead" visible="true" source="chatUI_json.chatUI_icon1" x="0" y="0"/>
+		<e:Label id="u_txtName" text="s160.玩家名字七个字" x="58" fontFamily="Microsoft YaHei" size="16" visible="true" bold="true" y="19" textColor="0xF0E4B0"/>
+	</e:Group>
+	<e:Group id="u_grpGou" x="0" y="3" visible="false">
+		<e:Image id="u_imgGouBg" source="chatUI_json.chatUI_select2" scale9Grid="17,17,16,16" width="238" x="0" y="0" height="56"/>
+		<e:Image source="chatUI_json.chatUI_gou_di1" x="9" y="3"/>
+		<e:Image id="u_imgGou" source="chatUI_json.chatUI_gou_di2" x="9" y="3"/>
+	</e:Group>
+	<e:Group id="u_grpRed" x="204" y="16" visible="false">
+		<e:Image source="chatUI_json.chatUI_red" x="0" y="0" visible="true"/>
+		<e:Label text="99" fontFamily="Microsoft YaHei" size="14" bold="true" id="u_txtNum" horizontalCenter="0.5" y="9"/>
+	</e:Group>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" alpha="0" scale9Grid="3,3,4,4" width="249" height="63" visible="true" locked="true"/>
+</e:Skin>

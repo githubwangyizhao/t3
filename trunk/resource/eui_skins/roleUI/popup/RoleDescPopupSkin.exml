@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleDescPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17935519dcf"/>
+	<e:Image x="159" y="103" visible="true" source="roleDescUI_json.roleDescUI_bg" scale9Grid="44,75,44,12" width="815" height="450"/>
+	<e:Image source="roleDescUI_json.roleDescUI_title_bg" y="106" horizontalCenter="-6.5" visible="true"/>
+	<e:Image source="roleDescUI_json.roleDescUI_title" x="519" y="112" visible="true"/>
+	<e:Label id="u_txtHeroName" text="魔装" y="164" size="24" textColor="0xFFE062" visible="true" fontFamily="Microsoft YaHei" x="187" bold="true" strokeColor="0x000000"/>
+	<e:Image source="roleDescUI_json.roleDescUI_line" x="184" y="194" visible="true"/>
+	<e:Scroller id="u_scrollerItem" width="780" height="320" y="205" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="185">
+		<e:Group x="59">
+		<e:Label id="u_txtMsg" fontFamily="Microsoft YaHei" text="孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空孙悟空" y="10" textAlign="left" anchorOffsetX="0" size="16" anchorOffsetY="0" x="0" width="780" lineSpacing="8" strokeColor="0x453A32" wordWrap="true" textColor="0x9A9A9B"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_btnClose" x="881" y="105" visible="true" width="93" height="34" source="commonUI_json.commonUI_btn_close_4"/>
+</e:Skin>

@@ -1,0 +1,75 @@
+//OPEN_DEBUG
+//道具
+message Prop {
+    required int32 prop_id = 1;         // 道具id
+    required uint64 num = 2;            // 道具数量
+}
+
+// 奖励状态
+message awardState {
+    required int32 id = 1;              // 编号id
+    required int32 state = 2;           // 状态(0:不可领取、1：可领取、2：已领取)
+}
+
+// 背包
+message Bag {
+    required int32 bag_type = 1;        // 背包类型
+    required int32 num = 2;             // 格子数
+}
+
+//通知道具列表更新
+message m_notice_update_prop_toc {
+    repeated Prop prop_list = 1; //道具列表更新
+    required int32 log_type = 2;// 日志类型
+}
+
+//使用物品
+message m_use_item_tos {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+}
+message m_use_item_toc {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        no_condition = 3;// 条件不足
+    }
+    required ENUM result = 3;
+    repeated Prop prop_list = 4; // 道具列表
+}
+
+//出售物品
+message m_sell_item_tos {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+}
+message m_sell_item_toc {
+    required int32 item_id = 1; // 物品ID
+    required int32 num = 2;     // 物品数量
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+    }
+    required ENUM result = 3;
+    repeated Prop prop_list = 4; //获得的道具列表
+}
+
+// 合成
+message m_merge_tos {
+    required int32 id = 1;      // id
+    required int32 num = 2;     // 数量
+}
+message m_merge_toc {
+    enum ENUM {
+        success = 1;            // 成功
+        fail = 2;               // 失败
+        no_enough_prop = 3;     // 材料不够
+        not_enough_grid = 4;    // 格子不够
+        not_authority = 5;      // 未在合成时间内
+    }
+    required ENUM result = 1;   // 结果
+    required int32 id = 2;      // Id
+    required int32 num = 3;     // 数量
+}

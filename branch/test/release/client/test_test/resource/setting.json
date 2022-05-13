@@ -1,0 +1,16 @@
+{
+	"cdn":"http://47.102.119.76:7080/game/resource/",
+	"versions":"2021120303",
+	"firstversions":"2021101901",
+	"isdebug":0,
+	"channel":"test",
+	"platform_id":"test",
+	"server_list_url_recent":"http://47.102.119.76:7001/login?platform_id=test&acc_id=[acc_id]&password=[password]&channel=test&promote=[promote]&version=[version]&app_id=[app_id]",
+	"server_list_url_all":"http://47.102.119.76:7001/all?platform_id=test&acc_id=[acc_id]&channel=test",
+	"server_list_group_num":100,
+	"is_product":"http://192.168.31.100:6663/version",
+	"is_open": 1,
+	"upgrade": "http://192.168.31.100:6663/upgrade?app_id=[app_id]&version=[version]&platform=[platform]&mode=production",
+	"static_resource": "http://192.168.31.100:6663/static_resource?app_id=[app_id]&version=[version]"
+
+}

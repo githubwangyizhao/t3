@@ -1,0 +1,582 @@
+import "05_prop.proto";
+import "03_fight.proto";
+
+//伤害排行榜
+message HurtRanking {
+    required int32 ranking = 1; //名次
+    required int32 player_id = 2; //玩家id
+    required string player_name = 3; //玩家名称
+    required uint32 hurt = 4; //伤害
+}
+
+//挑战副本
+message m_challenge_mission_tos {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //副本id
+}
+
+//挑战副本
+message m_challenge_mission_toc {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //副本id
+    enum ENUM {
+        success = 1; //成功
+        function_no_open = 2; //功能未开启
+        fail = 3; // 失败
+        activity_no_open = 4; // 活动未开启
+        not_online = 5; // 怪物已死亡
+        times_limit = 6;// 次数限制
+        not_authority = 8;  // 不满足可挑战条件
+        time_limit = 9;     // 时间限制
+    }
+    required ENUM result = 3;
+}
+
+//通知副本挑战结果
+message m_notice_mission_result_toc {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //副本id
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+    }
+    required ENUM result = 3;
+    repeated Prop add_prop_list = 4; //获取的道具列表
+}
+
+//退出副本
+message m_exit_mission_tos {
+}
+
+//通关副本
+message passed_mission {
+    required int32 mission_type = 1; //副本类型
+    required int32 mission_id = 2; //通关副本id
+}
+
+//通知更新通关副本
+message m_notice_passed_mission_toc {
+    required passed_mission passed_mission = 1; //通关副本
+}
+
+//通知副本结束时间戳
+message m_notice_mission_close_time_toc {
+    required int32 time = 1; //副本结束时间戳
+}
+
+//通知副本波次
+message m_notice_mission_round_toc {
+    required int32 total_round = 1; //总波次
+    required int32 round = 2; //当前波次
+}
+
+//通知累计奖励
+message m_notice_total_award_toc {
+    repeated Prop total_prop_list = 1; //累计获取的道具列表
+}
+
+//通知副本伤害排行
+message m_notice_mission_ranking_toc {
+    repeated HurtRanking hurt_ranking_list = 1; //伤害排名列表
+    required int32 self_hurt = 2; //自己的伤害
+    required int32 mission_type = 3; //副本类型
+    required int32 self_rank = 4; //自己的排名
+}
+
+//领取奖励
+message m_get_award_tos {
+    required int32 type = 1; //1 单倍奖励 3: 三倍 5: 五倍奖励
+}
+
+//领取奖励
+message m_get_award_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2; // 失败
+        no_enough_prop = 3; //道具不足
+    }
+    required ENUM result = 1;
+}
+
+//通知副本进度
+message m_notice_mission_schedule_toc {
+    required int32 total_value = 1; //总进度数量
+    required int32 now_value = 2; //当前进度
+}
+
+//boss 立即复活
+message m_boss_rebirth_tos {
+    required int32 mission_type = 1;        //副本类型(仅 围剿boss 和猎杀boss 有效)
+    required int32 mission_id = 2;        //副本id
+}
+//boss 立即复活
+message m_boss_rebirth_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        already_rebirth = 3;// 已经复活
+        no_enough_prop = 4; // 道具不足
+    }
+    required ENUM result = 1;
+    required int32 mission_type = 2;   //副本类型
+    required int32 mission_id = 3;   //副本id
+}
+
+// ------------------------时时副本------------------------
+// 时时副本通知结果
+message m_notice_shi_shi_settle_toc {
+    required int32 winPlayerId = 1; // 赢的玩家Id
+    required string winName = 2;     // 赢的名字
+    required int64 value = 3;       // 赢的奖励
+    required int32 next_type = 4;   // 类型(0:休息,1:最终大奖,2:小奖)
+    required int32 type = 5;        // 类型(0:休息,1:最终大奖,2:小奖)
+    required int32 nextEndTime = 6; // 下一次结算时间
+    message last_data{
+        required string lastWinName = 1;     // 小奖得主名字
+        required int64 lastValue = 2;        // 小奖得主赢的奖励
+    }
+    repeated last_data last_data_list = 7;   // 只有在大奖时有用
+    optional int32 total_cost_value = 8;     // 总消耗值，在大奖才有
+}
+// 时时副本时间(玩家进入副本时给)
+message m_notice_shi_shi_time_toc {
+    required int32 type = 5;        // 类型(0:休息,1:最终大奖,2:小奖)
+    required int32 nextEndTime = 6; // 下一次结算时间
+    required int64 value = 7;      // 当前总积分
+}
+// 时时副本总积分值(定时)
+message m_notice_shi_shi_value_toc {
+    required int64 value = 7;      // 当前总积分
+}
+// -----------------------------end
+
+//----------------------猜一猜副本 start -----------------------------
+// 猜一猜记录
+message GuessBossRecord {
+    required int32 id = 1;                              //期数id
+    required int32 boss_id = 2;                         //boss_id
+}
+
+// 猜一猜消耗
+message GuessBossCost {
+    required int32 boss_id = 1;                         //boss_id
+    required uint64 num = 2;                            //消耗数量
+}
+
+// 获得猜一猜各期记录
+message m_guess_get_record_tos {
+}
+message m_guess_get_record_toc {
+    repeated GuessBossRecord guess_boss_record_list = 1;//猜boss记录列表
+}
+
+// 通知猜一猜自己消耗的灵力值 使用lucky_boss_
+message m_notice_guess_boss_cost_my_mana_toc {
+    repeated GuessBossCost guess_boss_cost = 1;         //猜boss的消耗
+}
+
+// 通知猜一猜全部人消耗的灵力值
+message m_notice_guess_boss_cost_total_mana_toc {
+    repeated GuessBossCost guess_boss_cost = 1;         //猜boss的消耗
+}
+
+// 猜一猜结果战斗
+message GuessBossResultFight {
+    required int32 round_id = 1;                        //第几轮
+    required int32 attack_id = 2;                       //攻击BossId
+    repeated int32 die_id_list = 3;                     //死亡BossId列表
+}
+
+//通知猜一猜副本挑战结果
+message m_notice_guess_boss_mission_result_toc {
+    required int32 boss_id = 1;                         //死亡boss_id
+    repeated Prop award_list = 2;                       //获取的道具列表
+    repeated GuessBossResultFight guess_boss_result_fight_list = 3;//战斗过程列表
+    repeated int32 boss_id_list = 4;                    //boss位置随机列表
+    optional int32 total_cost_value = 5;                //总消耗值
+}
+
+//通知猜一猜副本挑战时间和状态
+message m_notice_guess_boss_mission_time_toc {
+    required int32 state = 1;                           //状态(1:战斗中,0:等待boss复活)
+    required int32 timestamp = 2;                       //结束时间戳
+}
+//----------------------猜一猜副本 end -----------------------------
+
+// ------------------------时时副本------------------------
+// 选择副本通知状态
+message m_either_notice_state_toc {
+    required int32 round = 1;           // 轮数
+    required int32 type = 2;            // 类型(0:战斗,1:选择)
+    required int32 award_value = 3;     // 奖励金币值
+    required int32 end_time = 4;        // 结束时间
+}
+
+// 选择副本玩家选择
+message m_either_either_tos {
+    required int32 either_value = 1;    // 类型(0:离开,1:继续)
+}
+
+// 选择副本通知玩家结果
+message m_either_notice_result_toc {
+    required int32 result_state = 1;    // 类型(0:自己选择离开,1:选择失败,2:时间到了,被踢出去,3:通关)
+    required int32 award_value = 2;     // 奖励金币值
+}
+// -----------------------------end
+
+// ------------------------场景boss副本------------------------
+// 场景boss 竞猜数据
+message SceneBossBet {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+    required int32 id = 2;                                  //id
+    required int32 my_num = 3;                              //自己的数量
+    required int32 total_num = 4;                           //总数量
+}
+
+// 场景boss 竞猜奖励
+message SceneBossBetAward {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+    required int32 id = 2;                                  //id
+    required int32 num = 3;                                 //奖励数量
+}
+
+// 场景boss 竞猜
+message m_scene_boss_bet_tos {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+    required int32 id = 2;                                  //id
+    required int32 num = 3;                                 //数量
+}
+
+// 场景boss 竞猜重置
+message m_scene_boss_bet_reset_tos {
+    required int32 type = 1;                                //类型(0:位置;1:刀数;2:秒数)
+}
+
+// 通知场景boss 竞猜
+message m_notice_scene_boss_bet_toc {
+    repeated SceneBossBet scene_boss_bet_list = 1;          //场景boss 竞猜数据列表
+}
+
+// 通知场景boss 阶段
+message m_notice_scene_boss_step_toc {
+    required int32 step = 1;                                //阶段(1:竞猜,2:战斗中)
+    required int32 time = 2;                                //结束时间戳
+}
+
+// 通知场景boss 挑战结果
+message m_notice_scene_boss_result_toc {
+    required int32 result = 1;                              //结果(0:失败;1:胜利)
+    required string win_name = 2;                           //胜利玩家的名字(空字符串即为自己)
+    required int32 win_award_value = 3;                     //胜利玩家击杀boss奖励
+    repeated SceneBossBetAward scene_boss_bet_award = 4;    //竞猜奖励列表
+    required int32 player_id = 5;                           //胜利玩家id
+    repeated Prop prop_list = 6;                            //奖励道具列表
+}
+
+// 通知场景boss 猜刀数副本 刀数改变
+message m_notice_scene_boss_dao_num_change_toc {
+    required int32 value = 1;                               //刀数
+}
+
+// 通知场景boss 猜位置副本 位置改变
+message m_notice_scene_boss_boss_update_pos_toc {
+    required int32 pos_id = 1;                              //位置
+}
+
+// -----------------------------end
+
+// ---------------------------新六选一副本start-------------
+// 开始移动
+message GuessSceneMove {
+    required int64 time = 1;
+    required int32 monster_id = 2;
+    required int32 x = 3;                   // 目标x
+    required int32 y = 4;                   // 目标y
+}
+
+// 结束移动
+message GuessSceneStepMove {
+    required int64 time = 1;
+    required int32 monster_id = 2;
+    required int32 x = 3;                   // 到达x
+    required int32 y = 4;                   // 到达y
+}
+
+// 战斗
+message GuessSceneFight {
+    required int64 time = 1;
+    required int32 monster_id = 2;
+    required int32 skill_id = 3;
+    required int32 target_monster_id = 4;    // 目标怪物id
+    message GuessSceneFightDefender{
+        required int32 monster_id = 1;          // 怪物id
+        required uint32 hp = 2;                 // 血量(为0死亡)
+    }
+    repeated GuessSceneFightDefender defender_list = 5; // 受攻击列表
+}
+
+// 通知新的六选一副本战斗结果
+message m_notice_new_guess_result_toc {
+    repeated GuessSceneMove move_list = 1;
+    repeated GuessSceneStepMove stop_move_list = 2;
+    repeated GuessSceneFight fight_list = 3;
+    message BetAward{
+        required int32 bet = 1;                 // 竞猜id
+        required uint32 award_value = 2;        // 奖励
+    }
+    repeated BetAward bet_award_list = 4;       // 竞猜奖励
+}
+
+// 下注
+message m_lucky_boss_bet_tos {
+    required int32 pos = 1;     // 下注类型
+    required int32 bet = 2;         // 注
+}
+
+message BetModification {
+    required int32 pos = 1; // boss位置
+    required int32 bet = 2; // 指定位置的boss的下注总数
+}
+
+// 下注结果
+message m_lucky_boss_bet_toc {
+    enum ENUM {
+        success = 1; //成功
+        no_enough_prop = 2; // 道具不足
+        already_start = 3; // 已经开始
+        not_authority = 4;  // 已达上限
+        none = 5;           // 还没开始
+        unknown = 6;       // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 清空下注
+message m_lucky_boss_bet_reset_tos {
+
+}
+
+// 清空下注结果
+message m_lucky_boss_bet_reset_toc {
+    enum ENUM {
+        success = 1; //成功
+        failure = 2; // 失败
+        unknown = 3; // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 通知所有玩家，总的下注信息(数值不包含接收消息玩家自己的下注值)
+message m_lucky_boss_bet_modification_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 推送给指定玩家，他自己的下注情况
+message m_lucky_boss_bet_info_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 查询六选一状态
+message m_lucky_boss_status_tos {
+    required int32 operation = 1;                       // 1: 为进入下注页面，0: 为离开下注页面
+}
+
+// 查询六选一状态 返回结果
+message m_lucky_boss_status_toc {
+    required int32 state = 1;                           // 状态 0为等待开始投注，1为等待进入倒计时，3为
+    required int32 timestamp = 2;                       // 结束时间戳
+    required int32 players = 3;                         // 点开投注页面的玩家数量
+    optional int32 operation = 4;                       // 1: 为进入下注页面，0: 为离开下注页面
+    optional int32 previous_timestamp = 5;              // 上一个状态的开始时间戳
+}
+
+// 猜一猜结果通知协议
+message m_notice_lucky_boss_result_toc {
+    required int32 boss_id = 1;                         // 死亡boss_id
+    repeated Prop award_list = 2;                       // 获取的道具列表
+}
+
+// 1v1被攻击者
+message OneOnOneDefenderResult {
+    required int32 defender_id = 1;         // 被攻击者id
+    required int32 defender_type = 2;       // 被攻击者类型(1:玩家 2:怪物)
+    required uint32 hp = 3;                 // 血量
+    required uint32 hurt = 4;               // 伤害
+    enum ENUM {
+        normal = 1;    //普通
+        dodge = 2;     //闪避
+        crit = 3;      //暴击
+    }
+    required ENUM type = 5;                 // 攻击结果类型
+    required int32 x = 6;                   // 击退坐标 >0 有效
+    required int32 y = 7;                   // 击退坐标 >0 有效
+    repeated Buff buff_list = 8;            // 添加的buff列表
+    repeated Effect effect_list = 9;        // 触发的effect列表
+    repeated HurtSection hurt_section_list = 10;// 伤害列表
+    required int32 total_mano = 11;         // 累计灵力值
+    required int32 all_total_mano = 12;     // 全部玩家累计灵力值
+    required int32 beat_times= 13;          // 受击次数
+    required int32 mano_award = 14;         // 灵力值奖励
+
+    required int32 exp = 17;                // 經驗
+
+    required int32 special_event = 18;      // 特殊事件 1:召唤怪 2:红包雨 3:翻牌 12:炸弹怪 15:金币小妖
+    required int32 dizzy_close_time = 19;   // 眩晕结束时间
+    required int32 award_player_id = 20;    // 获得奖励的玩家id
+    required int64 timestamp = 21;          // 飘血时间戳
+}
+
+message m_notice_lucky_boss_fight_toc {
+    required int32 attacker_id = 1;         // 攻击者id
+    required int32 attacker_type = 2;       // 攻击者类型(1:玩家 2:怪物 3:妖灵 4:法宝)
+    required int32 x = 3;                   // boss目标坐标
+    required int32 y = 4;                   // boss目标坐标
+    required int32 dir = 5;                 // boss朝向
+    required int32 target_id = 6;           // 目标id
+    required int32 target_type = 7;         // 目标者类型
+    required int32 skill_id = 8;            // 技能id
+    required int32 skill_level = 9;         // 技能等级
+    repeated OneOnOneDefenderResult defender_result_list = 13; //被攻击者列表
+    required int32 anger = 18;              // 怒氣
+    required int64 timestamp = 19;          // 时间戳
+}
+
+message WinnerRate {
+    required int32 boss_id = 1; // 英雄id
+    required float rate = 2; // 胜率：0.xx
+    required int32 monster_id = 3; // 怪物id
+}
+
+message m_notice_one_on_one_rate_toc {
+    repeated WinnerRate winne_rate = 2;
+}
+
+message m_notice_ready_notice_toc {
+    required int32 delay = 1; // 倒计时的秒数
+}
+
+// 2021-07-20 hero versus boss新协议
+// 下注
+message m_hero_versus_boss_bet_tos {
+    required int32 pos = 1;     // 下注类型
+    required int32 bet = 2;         // 注
+}
+
+// 下注结果
+message m_hero_versus_boss_bet_toc {
+    enum ENUM {
+        success = 1; //成功
+        no_enough_prop = 2; // 道具不足
+        already_start = 3; // 已经开始
+        not_authority = 4;  // 已达上限
+        none = 5;           // 还没开始
+        unknown = 6;       // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 清空下注
+message m_hero_versus_boss_bet_reset_tos {
+
+}
+
+// 清空下注结果
+message m_hero_versus_boss_bet_reset_toc {
+    enum ENUM {
+        success = 1; //成功
+        failure = 2; // 失败
+        unknown = 3; // 未知错误
+    }
+    required ENUM result = 1;
+}
+
+// 通知所有玩家，总的下注信息(数值不包含接收消息玩家自己的下注值)
+message m_hero_versus_boss_bet_modification_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 推送给指定玩家，他自己的下注情况
+message m_hero_versus_boss_bet_info_toc {
+    repeated BetModification bet_modification = 1; // 所有玩家下注情况
+}
+
+// 猜一猜结果通知协议
+message m_notice_hero_versus_boss_result_toc {
+    required int32 boss_id = 1;                         // 死亡boss_id
+    repeated Prop award_list = 2;                       // 获取的道具列表
+}
+
+// 查询六选一状态 返回结果
+message m_hero_versus_boss_status_toc {
+    required int32 state = 1;                           // 状态 0为等待开始投注，1为等待进入倒计时，3为
+    required int32 timestamp = 2;                       // 结束时间戳
+    required int32 players = 3;                         // 点开投注页面的玩家数量
+    optional int32 operation = 4;                       // 1: 为进入下注页面，0: 为离开下注页面
+    optional int32 previous_timestamp = 5;              // 上一个状态的开始时间戳
+    optional int32 winner_hero = 6;                     // 不为0: 获胜hero_id; 0为: 没有到显示英雄庆祝动作的时候
+}
+
+// hero versus boss 被攻击者
+message HeroVersusBossDefenderResult {
+    required int32 defender_id = 1;         // 被攻击者id
+    required int32 defender_type = 2;       // 被攻击者类型(1:玩家 2:怪物)
+    required uint32 hp = 3;                 // 血量
+    required uint32 hurt = 4;               // 伤害
+    enum ENUM {
+        normal = 1;    //普通
+        dodge = 2;     //闪避
+        crit = 3;      //暴击
+    }
+    required ENUM type = 5;                 // 攻击结果类型
+    required int32 x = 6;                   // 击退坐标 >0 有效
+    required int32 y = 7;                   // 击退坐标 >0 有效
+    repeated Buff buff_list = 8;            // 添加的buff列表
+    repeated Effect effect_list = 9;        // 触发的effect列表
+    repeated HurtSection hurt_section_list = 10;// 伤害列表
+    required int32 total_mano = 11;         // 累计灵力值
+    required int32 all_total_mano = 12;     // 全部玩家累计灵力值
+    required int32 beat_times= 13;          // 受击次数
+    required int32 mano_award = 14;         // 灵力值奖励
+
+    required int32 exp = 17;                // 經驗
+
+    required int32 special_event = 18;      // 特殊事件 1:召唤怪 2:红包雨 3:翻牌 12:炸弹怪 15:金币小妖
+    required int32 dizzy_close_time = 19;   // 眩晕结束时间
+    required int32 award_player_id = 20;    // 获得奖励的玩家id
+    required int64 timestamp = 21;          // 飘血时间戳
+}
+
+// hero versus boss 战斗协议
+message m_notice_hero_versus_boss_fight_toc {
+    required int32 attacker_id = 1;         // 攻击者id
+    required int32 attacker_type = 2;       // 攻击者类型(1:玩家 2:怪物 3:妖灵 4:法宝)
+    required int32 x = 3;                   // boss目标坐标
+    required int32 y = 4;                   // boss目标坐标
+    required int32 dir = 5;                 // boss朝向
+    required int32 target_id = 6;           // 目标id
+    required int32 target_type = 7;         // 目标者类型
+    required int32 skill_id = 8;            // 技能id
+    required int32 skill_level = 9;         // 技能等级
+    repeated HeroVersusBossDefenderResult defender_result_list = 13; //被攻击者列表
+    required int32 anger = 18;              // 怒氣
+    required int64 timestamp = 19;          // 时间戳
+}
+
+message m_notice_hero_versus_boss_rate_toc {
+    repeated WinnerRate winne_rate = 2;
+}
+
+message HeroVersusBossRecord {
+    required int32 hero_id = 1;                         // 英雄id
+    required int32 monster_id = 2;                      // 怪物id
+    required int32 winner = 3;                          // 胜者（0为英雄，1为怪物）
+    required int32 timestamp = 4;                       // 战斗时间，时间戳
+}
+
+// 获得猜一猜各期记录
+message m_get_hero_versus_boss_record_tos {
+    required int32 hero_id = 1;                         // 英雄id
+}
+message m_get_hero_versus_boss_record_toc {
+    repeated HeroVersusBossRecord hero_versus_boss_record = 1;  //猜boss记录列表
+}

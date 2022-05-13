@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatPlayerPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d322e3491"/>
+	<e:Image anchorOffsetX="0" y="159" anchorOffsetY="0" source="commonUI_json.commonUI_img_popdi" scaleY="1" width="523" height="263" visible="true" horizontalCenter="0" scale9Grid="33,71,33,403"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" scaleY="1" scaleX="1" y="161" horizontalCenter="0" visible="true"/>
+	<e:Image y="167" visible="true" source="chatUI_json.chatUI_txt_info" horizontalCenter="0"/>
+	<e:Image source="commonUI_json.commonUI_img_inner" y="207" width="502" height="148" scale9Grid="23,10,24,11" visible="true" horizontalCenter="0"/>
+	<e:Image id="u_btnCLose" source="commonUI_json.commonUI_btn_close_4" x="734" y="161" visible="true"/>
+	<e:Group y="231" x="332">
+		<e:Image id="u_imgHead" width="80" height="80" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="u_imgFrame" width="100" height="100" x="0" y="0"/>
+	</e:Group>
+	<e:Image id="u_imgVip" source="userMainUI_json.userMainUI_c_vip_1" width="37" height="24" x="443" y="225" visible="true"/>
+	<e:Group id="u_btnChat" y="366" touchChildren="false" width="122" height="46" x="418" visible="true">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Image source="chatUI_json.chatUI_txt_chat" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_btnGift" y="366" touchChildren="false" width="122" height="46" x="597" visible="true">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image source="chatUI_json.chatUI_txt_gift" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_txtName" text="玩家名字" y="230" size="16" textAlign="left" x="450" visible="true" scaleX="1" scaleY="1" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x000000"/>
+	<e:Label id="u_txtID" text="ID：11111" y="260" size="16" textAlign="left" x="450" visible="true" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x000000" textColor="0xA5A5A5"/>
+	<e:Label id="u_txtMsgTitle" text="签名：" y="290" size="16" textAlign="left" x="450" visible="true" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x000000" textColor="0xA5A5A5"/>
+	<e:Label id="u_txtMsg" text="签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名签名" y="290" size="16" textAlign="left" x="497" visible="true" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" stroke="1" strokeColor="0x000000" width="310" height="45" textColor="0xA5A5A5" lineSpacing="8"/>
+</e:Skin>

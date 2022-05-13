@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldTreeNoticeSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17d4694d9d2"/>
+	<e:Image source="worldTreeNoticeUI_json.worldTreeNoticeUI_di" x="222.467" y="359.769" width="762.483" scale9Grid="45,40,45,40" visible="true"/>
+	<e:Image source="worldTreeNoticeUI_json.worldTreeNoticeUI_top" x="585.361" y="334.812"/>
+	<e:Scroller id="u_heroScroll" width="638" height="106" x="284.796" y="366.826">
+		<e:List id="u_heroList"/>
+	</e:Scroller>
+	<e:Label id="u_txtNotice" text="提升世界树等级，激活英雄将回馈更多奖励！" y="559.965" size="16" fontFamily="Microsoft YaHei" x="410" visible="false" textColor="0xD9E0E7"/>
+	<e:Image id="u_btnLeft" rotation="180" visible="true" source="worldTreeNoticeUI_json.worldTreeNoticeUI_jiantou" width="58" height="69" horizontalCenter="-312" verticalCenter="95.5"/>
+	<e:Image id="u_btnRight" visible="true" source="worldTreeNoticeUI_json.worldTreeNoticeUI_jiantou" width="58" height="69" horizontalCenter="384" y="383"/>
+	<e:Image id="u_btnRule" source="worldTreeNoticeUI_json.worldTreeNoticeUI_rule" x="964.999" y="326.669" visible="true" width="44" height="44"/>
+	<e:Label id="u_txtTip" text="点击空白处区域关闭" x="817.356" y="480.641" size="16" fontFamily="Microsoft YaHei" textColor="0xA1B1C9" stroke="1" visible="true"/>
+	<e:Group x="231.84" y="337" touchEnabled="false" touchChildren="false">
+		<e:Image source="worldTreeNoticeUI_json.worldTreeNoticeUI_hero" x="-41.6" y="-6.200000000000017" scaleX="1" scaleY="1"/>
+		<e:Image scaleX="1" scaleY="1" source="worldTreeNoticeUI_json.worldTreeNoticeUI_lv" x="128.052" y="-6.248"/>
+		<e:Group id="u_grpHero" height="20" left="103" y="-5.652"/>
+		<e:Group id="u_grpLv" height="20" left="286" y="-5.692"/>
+	</e:Group>
+	<e:Image y="332.64" x="607.074" source="worldTreeNoticeUI_json.worldTreeNoticeUI_djtime" scaleX="0.45" scaleY="0.45"/>
+</e:Skin>

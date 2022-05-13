@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DailyTaskBoxRewardPop"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image y="152.615" width="527.086" height="333.152" horizontalCenter="0" visible="true" source="commonUI_json.commonUI_img_popdi" scale9Grid="38,74,33,394"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" y="154" horizontalCenter="0"/>
+	<e:Image source="luckyDrawUI_json.luckyDrawUI_rewardTitle" y="162" horizontalCenter="5"/>
+	<e:Image id="u_btnClose" x="735" y="155" source="commonUI_json.commonUI_btn_close_4"/>
+	<e:Image y="227" width="498" height="171" horizontalCenter="0" source="commonUI_json.commonUI_img_inner" scale9Grid="17,9,39,14"/>
+	<e:Group id="u_btnGrp" y="415" horizontalCenter="0" visible="true">
+		<e:Image id="u_btnBg" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow" x="0"/>
+		<e:Image id="u_btnName" source="commonUI_json.commonUI_img_get" x="0" y="1"/>
+	</e:Group>
+</e:Skin>

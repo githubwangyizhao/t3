@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RedPacketUISkin" width="640" height="192" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="redPacketUI_json.redPacketUI_bj" horizontalCenter="0"/>
+	<e:Label id="u_txtMsg" text="Add another another, another anotheranother another" y="41" size="26" bold="true" width="439" wordWrap="true" lineSpacing="10" horizontalCenter="0.5" height="116" textAlign="center" verticalAlign="middle" stroke="2" strokeColor="0x9a3612" textColor="0xfaedad"/>
+</e:Skin>

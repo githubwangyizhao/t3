@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightTendencyRenderSkin"
+	 width="50"
+	height="445" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image id="u_imgBg" horizontalCenter="0" scale9Grid="17,17,16,16" height="445" width="50" fillMode="scale" source="endlessFightTrendUI_json.endlessFightTrendUI_renderBg"/>
+	<ns1:NumberView id="u_sortNum" width="30" height="16" y="13" horizontalCenter="0"/>
+	<ns1:NumberView width="30" height="16" y="54" horizontalCenter="0" id="u_num0" x="20"/>
+	<ns1:NumberView width="30" height="16" y="94.5" horizontalCenter="0" id="u_num1" x="30"/>
+	<ns1:NumberView width="30" height="16" y="135" horizontalCenter="0" id="u_num2" x="30"/>
+	<ns1:NumberView width="30" height="16" y="175.5" horizontalCenter="0" id="u_num3" x="30"/>
+	<ns1:NumberView width="30" height="16" y="216" horizontalCenter="0" id="u_num5" x="40"/>
+	<ns1:NumberView width="30" height="16" y="256.5" horizontalCenter="0" id="u_num6" x="40"/>
+	<ns1:NumberView width="30" height="16" y="297" horizontalCenter="0" id="u_num7" x="50"/>
+	<ns1:NumberView width="30" height="16" y="337.5" horizontalCenter="0" id="u_num8" x="60"/>
+	<ns1:NumberView width="30" height="16" y="378" horizontalCenter="0" id="u_num4" x="30"/>
+	<ns1:NumberView width="30" height="16" y="418.5" horizontalCenter="0" id="u_num9" x="40"/>
+</e:Skin>

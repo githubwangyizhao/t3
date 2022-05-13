@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginXieyiSkin" width="970" height="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image anchorOffsetY="0" width="865" height="528" y="6" visible="true" horizontalCenter="0.5" source="loginUI_bg_1" scale9Grid="311,144,20,16"/>
+	<e:Label id="u_txtTitle" y="15.61" size="26" bold="true" horizontalCenter="1" x="248" textColor="0xFFE062" stroke="2" italic="true" text="Title"/>
+	<e:Label id="u_txtLoading" text="loading..." size="40" bold="true" horizontalCenter="0.5" x="258" y="230" textColor="0x00FF1D"/>
+	<e:Label id="u_txtTishi" size="20" horizontalCenter="0.5" x="268" y="541" textColor="0xF0E4B0" stroke="2" text="time"/>
+	<e:Scroller id="u_scrollerItem" width="755" height="414" y="65.5" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group x="59" y="161">
+		<e:Label id="u_txtMsg" y="0" textAlign="left" anchorOffsetX="0" size="20" anchorOffsetY="0" x="0" width="755" lineSpacing="10" strokeColor="0x453A32" wordWrap="true" textColor="0xF0E4B0"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

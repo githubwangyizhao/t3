@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BoxBalanceViewSkin"
+	 width="879"
+	height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_mcCont" x="0" y="0">
+		<e:Image source="boxBalanceUI_json.boxBalanceUI_boxlist" x="0" y="0"/>
+		<e:Image id="u_imgJiang" source="boxBalanceUI_json.boxBalanceUI_jiaIcon" x="97.99" y="3.75"/>
+		<e:Group height="48" verticalCenter="1" left="155">
+			<e:Group x="0" y="0">
+			<e:Image id="u_imghead" scaleX="0.3" scaleY="0.3" x="6" y="6"/>
+			<e:Image id="u_imgframe" scaleX="0.4" scaleY="0.4" horizontalCenter="-21" verticalCenter="-21"/>
+			</e:Group>
+			<e:Label id="u_txtName" y="16" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" size="18" left="55" textColor="0xF0E4B0"/>
+		</e:Group>
+		<e:Group id="u_grpAward" height="42" y="10.5" left="379"/>
+	</e:Group>
+</e:Skin>

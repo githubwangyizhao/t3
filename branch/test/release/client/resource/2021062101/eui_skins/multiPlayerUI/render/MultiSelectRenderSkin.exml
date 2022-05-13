@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiSelectRenderSkin"
+	 width="400"
+	height="56" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="multiPlayerUI_json.multiPlayerUI_select_di2" y="0" horizontalCenter="0"/>
+	<e:Label id="u_txtBoss" text="BOSS 1" x="19" bold="true" size="20" visible="true" verticalCenter="0"/>
+	<e:Label text="Limit:VIP1" x="120" bold="true" size="20" visible="true" id="u_txtLimit" verticalCenter="0" y="18"/>
+	<e:Label text="Mana:2000" x="256" bold="true" size="20" visible="true" id="u_txtMana" verticalCenter="0" y="18"/>
+</e:Skin>

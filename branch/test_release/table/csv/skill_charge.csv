@@ -1,0 +1,7 @@
+skill_charge,,,,,,,,
+int|key,str,str,int,int,int,int,str,str
+,,,,,,,,
+id,sign,desc,charge_time,charge_cd_time,times,inti_times,parameter_desc,parameter_list
+"充能","标识","描述","回复时间ms","使用间隔时间ms","最大累计次数","进场景初始次数","参数描述","参数列表"
+1,teleport,突进技能,500,0,3,1,突进距离,"[300]"
+2,single_goal,单体技能,10000,0,1,0,攻击次数（当今拥有值，小于当前消耗*次数，提示击毙/钻石不足）,"[50]"

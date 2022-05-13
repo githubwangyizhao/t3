@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PromoteRuleSkin"
+	 width="436"
+	height="191" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17609095708"/>
+	<e:Image x="0" y="0" visible="true" scale9Grid="203,124,49,21" source="shareUI_json.shareUI_bg_zs"/>
+	<e:Image source="shareUI_json.shareUI_rule_title" y="10" horizontalCenter="0"/>
+	<e:Scroller width="400" height="130" x="18" y="50" id="u_scrollerItem">
+		<e:Group>
+		<e:Label id="u_txtMsg" text="规则" textColor="0xF0E4B0" size="14" width="400" wordWrap="true" lineSpacing="12" y="3" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

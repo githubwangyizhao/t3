@@ -1,0 +1,1 @@
+ALTER TABLE `player_gift_mail` ADD COLUMN `is_del` TINYINT not null default 0 COMMENT '是否删除' AFTER `state`;

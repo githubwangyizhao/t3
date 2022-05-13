@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnChipSelectRenderSkin"
+	 width="100"
+	height="107" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfd9a0e7f"/>
+	<e:Group id="u_grpParent" width="100" height="107" visible="true" horizontalCenter="0" touchChildren="false">
+		<e:Image id="u_imgIcon" scaleX="1" scaleY="1" visible="true" horizontalCenter="0.5" verticalCenter="5" source="carTurnUI_json.carTurnUI_img_chip_500"/>
+		<e:Image id="u_imgLight" source="carTurnUI_json.carTurnUI_chip_select" visible="true"/>
+		<e:Image id="u_imgSelect" source="carTurnUI_json.carTurnUI_chip_select_1" x="65.028" y="66" visible="true"/>
+	</e:Group>
+</e:Skin>

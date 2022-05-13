@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.ChangeNamePopup"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17aaf62a315"/>
+	<e:Image anchorOffsetX="0" y="157.201" anchorOffsetY="0" scaleY="1" width="525" height="323.936" visible="true" fillMode="scale" source="commonUI_json.commonUI_img_popdi" scale9Grid="33,124,33,291" horizontalCenter="0"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" scaleY="1" scaleX="1" y="158.508" horizontalCenter="0"/>
+	<e:Image y="166" source="gameSettingUI_json.gameSettingUI_title1" horizontalCenter="0" visible="true"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="735" y="158.679" width="93" height="34"/>
+	<e:Label id="u_tipLb" text="请输入新的名称(最多6个字)" y="235" size="18" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Image source="commonUI_json.commonUI_img_inner" y="283" scale9Grid="23,10,24,11" width="402" height="45" horizontalCenter="0"/>
+	<e:EditableText id="u_editText" width="401" x="368" y="296" textAlign="center" size="20" prompt="昵称" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_freeTip" text="首次免费" y="357" size="16" horizontalCenter="0" visible="false" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+	<e:Group id="u_costGrp" y="345" horizontalCenter="0">
+		<e:Image id="u_costItem" source="commonUI_json.commonUI_icon_4" x="0" y="0" width="40" height="40"/>
+		<e:Label id="u_costLb" text="消耗：5000" x="41" size="16" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_cancelBtn" x="399" y="411" width="122" height="46">
+		<e:Image x="0" y="0" width="122" height="46" scale9Grid="58,17,59,16" source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Image source="gameSettingUI_json.gameSettingUI_cancel" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="u_confirmBtn" x="619" y="411" width="122" height="46">
+		<e:Image x="0" y="0" width="122" height="46" visible="true" scale9Grid="58,17,59,16" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image source="gameSettingUI_json.gameSettingUI_confirm" x="0" y="0"/>
+	</e:Group>
+</e:Skin>

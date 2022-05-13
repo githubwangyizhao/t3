@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmRunAwayUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBg" source="commonUI_json.commonUI_box_1" scale9Grid="17,17,16,16" width="1136" height="640"/>
+	<e:Label id="u_txtCountdown" text="倒计时：50" size="25" anchorOffsetX="0" bold="true" textAlign="left" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" y="43" horizontalCenter="0" fontFamily="Microsoft JhengHei"/>
+	<e:Label id="u_txtScore" text="当前得分：1" size="25" anchorOffsetX="0" bold="true" textAlign="left" stroke="2" strokeColor="0x6F91DB" textColor="0xFFFFFF" y="86" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_btnStart" text="开始游戏" border="true" background="true" backgroundColor="0xED7692" bold="true" borderColor="0xFFFFFF" width="148" height="47" verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" stroke="2" strokeColor="0x996363" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Group id="u_mcContent" y="80" x="248">
+		<e:Group id="u_mcUpBj" height="540" y="0" x="0"/>
+		<e:Image source="commonUI_json.commonUI_line" y="267" scale9Grid="4,0,26,1" width="640" height="2"/>
+		<e:Image source="commonUI_json.commonUI_line" y="537" scale9Grid="4,0,26,1" width="640" height="2"/>
+		<e:Image id="u_areaBtn1" source="commonUI_json.commonUI_box_1" y="0" height="270" width="640" scale9Grid="2,2,16,16" alpha="0" x="0"/>
+		<e:Image id="u_areaBtn2" source="commonUI_json.commonUI_box_1" y="270" height="270" width="640" scale9Grid="2,2,16,16" alpha="0" x="0"/>
+		<e:Image id="u_player1" x="45" y="210" touchEnabled="false" height="60" source="commonUI_json.commonUI_icon_2"/>
+		<e:Image id="u_player2" x="45" y="480" touchEnabled="false" height="60" source="commonUI_json.commonUI_icon_2"/>
+	</e:Group>
+	<e:Image id="u_btnClose" x="11" y="15" source="commonUI_json.commonUI_btn_close_1" width="65" height="50"/>
+</e:Skin>

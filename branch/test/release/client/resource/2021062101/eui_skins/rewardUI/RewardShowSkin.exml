@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RewardShowSkin" width="543" height="416" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="1" visible="true" source="commonPanelUI_json.commonPanelUI_panel_4" scale9Grid="242,89,3,9" width="543" height="415" x="0"/>
+	<e:Image y="5" x="141" source="commonsUI_json.commonsUI_details"/>
+	<e:Group id="u_btnSure" visible="true" y="292" x="202" width="135" height="65">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_1" scale9Grid="64,22,2,21"/>
+		<e:Label bold="true" textColor="0x573118" size="24" verticalCenter="0" text="OK" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Label id="u_txtDesc" text="Get a reward" y="88" size="22" visible="false" bold="true" textColor="0x465B85" textAlign="center" width="435" lineSpacing="10" x="54"/>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close" x="478" y="0" visible="true" width="40" height="40"/>
+</e:Skin>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BettleRoomRenderSkin"
+	 width="205"
+	height="127" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_btnClick" x="0" y="0" scaleX="0.88" scaleY="0.88">
+		<e:Image id="u_imgBg" x="0" y="0" visible="true" source="bettleUI_json.bettleUI_room_di1"/>
+		<e:Group id="u_head1" x="9" y="21" scaleX="0.8" scaleY="0.8">
+			<e:Image id="u_imgHead1" width="80" height="80" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="u_imgFrame1" width="100" height="100" x="0" y="0"/>
+		</e:Group>
+		<e:Group id="u_head2" x="143" y="21" scaleX="0.8" scaleY="0.8">
+			<e:Image id="u_imgHead2" width="80" height="80" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="u_imgFrame2" width="100" height="100" x="0" y="0"/>
+		</e:Group>
+		<e:Group y="105" visible="true" horizontalCenter="0">
+			<e:Image x="0" y="0" source="commonUI_json.commonUI_icon_52" width="24" height="24" visible="true"/>
+			<e:Label id="u_txtCost" text="X999" x="25" fontFamily="Microsoft YaHei" size="14" y="7" textColor="0xFFFFFF" stroke="1" visible="true" bold="true"/>
+		</e:Group>
+		<e:Label text="01" fontFamily="Microsoft YaHei" size="14" bold="true" y="15" x="11" stroke="1" id="u_txtRoomId"/>
+	</e:Group>
+	<e:Label fontFamily="Microsoft YaHei" size="12" bold="true" y="82" stroke="1" id="u_txtName1" horizontalCenter="-60" visible="true" text="xx" width="77" textAlign="center" height="12"/>
+	<e:Label fontFamily="Microsoft YaHei" size="12" bold="true" y="82" stroke="1" id="u_txtName2" horizontalCenter="60" x="44" visible="true" text="xx" width="77" textAlign="center" height="12"/>
+	<e:Image id="u_imgSelect" source="bettleUI_json.bettleUI_img_xz" scale9Grid="34,34,33,33" visible="false" x="-1" y="-1" scaleX="0.88" scaleY="0.88"/>
+</e:Skin>

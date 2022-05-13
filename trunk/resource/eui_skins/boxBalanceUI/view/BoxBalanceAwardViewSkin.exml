@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.BoxBalanceAwardViewSkin"
+	 width="140"
+	height="42" xmlns:e="http://ns.egret.com/eui">
+    <e:Group x="0" y="0" scaleX="1" scaleY="1">
+			<e:Image id="u_imgIcon" source="commonUI_json.commonUI_icon_2" x="0" y="0" width="140" height="140" scaleX="0.3" scaleY="0.3"/>
+			<e:Label id="u_txtNum" text="999999999" y="14" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" size="18" left="44"/>
+		</e:Group>
+</e:Skin>

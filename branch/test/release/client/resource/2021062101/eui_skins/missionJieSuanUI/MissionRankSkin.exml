@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionRankSkin"
+	 width="334"
+ xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176513264a8"/>
+	<e:Group id="u_grpRank" right="0" y="56">
+		<e:Image id="u_btnMore" scaleY="1" horizontalCenter="1" source="missionJieSuanUI_json.missionJieSuanUI_arrow1" top="-34"/>
+		<e:Image id="u_imgBg" source="missionJieSuanUI_json.missionJieSuanUI_di2" x="0" visible="true" scale9Grid="111,68,112,69" bottom="0"/>
+		<e:Image source="missionJieSuanUI_json.missionJieSuanUI_ranking" x="11" visible="true" top="11"/>
+		<e:Image source="missionJieSuanUI_json.missionJieSuanUI_name" x="104" visible="true" top="11"/>
+		<e:Group width="140" x="194" top="11">
+			<e:Image id="u_imgRate" visible="true" y="0" horizontalCenter="0" source="missionJieSuanUI_json.missionJieSuanUI_mana"/>
+		</e:Group>
+		<e:Scroller id="u_scrollerItem" width="300" height="103" y="44" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0">
+			<e:Group bottom="0">
+			<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Image id="u_imgMyRate" x="87" visible="true" bottom="24" source="missionJieSuanUI_json.missionJieSuanUI_ss_myPro"/>
+		<e:Label id="u_txtMySpend" text="99999" x="237" size="16" bold="true" visible="true" stroke="1.5" strokeColor="0x302B1E" textColor="0xECCFA6" bottom="25"/>
+		<e:Group id="u_grpMyRank" x="6" width="80" height="18" bottom="24">
+		</e:Group>
+	</e:Group>
+	<e:Image id="u_btnShow" source="commonsUI_json.commonsUI_back_3" visible="true" height="51" right="-1"/>
+</e:Skin>

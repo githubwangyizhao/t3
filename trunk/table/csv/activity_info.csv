@@ -1,0 +1,6 @@
+活动信息表,,,,,,,,,,,,,,,,,,,,,
+int|key,str,str,int,int,int,str,int,str,str,str,int,str,str,str,str,int,str,int,int,str,str
+,,,,1,,,1,,"[]","[]",0,"[]","[]","[]",,0,"[]",0,,,
+id,sign,name,icon_id,type,house_type,comment,is_valid,module,person_condition_list,person_time_list,person_repeat_open,open_server_day_limit_list,merge_server_day_limit_list,week_list,time_list,notice_time,prize_show_list,function_id,function_config_id,open_desc,rule_desc
+"活动id","标识","活动名","图标ID","类型（1:本服活动，2:跨服活动,3:个人活动）","1正常活动 2仙界活动","备注","是否生效","模块名","个人活动开启条件","个人活动时间 [day, 天数]:开启当天到第N天23：59：59结束  forever: 永久","个人活动关闭后是否可以重复开启","开服时间限制[[]:不限制 [起始天数， 结束天数]]","合服时间限制[[]:不限制 [起始天数， 结束天数]]","周限制","时间配置 []:永久 [[时,分,秒],[时,分,秒]]:每天  [[[年,月,日],[时,分,秒]],[[年,月,日],[时,分,秒]]]:固定日期时间","提前通知时间(秒,不通知:0)","玩法大厅奖励预览","功能id(function表)","打开页面(function_config.csv)","活动开启的中文说明","活动规则说明"
+1001,lei_ji_chong_zhi,累计充值,,1,1,,1,mod_leichong,,,,,,,"[[[2021,9,1],[0,0,0]],[[2021,9,30],[23,59,59]]]",1,,1074,,,

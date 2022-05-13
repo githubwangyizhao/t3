@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopBuyViewSkin" width="588.304" height="280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17665d31017"/>
+    <e:Image source="commonUI_json.commonUI_img_inner" x="10" y="0" width="566.872" height="142" visible="true" scale9Grid="23,10,24,11"/>
+	<e:Label id="u_txtItemName" text="金币" y="15.874" fontFamily="Microsoft YaHei" size="20" textColor="0xF0E4B0" bold="true" visible="true" left="160"/>
+	<e:Label id="u_txtDesc" text="道具说明" y="52.505" size="16" fontFamily="Microsoft YaHei" textColor="0xA5A5A5" left="160" height="16"/>
+	<e:Group x="158" y="89">
+		<e:Label id="u_textSelling" text="售价：" x="0" y="11.09" size="16" fontFamily="Microsoft YaHei" textColor="0xF0E4B0"/>
+		<e:Image x="40.766" y="0.438" scale9Grid="12,12,13,13" width="142.983" height="36.822" visible="true" source="commonUI_json.commonUI_img_titbox"/>
+		<e:Image id="u_imgPrice" width="32" height="32" x="47" y="1" visible="true"/>
+		<e:Label id="u_txtPrice" text="500K" y="11.13" size="16" fontFamily="Microsoft YaHei" left="77" textColor="0xF0E4B0"/>
+	</e:Group>
+	<e:Group x="369" y="89">
+		<e:Label id="u_txtTotal" text="总价：" y="10" size="16" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" visible="true" x="0"/>
+		<e:Image width="143.351" height="36.852" x="39.7" y="0.24" source="commonUI_json.commonUI_img_titbox" scale9Grid="12,12,13,13" visible="true"/>
+		<e:Image id="u_imgPriceCount" x="44" y="0" visible="true" width="32" height="32"/>
+		<e:Label id="u_txtPriceCount" text="500K" y="11" size="16" fontFamily="Microsoft YaHei" textColor="0xF0E4B0" visible="true" x="75"/>
+	</e:Group>
+	<e:Group x="100" y="169" width="442">
+		<e:Image id="u_btnReducTen" source="commonUI_json.commonUI_img_jianten" x="0" y="1" visible="true" width="72" height="37"/>
+		<e:Image id="u_btnReduc" source="commonUI_json.commonUI_img_jian" x="85" y="1" visible="true" width="44" height="37"/>
+		<e:Image source="commonUI_json.commonUI_img_titbox" x="147" y="0" width="144.585" scale9Grid="12,12,13,13" visible="true"/>
+		<e:Label id="u_txtCount" text="1" y="12.5" fontFamily="Microsoft YaHei" visible="true" textColor="0xFFFFFF" size="16" horizontalCenter="-1"/>
+		<e:Image id="u_btnAdd" source="commonUI_json.commonUI_img_jia" x="313" y="1" visible="true" width="44" height="37"/>
+		<e:Image id="u_btnAddTen" source="commonUI_json.commonUI_img_jiaten" x="369.6" y="1" visible="true" width="72" height="37"/>
+	</e:Group>
+	<e:Group id="u_btnRecharge" x="143.08" y="219.46" visible="false">
+		<e:Image source="commonUI_json.commonUI_img_btnbule" x="0.25" y="0.54" visible="true"/>
+		<e:Image source="commonUI_json.commonUI_img_charge" x="0" y="0" width="122" height="46"/>
+	</e:Group>
+	<e:Group id="u_btnBuy" y="220.04" horizontalCenter="0">
+		<e:Image source="commonUI_json.commonUI_img_btnyellow" x="0.58" y="0" visible="true"/>
+		<e:Image source="commonUI_json.commonUI_img_buy" x="0" y="0.16" width="122" height="46"/>
+	</e:Group>
+</e:Skin>

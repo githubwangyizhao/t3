@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketBuyPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a336bf5bf"/>
+	<e:Image source="passTicketBuyUI_json.passTicketBuyUI_bg1" y="12" visible="true" horizontalCenter="0" touchEnabled="false"/>
+	<e:Image source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" width="900" height="520" alpha="0" x="146"/>
+	<e:Image source="passTicketBuyUI_json.passTicketBuyUI_title" x="253" y="174" visible="true"/>
+	<e:Group y="289" visible="true" x="268">
+		<e:Image source="passTicketBuyUI_json.passTicketBuyUI_bg2" x="0" y="0" visible="true"/>
+		<e:Image source="passTicketBuyUI_json.passTicketBuyUI_title2" y="90" horizontalCenter="2"/>
+		<e:Label id="u_txtMsg1" text="解锁钻石通行证和任务奖励" y="134.93" bold="true" size="16" strokeColor="0x14151A" visible="true" horizontalCenter="0.5" touchEnabled="true" textColor="0xEAF1F9" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_btnBuy1" y="173" visible="true" width="122" height="46" x="85">
+			<e:Image y="0" x="0" visible="true" source="commonUI_json.commonUI_img_btnyellow"/>
+			<e:Image id="u_iconCost1" source="commonUI_json.commonUI_icon_4" x="17" y="9" width="30" height="30" visible="true" touchEnabled="false"/>
+			<e:Label id="u_txtCost1" text="1800" size="18" visible="true" x="51" y="16" bold="true" stroke="1" touchEnabled="false" textColor="0xFFFFFF" strokeColor="0x342B18" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Group>
+	<e:Group x="578" y="289" visible="true">
+		<e:Image x="0" y="0" visible="true" source="passTicketBuyUI_json.passTicketBuyUI_bg3"/>
+		<e:Image y="90" horizontalCenter="2" source="passTicketBuyUI_json.passTicketBuyUI_title3"/>
+		<e:Label id="u_txtMsg2" text="解锁钻石通行证和任务奖励" y="134.93" bold="true" size="16" textColor="0xEAF1F9" strokeColor="0x14151A" visible="true" horizontalCenter="0.5" touchEnabled="true" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_btnBuy2" y="173" visible="true" width="122" height="46" x="85">
+		<e:Image y="0" x="0" source="commonUI_json.commonUI_img_btnyellow" visible="true"/>
+		<e:Image id="u_iconCost2" source="commonUI_json.commonUI_icon_4" x="17" y="9" width="30" height="30" visible="true" touchEnabled="false"/>
+		<e:Label id="u_txtCost2" text="1800" size="18" visible="true" x="51" y="16" bold="true" stroke="1" strokeColor="0x342B18" textColor="0xFFFFFF" touchEnabled="false" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="u_btnTips" x="271" y="306" visible="true" width="23" height="23" source="commonUI_json.commonUI_btn_th"/>
+	<e:Label id="u_txtBlank" text="点击空白处关闭" y="549" size="14" visible="true" touchEnabled="false" textColor="0x8693A7" bold="true" horizontalCenter="0" fontFamily="Microsoft YaHei"/>
+	<e:Image id="u_imgMask" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" visible="false" horizontalCenter="0"/>
+</e:Skin>

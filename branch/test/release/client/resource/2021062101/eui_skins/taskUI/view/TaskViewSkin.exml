@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.TaskViewSkin"
+	 width="845"
+	height="92" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_grpContent" width="845" x="0" y="71"/>
+	<e:Image id="u_imgBg" width="845" height="92" x="0" y="0"/>
+	<e:Label id="u_txtName" text="Label" y="29" textAlign="center" verticalAlign="middle" size="20" fontFamily="Microsoft YaHei" bold="true" horizontalCenter="9.5" textColor="0xFBFBD3"/>
+	<e:Image id="u_btnSpare" width="845" height="92" alpha="0" source="commonUI_json.commonUI_box" x="0" y="0"/>
+</e:Skin>

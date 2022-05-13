@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainTaskPopup2Skin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c16762d75"/>
+	<e:Image source="mainTaskPop2UI_json.mainTaskPop2UI_bg" y="159" horizontalCenter="0" visible="true"/>
+	<e:Group id="u_gpRole" width="1136" height="424" x="0" y="0" touchChildren="false" touchEnabled="false"/>
+	<e:Image id="u_imgMask" source="commonUI_json.commonUI_box" width="1136" height="424" scale9Grid="3,3,4,4" locked="true" visible="false"/>
+	<e:Image source="mainTaskPop2UI_json.mainTaskPop2UI_2" y="8" horizontalCenter="-8" visible="true"/>
+	<e:Group id="u_grpReward" x="328" y="288">
+		<e:Image source="mainTaskPop2UI_json.mainTaskPop2UI_3" y="0" visible="true" x="0"/>
+	</e:Group>
+	<e:Group id="u_btnClick" y="448" visible="true" x="488" width="160" height="59">
+		<e:Image visible="true" scaleX="1" scaleY="1" horizontalCenter="0" source="commonUI_json.commonUI_img_btnbule2"/>
+		<e:Image id="u_imgGo" scaleX="1" scaleY="1" touchEnabled="false" source="commonUI_json.commonUI_img_get" visible="true" horizontalCenter="0" verticalCenter="-1.5"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" y="-4" touchEnabled="false" right="-3"/>
+		<e:Group id="u_grpEff" touchEnabled="false" touchChildren="false" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_txtMsg" text="任务描述" y="213" textAlign="left" anchorOffsetX="0" size="18" anchorOffsetY="0" x="480" width="425" lineSpacing="10" strokeColor="0x453A32" wordWrap="true" bold="true" fontFamily="Microsoft YaHei" visible="true" textColor="0xFFFFFF" stroke="1"/>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="InvRebateRenderSkin"
+	 width="547"
+	height="142" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="shareUI_json.shareUI_di" x="-2"/>
+	<e:Group id="u_btnRecive" width="135" height="65" x="373.77" y="48.828">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" x="1.604" y="0.967" width="135" height="65"/>
+		<e:Label id="u_txtRecive" text="Recive" x="17.069" y="19.5" width="100.862" textColor="0x573118" size="25" textAlign="center" verticalAlign="middle"/>
+		<e:Image id="u_btnReciveRed" source="commonsUI_json.commonsUI_red_1" x="108.868" y="3.835"/>
+	</e:Group>
+	<e:Label id="u_txtLoginDay" text="Label" width="152.521" size="20" textColor="0x33D426" horizontalCenter="168" verticalCenter="-40" textAlign="center"/>
+</e:Skin>

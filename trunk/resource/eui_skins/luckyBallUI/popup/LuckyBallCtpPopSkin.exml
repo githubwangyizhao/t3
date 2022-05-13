@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckyBallCtpPopSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c10518929"/>
+	<e:Image source="commonUI_json.commonUI_img_popdi" x="188.38" y="99.555" width="758" scale9Grid="33,173,33,174" height="421" visible="true" locked="true"/>
+	<e:Image source="luckyBallUI_json.luckyBallUI_img_title" x="532.128" y="108.564" visible="true" locked="true"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" x="225.884" y="102.174" visible="true"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="850.152" y="101.386" visible="true" locked="true"/>
+	<e:List id="u_ballList" x="201" y="144.804"/>
+	<e:Image id="u_btnHelp" source="luckyBallUI_json.luckyBallUI_entrance_icon" x="604" y="105" width="30" height="30"/>
+	<e:Group id="u_grpDesc" width="1136" height="1136" visible="false">
+		<e:Image source="commonUI_json.commonUI_box" width="315" height="155" x="567.712" y="138.542"/>
+		<e:Label id="u_textDesc" text="Label" size="18" y="142.542" x="578.712" lineSpacing="6"/>
+		<e:Image source="userMainUI_json.userMainUI_u_tishi_j" x="624.312" y="138.928" rotation="180"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,66 @@
+// 拉霸小游戏
+
+// 转动（组合）拉霸机
+message m_spin_tos {
+    required int32 id = 1;                                // 拉霸机编号
+    required int64 num = 2;                               // 下注金额
+}
+message m_spin_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+    }
+    message grids {
+        repeated int32 list = 1;
+    }
+    message freegameresult {
+        repeated grids grids_list = 2;                      // freegame结果列表
+    }
+    message freegamecombo {
+         repeated int32 combos = 3;                         // freegame连击奖励列表
+    }
+
+    required ENUM result = 1;                               // 结果
+    repeated grids grids_list = 2;                          // 拉霸结果列表
+    repeated int32 combos = 3;                              // 拉霸连击奖励列表
+    repeated freegameresult freegame_results = 4;           // freegame结果列表集合
+    repeated freegamecombo freegame_combos = 5;             // freegame连击奖励列表集合
+    required int32 id = 6;
+    required int32 num = 7;
+}
+
+// 转动（连线）拉霸机
+message m_spin2_tos {
+    required int32 id = 1;                                // 拉霸机编号
+    required int64 num = 2;                               // 下注金额
+}
+message m_spin2_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+    }
+    message grids {
+        repeated int32 list = 1;
+    }
+
+    required ENUM result = 1;                               // 结果
+    required grids grid_list = 2;                          // 普通格子数据列表
+    required grids special_grid_list = 3;                  // 特殊格子数据列表
+    required int32 award_num = 4;                          // 普通拉霸机奖励数
+    repeated grids fg_grid_lists = 5;                      // freegame普通格子数据列表集合
+    repeated grids fg_special_grid_lists = 6;              // freegame特殊格子数据列表集合
+    repeated int32 fg_award_num_list = 7;                  // freegame拉霸机奖励数列表
+    required int32 id = 8;
+    required int32 num = 9;
+}
+
+// 获取拉霸机修正数据
+message m_get_adjust_info_tos{
+    required int32 id = 1;                                // 拉霸机编号
+    required int32 cost_rate = 2;                         // 消耗倍率
+}
+message m_get_adjust_info_toc{
+    repeated int64 data_list = 1;                         // 数据【当前奖池值，拉霸状态值，当前拉霸人数】
+}

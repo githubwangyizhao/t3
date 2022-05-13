@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WithdrawalRecordPopSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="178cf189124"/>
+	<e:Image id="u_imgBg" source="recycleUI_json.recycleUI_bg2" scale9Grid="12,12,11,11" width="660" height="1156" visible="true" x="-10" y="-10"/>
+	<e:Image id="u_btnClose" source="recycleUI_json.recycleUI_arrow2" x="14" y="30" width="30" height="40"/>
+	<e:Label id="u_txtTitle" text="History" y="35" bold="true" horizontalCenter="0" textColor="0x000000"/>
+	<e:Image source="recycleUI_json.recycleUI_line" y="76" scale9Grid="20,2,20,1" width="660" visible="true" horizontalCenter="0"/>
+	<e:Scroller id="u_scrollerItem" width="600" height="1016" anchorOffsetX="0" anchorOffsetY="0" visible="true" y="100" horizontalCenter="0">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,85 @@
+//商店数据
+message ShopData {
+    required int32 id = 1;              //编号id
+    required int32 buy_count = 2;       //购买数量
+    required int32 state = 3;           // 可领取状态 0:不可领取;1:可领取;2:已领取
+}
+
+//获得商店信息
+message m_get_shop_info_tos {
+    required int32 shop_type = 1;   // 商店类型
+}
+//获得商店信息
+message m_get_shop_info_toc {
+    repeated ShopData shop_data = 1; // 商店数据
+    required int32 shop_type = 2;   // 商店类型
+}
+
+//购买物品
+message m_shop_item_tos {
+    required int32 id = 1;              //编号id
+    required int32 buy_count = 2;       //购买数量
+}
+//购买物品
+message m_shop_item_toc {
+    enum ENUM {
+        success = 1; //成功
+        fail = 2;// 失败
+        function_no_open = 3;// 功能未开启
+        no_enough_prop = 4; // 道具不足
+        not_enough_grid = 5;// 格子不足
+        times_limit = 6; // 次数上限
+        not_authority = 7;  // 没权限购买
+        activity_no_open = 8; // 活动未开启
+    }
+    required ENUM result = 1;
+    required int32 id = 2;              //编号id
+    required int32 buy_count = 3;       //购买数量
+}
+
+// 通知商品id状态
+message m_notice_shop_state_toc {
+    required int32 id = 1;              // 编号id
+    required int32 state = 3;           // 可领取状态 0:不可领取;1:可领取;2:已领取
+}
+
+// 玩家发起装备回收协议
+message m_withdraw_tos {
+    required int32 id = 1;
+}
+
+// 后端返回玩家装备回收协议
+message m_withdraw_toc {
+    enum ENUM {
+        success = 1; //成功
+        unavailable_account = 2;     // 非普通账号不允许提现
+        vip_limit = 3;        // vip等级必须大于1
+        not_authority = 4;      // 金币不足
+        times_limit = 5;     // 超过每日限制
+        unknown = 6;// 未知原因
+    }
+    required ENUM result = 1;
+    required string url = 2; // 链接
+}
+
+// 玩家在装备交易平台确定提交回收申请后，下发通知客户端
+message m_withdraw_notify_toc {
+    required int32 status = 1; // 状态：0为失败，1为成功，2为审核中
+}
+
+// 玩家获取自己的装备回收记录
+message m_withdraw_history_tos {
+}
+message SingleWithdrawInfo {
+    required int32 id = 1; // 回收物品编号
+    required string time = 2; // 创建回收记录的时间戳
+    required int32 status = 3; // 状态：0为失败，1为成功，2为审核中
+}
+// 后端返回玩家装备回收记录
+message m_withdraw_history_toc {
+    enum ENUM {
+        success = 1; //成功
+        failure = 2;     // 失败
+    }
+    repeated SingleWithdrawInfo single_withdraw_info = 2;
+}

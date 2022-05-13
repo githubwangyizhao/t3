@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ExchangeUISkin"
+	 width="640"
+	height="760" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176e5000c56"/>
+	<e:Image id="u_imBj" source="commonPanelUI_json.commonPanelUI_panel_3" visible="true" height="753" y="3" x="0" scale9Grid="312,53,26,179" anchorOffsetY="0"/>
+	<e:Image source="exchangeUI_json.exchangeUI_title" y="9" horizontalCenter="0.5"/>
+	<e:Label id="u_txtDesc" text="1 dollar = 1000 Gold coin " y="70" bold="true" size="22" textColor="0x38445D" horizontalCenter="0" visible="true"/>
+	<e:Label id="u_txtAfter" text="After exchange" y="263" bold="true" size="20" textColor="0x38445D" visible="true" right="434"/>
+	<e:Image source="exchangeUI_json.exchangeUI_arrow" y="120" visible="true" horizontalCenter="0"/>
+	<e:Image source="exchangeUI_json.exchangeUI_di" x="208" y="207" scale9Grid="85,23,85,24" width="222" height="31" visible="true"/>
+	<e:Image source="exchangeUI_json.exchangeUI_ziti" y="419" horizontalCenter="0.5"/>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close_2" x="534" y="5" visible="true"/>
+	<e:Image id="u_imgIcon1" source="commonsUI_json.commonsUI_item_icon" width="40" height="40" y="202" x="213"/>
+	<e:Image id="u_btnJian" x="179" y="206" visible="true" source="commonsUI_json.commonsUI_btn_jian2" width="31" height="31"/>
+	<e:Image id="u_btnJia" x="429" y="207" visible="true" source="commonsUI_json.commonsUI_btn_add2" width="31" height="31"/>
+	<e:Group x="208" y="252">
+		<e:Image source="exchangeUI_json.exchangeUI_di" x="0" y="5" scale9Grid="85,23,85,24" width="222" height="31" visible="true"/>
+		<e:Image source="commonsUI_json.commonsUI_item_icon" width="40" height="40" y="0" x="5" id="u_imgIcon2"/>
+		<e:Label id="u_txtAfterCoin" text="1000000" bold="true" size="22" visible="true" horizontalCenter="13" y="10" textColor="0x38445D"/>
+	</e:Group>
+	<e:Group x="172" y="103">
+		<e:Image id="u_imgItemBj1" source="commonsUI_json.commonsUI_item_bj_1" x="0" y="0"/>
+		<e:Image id="u_imgItem1" source="commonsUI_json.commonsUI_item_icon" x="0" y="0"/>
+	</e:Group>
+	<e:Group x="380" y="103">
+		<e:Image id="u_imgItemBj2" source="commonsUI_json.commonsUI_item_bj_1" x="0" y="0"/>
+		<e:Image id="u_imgItem2" source="commonsUI_json.commonsUI_item_icon" x="0" y="0"/>
+	</e:Group>
+	<e:Group x="462" y="207" id="u_btnMax" visible="true" width="68" height="31">
+		<e:Image source="bagUI_json.bagUI_box_3" x="0" y="0" visible="true"/>
+		<e:Label id="u_txtMax" text="Max" size="20" bold="true" horizontalCenter="0.5" verticalCenter="-0.5"/>
+	</e:Group>
+	<e:Group id="u_btnMin" x="109" y="207" visible="true" width="68" height="31">
+		<e:Image source="bagUI_json.bagUI_box_3" x="0" y="0" visible="true"/>
+		<e:Label id="u_txtMin" text="Min" size="20" bold="true" horizontalCenter="0.5" verticalCenter="-0.5"/>
+	</e:Group>
+	<e:Group id="u_btnOK" visible="true" y="321" width="135" height="65" x="253">
+		<e:Image y="0" visible="true" x="0" scale9Grid="79,15,1,2" source="commonsUI_json.commonsUI_btn_1"/>
+		<e:Label id="u_txtOK" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="OK" horizontalCenter="0" visible="true"/>
+	</e:Group>
+	<e:Group id="u_mcTishi" x="517" y="430.4">
+		<e:Image source="commonsUI_json.commonsUI_gou _di" x="0" y="1"/>
+		<e:Image id="u_imgGou" source="commonsUI_json.commonsUI_gou" x="2" y="-1"/>
+	</e:Group>
+	<e:Group id="u_mcContent" x="35" y="495">
+		<e:Image source="exchangeUI_json.exchangeUI_bj" y="0" scale9Grid="74,23,444,138" width="578" x="0"/>
+		<e:Label id="u_txtHas" text="There is $56 to withdraw" y="74" size="26" visible="true" textColor="0xffffff" horizontalCenter="0" bold="true"/>
+		<e:Group id="u_btnTixian" visible="true" y="126" x="203">
+			<e:Image y="0" visible="true" x="0" scale9Grid="79,15,1,2" source="commonsUI_json.commonsUI_btn_5"/>
+			<e:Label id="u_txtTixian" bold="true" size="22" verticalCenter="3" text="Withdraw" horizontalCenter="0" visible="true" stroke="2" strokeColor="0x9b5c18" textColor="0xfff9c9"/>
+		</e:Group>
+	</e:Group>
+	<e:Label id="u_txtInput" text="1000000" bold="true" size="22" visible="true" horizontalCenter="16" y="212.5" textColor="0x38445D" width="168" textAlign="center"/>
+</e:Skin>

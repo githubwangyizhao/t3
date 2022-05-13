@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckyBallResultSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c15e14dc6"/>
+	<e:Image id="u_imgbg" width="1136" height="640" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" horizontalCenter="0" alpha="0.8" visible="true"/>
+	<e:Group id="u_grphave" x="127" y="271" visible="false">
+		<e:Image source="luckyBallAccUI_json.luckyBallAccUI_img_bg1" x="0" y="0" visible="true"/>
+		<e:Image source="luckyBallAccUI_json.luckyBallAccUI_img_win" x="275.09" y="20.9" visible="true"/>
+		<e:Image source="luckyBallAccUI_json.luckyBallAccUI_img_bg1" x="0.04" y="70.17" visible="true"/>
+		<e:Image source="luckyBallAccUI_json.luckyBallAccUI_img_cash" x="275" y="88.98" visible="true"/>
+		<e:Group height="52" x="383" y="4">
+			<e:Group x="4" y="6" width="39" height="38">
+			<e:Image id="u_imghead" scaleX="1" scaleY="1" width="33" height="32" anchorOffsetY="17" anchorOffsetX="17" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image id="u_imgframe" width="39" height="38" anchorOffsetX="19.5" anchorOffsetY="19" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Label id="u_txtName" text="玩家名字六字" scaleX="1" scaleY="1" left="59" fontFamily="Microsoft YaHei" size="18" textColor="0xF7F1AE" y="18"/>
+		</e:Group>
+		<e:Group x="383" y="75" height="52">
+			<e:Image id="u_imgcoin" y="6" x="4" source="commonUI_json.commonUI_icon_2"/>
+			<e:Label id="u_txtcash" text="9999999999" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" size="18" textColor="0xF7F1AE" left="51" y="18.22"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpnone" x="124.57" y="309.57" visible="false">
+		<e:Image source="luckyBallAccUI_json.luckyBallAccUI_img_bg2" x="0" y="0" visible="true"/>
+		<e:Label id="u_txtnone" text="很遗憾，无人中奖" x="347.75" y="19.37" size="24" fontFamily="Microsoft YaHei" visible="true" textColor="0x8693A7"/>
+	</e:Group>
+	<e:Label id="u_txtdown" text="关闭(3)" x="538.956" y="445.188" size="18" fontFamily="Microsoft YaHei" textColor="0x8693A7"/>
+</e:Skin>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DrawCardUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a23e6645"/>
+	<e:Image x="188" y="47" visible="true" touchEnabled="false" source="drawCardUI_json.drawCardUI_bg"/>
+	<e:Image id="u_btnRewardPreview" source="drawCardUI_json.drawCardUI_reward_btn" x="998" y="298" visible="true"/>
+	<e:Label id="u_txtRewardPreview" text="獎勵預覽" x="1019" y="349" textColor="0xF0E4B0" size="16" fontFamily="Microsoft YaHei" stroke="2" anchorOffsetX="32" visible="true"/>
+	<e:Label id="u_txtDrawCardDesc" text="首次10連召喚，必得紫色怪物圖鑒卡" y="443" size="16" fontFamily="Microsoft YaHei" stroke="2" visible="true" horizontalCenter="73.5"/>
+	<e:Group id="u_gpOneDraw" width="188" height="68" x="418" y="484" visible="true">
+		<e:Image id="u_btnOneDraw" x="0" y="0" visible="true" source="drawCardUI_json.drawCardUI_btn_1" scaleX="1" scaleY="1"/>
+		<e:Label id="u_txtOneDraw" text="召喚 1 次" size="20" textColor="0xFFF7D2" bold="true" horizontalCenter="0" verticalCenter="-2" visible="true" touchEnabled="false"/>
+		<e:Label id="u_txtCountDown" text="29:59:59後免費" y="-4" horizontalCenter="0" size="16" textColor="0x85FF49" fontFamily="Microsoft YaHei" stroke="2" visible="true" touchEnabled="false"/>
+	</e:Group>
+	<e:Group width="188" height="68" x="678" y="484" visible="true">
+		<e:Image id="u_btnTenDraw" x="0" y="0" visible="true" scaleX="1" scaleY="1" source="drawCardUI_json.drawCardUI_btn_2"/>
+		<e:Label text="召喚 10 次" id="u_txtTenDraw" size="20" textColor="0xFFF7D2" bold="true" visible="true" horizontalCenter="0" verticalCenter="-2" fontFamily="Microsoft YaHei" touchEnabled="false"/>
+	</e:Group>
+	<e:Image id="u_imgOneUnit" x="485.5" y="554.5" visible="true" source="commonUI_icon_juan" width="20" height="20"/>
+	<e:Label id="u_txtOnePrice" text="100" x="512" y="557" size="16" fontFamily="Microsoft YaHei" visible="true" textColor="0xF0E4B0" stroke="2"/>
+	<e:Image id="u_imgTenUnit" x="740.5" y="554.5" visible="true" source="commonUI_icon_juan" width="20" height="20"/>
+	<e:Label id="u_txtTenPrice" text="1000" x="766.5" y="557" size="16" fontFamily="Microsoft YaHei" visible="true" textColor="0xF0E4B0" stroke="2"/>
+</e:Skin>

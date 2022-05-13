@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionFailPopupSkinSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Image y="405" visible="true" horizontalCenter="5" source="missionCompleteUI_json.missionCompleteUI_bg"/>
+	<e:Image y="381" visible="true" source="missionJieSuanUI_json.missionJieSuanUI_defeated" horizontalCenter="6"/>
+	<e:Label id="u_txtDesc" bold="true" size="24" visible="true" horizontalCenter="0" width="470" verticalAlign="middle" lineSpacing="10" wordWrap="true" text="xxxxxxxxxxxxxxxxxxx" textAlign="center" verticalCenter="-20"/>
+	<e:Group id="u_btnLeave" y="655" visible="true" horizontalCenter="0.5" width="160" height="65">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_7" scale9Grid="64,22,2,21" width="160"/>
+		<e:Label id="u_txtLeave" bold="true" textColor="0x573118" size="24" verticalCenter="0" text="Leave(10)" horizontalCenter="0" visible="true"/>
+	</e:Group>
+</e:Skin>

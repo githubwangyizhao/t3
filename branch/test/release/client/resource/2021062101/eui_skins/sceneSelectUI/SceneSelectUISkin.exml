@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneSelectUISkin"
+	 width="1136"
+ xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="640">
+	<w:Config id="175fe7cf8d8"/>
+	<e:Scroller id="u_scrollerItem" width="1131" height="405" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" x="3">
+		<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Scroller>
+</e:Skin>

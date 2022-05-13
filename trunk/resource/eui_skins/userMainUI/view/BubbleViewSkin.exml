@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BubbleViewSkin" width="400" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" width="400" height="640" y="0" x="0" visible="true" source="userMainUI_json.userMainUI_u_bg" scale9Grid="68,13,73,17"/>
+	<e:Group x="0" y="0" visible="true" width="400">
+		<e:Image source="userMainUI_json.userMainUI_u_menu_bg" y="0" width="400" x="3" visible="true"/>
+		<e:Image x="18" y="4" source="userMainUI_json.userMainUI_u_msg" visible="true"/>
+		<e:Image source="userMainUI_json.userMainUI_u_chat" x="65" y="8"/>
+		<e:Group id="u_btnClose" x="303" y="3" width="93" height="32">
+			<e:Image source="userMainUI_json.userMainUI_u_btn_gb" x="28" y="5" width="24" height="24"/>
+			<e:Image x="0" y="0" width="93" height="32" source="userMainUI_json.userMainUI_u_btn_gb" alpha="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller id="u_chatScrollerItem" width="298" height="600" anchorOffsetX="0" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1" x="0" y="40">
+		<e:Group visible="true">
+		<e:List id="u_chatListItem"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Scroller id="u_faceScrollerItem" width="298" height="600" anchorOffsetX="0" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1" x="0" y="40">
+		<e:Group>
+		<e:List id="u_faceListItem"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image source="userMainUI_json.userMainUI_ver_line" x="299" y="39" height="600" visible="true"/>
+	<e:Group id="u_btnChat" x="295" y="40" width="104" height="300">
+		<e:Image id="u_imgChatStatus" source="userMainUI_json.userMainUI_u_select" x="0" y="-3" visible="true" width="102" scale9Grid="54,38,9,230"/>
+		<e:Image scaleX="1" scaleY="1" verticalCenter="0.5" source="userMainUI_json.userMainUI_u_msg" x="27"/>
+	</e:Group>
+	<e:Group id="u_btnFace" x="295" y="340" width="104" height="300">
+		<e:Image id="u_imgFaceStatus" scaleX="1" scaleY="1" source="userMainUI_json.userMainUI_u_select" x="0" y="-3" visible="true" width="106" scale9Grid="57,38,6,230"/>
+		<e:Image verticalCenter="0.5" source="userMainUI_json.userMainUI_u_btn_bq" x="28"/>
+	</e:Group>
+</e:Skin>

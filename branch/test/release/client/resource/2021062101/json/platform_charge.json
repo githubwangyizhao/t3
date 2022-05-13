@@ -1,0 +1,1 @@
+[{"client_key":"id"},{"id":1,"sign":"atm","name":"ATM虛擬賬號轉賬","property_list":["Price","TradeDate","ExpireDate","BankName","VatmCode"],"desc":"金額#訂單建立時間#繳款期限#銀行名稱#虛擬賬號"},{"id":2,"sign":"cvs","name":"超商代碼繳費","property_list":["Price","TradeDate","ExpireDate","CvsCode"],"desc":"金額#訂單建立時間#繳款期限#超商代碼"}]

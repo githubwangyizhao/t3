@@ -1,0 +1,23 @@
+import "05_prop.proto";
+
+// 礼包兑换码
+message m_gift_code_tos {
+    required string gift_code_id = 1;
+}
+// 礼包兑换码
+message m_gift_code_toc {
+    enum ENUM {
+        success = 1;             //成功
+        fail = 2;                //失败
+        function_no_open = 4;    //功能未开启
+        not_enough_grid = 5;// 格子不足
+        already_get = 6; // 已经领取
+        too_quick = 7; // 请求太快
+        expire = 8; // 礼包码过期
+        vip_level_limit = 9; // VIP等级限制
+        level_limit = 10; // 等级限制
+        not_exists = 11;    // 礼包码不存在
+    }
+    required ENUM result = 1;
+    repeated Prop item_list = 2; //奖励列表
+}

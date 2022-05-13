@@ -1,0 +1,1058 @@
+{
+	"groups": [
+		{
+			"keys": "loginUI_json,index_bg_jpg",
+			"name": "preloadLogin"
+		},
+		{
+			"keys": "language_json,sound_json",
+			"name": "preloadInitJson"
+		},
+		{
+			"keys": "userMainUI_json,numberText_json,entranceUI_json,commonUI_json",
+			"name": "preloadGame"
+		},
+		{
+			"keys": "creatRole_json,creatRoleUI_bj_jpg,welcomeUI_json",
+			"name": "preloadCreate"
+		},
+		{
+			"keys": "achievement_json,active_skill_json,active_skill_level_map_json,activity_info_json,activity_time_type_json,avatar_json,bubble_json,buff_json,buff_effect_json,card_json,card_book_json,card_summon_json,card_title_json,channel_json,charge_game_json,chat_json,chat_bubbles_json,client_log_json,color_json,conditions_enum_json,cost_json,daily_task_json,debug_json,draw_money_json,effect_type_json,everyday_sign_json,first_recharge_json,function_json,function_config_json,function_icon_json,ge_xing_hua_json,gift_code_json,guide_json,head_json,head_frame_json,hero_json,hero_parts_json,hero_star_json,hit_effect_json,item_json,item_decompose_json,item_type_json,language_json,log_type_json,mail_json,merge_json,mission_json,mission_brave_one_json,mission_either_or_json,mission_guess_boss_skill_json,mission_many_people_boss_json,mission_step_by_step_sy_json,mission_type_json,monster_json,monster_function_fanpai_json,monster_function_laba_json,monster_function_shenlongzhufu_json,monster_function_zhuanpan_json,monster_info_json,monster_intellect_json,notice_json,npc_json,online_award_json,platform_json,platform_charge_json,popup_msg_json,popup_msg_type_json,promote_json,quality_json,random_name_json,recharge_json,red_condition_json,red_package_json,resources_json,reward_json,robot_json,role_experience_json,room_monster_odds_json,scene_json,scene_effect_json,scene_main_json,scene_type_json,seven_login_json,seven_login_laba_json,share_task_json,share_task_type_json,shop_json,shop_type_json,skill_json,skill_assembly_json,skill_balance_grid_json,skill_cell_json,skill_resource_json,skill_slot_json,sound_json,static_data_json,sticker_json,sys_common_json,task_json,times_json,tongxingzheng_json,tongxingzheng_daily_task_json,tongxingzheng_level_json,tongxingzheng_task_json,tou_zi_ji_hua_json,treasure_hunt_json,treasure_hunt_type_json,turntable_json,vip_boon_json,vip_boon_type_json,vip_level_json",
+			"name": "preloadJson"
+		}
+	],
+	"resources": [
+		{
+			"url": "gamedata.bin",
+			"type": "bin",
+			"name": "gamedata_bin"
+		},
+		{
+			"url": "ui/creatRoleUI/creatRoleUI_bj.jpg",
+			"type": "image",
+			"name": "creatRoleUI_bj_jpg"
+		},
+		{
+			"url": "index_res/index_bg.jpg",
+			"type": "image",
+			"name": "index_bg_jpg"
+		},
+		{
+			"url": "json/achievement.json",
+			"type": "json",
+			"name": "achievement_json"
+		},
+		{
+			"url": "json/active_skill.json",
+			"type": "json",
+			"name": "active_skill_json"
+		},
+		{
+			"url": "json/active_skill_level_map.json",
+			"type": "json",
+			"name": "active_skill_level_map_json"
+		},
+		{
+			"url": "json/activity_info.json",
+			"type": "json",
+			"name": "activity_info_json"
+		},
+		{
+			"url": "json/activity_time_type.json",
+			"type": "json",
+			"name": "activity_time_type_json"
+		},
+		{
+			"url": "json/avatar.json",
+			"type": "json",
+			"name": "avatar_json"
+		},
+		{
+			"url": "json/bubble.json",
+			"type": "json",
+			"name": "bubble_json"
+		},
+		{
+			"url": "json/buff.json",
+			"type": "json",
+			"name": "buff_json"
+		},
+		{
+			"url": "json/buff_effect.json",
+			"type": "json",
+			"name": "buff_effect_json"
+		},
+		{
+			"url": "json/card.json",
+			"type": "json",
+			"name": "card_json"
+		},
+		{
+			"url": "json/card_book.json",
+			"type": "json",
+			"name": "card_book_json"
+		},
+		{
+			"url": "json/card_summon.json",
+			"type": "json",
+			"name": "card_summon_json"
+		},
+		{
+			"url": "json/card_title.json",
+			"type": "json",
+			"name": "card_title_json"
+		},
+		{
+			"url": "json/channel.json",
+			"type": "json",
+			"name": "channel_json"
+		},
+		{
+			"url": "json/charge_game.json",
+			"type": "json",
+			"name": "charge_game_json"
+		},
+		{
+			"url": "json/chat.json",
+			"type": "json",
+			"name": "chat_json"
+		},
+		{
+			"url": "json/chat_bubbles.json",
+			"type": "json",
+			"name": "chat_bubbles_json"
+		},
+		{
+			"url": "json/client_log.json",
+			"type": "json",
+			"name": "client_log_json"
+		},
+		{
+			"url": "json/color.json",
+			"type": "json",
+			"name": "color_json"
+		},
+		{
+			"url": "json/conditions_enum.json",
+			"type": "json",
+			"name": "conditions_enum_json"
+		},
+		{
+			"url": "json/cost.json",
+			"type": "json",
+			"name": "cost_json"
+		},
+		{
+			"url": "json/daily_task.json",
+			"type": "json",
+			"name": "daily_task_json"
+		},
+		{
+			"url": "json/debug.json",
+			"type": "json",
+			"name": "debug_json"
+		},
+		{
+			"url": "json/draw_money.json",
+			"type": "json",
+			"name": "draw_money_json"
+		},
+		{
+			"url": "json/effect_type.json",
+			"type": "json",
+			"name": "effect_type_json"
+		},
+		{
+			"url": "json/everyday_sign.json",
+			"type": "json",
+			"name": "everyday_sign_json"
+		},
+		{
+			"url": "json/first_recharge.json",
+			"type": "json",
+			"name": "first_recharge_json"
+		},
+		{
+			"url": "json/function.json",
+			"type": "json",
+			"name": "function_json"
+		},
+		{
+			"url": "json/function_config.json",
+			"type": "json",
+			"name": "function_config_json"
+		},
+		{
+			"url": "json/function_icon.json",
+			"type": "json",
+			"name": "function_icon_json"
+		},
+		{
+			"url": "json/ge_xing_hua.json",
+			"type": "json",
+			"name": "ge_xing_hua_json"
+		},
+		{
+			"url": "json/gift_code.json",
+			"type": "json",
+			"name": "gift_code_json"
+		},
+		{
+			"url": "json/guide.json",
+			"type": "json",
+			"name": "guide_json"
+		},
+		{
+			"url": "json/head.json",
+			"type": "json",
+			"name": "head_json"
+		},
+		{
+			"url": "json/head_frame.json",
+			"type": "json",
+			"name": "head_frame_json"
+		},
+		{
+			"url": "json/hero.json",
+			"type": "json",
+			"name": "hero_json"
+		},
+		{
+			"url": "json/hero_parts.json",
+			"type": "json",
+			"name": "hero_parts_json"
+		},
+		{
+			"url": "json/hero_star.json",
+			"type": "json",
+			"name": "hero_star_json"
+		},
+		{
+			"url": "json/hit_effect.json",
+			"type": "json",
+			"name": "hit_effect_json"
+		},
+		{
+			"url": "json/item.json",
+			"type": "json",
+			"name": "item_json"
+		},
+		{
+			"url": "json/item_decompose.json",
+			"type": "json",
+			"name": "item_decompose_json"
+		},
+		{
+			"url": "json/item_type.json",
+			"type": "json",
+			"name": "item_type_json"
+		},
+		{
+			"url": "json/language.json",
+			"type": "json",
+			"name": "language_json"
+		},
+		{
+			"url": "json/log_type.json",
+			"type": "json",
+			"name": "log_type_json"
+		},
+		{
+			"url": "json/mail.json",
+			"type": "json",
+			"name": "mail_json"
+		},
+		{
+			"url": "json/merge.json",
+			"type": "json",
+			"name": "merge_json"
+		},
+		{
+			"url": "json/mission.json",
+			"type": "json",
+			"name": "mission_json"
+		},
+		{
+			"url": "json/mission_brave_one.json",
+			"type": "json",
+			"name": "mission_brave_one_json"
+		},
+		{
+			"url": "json/mission_either_or.json",
+			"type": "json",
+			"name": "mission_either_or_json"
+		},
+		{
+			"url": "json/mission_guess_boss_skill.json",
+			"type": "json",
+			"name": "mission_guess_boss_skill_json"
+		},
+		{
+			"url": "json/mission_many_people_boss.json",
+			"type": "json",
+			"name": "mission_many_people_boss_json"
+		},
+		{
+			"url": "json/mission_step_by_step_sy.json",
+			"type": "json",
+			"name": "mission_step_by_step_sy_json"
+		},
+		{
+			"url": "json/mission_type.json",
+			"type": "json",
+			"name": "mission_type_json"
+		},
+		{
+			"url": "json/monster.json",
+			"type": "json",
+			"name": "monster_json"
+		},
+		{
+			"url": "json/monster_function_fanpai.json",
+			"type": "json",
+			"name": "monster_function_fanpai_json"
+		},
+		{
+			"url": "json/monster_function_laba.json",
+			"type": "json",
+			"name": "monster_function_laba_json"
+		},
+		{
+			"url": "json/monster_function_shenlongzhufu.json",
+			"type": "json",
+			"name": "monster_function_shenlongzhufu_json"
+		},
+		{
+			"url": "json/monster_function_zhuanpan.json",
+			"type": "json",
+			"name": "monster_function_zhuanpan_json"
+		},
+		{
+			"url": "json/monster_info.json",
+			"type": "json",
+			"name": "monster_info_json"
+		},
+		{
+			"url": "json/monster_intellect.json",
+			"type": "json",
+			"name": "monster_intellect_json"
+		},
+		{
+			"url": "json/notice.json",
+			"type": "json",
+			"name": "notice_json"
+		},
+		{
+			"url": "json/npc.json",
+			"type": "json",
+			"name": "npc_json"
+		},
+		{
+			"url": "json/online_award.json",
+			"type": "json",
+			"name": "online_award_json"
+		},
+		{
+			"url": "json/platform.json",
+			"type": "json",
+			"name": "platform_json"
+		},
+		{
+			"url": "json/platform_charge.json",
+			"type": "json",
+			"name": "platform_charge_json"
+		},
+		{
+			"url": "json/popup_msg.json",
+			"type": "json",
+			"name": "popup_msg_json"
+		},
+		{
+			"url": "json/popup_msg_type.json",
+			"type": "json",
+			"name": "popup_msg_type_json"
+		},
+		{
+			"url": "json/promote.json",
+			"type": "json",
+			"name": "promote_json"
+		},
+		{
+			"url": "json/quality.json",
+			"type": "json",
+			"name": "quality_json"
+		},
+		{
+			"url": "json/random_name.json",
+			"type": "json",
+			"name": "random_name_json"
+		},
+		{
+			"url": "json/recharge.json",
+			"type": "json",
+			"name": "recharge_json"
+		},
+		{
+			"url": "json/red_condition.json",
+			"type": "json",
+			"name": "red_condition_json"
+		},
+		{
+			"url": "json/red_package.json",
+			"type": "json",
+			"name": "red_package_json"
+		},
+		{
+			"url": "json/resources.json",
+			"type": "json",
+			"name": "resources_json"
+		},
+		{
+			"url": "json/reward.json",
+			"type": "json",
+			"name": "reward_json"
+		},
+		{
+			"url": "json/robot.json",
+			"type": "json",
+			"name": "robot_json"
+		},
+		{
+			"url": "json/role_experience.json",
+			"type": "json",
+			"name": "role_experience_json"
+		},
+		{
+			"url": "json/room_monster_odds.json",
+			"type": "json",
+			"name": "room_monster_odds_json"
+		},
+		{
+			"url": "json/scene.json",
+			"type": "json",
+			"name": "scene_json"
+		},
+		{
+			"url": "json/scene_effect.json",
+			"type": "json",
+			"name": "scene_effect_json"
+		},
+		{
+			"url": "json/scene_main.json",
+			"type": "json",
+			"name": "scene_main_json"
+		},
+		{
+			"url": "json/scene_type.json",
+			"type": "json",
+			"name": "scene_type_json"
+		},
+		{
+			"url": "json/seven_login.json",
+			"type": "json",
+			"name": "seven_login_json"
+		},
+		{
+			"url": "json/seven_login_laba.json",
+			"type": "json",
+			"name": "seven_login_laba_json"
+		},
+		{
+			"url": "json/share_task.json",
+			"type": "json",
+			"name": "share_task_json"
+		},
+		{
+			"url": "json/share_task_type.json",
+			"type": "json",
+			"name": "share_task_type_json"
+		},
+		{
+			"url": "json/shop.json",
+			"type": "json",
+			"name": "shop_json"
+		},
+		{
+			"url": "json/shop_type.json",
+			"type": "json",
+			"name": "shop_type_json"
+		},
+		{
+			"url": "json/skill.json",
+			"type": "json",
+			"name": "skill_json"
+		},
+		{
+			"url": "json/skill_assembly.json",
+			"type": "json",
+			"name": "skill_assembly_json"
+		},
+		{
+			"url": "json/skill_balance_grid.json",
+			"type": "json",
+			"name": "skill_balance_grid_json"
+		},
+		{
+			"url": "json/skill_cell.json",
+			"type": "json",
+			"name": "skill_cell_json"
+		},
+		{
+			"url": "json/skill_resource.json",
+			"type": "json",
+			"name": "skill_resource_json"
+		},
+		{
+			"url": "json/skill_slot.json",
+			"type": "json",
+			"name": "skill_slot_json"
+		},
+		{
+			"url": "json/sound.json",
+			"type": "json",
+			"name": "sound_json"
+		},
+		{
+			"url": "json/static_data.json",
+			"type": "json",
+			"name": "static_data_json"
+		},
+		{
+			"url": "json/sticker.json",
+			"type": "json",
+			"name": "sticker_json"
+		},
+		{
+			"url": "json/sys_common.json",
+			"type": "json",
+			"name": "sys_common_json"
+		},
+		{
+			"url": "json/task.json",
+			"type": "json",
+			"name": "task_json"
+		},
+		{
+			"url": "json/times.json",
+			"type": "json",
+			"name": "times_json"
+		},
+		{
+			"url": "json/tongxingzheng.json",
+			"type": "json",
+			"name": "tongxingzheng_json"
+		},
+		{
+			"url": "json/tongxingzheng_daily_task.json",
+			"type": "json",
+			"name": "tongxingzheng_daily_task_json"
+		},
+		{
+			"url": "json/tongxingzheng_level.json",
+			"type": "json",
+			"name": "tongxingzheng_level_json"
+		},
+		{
+			"url": "json/tongxingzheng_task.json",
+			"type": "json",
+			"name": "tongxingzheng_task_json"
+		},
+		{
+			"url": "json/tou_zi_ji_hua.json",
+			"type": "json",
+			"name": "tou_zi_ji_hua_json"
+		},
+		{
+			"url": "json/treasure_hunt.json",
+			"type": "json",
+			"name": "treasure_hunt_json"
+		},
+		{
+			"url": "json/treasure_hunt_type.json",
+			"type": "json",
+			"name": "treasure_hunt_type_json"
+		},
+		{
+			"url": "json/turntable.json",
+			"type": "json",
+			"name": "turntable_json"
+		},
+		{
+			"url": "json/vip_boon.json",
+			"type": "json",
+			"name": "vip_boon_json"
+		},
+		{
+			"url": "json/vip_boon_type.json",
+			"type": "json",
+			"name": "vip_boon_type_json"
+		},
+		{
+			"url": "json/vip_level.json",
+			"type": "json",
+			"name": "vip_level_json"
+		},
+		{
+			"url": "ui/accessUI/accessUI.json",
+			"type": "sheet",
+			"name": "accessUI_json",
+			"subkeys": "accessUI_bg_render,accessUI_btn_1,accessUI_img_bt"
+		},
+		{
+			"url": "ui/accreditUI/accreditUI.json",
+			"type": "sheet",
+			"name": "accreditUI_json",
+			"subkeys": "accreditUI_btn_fb,accreditUI_btn_google,accreditUI_btn_line"
+		},
+		{
+			"url": "ui/achievementUI/achievementUI.json",
+			"type": "sheet",
+			"name": "achievementUI_json",
+			"subkeys": "achievementUI_1_1,achievementUI_1_2,achievementUI_2_1,achievementUI_2_2,achievementUI_3_1,achievementUI_3_2,achievementUI_atm_1,achievementUI_atm_2,achievementUI_daily_1,achievementUI_daily_2,achievementUI_di,achievementUI_jindu_1,achievementUI_jindu_2,achievementUI_select,achievementUI_target_1,achievementUI_target_2"
+		},
+		{
+			"url": "ui/bagUI/bagUI.json",
+			"type": "sheet",
+			"name": "bagUI_json",
+			"subkeys": "bagUI_bg,bagUI_btn_Use,bagUI_icon_bg,bagUI_icon_q_2,bagUI_icon_q_3,bagUI_icon_q_4,bagUI_icon_q_5,bagUI_icon_q_6,bagUI_img_k,bagUI_img_line,bagUI_img_xz"
+		},
+		{
+			"url": "ui/bossEventUI/bossEventUI.json",
+			"type": "sheet",
+			"name": "bossEventUI_json",
+			"subkeys": "boossEventUI_img_go,boossEventUI_img_left,boossEventUI_name_bg,boossEventUI_name_line,bossEventUI_back,bossEventUI_bg"
+		},
+		{
+			"url": "ui/bossHeadUI/bossHeadUI.json",
+			"type": "sheet",
+			"name": "bossHeadUI_json",
+			"subkeys": "bossHeadUI_coming,bossHeadUI_men,bossHeadUI_xian"
+		},
+		{
+			"url": "ui/cardBookUI/cardBookUI.json",
+			"type": "sheet",
+			"name": "cardBookUI_json",
+			"subkeys": "cardBookUI_arrow,cardBookUI_box_1,cardBookUI_box_2,cardBookUI_box_3,cardBookUI_box_4,cardBookUI_btn_bg,cardBookUI_check,cardBookUI_complete,cardBookUI_received,cardBookUI_reward,cardBookUI_reward_di,cardBookUI_title_bg2"
+		},
+		{
+			"url": "ui/cardBookUI/cardMainUI.json",
+			"type": "sheet",
+			"name": "cardMainUI_json",
+			"subkeys": "cardMainUI_bg,cardMainUI_bg2,cardMainUI_close,cardMainUI_tab0_1,cardMainUI_tab0_2,cardMainUI_tab1_1,cardMainUI_tab1_2,cardMainUI_tab2_1,cardMainUI_tab2_2"
+		},
+		{
+			"url": "ui/cardUI/cardUI.json",
+			"type": "sheet",
+			"name": "cardUI_json",
+			"subkeys": "cardUI__imgBg,cardUI_imgIcon"
+		},
+		{
+			"url": "ui/commonUI/commonUI.json",
+			"type": "sheet",
+			"name": "commonUI_json",
+			"subkeys": "commonUI_bg,commonUI_box,commonUI_box_0,commonUI_box_1,commonUI_btn_close_1,commonUI_btn_close_2,commonUI_btn_recharge,commonUI_btn_th,commonUI_di_1,commonUI_di_2,commonUI_entrance_bj,commonUI_float_bg,commonUI_head_add,commonUI_head_btn,commonUI_head_right,commonUI_icon_bg,commonUI_icon_gold,commonUI_icon_jts,commonUI_icon_jtx,commonUI_icon_juan,commonUI_icon_q_1,commonUI_icon_q_2,commonUI_icon_q_3,commonUI_icon_q_4,commonUI_icon_q_5,commonUI_icon_q_6,commonUI_icon_sm,commonUI_icon_wh,commonUI_img_hk,commonUI_img_line,commonUI_img_wj,commonUI_jiazai,commonUI_jindu_1,commonUI_jindu_2,commonUI_jindu_3,commonUI_jindu_4,commonUI_jindu_5,commonUI_jindu_6,commonUI_jw,commonUI_laba,commonUI_qipao_1,commonUI_qipao_2,commonUI_red,commonUI_sex_0,commonUI_sex_1,commonUI_star_1,commonUI_star_2,commonUI_star_3,commonUI_star_bj"
+		},
+		{
+			"url": "ui/countDownUI/countDownUI.json",
+			"type": "sheet",
+			"name": "countDownUI_json",
+			"subkeys": "countDownUI_num_0,countDownUI_num_1,countDownUI_num_2,countDownUI_num_3,countDownUI_num_4,countDownUI_num_5,countDownUI_num_6,countDownUI_num_7,countDownUI_num_8,countDownUI_num_9,countDownUI_num_d,countDownUI_title_1,countDownUI_title_2,countDownUI_title_3"
+		},
+		{
+			"url": "ui/courseUI/courseUI.json",
+			"type": "sheet",
+			"name": "courseUI_json",
+			"subkeys": "courseUI_arrow1,courseUI_arrow2,courseUI_bg,courseUI_close,courseUI_icon1,courseUI_icon2,courseUI_tips1,courseUI_tips2,courseUI_tips3,courseUI_tips4"
+		},
+		{
+			"url": "ui/creatRoleUI/creatRole.json",
+			"type": "sheet",
+			"name": "creatRole_json",
+			"subkeys": "creatRoleUI_bj,creatRoleUI_btn,creatRoleUI_gou,creatRoleUI_gou_bj,creatRoleUI_kuang,creatRoleUI_nan,creatRoleUI_nv,creatRoleUI_role,creatRoleUI_shaizi"
+		},
+		{
+			"url": "ui/drawCardUI/drawCardUI.json",
+			"type": "sheet",
+			"name": "drawCardUI_json",
+			"subkeys": "drawCardUI_bg,drawCardUI_btn_1,drawCardUI_btn_2,drawCardUI_reward_bg,drawCardUI_reward_btn,drawCardUI_summon_bg,drawCardUI_summon_line"
+		},
+		{
+			"url": "ui/entranceUI/entranceUI.json",
+			"type": "sheet",
+			"name": "entranceUI_json",
+			"subkeys": "1070_icon_ent,1070_name_ent,1081_icon_ent,1081_name_ent"
+		},
+		{
+			"url": "ui/exchangeShopUI/exchangeShopUI.json",
+			"type": "sheet",
+			"name": "exchangeShopUI_json",
+			"subkeys": "exchangeShopUI_bg,exchangeShopUI_btn_bg,exchangeShopUI_icon_design,exchangeShopUI_item_bg,exchangeShopUI_item_icon,exchangeShopUI_select"
+		},
+		{
+			"url": "ui/exchangeUI/exchangeUI.json",
+			"type": "sheet",
+			"name": "exchangeUI_json",
+			"subkeys": "exchangeUI_arrow,exchangeUI_bj,exchangeUI_btn3,exchangeUI_di,exchangeUI_title,exchangeUI_ziti"
+		},
+		{
+			"url": "ui/firstRechargeUI/firstRechargeUI.json",
+			"type": "sheet",
+			"name": "firstRechargeUI_json",
+			"subkeys": "firstRechargeUI_btn_bg,firstRechargeUI_img_bg,firstRechargeUI_img_iconBg,firstRechargeUI_img_js,firstRechargeUI_num_$,firstRechargeUI_num_.,firstRechargeUI_num_0,firstRechargeUI_num_1,firstRechargeUI_num_2,firstRechargeUI_num_3,firstRechargeUI_num_4,firstRechargeUI_num_5,firstRechargeUI_num_6,firstRechargeUI_num_7,firstRechargeUI_num_8,firstRechargeUI_num_9"
+		},
+		{
+			"url": "ui/gameSettingUI/gameSettingUI.json",
+			"type": "sheet",
+			"name": "gameSettingUI_json",
+			"subkeys": "gameSettingUI__setBg,gameSettingUI_btn_bg,gameSettingUI_btn_close,gameSettingUI_btn_off,gameSettingUI_btn_on,gameSettingUI_effect,gameSettingUI_iconSet,gameSettingUI_line,gameSettingUI_music,gameSettingUI_nameEdit,gameSettingUI_set,gameSettingUI_slideBg,gameSettingUI_slideValue,gameSettingUI_thumb"
+		},
+		{
+			"url": "ui/godDragonUI/godDragonUI.json",
+			"type": "sheet",
+			"name": "godDragonUI_json",
+			"subkeys": "godDragonUI_bg,godDragonUI_rechage"
+		},
+		{
+			"url": "ui/guessBossUI/guessBossUI.json",
+			"type": "sheet",
+			"name": "guessBossUI_json",
+			"subkeys": "guessBossUI_bg,guessBossUI_bg2,guessBossUI_bg3,guessBossUI_btnName"
+		},
+		{
+			"url": "ui/guessBossUI/guessEffectUI.json",
+			"type": "sheet",
+			"name": "guessEffectUI_json",
+			"subkeys": "guessEffectUI_bg"
+		},
+		{
+			"url": "ui/guessBossUI/guessFightUI.json",
+			"type": "sheet",
+			"name": "guessFightUI_json",
+			"subkeys": "guessFightUI_bg"
+		},
+		{
+			"url": "ui/guessBossUI/guessInsideUI.json",
+			"type": "sheet",
+			"name": "guessInsideUI_json",
+			"subkeys": "guessInsideUI_bg,guessInsideUI_bg_1,guessInsideUI_boss_1,guessInsideUI_boss_2,guessInsideUI_boss_3,guessInsideUI_boss_4,guessInsideUI_boss_5,guessInsideUI_boss_6,guessInsideUI_boss_title,guessInsideUI_btn_record,guessInsideUI_cost,guessInsideUI_cost_0,guessInsideUI_cost_1,guessInsideUI_cost_2,guessInsideUI_cost_3,guessInsideUI_cost_4,guessInsideUI_cost_5,guessInsideUI_cost_6,guessInsideUI_cost_7,guessInsideUI_cost_8,guessInsideUI_cost_9,guessInsideUI_cost_d,guessInsideUI_cost_m,guessInsideUI_di_1,guessInsideUI_head,guessInsideUI_srl_1,guessInsideUI_srl_2,guessInsideUI_srl_3,guessInsideUI_srl_4,guessInsideUI_srl_5,guessInsideUI_srl_6,guessInsideUI_title_1,guessInsideUI_title_2,guessInsideUI_title_3"
+		},
+		{
+			"url": "ui/guessBossUI/guessRecordUI.json",
+			"type": "sheet",
+			"name": "guessRecordUI_json",
+			"subkeys": "guessRecordUI_bg2,guessRecordUI_box1,guessRecordUI_line"
+		},
+		{
+			"url": "ui/guessBossUI/gussTishiUI.json",
+			"type": "sheet",
+			"name": "gussTishiUI_json",
+			"subkeys": "gussTishiUI_bg,gussTishiUI_close"
+		},
+		{
+			"url": "ui/guessUI/guessUI.json",
+			"type": "sheet",
+			"name": "guessUI_json",
+			"subkeys": "guessUI_btn_clean,guessUI_icon_boss,guessUI_icon_warn,guessUI_img_bg,guessUI_img_bg1,guessUI_img_bg2,guessUI_img_bg3,guessUI_img_bg4,guessUI_img_bg5,guessUI_img_bg6,guessUI_img_big,guessUI_img_cm0,guessUI_img_cm1,guessUI_img_cm2,guessUI_img_cm3,guessUI_img_cm4,guessUI_img_cm5,guessUI_img_cm6,guessUI_img_double,guessUI_img_gold_0,guessUI_img_gold_1,guessUI_img_gold_2,guessUI_img_gold_3,guessUI_img_gold_4,guessUI_img_gold_5,guessUI_img_gold_6,guessUI_img_gold_7,guessUI_img_gold_8,guessUI_img_gold_9,guessUI_img_gold_M,guessUI_img_gold_d,guessUI_img_gold_e,guessUI_img_gold_i,guessUI_img_gold_k,guessUI_img_me,guessUI_img_mh,guessUI_img_num_0,guessUI_img_num_1,guessUI_img_num_2,guessUI_img_num_3,guessUI_img_num_4,guessUI_img_num_5,guessUI_img_num_6,guessUI_img_num_7,guessUI_img_num_8,guessUI_img_num_9,guessUI_img_num_y,guessUI_img_num_~,guessUI_img_number,guessUI_img_odd,guessUI_img_selected1,guessUI_img_selected2,guessUI_img_small,guessUI_img_sum,guessUI_img_tbg,guessUI_img_title,guessUI_img_txtBg,guessUI_img_txt_ys,guessUI_img_zgj"
+		},
+		{
+			"url": "ui/guessUI/guessWinUI.json",
+			"type": "sheet",
+			"name": "guessWinUI_json",
+			"subkeys": "guessWinUI_confirm_disabled,guessWinUI_confirm_normal,guessWinUI_img_bg_loser,guessWinUI_img_bg_win1,guessWinUI_img_bg_win2,guessWinUI_img_dan,guessWinUI_img_db,guessWinUI_img_gold_$,guessWinUI_img_gold_0,guessWinUI_img_gold_1,guessWinUI_img_gold_2,guessWinUI_img_gold_3,guessWinUI_img_gold_4,guessWinUI_img_gold_5,guessWinUI_img_gold_6,guessWinUI_img_gold_7,guessWinUI_img_gold_8,guessWinUI_img_gold_9,guessWinUI_img_gold_K,guessWinUI_img_gold_M,guessWinUI_img_gold_d,guessWinUI_img_hao,guessWinUI_img_loser,guessWinUI_img_max,guessWinUI_img_num_0,guessWinUI_img_num_1,guessWinUI_img_num_2,guessWinUI_img_num_3,guessWinUI_img_num_4,guessWinUI_img_num_5,guessWinUI_img_num_6,guessWinUI_img_num_7,guessWinUI_img_num_8,guessWinUI_img_num_9,guessWinUI_img_num_y,guessWinUI_img_num_~,guessWinUI_img_shuang,guessWinUI_img_small,guessWinUI_img_win,guessWinUI_img_zgj"
+		},
+		{
+			"url": "ui/loadingUI/loadingMissionUI.json",
+			"type": "sheet",
+			"name": "loadingMissionUI_json",
+			"subkeys": "loadingMissionUI_bg,loadingMissionUI_hard1,loadingMissionUI_hard2,loadingMissionUI_ray1,loadingMissionUI_ray2,loadingMissionUI_star"
+		},
+		{
+			"url": "ui/loadingUI/loadingUI.json",
+			"type": "sheet",
+			"name": "loadingUI_json",
+			"subkeys": "loading_rate,loading_rateBG"
+		},
+		{
+			"url": "ui/loginUI/loginUI.json",
+			"type": "sheet",
+			"name": "loginUI_json",
+			"subkeys": "loginUI_baidi,loginUI_bg_1,loginUI_btn_bj,loginUI_btn_fb,loginUI_btn_google,loginUI_btn_line,loginUI_btn_visitor,loginUI_gou,loginUI_hot,loginUI_huo,loginUI_huo_img,loginUI_id_1,loginUI_id_2,loginUI_id_3,loginUI_kefu_tis,loginUI_server_weihu,loginUI_title,loginUI_xin,loginUI_xin_img"
+		},
+		{
+			"url": "ui/luckBossUI/luckBossChartUI.json",
+			"type": "sheet",
+			"name": "luckBossChartUI_json",
+			"subkeys": "luckBossChartUI_bg,luckBossChartUI_bg2,luckBossChartUI_head_bg,luckBossChartUI_icon,luckBossChartUI_num_0,luckBossChartUI_num_1,luckBossChartUI_num_2,luckBossChartUI_num_3,luckBossChartUI_num_4,luckBossChartUI_num_5,luckBossChartUI_num_6,luckBossChartUI_num_7,luckBossChartUI_num_8,luckBossChartUI_num_9,luckBossChartUI_title"
+		},
+		{
+			"url": "ui/luckBossUI/luckBossFightUI.json",
+			"type": "sheet",
+			"name": "luckBossFightUI_json",
+			"subkeys": "luckBossFightUI_bg,luckBossFightUI_btn_qs,luckBossFightUI_btn_xzxq,luckBossFightUI_die,luckBossFightUI_head1,luckBossFightUI_head2,luckBossFightUI_head3,luckBossFightUI_head4,luckBossFightUI_head5,luckBossFightUI_head6,luckBossFightUI_icon_roll"
+		},
+		{
+			"url": "ui/luckBossUI/luckBossFTUI.json",
+			"type": "sheet",
+			"name": "luckBossFTUI_json",
+			"subkeys": "luckBossFTUI_btn_qd,luckBossFTUI_img_js,luckBossFTUI_img_tc"
+		},
+		{
+			"url": "ui/luckBossUI/luckBossResultUI.json",
+			"type": "sheet",
+			"name": "luckBossResultUI_json",
+			"subkeys": "luckBossResultUI_bg1,luckBossResultUI_bg2,luckBossResultUI_bg3,luckBossResultUI_bg4,luckBossResultUI_bg5,luckBossResultUI_bg6,luckBossResultUI_btn_sure1,luckBossResultUI_btn_sure2,luckBossResultUI_num_0,luckBossResultUI_num_1,luckBossResultUI_num_2,luckBossResultUI_num_3,luckBossResultUI_num_4,luckBossResultUI_num_5,luckBossResultUI_num_6,luckBossResultUI_num_7,luckBossResultUI_num_8,luckBossResultUI_num_9,luckBossResultUI_num_K,luckBossResultUI_num_m,luckBossResultUI_roll,luckBossResultUI_title"
+		},
+		{
+			"url": "ui/luckBossUI/luckBossUI.json",
+			"type": "sheet",
+			"name": "luckBossUI_json",
+			"subkeys": "luckBossUI_bg_1,luckBossUI_bg_2,luckBossUI_bg_3,luckBossUI_bg_4,luckBossUI_bg_5,luckBossUI_bg_6,luckBossUI_bg_7,luckBossUI_bg_8,luckBossUI_btn_cahrt,luckBossUI_btn_clear,luckBossUI_di_1,luckBossUI_guanzhan,luckBossUI_icon10,luckBossUI_icon7,luckBossUI_icon8,luckBossUI_icon9,luckBossUI_icon_boss1,luckBossUI_icon_boss2,luckBossUI_icon_boss3,luckBossUI_icon_boss4,luckBossUI_icon_boss5,luckBossUI_icon_boss6,luckBossUI_icon_cm1,luckBossUI_icon_cm2,luckBossUI_icon_cm3,luckBossUI_icon_cm4,luckBossUI_icon_cm5,luckBossUI_icon_cm6,luckBossUI_icon_people,luckBossUI_icon_roll,luckBossUI_num_0,luckBossUI_num_1,luckBossUI_num_2,luckBossUI_num_3,luckBossUI_num_4,luckBossUI_num_5,luckBossUI_num_6,luckBossUI_num_7,luckBossUI_num_8,luckBossUI_num_9,luckBossUI_num_d,luckBossUI_num_icon_jb1,luckBossUI_num_icon_jb2,luckBossUI_num_icon_jb3,luckBossUI_num_xz_.,luckBossUI_num_xz_0,luckBossUI_num_xz_1,luckBossUI_num_xz_2,luckBossUI_num_xz_3,luckBossUI_num_xz_4,luckBossUI_num_xz_5,luckBossUI_num_xz_6,luckBossUI_num_xz_7,luckBossUI_num_xz_8,luckBossUI_num_xz_9,luckBossUI_num_xz_K,luckBossUI_num_xz_m,luckBossUI_rule,luckBossUI_select1,luckBossUI_select2"
+		},
+		{
+			"url": "ui/luckyDrawUI/luckyDrawUI.json",
+			"type": "sheet",
+			"name": "luckyDrawUI_json",
+			"subkeys": "luckyDrawUI_bg,luckyDrawUI_box,luckyDrawUI_boxBg,luckyDrawUI_btnBg,luckyDrawUI_bugAgain,luckyDrawUI_buyFive,luckyDrawUI_buyOne,luckyDrawUI_centerBg,luckyDrawUI_chose,luckyDrawUI_complete,luckyDrawUI_diamond,luckyDrawUI_effect,luckyDrawUI_extra,luckyDrawUI_extraBg,luckyDrawUI_flash,luckyDrawUI_icon,luckyDrawUI_iconBg,luckyDrawUI_pop,luckyDrawUI_receive,luckyDrawUI_ruleBg,luckyDrawUI_store,luckyDrawUI_sure,luckyDrawUI_tab,luckyDrawUI_tip,luckyDrawUI_title"
+		},
+		{
+			"url": "ui/mailUI/mailUI.json",
+			"type": "sheet",
+			"name": "mailUI_json",
+			"subkeys": "mailUI_all_delete,mailUI_btn_allget,mailUI_hint,mailUI_icon_award,mailUI_icon_award_gray,mailUI_icon_bg,mailUI_icon_title,mailUI_img_line1,mailUI_img_line2,mailUI_img_tsk,mailUI_select_base,mailUI_tag_new"
+		},
+		{
+			"url": "ui/mergeUI/mergeUI.json",
+			"type": "sheet",
+			"name": "mergeUI_json",
+			"subkeys": "mergeUI_btn_jia,mergeUI_btn_jian,mergeUI_dk,mergeUI_max,mergeUI_merge,mergeUI_min"
+		},
+		{
+			"url": "ui/missionJieSuanUI/missionCompleteUI.json",
+			"type": "sheet",
+			"name": "missionCompleteUI_json",
+			"subkeys": "missionCompleteUI_bg,missionCompleteUI_complete"
+		},
+		{
+			"url": "ui/missionJieSuanUI/missionJieSuanUI.json",
+			"type": "sheet",
+			"name": "missionJieSuanUI_json",
+			"subkeys": "missionJieSuanUI_arrow1,missionJieSuanUI_arrow2,missionJieSuanUI_bg,missionJieSuanUI_boss_head,missionJieSuanUI_complete,missionJieSuanUI_defeated,missionJieSuanUI_design,missionJieSuanUI_di,missionJieSuanUI_di2,missionJieSuanUI_mana,missionJieSuanUI_my_spend,missionJieSuanUI_name,missionJieSuanUI_rank_1,missionJieSuanUI_rank_2,missionJieSuanUI_rank_3,missionJieSuanUI_ranking,missionJieSuanUI_rewarded,missionJieSuanUI_ss_dikuang,missionJieSuanUI_ss_finish,missionJieSuanUI_ss_first_prize,missionJieSuanUI_ss_myPro,missionJieSuanUI_ss_pool,missionJieSuanUI_ss_pro,missionJieSuanUI_ss_second_prize,missionJieSuanUI_time_1,missionJieSuanUI_time_2,missionJieSuanUI_title"
+		},
+		{
+			"url": "ui/missionJieSuanUI/missionText.json",
+			"type": "sheet",
+			"name": "missionText_json",
+			"subkeys": "missionText_num_0,missionText_num_1,missionText_num_2,missionText_num_3,missionText_num_4,missionText_num_5,missionText_num_6,missionText_num_7,missionText_num_8,missionText_num_9,missionText_num_l"
+		},
+		{
+			"url": "ui/missionMultiUI/missionMultiUI.json",
+			"type": "sheet",
+			"name": "missionMultiUI_json",
+			"subkeys": "missionMultiUI_bg_password,missionMultiUI_boss_select_1,missionMultiUI_boss_select_2,missionMultiUI_head1,missionMultiUI_head2,missionMultiUI_icon_1,missionMultiUI_icon_2,missionMultiUI_kick,missionMultiUI_none,missionMultiUI_ready,missionMultiUI_render_di,missionMultiUI_select_di1,missionMultiUI_select_di2,missionMultiUI_select_di3,missionMultiUI_txt_find,missionMultiUI_txt_join"
+		},
+		{
+			"url": "ui/missionShishiUI/missionShishiResultUI.json",
+			"type": "sheet",
+			"name": "missionShishiResultUI_json",
+			"subkeys": "missionShishiResultUI_bg,missionShishiResultUI_title"
+		},
+		{
+			"url": "ui/missionShishiUI/missionShishiUI.json",
+			"type": "sheet",
+			"name": "missionShishiUI_json",
+			"subkeys": "missionShishiUI_bg2,missionShishiUI_bj,missionShishiUI_btnName"
+		},
+		{
+			"url": "ui/monsterInfoUI/monsterInfoUI.json",
+			"type": "sheet",
+			"name": "monsterInfoUI_json",
+			"subkeys": "monsterInfoUI_$,monsterInfoUI_.,monsterInfoUI_0,monsterInfoUI_1,monsterInfoUI_2,monsterInfoUI_3,monsterInfoUI_4,monsterInfoUI_5,monsterInfoUI_6,monsterInfoUI_7,monsterInfoUI_8,monsterInfoUI_9,monsterInfoUI_bg,monsterInfoUI_btn_boss1,monsterInfoUI_btn_boss2,monsterInfoUI_btn_icon1,monsterInfoUI_btn_icon2,monsterInfoUI_btn_sj1,monsterInfoUI_btn_sj2,monsterInfoUI_btn_txg1,monsterInfoUI_btn_txg2,monsterInfoUI_btn_xg1,monsterInfoUI_btn_xg2,monsterInfoUI_img_bg,monsterInfoUI_img_bt,monsterInfoUI_img_dt4,monsterInfoUI_img_name1,monsterInfoUI_img_name3,monsterInfoUI_img_zz,monsterInfoUI_x,monsterInfoUI_~"
+		},
+		{
+			"url": "ui/monsterRollUI/monsterRollUI.json",
+			"type": "sheet",
+			"name": "monsterRollUI_json",
+			"subkeys": "monsterRollUI_fruit_0,monsterRollUI_fruit_1,monsterRollUI_fruit_2,monsterRollUI_fruit_3,monsterRollUI_fruit_4,monsterRollUI_fruit_5,monsterRollUI_fruit_6,monsterRollUI_slot_bg,monsterRollUI_slot_start,monsterRollUI_slot_stop,monsterRollUI_slot_stopUp,monsterRollUI_slot_stop_over,monsterRollUI_slot_stop_up,monsterRollUI_start,monsterRollUI_win"
+		},
+		{
+			"url": "ui/multiCreateUI/multiCreateUI.json",
+			"type": "sheet",
+			"name": "multiCreateUI_json",
+			"subkeys": "multiCreateUI_bossHead,multiCreateUI_di1,multiCreateUI_di3,multiCreateUI_icon,multiCreateUI_lock,multiCreateUI_select,multiCreateUI_txt_di"
+		},
+		{
+			"url": "ui/multiPlayerUI/multiPlayerUI.json",
+			"type": "sheet",
+			"name": "multiPlayerUI_json",
+			"subkeys": "multiPlayerUI_boss_di1,multiPlayerUI_boss_di2,multiPlayerUI_btn_bg,multiPlayerUI_di,multiPlayerUI_find_room,multiPlayerUI_icon1,multiPlayerUI_icon2,multiPlayerUI_join_room,multiPlayerUI_select_di1,multiPlayerUI_select_di2,multiPlayerUI_txt_di1"
+		},
+		{
+			"url": "ui/multiRoomUI/multiRoomUI.json",
+			"type": "sheet",
+			"name": "multiRoomUI_json",
+			"subkeys": "multiRoomUI_boss_di1,multiRoomUI_di_1,multiRoomUI_head1,multiRoomUI_head2,multiRoomUI_kick,multiRoomUI_ready,multiRoomUI_wait"
+		},
+		{
+			"url": "ui/numberText/numberText.json",
+			"type": "sheet",
+			"name": "numberText_json",
+			"subkeys": "num_c_time_0,num_c_time_1,num_c_time_2,num_c_time_3,num_c_time_4,num_c_time_5,num_c_time_6,num_c_time_7,num_c_time_8,num_c_time_9,num_c_time_d,num_mana_j_0,num_mana_j_1,num_mana_j_2,num_mana_j_3,num_mana_j_4,num_mana_j_5,num_mana_j_6,num_mana_j_7,num_mana_j_8,num_mana_j_9,num_mana_j_j,num_mana_j_l,num_max_time_0,num_max_time_1,num_max_time_2,num_max_time_3,num_max_time_4,num_max_time_5,num_max_time_6,num_max_time_7,num_max_time_8,num_max_time_9,num_mission_0,num_mission_1,num_mission_2,num_mission_3,num_mission_4,num_mission_5,num_mission_6,num_mission_7,num_mission_8,num_mission_9,num_mission_d,num_rank_0,num_rank_1,num_rank_2,num_rank_3,num_rank_4,num_rank_5,num_rank_6,num_rank_7,num_rank_8,num_rank_9,num_role_level_0,num_role_level_1,num_role_level_2,num_role_level_3,num_role_level_4,num_role_level_5,num_role_level_6,num_role_level_7,num_role_level_8,num_role_level_9,num_role_level_l,num_sevenDays_0,num_sevenDays_1,num_sevenDays_2,num_sevenDays_3,num_sevenDays_4,num_sevenDays_5,num_sevenDays_6,num_sevenDays_7,num_sevenDays_8,num_sevenDays_9,num_sy_0,num_sy_1,num_sy_2,num_sy_3,num_sy_4,num_sy_5,num_sy_6,num_sy_7,num_sy_8,num_sy_9,num_sy_d,num_sy_j,num_time_0,num_time_1,num_time_2,num_time_3,num_time_4,num_time_5,num_time_6,num_time_7,num_time_8,num_time_9,num_vip_0,num_vip_1,num_vip_2,num_vip_3,num_vip_4,num_vip_5,num_vip_6,num_vip_7,num_vip_8,num_vip_9,num_vip_v,num_weapon_0,num_weapon_1,num_weapon_2,num_weapon_3,num_weapon_4,num_weapon_5,num_weapon_6,num_weapon_7,num_weapon_8,num_weapon_9,num_weapon_B,num_weapon_K,num_weapon_M"
+		},
+		{
+			"url": "ui/personalizationUI/personalizationUI.json",
+			"type": "sheet",
+			"name": "personalizationUI_json",
+			"subkeys": "personUI_bg0,personUI_bg1,personUI_btnBg,personUI_btn_bg,personUI_close,personUI_line,personUI_lock,personUI_pageSle,personUI_select,personUI_set"
+		},
+		{
+			"url": "ui/publicPopupUI/publicPopupUI.json",
+			"type": "sheet",
+			"name": "publicPopupUI_json",
+			"subkeys": "publicPopupUI_btn_qr,publicPopupUI_btn_qx,publicPopupUI_img_Bg,publicPopupUI_img_Dg,publicPopupUI_img_qx,publicPopupUI_img_ts"
+		},
+		{
+			"url": "ui/rankUI/rankUI.json",
+			"type": "sheet",
+			"name": "rankUI_json",
+			"subkeys": "rankUI_0,rankUI_1,rankUI_2,rankUI_3,rankUI_4,rankUI_5,rankUI_6,rankUI_7,rankUI_8,rankUI_9,rankUI_bg1,rankUI_close,rankUI_icon,rankUI_icon_1,rankUI_icon_2,rankUI_icon_3,rankUI_img_hg,rankUI_sort,xxBg_1,xxBg_2"
+		},
+		{
+			"url": "ui/rechargeUI/rechargeUI.json",
+			"type": "sheet",
+			"name": "rechargeUI_json",
+			"subkeys": "rechargeUI_bg,rechargeUI_bg_vip,rechargeUI_btn_tq,rechargeUI_icon_th,rechargeUI_icon_yb,rechargeUI_jdt1,rechargeUI_jdt2,rechargeUI_renderBg,rechargeUI_tbg,rechargeUI_tqbg,rechargeUI_value_0,rechargeUI_value_1,rechargeUI_value_2,rechargeUI_value_3,rechargeUI_value_4,rechargeUI_value_5,rechargeUI_value_6,rechargeUI_value_7,rechargeUI_value_8,rechargeUI_value_9,rechargeUI_value_B,rechargeUI_value_K,rechargeUI_value_M,rechargeUI_value_x"
+		},
+		{
+			"url": "ui/redPacketUI/redPacketUI.json",
+			"type": "sheet",
+			"name": "redPacketUI_json",
+			"subkeys": "redPacketUI_popup_bj"
+		},
+		{
+			"url": "ui/rewardFlyUI/rewardFlyUI.json",
+			"type": "sheet",
+			"name": "rewardFlyUI_json",
+			"subkeys": "rewardFlyUI_txt_1,rewardFlyUI_txt_2,rewardFlyUI_txt_3"
+		},
+		{
+			"url": "ui/rewardUI/rewardUI.json",
+			"type": "sheet",
+			"name": "rewardUI_json",
+			"subkeys": "rewardUI_bg"
+		},
+		{
+			"url": "ui/roleListUI/roleListUI.json",
+			"type": "sheet",
+			"name": "roleListUI_json",
+			"subkeys": "roleListUI_bg,roleListUI_hero_mask,roleListUI_icon_arrow,roleListUI_icon_equipped,roleListUI_icon_sp,roleListUI_icon_suo,roleListUI_icon_yx,roleListUI_line,roleListUI_order_bg1,roleListUI_order_bg2,roleListUI_quailty1,roleListUI_quailty2,roleListUI_quailty3,roleListUI_quailty4,roleListUI_quailty5,roleListUI_quailty6"
+		},
+		{
+			"url": "ui/roleUI/roleUI.json",
+			"type": "sheet",
+			"name": "roleUI_json",
+			"subkeys": "roleUI_arrow,roleUI_bg,roleUI_btn_Bg,roleUI_btn_star,roleUI_btn_tips,roleUI_btn_wq1,roleUI_btn_wq2,roleUI_btn_zs1,roleUI_btn_zs2,roleUI_close,roleUI_icon_bt,roleUI_item_icon,roleUI_line,roleUI_lock,roleUI_mask,roleUI_part_bg,roleUI_pic_wq,roleUI_pic_zs,roleUI_play,roleUI_quality_1,roleUI_quality_2,roleUI_quality_3,roleUI_quality_4,roleUI_quality_5,roleUI_quality_6,roleUI_select1,roleUI_select2,roleUI_video_bg1,roleUI_video_bg2"
+		},
+		{
+			"url": "ui/rotaryTableUI/rotaryTableUI.json",
+			"type": "sheet",
+			"name": "rotaryTableUI_json",
+			"subkeys": "rotaryTableUI_arrow1,rotaryTableUI_arrow2,rotaryTableUI_bg1,rotaryTableUI_bt1,rotaryTableUI_btn_close,rotaryTableUI_part2,rotaryTableUI_part3,rotaryTableUI_part4"
+		},
+		{
+			"url": "ui/sceneMainUI/sceneMainUI.json",
+			"type": "sheet",
+			"name": "sceneMainUI_json",
+			"subkeys": "sceneMainUI_btn_dr_bg,sceneMainUI_btn_jdc_bg,sceneMainUI_btn_ks_bg,sceneMainUI_btn_zz_bg,sceneMainUI_img_dj,sceneMainUI_img_jd1,sceneMainUI_img_jd2,sceneMainUI_img_jdc,sceneMainUI_img_ksks,sceneMainUI_img_select,sceneMainUI_img_tx,sceneMainUI_img_yj,sceneMainUI_img_zz,sceneMainUI_msg,sceneMainUI_navBg,sceneMainUI_nav_line"
+		},
+		{
+			"url": "ui/sceneSelectUI/sceneSelectUI.json",
+			"type": "sheet",
+			"name": "sceneSelectUI_json",
+			"subkeys": "sceneSelectUI_bj,sceneSelectUI_icon_bg,sceneSelectUI_img,sceneSelectUI_more,sceneSelectUI_name,sceneSelectUI_show,sceneSelectUI_tips"
+		},
+		{
+			"url": "ui/sevenDaysUI/sevenDaysUI.json",
+			"type": "sheet",
+			"name": "sevenDaysUI_json",
+			"subkeys": "sevenDaysUI_0,sevenDaysUI_1,sevenDaysUI_2,sevenDaysUI_3,sevenDaysUI_4,sevenDaysUI_5,sevenDaysUI_6,sevenDaysUI_bg,sevenDaysUI_btn_down,sevenDaysUI_btn_up,sevenDaysUI_hd,sevenDaysUI_mask,sevenDaysUI_received,sevenDaysUI_tab,sevenDaysUI_tab1"
+		},
+		{
+			"url": "ui/shareUI/shareUI.json",
+			"type": "sheet",
+			"name": "shareUI_json",
+			"subkeys": "shareUI_bg,shareUI_bg_zs,shareUI_btn_630_1,shareUI_btn_630_2,shareUI_btn_640_1,shareUI_btn_640_2,shareUI_btn_klq,shareUI_btn_recive,shareUI_btn_wdc,shareUI_btn_yjfx,shareUI_di_1,shareUI_iconbg,shareUI_iconbg2,shareUI_img_nv,shareUI_info,shareUI_line2,shareUI_line_bj,shareUI_linebg,shareUI_rule,shareUI_tip_bj,shareUI_yinz"
+		},
+		{
+			"url": "ui/shopHallUI/shopHallUI.json",
+			"type": "sheet",
+			"name": "shopHallUI_json",
+			"subkeys": "shopHallUI_0,shopHallUI_1,shopHallUI_2,shopHallUI_3,shopHallUI_4,shopHallUI_5,shopHallUI_6,shopHallUI_7,shopHallUI_8,shopHallUI_9,shopHallUI_btn_vip,shopHallUI_btn_y,shopHallUI_btn_z,shopHallUI_icon_jb,shopHallUI_icon_jbsd,shopHallUI_icon_sc,shopHallUI_icon_sd,shopHallUI_icon_tq,shopHallUI_icon_zs,shopHallUI_icon_zssd,shopHallUI_img_2,shopHallUI_img_3,shopHallUI_img_4,shopHallUI_img_5,shopHallUI_img_6,shopHallUI_img_bg,shopHallUI_img_bt1,shopHallUI_img_bt2,shopHallUI_img_jbd,shopHallUI_img_jd1,shopHallUI_img_jd2,shopHallUI_img_line,shopHallUI_img_navBg,shopHallUI_img_nrbg,shopHallUI_img_tq,shopHallUI_img_tqd,shopHallUI_img_vip,shopHallUI_img_xz"
+		},
+		{
+			"url": "ui/shopUI/shopBuyUI.json",
+			"type": "sheet",
+			"name": "shopBuyUI_json",
+			"subkeys": "shopBuyUI_btn_buy,shopBuyUI_disabled_add,shopBuyUI_disabled_add10,shopBuyUI_disabled_subtract,shopBuyUI_disabled_subtract10,shopBuyUI_img_frame,shopBuyUI_normal_add,shopBuyUI_normal_add10,shopBuyUI_normal_subtract,shopBuyUI_normal_subtract10"
+		},
+		{
+			"url": "ui/signInUI/signInUI.json",
+			"type": "sheet",
+			"name": "signInUI_json",
+			"subkeys": "signInUI_bg,signInUI_chose,signInUI_double,signInUI_mask,signInUI_sign,signInUI_tab1,signInUI_tab2"
+		},
+		{
+			"url": "ui/soloPlayerUI/soloPlayerUI.json",
+			"type": "sheet",
+			"name": "soloPlayerUI_json",
+			"subkeys": "soloPlayerUI_none"
+		},
+		{
+			"url": "ui/taskUI/taskUI.json",
+			"type": "sheet",
+			"name": "taskUI_json",
+			"subkeys": "taskUI_arrow,taskUI_bg2,taskUI_btn_klq,taskUI_btn_qw,taskUI_btn_qw2,taskUI_btn_ylq,taskUI_jd1,taskUI_jd2,taskUI_receive,taskUI_zkbg"
+		},
+		{
+			"url": "ui/turnTableUI/turntableUI.json",
+			"type": "sheet",
+			"name": "turntableUI_json",
+			"subkeys": "turntableUI_arrow1,turntableUI_arrow2,turntableUI_bg1,turntableUI_bg2,turntableUI_bg_item,turntableUI_box,turntableUI_btn_close,turntableUI_btn_once,turntableUI_btn_ten,turntableUI_cost,turntableUI_jindu,turntableUI_jindu_di,turntableUI_light,turntableUI_title"
+		},
+		{
+			"url": "ui/userMainUI/userMainUI.json",
+			"type": "sheet",
+			"name": "userMainUI_json",
+			"subkeys": "userMainUI_attack_btn,userMainUI_c_vip_1,userMainUI_c_vip_10,userMainUI_c_vip_11,userMainUI_c_vip_12,userMainUI_c_vip_13,userMainUI_c_vip_14,userMainUI_c_vip_15,userMainUI_c_vip_16,userMainUI_c_vip_17,userMainUI_c_vip_18,userMainUI_c_vip_19,userMainUI_c_vip_2,userMainUI_c_vip_20,userMainUI_c_vip_3,userMainUI_c_vip_4,userMainUI_c_vip_5,userMainUI_c_vip_6,userMainUI_c_vip_7,userMainUI_c_vip_8,userMainUI_c_vip_9,userMainUI_caidan_bj,userMainUI_d_boss_coming,userMainUI_d_btn_1,userMainUI_d_btn_1_name,userMainUI_d_btn_2,userMainUI_d_btn_2_name,userMainUI_d_btn_3,userMainUI_d_btn_3_name,userMainUI_d_btn_4,userMainUI_d_btn_4_name,userMainUI_d_btn_5,userMainUI_d_btn_5_name,userMainUI_d_btn_6,userMainUI_d_btn_6_name,userMainUI_d_btn_7,userMainUI_d_btn_7_name,userMainUI_d_btn_add,userMainUI_d_btn_jian,userMainUI_d_skill_102,userMainUI_d_skill_106,userMainUI_d_skill_107,userMainUI_d_skill_108,userMainUI_d_skill_202,userMainUI_d_skill_203,userMainUI_d_skill_bj,userMainUI_d_skill_k,userMainUI_d_skill_num,userMainUI_d_skill_power1,userMainUI_d_skill_power2,userMainUI_icon_rank1,userMainUI_img_hg,userMainUI_maptouchControlBall,userMainUI_maptouchControlBar,userMainUI_nqbg,userMainUI_nqjd,userMainUI_nqz,userMainUI_rank_1,userMainUI_t_head_br,userMainUI_t_head_right,userMainUI_u_btn_gb,userMainUI_u_btn_lt,userMainUI_u_btn_rw,userMainUI_u_line,userMainUI_u_select,userMainUI_u_tishi,userMainUI_u_tishi_j,userMainUI_x_bj,userMainUI_x_dt,userMainUI_x_kuang,userMainUI_x_ph,userMainUI_x_xx,userMainUI_xinxi_bj,userMainUI_xinxi_tupiao,userMainUI_z_dedao,userMainUI_z_double"
+		},
+		{
+			"url": "ui/vipUI/vipUI.json",
+			"type": "sheet",
+			"name": "vipUI_json",
+			"subkeys": "vipUI_arrow_left,vipUI_arrow_right,vipUI_bg,vipUI_bg_vip,vipUI_btn_cz,vipUI_btn_lq,vipUI_icon_th,vipUI_jdt1,vipUI_jdt2,vipUI_received,vipUI_tbg,vipUI_tqbg,vipUI_tqyl"
+		},
+		{
+			"url": "ui/welcomeUI/welcomeUI.json",
+			"type": "sheet",
+			"name": "welcomeUI_json",
+			"subkeys": "welcomeUI_bj,welcomeUI_btn,welcomeUI_btn_name"
+		},
+		{
+			"url": "ui/welfareUI/welfareUI.json",
+			"type": "sheet",
+			"name": "welfareUI_json",
+			"subkeys": "welfareUI_bg,welfareUI_btnBg_1,welfareUI_btnBg_2"
+		},
+		{
+			"url": "ui/withdrawalUI/withdrawalUI.json",
+			"type": "sheet",
+			"name": "withdrawalUI_json",
+			"subkeys": "withdrawalUI_bg,withdrawalUI_di_1,withdrawalUI_di_2,withdrawalUI_txt_bg"
+		},
+		{
+			"url": "ui/passTicketUI/passTicketUI.json",
+			"type": "sheet",
+			"name": "passTicketUI_json",
+			"subkeys": "passTicketUI_btnBg_1,passTicketUI_btnBg_2,passTicketUI_lock,passTicketUI_ylq"
+		}
+	]
+}

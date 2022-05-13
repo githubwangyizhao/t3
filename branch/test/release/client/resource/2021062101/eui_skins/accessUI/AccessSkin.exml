@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="accessSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" anchorOffsetX="0" anchorOffsetY="0" source="commonUI_json.commonUI_bg" width="720" visible="true" height="550" scaleX="1" scaleY="1" y="38" horizontalCenter="0" scale9Grid="11,82,9,9"/>
+	<e:Image source="accessUI_json.accessUI_img_bt" y="61" horizontalCenter="0" x="731" visible="true"/>
+	<e:Group id="u_mcItem" y="130.69" horizontalCenter="0" width="610" visible="true" x="471">
+		<e:Image scale9Grid="105,5,105,5" width="520" horizontalCenter="0" y="3" source="commonUI_jw"/>
+		<e:Label id="u_itemName" text="Shop buy" size="20" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1" textColor="0xF0E4B0" horizontalCenter="0" verticalAlign="middle" y="0" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_mcAccess" y="369.68" visible="true" width="610" horizontalCenter="0">
+		<e:Group width="610" height="50" scaleX="1" scaleY="1">
+		<e:Image visible="true" scale9Grid="105,5,105,5" width="520" horizontalCenter="0" verticalCenter="0" source="commonUI_jw"/>
+		<e:Label id="u_txtPath2" text="获取途径" size="16" anchorOffsetX="0" textAlign="center" verticalAlign="middle" textColor="0xF0E4B0" scaleX="1" scaleY="1" verticalCenter="2" visible="true" horizontalCenter="0" bold="true" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Scroller id="u_scrollerItem" width="600" y="50" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0" height="50">
+		<e:Group bottom="0">
+			<e:List id="u_listAccess" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Label id="u_txtBlank" text="点击空白处关闭窗口" y="602" fontFamily="Microsoft YaHei" size="16" verticalAlign="middle" textColor="0xF0E4B0" visible="true" touchEnabled="false" horizontalCenter="0"/>
+	<w:Config id="1616a1f29c6"/>
+</e:Skin>

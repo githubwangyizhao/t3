@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionMultiSelectSkin"
+	 width="420"
+	height="540" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="176186d365a"/>
+	<e:Image x="0" y="0" visible="true" source="missionMultiUI_json.missionMultiUI_select_di1" height="540"/>
+	<e:Scroller id="u_scrollerItem" width="400" height="440" y="63" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0" x="10">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="u_btnClose" source="commonsUI_json.commonsUI_btn_close" x="380" y="11" visible="true" width="40" height="40"/>
+</e:Skin>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PopupMsgTipSkin" width="625" height="346" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17968a5289d"/>
+	<e:Image id="u_imgBj" x="0" anchorOffsetX="0" y="0" anchorOffsetY="0" visible="true" source="publicPopupUI_json.publicPopupUI_img_Bg"/>
+	<e:Label id="u_txtMsg" text="苏打水法发顺丰啊发发发发荣企鹅王v" anchorOffsetX="0" width="485" size="20" multiline="true" wordWrap="true" anchorOffsetY="0" height="120" lineSpacing="8" textAlign="center" touchEnabled="false" strokeColor="0xedb295" bold="true" verticalAlign="middle" y="70" horizontalCenter="0" visible="true" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+	<e:Group id="u_btnLeft" x="133" y="252" width="107" height="45">
+		<e:Image x="0" y="0" width="107" height="45" scale9Grid="3,3,4,4" source="publicPopupUI_json.publicPopupUI_btn_qx"/>
+		<e:Label id="u_txtLeft" text="NO" size="20" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1" bold="true" strokeColor="0x5b0101" visible="true" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" horizontalCenter="0.5" y="10" stroke="1"/>
+	</e:Group>
+	<e:Group id="u_btnRight" x="385" y="252" width="107" height="45">
+		<e:Image x="0" y="0" scale9Grid="3,3,4,4" width="107" height="45" visible="true" source="publicPopupUI_json.publicPopupUI_btn_qr"/>
+		<e:Label id="u_txtRight" text="YES" size="20" anchorOffsetX="0" textAlign="center" scaleX="1" scaleY="1" bold="true" strokeColor="0xc56737" horizontalCenter="0" visible="true" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" y="10" stroke="1"/>
+	</e:Group>
+	<e:Group id="u_mcTishi" y="210" horizontalCenter="0">
+		<e:Label id="u_txtTishiMsg" text="Not reminded" y="11.1" anchorOffsetX="0" size="20" multiline="true" wordWrap="true" anchorOffsetY="0" lineSpacing="8" touchEnabled="false" strokeColor="0xEDB295" bold="true" height="33" verticalAlign="middle" textAlign="right" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" right="27"/>
+		<e:Group verticalCenter="0" x="194" height="33">
+			<e:Image x="0" verticalCenter="0" source="publicPopupUI_json.publicPopupUI_img_qx"/>
+			<e:Image id="u_imgGou" verticalCenter="0" source="publicPopupUI_json.publicPopupUI_img_Dg"/>
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="u_txtCountdown" text="5s后关闭" size="16" height="33" y="268.5" verticalAlign="middle" fontFamily="Microsoft YaHei" textAlign="right" textColor="0xFF0000" bold="true" right="52" stroke="1" strokeColor="0x3c342e"/>
+	<e:Image y="9.415" horizontalCenter="0" source="publicPopupUI_json.publicPopupUI_img_ts"/>
+</e:Skin>

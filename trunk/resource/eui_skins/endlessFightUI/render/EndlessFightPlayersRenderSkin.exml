@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightPlayersRender"
+	 width="783"
+	height="91" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image id="u_bg" x="0" y="0" visible="true" source="endlessFightPlayersUI_json.endlessFightPlayersUI_renderBg"/>
+	<e:Group id="u_grpHead" x="155" width="70" height="70" y="11"/>
+	<e:Label id="u_nameLb" text="S1.小明明天去上学" x="248" textColor="0xF0E4B0" size="16" fontFamily="Microsoft YaHei" bold="true" y="40"/>
+	<e:Image id="u_vipIcon" source="userMainUI_json.userMainUI_c_vip_1" x="395" y="34"/>
+	<e:Label id="u_nameLb0" text="近20场" x="496" textColor="0xF0E4B0" size="16" fontFamily="Microsoft YaHei" bold="true" y="39"/>
+	<e:Image x="647" verticalCenter="16.5" source="endlessFightPlayersUI_json.endlessFightPlayersUI_winTitle"/>
+	<e:Image x="647" verticalCenter="-15.5" y="47" visible="true" source="endlessFightPlayersUI_json.endlessFightPlayersUI_betTitle"/>
+	<ns1:NumberView id="u_winNum" width="70" height="14" x="699" y="55"/>
+	<ns1:NumberView id="u_betNum" width="70" height="14" x="699" y="24" visible="true"/>
+	<e:Image id="u_imgTitle" source="endlessFightPlayersUI_json.endlessFightPlayersUI_rank_title" x="7" y="33"/>
+	<ns1:NumberView id="u_numRank" verticalCenter="0.5" width="44" height="22" x="75"/>
+</e:Skin>

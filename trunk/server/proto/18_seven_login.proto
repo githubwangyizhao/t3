@@ -1,0 +1,38 @@
+// 七天登入
+//OPEN_DEBUG
+
+// 七天登录数据
+message SevenLoginData {
+    repeated int32 already_give_list = 1;   // 已领天数列表
+    required int32 cumulative_day = 2;      // 累计登录天数
+}
+
+// 七天登录骰子奖励
+message SevenLoginDice {
+    required int32 type = 1;                // 类型(1:基本奖励,2:连续登录,3:VIP奖励)
+    required int32 value = 2;               // 值
+}
+
+// 领取七天登入奖励
+message m_give_award_tos {
+    required int32 today = 1;               // 天数
+}
+message m_give_award_toc {
+    enum ENUM {
+        success = 1;                        // 成功
+        fail = 2;                           // 失败
+        function_no_open = 3;               // 功能未开启
+        not_authority = 4;                  // 不可领取
+        already_have = 5;                   // 已经领取
+        not_enough_grid = 6;                // 背包容量不足
+    }
+    required ENUM result = 100;
+    required int32 today = 1;               // 天数
+    required int32 dice_id = 2;             // 骰子id
+    repeated SevenLoginDice dice_list = 3;  // 骰子奖励列表
+}
+
+//  更新累计登录天数
+message m_update_cumulative_day_toc {
+    required int32 cumulative_day = 1;      // 累计登录天数
+}

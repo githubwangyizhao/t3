@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RechargeAccumRenderSkin"
+	 width="505"
+	height="128" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="rechargeAccumUI_json.rechargeAccumUI_renderBg" x="0" y="0"/>
+	<e:Label id="u_statusLb" text="已领取" fontFamily="Microsoft YaHei" x="19" y="11" size="18" textColor="0xF0E4B0"/>
+	<e:Image id="u_received" y="24" visible="true" source="commonUI_json.commonUI_received" x="380"/>
+	<e:Group id="u_btn" y="48" x="361">
+		<e:Image id="u_btnBg" source="commonUI_json.commonUI_img_btnyellow" x="0" y="0" visible="true"/>
+		<e:Image id="u_btnName" horizontalCenter="0" verticalCenter="0" source="commonUI_json.commonUI_img_get" visible="true"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="107.146" y="1.718" visible="false"/>
+	</e:Group>
+</e:Skin>

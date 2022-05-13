@@ -1,0 +1,32 @@
+color 颜色配置表,,,
+int|key,str,str,str|useless
+,,,
+id,sign,color_value,desc
+"唯一key","标识","颜色数值","备注说明"
+#物品品质颜色,,,
+1,quality_1,F7EDCA,物品品质1--白
+2,quality_2,82f428,物品品质2--绿
+3,quality_3,00c8ff,物品品质3--蓝
+4,quality_4,dc72ff,物品品质4--紫
+5,quality_5,ff7200,物品品质5--橙
+6,quality_6,da2626,物品品质6--红
+7,quality_7,FFFF00,物品品质7--彩
+#文案配置用到的颜色(ID大于100且小于1000，适用 |c101文字$c),,,
+101,r_write,F7EDCA,白色
+102,r_green,82f428,绿色
+103,r_blue,00c8ff,蓝色
+104,r_purple,dc72ff,紫色
+105,r_golden,ffdd00,金色
+106,r_orange,ff7200,橙色
+107,r_red,da2626,红色
+108,r_green_1,40D2A1,浅绿色
+109,r_green_2,10cb02,翠绿色
+110,r_green_3,1ade4d,绿草色
+111,r_red_2,ff3030,亮红色
+#全局颜色 (游戏中用到的颜色),,,
+1000,c_white,ffffff,白色
+1100,c_green,1ade4d,绿色
+1101,c_green_deep,0D7A04,墨绿色
+1200,c_red,ff0000,红色
+1300,c_blue,D5757C,蓝色
+1400,c_orange,ff670c,橙色

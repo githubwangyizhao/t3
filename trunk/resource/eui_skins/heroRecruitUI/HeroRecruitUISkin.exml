@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HeroRecruitUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17ad112c66d"/>
+	<e:Image id="u_imgBg" horizontalCenter="0" y="0" visible="true" source=""/>
+	<e:Image id="u_iconName" y="517" visible="true" x="463"/>
+	<e:Image id="u_iconTitle" source="heroRecruitUI_json.heroRecruitUI_title" visible="true" anchorOffsetX="309" anchorOffsetY="45" y="321" x="568"/>
+	<e:Label id="u_txtBlank" text="点击空白处关闭窗口" y="591" size="16" visible="true" touchEnabled="false" horizontalCenter="0" textColor="0xF0E4B0" bold="true" fontFamily="Microsoft YaHei"/>
+</e:Skin>

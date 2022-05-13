@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LuckyBallBtnSkin"
+	 width="94"
+	height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c10518c44"/>
+	<e:Group id="u_btnClick" width="94" height="70">
+		<e:Image source="luckyBallUI_json.luckyBallUI_entrance_bg" x="0" y="0" visible="true"/>
+		<e:Image source="luckyBallUI_json.luckyBallUI_entrance_icon" x="12" y="11" visible="true"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ServerListItemSkin" width="185" height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="loginUI_json.loginUI_id_2" scale9Grid="38,11,84,8" width="185"/>
+	<e:Label id="u_txtName" text="s.21 我的世界" x="34" size="16" anchorOffsetX="0" textColor="0xFFFFFF" y="8.371"/>
+	<e:Image id="u_imgName" source="loginUI_json.loginUI_huo" x="10" y="7"/>
+	<e:Image id="u_imgState" x="165" y="7" source="loginUI_json.loginUI_huo_img"/>
+</e:Skin>

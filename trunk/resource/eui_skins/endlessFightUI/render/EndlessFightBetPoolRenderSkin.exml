@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.EndlessFightBetPoolRenderSkin"
+	 width="311"
+	height="98" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17cfe8b4ddc"/>
+	<e:Group id="u_grpParent" visible="true" width="311" height="105">
+		<e:Image id="u_imgBg" scaleX="1" scaleY="1" scale9Grid="32,19,66,79" visible="true" source="endlessFightUI_json.endlessFightUI_bet_normal_5"/>
+		<e:Image id="u_imgGold" y="-0.322" visible="true" width="20" height="20" left="3" source="carTurnUI_json.carTurnUI_icon_2"/>
+		<ns1:NumberView id="u_numTotal" width="200" height="14" x="23.5" y="2.392"/>
+		<ns1:NumberView id="u_numSelf" width="30" height="14" x="6" bottom="9"/>
+		<e:Group id="u_grpTypeIcon_0" visible="true" left="13" bottom="5" height="31">
+			<e:Image id="u_imgType_0" source="endlessFightUI_json.endlessFightUI_img_frame" scaleX="1" scaleY="1" width="30" height="30"/>
+			<ns1:NumberView id="u_numOdds_0" width="11" height="14" x="32" y="11.784"/>
+		</e:Group>
+		<e:Group id="u_grpTypeIcon_1" visible="true" right="12" bottom="4" height="31">
+			<e:Image id="u_imgType_1" source="endlessFightUI_json.endlessFightUI_img_frame" scaleX="1" scaleY="1" width="30" height="30" visible="true"/>
+			<ns1:NumberView id="u_numOdds_1" width="11" height="14" x="34" y="11.784" visible="true"/>
+		</e:Group>
+		<e:Image id="u_imgLight" visible="true" y="-6" x="-4" scale9Grid="41,39,42,38" alpha="1"/>
+	</e:Group>
+</e:Skin>

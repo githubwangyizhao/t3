@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleUpStarRenderSkin"
+	 width="112"
+	height="137" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a8a9ba95f"/>
+	<e:Image source="roleUpStarUI_json.roleUpStarUI_item_bg" x="0" y="0" visible="true" width="112" height="112"/>
+	<e:Image id="u_imgItem" width="100" height="100" horizontalCenter="0" y="6" x="6"/>
+	<e:Label id="u_txtName" text="装备名字" y="119" size="18" bold="true" textColor="0xF0E4B0" visible="true" horizontalCenter="0" x="20"/>
+</e:Skin>

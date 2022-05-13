@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HundunUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_bg" top="0" bottom="0" width="1480" horizontalCenter="0" source="hundunBg_json.hundunBg_bg1"/>
+	<e:Group id="u_gp_page" horizontalCenter="-2" verticalCenter="-1">
+		<e:Image id="u_img_bg" source="hundunBg_json.hundunUI_bg2" x="0" y="0"/>
+		<e:Image x="219.11" y="53.16" source="hundunUI_json.hundunUI_lbd1"/>
+		<e:Group id="u_gp_contex" anchorOffsetX="0" width="785" anchorOffsetY="0" height="430" x="259" y="79">
+			<e:Image id="u_img_ze" width="812" height="423" x="-18" y="0" source="hundunUI_json.hundunUI_xzkd" scaleX="1" scaleY="1" scale9Grid="11,17,40,39" anchorOffsetX="0"/>
+		</e:Group>
+		<e:Group x="309.48" y="565.01">
+			<e:Image source="hundunUI_json.hundunUI_sld" x="0" y="0" anchorOffsetX="0" width="369.33" scale9Grid="7,6,44,43"/>
+			<e:Image id="u_img_getIcon" source="commonUI_json.commonUI_icon_52" x="5.8" y="-0.81" width="50" height="50"/>
+			<e:Label id="u_lb_total" text="Win:0" x="60.03" y="13.66" textColor="0xefebac" bold="true" size="27" fontFamily="SimHei"/>
+		</e:Group>
+		<e:Group id="u_gp_cost" x="760.35" y="492.23" visible="false">
+			<e:Image source="hundunUI_json.hundunUI_sld" x="0" y="0" anchorOffsetX="0" width="283.33" scale9Grid="7,6,44,43"/>
+			<e:Image id="u_img_del" source="commonUI_json.commonUI_img_jian" x="10" y="10.99"/>
+			<e:Image id="u_img_add" source="commonUI_json.commonUI_img_jia" x="233" y="10.99"/>
+			<e:Label id="u_lb_cost" text="100" x="92.99" y="18" size="23" width="120" textAlign="center"/>
+		</e:Group>
+		<e:Group id="u_gp_autos" x="687" y="354" visible="false">
+			<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="165" anchorOffsetY="0" height="215" scale9Grid="8,8,52,54" scaleX="1" scaleY="1"/>
+			<e:Group id="u_auto4" x="5" y="2">
+				<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+				<e:Label text="∞" x="42.67" y="0" textColor="0xdbb981" size="33" anchorOffsetX="0" width="72.33" textAlign="center" height="35" fontFamily="Microsoft YaHei"/>
+			</e:Group>
+			<e:Group x="5" y="42" id="u_auto3">
+				<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+				<e:Label text="500" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+			</e:Group>
+			<e:Group x="5" y="82" id="u_auto2">
+				<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+				<e:Label text="100" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+			</e:Group>
+			<e:Group x="5" y="122" id="u_auto1">
+				<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+				<e:Label text="50" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+			</e:Group>
+			<e:Group x="5" y="162" id="u_auto0">
+				<e:Image source="hundunUI_json.hundunUI_xzkd" x="0" y="0" anchorOffsetX="0" width="155" anchorOffsetY="0" height="38" scale9Grid="8,8,52,54"/>
+				<e:Label text="30" x="62.67" y="10" textColor="0xDBB981" size="20" anchorOffsetX="0" textAlign="center" fontFamily="Microsoft YaHei"/>
+			</e:Group>
+		</e:Group>
+		<e:Image id="u_img_mask" width="777" height="423" x="265" y="78" source="commonUI_json.commonUI_box_1"/>
+		<e:Group id="u_gp_bet" x="842.47" y="560.38">
+			<e:Image id="u_btn_bet" source="hundunUI_json.hundunUI_bet" x="0" y="0"/>
+			<e:Label id="u_lb_bet" text="0" x="22.2" y="30.24" size="20" textAlign="center" verticalAlign="middle" fontFamily="SimHei" textColor="0xE8CF6F" width="100"/>
+		</e:Group>
+		<e:Group id="u_gp_auto" x="695" y="560.38">
+			<e:Image id="u_btn_auto" x="0" y="0" source="hundunUI_json.hundunUI_auto2"/>
+			<e:Label id="u_lb_auto" text="0" x="21.67" y="28.62" size="20" textAlign="center" verticalAlign="middle" fontFamily="SimHei" textColor="0xe8cf6f" width="100"/>
+		</e:Group>
+		<e:Image id="u_btnRule" source="hundunUI_json.hundunUI_info" x="155.03" y="560.38"/>
+		<e:Image id="u_btnStart" source="hundunUI_json.hundunUI_spin" x="992.44" y="560.38"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,151 @@
+{
+	"groups": [
+		{
+			"name": "preload",
+			"keys": "name_10031_png,icon_10031_png,noticeUI_bg_png,noticeUI_close_png,noticeUI_title_png,noticeUI_json,title_12_png,bj_12_png,scene_data_json,scene_data2_json,scene_data3_json,scene_data4_json,scene_data5_json,scene_data6_json,scene_data7_json,scene_data8_json,scene_data9_json,icon_20001_png,name_20001_png,scene_data10_json,pagebar_mission_type_12_on_png,38_454_png,40021_png,40025_png,40022_png,40026_png,40023_png,40024_png"
+		}
+	],
+	"resources": [
+		{
+			"name": "name_10031_png",
+			"type": "image",
+			"url": "ui/entranceUI/assets/name_10031.png"
+		},
+		{
+			"name": "icon_10031_png",
+			"type": "image",
+			"url": "ui/entranceUI/assets/icon_10031.png"
+		},
+		{
+			"name": "noticeUI_bg_png",
+			"type": "image",
+			"url": "ui/noticeUI/assets/noticeUI_bg.png"
+		},
+		{
+			"name": "noticeUI_close_png",
+			"type": "image",
+			"url": "ui/noticeUI/assets/noticeUI_close.png"
+		},
+		{
+			"name": "noticeUI_title_png",
+			"type": "image",
+			"url": "ui/noticeUI/assets/noticeUI_title.png"
+		},
+		{
+			"name": "noticeUI_json",
+			"type": "sheet",
+			"url": "ui/noticeUI/noticeUI.json",
+			"subkeys": "noticeUI_bg,noticeUI_close,noticeUI_title"
+		},
+		{
+			"name": "title_12_png",
+			"type": "image",
+			"url": "assets/icon/missionHall/title_12.png"
+		},
+		{
+			"name": "bj_12_png",
+			"type": "image",
+			"url": "assets/icon/missionHall/bj_12.png"
+		},
+		{
+			"name": "scene_data_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11002/scene_data.json"
+		},
+		{
+			"name": "scene_data2_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11003/scene_data.json"
+		},
+		{
+			"name": "scene_data3_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11004/scene_data.json"
+		},
+		{
+			"name": "scene_data4_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11005/scene_data.json"
+		},
+		{
+			"name": "scene_data5_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11006/scene_data.json"
+		},
+		{
+			"name": "scene_data6_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11007/scene_data.json"
+		},
+		{
+			"name": "scene_data7_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11008/scene_data.json"
+		},
+		{
+			"name": "scene_data8_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11009/scene_data.json"
+		},
+		{
+			"name": "scene_data9_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/11010/scene_data.json"
+		},
+		{
+			"name": "icon_20001_png",
+			"type": "image",
+			"url": "ui/entranceUI/assets/icon_20001.png"
+		},
+		{
+			"name": "name_20001_png",
+			"type": "image",
+			"url": "ui/entranceUI/assets/name_20001.png"
+		},
+		{
+			"name": "scene_data10_json",
+			"type": "json",
+			"url": "assets/scene/scenedata/6018/scene_data.json"
+		},
+		{
+			"name": "pagebar_mission_type_12_on_png",
+			"type": "image",
+			"url": "ui/pagebarText/pagebar_mission_type_12_on.png"
+		},
+		{
+			"name": "38_454_png",
+			"type": "image",
+			"url": "assets/icon/uiTitle/38_454.png"
+		},
+		{
+			"name": "40021_png",
+			"type": "image",
+			"url": "assets/icon/Item/40021.png"
+		},
+		{
+			"name": "40025_png",
+			"type": "image",
+			"url": "assets/icon/Item/40025.png"
+		},
+		{
+			"name": "40022_png",
+			"type": "image",
+			"url": "assets/icon/Item/40022.png"
+		},
+		{
+			"name": "40026_png",
+			"type": "image",
+			"url": "assets/icon/Item/40026.png"
+		},
+		{
+			"name": "40023_png",
+			"type": "image",
+			"url": "assets/icon/Item/40023.png"
+		},
+		{
+			"name": "40024_png",
+			"type": "image",
+			"url": "assets/icon/Item/40024.png"
+		}
+	]
+}

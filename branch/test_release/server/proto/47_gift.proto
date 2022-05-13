@@ -1,0 +1,125 @@
+// 送礼
+
+import "05_prop.proto";
+
+// 查询玩家
+message m_select_player_tos {
+    required uint32 player_id = 1;                          // 玩家id
+}
+message m_select_player_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        none = 3;                                           // 没有该玩家
+    }
+    required ENUM result = 1;                               // 结果
+    optional string player_name = 2;                        // 玩家名字
+}
+
+// 送礼
+message m_give_gift_tos {
+    required uint32 player_id = 1;                          // 玩家id
+    repeated Prop prop_list = 2;                            // 道具列表
+    required string code = 3;                               // 验证码
+}
+message m_give_gift_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        no_enough_prop = 3;                                 // 道具不足
+        expire = 4;                                         // 验证码过期
+        invalid_code = 5;                                   // 验证码错误
+        function_no_open = 6;                               // 功能未开启
+    }
+    required ENUM result = 1;                               // 结果
+}
+
+// 礼物邮件数据
+message GiftMailInfo {
+    required int32 mail_real_id = 1;                        // 邮件实际id
+    required int32 mail_id = 2;                             // 邮件模板id
+    required string title_content = 3;                      // 邮件标题内容
+    repeated string param_list = 4;                         // 邮件标题参数
+    required int32 is_read = 5;                             // 是否已读
+    required int32 attachment_state = 6;                    // 附件状态 0无附件,1:有附件,2:有附件并且已领取
+    required int32 create_time = 7;                         // 创建时间
+}
+
+// 邮件信息
+message m_init_mail_info_toc {
+    repeated GiftMailInfo gift_mail_info_list = 1;          // 简单的邮件信息
+}
+
+// 读邮件
+message m_read_mail_tos {
+    required int32 mail_real_id = 1;                        // 邮件实际id
+}
+message m_read_mail_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+    }
+    required ENUM result = 1;
+    required int32 mail_real_id = 2;                        // 邮件实际id
+    required int32 mail_id = 3;                             // 邮件模板id
+    required string content = 4;                            // 邮件内容
+    repeated string param_list = 5;                         // 邮件参数
+    repeated Prop prop_list = 6;                            // 附件道具列表
+}
+
+// 提取附件邮件
+message m_get_item_mail_tos {
+    required int32 mail_real_id = 1;                        // 邮件实际id 0:全部
+}
+message m_get_item_mail_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        not_enough_grid = 3;                                // 格子不足
+        not_authority = 4;                                  // 没道具提取
+    }
+    required ENUM result = 1;
+    repeated int32 mail_real_id_list = 2;                   // 邮件实际id列表
+    repeated Prop prop_list = 3;                            // 附件道具列表
+}
+
+// 删除邮件
+message m_delete_mail_tos {
+    required int32 mail_real_id = 1;                        // 邮件实际id 0:全部
+}
+message m_delete_mail_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+        not_authority = 3;                                  // 道具未领取
+        none = 4;                                           // 无可删除的邮件
+    }
+    required ENUM result = 1;
+    repeated int32 mail_real_id_list = 2;                   // 邮件实际id列表
+}
+
+// 增加新邮件
+message m_add_mail_toc {
+    repeated GiftMailInfo gift_mail_info_list = 1;          // 邮件信息
+}
+// 减少邮件
+message m_remove_mail_toc {
+    repeated int32 mail_real_id = 2; // 邮件实际id
+}
+
+// 赠送者获取自己的赠送记录
+message m_gift_mail_record_tos {}
+message ReceiverInfo{
+    required int32 receiver = 2;                            // 收件人玩家编号
+    required string receiver_name = 3;                      // 收件人玩家昵称（带区服）
+    required int32 create_time = 4;                         // 赠送时间戳
+    repeated Prop prop_list = 5;                            // 附件道具列表
+}
+message m_gift_mail_record_toc {
+    enum ENUM {
+        success = 1;                                        // 成功
+        fail = 2;                                           // 失败
+    }
+    required ENUM result = 1;
+    repeated ReceiverInfo receiver_info_list = 2;               // 收件人信息
+}

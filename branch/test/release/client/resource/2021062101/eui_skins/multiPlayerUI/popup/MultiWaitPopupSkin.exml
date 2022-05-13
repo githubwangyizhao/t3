@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MultiWaitPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1762c664d95"/>
+	<e:Image source="multiRoomUI_json.multiRoomUI_wait" y="468" horizontalCenter="-3.5" visible="true"/>
+</e:Skin>

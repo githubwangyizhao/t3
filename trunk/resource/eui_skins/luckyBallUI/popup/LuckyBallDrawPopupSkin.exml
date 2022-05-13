@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.LuckyBallDrawPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c0cd97093"/>
+	<e:Group id="u_grpParent" width="1136" height="640" visible="true" horizontalCenter="0">
+		<e:Scroller id="u_scrollItem" width="469" height="348" y="220" scaleX="1" scaleY="1" x="540">
+			<e:Group x="0">
+			<e:List id="u_listItem" x="5" y="5"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="u_grpErnie" y="180" width="277" height="284" visible="true" x="220">
+			<e:Image id="u_imgTurn" x="97" y="150" scaleX="1" scaleY="1" anchorOffsetX="164.5" anchorOffsetY="165.5" source="luckyBallAccUI_json.luckyBallUI_img_circle"/>
+			<e:Image id="u_imgMirror" source="luckyBallAccUI_json.luckyBallUI_img_circle1" x="97" y="150" anchorOffsetX="132.5" anchorOffsetY="134.5"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

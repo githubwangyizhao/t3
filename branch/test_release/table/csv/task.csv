@@ -1,0 +1,10 @@
+task任务表,,,,,,,,,,,,,,,
+int|key,int,int,str,str,str,str,str,int,int|useless,int,int,int,int|useless,str|useless,int|useless
+,,,,,,,,,1,,,0,,,
+id,next_task,open_main_funcId,content_list,title,content_desc,complete_content_desc,function_desc,icon,init_type,award_id,reward_dialog,click_guide_id,is_auto_finish,jump_scene_list,auto_scene_id
+"任务id","下个任务id","对话完成，是否非主城场景回到主城激活建筑(不能是最后一个任务）","任务内容条件[key,value]","标题","任务描述","任务描述领取界面","跳转描述（描述，怪物类型（monster_info type字段 不配默认小怪），具体怪物id（monster_info id字段 没有不配））不配不显示描述","resource\assets\icon\task","初始化类型(0:读取玩家当前值,1:从0开始)","奖励id（读取reward表）","领取任务奖励触发对话","点击前往任务启动引导","是否系统自动完成任务","完成任务跳转场景[scene_id, x, y] | [scene_id]","挂机地图"
+#,,,,,,,,,,,,,,,
+1001,1002,,"[kill_monster_count,10]",击杀10只怪物,"击杀10只怪物,获取怪物之核【拉霸房老闆需要他們身上的材料修復拉霸房】",太感謝你啦，冒險者！,查看怪物图鉴_4_408,1,,60001,10001,,,,
+1002,1003,99004,"[kill_kind_count,2,7]",击杀7只中型怪,"击杀7只中型怪,获取大地之心【拉霸房老闆需要这些材料修復拉霸房】",你竟然收集到了這些材料，十分感謝！,查看怪物图鉴_4_408,2,,60002,10004,,,,
+1003,1004,99002,"[laba_count,10]",玩10次拉霸,玩10次拉霸获得万能水晶【斗兽场老闆需要这些材料修復斗兽场】,玩10次拉霸获得万能水晶【斗兽场老闆需要这些材料修復斗兽场】,查看怪物图鉴_4_408,12,,60003,10005,,,,
+1004,0,,"[level,10]",等级达到10级,等级达到10级,等级达到10级,,12,0,60004,10005,,,,

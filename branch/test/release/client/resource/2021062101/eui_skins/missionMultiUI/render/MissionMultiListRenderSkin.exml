@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MissionMultiListRenderSkin"
+	 width="567"
+	height="174" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17617f29564"/>
+	<e:Image source="missionMultiUI_json.missionMultiUI_render_di" y="0" visible="true" x="0"/>
+	<e:Label id="u_txtCondition" text="Essential condition:" x="159" y="56" bold="true" size="19" visible="true" stroke="1.5" strokeColor="0x72777F"/>
+	<e:Group id="u_grpIcon" x="342" y="51">
+		<e:Image x="0" y="0" source="userMainUI_json.userMainUI_u_yinbi_a" visible="true"/>
+		<e:Label text="2000" x="32" y="4" size="24" bold="true" visible="true" stroke="1.5" strokeColor="0x6E7680" id="u_txtEnteryCost" textColor="0x00E22B"/>
+	</e:Group>
+	<e:Label text="Participants: 0/5" x="159" y="90" bold="true" size="19" visible="true" stroke="1.5" strokeColor="0x72777F" id="u_txtPartic"/>
+	<e:Label text="Limit: VIP1" x="329" y="89" bold="true" size="19" visible="true" stroke="1.5" strokeColor="0x72777F" id="u_txtVip"/>
+	<e:Image source="missionMultiUI_json.missionMultiUI_boss_select_1" x="0" y="95" visible="true"/>
+	<e:Group id="u_btnJoin" visible="true" x="441" y="56" width="122" height="59">
+		<e:Image y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_1" scale9Grid="64,15,2,3" scaleX="0.9" scaleY="0.9"/>
+		<e:Label id="u_txtJoin" bold="true" textColor="0x573118" size="22" verticalCenter="0" text="Join" horizontalCenter="0" visible="true"/>
+		<e:Image id="u_iconLock" source="commonsUI_json.commonsUI_btn_suo" x="90" y="-14"/>
+	</e:Group>
+</e:Skin>

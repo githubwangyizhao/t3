@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.BossEventViewSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgMark" source="commonUI_json.commonUI_box" horizontalCenter="0" verticalCenter="0" width="1136" height="640" alpha="0.8" touchEnabled="false" visible="false"/>
+	<e:Image id="u_imgBg" horizontalCenter="0" verticalCenter="0" visible="false" scale9Grid="171,96,170,96" width="1136" height="640"/>
+</e:Skin>

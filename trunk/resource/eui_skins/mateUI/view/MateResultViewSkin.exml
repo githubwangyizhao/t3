@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateResultViewSkin"
+	 width="879"
+	height="49" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgbg" source="mateResultUI_json.mateResultUI_ranko"/>
+	<e:Image id="u_imgwin" source="mateResultUI_json.mateResultUI_win_icon" x="158" y="-2"/>
+	<e:Image id="u_imgrank" source="mateResultUI_json.mateResultUI_icon_1" x="223.864" y="-2.442" scaleX="0.8" scaleY="0.8"/>
+	<e:Label id="u_txtrank" text="4" x="242.677" y="16" fontFamily="Microsoft YaHei" size="18"/>
+	<e:Group height="48" left="283" verticalCenter="0.5">
+			<e:Group x="0" y="2">
+			<e:Image id="u_imghead" scaleX="0.25" scaleY="0.25" x="6" y="6"/>
+			<e:Image id="u_imgheadframe" scaleX="0.35" scaleY="0.35" horizontalCenter="-21" verticalCenter="-21"/>
+			</e:Group>
+			<e:Label id="u_txtName" y="16" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" size="18" left="55" text="玩家名字六个字" textColor="0xF0E4B0"/>
+	</e:Group>
+	<e:Image x="527" y="4" source="commonUI_json.commonUI_icon_52"/>
+	<e:Label id="u_txtNum" text="99999999" y="17.623" size="18" fontFamily="Microsoft YaHei" left="569" textColor="0xF0E4B0"/>
+</e:Skin>

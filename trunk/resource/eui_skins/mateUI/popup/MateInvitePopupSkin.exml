@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateInvitePopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c731f66e4"/>
+	<e:Image y="197" width="526" height="214" visible="true" source="commonUI_json.commonUI_img_popdi" scale9Grid="33,78,33,415" x="305"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" y="200" visible="true" horizontalCenter="-5.5"/>
+	<e:Image y="206" visible="true" source="mateTeamWaitUI_json.mateTeamWaitUI_txt_zdzm" horizontalCenter="0"/>
+	<e:Image y="264" width="460" horizontalCenter="0" height="46" visible="true" source="commonUI_json.commonUI_img_titbox" scale9Grid="12,12,13,13"/>
+	<e:EditableText id="u_txtInput" width="450" height="46" textAlign="center" verticalAlign="middle" size="18" fontFamily="Microsoft YaHei" y="263" visible="true" horizontalCenter="0" prompt="输入玩家角色名称" bold="true" promptColor="0x8693A7" textColor="0x8693A7"/>
+	<e:Group id="u_btnInvite" y="341" visible="true" horizontalCenter="0" width="122" height="46" touchChildren="false">
+		<e:Image x="0" y="0" visible="true" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image source="mateTeamWaitUI_json.mateTeamWaitUI_txt_yq" horizontalCenter="-1" verticalCenter="1" visible="true"/>
+	</e:Group>
+	<e:Image id="u_btnClose" x="735" y="199" source="commonUI_json.commonUI_btn_close_4" visible="true" width="93" height="34"/>
+</e:Skin>

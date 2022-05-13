@@ -1,0 +1,183 @@
+import "05_prop.proto";
+//buff
+message Buff {
+    required int32 id = 1;                  // buff id
+    required int32 level = 2;               // buff 等级
+    required int32 left_time = 3;           // 剩余时间(ms)
+}
+
+//effect
+message Effect {
+    required int32 id = 1;                  // 关联 effect_type.csv 表
+    required uint32 data = 2;               // 数据
+}
+
+//分段伤害
+message HurtSection {
+    required uint32 hurt = 1;               // 伤害
+    required int32 delay = 2;               // 延迟(ms)
+}
+
+//战斗
+message m_fight_tos {
+    required int32 skill_id = 1;            // 技能id
+    required int32 dir = 2;                 // 方向
+    required int32 target_id = 3;           // 目标id
+    required int32 target_type = 4;         // 目标者类型
+    required int32 attack_type = 5;         // 攻击类型 (1:玩家 2:怪物 3:妖灵 4:法宝 5:buff触发)
+    required int32 mano_value = 6;          // 消耗灵力值
+}
+
+//战斗失败
+message m_notice_fight_fail_toc {
+    enum ENUM {
+        cd_time = 1;    //cd 时间
+        fail = 2;       //失败
+    }
+    required ENUM reason = 1;
+}
+
+//被攻击者
+message DefenderResult{
+    required int32 defender_id = 1;         // 被攻击者id
+    required int32 defender_type = 2;       // 被攻击者类型(1:玩家 2:怪物)
+    required uint32 hp = 3;                 // 血量
+    required uint32 hurt = 4;               // 伤害
+    enum ENUM {
+        normal = 1;    //普通
+        dodge = 2;     //闪避
+        crit = 3;      //暴击
+    }
+    required ENUM type = 5;                 // 攻击结果类型
+    required int32 x = 6;                   // 击退坐标 >0 有效
+    required int32 y = 7;                   // 击退坐标 >0 有效
+    repeated Buff buff_list = 8;            // 添加的buff列表
+    repeated Effect effect_list = 9;        // 触发的effect列表
+    repeated HurtSection hurt_section_list = 10;// 伤害列表
+    required int32 total_mano = 11;         // 累计灵力值
+    required int32 all_total_mano = 12;     // 全部玩家累计灵力值
+    required int32 beat_times= 13;          // 受击次数
+    required int32 mano_award = 14;         // 灵力值奖励 暂定待检测其他逻辑是否合法(-1:打到空箱子)
+
+    required int32 exp = 17;                // 經驗
+
+    required int32 special_event = 18;      // 特殊事件 1:召唤怪 2:红包雨 3:翻牌 12:炸弹怪 15:金币小妖
+    required int32 dizzy_close_time = 19;   // 眩晕结束时间
+    required int32 award_player_id = 20;    // 获得奖励的玩家id
+}
+
+//通知战报
+message m_notice_fight_result_toc {
+    required int32 attacker_id = 1;         // 攻击者id
+    required int32 attacker_type = 2;       // 攻击者类型(1:玩家 2:怪物 3:妖灵 4:法宝)
+    required int32 x = 3;
+    required int32 y = 4;
+    required int32 dir = 5;
+    required int32 target_id = 6;           // 目标id
+    required int32 target_type = 7;         // 目标者类型
+    required int32 skill_id = 8;            // 技能id(只有大招和普攻走这里)
+    required int32 skill_level = 9;         // 技能等级
+    required int32 skill_effect = 10 [default=0]; // 技能效果
+    repeated DefenderResult defender_result_list = 13; //被攻击者列表
+    required int32 anger = 18;              // 怒氣
+    required int32 anger_skill_effect = 19 [default=0];      // 大招新的特效id
+}
+
+//通知添加buff
+message m_notice_add_buff_toc {
+    required int32 obj_type = 1;            // 对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;              // 对象id
+    required Buff buff = 3;                 // buff
+}
+
+//通知移除buff
+message m_notice_remove_buff_toc {
+    required int32 obj_type = 1;            // 对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;              // 对象id
+    repeated int32 buff_id_list = 3;        // buff id 列表
+}
+
+// 使用技能
+message m_use_item_tos {
+    required int32 item_id = 1;
+    required int32 mano_value = 2;          // 消耗灵力值
+}
+
+message m_use_item_toc {
+    required int32 item_id = 1;
+    enum ENUM {
+        success = 0;
+        cd_time = 1;    //cd 时间
+        fail = 2;       //失败
+    }
+    required ENUM reason = 2;
+}
+
+//通知释放冰冻技能
+message m_notice_bin_dong_skill_toc {
+    required int32 player_id = 1; // 玩家id
+    message attr_change{
+        required int32 scene_monster_id = 1;// 怪物对象id
+        required int32 destroy_time = 2;    // 销毁时间
+        required int32 end_time = 3;        // 冰冻结束时间
+    }
+    repeated attr_change list = 2;
+}
+
+// 通知获得功能怪物奖励
+message m_notice_get_function_monster_award_toc {
+    required int32 special_event = 1;               // 9翻牌（翻牌类型） 10拉霸（拉霸类型） 11转盘（转盘类型）
+    required int32 special_event_type = 2;          // 对应类型
+    message FunctionMonsterAward{
+        required int32 id = 3;                      // 对应类型表的id
+        repeated Prop prop_list = 4;                // 奖励列表
+    }
+    repeated FunctionMonsterAward award_list = 3;   // 奖励列表
+}
+
+// 蓄力技能
+message WaitSkill {
+    required int32 dir = 1;                         //方向
+    required int32 x = 2;
+    required int32 y = 3;
+}
+
+// 通知使用蓄力技能
+message m_notice_fight_wait_skill_toc {
+    required int32 obj_type = 1;                    // 施法对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;                      // 施法对象id
+    required int32 skill_id = 3;                    // 技能id
+    required int64 end_time = 4;                    // 结束时间戳
+    repeated WaitSkill wait_skill = 5;              // 蓄力技能
+}
+
+// 蓄力技能触发
+message m_wait_skill_trigger_tos {
+    required int32 skill_id = 1;                    // 技能id(4:怒气技能)
+}
+
+message m_dizzy_time_reduce_tos {
+    required int32 times = 1;                       // 单位时间内玩家点击次数
+}
+message m_dizzy_time_reduce_toc {
+    required int64 timestamp = 1;                   // 晕眩结束时间戳
+    required int32 player_id = 2;                   // 减少晕眩时间的玩家编号
+}
+
+//通知添加buff
+message m_notice_add_effect_toc {
+    required int32 obj_type = 1;                    // 对象类型 (1:玩家 2:怪物)
+    required int32 obj_id = 2;                      // 对象id
+    required Buff buff = 3;                         // buff
+}
+
+// 通知箱子结算
+message m_blind_box_reward_toc {
+    message BlindBoxReward {
+        required int32 player_id = 1;                           // 玩家编号
+        required ModelHeadFigure model_head = 2;                // 玩家模型头像外观
+        required int32 grand_price = 3;                         // 是否获得大奖 0 1
+        repeated Prop award_list = 4;                           // 奖励列表
+    }
+    repeated BlindBoxReward blind_box_reward = 1;               // 奖励列表
+}

@@ -1,0 +1,1410 @@
+{
+	"sceneEffectArray": [],
+	"npcArray": [],
+	"mapEventArray": [],
+	"monsterArray": [
+		{
+			"level": 0,
+			"x": 2132,
+			"monster_id": 1,
+			"y": 2902,
+			"only_id": 99971,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2896,
+			"monster_id": 1,
+			"y": 923,
+			"only_id": 9992,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2389,
+			"monster_id": 1,
+			"y": 1352,
+			"only_id": 9993,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2588,
+			"monster_id": 1,
+			"y": 322,
+			"only_id": 9994,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2982,
+			"monster_id": 1,
+			"y": 1473,
+			"only_id": 9995,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3203,
+			"monster_id": 1,
+			"y": 1288,
+			"only_id": 9996,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2147,
+			"monster_id": 1,
+			"y": 2280,
+			"only_id": 9997,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1690,
+			"monster_id": 1,
+			"y": 1616,
+			"only_id": 9998,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1368,
+			"monster_id": 1,
+			"y": 1859,
+			"only_id": 9999,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1938,
+			"monster_id": 1,
+			"y": 1700,
+			"only_id": 99910,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1147,
+			"monster_id": 1,
+			"y": 2158,
+			"only_id": 99911,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 739,
+			"monster_id": 1,
+			"y": 1309,
+			"only_id": 99912,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2033,
+			"monster_id": 1,
+			"y": 709,
+			"only_id": 99913,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2511,
+			"monster_id": 1,
+			"y": 616,
+			"only_id": 99914,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1961,
+			"monster_id": 1,
+			"y": 973,
+			"only_id": 99915,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2289,
+			"monster_id": 1,
+			"y": 1059,
+			"only_id": 99916,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2647,
+			"monster_id": 1,
+			"y": 1195,
+			"only_id": 99917,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1988,
+			"monster_id": 1,
+			"y": 1294,
+			"only_id": 99918,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 333,
+			"monster_id": 1,
+			"y": 1323,
+			"only_id": 99919,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 717,
+			"monster_id": 1,
+			"y": 2694,
+			"only_id": 99920,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 638,
+			"monster_id": 1,
+			"y": 2187,
+			"only_id": 99921,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 903,
+			"monster_id": 1,
+			"y": 2250,
+			"only_id": 99922,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1118,
+			"monster_id": 1,
+			"y": 2531,
+			"only_id": 99923,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 461,
+			"monster_id": 1,
+			"y": 1873,
+			"only_id": 99924,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 596,
+			"monster_id": 1,
+			"y": 2450,
+			"only_id": 99925,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2002,
+			"monster_id": 1,
+			"y": 293,
+			"only_id": 99926,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1860,
+			"monster_id": 1,
+			"y": 544,
+			"only_id": 99927,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1203,
+			"monster_id": 1,
+			"y": 623,
+			"only_id": 99928,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1368,
+			"monster_id": 1,
+			"y": 380,
+			"only_id": 99929,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1689,
+			"monster_id": 1,
+			"y": 859,
+			"only_id": 99930,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1539,
+			"monster_id": 1,
+			"y": 1252,
+			"only_id": 99931,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1261,
+			"monster_id": 1,
+			"y": 1302,
+			"only_id": 99932,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1083,
+			"monster_id": 1,
+			"y": 1616,
+			"only_id": 99933,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1261,
+			"monster_id": 1,
+			"y": 1552,
+			"only_id": 99934,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1468,
+			"monster_id": 1,
+			"y": 1509,
+			"only_id": 99935,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1725,
+			"monster_id": 1,
+			"y": 1251,
+			"only_id": 99936,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2440,
+			"monster_id": 1,
+			"y": 895,
+			"only_id": 99937,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2253,
+			"monster_id": 1,
+			"y": 751,
+			"only_id": 99938,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 396,
+			"monster_id": 1,
+			"y": 2152,
+			"only_id": 99939,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 989,
+			"monster_id": 1,
+			"y": 1095,
+			"only_id": 99940,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 937,
+			"monster_id": 1,
+			"y": 808,
+			"only_id": 99941,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 758,
+			"monster_id": 1,
+			"y": 543,
+			"only_id": 99942,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 543,
+			"monster_id": 1,
+			"y": 348,
+			"only_id": 99943,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 366,
+			"monster_id": 1,
+			"y": 1608,
+			"only_id": 99944,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 574,
+			"monster_id": 1,
+			"y": 1521,
+			"only_id": 99945,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1059,
+			"monster_id": 1,
+			"y": 1901,
+			"only_id": 99946,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 654,
+			"monster_id": 1,
+			"y": 1788,
+			"only_id": 99947,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 847,
+			"monster_id": 1,
+			"y": 1580,
+			"only_id": 99948,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 975,
+			"monster_id": 1,
+			"y": 1345,
+			"only_id": 99949,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1253,
+			"monster_id": 1,
+			"y": 1023,
+			"only_id": 99950,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3688,
+			"monster_id": 1,
+			"y": 2821,
+			"only_id": 99951,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2382,
+			"monster_id": 1,
+			"y": 2202,
+			"only_id": 99952,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2861,
+			"monster_id": 1,
+			"y": 2380,
+			"only_id": 99953,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3611,
+			"monster_id": 1,
+			"y": 2202,
+			"only_id": 99954,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3439,
+			"monster_id": 1,
+			"y": 1788,
+			"only_id": 99955,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3297,
+			"monster_id": 1,
+			"y": 1609,
+			"only_id": 99956,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2896,
+			"monster_id": 1,
+			"y": 1209,
+			"only_id": 99957,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3182,
+			"monster_id": 1,
+			"y": 988,
+			"only_id": 99958,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3832,
+			"monster_id": 1,
+			"y": 2294,
+			"only_id": 99959,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2554,
+			"monster_id": 1,
+			"y": 2752,
+			"only_id": 99960,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2497,
+			"monster_id": 1,
+			"y": 3038,
+			"only_id": 99961,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2732,
+			"monster_id": 1,
+			"y": 3066,
+			"only_id": 99962,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3118,
+			"monster_id": 1,
+			"y": 2623,
+			"only_id": 99963,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2803,
+			"monster_id": 1,
+			"y": 2758,
+			"only_id": 99964,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3261,
+			"monster_id": 1,
+			"y": 2402,
+			"only_id": 99965,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3783,
+			"monster_id": 1,
+			"y": 1944,
+			"only_id": 99966,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3950,
+			"monster_id": 1,
+			"y": 2784,
+			"only_id": 99967,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3304,
+			"monster_id": 1,
+			"y": 3116,
+			"only_id": 99968,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1146,
+			"monster_id": 1,
+			"y": 3009,
+			"only_id": 99969,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1725,
+			"monster_id": 1,
+			"y": 3187,
+			"only_id": 99970,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2761,
+			"monster_id": 1,
+			"y": 681,
+			"only_id": 9991,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1911,
+			"monster_id": 1,
+			"y": 3187,
+			"only_id": 99972,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1461,
+			"monster_id": 1,
+			"y": 3231,
+			"only_id": 99973,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 772,
+			"monster_id": 1,
+			"y": 3363,
+			"only_id": 99974,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2903,
+			"monster_id": 1,
+			"y": 452,
+			"only_id": 99975,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3425,
+			"monster_id": 1,
+			"y": 537,
+			"only_id": 99976,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2668,
+			"monster_id": 1,
+			"y": 930,
+			"only_id": 99977,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2202,
+			"monster_id": 1,
+			"y": 2608,
+			"only_id": 99978,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2311,
+			"monster_id": 1,
+			"y": 1952,
+			"only_id": 99979,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2118,
+			"monster_id": 1,
+			"y": 2037,
+			"only_id": 99980,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1604,
+			"monster_id": 1,
+			"y": 2352,
+			"only_id": 99981,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1825,
+			"monster_id": 1,
+			"y": 2337,
+			"only_id": 99982,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1918,
+			"monster_id": 1,
+			"y": 2666,
+			"only_id": 99983,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2453,
+			"monster_id": 1,
+			"y": 2423,
+			"only_id": 99984,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2553,
+			"monster_id": 1,
+			"y": 1502,
+			"only_id": 99985,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2131,
+			"monster_id": 1,
+			"y": 487,
+			"only_id": 99986,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2332,
+			"monster_id": 1,
+			"y": 416,
+			"only_id": 99987,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3104,
+			"monster_id": 1,
+			"y": 616,
+			"only_id": 99988,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 961,
+			"monster_id": 1,
+			"y": 2859,
+			"only_id": 99989,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 574,
+			"monster_id": 1,
+			"y": 2923,
+			"only_id": 99990,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1396,
+			"monster_id": 1,
+			"y": 2294,
+			"only_id": 99991,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1347,
+			"monster_id": 1,
+			"y": 2844,
+			"only_id": 99992,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1597,
+			"monster_id": 1,
+			"y": 2616,
+			"only_id": 99993,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 824,
+			"monster_id": 1,
+			"y": 1965,
+			"only_id": 99994,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 932,
+			"monster_id": 1,
+			"y": 2521,
+			"only_id": 99995,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1368,
+			"monster_id": 1,
+			"y": 2537,
+			"only_id": 99996,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 346,
+			"monster_id": 1,
+			"y": 2480,
+			"only_id": 99997,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1661,
+			"monster_id": 1,
+			"y": 2873,
+			"only_id": 99998,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1018,
+			"monster_id": 1,
+			"y": 3266,
+			"only_id": 99999,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 318,
+			"monster_id": 1,
+			"y": 2802,
+			"only_id": 999100,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3946,
+			"monster_id": 1,
+			"y": 3145,
+			"only_id": 999101,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2211,
+			"monster_id": 1,
+			"y": 3181,
+			"only_id": 999102,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3047,
+			"monster_id": 1,
+			"y": 3323,
+			"only_id": 999103,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 4032,
+			"monster_id": 1,
+			"y": 2145,
+			"only_id": 999104,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3731,
+			"monster_id": 1,
+			"y": 3144,
+			"only_id": 999105,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3632,
+			"monster_id": 1,
+			"y": 2523,
+			"only_id": 999106,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3346,
+			"monster_id": 1,
+			"y": 2681,
+			"only_id": 999107,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3482,
+			"monster_id": 1,
+			"y": 1394,
+			"only_id": 999108,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3875,
+			"monster_id": 1,
+			"y": 1452,
+			"only_id": 999109,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3961,
+			"monster_id": 1,
+			"y": 1766,
+			"only_id": 999110,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3568,
+			"monster_id": 1,
+			"y": 673,
+			"only_id": 999111,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3774,
+			"monster_id": 1,
+			"y": 330,
+			"only_id": 999112,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3753,
+			"monster_id": 1,
+			"y": 573,
+			"only_id": 999113,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3475,
+			"monster_id": 1,
+			"y": 238,
+			"only_id": 999114,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3325,
+			"monster_id": 1,
+			"y": 737,
+			"only_id": 999115,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3968,
+			"monster_id": 1,
+			"y": 1045,
+			"only_id": 999116,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3668,
+			"monster_id": 1,
+			"y": 1687,
+			"only_id": 999117,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3275,
+			"monster_id": 1,
+			"y": 2159,
+			"only_id": 999118,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3054,
+			"monster_id": 1,
+			"y": 2945,
+			"only_id": 999119,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 274,
+			"monster_id": 1,
+			"y": 3344,
+			"only_id": 999120,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 4061,
+			"monster_id": 1,
+			"y": 2458,
+			"only_id": 999121,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2104,
+			"monster_id": 1,
+			"y": 1501,
+			"only_id": 999122,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2739,
+			"monster_id": 1,
+			"y": 1566,
+			"only_id": 999123,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2325,
+			"monster_id": 1,
+			"y": 2845,
+			"only_id": 999124,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1939,
+			"monster_id": 1,
+			"y": 2916,
+			"only_id": 999125,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1675,
+			"monster_id": 1,
+			"y": 3452,
+			"only_id": 999126,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 568,
+			"monster_id": 1,
+			"y": 3402,
+			"only_id": 999127,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3568,
+			"monster_id": 1,
+			"y": 3402,
+			"only_id": 999128,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3996,
+			"monster_id": 1,
+			"y": 467,
+			"only_id": 999129,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 4090,
+			"monster_id": 1,
+			"y": 1373,
+			"only_id": 999130,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 453,
+			"monster_id": 1,
+			"y": 3129,
+			"only_id": 999131,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 759,
+			"monster_id": 1,
+			"y": 3057,
+			"only_id": 999132,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 1254,
+			"monster_id": 1,
+			"y": 3402,
+			"only_id": 999133,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2554,
+			"monster_id": 1,
+			"y": 3259,
+			"only_id": 999134,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 2897,
+			"monster_id": 1,
+			"y": 3159,
+			"only_id": 999135,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3283,
+			"monster_id": 1,
+			"y": 2880,
+			"only_id": 999136,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3318,
+			"monster_id": 1,
+			"y": 3423,
+			"only_id": 999137,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3918,
+			"monster_id": 1,
+			"y": 3445,
+			"only_id": 999138,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3454,
+			"monster_id": 1,
+			"y": 2045,
+			"only_id": 999139,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		},
+		{
+			"level": 0,
+			"x": 3511,
+			"monster_id": 1,
+			"y": 2995,
+			"only_id": 999140,
+			"rebrith": -2,
+			"round": 0,
+			"delay": 0
+		}
+	],
+	"map_id": 999,
+	"gatherArray": [],
+	"trapArray": []
+}

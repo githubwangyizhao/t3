@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketTaskPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17a326716f0"/>
+	<e:Group id="u_mcLeft" x="126" y="144">
+		<e:Image scale9Grid="13,13,14,14" x="0" visible="true" y="0" source="passTicketTaskUI_json.passTicketTaskUI_title_bg1"/>
+		<e:Image source="passTicketTaskUI_json.passTicketTaskUI_txt_mr" x="7" y="3" visible="true"/>
+		<e:Image source="passTicketTaskUI_json.passTicketTaskUI_txt_sx" x="150" y="3" visible="true"/>
+		<e:Label id="u_txtTime1" text="09:32:18" y="6" size="18" visible="true" stroke="1" textColor="0x1ADE4D" x="258" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_grpDailyTask" y="39" x="1" visible="true"/>
+		<e:Image scale9Grid="13,13,14,14" x="0" visible="true" y="173" source="passTicketTaskUI_json.passTicketTaskUI_title_bg2"/>
+		<e:Image x="7" y="176" visible="true" source="passTicketTaskUI_json.passTicketTaskUI_txt_sj"/>
+		<e:Image x="150" y="176" visible="true" source="passTicketTaskUI_json.passTicketTaskUI_txt_js"/>
+		<e:Label id="u_txtTime2" text="09:32:18" y="179" size="18" visible="true" stroke="1" textColor="0x1ADE4D" x="258" fontFamily="Microsoft YaHei"/>
+		<e:Scroller id="u_scrollerItem" width="1005" height="276" y="212" anchorOffsetX="0" anchorOffsetY="0" visible="true" x="1">
+			<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

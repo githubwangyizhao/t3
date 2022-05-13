@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SoloRoomListUISkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonsUI_json.commonUI_box_2" width="590" height="900" scale9Grid="29,29,30,30" horizontalCenter="0" y="95"/>
+	<e:Image id="u_imgNone" source="soloPlayerUI_json.soloPlayerUI_none" horizontalCenter="0" y="411"/>
+	<e:Scroller id="u_scrollItem" width="547" height="641" y="98.408" horizontalCenter="-0.5">
+		<e:Group height="676.775" x="1.704">
+			<e:List id="u_itemList" y="4" x="-2" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_btnMatch" width="205.971" height="72.612" x="212.01" y="769.987" visible="false">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" y="4" width="194.713"/>
+		<e:Label id="u_txtMatch" x="49.32" y="18" text="Match" height="31.99" textAlign="center" verticalAlign="middle" width="100"/>
+	</e:Group>
+	<e:Group id="u_btnCapital1" width="162" height="80" x="28" y="895" name="btnCap1">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" height="80" width="162"/>
+		<e:Label id="u_txtCapital1" text="1K" x="57.88" y="23.99"/>
+	</e:Group>
+	<e:Group id="u_btnCapital2" width="162" height="80" x="234.068" y="895" name="btnCap2">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" width="162" height="80"/>
+		<e:Label id="u_txtCapital2" text="10K" x="57.94" y="22"/>
+	</e:Group>
+	<e:Group id="u_btnCapital3" width="162" height="80" x="444" y="895" name="btnCap3">
+		<e:Image source="commonsUI_json.commonsUI_btn_1" width="162" height="80"/>
+		<e:Label id="u_txtCapital3" text="100K" horizontalCenter="-3.5" verticalCenter="-2"/>
+	</e:Group>
+</e:Skin>

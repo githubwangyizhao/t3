@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PromoteUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17608b4a798"/>
+	<e:Group x="2.36" y="46.98">
+		<e:Image x="0" y="0" visible="true" source="shareUI_json.shareUI_img_nv"/>
+		<e:Label id="u_shareTips" text="Share it with" x="176" y="141" size="18" bold="true" stroke="2" lineSpacing="12" visible="true" strokeColor="0x6C4B3F"/>
+	</e:Group>
+	<e:Image id="u_btnRule" y="376.518" visible="true" touchEnabled="true" width="44" height="44" x="451" source="shareUI_json.shareUI_rule"/>
+	<e:Group id="u_btnInfo" x="452.3" y="430.65" width="45" height="44">
+		<e:Image x="0" y="0" visible="true" touchEnabled="false" source="shareUI_json.shareUI_info"/>
+		<e:Image id="u_imgRed" x="28.17" y="0.83" source="commonUI_json.commonUI_red" visible="true"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" width="420" height="350" y="132" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="171">
+		<e:Group width="420.151" x="-51.726">
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_btnReceive" visible="true" y="454.528" x="196.833" width="113" height="45">
+		<e:Image y="0" visible="true" x="0" scale9Grid="64,22,2,21" source="shareUI_json.shareUI_btn_recive"/>
+		<e:Image id="u_receiveRed" x="96.789" y="-3.876" source="commonUI_json.commonUI_red"/>
+	</e:Group>
+	<e:Group y="435.41" visible="true" x="254">
+		<e:Image id="u_timesBg" width="48" height="27" y="0" source="shareUI_json.shareUI_tip_bj" scale9Grid="20,9,12,9"/>
+		<e:Label id="u_txtTimes" text="1/1" y="4" size="18" textAlign="center" visible="true" textColor="0x4DEA00" height="18" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

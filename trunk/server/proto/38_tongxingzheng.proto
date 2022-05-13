@@ -1,0 +1,128 @@
+// 通行证
+// OPEN_DEBUG
+
+import "05_prop.proto";
+import "26_task.proto";
+
+//###################################
+// 通行证任务
+//###################################
+// 通行证任务信息推送（登录/跨天时）
+message m_task_info_notice_toc{
+    optional int32 day = 1;                       // 月度任务当前解锁天数
+    repeated TaskInfo daily_tasks = 2;            // 每日任务列表
+    repeated TaskInfo month_tasks = 3;            // 月度任务列表
+    required int32 time = 4;                      // 月度任务结束时间
+}
+
+// 通知每日任务更新
+message m_task_daily_update_notice_toc{
+     repeated TaskInfo tasks = 1;
+}
+
+// 通知月度任务更新
+message m_task_month_update_notice_toc{
+     repeated TaskInfo tasks = 1;
+}
+
+// 领取每日任务奖励
+message m_task_daily_reward_collect_tos{
+    required int32 id = 1;                 // 任务id
+}
+message m_task_daily_reward_collect_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_authority = 2;                // 任务不存在
+        no_finish = 3;                    // 任务未完成
+        already_get = 4;                  // 已领取
+        unknown = 5;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    repeated Prop prop_list = 2;            // 奖励列表
+    required int32 id = 3;                  // 任务id
+}
+
+// 领取月度任务奖励
+message m_task_month_reward_collect_tos{
+    required int32 id = 1;                 // 任务id
+}
+message m_task_month_reward_collect_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_authority = 2;                // 任务不存在
+        no_finish = 3;                    // 任务未完成
+        already_get = 4;                  // 已领取
+        unknown = 5;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    repeated Prop prop_list = 2;            // 奖励列表
+    required int32 id = 3;                  // 任务id
+}
+
+//##################################
+// 通行证等级奖励
+//##################################
+// 付费解锁钻石通行证
+message m_purchase_unlock_tos{
+    required int32 type = 1;                // 购买类型 (1-普通购买；2-高级购买)
+}
+message m_purchase_unlock_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        no_enough_prop = 2;               // 钻石不足
+        already_buy = 3;                  // 已购买
+        unknown = 4;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    required int32 type = 2;                // 购买类型
+}
+
+// 通行证等级奖励信息推送（登录/升级/任务领奖/购买高级通行证时）
+message m_reward_info_notice_toc{
+    optional int64 lv = 1;                         // 通行证当前等级
+    optional int64 exp = 2;                       // 通行证经验
+    repeated int32 silver_rewards = 3;            // 白银等级奖励已领取列表
+    repeated int32 diamond_rewards = 4;           // 钻石等级奖励已领取列表
+    required int32 box_num = 5;                   // 额外大型宝箱个数
+    required bool is_buy = 6;                     // 是否购买钻石通行证
+    required int32 txz_id = 7;                    // 通行证id
+}
+
+// 购买等级
+message m_purchase_level_tos{
+}
+message m_purchase_level_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        no_enough_prop = 2;               // 钻石不足
+        not_authority = 3;                // 满级无法继续购买
+        unknown = 4;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+}
+
+// 领取通行证等级奖励
+message m_collect_level_reward_tos{
+    required int32 type = 1;                // 领取奖励类型 (1-白银等级奖励；2-钻石等级奖励；3-大型宝箱奖励)
+    optional int32 lv = 2 [default=0];      // 等级
+}
+message m_collect_level_reward_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_authority = 2;                // 不满足领奖条件
+        fail = 3;                         // 未获得通行证
+        not_exists = 4;                   // 奖励不存在
+        already_get = 5;                  // 已领取
+        unknown = 6;                      // 未知错误
+    }
+    required ENUM result = 1;
+    repeated Prop prop_list = 2;            // 奖励列表
+    required int32 type = 3;                // 领取奖励类型
+    required int32 lv = 4;                  // 等级
+}
+
+

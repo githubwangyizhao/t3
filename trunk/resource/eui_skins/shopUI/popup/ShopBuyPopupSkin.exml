@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopBuyPopupSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179689037f9"/>
+	<e:Image source="commonUI_json.commonUI_img_popdi" x="276.214" y="157.797" width="584.515" scaleY="0.9" height="363.298" scale9Grid="33,173,33,174" scaleX="1"/>
+	<e:Image source="commonUI_json.commonUI_img_buy" x="510" y="153.506" width="119.492"/>
+	<e:Image source="commonUI_json.commonUI_img_titlebg" x="226.864" y="157.311" scaleY="1" scaleX="1"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_4" x="764.864" y="159.385" visible="true"/>
+</e:Skin>

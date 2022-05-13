@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.CarTurnMainUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17cfd98cc4d"/>
+	<e:Image id="u_imgBg" horizontalCenter="0" visible="true"/>
+	<e:Group id="u_grpIcon" width="809.562" height="541.965" y="18.91" visible="true" x="164">
+		<e:Image id="u_imgRightBrake" x="380" y="-10" width="202" height="488" visible="true" source="carTurnUI_json.carTurnUI_right_brake2"/>
+		<e:Image id="u_rightMask" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" visible="true" y="-10" scaleX="1" scaleY="1" zIndex="2" x="380" rotation="0"/>
+		<e:Image id="u_imgLeftBrake" x="-64" y="-10" width="202" source="carTurnUI_json.carTurnUI_left_brake2" visible="true"/>
+		<e:Image id="u_leftMask" source="commonUI_json.commonUI_box" scale9Grid="3,3,4,4" visible="true" x="37.352" y="212.464" zIndex="2" anchorOffsetX="101" anchorOffsetY="264" rotation="180" width="202" height="488"/>
+		<e:Group id="u_grpCar" width="106" height="57" x="-30" y="260" anchorOffsetX="53" anchorOffsetY="28.5" rotation="270">
+			<e:Image id="u_imgCar" y="0" zIndex="11" x="0" source="carTurnUI_json.carTurnUI_img_car1" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpGain" width="116" height="569" y="0.01" touchEnabled="false" touchChildren="false" x="1005">
+		<e:Image horizontalCenter="0" verticalCenter="0" touchEnabled="false" source="carTurnUI_json.carTurnUI_gain_bg" visible="true"/>
+		<e:Image source="carTurnUI_json.carTurnUI_gain_title" x="7.344" y="32.498" visible="true"/>
+	</e:Group>
+	<e:Group id="u_grpAsset" width="116" height="569" y="0.01" touchEnabled="false" touchChildren="false" x="15">
+		<e:Image horizontalCenter="0" verticalCenter="0" touchEnabled="false" source="carTurnUI_json.carTurnUI_asset_bg" visible="true"/>
+		<e:Image source="carTurnUI_json.carTurnUI_asset_title" y="31.83" visible="true" x="7.166"/>
+	</e:Group>
+	<e:Group id="u_grpChip" width="669.482" height="91.506" y="544" horizontalCenter="-0.5" visible="true">
+		<e:Image source="carTurnUI_json.carTurnUI_img_chip_bg" scaleX="1" scaleY="1" y="9.356" horizontalCenter="0.25900000000001455" touchEnabled="false" visible="true"/>
+		<e:Group id="u_btnRecur" x="596" y="11" scaleX="1" scaleY="1">
+			<e:Image scaleX="1" scaleY="1" source="carTurnUI_json.carTurnUI_last" x="-21" width="85" height="84"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpRight" x="996" y="578.167" visible="true">
+		<e:Group id="u_grpOnLine" y="0" visible="true" height="56" scaleX="1" scaleY="1" width="56">
+			<e:Image scaleX="1" scaleY="1" source="carTurnUI_json.carTurnUI_btn_other"/>
+			<e:Label id="u_textPeople" text="12" x="27" y="-1" size="14" textColor="0xF13A0E" bold="true" visible="false"/>
+		</e:Group>
+		<e:Group id="u_grpMenu" y="0" visible="true" width="56" height="56" scaleX="1" scaleY="1" x="74">
+			<e:Image scaleX="1" scaleY="1" source="carTurnUI_json.carTurnUI_btn_menu"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_grpMyInfo" x="16" y="564" width="163">
+		<e:Image id="u_imgFrame" x="14" y="15" scaleX="0.8" scaleY="0.8"/>
+		<e:Image id="u_imgHead" x="18" y="18" scaleX="0.45" scaleY="0.45"/>
+		<e:Image x="84.004" y="19.496" width="120" height="26" source="carTurnUI_json.carTurnUI_menu_bet_bg_0" scale9Grid="20,16,30,34" visible="true"/>
+		<e:Image x="84.004" y="49.484" width="120" height="22" source="carTurnUI_json.carTurnUI_menu_bet_bg_0" scale9Grid="20,19,31,27"/>
+		<e:Image id="u_btnCharge" source="commonUI_json.commonUI_head_add" y="22.678" x="180.081" scaleX="0.5" scaleY="0.5" width="40" height="40"/>
+		<e:Image id="u_imgMoneyIcon" y="22.822" scaleX="0.8" scaleY="0.8" x="88.664" source="carTurnUI_json.carTurnUI_icon_2"/>
+		<e:Label id="u_textMoney" text="Label" y="24.57" size="16" textColor="0xF0E4B0" horizontalCenter="62"/>
+		<e:Label id="u_textName" text="Label" y="53.282" size="16" textColor="0xF0E4B0" horizontalCenter="63.5"/>
+	</e:Group>
+	<e:Group id="u_grpTrend" y="129.498" visible="true" zIndex="111" horizontalCenter="1" width="450" height="41">
+		<e:Image width="450" height="41" horizontalCenter="0" verticalCenter="0" source="carTurnUI_json.carTurnUI_record_bg" visible="true" scale9Grid="20,20,20,20"/>
+		<e:List id="u_listTrend" y="6" x="10"/>
+		<e:Image id="u_btnTrend" verticalCenter="-1" source="carTurnUI_json.carTurnUI_btn_trend" height="41" visible="true" right="-80" pixelHitTest="true"/>
+	</e:Group>
+	<e:Group id="u_grpFly" horizontalCenter="-568" touchEnabled="false" touchChildren="false"/>
+	<e:Group id="u_grpResidue" y="-5.474" horizontalCenter="0" visible="true">
+		<e:Image source="carTurnUI_json.carTurnUI_time_bg" scaleX="1" scaleY="1"/>
+		<ns1:NumberView id="u_numTime" verticalCenter="0" horizontalCenter="77"/>
+	</e:Group>
+	<e:Group id="u_grpGas" y="463" horizontalCenter="0" visible="false" height="113" width="612" alpha="0">
+		<e:Image id="u_imgGasBg" source="carTurnUI_json.carTurnUI_img_gas_bg" visible="true" verticalCenter="0"/>
+		<e:Image id="u_imgGasPross" source="carTurnUI_json.carTurnUI_img_gas_bg1" scale9Grid="152,11,62,14" verticalCenter="0" width="0"/>
+		<e:Image id="u_btnGas" x="477" source="carTurnUI_json.carTurnUI_btn_gas"/>
+	</e:Group>
+	<e:Group id="u_grpWait" horizontalCenter="0.5" visible="false" width="1380" height="640">
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="0" source="carTurnUI_json.carTurnUI_img_tip_bg_1" verticalCenter="0" scale9Grid="88,34,533,22" height="160"/>
+		<e:Image source="carTurnUI_json.carTurnUI_img_wait" horizontalCenter="1" verticalCenter="4"/>
+		<e:Label id="u_textTip" y="348" horizontalCenter="-1" text="(参与上一轮而获得的奖励，会通过邮件发放)" fontFamily="Microsoft YaHei" size="20"/>
+		<ns1:NumberView id="u_waitTime" horizontalCenter="0" x="644" y="272" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

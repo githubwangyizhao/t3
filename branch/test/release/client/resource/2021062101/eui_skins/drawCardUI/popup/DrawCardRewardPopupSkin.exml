@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DrawCardRewardPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a2705dd7"/>
+	<e:Image x="78" y="30" width="980" height="580" visible="true" source="drawCardUI_json.drawCardUI_reward_bg" scale9Grid="29,78,31,6"/>
+	<e:Image x="99" y="51" visible="true" source="drawCardUI_json.drawCardUI_reward_btn" height="30" width="28"/>
+	<e:Label id="u_txtRewrdTitle" text="獎勵預覽" x="139" y="59.8" size="16" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" visible="true"/>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_2" x="1022" y="59" width="16" height="16"/>
+	<e:Scroller id="u_scrollerItem" width="980" height="506" y="102" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0">
+		<e:Group width="980" x="0" y="0" height="506">
+		<e:List id="u_listItem"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

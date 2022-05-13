@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RangeViewSkin" width="100" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="u_mcInfo" x="50" y="50" anchorOffsetX="50" anchorOffsetY="50">
+		<e:Image source="userMainUI_json.userMainUI_nqbg" x="0" y="0"/>
+		<e:Image id="u_imgIcon" x="0" y="0" source="userMainUI_json.userMainUI_nq"/>
+		<e:Image id="u_imgMenk" source="userMainUI_json.userMainUI_nqjd" x="0" y="0"/>
+		<e:Image id="u_imgLock" source="userMainUI_json.userMainUI_d_skill_lock" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="u_mcCount" y="71.25" horizontalCenter="0">
+		<e:Image id="u_imgCount" source="userMainUI_json.userMainUI_d_skill_num" x="0" y="0" scale9Grid="16,4,1,24"/>
+		<e:Label id="u_txtCount" text="5" size="16" anchorOffsetX="0" textAlign="right" borderColor="0x0A0909" border="false" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xFFFFFF" bold="true" y="10.25" stroke="1" strokeColor="0x131313" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image id="u_imgPk" source="userMainUI_json.userMainUI_pk_tishi" y="4" horizontalCenter="0.5" touchEnabled="false"/>
+	<e:Image id="u_btnClick" width="88" height="88" source="commonUI_json.commonUI_box" scale9Grid="3,3,3,3" alpha="0" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" locked="true"/>
+</e:Skin>

@@ -1,0 +1,12 @@
+charge_game  游戏内充值id,,,,,
+int|key,str,str,int,int,int
+,,,1,,
+id,sign,name,is_ingot,sell_money,mail_id
+"编号","标识","名字","是否给元宝 1:给钻石 2给金币 0不给","购买金额（美元）在recharge.csv-cash 充值金额字段","邮件id(没写使用默认)"
+#,,,,,
+0,common_charge_diamond,普通(钻石),1,,403
+1,first_charge,首充,0,,2
+2,zhi_gou,直接购礼包活动,0,,
+3,tou_zi_ji_hua,投资计划,0,,
+4,common_charge_coin,普通(金币),2,,402
+5,zhi_gou_level,直购等级,2,,

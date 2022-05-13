@@ -1,0 +1,12 @@
+shop_type商店类型表,,,,,,
+int|key,str,str,int,int,int,int
+,,,,,,
+id,sign,name,activity_id,fun_id,log_type|log_type.id,times_id
+"商店类型id","标识","名字","活动id","判断功能id：0为不判断(function_id)","日志类型","次数id"
+1,item_shop,金币商店,,1061,78,
+2,resource_shop,未用,,1061,79,1001
+3,charge_diamond_shop,钻石商店,,610,118,
+101,duobao_shop_1,夺宝商店1,,1072,112,
+102,duobao_shop_2,夺宝商店2,,1072,112,
+10,zhigou_shop,直购商店,,2031,134,
+20,refill_card_shop,充值卡兑换商城,,2041,136,

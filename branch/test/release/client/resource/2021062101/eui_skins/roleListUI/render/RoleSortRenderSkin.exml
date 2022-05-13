@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleSortRenderSkin"
+	 width="148"
+	height="48" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="u_txtName" text="英雄星级" y="9" touchEnabled="false" size="16" visible="true" horizontalCenter="0" textColor="0xA5A5A5"/>
+	<e:Image id="u_imgLine" source="roleListUI_json.roleListUI_line" y="46" width="148" x="0" visible="true"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" alpha="0" width="148" height="48"/>
+</e:Skin>

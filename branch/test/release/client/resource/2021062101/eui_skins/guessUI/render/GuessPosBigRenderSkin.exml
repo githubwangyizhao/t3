@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GuessPosBigRenderSkin"
+	 width="184"
+	height="148" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798d9b7422"/>
+	<e:Group>
+		<e:Image source="guessUI_json.guessUI_img_bg4" y="0" horizontalCenter="0" visible="true"/>
+		<e:Image id="u_imgNum" source="guessUI_json.guessUI_img_small" y="17.159" horizontalCenter="0" visible="false"/>
+		<e:Image id="u_imgSelected" source="guessUI_json.guessUI_img_selected2" x="0" y="-2.628" scale9Grid="48,49,48,50" width="184" height="148" visible="false"/>
+		<e:Label id="u_textTouch" text="点击竞猜" x="60.438" y="109.504" size="16" textColor="0x62463C" visible="true"/>
+		<e:Group id="u_grpMy" x="45.599" y="116.72" visible="false">
+			<e:Image source="guessUI_json.guessUI_img_me" x="0.39" y="-1.021" visible="true" scaleX="1" scaleY="1"/>
+			<e:Image source="commonUI_json.commonUI_icon_juan" x="24.989" y="-2.121" scaleX="0.8" scaleY="0.8" visible="true"/>
+		</e:Group>
+		<e:Group id="u_grpAll" x="45.683" y="72.67" visible="false">
+			<e:Image source="guessUI_json.guessUI_img_sum" x="0.062" y="9.022" scaleX="1" scaleY="1"/>
+			<e:Image source="commonUI_json.commonUI_icon_juan" x="24.033" y="6.69" scaleX="0.8" scaleY="0.8" visible="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

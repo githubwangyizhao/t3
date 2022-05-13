@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MailUIRenderSkin"
+	 width="348"
+	height="72" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17912d9bb33"/>
+	<e:Group visible="true" width="348" height="72">
+		<e:Image id="u_imgIcon" source="mailUI_json.mailUI_icon_award" x="279.894" y="9.329" visible="true"/>
+		<e:Image id="u_imgNew" source="mailUI_json.mailUI_tag_new" x="319.696" y="2.627" visible="true"/>
+		<e:Label text="邮件标题" x="20.736" y="15.788" size="18" textAlign="left" id="u_textTitle" border="false" textColor="0xF0E4B0"/>
+		<e:Label text="2021/04/13  14:50" x="20.619" y="40.54" size="16" textColor="0xBEBAAB" textAlign="left" strokeColor="0x333333" id="u_textTime" borderColor="0x333333" visible="true"/>
+		<e:Image id="u_imgSelect" y="0" horizontalCenter="0" x="0" scaleX="1" scaleY="1" visible="true" source="mailUI_json.mailUI_select_base"/>
+		<e:Image source="mailUI_json.mailUI_img_line2" x="18.795" y="70.807" width="310"/>
+	</e:Group>
+</e:Skin>

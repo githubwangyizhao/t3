@@ -1,0 +1,75 @@
+// 奖金池
+// OPEN_DEBUG
+
+import "05_prop.proto";
+
+// 奖金池信息推送 【进场景 | 攻击怪】
+message m_info_notice_toc{
+    required int32 state = 1;           // 功能状态 （-1:功能已关闭 0:抽奖条件未达成 1:抽奖阶段 2:翻倍阶段）
+    required int32 atk_times = 2;       // 普攻次数
+    required int32 scene_id = 3;        // 场景id
+}
+
+// 查询奖池信息
+message m_get_info_tos{
+}
+message m_get_info_toc{
+    required int32 pool = 1;              // 当前奖金池数量
+}
+
+// 抽奖
+message m_do_draw_tos{
+}
+message m_do_draw_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_open = 2;                     // 功能已关闭
+        error_state = 3;                  // 不在抽奖阶段
+        already_draw = 4;                 // 已经翻过牌
+        system_error = 5;                 // 系统内部出错
+        unknown = 6;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    required int32 draw_num = 2;           // 抽中数量
+    repeated int32 missed_nums = 3;       // 未抽中数量列表
+    required int32 double_num = 4;         // 下一次翻倍可获得数量
+    required bool is_can_double = 5;       // 是否可以翻倍
+    required int32 doubled_times = 6;      // 翻倍次数
+}
+
+// 奖励翻倍
+message m_reward_double_tos{
+}
+message m_reward_double_toc{
+    enum ENUM {
+        success = 1;                      // 翻倍成功
+        fail = 2;                         // 翻倍失败
+        not_open = 3;                     // 功能已关闭
+        not_chance = 4;                   // 没有机会翻牌
+        error_state = 5;                  // 不在翻倍阶段
+        unknown = 6;                      // 未知错误
+    }
+
+    required ENUM result = 1;
+    required int32 draw_num = 2;          // 翻倍后的奖励数量
+    required int32 extra_num = 3;         // 额外奖励数量
+    required int32 double_num = 4;        // 下一次翻倍可获得数量
+    required bool is_can_double = 5;      // 是否可以继续翻倍
+    required int32 doubled_times = 6;     // 翻倍次数
+}
+
+// 结算
+message m_result_tos{
+}
+message m_result_toc{
+    enum ENUM {
+        success = 1;                      // 成功
+        not_open = 2;                     // 功能已关闭
+        error_state = 3;                  // 未翻牌
+    }
+
+    required ENUM result = 1;
+    required int32 draw_num = 2;          // 抽奖奖励数量
+    required int32 extra_num = 3;         // 额外奖励数量
+}

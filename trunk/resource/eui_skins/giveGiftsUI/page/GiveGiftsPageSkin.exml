@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveRecordPageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7deb8da7"/>
+	<e:Image id="u_imgBg_0" horizontalCenter="0" y="0" visible="true"/>
+	<e:Image id="u_imgBg_1" horizontalCenter="0" y="0" visible="true"/>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_img_title" x="480.837" y="56.186" visible="true"/>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_img_bg4" x="368.463" y="176.676" visible="true"/>
+	<e:Group id="u_btnExplain" x="1013" y="149" visible="true" width="93" height="23">
+		<e:Image scaleX="1" scaleY="1" source="commonUI_json.commonUI_btn_th"/>
+		<e:Label id="u_textExplain" text="赠送说明" scaleX="1" scaleY="1" x="29" textColor="0xF0E4B0" size="16" fontFamily="Microsoft YaHei" y="3.677"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" width="516" height="91" y="273.03" horizontalCenter="212" visible="true">
+		<e:Group height="95.143">
+		<e:List id="u_listItem"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="u_textTarget" text="目标 ID:" x="524.665" y="237.003" size="20" italic="true" textColor="0xF0E4B0" visible="true" bold="true" fontFamily="Microsoft YaHei"/>
+	<e:Label id="u_textMsg" y="196" horizontalCenter="199" size="18" textAlign="center" fontFamily="Microsoft YaHei" text="抓耳挠腮" textColor="0xFF3030"/>
+	<e:Group id="u_btnGift" x="1016" y="459" width="93" height="92">
+		<e:Image x="0" y="0" source="giveGiftsUI_json.giveGiftsUI_img_Gift_btn" width="93" height="92" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Label id="u_textPinTime" scaleX="1" scaleY="1" size="16" textColor="0xF0E4B0" fontFamily="Microsoft YaHei" x="900.5" y="389" text="85s"/>
+	<e:Group id="u_btnGive" x="699.332" y="490.333" visible="true" width="160" height="59">
+		<e:Image horizontalCenter="0" visible="true" scaleX="1" scaleY="1" source="commonUI_json.commonUI_img_btnyellow2"/>
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_btn_give" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group x="613.658" y="226.331" visible="true" height="40" width="278">
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_edit_bg" scale9Grid="12,12,13,13" width="276.5" height="39.666" scaleX="1" scaleY="1" visible="true" x="0"/>
+		<e:EditableText id="u_editID" width="263.637" height="31.333" size="18" textAlign="center" verticalAlign="middle" horizontalCenter="0" verticalCenter="-0.5" prompt="请输入玩家ID" visible="true" maxChars="11" fontFamily="Microsoft YaHei" restrict="0-9"/>
+	</e:Group>
+	<e:Group x="521.33" y="374.165" visible="true" width="505" height="45">
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_img_pin" x="0.677" y="11.509" visible="true" scaleX="1" scaleY="1"/>
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_edit_bg" y="0.557" scale9Grid="12,12,13,13" width="233.915" height="44.443" visible="true" horizontalCenter="-0.5"/>
+		<e:EditableText id="u_editPin" width="216.389" height="30.978" y="7.208" horizontalCenter="-0.5" textAlign="center" verticalAlign="middle" size="18" maxChars="6" fontFamily="Microsoft YaHei" restrict="0-9"/>
+		<e:Group id="u_btnGetPin" x="382.838" y="-1.646" visible="true" width="122" height="46">
+			<e:Image source="commonUI_json.commonUI_img_btnbule"/>
+			<e:Image source="giveGiftsUI_json.giveGiftsUI_img_get_pin" scaleX="1" scaleY="1" horizontalCenter="0" y="11" visible="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnQuery" x="906" y="228" width="122" height="40">
+		<e:Image source="commonUI_json.commonUI_img_btnbule" y="-6" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<e:Image source="giveGiftsUI_json.giveGiftsUI_btn_query" y="7" scaleX="1" scaleY="1" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="u_textTip" text="Label" y="463" horizontalCenter="210.5" size="14" bold="true" stroke="1" textColor="0xFF0000"/>
+	<e:Label id="u_textWarnTip" text="Label" y="580" horizontalCenter="209" size="18" bold="true" stroke="1" textColor="0xFF0000"/>
+	<e:Label id="u_textService" y="353" horizontalCenter="209" textColor="0xFF3030" size="18" fontFamily="Microsoft YaHei" visible="true"/>
+</e:Skin>

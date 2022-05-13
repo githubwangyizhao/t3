@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BettleRankRenderSkin"
+	 width="233"
+	height="35" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="commonUI_json.commonUI_line2" y="33" scale9Grid="40,1,39,0" width="230" x="3"/>
+	<e:Image id="u_imgRank" source="bettleUI_json.bettleUI_rank1" x="0" y="0" visible="true" width="27" height="29"/>
+	<e:Label id="u_txtRank" text="1" y="9" fontFamily="Microsoft YaHei" size="14" bold="true" horizontalCenter="-103" textColor="0x8693A7" visible="true"/>
+	<e:Label id="u_txtName" text="s1.玩家名字七个字" y="9" fontFamily="Microsoft YaHei" size="14" bold="true" x="33" textAlign="center" width="140" textColor="0xF0E4B0"/>
+	<e:Label id="u_txtWin" text="999" y="9" fontFamily="Microsoft YaHei" size="14" bold="true" textAlign="center" textColor="0xF0E4B0" horizontalCenter="88.5"/>
+</e:Skin>

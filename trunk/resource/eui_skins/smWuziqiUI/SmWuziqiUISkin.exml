@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmWuziqiUISkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="smWuziqiUI_json.smWuziqiUI_bj" verticalCenter="0" horizontalCenter="0"/>
+	<e:Image id="u_btnClose" x="910" y="8" source="commonUI_json.commonUI_btn_close_3.png" width="36" height="36"/>
+	<e:Group id="u_mcSet" x="918" y="392" locked="true" visible="false">
+		<e:Group id="u_btnMySet" y="31" x="0">
+			<e:Image x="0" y="0" anchorOffsetX="0" width="70.87" anchorOffsetY="0" height="41" source="commonUI_json.commonUI_box" scale9Grid="1,1,8,8"/>
+			<e:Label text="我方" size="20" bold="true" textColor="0xFFFFFF" stroke="2" strokeColor="0x000000" y="13" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="u_btnAiSet" y="31" x="91">
+			<e:Image x="0" y="0" anchorOffsetX="0" width="70.87" anchorOffsetY="0" height="41" source="commonUI_json.commonUI_box" scale9Grid="1,1,8,8"/>
+			<e:Label text="对方" size="20" bold="true" textColor="0xFFFFFF" stroke="2" strokeColor="0x050001" y="12" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label id="u_txtBuju" text="我方布局" y="0" bold="true" size="20" x="51" textColor="0xea3a5d"/>
+		<e:Group id="u_btnClick" y="96" x="50" scaleX="1" scaleY="1">
+			<e:Image x="0" y="0" source="commonUI_json.commonUI_box" width="80" height="46"/>
+			<e:Label text="导出" size="22" bold="true" textColor="0xFFFFFF" stroke="2" strokeColor="0xE37696" y="13" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_mcStep" y="604" x="903">
+		<e:Image source="smWuziqiUI_json.smWuziqiUI_zi_bj" x="0" y="0"/>
+		<e:Label id="u_txtStep" text="剩余：9步" y="3.5" bold="true" size="19" scaleX="1" scaleY="1" strokeColor="0x048770" textAlign="center" stroke="1" textColor="0x00FFBD" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_mcTime" x="903" y="564.5">
+		<e:Image source="smWuziqiUI_json.smWuziqiUI_zi_bj" x="0" y="0"/>
+		<e:Label id="u_txtTime" text="剩余：9步" y="3.5" bold="true" size="19" scaleX="1" scaleY="1" strokeColor="0x048770" textAlign="center" stroke="1" textColor="0x00FFBD" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="u_mcMsg" y="288.5" horizontalCenter="0">
+		<e:Image source="smWuziqiUI_json.smWuziqiUI_sikao" x="0" y="0"/>
+		<e:Image id="u_imgDina1" source="smWuziqiUI_json.smWuziqiUI_sikao_d" x="163" y="27.5"/>
+		<e:Image id="u_imgDina2" source="smWuziqiUI_json.smWuziqiUI_sikao_d" x="177.5" y="27.5"/>
+		<e:Image id="u_imgDina3" source="smWuziqiUI_json.smWuziqiUI_sikao_d" x="192" y="27.5"/>
+	</e:Group>
+	<e:Image id="u_imgTishi" source="smWuziqiUI_json.smWuziqiUI_zi" y="0" horizontalCenter="0.5"/>
+</e:Skin>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MoneyViewSkin"
+	 width="306"
+	height="70" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="userMainUI_json.userMainUI_money_bg" y="0" x="0" touchEnabled="false"/>
+	<e:Group id="u_mcGold" x="51" y="0">
+		<e:Image id="u_imgMoney0" source="commonUI_json.commonUI_icon_2" y="0" x="0"/>
+		<ns1:NumberView id="u_numMoney0" width="145" height="16" y="12" x="46"/>
+	</e:Group>
+	<e:Group id="u_mcRmb" x="51" y="30">
+		<e:Image id="u_imgMoney1" source="commonUI_json.commonUI_icon_4" x="0" y="0"/>
+		<ns1:NumberView id="u_numMoney1" width="145" height="16" y="12" x="46" visible="true"/>
+	</e:Group>
+	<e:Group id="u_btnCharge" x="49.29" y="10.52" width="256" height="51">
+		<e:Image source="commonUI_json.commonUI_head_add" height="50" width="50" visible="true" y="0" x="205"/>
+		<e:Image source="commonUI_json.commonUI_box" y="0" scale9Grid="1,1,8,8" width="254" height="49" alpha="0" visible="true" x="0"/>
+	</e:Group>
+</e:Skin>

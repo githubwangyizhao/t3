@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HScrollBarSkin"
+	 width="390"
+	height="17" xmlns:e="http://ns.egret.com/eui">
+	<e:Image height="390" x="0" source="commonUI_json.commonUI_img_line" rotation="269.984" y="10"/>
+	<e:Group id="thumb" width="32" height="17" x="0" y="0">
+		<e:Image width="17" height="32" source="commonUI_json.commonUI_img_hk" rotation="270.168" x="0" y="17"/>
+	</e:Group>
+</e:Skin>

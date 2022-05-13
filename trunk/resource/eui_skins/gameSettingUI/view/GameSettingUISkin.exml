@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GameSettingUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17880e35ff2"/>
+	<e:Label text="名稱" x="430" size="16" id="u_txtName" fontFamily="Microsoft YaHei" height="20" verticalAlign="middle" y="128" textColor="0xF0E4B0"/>
+	<e:Label id="u_txtId" text="ID：" x="430" size="16" fontFamily="Microsoft YaHei" height="20" verticalAlign="middle" y="156" textColor="0xA5A5A5"/>
+	<e:Image y="232" horizontalCenter="59.5" source="gameSettingUI_json.gameSettingUI_lineBg"/>
+	<e:Group id="u_btnEdit" x="824" y="128" width="122" height="46">
+		<e:Image x="0" y="0" source="commonUI_json.commonUI_img_btnyellow" visible="true"/>
+		<e:Image source="gameSettingUI_json.gameSettingUI_editName" x="0" y="0"/>
+	</e:Group>
+    <e:Group id="u_soundGrp" width="315" height="95" y="258" visible="true" x="308">
+			<e:Image x="6" visible="true" source="gameSettingUI_json.gameSettingUI_title_bg" y="0"/>
+			<e:Label id="u_soundLb" text="音乐" x="18" y="6" size="17" fontFamily="Microsoft YaHei"/>
+			<e:Label id="u_lowLb" text="低" x="5" y="71" textColor="0x8A8B8C" size="16" fontFamily="Microsoft YaHei"/>
+			<e:Label id="u_highLb" text="高" x="286" y="71" textColor="0x8A8B8C" size="16" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group id="u_soundEffGrp" y="258" width="315" height="95" x="630">
+		<e:Image x="6" source="gameSettingUI_json.gameSettingUI_title_bg" visible="true" y="0"/>
+		<e:Label id="u_soundEffLb" text="音效" x="18" y="6" size="17" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_lowLb1" text="低" x="5" y="71" textColor="0x8A8B8C" size="16" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_highLb1" text="高" x="286" y="71" textColor="0x8A8B8C" size="16" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+	<e:Group y="370" width="315" x="308" visible="true">
+		<e:Image source="gameSettingUI_json.gameSettingUI_title_bg" x="6" y="7"/>
+		<e:Label id="u_txtPlayerEff" text="其他玩家特效" x="18" size="17" fontFamily="Microsoft YaHei" verticalAlign="middle" textColor="0xFFFFFF" y="11"/>
+		<e:Group id="u_playerEffBtn" x="5" y="44">
+			<e:Image width="200" height="35" x="0" y="0" source="gameSettingUI_json.gameSettingUI_btn_norBg" scale9Grid="11,11,12,12"/>
+			<e:Image id="u_selectImg" source="gameSettingUI_json.gameSettingUI_btn_selBg" x="0" y="0" visible="true"/>
+			<e:Label id="u_offLb" text="遮罩" x="131" y="9" size="18" fontFamily="Microsoft YaHei"/>
+			<e:Label id="u_onLb" text="展示" x="32" y="9" size="18" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Group>
+	<e:Group y="370" width="315" x="628" visible="true">
+		<e:Image source="gameSettingUI_json.gameSettingUI_title_bg" x="6" y="7"/>
+		<e:Label id="u_txtPush" text="关闭消息推送" x="18" size="17" fontFamily="Microsoft YaHei" verticalAlign="middle" textColor="0xFFFFFF" y="11"/>
+		<e:Group id="u_btnPush" x="5" y="44">
+		<e:Image width="200" height="35" x="0" y="0" source="gameSettingUI_json.gameSettingUI_btn_norBg" scale9Grid="11,11,12,12"/>
+		<e:Image id="u_imgPush" source="gameSettingUI_json.gameSettingUI_btn_selBg" x="0" y="0" visible="true"/>
+		<e:Label id="u_txtPushClose" text="关闭" x="131" y="9" size="18" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_txtPushOpen" text="打开" x="32" y="9" size="18" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnContact" visible="true" y="497" x="699" width="122" height="46">
+		<e:Image y="0" visible="true" x="0" scale9Grid="64,15,2,3" anchorOffsetX="0" anchorOffsetY="0" source="commonUI_json.commonUI_img_btnbule"/>
+		<e:Image x="0" y="0" source="gameSettingUI_json.gameSettingUI_kefu"/>
+	</e:Group>
+	<e:Group id="u_btnAccount" visible="true" y="497" x="834" width="122" height="46">
+		<e:Image y="0" visible="true" x="0" scale9Grid="64,15,2,3" anchorOffsetX="0" anchorOffsetY="0" source="commonUI_json.commonUI_img_btnyellow"/>
+		<e:Image source="gameSettingUI_json.gameSettingUI_account" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="u_mcTishi" y="518" x="313">
+		<e:Label id="u_txtYinshi" text="Privacy Statement" y="11.5" textAlign="right" bold="true" size="19" stroke="2" strokeColor="0x081728" x="281" textColor="0x0ED3FD" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_txtAnd" text="and" y="11.5" textAlign="left" textColor="0xFFFFFF" bold="true" size="19" stroke="2" strokeColor="0x081728" x="486" fontFamily="Microsoft YaHei"/>
+		<e:Label id="u_txtXieyi" text="User Agreement" y="10.5" textAlign="left" x="538" bold="true" size="19" stroke="2" strokeColor="0x081728" textColor="0x0ED3FD" fontFamily="Microsoft YaHei"/>
+		<e:layout>
+		<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group x="313" y="485.446" width="206" height="23">
+		<e:Label id="u_textBind" text="手机绑定：" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" size="16" textColor="0xC6CCD3" verticalCenter="0"/>
+		<e:Label id="u_textState" text="(已绑定)" x="80.894" fontFamily="Microsoft YaHei" size="14" textColor="0x8693A7" verticalCenter="0"/>
+		<e:Group id="u_btnBind" y="-0.469" x="144.341" width="61" height="23">
+			<e:Image source="commonUI_json.commonUI_img_btnbule" scaleX="0.5" scaleY="0.5"/>
+			<e:Label id="u_textBtn" text="Label" scaleX="1" scaleY="1" size="13" fontFamily="Microsoft YaHei" y="5" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="u_btnSign" x="430" y="185">
+		<e:Image source="gameSettingUI_json.gameSettingUI_sign_bg" x="0" y="0" scale9Grid="13,13,14,14" width="512"/>
+		<e:Image source="gameSettingUI_json.gameSettingUI_resign" x="485" y="9" touchEnabled="false"/>
+		<e:Label id="u_txtSign" text="个签" size="16" fontFamily="Microsoft YaHei" height="20" verticalAlign="middle" textColor="0xA5A5A5" y="10" width="473" x="6"/>
+	</e:Group>
+	<e:Group id="u_grpCopy" x="494" y="123">
+		<e:Image source="gameSettingUI_json.gameSettingUI_copy_bg" x="0" y="0"/>
+		<e:Label id="u_txtCopy" text="复制" size="16" fontFamily="Microsoft YaHei" height="20" verticalAlign="middle" horizontalCenter="0" verticalCenter="0" textColor="0xFFFFFF"/>
+	</e:Group>
+	<e:Image id="u_btnCopy" source="commonUI_json.commonUI_box" x="430" y="123" scale9Grid="3,3,4,4" width="114" height="30" alpha="0"/>
+</e:Skin>

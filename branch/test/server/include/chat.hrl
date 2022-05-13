@@ -1,0 +1,4 @@
+-define(CHANNEL_WORLD, 1).          %% 世界
+-define(CHANNEL_SYSTEM, 3).         %% 系统
+-define(CHANNEL_PRIVATE, 6).        %% 私聊
+-define(MESSAGE_SRV, message_srv).     %%消息进程

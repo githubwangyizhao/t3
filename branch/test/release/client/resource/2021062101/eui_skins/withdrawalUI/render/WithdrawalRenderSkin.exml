@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WithdrawalRenderSkin"
+	 width="555"
+	height="152" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="withdrawalUI_json.withdrawalUI_di_1" x="0" y="0" visible="true" id="u_imgBg"/>
+	<e:Image source="withdrawalUI_json.withdrawalUI_txt_bg" x="18" y="15" visible="true"/>
+	<e:Label text="拥有" x="38" y="23" size="22" bold="true" stroke="2" strokeColor="0x853F2B" visible="true" id="u_txtName"/>
+	<e:Group id="u_btnGo" y="59" visible="true" x="393" width="136" height="65">
+		<e:Image id="u_imgGo" y="0" visible="true" x="0" source="commonsUI_json.commonsUI_btn_2" scale9Grid="45,22,45,21"/>
+		<e:Label id="u_txtGo" text="GO" bold="true" horizontalCenter="0.5" textColor="0x573118" size="22" verticalCenter="0"/>
+		<e:Image id="u_imgRed" source="commonsUI_json.commonsUI_red_1" x="114" y="-3"/>
+	</e:Group>
+	<e:Image id="u_imgReceived" source="commonsUI_json.commonsUI_received" x="417" y="61" visible="false"/>
+	<e:Label id="u_txtTishi" text="award：" x="38" y="96.5" size="26" bold="true" stroke="2" strokeColor="0x3a9104" visible="true"/>
+	<e:Label id="u_txtNum" text="x 5" x="216" y="96.5" size="26" bold="true" stroke="2" strokeColor="0x3a9104" visible="true"/>
+	<e:Image id="u_imgIcon" source="commonsUI_json.commonsUI_item_icon" x="132" y="54" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>

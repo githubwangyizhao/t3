@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DailyTaskRenderSkin"
+	 width="505"
+	height="128" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" source="dailyTaskUI_json.dailyTaskUI_renderBg"/>
+	<e:Label id="u_taskLb" text="每日任务" fontFamily="Microsoft YaHei" x="19" y="11" size="18" textColor="0xF0E4B0"/>
+	<e:Image id="u_received" y="24" visible="true" source="commonUI_json.commonUI_received" x="380"/>
+	<e:Group id="u_btn" y="48" x="361">
+		<e:Image id="u_btnBg" source="commonUI_json.commonUI_img_btnyellow" x="0" y="0"/>
+		<e:Image id="u_btnName" horizontalCenter="0" verticalCenter="0" source="commonUI_json.commonUI_img_get"/>
+		<e:Image id="u_imgRed" source="commonUI_json.commonUI_red" x="108" y="2"/>
+	</e:Group>
+</e:Skin>

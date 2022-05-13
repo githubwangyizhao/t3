@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GiveExplainPopupSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c7cdd9a5a"/>
+	<e:Image source="giveGiftsUI_json.giveGiftsUI_img_bg3" horizontalCenter="-44.5" verticalCenter="-19" visible="true"/>
+	<e:Group id="u_pageGrp" height="48" x="90.224" y="107.112" visible="true" width="381">
+	</e:Group>
+	<e:Image id="u_btnClose" source="commonUI_json.commonUI_btn_close_3.png" x="1025.109" y="27.108"/>
+</e:Skin>

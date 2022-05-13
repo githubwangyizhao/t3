@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PassTicketLevelViewSkin"
+	 width="164"
+	height="493" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_mcItem1" width="164" height="239" anchorOffsetX="82" anchorOffsetY="119.5" x="82" y="373.5">
+		<e:Image id="u_imgIconBg1" y="0" visible="true" x="0" source="passTicketRewardUI_json.passTicketRewardUI_box1_1"/>
+		<e:Group y="58" id="u_grpReceive1" touchEnabled="false" horizontalCenter="0">
+			<e:Image source="passTicketRewardUI_json.passTicketRewardUI_mask" width="96" height="96" x="0" y="0"/>
+			<e:Image source="passTicketRewardUI_json.passTicketRewardUI_icon_ylq" scaleX="0.75" scaleY="0.75" visible="true" y="18" x="17"/>
+		</e:Group>
+		<e:Label text="英雄碎片" y="179" size="16" textColor="0xF0E4B0" stroke="1" visible="true" id="u_itemName1" horizontalCenter="0" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Group id="u_grpEff1" width="0" height="0" y="119" touchEnabled="false" touchChildren="false" touchThrough="true" horizontalCenter="0"/>
+		<e:Image id="u_imgRed1" source="commonUI_json.commonUI_red" x="2" y="0"/>
+	</e:Group>
+	<e:Group id="u_mcItem2" width="164" height="239" anchorOffsetX="82" anchorOffsetY="119.5" x="82" y="119.5">
+		<e:Image id="u_imgIconBg2" source="passTicketRewardUI_json.passTicketRewardUI_box2_1" y="0" visible="true" x="0"/>
+		<e:Group id="u_grpReceive2" touchEnabled="false" horizontalCenter="0" y="58">
+			<e:Image source="passTicketRewardUI_json.passTicketRewardUI_mask" width="96" height="96" x="0" y="0"/>
+			<e:Image source="passTicketRewardUI_json.passTicketRewardUI_icon_ylq" scaleX="0.75" scaleY="0.75" visible="true" y="18" x="17"/>
+		</e:Group>
+		<e:Image id="u_imgLock" source="passTicketRewardUI_json.passTicketRewardUI_lock" x="37" y="62" touchEnabled="false" visible="true"/>
+		<e:Label text="英雄碎片" y="174" size="16" textColor="0xF0E4B0" stroke="1" visible="true" id="u_itemName2" horizontalCenter="0" bold="true" fontFamily="Microsoft YaHei"/>
+		<e:Group width="0" height="0" y="119" id="u_grpEff2" touchEnabled="false" touchChildren="false" touchThrough="true" horizontalCenter="0"/>
+		<e:Image id="u_imgRed2" source="commonUI_json.commonUI_red" x="2" y="0"/>
+	</e:Group>
+	<e:Group width="43" height="43" y="221" horizontalCenter="0">
+		<e:Image id="u_imgLvBg" x="0" y="0" visible="true" scaleX="0.85" scaleY="0.85" source="passTicketRewardUI_json.passTicketRewardUI_lv_di1"/>
+		<e:Label id="u_txtLv" text="30" size="18" bold="true" visible="true" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+	</e:Group>
+</e:Skin>

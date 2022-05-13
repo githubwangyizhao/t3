@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuessFightPopupSkin"
+	 width="640"
+	height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" source="guessFightUI_json.guessFightUI_bg" width="800" x="-80"/>
+</e:Skin>

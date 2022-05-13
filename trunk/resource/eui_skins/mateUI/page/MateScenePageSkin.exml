@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MateScenePageSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="u_btnRule" y="43" visible="true" horizontalCenter="50">
+		<e:Label id="u_mateTip" text="每日18:00点结算宝箱奖励" textColor="0x1ADE4D" size="20" fontFamily="Microsoft YaHei" bold="true" visible="true" x="26" verticalCenter="0.5"/>
+		<e:Image source="commonUI_json.commonUI_btn_th"/>
+	</e:Group>
+	<e:Scroller id="u_scrollerItem" height="550" anchorOffsetX="0" anchorOffsetY="0" width="990" y="73" visible="true" x="130">
+		<e:List id="u_listItem" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DashIconViewSkin" width="90" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="userMainUI_json.userMainUI_nqz" x="7" y="8" touchEnabled="false"/>
+	<e:Image source="userMainUI_json.userMainUI_d_skill_bj" x="-2.1" y="-2.2" scaleX="1.1" scaleY="1.1" touchEnabled="false"/>
+	<e:Image id="u_power0" source="userMainUI_json.userMainUI_d_skill_power1" x="47.67" y="47.2" scaleY="0.8" rotation="181.23" anchorOffsetX="44" anchorOffsetY="42.81" scaleX="0.8" touchEnabled="false"/>
+	<e:Image id="u_power1" source="userMainUI_json.userMainUI_d_skill_power1" x="48.98" y="43.58" scaleY="0.8" rotation="89.4" anchorOffsetX="44" anchorOffsetY="42.81" scaleX="0.8" touchEnabled="false"/>
+	<e:Image id="u_power2" source="userMainUI_json.userMainUI_d_skill_power1" x="44.32" y="41.98" scaleY="0.8" rotation="359.73" anchorOffsetX="44" anchorOffsetY="42.81" scaleX="0.8" touchEnabled="false"/>
+	<e:Image id="u_power3" source="userMainUI_json.userMainUI_d_skill_power1" x="42.3" y="45.97" scaleY="0.8" rotation="271.46" anchorOffsetX="44" anchorOffsetY="42.81" scaleX="0.8" touchEnabled="false"/>
+	<e:Image id="u_jiantou" source="userMainUI_json.userMainUI_d_skill_power2" x="44.75" y="45.65" scale9Grid="17,29,9,19" anchorOffsetY="82" height="82" anchorOffsetX="21.25" touchEnabled="false"/>
+	<e:Label id="u_txtCd" text="60" size="26" anchorOffsetX="0" textAlign="right" borderColor="0x0A0909" border="false" fontFamily="Arial" scaleX="1" scaleY="1" textColor="0xFFFFFF" stroke="1" strokeColor="0x131313" bold="true" verticalCenter="0" horizontalCenter="0" visible="false"/>
+</e:Skin>

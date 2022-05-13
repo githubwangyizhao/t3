@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SevenDaysUISkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="175ff660356"/>
+	<e:Image y="46.263" visible="true" scale9Grid="26,27,27,27" anchorOffsetX="0" anchorOffsetY="0" source="sevenDaysUI_json.sevenDaysUI_bg" x="187.819"/>
+	<e:Scroller id="u_scrollerItem" width="721" height="165" y="120.902" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="72">
+		<e:Group>
+		<e:List id="u_listItem" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="u_slotGrp" x="552.209" y="316" height="120" width="289.651" visible="true">
+	</e:Group>
+	<e:Image width="319.357" height="135" x="536.41" y="306.659" source="sevenDaysUI_json.sevenDaysUI_mask"/>
+	<e:Label text="基本奖金" y="468.054" anchorOffsetX="0" textAlign="center" horizontalCenter="-154" size="16" textColor="0xFFF6BB" bold="true" stroke="0" strokeColor="0xFFFFFF"/>
+	<e:Label text="VIP奖励" y="466.933" anchorOffsetX="0" textAlign="center" horizontalCenter="71" size="16" textColor="0xFFF6BB" bold="true" stroke="0" strokeColor="0xFFFFFF" x="253"/>
+	<ns1:NumberView id="u_awd0" width="120" height="36" verticalCenter="189" y="477" horizontalCenter="-154"/>
+	<ns1:NumberView id="u_awd1" width="120" height="36" verticalCenter="189" y="477" horizontalCenter="71"/>
+	<ns1:NumberView id="u_awd2" width="120" height="36" verticalCenter="189" y="477" horizontalCenter="293"/>
+	<e:Image source="sevenDaysUI_json.sevenDaysUI_hd" x="347" y="317"/>
+	<e:Button id="u_startBtn" x="884" y="295">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="sevenDaysUI_json.sevenDaysUI_btn_up" source.down="sevenDaysUI_json.sevenDaysUI_btn_down"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="合计" y="466.933" anchorOffsetX="0" textAlign="center" horizontalCenter="293" size="16" textColor="0xFFF6BB" bold="true" stroke="0" strokeColor="0xFFFFFF" x="263"/>
+</e:Skin>

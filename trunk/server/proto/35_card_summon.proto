@@ -1,0 +1,19 @@
+// 图鉴召唤
+// OPEN_DEBUG
+
+import "05_prop.proto";
+
+// 图鉴召唤请求
+message m_do_summon_tos {
+  required int32 type = 1;      // 类型：1为一抽，2为十连抽
+}
+message m_do_summon_toc {
+  enum ENUM {
+    success = 1;                      // 成功
+    not_authority = 2;                // 无效召唤方式
+    no_enough_prop = 3;               // 道具不足
+    unknown = 4;                      // 未知结果
+  }
+  required ENUM result = 1;
+  repeated Prop prop_list = 2;        // 道具列表
+}

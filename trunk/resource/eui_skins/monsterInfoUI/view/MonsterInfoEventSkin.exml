@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoEventSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1798cec6692"/>
+	<e:Scroller id="u_scrollEvent" width="812" height="463" x="222" y="106">
+		<e:Group>
+			<e:List id="u_EventList">
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

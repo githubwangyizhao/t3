@@ -1,0 +1,12 @@
+popup_msg,,,,
+int|key,str|useless,int,str|useless,str
+,,,,
+id,sign,type,name,content
+"id","标识","类型，对应popup_msg_type表","功能说明","内容"
+#当次游戏不再提示,,,,
+1,pup_back_mainscene,1,回主城时，二次确定弹框,是否确定返回主城？
+2,pup_go_last_scene,1,返回上个场景，二次确定弹框,是否确定返回上一个场景？
+3,training_scene,1,进入体验场景，二次确认弹框,欢迎进入体验区，当前场景金币不可提现！
+4,gold_no_enough,1,金币不足，二次弹框是否打开储值页面,当前金币不足|n是否立即前往兑换！
+5,rmb_no_enough,1,钻石不足，二次弹框是否打开储值页面,当前点券不足|n是否立即前往储值！
+6,break_no_prompt,1,是否消耗5点券重新刷新赏金任务,是否消耗5点券重新刷新赏金任务

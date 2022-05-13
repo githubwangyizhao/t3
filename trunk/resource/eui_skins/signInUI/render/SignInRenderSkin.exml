@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SignInRenderSkin"
+	 width="106"
+	height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_ImgSignInBg" visible="true" source="signInUI_json.signInUI_tab1" x="-5"/>
+	<e:Label id="u_txtDay" text="第1日" y="14.247" size="16" fontFamily="Microsoft YaHei" visible="true" verticalAlign="middle" textAlign="center" backgroundColor="0xFFFFFF" background="false" borderColor="0x000000" border="false" bold="false" strokeColor="0x8E5E3D" sortableChildren="false" stroke="1" horizontalCenter="0" touchEnabled="false" textColor="0xF0E4B0"/>
+	<e:Label id="u_txtSignInCount" text="1000" y="100.83" size="16" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="right" touchEnabled="false" textColor="0xFFFFFF" stroke="1" right="12"/>
+	<e:Image id="u_imgMulti" x="24.405" y="36.465" visible="true" source="signInUI_json.signInUI_double" touchEnabled="false"/>
+	<e:Label id="u_txtName" text="金币" y="128" fontFamily="Microsoft YaHei" size="16" textAlign="center" verticalAlign="middle" horizontalCenter="0" textColor="0xE1E9F1"/>
+	<e:Group id="u_receivedGrp" width="132" height="159" x="0" y="0" visible="false" touchEnabled="false" touchChildren="false">
+		<e:Image source="signInUI_json.signInUI_mask" visible="true" x="-4.964" y="-0.278"/>
+		<e:Image id="u_imgGou" source="signInUI_json.signInUI_chose" y="37.053" horizontalCenter="-15" visible="true"/>
+	</e:Group>
+	<e:Image id="u_imgResign" visible="true" touchEnabled="false" source="signInUI_json.signInUI_sign" horizontalCenter="0.5" verticalCenter="5.5"/>
+	<e:Image id="u_btnClick" source="commonUI_json.commonUI_box" y="6.61" scale9Grid="3,3,4,4" width="100.01" height="140.379" alpha="0" x="3" visible="true"/>
+</e:Skin>

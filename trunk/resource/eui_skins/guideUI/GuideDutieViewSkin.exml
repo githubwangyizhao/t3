@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.GuideDutieViewSkin"
+	 width="258"
+	height="98" xmlns:e="http://ns.egret.com/eui">
+    <e:Image id="u_imgBj" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" source="commonUI_json.commonUI_dutie_di" width="258" height="98" scale9Grid="18,18,8,86" verticalCenter="0"/>
+	<e:Label id="u_txtMsg" text="" size="16" textAlign="left" x="22" width="218" lineSpacing="10" wordWrap="true" textColor="0xf0e4b0" fontFamily="Microsoft YaHei" verticalCenter="0.5" verticalAlign="middle"/>
+</e:Skin>

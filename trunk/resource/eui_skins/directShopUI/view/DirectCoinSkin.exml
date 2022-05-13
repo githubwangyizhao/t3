@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DirectCoinSkin"
+	 width="1136"
+	height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17c2c160719"/>
+	<e:Image scale9Grid="28,25,29,25" x="626.201" y="182.766" source="directShopUI_json.directShopUI_img_coin" visible="true"/>
+	<e:Image source="directShopUI_json.directShopUI_img_cointit" x="536.731" y="351.756" visible="true"/>
+	<e:Group x="538.03" y="236.03">
+		<e:Image source="directShopUI_json.directShopUI_img_pricek" x="0" y="0" visible="true"/>
+		<e:Label id="u_txtprice" text="原价: $23" y="14" textColor="0x534234" size="18" fontFamily="Microsoft YaHei" horizontalCenter="-6"/>
+		<e:Image source="directShopUI_json.directShopUI_img_redline" x="19.21" y="21.97" width="108" visible="true" scale9Grid="6,0,5,1"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideTishiSkin" width="450" height="155" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgJian" source="guideUI_json.guideUI_xian" x="381" scale9Grid="88,6,16,39" anchorOffsetX="59" anchorOffsetY="25" scaleX="-1" y="77"/>
+	<e:Image id="u_imgBj" anchorOffsetX="0" width="450" anchorOffsetY="0" height="155" horizontalCenter="0" source="guideUI_json.guideUI_kuang" scale9Grid="24,17,8,6"/>
+	<e:Label id="u_txtMsg" text="sfasf" size="20" textAlign="left" x="32" width="386" lineSpacing="10" wordWrap="true" verticalCenter="0" textColor="0xF0E4B0" fontFamily="Microsoft YaHei"/>
+</e:Skin>

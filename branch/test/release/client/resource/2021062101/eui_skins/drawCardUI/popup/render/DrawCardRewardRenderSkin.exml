@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.DrawCardRewardRenderSkin"
+	 width="140"
+	height="210" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="179a2a54be6"/>
+	<e:Image x="0" y="0" visible="true" scale9Grid="17,17,16,16" width="140" height="210" source="commonUI_json.commonUI_icon_bg"/>
+	<e:Image id="u_imgIcon" width="136" height="206" x="2" y="2"/>
+	<e:Label id="u_txtName" text="角色名称" y="166" size="16" horizontalCenter="0" textColor="0xF0E6D2"/>
+</e:Skin>

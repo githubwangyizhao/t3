@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonPageBtnSkin" width="115" height="105" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" source="userMainUI_json.userMainUI_d_bar_b" horizontalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DirectReelRenderSkin"
+	 width="152"
+	height="182" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="directShopUI_json.directShopUI_img_jzlist"/>
+	<e:Image id="u_imgjz" x="16" y="16"/>
+	<e:Label id="u_txtName" text="冰冻卷轴" y="156.003" fontFamily="Microsoft YaHei" size="18" horizontalCenter="0" textColor="0x0BD4FF" stroke="1"/>
+	<e:Group id="u_grpNum" y="120" height="23" right="2"/>
+</e:Skin>

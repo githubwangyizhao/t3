@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MainAttackSkillViewSkin"
+	 width="532"
+	height="190" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="u_imgBj" scale9Grid="17,15,2,2" anchorOffsetY="0" anchorOffsetX="0" source="userMainUI_json.userMainUI_buff_kuan" y="32"/>
+	<e:Group id="u_mcNum" y="45" horizontalCenter="0">
+		<e:Image id="u_imgIcon" source="commonUI_json.commonUI_icon_2" x="0" y="0"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MonsterInfoBossRenderSkin"
+	 width="875"
+	height="155" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="u_imgBg" width="875" height="155" x="0" y="0"/>
+	<e:Image id="u_imgBossName" x="12" y="103"/>
+	<e:Label id="u_txtBossDesc" text="desc" x="303" y="50" width="545.5" height="71" fontFamily="SimSun" size="16" textAlign="left" lineSpacing="5" textColor="0xF0E4B0"/>
+</e:Skin>
